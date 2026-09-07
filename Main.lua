@@ -15,36 +15,13 @@ local WindUI = loadstring(game:HttpGet(
 
 ------------------------------------------------------------
 -- 2. Script catalog
---    Add one entry per script you want to show in the menu.
---    `name`  — display name shown on the button.
---    `desc`  — short description shown under the button.
---    `icon`  — Lucide / Solar icon name (https://lucide.dev or https://icones.js.org/collection/solar).
---    `url`   — RAW URL of the script file (raw.githubusercontent.com).
 ------------------------------------------------------------
 local SCRIPTS = {
     {
-        name = "Defeat Anime RNG",
-        desc = "Auto-roll, auto-farm waves, auto-buy weapons, prestige.",
-        icon = "solar:sprout-bold-duotone",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/DefeatAnimeRNG.lua",
-    },
-    {
-        name = "Blox Fruits",
-        desc = "Auto-farm, auto-raid, fruit notifier.",
+        name = "MM2 — Murder Mystery 2",
+        desc = "Weapon spawner + visualizer. Spawn any weapon, equip it, see it on your character.",
         icon = "solar:sword-bold-duotone",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/BloxFruits.lua",
-    },
-    {
-        name = "Pet Sim 99",
-        desc = "Auto-hatch, auto-sell, auto-upgrade pets.",
-        icon = "solar:paw-bold-duotone",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/PetSim99.lua",
-    },
-    {
-        name = "Universal ESP",
-        desc = "Player ESP, name tags, distance — works in any game.",
-        icon = "solar:eye-bold-duotone",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/Universal.lua",
+        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MM2.lua",
     },
     -- >>> ADD MORE SCRIPTS HERE <<<
     -- {
@@ -65,7 +42,6 @@ pcall(function()
     if info and info.Name then gameName = info.Name end
 end)
 
--- Track which scripts have been loaded so the user can't double-load.
 local loaded = {}
 
 local function loadScript(scriptEntry)
@@ -79,7 +55,6 @@ local function loadScript(scriptEntry)
         return
     end
 
-    -- Run in a spawned thread so we can yield without blocking the UI callback.
     task.spawn(function()
         WindUI:Notify({
             Title = "Stealth",
@@ -88,27 +63,18 @@ local function loadScript(scriptEntry)
             Icon = "solar:download-minimalistic-bold",
         })
 
-        -- Give the notification a moment to render.
         task.wait(0.3)
 
         -- Destroy the launcher window FIRST, before loading the new script.
-        -- WindUI only supports one active window — if we load the new script
-        -- while the launcher is still open, the two windows conflict and the
-        -- wrong one gets destroyed.
         pcall(function() Window:Destroy() end)
 
-        -- Now load the script. It will create its own fresh WindUI window
-        -- that fully replaces this launcher.
         local ok, err = pcall(function()
             loadstring(game:HttpGet(scriptEntry.url))()
         end)
 
         if ok then
             loaded[scriptEntry.url] = true
-            -- The loaded script shows its own "loaded!" notification.
         else
-            -- If loading failed, the launcher is already gone.
-            -- Show the error via WindUI's global Notify.
             WindUI:Notify({
                 Title = "Stealth",
                 Content = "Failed to load " .. scriptEntry.name .. ": " .. tostring(err),
@@ -149,12 +115,9 @@ local Window = WindUI:CreateWindow({
 })
 
 ------------------------------------------------------------
--- 5. Scripts tab — one button per script in the catalog
+-- 5. Scripts tab — with search filter
 ------------------------------------------------------------
-local ScriptsSection = Window:Section({
-    Title = "Scripts",
-})
-
+local ScriptsSection = Window:Section({ Title = "Scripts" })
 local ScriptsTab = ScriptsSection:Tab({
     Title = "Available",
     Icon = "solar:package-bold",
@@ -167,23 +130,74 @@ ScriptsTab:Section({ Title = "Name: " .. gameName, TextTransparency = 0.35 })
 ScriptsTab:Section({ Title = "Place ID: " .. tostring(PLACE_ID), TextTransparency = 0.35 })
 ScriptsTab:Space({ Columns = 1 })
 
+-- Search input — filters which script buttons are shown
+ScriptsTab:Section({ Title = "Search" })
+
+local searchQuery = ""
+local scriptButtons = {}  -- tracks {entry=..., elements={...}} so we can show/hide them
+
+local function matchesSearch(entry, query)
+    if query == "" then return true end
+    local hay = (entry.name .. " " .. (entry.desc or "")):lower()
+    return hay:find(query:lower(), 1, true) ~= nil
+end
+
+local function rebuildScriptList()
+    for _, sb in ipairs(scriptButtons) do
+        local visible = matchesSearch(sb.entry, searchQuery)
+        -- WindUI elements don't have a public :SetVisible, so we Destroy and
+        -- recreate. Since there's typically only a handful of scripts, this
+        -- is cheap.
+        if sb.created then
+            for _, el in ipairs(sb.elements) do
+                pcall(function() el:Destroy() end)
+            end
+            sb.created = false
+            sb.elements = {}
+        end
+    end
+
+    for _, sb in ipairs(scriptButtons) do
+        if matchesSearch(sb.entry, searchQuery) and not sb.created then
+            local entry = sb.entry
+            local btn = ScriptsTab:Button({
+                Title = "Load: " .. entry.name,
+                Desc = entry.desc or "",
+                Icon = entry.icon or "solar:package-bold",
+                Color = Color3.fromHex("#30FF6A"),
+                Justify = "Left",
+                IconAlign = "Left",
+                Callback = function()
+                    loadScript(entry)
+                end,
+            })
+            local space = ScriptsTab:Space({ Columns = 1 })
+            sb.elements = { btn, space }
+            sb.created = true
+        end
+    end
+end
+
+-- Initialize tracking entries
+for _, entry in ipairs(SCRIPTS) do
+    table.insert(scriptButtons, { entry = entry, created = false, elements = {} })
+end
+
+local SearchInput = ScriptsTab:Input({
+    Title = "Search scripts",
+    Desc = "Type to filter the list below.",
+    PlaceholderText = "e.g. MM2, murder, mystery...",
+    Callback = function(text)
+        searchQuery = text or ""
+        rebuildScriptList()
+    end,
+})
+
+ScriptsTab:Space({ Columns = 1 })
 ScriptsTab:Section({ Title = "Available scripts" })
 
-for _, s in ipairs(SCRIPTS) do
-    local entry = s
-    ScriptsTab:Button({
-        Title = "Load: " .. entry.name,
-        Desc = entry.desc or "",
-        Icon = entry.icon or "solar:package-bold",
-        Color = Color3.fromHex("#30FF6A"),
-        Justify = "Left",
-        IconAlign = "Left",
-        Callback = function()
-            loadScript(entry)
-        end,
-    })
-    ScriptsTab:Space({ Columns = 1 })
-end
+-- Initial render
+rebuildScriptList()
 
 ------------------------------------------------------------
 -- 6. Info tab
@@ -218,7 +232,7 @@ InfoTab:Button({
     Justify = "Left",
     IconAlign = "Left",
     Callback = function()
-        pcall(function() setclipboard("https://discord.gg/yourserver") end)  -- >>> replace <<<
+        pcall(function() setclipboard("https://discord.gg/yourserver") end)
         WindUI:Notify({
             Title = "Discord",
             Content = "Invite copied to clipboard!",
@@ -242,7 +256,7 @@ local SettingsTab = SettingsSection:Tab({
 SettingsTab:Section({ Title = "Hub controls" })
 SettingsTab:Button({
     Title = "Unload Stealth Hub",
-    Desc = "Closes the launcher UI. Already-loaded scripts keep running.",
+    Desc = "Closes the launcher UI.",
     Icon = "solar:close-circle-bold",
     Color = Color3.fromHex("#ff4830"),
     Justify = "Left",
@@ -250,12 +264,6 @@ SettingsTab:Button({
     Callback = function()
         Window:Destroy()
     end,
-})
-
-SettingsTab:Space({ Columns = 1 })
-SettingsTab:Section({
-    Title = "Configuration is auto-saved by WindUI to the StealthHub folder.",
-    TextTransparency = 0.35,
 })
 
 ------------------------------------------------------------
