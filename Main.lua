@@ -3,11 +3,8 @@
 -- This file is loaded by Stealth.lua AFTER the user's key is validated.
 -- It shows a WindUI menu where the user can pick which script to run.
 --
--- Each script lives in its own file under the `scripts/` folder of the repo.
--- Adding a new script = drop the file in `scripts/` + add one entry to SCRIPTS below.
---
--- Repository: https://github.com/requiemzc/Stealth
--- WindUI:     https://github.com/Footagesus/WindUI
+-- When the user picks a script, this launcher closes itself so only the
+-- loaded script's UI remains visible.
 
 ------------------------------------------------------------
 -- 1. Load WindUI
@@ -97,10 +94,15 @@ local function loadScript(scriptEntry)
         loaded[scriptEntry.url] = true
         WindUI:Notify({
             Title = "Stealth",
-            Content = scriptEntry.name .. " loaded successfully!",
-            Duration = 4,
+            Content = scriptEntry.name .. " loaded!",
+            Duration = 2,
             Icon = "solar:check-circle-bold",
         })
+        -- Close the launcher so only the loaded script's UI remains.
+        -- Slight delay so the success notification has time to render.
+        task.delay(0.6, function()
+            pcall(function() Window:Destroy() end)
+        end)
     else
         WindUI:Notify({
             Title = "Stealth",
@@ -190,14 +192,14 @@ local InfoTab = InfoSection:Tab({
 
 InfoTab:Section({ Title = "About Stealth Hub" })
 InfoTab:Section({
-    Title = "Stealth Hub is a multi-script launcher. Pick a script from the Scripts tab and click Load.\n\nRepository: github.com/requiemzc/Stealth\nKey system: stealth.space-z.ai",
+    Title = "Stealth Hub is a multi-script launcher.\nPick a script from the Scripts tab and click Load.\nThe launcher will close automatically once a script is loaded.",
     TextTransparency = 0.35,
 })
 InfoTab:Space({ Columns = 1 })
 
 InfoTab:Section({ Title = "Controls" })
 InfoTab:Section({
-    Title = "Click the floating green button to toggle this UI.\nLoaded scripts keep running even if you close this menu.",
+    Title = "Click the floating green button to toggle this UI.",
     TextTransparency = 0.35,
 })
 InfoTab:Space({ Columns = 1 })
