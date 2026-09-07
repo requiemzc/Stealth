@@ -1,77 +1,171 @@
--- [[ Stealth | Example using Patriot Key System UI Library ]]
--- Repository: https://github.com/SyndromeXph/Patriot-Key-System-Ui-Library
+-- [[ Stealth | Ready-to-execute Roblox key system ]]
 --
--- This example shows you how to:
---   1. Load the Patriot library
---   2. Brand the key UI as "Stealth"
---   3. Validate a key (simple in-script check — replace with your own/API/Luarmor/etc.)
---   4. Run your main script when the key is valid
---   5. Show notifications, customize the theme, configure storage, etc.
+-- Validates the user's key against https://stealth.space-z.ai/api/validate
+-- Keys are issued at https://stealth.space-z.ai/ and rotate every 15 minutes,
+-- each locked to a single HWID on first validation.
 --
--- USAGE:
---   - Set `VALID_KEY` below to whatever you want users to type.
---   - Replace the body of `OnSuccess` with your real script (or a loadstring call).
---   - (Optional) Replace the simple OnVerify with Luarmor / Panda Auth / Junkie / HTTP API.
+-- After successful validation, Stealth loads Main.lua (from this same repo)
+-- which shows a Rayfield menu letting the user pick which script to run.
+--
+-- HOW TO USE (end user):
+--   loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Stealth.lua"))()
+--
+-- HOW TO ADD YOUR OWN SCRIPTS (developer):
+--   1. Drop your script file in the `scripts/` folder of this repo.
+--   2. Add an entry to the SCRIPTS table in Main.lua (name + raw URL).
+--   3. Commit + push. Done — users will see the new script in the menu.
+--
+-- File layout in the repo:
+--   Stealth.lua              ← this file (key system, loaded by the user)
+--   Main.lua                 ← launcher with script selector menu (loaded after key check)
+--   scripts/                 ← your actual script files (loaded on demand by Main.lua)
+--     DefeatAnimeRNG.lua
+--     BloxFruits.lua
+--     Universal.lua
+--     ...
 
 ------------------------------------------------------------
--- 1. Load Patriot
+-- 1. Configuration
+------------------------------------------------------------
+-- After key validation, Stealth loads Main.lua which shows a Rayfield menu
+-- where the user can pick which script to run. Main.lua is hosted in the
+-- same repo as this file.
+local MAIN_SCRIPT_URL = "https://raw.githubusercontent.com/requiemzc/Stealth/main/Main.lua"
+
+-- The Stealth key system website (issues + validates keys).
+local STEALTH_API = "https://stealth.space-z.ai"
+
+------------------------------------------------------------
+-- 2. Load Patriot
 ------------------------------------------------------------
 local Patriot = loadstring(game:HttpGet(
     "https://raw.githubusercontent.com/SyndromeXph/Patriot-Key-System-Ui-Library/refs/heads/main/PatriotUi.luau"
 ))()
 
 ------------------------------------------------------------
--- 2. Key validation
+-- 3. Get the HWID (hardware ID) for locking the key
 ------------------------------------------------------------
--- Replace this with your own key (or wire up Luarmor / Panda Auth / Junkie / HTTP API).
-local VALID_KEY = "STEALTH-1234-ABCD"
-
--- Simple validation: return true if the key matches.
--- For a detailed error response, return a table instead:
---   return { valid = false, error = "KEY_EXPIRED", message = "Your key has expired" }
-Patriot.Callbacks.OnVerify = function(key)
-    return key == VALID_KEY
+-- Different executors expose HWID differently. Try them in order.
+local function getHWID()
+    local ok, fn = pcall(function() return identifyexecutor end)
+    if ok and fn then
+        local s, id = pcall(fn)
+        if s and id and type(id) == "string" and #id > 0 then return id end
+    end
+    -- Most executors expose this service — returns a stable client id
+    local s, id = pcall(function()
+        return game:GetService("RbxAnalyticsService"):GetClientId()
+    end)
+    if s and id and #id > 0 then return id end
+    -- Fallback: user id (NOT recommended — keys would be shareable across devices
+    -- signed into the same account, but it's better than nothing).
+    return tostring(game.Players.LocalPlayer.UserId)
 end
 
 ------------------------------------------------------------
--- 3. Branding — this is where the UI gets the name "Stealth"
+-- 4. Key validation — calls https://stealth.space-z.ai/api/validate
+------------------------------------------------------------
+-- Returns true if the key is valid (and locks it to this HWID on first use),
+-- false otherwise. Patriot also accepts a detailed table response.
+Patriot.Callbacks.OnVerify = function(key)
+    if not key or key == "" then return false end
+
+    local HttpService = game:GetService("HttpService")
+    local hwid = getHWID()
+
+    -- Build the JSON body.
+    local body
+    local ok, err = pcall(function()
+        body = HttpService:JSONEncode({ key = key, hwid = hwid })
+    end)
+    if not ok or not body then
+        return { valid = false, error = "CLIENT_ERROR", message = "Failed to encode request: " .. tostring(err) }
+    end
+
+    -- Fire the request. `request` is the executor's HTTP function (Synapse/KRNL/Fluxus/etc.).
+    -- Some executors call it `http_request`, so we fall back to that.
+    local reqFn = request or http_request or nil
+    if not reqFn then
+        return { valid = false, error = "NO_HTTP", message = "Your executor does not expose an HTTP request function." }
+    end
+
+    local res
+    ok, err = pcall(function()
+        res = reqFn({
+            Url = STEALTH_API .. "/api/validate",
+            Method = "POST",
+            Headers = { ["Content-Type"] = "application/json" },
+            Body = body,
+        })
+    end)
+    if not ok or not res then
+        return { valid = false, error = "REQUEST_FAILED", message = tostring(err) }
+    end
+
+    -- Parse the JSON response.
+    local data
+    ok, err = pcall(function()
+        data = HttpService:JSONDecode(res.Body)
+    end)
+    if not ok or not data then
+        return { valid = false, error = "BAD_RESPONSE", message = "Could not parse server response: " .. tostring(res.Body) }
+    end
+
+    if data.valid == true then
+        return true
+    end
+
+    -- Map server error codes to friendly messages.
+    local messages = {
+        KEY_NOT_FOUND = "This key does not exist. Get a fresh one at " .. STEALTH_API .. "/",
+        KEY_EXPIRED   = "This key has expired (15-minute window). Get a new one at " .. STEALTH_API .. "/",
+        HWID_LOCKED   = "This key is locked to a different device. Get your own at " .. STEALTH_API .. "/",
+    }
+    return {
+        valid   = false,
+        error   = data.error or "UNKNOWN",
+        message = messages[data.error] or "Validation failed.",
+    }
+end
+
+------------------------------------------------------------
+-- 5. Branding — the key UI shows up as "Stealth"
 ------------------------------------------------------------
 Patriot.Appearance = {
     Title    = "Stealth",
     Subtitle = "Verify your key to continue",
-    -- Logo decal ID: 94734287536234
     Icon     = "rbxassetid://94734287536234",
     IconSize = UDim2.new(0, 30, 0, 30),
 }
 
 ------------------------------------------------------------
--- 4. Links
+-- 6. Links
 ------------------------------------------------------------
 Patriot.Links = {
-    GetKey  = "https://your-link-to-get-key.example",  -- Replace with your key-get link
-    Discord = "https://discord.gg/yourserver",         -- Replace with your Discord invite
+    GetKey  = STEALTH_API .. "/",                       -- "Get Key" button opens the website
+    Discord = "https://discord.gg/yourserver",          -- >>> replace with your invite <<<
 }
 
 ------------------------------------------------------------
--- 5. Storage — remember the user's key between sessions
+-- 7. Storage — remember the user's key between sessions
 ------------------------------------------------------------
 Patriot.Storage = {
     FileName = "Stealth_Key",
-    Remember = true,   -- Save the key after a successful verify
-    AutoLoad = false,  -- If true, tries to log in with the saved key automatically
+    Remember = true,
+    AutoLoad = false,
 }
 
 ------------------------------------------------------------
--- 6. Options
+-- 8. Options
 ------------------------------------------------------------
 Patriot.Options = {
-    Keyless  = false,  -- true  -> skip the key system entirely (good for free scripts)
-    Blur     = true,   -- Background blur while the key UI is open
-    Draggable= true,   -- Let the user drag the window
+    Keyless  = false,
+    Blur     = true,
+    Draggable= true,
 }
 
 ------------------------------------------------------------
--- 7. Theme — dark + crimson "Stealth" look (tweak freely)
+-- 9. Theme — dark + crimson "Stealth" look
 ------------------------------------------------------------
 Patriot.Theme = {
     Accent       = Color3.fromRGB(220, 20, 60),
@@ -92,14 +186,18 @@ Patriot.Theme = {
 }
 
 ------------------------------------------------------------
--- 8. Changelog (only shows if entries exist)
+-- 10. Changelog
 ------------------------------------------------------------
 Patriot.Changelog = {
-    {Version = "v1.0.0", Date = "Sep 7, 2026", Changes = {"Initial Stealth release", "Patriot key system integration"}},
+    {Version = "v1.0.0", Date = "Sep 7, 2026", Changes = {
+        "Initial Stealth release",
+        "Key validation against stealth.space-z.ai",
+        "15-minute key rotation with HWID locking",
+    }},
 }
 
 ------------------------------------------------------------
--- 9. Optional Shop section (disabled by default)
+-- 11. Shop (disabled by default)
 ------------------------------------------------------------
 Patriot.Shop = {
     Enabled    = false,
@@ -111,78 +209,70 @@ Patriot.Shop = {
 }
 
 ------------------------------------------------------------
--- 10. Callbacks — what happens after the key UI
+-- 12. Callbacks
 ------------------------------------------------------------
--- Called when the user submits a key and OnVerify returned true.
+-- OnSuccess runs AFTER OnVerify returns true.
+-- This is where you load your main script.
 Patriot.Callbacks.OnSuccess = function()
-    print("[Stealth] Verification successful, loading main script...")
+    print("[Stealth] Key validated! Loading main script...")
     Patriot:Notify("Stealth", "Key validated! Loading...", 2, "success")
 
-    -- Replace this block with your real script, e.g.:
-    --   loadstring(game:HttpGet("https://your-host/stealth_main.lua"))()
+    -- Load the main script. Wrap in pcall so a network error doesn't kill the executor.
+    local ok, err = pcall(function()
+        loadstring(game:HttpGet(MAIN_SCRIPT_URL))()
+    end)
+    if not ok then
+        warn("[Stealth] Failed to load main script:", err)
+        Patriot:Notify("Stealth", "Failed to load main script: " .. tostring(err), 6, "error")
+        return
+    end
 
-    -- Demo: a tiny "main" so you can see something happen.
-    task.wait(1)
-    Patriot:Notify("Stealth", "Welcome! Main script loaded.", 4, "shield")
+    Patriot:Notify("Stealth", "Main script loaded!", 4, "shield")
 end
 
--- Called when the user submits an invalid key.
 Patriot.Callbacks.OnFail = function(errorMsg)
     print("[Stealth] Verification failed:", errorMsg)
 end
 
--- Called when the user closes the window without verifying.
 Patriot.Callbacks.OnClose = function()
     print("[Stealth] User closed the verification window")
 end
 
 ------------------------------------------------------------
--- 11. (Optional) Integration examples — uncomment one to use
-------------------------------------------------------------
--- Luarmor:
--- Patriot:LaunchLuarmor({ scriptId = "YOUR_LUARMOR_SCRIPT_ID" })
-
--- Panda Auth (Wilkins):
--- Patriot:LaunchWilkins({
---     serviceId         = "your-service-id",
---     debug             = false,
---     kickOnDetect      = false,
---     openDashboard     = true,
---     validationTimeout = 600,
---     onTamper          = function(flags) warn("Tamper detected:", table.concat(flags, ",")) end,
---     onSessionEnd      = function(reason, msg) warn("Session ended:", reason, msg) end,
--- })
-
--- Junkie SDK:
--- Patriot:LaunchJunkie({
---     Service   = "YOUR_SERVICE_NAME",
---     Identifier= "YOUR_IDENTIFIER",
---     Provider  = "YOUR_PROVIDER_NAME",
--- })
-
--- HTTP API validation (replaces the simple OnVerify above):
--- local HttpService = game:GetService("HttpService")
--- Patriot.Callbacks.OnVerify = function(key)
---     local ok, response = pcall(function()
---         return game:HttpGet("https://api.yoursite.com/validate?key=" .. key)
---     end)
---     if not ok then return false end
---     local data = HttpService:JSONDecode(response)
---     return {
---         valid   = data.valid,
---         error   = data.error or "UNKNOWN",
---         message = data.message or "Invalid key",
---     }
--- end
-
-------------------------------------------------------------
--- 12. Launch the key UI
+-- 13. Launch the key UI
 ------------------------------------------------------------
 Patriot:Launch()
 
--- Quick reference -------------------------------------------------------------
--- Patriot:Notify(title, message, duration, iconType)
---   iconType: "info" | "success" | "error" | "warning" | "shield" | "key" | "copy" | "discord" | "close"
---
--- local savedKey = Patriot:GetSavedKey()   -- returns saved key or nil
--- Patriot:ClearSavedKey()                  -- deletes the saved key
+--[[
+------------------------------------------------------------
+REPOSITORY LAYOUT
+------------------------------------------------------------
+
+  Stealth.lua              ← this file (key system). User runs this.
+       │
+       │  after key validation
+       ▼
+  Main.lua                 ← launcher with Rayfield script selector menu
+       │
+       │  user clicks "Load: <script name>"
+       ▼
+  scripts/                 ← your actual script files
+    DefeatAnimeRNG.lua
+    BloxFruits.lua
+    Universal.lua
+    ...
+
+ADDING A NEW SCRIPT:
+  1. Drop your script file in the `scripts/` folder.
+  2. Add an entry to the SCRIPTS table at the top of Main.lua:
+       { name = "My New Script", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MyNewScript.lua" }
+  3. Commit + push.
+  4. Users will see the new entry in the menu on next load.
+
+IMPORTANT:
+  - Always use raw.githubusercontent.com URLs (not github.com/.../blob/...).
+  - Keep Stealth.lua and Main.lua separate — don't merge them.
+  - Stealth.lua changes rarely (key system, branding).
+  - Main.lua changes when you add/remove scripts.
+  - The scripts/ folder changes when you update individual hubs.
+]]

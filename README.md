@@ -1,42 +1,86 @@
 # Stealth
 
-Key system UI for Roblox executors, built on the [Patriot Key System UI Library](https://github.com/SyndromeXph/Patriot-Key-System-Ui-Library).
+Multi-script Roblox hub with a key system backed by [stealth.space-z.ai](https://stealth.space-z.ai) and a launcher UI that lets the user pick which script to run.
 
-## Usage
-
-Load the script with your executor:
+## End-user usage
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Stealth.lua"))()
 ```
 
-The window opens branded as **Stealth** with the logo decal `94734287536234`. Enter the key to verify; on success, the `OnSuccess` callback runs your main script.
+1. The key prompt appears branded as **Stealth**.
+2. Go to [stealth.space-z.ai](https://stealth.space-z.ai/) → copy your `FREE_xxx` key.
+3. Paste the key into the prompt.
+4. The Stealth Hub launcher appears with a **Scripts** tab listing all available scripts.
+5. Click "Load: \<script name\>" to run any script you want.
+
+Keys rotate every 15 minutes and are locked to a single HWID on first validation.
+
+## Repository layout
+
+```
+Stealth.lua              ← key system (loaded by the user via loadstring)
+Main.lua                 ← launcher with Rayfield script selector menu
+scripts/                 ← your actual script files
+  DefeatAnimeRNG.lua     ← placeholder — replace with your real hub
+  BloxFruits.lua         ← placeholder — replace with your real hub
+  PetSim99.lua           ← placeholder — replace with your real hub
+  Universal.lua          ← placeholder — replace with your real hub
+```
+
+### How the pieces fit together
+
+```
+User runs Stealth.lua
+        │
+        ▼
+Patriot key prompt (validates against stealth.space-z.ai/api/validate)
+        │  (key valid)
+        ▼
+Main.lua loads → Rayfield UI appears with script selector menu
+        │  (user clicks "Load: Blox Fruits")
+        ▼
+scripts/BloxFruits.lua loads → that game's hub UI appears
+```
+
+## Adding a new script
+
+1. Drop your script file in the `scripts/` folder (e.g. `scripts/MyNewScript.lua`).
+2. Add an entry to the `SCRIPTS` table at the top of `Main.lua`:
+
+   ```lua
+   {
+       name = "My New Script",
+       desc = "What it does.",
+       icon = "package",
+       url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MyNewScript.lua",
+   },
+   ```
+
+3. Commit + push.
+4. Users see the new entry in the menu on next load.
+
+## Replacing the placeholders
+
+The files in `scripts/` are minimal placeholders. Replace each one with your real hub implementation. The placeholder for Defeat Anime RNG can be replaced with the full CheixHub conversion (see `download/CheixHub_Rayfield.lua` if you have it locally).
 
 ## Configuration
 
-Edit `Stealth.lua` to customize:
+| Field | File | Description |
+|-------|------|-------------|
+| `MAIN_SCRIPT_URL` | `Stealth.lua` | URL of `Main.lua` (already pointing to this repo) |
+| `STEALTH_API` | `Stealth.lua` | Key system API base URL (`https://stealth.space-z.ai`) |
+| `Patriot.Links.Discord` | `Stealth.lua` | Your Discord invite |
+| `Patriot.Appearance.Icon` | `Stealth.lua` | Logo decal ID (`rbxassetid://94734287536234`) |
+| `SCRIPTS` table | `Main.lua` | Catalog of scripts shown in the launcher menu |
 
-| Field | Description |
-|-------|-------------|
-| `VALID_KEY` | The key users must enter (replace with your own) |
-| `Patriot.Appearance.Icon` | Logo asset ID (`rbxassetid://94734287536234`) |
-| `Patriot.Appearance.Title` | Window title (`"Stealth"`) |
-| `Patriot.Links.GetKey` | URL the "Get Key" button opens |
-| `Patriot.Links.Discord` | Discord invite URL |
-| `Patriot.Theme` | Color palette |
-| `Patriot.Callbacks.OnSuccess` | The main script to run after verification |
-| `Patriot.Callbacks.OnVerify` | Validation logic (simple / Luarmor / Panda Auth / Junkie / HTTP API) |
+## Key system
 
-## Integrations
-
-The script includes commented examples for:
-
-- **Luarmor** — `Patriot:LaunchLuarmor({ scriptId = "..." })`
-- **Panda Auth (Wilkins)** — `Patriot:LaunchWilkins({ serviceId = "..." })`
-- **Junkie SDK** — `Patriot:LaunchJunkie({ Service = "...", Identifier = "...", Provider = "..." })`
-- **HTTP API** — `Patriot.Callbacks.OnVerify = function(key) ... end`
-- **Keyless mode** — `Patriot.Options.Keyless = true`
+- Website: [stealth.space-z.ai](https://stealth.space-z.ai/)
+- API: `POST https://stealth.space-z.ai/api/validate` with body `{ "key": "FREE_xxx", "hwid": "..." }`
+- Keys are random (`FREE_` + 32 hex chars), expire after 15 minutes, and lock to a single HWID on first validation.
+- The key system source code is hosted separately from this repo.
 
 ## License
 
-See [Patriot Key System UI Library](https://github.com/SyndromeXph/Patriot-Key-System-Ui-Library) for upstream licensing.
+See [Patriot Key System UI Library](https://github.com/SyndromeXph/Patriot-Key-System-Ui-Library) and [Rayfield](https://github.com/SiriusSoftwareLtd/Rayfield) for upstream licensing.
