@@ -45,21 +45,29 @@ local Patriot = loadstring(game:HttpGet(
 ------------------------------------------------------------
 -- 3. Get the HWID (hardware ID) for locking the key
 ------------------------------------------------------------
--- Different executors expose HWID differently. Try them in order.
+-- Each device must have its own unique key. We lock keys to the HWID so
+-- a key issued on device A cannot be used on device B.
+--
+-- Different executors expose the HWID under different names. We try them
+-- in order of preference and fall back to Roblox's built-in client ID.
 local function getHWID()
-    local ok, fn = pcall(function() return identifyexecutor end)
-    if ok and fn then
-        local s, id = pcall(fn)
-        if s and id and type(id) == "string" and #id > 0 then return id end
-    end
-    -- Most executors expose this service — returns a stable client id
-    local s, id = pcall(function()
+    -- 1. gethwid() — most common in modern executors (Synapse, KRNL, Fluxus, etc.)
+    local ok, id = pcall(function() return gethwid and gethwid() end)
+    if ok and type(id) == "string" and #id > 0 then return id end
+
+    -- 2. global `hwid` variable (some executors)
+    if type(hwid) == "string" and #hwid > 0 then return hwid end
+
+    -- 3. RbxAnalyticsService:GetClientId() — Roblox's built-in, always available,
+    --    stable per device. This is the most reliable fallback.
+    ok, id = pcall(function()
         return game:GetService("RbxAnalyticsService"):GetClientId()
     end)
-    if s and id and #id > 0 then return id end
-    -- Fallback: user id (NOT recommended — keys would be shareable across devices
-    -- signed into the same account, but it's better than nothing).
-    return tostring(game.Players.LocalPlayer.UserId)
+    if ok and type(id) == "string" and #id > 0 then return id end
+
+    -- 4. Last resort: user ID. NOT a true HWID — two devices on the same
+    --    account would share a key. But better than crashing.
+    return "uid_" .. tostring(game.Players.LocalPlayer.UserId)
 end
 
 ------------------------------------------------------------

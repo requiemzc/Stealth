@@ -79,38 +79,44 @@ local function loadScript(scriptEntry)
         return
     end
 
-    WindUI:Notify({
-        Title = "Stealth",
-        Content = "Loading " .. scriptEntry.name .. "...",
-        Duration = 2,
-        Icon = "solar:download-minimalistic-bold",
-    })
-
-    local ok, err = pcall(function()
-        loadstring(game:HttpGet(scriptEntry.url))()
-    end)
-
-    if ok then
-        loaded[scriptEntry.url] = true
+    -- Run in a spawned thread so we can yield without blocking the UI callback.
+    task.spawn(function()
         WindUI:Notify({
             Title = "Stealth",
-            Content = scriptEntry.name .. " loaded!",
+            Content = "Loading " .. scriptEntry.name .. "...",
             Duration = 2,
-            Icon = "solar:check-circle-bold",
+            Icon = "solar:download-minimalistic-bold",
         })
-        -- Close the launcher so only the loaded script's UI remains.
-        -- Slight delay so the success notification has time to render.
-        task.delay(0.6, function()
-            pcall(function() Window:Destroy() end)
+
+        -- Give the notification a moment to render.
+        task.wait(0.3)
+
+        -- Destroy the launcher window FIRST, before loading the new script.
+        -- WindUI only supports one active window — if we load the new script
+        -- while the launcher is still open, the two windows conflict and the
+        -- wrong one gets destroyed.
+        pcall(function() Window:Destroy() end)
+
+        -- Now load the script. It will create its own fresh WindUI window
+        -- that fully replaces this launcher.
+        local ok, err = pcall(function()
+            loadstring(game:HttpGet(scriptEntry.url))()
         end)
-    else
-        WindUI:Notify({
-            Title = "Stealth",
-            Content = "Failed to load " .. scriptEntry.name .. ": " .. tostring(err),
-            Duration = 6,
-            Icon = "solar:danger-triangle-bold",
-        })
-    end
+
+        if ok then
+            loaded[scriptEntry.url] = true
+            -- The loaded script shows its own "loaded!" notification.
+        else
+            -- If loading failed, the launcher is already gone.
+            -- Show the error via WindUI's global Notify.
+            WindUI:Notify({
+                Title = "Stealth",
+                Content = "Failed to load " .. scriptEntry.name .. ": " .. tostring(err),
+                Duration = 6,
+                Icon = "solar:danger-triangle-bold",
+            })
+        end
+    end)
 end
 
 ------------------------------------------------------------
