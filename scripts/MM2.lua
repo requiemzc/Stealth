@@ -44772,13 +44772,17 @@ do
     --
     -- The problem: WindUI calls task.spawn internally for notifications and
     -- animations, and those new threads inherit the DEFAULT identity, not
-    -- the elevated one. So setthreadidentity(2) at the top of the script
-    -- only helps the initial thread, not WindUI's internal threads.
+    -- the elevated one.
     --
-    -- Fix: patch task.spawn and task.defer globally so every new thread
-    -- gets identity 8 (maximum). This is safe — higher identity only
-    -- grants MORE permissions, never fewer. Game-logic threads continue
-    -- to work normally.
+    -- Fix: patch task.spawn / task.defer / task.delay globally so every
+    -- new thread gets identity 8 (maximum) before running.
+    --
+    -- BUT: `task` is a readonly table in Luau, so `task.spawn = ...` throws
+    -- "attempt to modify a readonly table". We try 3 approaches in order:
+    --   1. setreadonly(task, false)  → then direct assignment
+    --   2. hookfunction              → executor-supported function hooking
+    --   3. Fall back to just elevating the main thread (most executors
+    --      propagate identity to child threads automatically)
 
     local function _elevateIdentity()
         -- Try every known identity-setting function. Different executors
@@ -44792,41 +44796,96 @@ do
 
     _elevateIdentity()
 
-    -- Patch task.spawn so every thread WindUI creates gets identity 8.
-    local _origTaskSpawn = task.spawn
-    task.spawn = function(fn, ...)
-        local args = { ... }
-        return _origTaskSpawn(function()
-            _elevateIdentity()
-            if type(fn) == "function" then
-                return fn(table.unpack or unpack, args)
+    local _taskPatched = false
+
+    -- Approach 1: unfreeze `task` table and patch directly.
+    if not _taskPatched then
+        pcall(function()
+            if setreadonly then setreadonly(task, false) end
+            if not isreadonly or not isreadonly(task) then
+                local _origSpawn = task.spawn
+                local _origDefer  = task.defer
+                local _origDelay  = task.delay
+
+                task.spawn = function(fn, ...)
+                    local args = { ... }
+                    return _origSpawn(function()
+                        _elevateIdentity()
+                        if type(fn) == "function" then
+                            return fn(table.unpack or unpack, args)
+                        end
+                    end)
+                end
+
+                task.defer = function(fn, ...)
+                    local args = { ... }
+                    return _origDefer(function()
+                        _elevateIdentity()
+                        if type(fn) == "function" then
+                            return fn(table.unpack or unpack, args)
+                        end
+                    end)
+                end
+
+                task.delay = function(time, fn, ...)
+                    local args = { ... }
+                    return _origDelay(time, function()
+                        _elevateIdentity()
+                        if type(fn) == "function" then
+                            return fn(table.unpack or unpack, args)
+                        end
+                    end)
+                end
+
+                _taskPatched = true
             end
         end)
     end
 
-    -- Patch task.defer the same way.
-    local _origTaskDefer = task.defer
-    task.defer = function(fn, ...)
-        local args = { ... }
-        return _origTaskDefer(function()
-            _elevateIdentity()
-            if type(fn) == "function" then
-                return fn(table.unpack or unpack, args)
-            end
+    -- Approach 2: use hookfunction (executor-supported C function hooking).
+    if not _taskPatched and hookfunction then
+        pcall(function()
+            local _origSpawn = task.spawn
+            local _origDefer  = task.defer
+            local _origDelay  = task.delay
+
+            hookfunction(_origSpawn, newcclosure(function(fn, ...)
+                local args = { ... }
+                return _origSpawn(function()
+                    _elevateIdentity()
+                    if type(fn) == "function" then
+                        return fn(table.unpack or unpack, args)
+                    end
+                end)
+            end))
+
+            hookfunction(_origDefer, newcclosure(function(fn, ...)
+                local args = { ... }
+                return _origDefer(function()
+                    _elevateIdentity()
+                    if type(fn) == "function" then
+                        return fn(table.unpack or unpack, args)
+                    end
+                end)
+            end))
+
+            hookfunction(_origDelay, newcclosure(function(time, fn, ...)
+                local args = { ... }
+                return _origDelay(time, function()
+                    _elevateIdentity()
+                    if type(fn) == "function" then
+                        return fn(table.unpack or unpack, args)
+                    end
+                end)
+            end))
+
+            _taskPatched = true
         end)
     end
 
-    -- Also patch task.delay (used by some UI libraries).
-    local _origTaskDelay = task.delay
-    task.delay = function(time, fn, ...)
-        local args = { ... }
-        return _origTaskDelay(time, function()
-            _elevateIdentity()
-            if type(fn) == "function" then
-                return fn(table.unpack or unpack, args)
-            end
-        end)
-    end
+    -- If neither approach worked, _elevateIdentity() on the main thread is
+    -- still in effect. Most modern executors propagate identity to child
+    -- threads, so this is usually enough.
 
     local WindUI = loadstring(game:HttpGet(
         "https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"
