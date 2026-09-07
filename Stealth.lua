@@ -151,7 +151,7 @@ Patriot.Appearance = {
 ------------------------------------------------------------
 Patriot.Links = {
     GetKey  = STEALTH_API .. "/",                       -- "Get Key" button opens the website
-    Discord = "https://discord.gg/yourserver",          -- >>> replace with your invite <<<
+    Discord = "https://discord.gg/hqE5drDHF7",          -- >>> replace with your invite <<<
 }
 
 ------------------------------------------------------------
@@ -198,9 +198,9 @@ Patriot.Theme = {
 ------------------------------------------------------------
 Patriot.Changelog = {
     {Version = "v1.0.0", Date = "Sep 7, 2026", Changes = {
-        "Initial Stealth release",
-        "Key validation against stealth.space-z.ai",
-        "15-minute key rotation with HWID locking",
+        "Novachrono was here",
+        "francy was here",
+        "key expires after 15min",
     }},
 }
 
