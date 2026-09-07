@@ -9,9 +9,17 @@
 ------------------------------------------------------------
 -- 1. Load WindUI
 ------------------------------------------------------------
+-- WindUI requires elevated thread identity to create Font objects and
+-- access certain Instance APIs. Without this, WindUI's Notify() and font
+-- loading crash with "lacking capability Plugin".
+pcall(function() if setthreadidentity then setthreadidentity(2) end end)
+
 local WindUI = loadstring(game:HttpGet(
     "https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"
 ))()
+
+-- Re-assert identity after loadstring (it may reset thread identity).
+pcall(function() if setthreadidentity then setthreadidentity(2) end end)
 
 ------------------------------------------------------------
 -- 2. Script catalog
