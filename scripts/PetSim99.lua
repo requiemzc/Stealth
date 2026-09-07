@@ -1,33 +1,57 @@
--- [[ Pet Sim 99 | Stealth script ]]
+-- [[ Pet Sim 99 | Stealth script (WindUI) ]]
 -- Replace this placeholder with your real Pet Sim 99 hub.
 
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local WindUI = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"
+))()
 
-local Window = Rayfield:CreateWindow({
-    Name = "Stealth | Pet Sim 99",
-    LoadingTitle = "Pet Sim 99",
-    LoadingSubtitle = "by Stealth",
-    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "PetSim99" },
+local Window = WindUI:CreateWindow({
+    Title = "Stealth | Pet Sim 99",
+    Folder = "Stealth",
+    Icon = "solar:paw-bold-duotone",
+    NewElements = true,
+    Topbar = { Height = 44, ButtonsType = "Mac" },
 })
 
-local Tab = Window:CreateTab("Main", "paw-print")
-Tab:CreateSection("Auto")
-Tab:CreateToggle({
-    Name = "Auto Hatch",
-    CurrentValue = false,
-    Flag = "AutoHatch",
+local Section = Window:Section({ Title = "Auto" })
+local Tab = Section:Tab({
+    Title = "Main",
+    Icon = "solar:play-bold",
+    IconShape = "Square",
+    Border = true,
+})
+
+Tab:Section({ Title = "Automation" })
+
+Tab:Toggle({
+    Title = "Auto Hatch",
+    Desc = "Hatches eggs automatically.",
     Callback = function(v)
         print("[PetSim99] Auto Hatch:", v)
     end,
 })
-Tab:CreateToggle({
-    Name = "Auto Sell",
-    CurrentValue = false,
-    Flag = "AutoSell",
+Tab:Space({ Columns = 1 })
+
+Tab:Toggle({
+    Title = "Auto Sell",
+    Desc = "Sells pets that match your filter.",
     Callback = function(v)
         print("[PetSim99] Auto Sell:", v)
     end,
 })
+Tab:Space({ Columns = 1 })
 
-Rayfield:LoadConfiguration()
-Rayfield:Notify({ Title = "Pet Sim 99", Content = "Script loaded!", Duration = 3 })
+Tab:Toggle({
+    Title = "Auto Upgrade Pets",
+    Desc = "Upgrades pets using available coins.",
+    Callback = function(v)
+        print("[PetSim99] Auto Upgrade:", v)
+    end,
+})
+
+WindUI:Notify({
+    Title = "Pet Sim 99",
+    Content = "Script loaded!",
+    Duration = 3,
+    Icon = "solar:check-circle-bold",
+})

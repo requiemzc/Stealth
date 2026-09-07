@@ -1,56 +1,59 @@
--- [[ Stealth | Main launcher with script selector menu ]]
+-- [[ Stealth | Main launcher with script selector menu (WindUI) ]]
 --
 -- This file is loaded by Stealth.lua AFTER the user's key is validated.
--- It shows a Rayfield UI where the user can pick which script to run.
+-- It shows a WindUI menu where the user can pick which script to run.
 --
 -- Each script lives in its own file under the `scripts/` folder of the repo.
--- Adding a new script = drop the file in `scripts/` + add one line to SCRIPTS below.
+-- Adding a new script = drop the file in `scripts/` + add one entry to SCRIPTS below.
 --
 -- Repository: https://github.com/requiemzc/Stealth
+-- WindUI:     https://github.com/Footagesus/WindUI
 
 ------------------------------------------------------------
--- 1. Load Rayfield
+-- 1. Load WindUI
 ------------------------------------------------------------
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local WindUI = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"
+))()
 
 ------------------------------------------------------------
 -- 2. Script catalog
 --    Add one entry per script you want to show in the menu.
 --    `name`  — display name shown on the button.
+--    `desc`  — short description shown under the button.
+--    `icon`  — Lucide / Solar icon name (https://lucide.dev or https://icones.js.org/collection/solar).
 --    `url`   — RAW URL of the script file (raw.githubusercontent.com).
---    `desc`  — short description shown next to the button.
---    `icon`  — optional Lucide icon name (https://lucide.dev/icons/).
 ------------------------------------------------------------
 local SCRIPTS = {
     {
         name = "Defeat Anime RNG",
         desc = "Auto-roll, auto-farm waves, auto-buy weapons, prestige.",
-        icon = "sprout",
+        icon = "solar:sprout-bold-duotone",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/DefeatAnimeRNG.lua",
     },
     {
         name = "Blox Fruits",
         desc = "Auto-farm, auto-raid, fruit notifier.",
-        icon = "sword",
+        icon = "solar:sword-bold-duotone",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/BloxFruits.lua",
     },
     {
         name = "Pet Sim 99",
         desc = "Auto-hatch, auto-sell, auto-upgrade pets.",
-        icon = "paw-print",
+        icon = "solar:paw-bold-duotone",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/PetSim99.lua",
     },
     {
         name = "Universal ESP",
         desc = "Player ESP, name tags, distance — works in any game.",
-        icon = "eye",
+        icon = "solar:eye-bold-duotone",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/Universal.lua",
     },
     -- >>> ADD MORE SCRIPTS HERE <<<
     -- {
     --     name = "My New Script",
     --     desc = "What it does.",
-    --     icon = "package",
+    --     icon = "solar:package-bold-duotone",
     --     url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MyNewScript.lua",
     -- },
 }
@@ -70,20 +73,20 @@ local loaded = {}
 
 local function loadScript(scriptEntry)
     if loaded[scriptEntry.url] then
-        Rayfield:Notify({
+        WindUI:Notify({
             Title = "Stealth",
             Content = scriptEntry.name .. " is already loaded.",
             Duration = 3,
-            Image = "info",
+            Icon = "solar:info-circle-bold",
         })
         return
     end
 
-    Rayfield:Notify({
+    WindUI:Notify({
         Title = "Stealth",
         Content = "Loading " .. scriptEntry.name .. "...",
         Duration = 2,
-        Image = "loader-circle",
+        Icon = "solar:download-minimalistic-bold",
     })
 
     local ok, err = pcall(function()
@@ -92,18 +95,18 @@ local function loadScript(scriptEntry)
 
     if ok then
         loaded[scriptEntry.url] = true
-        Rayfield:Notify({
+        WindUI:Notify({
             Title = "Stealth",
             Content = scriptEntry.name .. " loaded successfully!",
             Duration = 4,
-            Image = "check",
+            Icon = "solar:check-circle-bold",
         })
     else
-        Rayfield:Notify({
+        WindUI:Notify({
             Title = "Stealth",
             Content = "Failed to load " .. scriptEntry.name .. ": " .. tostring(err),
             Duration = 6,
-            Image = "x",
+            Icon = "solar:danger-triangle-bold",
         })
     end
 end
@@ -111,72 +114,108 @@ end
 ------------------------------------------------------------
 -- 4. Window
 ------------------------------------------------------------
-local Window = Rayfield:CreateWindow({
-    Name              = "Stealth Hub",
-    Icon              = 0,
-    LoadingTitle      = "Stealth Hub",
-    LoadingSubtitle   = "by requiemzc",
-    Theme             = "Default",
-    ToggleUIKeybind   = Enum.KeyCode.RightShift,
-    DisableRayfieldPrompts = false,
-    DisableBuildWarnings   = false,
-    ConfigurationSaving = {
-        Enabled   = true,
-        FolderName = "Stealth",
-        FileName  = "StealthHub",
+local Window = WindUI:CreateWindow({
+    Title = "Stealth Hub",
+    Folder = "StealthHub",
+    Icon = "solar:shield-keyhole-bold-duotone",
+    NewElements = true,
+    HideSearchBar = false,
+
+    OpenButton = {
+        Title = "Open Stealth Hub",
+        CornerRadius = UDim.new(1, 0),
+        StrokeThickness = 3,
+        Enabled = true,
+        Draggable = true,
+        OnlyMobile = false,
+        Scale = 0.5,
+        Color = ColorSequence.new(
+            Color3.fromHex("#30FF6A"),
+            Color3.fromHex("#e7ff2f")
+        ),
     },
-    Discord = { Enabled = false },
-    KeySystem = false,
+    Topbar = {
+        Height = 44,
+        ButtonsType = "Mac",
+    },
 })
 
 ------------------------------------------------------------
 -- 5. Scripts tab — one button per script in the catalog
 ------------------------------------------------------------
-local ScriptsTab = Window:CreateTab("Scripts", "package")
+local ScriptsSection = Window:Section({
+    Title = "Scripts",
+})
 
-ScriptsTab:CreateSection("Available scripts")
-ScriptsTab:CreateLabel("Current game: " .. gameName)
-ScriptsTab:CreateLabel("Place ID: " .. tostring(PLACE_ID))
-ScriptsTab:CreateDivider()
+local ScriptsTab = ScriptsSection:Tab({
+    Title = "Available",
+    Icon = "solar:package-bold",
+    IconShape = "Square",
+    Border = true,
+})
+
+ScriptsTab:Section({ Title = "Current game" })
+ScriptsTab:Section({ Title = "Name: " .. gameName, TextTransparency = 0.35 })
+ScriptsTab:Section({ Title = "Place ID: " .. tostring(PLACE_ID), TextTransparency = 0.35 })
+ScriptsTab:Space({ Columns = 1 })
+
+ScriptsTab:Section({ Title = "Available scripts" })
 
 for _, s in ipairs(SCRIPTS) do
-    ScriptsTab:CreateButton({
-        Name     = "Load: " .. s.name,
+    local entry = s
+    ScriptsTab:Button({
+        Title = "Load: " .. entry.name,
+        Desc = entry.desc or "",
+        Icon = entry.icon or "solar:package-bold",
+        Color = Color3.fromHex("#30FF6A"),
+        Justify = "Left",
+        IconAlign = "Left",
         Callback = function()
-            loadScript(s)
+            loadScript(entry)
         end,
     })
-    if s.desc then
-        ScriptsTab:CreateLabel(s.desc)
-    end
-    ScriptsTab:CreateDivider()
+    ScriptsTab:Space({ Columns = 1 })
 end
 
 ------------------------------------------------------------
 -- 6. Info tab
 ------------------------------------------------------------
-local InfoTab = Window:CreateTab("Info", "info")
+local InfoSection = Window:Section({ Title = "Info" })
+local InfoTab = InfoSection:Tab({
+    Title = "About",
+    Icon = "solar:info-circle-bold",
+    IconShape = "Square",
+    Border = true,
+})
 
-InfoTab:CreateSection("About")
-InfoTab:CreateLabel("Stealth Hub — multi-script launcher")
-InfoTab:CreateLabel("Repository: github.com/requiemzc/Stealth")
-InfoTab:CreateLabel("Key system: stealth.space-z.ai")
-InfoTab:CreateDivider()
-InfoTab:CreateLabel("Press RightShift to toggle this UI.")
-InfoTab:CreateLabel("Loaded scripts keep running even if you close this menu.")
+InfoTab:Section({ Title = "About Stealth Hub" })
+InfoTab:Section({
+    Title = "Stealth Hub is a multi-script launcher. Pick a script from the Scripts tab and click Load.\n\nRepository: github.com/requiemzc/Stealth\nKey system: stealth.space-z.ai",
+    TextTransparency = 0.35,
+})
+InfoTab:Space({ Columns = 1 })
 
-InfoTab:CreateSection("Discord")
-InfoTab:CreateButton({
-    Name = "Join Discord",
+InfoTab:Section({ Title = "Controls" })
+InfoTab:Section({
+    Title = "Click the floating green button to toggle this UI.\nLoaded scripts keep running even if you close this menu.",
+    TextTransparency = 0.35,
+})
+InfoTab:Space({ Columns = 1 })
+
+InfoTab:Section({ Title = "Discord" })
+InfoTab:Button({
+    Title = "Copy Discord invite",
+    Icon = "solar:chat-round-dots-bold",
+    Color = Color3.fromHex("#5865F2"),
+    Justify = "Left",
+    IconAlign = "Left",
     Callback = function()
-        pcall(function()
-            setclipboard("https://discord.gg/yourserver")  -- >>> replace <<<
-        end)
-        Rayfield:Notify({
+        pcall(function() setclipboard("https://discord.gg/yourserver") end)  -- >>> replace <<<
+        WindUI:Notify({
             Title = "Discord",
             Content = "Invite copied to clipboard!",
             Duration = 3,
-            Image = "discord",
+            Icon = "solar:chat-round-dots-bold",
         })
     end,
 })
@@ -184,28 +223,39 @@ InfoTab:CreateButton({
 ------------------------------------------------------------
 -- 7. Settings tab
 ------------------------------------------------------------
-local SettingsTab = Window:CreateTab("Settings", "settings")
+local SettingsSection = Window:Section({ Title = "Settings" })
+local SettingsTab = SettingsSection:Tab({
+    Title = "Hub",
+    Icon = "solar:settings-bold",
+    IconShape = "Square",
+    Border = true,
+})
 
-SettingsTab:CreateSection("Hub")
-SettingsTab:CreateButton({
-    Name = "Unload Stealth Hub",
+SettingsTab:Section({ Title = "Hub controls" })
+SettingsTab:Button({
+    Title = "Unload Stealth Hub",
+    Desc = "Closes the launcher UI. Already-loaded scripts keep running.",
+    Icon = "solar:close-circle-bold",
+    Color = Color3.fromHex("#ff4830"),
+    Justify = "Left",
+    IconAlign = "Left",
     Callback = function()
-        Rayfield:Destroy()
+        Window:Destroy()
     end,
 })
-SettingsTab:CreateLabel("This closes the launcher UI. Already-loaded scripts keep running.")
 
-SettingsTab:CreateDivider()
-SettingsTab:CreateLabel("Configuration is auto-saved by Rayfield.")
+SettingsTab:Space({ Columns = 1 })
+SettingsTab:Section({
+    Title = "Configuration is auto-saved by WindUI to the StealthHub folder.",
+    TextTransparency = 0.35,
+})
 
 ------------------------------------------------------------
--- 8. Final
+-- 8. Welcome notification
 ------------------------------------------------------------
-Rayfield:LoadConfiguration()
-
-Rayfield:Notify({
-    Title   = "Stealth Hub",
+WindUI:Notify({
+    Title = "Stealth Hub",
     Content = "Welcome! Pick a script from the Scripts tab.",
     Duration = 5,
-    Image   = "shield-check",
+    Icon = "solar:shield-keyhole-bold",
 })

@@ -1,33 +1,57 @@
--- [[ Blox Fruits | Stealth script ]]
+-- [[ Blox Fruits | Stealth script (WindUI) ]]
 -- Replace this placeholder with your real Blox Fruits hub.
 
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local WindUI = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"
+))()
 
-local Window = Rayfield:CreateWindow({
-    Name = "Stealth | Blox Fruits",
-    LoadingTitle = "Blox Fruits",
-    LoadingSubtitle = "by Stealth",
-    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "BloxFruits" },
+local Window = WindUI:CreateWindow({
+    Title = "Stealth | Blox Fruits",
+    Folder = "Stealth",
+    Icon = "solar:sword-bold-duotone",
+    NewElements = true,
+    Topbar = { Height = 44, ButtonsType = "Mac" },
 })
 
-local Tab = Window:CreateTab("Main", "sword")
-Tab:CreateSection("Auto Farm")
-Tab:CreateToggle({
-    Name = "Auto Farm Level",
-    CurrentValue = false,
-    Flag = "AutoFarmLevel",
+local Section = Window:Section({ Title = "Farming" })
+local Tab = Section:Tab({
+    Title = "Main",
+    Icon = "solar:play-bold",
+    IconShape = "Square",
+    Border = true,
+})
+
+Tab:Section({ Title = "Auto Farm" })
+
+Tab:Toggle({
+    Title = "Auto Farm Level",
+    Desc = "Auto-attacks the nearest mob for XP.",
     Callback = function(v)
-        print("[BloxFruits] Auto Farm:", v)
+        print("[BloxFruits] Auto Farm Level:", v)
     end,
 })
-Tab:CreateToggle({
-    Name = "Auto Raid",
-    CurrentValue = false,
-    Flag = "AutoRaid",
+Tab:Space({ Columns = 1 })
+
+Tab:Toggle({
+    Title = "Auto Raid",
+    Desc = "Joins and completes raids automatically.",
     Callback = function(v)
         print("[BloxFruits] Auto Raid:", v)
     end,
 })
+Tab:Space({ Columns = 1 })
 
-Rayfield:LoadConfiguration()
-Rayfield:Notify({ Title = "Blox Fruits", Content = "Script loaded!", Duration = 3 })
+Tab:Toggle({
+    Title = "Auto Buy Fragment",
+    Desc = "Buys fragments when enough Beli.",
+    Callback = function(v)
+        print("[BloxFruits] Auto Buy Fragment:", v)
+    end,
+})
+
+WindUI:Notify({
+    Title = "Blox Fruits",
+    Content = "Script loaded!",
+    Duration = 3,
+    Icon = "solar:check-circle-bold",
+})
