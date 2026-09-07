@@ -44916,14 +44916,27 @@ do
         Topbar = { Height = 44, ButtonsType = "Mac" },
     })
 
-    -- Build weapon name list for the dropdown
+    -- Build weapon lookup tables.
+    -- We keep the dropdown entries SHORT (just the weapon name) so they
+    -- don't overflow the dropdown container horizontally. Type + rarity
+    -- are shown in the status paragraph after selection.
     local weaponNames = {}
     local weaponByKey = {}
+    local weaponByName = {}  -- name -> wv (for deduplication)
     for _, wv in ipairs(weaponList) do
-        local display = wv.name .. "  [" .. wv.type .. " — " .. (wv.rarity or "?") .. "]"
-        table.insert(weaponNames, display)
-        weaponByKey[display] = wv
+        local display = wv.name
+        if not weaponByName[display] then
+            weaponByName[display] = wv
+            table.insert(weaponNames, display)
+            weaponByKey[display] = wv
+        else
+            -- Duplicate name — append the key to disambiguate
+            local dedup = display .. " (" .. tostring(wv.key) .. ")"
+            table.insert(weaponNames, dedup)
+            weaponByKey[dedup] = wv
+        end
     end
+    table.sort(weaponNames, function(a, b) return a:lower() < b:lower() end)
 
     ------------------------------------------------------------ Tab: Spawner
     local SpawnSection = Window:Section({ Title = "Spawner" })
@@ -44945,11 +44958,12 @@ do
 
     SpawnTab:Space({ Columns = 1 })
 
-    -- Dropdown with all weapons (WindUI has built-in search in dropdowns)
+    -- Dropdown with all weapons (WindUI has built-in search in dropdowns).
+    -- Entries are SHORT (just the weapon name) to prevent horizontal overflow.
     local WeaponDropdown
     WeaponDropdown = SpawnTab:Dropdown({
         Title = "Weapon",
-        Desc = "Search by name, type, or rarity.",
+        Desc = "Click and type to search.",
         Values = weaponNames,
         Value = nil,
         Multi = false,
