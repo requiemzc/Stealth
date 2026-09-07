@@ -10,16 +10,70 @@
 -- 1. Load WindUI
 ------------------------------------------------------------
 -- WindUI requires elevated thread identity to create Font objects and
--- access certain Instance APIs. Without this, WindUI's Notify() and font
--- loading crash with "lacking capability Plugin".
-pcall(function() if setthreadidentity then setthreadidentity(2) end end)
+-- access certain Instance APIs. Without this, WindUI's Notify() and
+-- font loading crash with "lacking capability Plugin".
+--
+-- The problem: WindUI calls task.spawn internally for notifications and
+-- animations, and those new threads inherit the DEFAULT identity, not
+-- the elevated one. So setthreadidentity alone is not enough.
+--
+-- Fix: patch task.spawn / task.defer / task.delay globally so every
+-- new thread gets identity 8 (maximum).
+
+local function _elevateIdentity()
+    -- Try every known identity-setting function. Different executors
+    -- expose different names. Identity 8 = maximum (executor level).
+    pcall(function() if setthreadidentity then setthreadidentity(8) end end)
+    pcall(function() if setidentity then setidentity(8) end end)
+    pcall(function() if syn and syn.set_thread_identity then syn.set_thread_identity(8) end end)
+    pcall(function() if set_thread_context then set_thread_context(8) end end)
+    pcall(function() if setcontext then setcontext(8) end end)
+end
+
+_elevateIdentity()
+
+-- Patch task.spawn so every thread WindUI creates gets identity 8.
+local _origTaskSpawn = task.spawn
+task.spawn = function(fn, ...)
+    local args = { ... }
+    return _origTaskSpawn(function()
+        _elevateIdentity()
+        if type(fn) == "function" then
+            return fn(table.unpack or unpack, args)
+        end
+    end)
+end
+
+-- Patch task.defer the same way.
+local _origTaskDefer = task.defer
+task.defer = function(fn, ...)
+    local args = { ... }
+    return _origTaskDefer(function()
+        _elevateIdentity()
+        if type(fn) == "function" then
+            return fn(table.unpack or unpack, args)
+        end
+    end)
+end
+
+-- Also patch task.delay (used by some UI libraries).
+local _origTaskDelay = task.delay
+task.delay = function(time, fn, ...)
+    local args = { ... }
+    return _origTaskDelay(time, function()
+        _elevateIdentity()
+        if type(fn) == "function" then
+            return fn(table.unpack or unpack, args)
+        end
+    end)
+end
 
 local WindUI = loadstring(game:HttpGet(
     "https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"
 ))()
 
--- Re-assert identity after loadstring (it may reset thread identity).
-pcall(function() if setthreadidentity then setthreadidentity(2) end end)
+-- Re-assert after loadstring (it may reset identity).
+_elevateIdentity()
 
 ------------------------------------------------------------
 -- 2. Script catalog

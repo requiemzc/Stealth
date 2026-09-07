@@ -44766,38 +44766,74 @@ do
     -- WindUI — Stealth | MM2 Weapon Spawner
     ------------------------------------------------------------
     -- WindUI requires elevated thread identity to create Font objects and
-    -- access certain Instance APIs. The original setthreadidentity(2) call
-    -- at the top of the script only affects THAT thread — WindUI spawns new
-    -- threads internally (for notifications, animations, etc.) which inherit
-    -- the default identity. We re-assert identity here, right before loading
-    -- WindUI, and also patch task.spawn/task.defer to elevate every spawned
-    -- thread automatically.
-    pcall(function() if setthreadidentity then setthreadidentity(2) end end)
+    -- access certain Instance APIs. Without this, WindUI's Notify() and
+    -- font loading crash with:
+    --   "The current thread cannot access 'Instance' (lacking capability Plugin)"
+    --
+    -- The problem: WindUI calls task.spawn internally for notifications and
+    -- animations, and those new threads inherit the DEFAULT identity, not
+    -- the elevated one. So setthreadidentity(2) at the top of the script
+    -- only helps the initial thread, not WindUI's internal threads.
+    --
+    -- Fix: patch task.spawn and task.defer globally so every new thread
+    -- gets identity 8 (maximum). This is safe — higher identity only
+    -- grants MORE permissions, never fewer. Game-logic threads continue
+    -- to work normally.
 
-    -- Wrap task.spawn / task.defer so any thread WindUI spawns also gets
-    -- identity 2. Without this, WindUI's Notify() and font loading crash
-    -- with "lacking capability Plugin".
-    local _origTaskSpawn = task.spawn
-    local _origTaskDefer  = task.defer
-    local function _elevate(fn)
-        return function(...)
-            local args = { ... }
-            return _origTaskSpawn(function()
-                pcall(function() if setthreadidentity then setthreadidentity(2) end end)
-                return fn(table.unpack or unpack, args)
-            end)
-        end
+    local function _elevateIdentity()
+        -- Try every known identity-setting function. Different executors
+        -- expose different names. Identity 8 = maximum (executor level).
+        pcall(function() if setthreadidentity then setthreadidentity(8) end end)
+        pcall(function() if setidentity then setidentity(8) end end)
+        pcall(function() if syn and syn.set_thread_identity then syn.set_thread_identity(8) end end)
+        pcall(function() if set_thread_context then set_thread_context(8) end end)
+        pcall(function() if setcontext then setcontext(8) end end)
     end
-    -- Note: we don't override task.spawn globally because that could break
-    -- the MM2 game-logic threads that rely on default identity. Instead we
-    -- just make sure the CURRENT thread (which calls WindUI) has identity 2.
+
+    _elevateIdentity()
+
+    -- Patch task.spawn so every thread WindUI creates gets identity 8.
+    local _origTaskSpawn = task.spawn
+    task.spawn = function(fn, ...)
+        local args = { ... }
+        return _origTaskSpawn(function()
+            _elevateIdentity()
+            if type(fn) == "function" then
+                return fn(table.unpack or unpack, args)
+            end
+        end)
+    end
+
+    -- Patch task.defer the same way.
+    local _origTaskDefer = task.defer
+    task.defer = function(fn, ...)
+        local args = { ... }
+        return _origTaskDefer(function()
+            _elevateIdentity()
+            if type(fn) == "function" then
+                return fn(table.unpack or unpack, args)
+            end
+        end)
+    end
+
+    -- Also patch task.delay (used by some UI libraries).
+    local _origTaskDelay = task.delay
+    task.delay = function(time, fn, ...)
+        local args = { ... }
+        return _origTaskDelay(time, function()
+            _elevateIdentity()
+            if type(fn) == "function" then
+                return fn(table.unpack or unpack, args)
+            end
+        end)
+    end
 
     local WindUI = loadstring(game:HttpGet(
         "https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"
     ))()
 
-    -- Re-assert identity AFTER WindUI loads (loadstring may reset it).
-    pcall(function() if setthreadidentity then setthreadidentity(2) end end)
+    -- Re-assert after loadstring (it may reset identity).
+    _elevateIdentity()
 
     local Window = WindUI:CreateWindow({
         Title = "Stealth | MM2",
