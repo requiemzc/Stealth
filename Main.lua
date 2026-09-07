@@ -358,7 +358,7 @@ InfoTab:Button({
     Justify = "Left",
     IconAlign = "Left",
     Callback = function()
-        pcall(function() setclipboard("https://discord.gg/yourserver") end)
+        pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
         WindUI:Notify({
             Title = "Discord",
             Content = "Invite copied to clipboard!",
