@@ -149,6 +149,12 @@ local SCRIPTS = {
         icon = "solar:sword-bold-duotone",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MM2.lua",
     },
+{
+        name = "Deagle Arena",
+        desc = "Kill all - works in ranked",
+        icon = "solar:sword-bold-duotone",
+        url = "https://raw.githubusercontent.com/requiemzc/Stealth/refs/heads/main/scripts/Deaglearena.lua",
+    },
     -- >>> ADD MORE SCRIPTS HERE <<<
     -- {
     --     name = "My New Script",
