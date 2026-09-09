@@ -199,7 +199,7 @@ Patriot.Theme = {
 Patriot.Changelog = {
     {Version = "v1.0.0", Date = "Sep 7, 2026", Changes = {
         "Initial Stealth release",
-        "Key validation against stealth.space-z.ai",
+        "Key validation against linkunlocker",
         "15-minute key rotation with HWID locking",
     }},
 }
