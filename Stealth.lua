@@ -150,7 +150,7 @@ Patriot.Appearance = {
 -- 6. Links
 ------------------------------------------------------------
 Patriot.Links = {
-    GetKey  = "https://discord.gg/hqE5drDHF7",           -- "Get Key" button opens your Discord
+    GetKey  = "https://stealth.space-z.ai/keysys",       -- "Get Key" button opens the key system
     Discord = "https://discord.gg/hqE5drDHF7",
 }
 
