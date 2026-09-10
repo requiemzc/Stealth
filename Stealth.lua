@@ -140,12 +140,36 @@ Patriot.Callbacks.OnVerify = function(key)
     if not key or key == "" then return false end
 
     local HttpService = game:GetService("HttpService")
+    local Players = game:GetService("Players")
+    local MarketplaceService = game:GetService("MarketplaceService")
     local hwid = getHWID()
 
-    -- Build the JSON body.
+    -- Collect Roblox context for the Discord webhook log on the server.
+    -- All of these are best-effort — if any fail, we still send the request.
+    local username, userId, placeId, placeName
+    pcall(function()
+        local lp = Players.LocalPlayer
+        username = lp.Name
+        userId = lp.UserId
+    end)
+    pcall(function()
+        placeId = game.PlaceId
+        local info = MarketplaceService:GetProductInfo(game.PlaceId)
+        placeName = info and info.Name or nil
+    end)
+
+    -- Build the JSON body. Include the Roblox context fields so the
+    -- Discord webhook log on the server can identify who redeemed.
     local body
     local ok, err = pcall(function()
-        body = HttpService:JSONEncode({ key = key, hwid = hwid })
+        body = HttpService:JSONEncode({
+            key = key,
+            hwid = hwid,
+            username = username,
+            userId = userId,
+            placeId = placeId,
+            placeName = placeName,
+        })
     end)
     if not ok or not body then
         return { valid = false, error = "CLIENT_ERROR", message = "Failed to encode request: " .. tostring(err) }
