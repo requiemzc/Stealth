@@ -71,10 +71,71 @@ local function getHWID()
 end
 
 ------------------------------------------------------------
--- 4. Key validation — calls https://sstealth.vercel.app/api/validate
+-- 4. Key persistence helpers (must come before OnVerify)
+------------------------------------------------------------
+-- Two layers of persistence:
+--   1. Patriot's built-in Storage (handles its own UI state, enabled below)
+--   2. Our writefile/readfile wrapper (more robust, works even if
+--      Patriot's storage breaks across versions). After a successful
+--      OnVerify we save the key locally; on script load we check
+--      for it and inject it into Patriot before Launch so the user
+--      never sees the key prompt again on the same executor.
+
+local KEY_FILE_NAME = "Stealth_Key.txt"
+
+local function safeReadFile(name)
+    if not readfile then return nil end
+    local ok, content = pcall(function() return readfile(name) end)
+    if ok and type(content) == "string" and #content > 0 then
+        return content
+    end
+    return nil
+end
+
+local function safeWriteFile(name, content)
+    if not writefile then return false end
+    local ok = pcall(function() writefile(name, content) end)
+    return ok
+end
+
+local function safeDeleteFile(name)
+    if not delfile then return end
+    pcall(function() delfile(name) end)
+end
+
+-- Persist a key after successful validation.
+local function saveKey(key)
+    safeWriteFile(KEY_FILE_NAME, key or "")
+end
+
+-- Clear the saved key (e.g. when validation fails with KEY_NOT_FOUND
+-- or KEY_EXPIRED, the saved key is stale and shouldn't be reloaded).
+local function clearSavedKey()
+    safeDeleteFile(KEY_FILE_NAME)
+end
+
+-- Try to load a previously-saved key from disk.
+local function loadSavedKey()
+    local content = safeReadFile(KEY_FILE_NAME)
+    if content then
+        content = content:match("^%s*(.-)%s*$") or content
+        if content:find("^FREE_") then
+            return content
+        end
+    end
+    return nil
+end
+
+------------------------------------------------------------
+-- 4b. Key validation — calls https://sstealth.vercel.app/api/validate
 ------------------------------------------------------------
 -- Returns true if the key is valid (and locks it to this HWID on first use),
 -- false otherwise. Patriot also accepts a detailed table response.
+--
+-- On success, the (possibly new) claimed key from the server response is
+-- persisted to disk so the next script execution can auto-load it.
+-- On failure with KEY_NOT_FOUND/KEY_EXPIRED/HWID_LOCKED, the saved key is
+-- cleared so we don't keep retrying with a stale one.
 Patriot.Callbacks.OnVerify = function(key)
     if not key or key == "" then return false end
 
@@ -120,7 +181,20 @@ Patriot.Callbacks.OnVerify = function(key)
     end
 
     if data.valid == true then
+        -- Persist the key for next time. If the server returned a freshly
+        -- claimed key (longer TTL, HWID-locked), use that one — otherwise
+        -- save the original key the user entered.
+        local keyToSave = (type(data.key) == "string" and #data.key > 0) and data.key or key
+        saveKey(keyToSave)
         return true
+    end
+
+    -- Clear any saved key on auth-style failures so we don't keep
+    -- retrying with a stale one.
+    if data.error == "KEY_NOT_FOUND"
+    or data.error == "KEY_EXPIRED"
+    or data.error == "HWID_LOCKED" then
+        clearSavedKey()
     end
 
     -- Map server error codes to friendly messages.
@@ -157,11 +231,39 @@ Patriot.Links = {
 ------------------------------------------------------------
 -- 7. Storage — remember the user's key between sessions
 ------------------------------------------------------------
+-- Two layers of persistence:
+--   1. Patriot's built-in Storage (handles its own UI state)
+--   2. Our writefile/readfile wrapper (more robust, works even if
+--      Patriot's storage breaks across versions). After a successful
+--      OnVerify we save the key locally; on script load we check
+--      for it and inject it into Patriot before Launch so the user
+--      never sees the key prompt again on the same executor.
 Patriot.Storage = {
     FileName = "Stealth_Key",
     Remember = true,
-    AutoLoad = false,
+    AutoLoad = true,
 }
+
+------------------------------------------------------------
+-- 7b. Inject any saved key into Patriot before Launch
+------------------------------------------------------------
+-- Pre-launch: if we have a saved key, tell Patriot to use it.
+-- Patriot exposes `Patriot:AutoLoadKey(key)` (or `Patriot.SavedKey = key`
+-- depending on the version). We try every known method.
+local function tryInjectSavedKey(key)
+    if not key then return end
+    pcall(function() Patriot.SavedKey = key end)
+    pcall(function() if Patriot.SetKey then Patriot:SetKey(key) end end)
+    pcall(function() if Patriot.AutoLoadKey then Patriot:AutoLoadKey(key) end end)
+    pcall(function() if Patriot.LoadKey then Patriot:LoadKey(key) end end)
+end
+
+-- On script load, try to recover any saved key from disk.
+local savedKey = loadSavedKey()
+if savedKey then
+    print("[Stealth] Found saved key, attempting auto-load...")
+    tryInjectSavedKey(savedKey)
+end
 
 ------------------------------------------------------------
 -- 8. Options
