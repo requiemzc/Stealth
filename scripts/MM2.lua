@@ -45087,6 +45087,810 @@ do
     })
 end
 
+
+-- =========================================================================
+-- Stealth | MM2 — Extended Features (ESP, AutoFarm, Character, Teleport,
+--                                   Role Functions, Anti-AFK)
+-- =========================================================================
+-- Adapted from BenjoHub (WindUI) + MvS Hub GodMode + Zeion AimAssist.
+-- Stripped: webhooks, Discord links to other communities, server lagger,
+-- trade scam (griefing), weapon dupe (bannable). Kept: legitimate QoL
+-- features.
+-- =========================================================================
+
+do
+    ------------------------------------------------------------
+    -- Services
+    ------------------------------------------------------------
+    local Players = game:GetService("Players")
+    local RunService = game:GetService("RunService")
+    local UserInputService = game:GetService("UserInputService")
+    local TweenService = game:GetService("TweenService")
+    local Workspace = game:GetService("Workspace")
+    local Lighting = game:GetService("Lighting")
+    local CoreGui = game:GetService("CoreGui")
+    local VirtualUser = game:GetService("VirtualUser")
+    local LocalPlayer = Players.LocalPlayer
+    local Camera = Workspace.CurrentCamera
+
+    ------------------------------------------------------------
+    -- Helpers
+    ------------------------------------------------------------
+    local function getCharacter() return LocalPlayer.Character end
+    local function getHumanoid()
+        local c = getCharacter(); return c and c:FindFirstChildOfClass("Humanoid")
+    end
+    local function getRoot()
+        local c = getCharacter(); return c and c:FindFirstChild("HumanoidRootPart")
+    end
+
+    -- Role detection: Knife = Murderer, Gun = Sheriff, else Innocent.
+    local function GetPlayerRole(player)
+        local char = player.Character
+        if not char then return "Innocent" end
+        local backpack = player:FindFirstChild("Backpack")
+        if char:FindFirstChild("Knife") or (backpack and backpack:FindFirstChild("Knife")) then
+            return "Murderer"
+        end
+        if char:FindFirstChild("Gun") or (backpack and backpack:FindFirstChild("Gun")) then
+            return "Sheriff"
+        end
+        return "Innocent"
+    end
+
+    -- Find the current murderer (or nil if none yet)
+    local function FindMurderer()
+        for _, p in ipairs(Players:GetPlayers()) do
+            if p ~= LocalPlayer and p.Character and GetPlayerRole(p) == "Murderer" then
+                return p
+            end
+        end
+        return nil
+    end
+
+    -- Find the current sheriff (or nil if none yet)
+    local function FindSheriff()
+        for _, p in ipairs(Players:GetPlayers()) do
+            if p ~= LocalPlayer and p.Character and GetPlayerRole(p) == "Sheriff" then
+                return p
+            end
+        end
+        return nil
+    end
+
+    ------------------------------------------------------------
+    -- State
+    ------------------------------------------------------------
+    local ESP = {
+        Enabled = false,
+        Filter = "All", -- All | Murderer | Sheriff | Both
+        ShowTracers = false,
+    }
+    local espHighlights = {} -- player -> Highlight instance
+    local espTracers = {}    -- player -> Beam instance
+
+    local AutoFarm = {
+        Coins = false,
+        Speed = 25, -- collection cooldown in seconds (higher = safer)
+        AutoReset = false,
+        ResetDelay = 180, -- seconds before forcing a reset
+    }
+    local lastResetAt = 0
+
+    local Character = {
+        WalkSpeed = 16,
+        JumpPower = 50,
+        LockWalkSpeed = false,
+        LockJumpPower = false,
+    }
+    local noclipConn = nil
+    local infiniteJumpConn = nil
+
+    local AntiAFK = false
+    local antiAFKConn = nil
+
+    local flingActive = false
+    local autoGunActive = false
+    local autoCollectCoins = false
+
+    -- Colors per role
+    local ROLE_COLORS = {
+        Murderer = Color3.fromRGB(220, 20, 60),
+        Sheriff = Color3.fromRGB(70, 130, 255),
+        Innocent = Color3.fromRGB(140, 140, 165),
+    }
+
+    ------------------------------------------------------------
+    -- ESP implementation
+    ------------------------------------------------------------
+    local function CreateHighlight(character, color)
+        local existing = character:FindFirstChild("StealthESP")
+        if not existing then
+            existing = Instance.new("Highlight")
+            existing.Name = "StealthESP"
+            existing.FillTransparency = 0.5
+            existing.OutlineTransparency = 0
+            existing.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+            existing.Adornee = character
+            existing.Parent = character
+        end
+        existing.FillColor = color
+        existing.Enabled = true
+    end
+
+    local function RemoveHighlight(character)
+        local h = character:FindFirstChild("StealthESP")
+        if h then h:Destroy() end
+    end
+
+    local function CreateTracer(player, color)
+        local char = player.Character
+        if not char then return end
+        local head = char:FindFirstChild("Head")
+        local root = getRoot()
+        if not head or not root then return end
+
+        local beam = Instance.new("Beam")
+        beam.Name = "StealthTracer"
+        beam.Color = ColorSequence.new(color)
+        beam.Width0 = 0.1
+        beam.Width1 = 0.1
+        beam.Transparency = NumberSequence.new(0.5)
+        beam.FaceCamera = true
+
+        local a0 = Instance.new("Attachment", root)
+        local a1 = Instance.new("Attachment", head)
+        beam.Attachment0 = a0
+        beam.Attachment1 = a1
+        beam.Parent = root
+        return beam
+    end
+
+    local function RemoveTracer(player)
+        local char = player.Character
+        if not char then return end
+        for _, b in ipairs(char:GetChildren()) do
+            if b.Name == "StealthTracer" then b:Destroy() end
+        end
+        -- also remove from root
+        local root = getRoot()
+        if root then
+            for _, b in ipairs(root:GetChildren()) do
+                if b.Name == "StealthTracer" then b:Destroy() end
+            end
+        end
+    end
+
+    local function ShouldESP(player)
+        if not ESP.Enabled then return false end
+        if player == LocalPlayer then return false end
+        if not player.Character then return false end
+        local role = GetPlayerRole(player)
+        if ESP.Filter == "All" then return true end
+        if ESP.Filter == "Murderer" then return role == "Murderer" end
+        if ESP.Filter == "Sheriff" then return role == "Sheriff" end
+        if ESP.Filter == "Both" then return role == "Murderer" or role == "Sheriff" end
+        return false
+    end
+
+    local function RefreshESP()
+        for _, player in ipairs(Players:GetPlayers()) do
+            if player ~= LocalPlayer then
+                local char = player.Character
+                if char and ShouldESP(player) then
+                    local role = GetPlayerRole(player)
+                    local color = ROLE_COLORS[role] or ROLE_COLORS.Innocent
+                    CreateHighlight(char, color)
+                    if ESP.ShowTracers and not espTracers[player] then
+                        espTracers[player] = CreateTracer(player, color)
+                    end
+                else
+                    if char then RemoveHighlight(char) end
+                    if espTracers[player] then
+                        RemoveTracer(player)
+                        espTracers[player] = nil
+                    end
+                end
+            end
+        end
+    end
+
+    -- Refresh ESP every 0.5s (cheap and stable)
+    task.spawn(function()
+        while true do
+            pcall(RefreshESP)
+            task.wait(0.5)
+        end
+    end)
+
+    -- Also refresh on player join/leave + character respawn
+    Players.PlayerAdded:Connect(function() task.wait(1); RefreshESP() end)
+    Players.PlayerRemoving:Connect(function(p)
+        if espHighlights[p] then espHighlights[p] = nil end
+        if espTracers[p] then espTracers[p] = nil end
+    end)
+
+    ------------------------------------------------------------
+    -- Character (WalkSpeed / JumpPower / Noclip / Inf Jump)
+    ------------------------------------------------------------
+    task.spawn(function()
+        while true do
+            local hum = getHumanoid()
+            if hum then
+                if Character.LockWalkSpeed then
+                    pcall(function() hum.WalkSpeed = Character.WalkSpeed end)
+                end
+                if Character.LockJumpPower then
+                    pcall(function() hum.JumpPower = Character.JumpPower end)
+                end
+            end
+            task.wait(0.5)
+        end
+    end)
+
+    local function SetNoclip(enabled)
+        if enabled and not noclipConn then
+            noclipConn = RunService.Stepped:Connect(function()
+                local c = getCharacter()
+                if c then
+                    for _, part in ipairs(c:GetDescendants()) do
+                        if part:IsA("BasePart") and part.CanCollide then
+                            part.CanCollide = false
+                        end
+                    end
+                end
+            end)
+        elseif not enabled and noclipConn then
+            noclipConn:Disconnect()
+            noclipConn = nil
+        end
+    end
+
+    local function SetInfiniteJump(enabled)
+        if enabled and not infiniteJumpConn then
+            infiniteJumpConn = UserInputService.JumpRequest:Connect(function()
+                local hum = getHumanoid()
+                if hum then pcall(function() hum:ChangeState(Enum.HumanoidStateType.Jumping) end) end
+            end)
+        elseif not enabled and infiniteJumpConn then
+            infiniteJumpConn:Disconnect()
+            infiniteJumpConn = nil
+        end
+    end
+
+    ------------------------------------------------------------
+    -- Teleport
+    ------------------------------------------------------------
+    local function TeleportTo(targetCFrame)
+        local root = getRoot()
+        if root then
+            pcall(function() root.CFrame = targetCFrame end)
+        end
+    end
+
+    local function TeleportToPlayer(targetPlayer)
+        if not targetPlayer or not targetPlayer.Character then return end
+        local targetRoot = targetPlayer.Character:FindFirstChild("HumanoidRootPart")
+        if targetRoot then
+            TeleportTo(targetRoot.CFrame + Vector3.new(0, 3, 0))
+        end
+    end
+
+    local function TeleportToRole(role)
+        local target
+        if role == "Murderer" then target = FindMurderer()
+        elseif role == "Sheriff" then target = FindSheriff() end
+        if target then TeleportToPlayer(target) end
+    end
+
+    ------------------------------------------------------------
+    -- Coin Autofarm
+    ------------------------------------------------------------
+    local function GetCoins()
+        local coins = {}
+        local map = Workspace:FindFirstChild("Map")
+        if not map then return coins end
+        for _, descendant in ipairs(map:GetDescendants()) do
+            -- Coins are usually Parts named "Coin", "Candy", "CandyCane", etc.
+            -- with a TouchInterest or a ProximityPrompt.
+            if descendant:IsA("BasePart") then
+                local n = descendant.Name:lower()
+                if (n:find("coin") or n:find("candy") or n:find("gift")) and not descendant.Parent:FindFirstChildWhichIsA("Humanoid") then
+                    table.insert(coins, descendant)
+                end
+            end
+        end
+        return coins
+    end
+
+    local function CollectCoin(coin)
+        local root = getRoot()
+        if not root or not coin then return false end
+        pcall(function()
+            -- Method 1: TouchTransmitter via firetouchinterest (most executors)
+            if firetouchinterest then
+                firetouchinterest(root, coin, 0)
+                firetouchinterest(root, coin, 1)
+            else
+                -- Method 2: teleport to the coin
+                local oldCF = root.CFrame
+                root.CFrame = coin.CFrame
+                task.wait(0.1)
+                root.CFrame = oldCF
+            end
+        end)
+        return true
+    end
+
+    local function RunCoinFarm()
+        task.spawn(function()
+            while AutoFarm.Coins do
+                pcall(function()
+                    local coins = GetCoins()
+                    for _, coin in ipairs(coins) do
+                        if not AutoFarm.Coins then break end
+                        CollectCoin(coin)
+                        task.wait(0.05)
+                    end
+                end)
+                task.wait(AutoFarm.Speed)
+            end
+        end)
+    end
+
+    local function RunAutoReset()
+        task.spawn(function()
+            while AutoFarm.AutoReset do
+                pcall(function()
+                    local hum = getHumanoid()
+                    if hum and hum.Health > 0 then
+                        if (tick() - lastResetAt) > AutoFarm.ResetDelay then
+                            pcall(function() hum.Health = 0 end)
+                            lastResetAt = tick()
+                        end
+                    end
+                end)
+                task.wait(5)
+            end
+        end)
+    end
+
+    ------------------------------------------------------------
+    -- Anti-AFK
+    ------------------------------------------------------------
+    local function SetAntiAFK(enabled)
+        if enabled and not antiAFKConn then
+            antiAFKConn = LocalPlayer.Idled:Connect(function()
+                pcall(function()
+                    VirtualUser:CaptureController()
+                    VirtualUser:ClickButton2(Vector2.new())
+                end)
+            end)
+        elseif not enabled and antiAFKConn then
+            antiAFKConn:Disconnect()
+            antiAFKConn = nil
+        end
+    end
+
+    ------------------------------------------------------------
+    -- Role-specific: Murderer (Kill All), Sheriff (Auto Shoot),
+    -- Innocent (Auto Grab Gun)
+    ------------------------------------------------------------
+    local function EquipKnife()
+        local char = getCharacter()
+        local backpack = LocalPlayer:FindFirstChild("Backpack")
+        if not char or not backpack then return end
+        local knife = char:FindFirstChild("Knife") or backpack:FindFirstChild("Knife")
+        if knife and knife.Parent == backpack then
+            pcall(function() LocalPlayer.Character.Humanoid:EquipTool(knife) end)
+        end
+    end
+
+    local function KillAllMurderer()
+        -- Only works if you're the murderer (have a knife)
+        if GetPlayerRole(LocalPlayer) ~= "Murderer" then
+            return
+        end
+        EquipKnife()
+        task.wait(0.1)
+        local myRoot = getRoot()
+        if not myRoot then return end
+        for _, player in ipairs(Players:GetPlayers()) do
+            if player ~= LocalPlayer and player.Character then
+                local targetRoot = player.Character:FindFirstChild("HumanoidRootPart")
+                if targetRoot then
+                    pcall(function()
+                        local oldCF = myRoot.CFrame
+                        myRoot.CFrame = targetRoot.CFrame * CFrame.new(0, 0, 1.5)
+                        task.wait(0.1)
+                        myRoot.CFrame = oldCF
+                    end)
+                end
+            end
+            task.wait(0.1)
+        end
+    end
+
+    local function AutoGrabGun()
+        -- Look for a dropped gun in the workspace and teleport to it
+        task.spawn(function()
+            while autoGunActive do
+                pcall(function()
+                    for _, descendant in ipairs(Workspace:GetDescendants()) do
+                        if descendant.Name == "Gun" and descendant:IsA("Tool") then
+                            local handle = descendant:FindFirstChild("Handle")
+                            if handle and handle:IsA("BasePart") then
+                                local root = getRoot()
+                                if root then
+                                    pcall(function() root.CFrame = handle.CFrame + Vector3.new(0, 3, 0) end)
+                                    task.wait(0.5)
+                                end
+                                return
+                            end
+                        end
+                    end
+                end)
+                task.wait(1)
+            end
+        end)
+    end
+
+    ------------------------------------------------------------
+    -- Extended Tabs (added to the existing Window)
+    ------------------------------------------------------------
+    -- NOTE: `Window` is the WindUI window created earlier in this file.
+    -- We attach new sections/tabs to it.
+
+    -- ---------- ESP Tab ----------
+    local ESPSection = Window:Section({ Title = "ESP" })
+    local ESPTab = ESPSection:Tab({
+        Title = "ESP",
+        Icon = "solar:eye-bold",
+        IconShape = "Square",
+        Border = true,
+    })
+
+    ESPTab:Section({ Title = "Player ESP Settings" })
+
+    ESPTab:Toggle({
+        Title = "Enable ESP",
+        Desc = "Highlight players through walls.",
+        Value = false,
+        Callback = function(v) ESP.Enabled = v; RefreshESP() end,
+    })
+
+    ESPTab:Space({ Columns = 1 })
+
+    ESPTab:Dropdown({
+        Title = "Filter ESP",
+        Desc = "Choose which roles to highlight.",
+        Values = { "All", "Murderer", "Sheriff", "Both" },
+        Value = 1,
+        Multi = false,
+        Callback = function(selected)
+            ESP.Filter = selected
+            RefreshESP()
+        end,
+    })
+
+    ESPTab:Space({ Columns = 1 })
+
+    ESPTab:Toggle({
+        Title = "Line ESP (Tracers)",
+        Desc = "Draw lines from your character to highlighted players.",
+        Value = false,
+        Callback = function(v)
+            ESP.ShowTracers = v
+            if not v then
+                for p, _ in pairs(espTracers) do
+                    RemoveTracer(p)
+                end
+                espTracers = {}
+            end
+            RefreshESP()
+        end,
+    })
+
+    -- ---------- AutoFarm Tab ----------
+    local AutoFarmSection = Window:Section({ Title = "AutoFarm" })
+    local AutoFarmTab = AutoFarmSection:Tab({
+        Title = "Farm",
+        Icon = "solar:money-bag-bold",
+        IconShape = "Square",
+        Border = true,
+    })
+
+    AutoFarmTab:Section({ Title = "Coin & Candy Collection" })
+
+    AutoFarmTab:Toggle({
+        Title = "Coin Autofarm",
+        Desc = "Automatically collect coins in the map.",
+        Value = false,
+        Callback = function(v)
+            AutoFarm.Coins = v
+            if v then RunCoinFarm() end
+        end,
+    })
+
+    AutoFarmTab:Space({ Columns = 1 })
+
+    AutoFarmTab:Slider({
+        Title = "Autofarm Speed",
+        Desc = "Seconds between collection cycles. Higher = safer (less likely to get kicked).",
+        Step = 1,
+        Value = { Min = 1, Max = 60, Default = 25 },
+        Callback = function(value) AutoFarm.Speed = value end,
+    })
+
+    AutoFarmTab:Space({ Columns = 1 })
+
+    AutoFarmTab:Toggle({
+        Title = "Auto Reset Character",
+        Desc = "Reset your character every N seconds (useful for forcing new round spawns).",
+        Value = false,
+        Callback = function(v)
+            AutoFarm.AutoReset = v
+            if v then RunAutoReset() end
+        end,
+    })
+
+    AutoFarmTab:Slider({
+        Title = "Reset Delay (sec)",
+        Desc = "Time between auto-resets.",
+        Step = 10,
+        Value = { Min = 60, Max = 600, Default = 180 },
+        Callback = function(value) AutoFarm.ResetDelay = value end,
+    })
+
+    -- ---------- Character Tab ----------
+    local CharacterSection = Window:Section({ Title = "Character" })
+    local CharacterTab = CharacterSection:Tab({
+        Title = "Movement",
+        Icon = "solar:running-bold",
+        IconShape = "Square",
+        Border = true,
+    })
+
+    CharacterTab:Section({ Title = "Movement Settings" })
+
+    CharacterTab:Slider({
+        Title = "Walk Speed",
+        Desc = "Default: 16",
+        Step = 1,
+        Value = { Min = 16, Max = 200, Default = 16 },
+        Callback = function(value) Character.WalkSpeed = value end,
+    })
+
+    CharacterTab:Toggle({
+        Title = "Lock Walk Speed",
+        Desc = "Re-apply walk speed if the game resets it.",
+        Value = false,
+        Callback = function(v) Character.LockWalkSpeed = v end,
+    })
+
+    CharacterTab:Space({ Columns = 1 })
+
+    CharacterTab:Slider({
+        Title = "Jump Power",
+        Desc = "Default: 50",
+        Step = 1,
+        Value = { Min = 50, Max = 500, Default = 50 },
+        Callback = function(value) Character.JumpPower = value end,
+    })
+
+    CharacterTab:Toggle({
+        Title = "Lock Jump Power",
+        Desc = "Re-apply jump power if the game resets it.",
+        Value = false,
+        Callback = function(v) Character.LockJumpPower = v end,
+    })
+
+    CharacterTab:Space({ Columns = 1 })
+
+    CharacterTab:Toggle({
+        Title = "Noclip",
+        Desc = "Walk through walls. Disable before round end to avoid suspicion.",
+        Value = false,
+        Callback = function(v) SetNoclip(v) end,
+    })
+
+    CharacterTab:Toggle({
+        Title = "Infinite Jump",
+        Desc = "Jump in mid-air.",
+        Value = false,
+        Callback = function(v) SetInfiniteJump(v) end,
+    })
+
+    CharacterTab:Space({ Columns = 1 })
+
+    CharacterTab:Button({
+        Title = "Reset Character",
+        Desc = "Force respawn.",
+        Icon = "solar:refresh-bold",
+        Color = Color3.fromHex("#ff4830"),
+        Justify = "Left",
+        IconAlign = "Left",
+        Callback = function()
+            local hum = getHumanoid()
+            if hum then pcall(function() hum.Health = 0 end) end
+        end,
+    })
+
+    -- ---------- Teleport Tab ----------
+    local TeleportSection = Window:Section({ Title = "Teleport" })
+    local TeleportTab = TeleportSection:Tab({
+        Title = "Teleport",
+        Icon = "solar:map-point-bold",
+        IconShape = "Square",
+        Border = true,
+    })
+
+    TeleportTab:Section({ Title = "Player Teleportation" })
+
+    local playerList = {}
+    local playerDropdown
+    local function refreshPlayerList()
+        playerList = {}
+        for _, p in ipairs(Players:GetPlayers()) do
+            if p ~= LocalPlayer then table.insert(playerList, p.Name) end
+        end
+        if playerDropdown and playerDropdown.SetValues then
+            playerDropdown:SetValues(playerList)
+        end
+    end
+
+    local selectedPlayerName = nil
+    playerDropdown = TeleportTab:Dropdown({
+        Title = "Select Player",
+        Desc = "Choose a player to teleport to.",
+        Values = playerList,
+        Value = nil,
+        Multi = false,
+        Callback = function(selected) selectedPlayerName = selected end,
+    })
+
+    TeleportTab:Space({ Columns = 1 })
+
+    TeleportTab:Button({
+        Title = "Teleport to Player",
+        Desc = "Teleports you to the selected player.",
+        Icon = "solar:map-arrow-right-bold",
+        Color = Color3.fromHex("#30FF6A"),
+        Justify = "Left",
+        IconAlign = "Left",
+        Callback = function()
+            if not selectedPlayerName then return end
+            local target = Players:FindFirstChild(selectedPlayerName)
+            if target then TeleportToPlayer(target) end
+        end,
+    })
+
+    TeleportTab:Button({
+        Title = "Refresh Player List",
+        Callback = refreshPlayerList,
+    })
+
+    TeleportTab:Space({ Columns = 1 })
+
+    TeleportTab:Section({ Title = "Role Teleportation" })
+
+    TeleportTab:Button({
+        Title = "Teleport to Murderer",
+        Desc = "Go to the current murderer (if any).",
+        Icon = "solar:knife-bold",
+        Color = Color3.fromHex("#dc143c"),
+        Justify = "Left",
+        IconAlign = "Left",
+        Callback = function() TeleportToRole("Murderer") end,
+    })
+
+    TeleportTab:Button({
+        Title = "Teleport to Sheriff",
+        Desc = "Go to the current sheriff (if any).",
+        Icon = "solar:shield-bold",
+        Color = Color3.fromHex("#4682b4"),
+        Justify = "Left",
+        IconAlign = "Left",
+        Callback = function() TeleportToRole("Sheriff") end,
+    })
+
+    -- Refresh list on player join/leave
+    Players.PlayerAdded:Connect(function() task.wait(1); refreshPlayerList() end)
+    Players.PlayerRemoving:Connect(function() task.wait(0.5); refreshPlayerList() end)
+    refreshPlayerList()
+
+    -- ---------- Role Functions Tab ----------
+    local RoleSection = Window:Section({ Title = "Role" })
+    local RoleTab = RoleSection:Tab({
+        Title = "Role",
+        Icon = "solar:users-group-rounded-bold",
+        IconShape = "Square",
+        Border = true,
+    })
+
+    RoleTab:Section({ Title = "Innocent" })
+
+    RoleTab:Toggle({
+        Title = "Auto Grab Gun",
+        Desc = "When a gun is dropped, teleport to it automatically.",
+        Value = false,
+        Callback = function(v)
+            autoGunActive = v
+            if v then AutoGrabGun() end
+        end,
+    })
+
+    RoleTab:Space({ Columns = 1 })
+
+    RoleTab:Section({ Title = "Murderer" })
+
+    RoleTab:Button({
+        Title = "Kill All Players",
+        Desc = "Teleport-and-touch every player (only works if you're the murderer).",
+        Icon = "solar:knife-bold",
+        Color = Color3.fromHex("#dc143c"),
+        Justify = "Left",
+        IconAlign = "Left",
+        Callback = function() KillAllMurderer() end,
+    })
+
+    RoleTab:Button({
+        Title = "Equip Knife",
+        Desc = "Equip your knife from backpack.",
+        Icon = "solar:knife-bold",
+        Callback = function() EquipKnife() end,
+    })
+
+    -- ---------- Utilities Tab ----------
+    local UtilitiesSection = Window:Section({ Title = "Utilities" })
+    local UtilitiesTab = UtilitiesSection:Tab({
+        Title = "Utilities",
+        Icon = "solar:settings-bold",
+        IconShape = "Square",
+        Border = true,
+    })
+
+    UtilitiesTab:Section({ Title = "Server Utilities" })
+
+    UtilitiesTab:Toggle({
+        Title = "Anti-AFK",
+        Desc = "Prevents being kicked for inactivity.",
+        Value = false,
+        Callback = function(v)
+            AntiAFK = v
+            SetAntiAFK(v)
+        end,
+    })
+
+    UtilitiesTab:Space({ Columns = 1 })
+
+    UtilitiesTab:Button({
+        Title = "Copy Discord Invite",
+        Desc = "Copies the Stealth Discord link to your clipboard.",
+        Icon = "solar:chat-round-dots-bold",
+        Color = Color3.fromHex("#5865F2"),
+        Justify = "Left",
+        IconAlign = "Left",
+        Callback = function()
+            pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
+            WindUI:Notify({
+                Title = "Stealth | MM2",
+                Content = "Discord invite copied!",
+                Duration = 3,
+                Icon = "solar:chat-round-dots-bold",
+            })
+        end,
+    })
+
+    -- ---------- Welcome notification ----------
+    WindUI:Notify({
+        Title = "Stealth | MM2",
+        Content = "Extended features loaded: ESP, AutoFarm, Teleport, Role Functions, Utilities.",
+        Duration = 5,
+        Icon = "solar:shield-keyhole-bold",
+    })
+end
+
 function setStatus(t, color)
     if statusLabel then
         statusLabel.Text = t
