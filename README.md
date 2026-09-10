@@ -1,6 +1,6 @@
 # Stealth
 
-Multi-script Roblox hub with a key system backed by [stealthub-sable.vercel.app](https://stealthub-sable.vercel.app) and a launcher UI that lets the user pick which script to run.
+Multi-script Roblox hub with a key system backed by [sstealth.vercel.app](https://sstealth.vercel.app) and a launcher UI that lets the user pick which script to run.
 
 ## End-user usage
 
@@ -9,7 +9,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/mai
 ```
 
 1. The key prompt appears branded as **Stealth**.
-2. Go to [stealthub-sable.vercel.app](https://stealthub-sable.vercel.app/) → copy your `FREE_xxx` key.
+2. Go to [sstealth.vercel.app](https://sstealth.vercel.app/) → copy your `FREE_xxx` key.
 3. Paste the key into the prompt.
 4. The Stealth Hub launcher appears with a **Scripts** tab listing all available scripts.
 5. Click "Load: \<script name\>" to run any script you want.
@@ -34,7 +34,7 @@ scripts/                 ← your actual script files
 User runs Stealth.lua
         │
         ▼
-Patriot key prompt (validates against stealthub-sable.vercel.app/api/validate)
+Patriot key prompt (validates against sstealth.vercel.app/api/validate)
         │  (key valid)
         ▼
 Main.lua loads → Rayfield UI appears with script selector menu
@@ -69,15 +69,15 @@ The files in `scripts/` are minimal placeholders. Replace each one with your rea
 | Field | File | Description |
 |-------|------|-------------|
 | `MAIN_SCRIPT_URL` | `Stealth.lua` | URL of `Main.lua` (already pointing to this repo) |
-| `STEALTH_API` | `Stealth.lua` | Key system API base URL (`https://stealthub-sable.vercel.app`) |
+| `STEALTH_API` | `Stealth.lua` | Key system API base URL (`https://sstealth.vercel.app`) |
 | `Patriot.Links.Discord` | `Stealth.lua` | Your Discord invite |
 | `Patriot.Appearance.Icon` | `Stealth.lua` | Logo decal ID (`rbxassetid://94734287536234`) |
 | `SCRIPTS` table | `Main.lua` | Catalog of scripts shown in the launcher menu |
 
 ## Key system
 
-- Website: [stealthub-sable.vercel.app](https://stealthub-sable.vercel.app/)
-- API: `POST https://stealthub-sable.vercel.app/api/validate` with body `{ "key": "FREE_xxx", "hwid": "..." }`
+- Website: [sstealth.vercel.app](https://sstealth.vercel.app/)
+- API: `POST https://sstealth.vercel.app/api/validate` with body `{ "key": "FREE_xxx", "hwid": "..." }`
 - Keys are random (`FREE_` + 32 hex chars), expire after 15 minutes, and lock to a single HWID on first validation.
 - The key system source code is hosted separately from this repo.
 

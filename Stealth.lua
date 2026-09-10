@@ -1,7 +1,7 @@
 -- [[ Stealth | Ready-to-execute Roblox key system ]]
 --
--- Validates the user's key against https://stealthub-sable.vercel.app/api/validate
--- Keys are issued at https://stealthub-sable.vercel.app/ and rotate every 15 minutes,
+-- Validates the user's key against https://sstealth.vercel.app/api/validate
+-- Keys are issued at https://sstealth.vercel.app/ and rotate every 15 minutes,
 -- each locked to a single HWID on first validation.
 --
 -- After successful validation, Stealth loads Main.lua (from this same repo)
@@ -33,7 +33,7 @@
 local MAIN_SCRIPT_URL = "https://raw.githubusercontent.com/requiemzc/Stealth/main/Main.lua"
 
 -- The Stealth key system website (issues + validates keys).
-local STEALTH_API = "https://stealthub-sable.vercel.app"
+local STEALTH_API = "https://sstealth.vercel.app"
 
 ------------------------------------------------------------
 -- 2. Load Patriot
@@ -71,7 +71,7 @@ local function getHWID()
 end
 
 ------------------------------------------------------------
--- 4. Key validation — calls https://stealthub-sable.vercel.app/api/validate
+-- 4. Key validation — calls https://sstealth.vercel.app/api/validate
 ------------------------------------------------------------
 -- Returns true if the key is valid (and locks it to this HWID on first use),
 -- false otherwise. Patriot also accepts a detailed table response.
@@ -150,7 +150,7 @@ Patriot.Appearance = {
 -- 6. Links
 ------------------------------------------------------------
 Patriot.Links = {
-    GetKey  = "https://stealthub-sable.vercel.app/keysys",       -- "Get Key" button opens the key system
+    GetKey  = "https://sstealth.vercel.app/keysys",       -- "Get Key" button opens the key system
     Discord = "https://discord.gg/hqE5drDHF7",
 }
 
