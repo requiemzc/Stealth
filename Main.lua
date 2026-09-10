@@ -155,6 +155,12 @@ local SCRIPTS = {
         icon = "solar:sword-bold-duotone",
         url = "https://raw.githubusercontent.com/requiemzc/Stealth/refs/heads/main/scripts/Deaglearena.lua",
     },
+    {
+        name = "Funky Friday",
+        desc = "Auto Player — automatically hits notes while in a song. Adjustable delay + downscroll detection.",
+        icon = "solar:music-note-bold-duotone",
+        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/FunkyFriday.lua",
+    },
     -- >>> ADD MORE SCRIPTS HERE <<<
     -- {
     --     name = "My New Script",
