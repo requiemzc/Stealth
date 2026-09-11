@@ -155,6 +155,12 @@ local SCRIPTS = {
         icon = "solar:sword-bold-duotone",
         url = "https://raw.githubusercontent.com/requiemzc/Stealth/refs/heads/main/scripts/Deaglearena.lua",
     },
+    {
+        name = "Chapter 1 — Farmhouse",
+        desc = "Auto farm hay, sell, collect gems, tools, upgrades. Full automation suite.",
+        icon = "solar:wheat-bold-duotone",
+        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/Farmhouse.lua",
+    },
     
     -- >>> ADD MORE SCRIPTS HERE <<<
     -- {
