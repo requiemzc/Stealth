@@ -301,9 +301,8 @@ local function rebuildScriptList()
             local entry = sb.entry
             local btn = ScriptsTab:Button({
                 Title = "Load: " .. entry.name,
-                Desc = entry.desc or "",
                 Icon = entry.icon or "solar:package-bold",
-                Color = Color3.fromHex("#30FF6A"),
+                Color = Color3.fromHex("#FF4830"),
                 Justify = "Left",
                 IconAlign = "Left",
                 Callback = function()
