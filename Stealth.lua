@@ -247,8 +247,28 @@ Patriot.Appearance = {
 ------------------------------------------------------------
 -- 6. Links
 ------------------------------------------------------------
+-- Build the GetKey URL with the player's Roblox context so the backend
+-- already knows who's claiming the key when they land on /keysys.
+-- Best-effort: if anything fails (e.g. LocalPlayer not ready yet), we
+-- fall back to the plain /keysys URL with no query params.
+local getKeyURL = STEALTH_API .. "/keysys"
+do
+    local ok, err = pcall(function()
+        local lp = game:GetService("Players").LocalPlayer
+        if lp then
+            local u = tostring(lp.UserId)
+            local n = game:GetService("HttpService"):UrlEncode(lp.Name)
+            if #u > 0 and #n > 0 then
+                getKeyURL = getKeyURL .. "?u=" .. u .. "&n=" .. n
+            end
+        end
+    end)
+    -- If the player isn't ready yet, the URL stays as the plain /keysys.
+    -- The backend handles the no-context case fine.
+end
+
 Patriot.Links = {
-    GetKey  = "https://sstealth.vercel.app/keysys",       -- "Get Key" button opens the key system
+    GetKey  = getKeyURL,
     Discord = "https://discord.gg/hqE5drDHF7",
 }
 
