@@ -307,6 +307,29 @@ local savedKey = loadSavedKey()
 if savedKey then
     print("[Stealth] Found saved key, attempting auto-load...")
     tryInjectSavedKey(savedKey)
+else
+    -- Fallback: if no local savefile, try recovering from the DB via HWID.
+    -- This runs async so it doesn't block the key prompt from showing.
+    task.spawn(function()
+        pcall(function()
+            local hwid = getHWID()
+            local reqFn = request or http_request or nil
+            if not reqFn then return end
+            local res = reqFn({
+                Url = STEALTH_API .. "/api/recover?hwid=" .. hwid,
+                Method = "GET",
+            })
+            if res and res.Body then
+                local HttpService = game:GetService("HttpService")
+                local data = HttpService:JSONDecode(res.Body)
+                if data and data.found == true and data.key then
+                    print("[Stealth] Recovered key from server (DB fallback)")
+                    saveKey(data.key)
+                    tryInjectSavedKey(data.key)
+                end
+            end
+        end)
+    end)
 end
 
 ------------------------------------------------------------
