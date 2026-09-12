@@ -1,7 +1,7 @@
 -- [[ Stealth | Ready-to-execute Roblox key system ]]
 --
 -- Validates the user's key against https://sstealth.vercel.app/api/validate
--- Keys are issued at https://sstealth.vercel.app/ and rotate every 15 minutes,
+-- Keys are issued at https://sstealth.vercel.app/ and rotate every 15 minutes (2h once claimed),
 -- each locked to a single HWID on first validation.
 --
 -- After successful validation, Stealth loads Main.lua (from this same repo)
@@ -224,7 +224,7 @@ Patriot.Callbacks.OnVerify = function(key)
     -- Map server error codes to friendly messages.
     local messages = {
         KEY_NOT_FOUND = "This key does not exist. Get a fresh one at " .. STEALTH_API .. "/",
-        KEY_EXPIRED   = "This key has expired (15-minute window). Get a new one at " .. STEALTH_API .. "/",
+        KEY_EXPIRED   = "This key has expired (2-hour window). Get a new one at " .. STEALTH_API .. "/",
         HWID_LOCKED   = "This key is locked to a different device. Get your own at " .. STEALTH_API .. "/",
     }
     return {
@@ -346,7 +346,7 @@ Patriot.Changelog = {
     {Version = "v1.0.0", Date = "Sep 7, 2026", Changes = {
         "Initial Stealth release",
         "Key validation against linkunlocker",
-        "15-minute key rotation with HWID locking",
+        "2-hour claimed key (15 min unclaimed) with HWID locking",
     }},
 }
 
