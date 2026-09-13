@@ -224,7 +224,7 @@ Patriot.Callbacks.OnVerify = function(key)
     -- Map server error codes to friendly messages.
     local messages = {
         KEY_NOT_FOUND = "This key does not exist. Get a fresh one at " .. STEALTH_API .. "/",
-        KEY_EXPIRED   = "This key has expired (2-hour window). Get a new one at " .. STEALTH_API .. "/",
+        KEY_EXPIRED   = "This key has expired. Get a new one at " .. STEALTH_API .. "/",
         HWID_LOCKED   = "This key is locked to a different device. Get your own at " .. STEALTH_API .. "/",
     }
     return {

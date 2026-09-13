@@ -161,6 +161,12 @@ local SCRIPTS = {
         icon = "solar:wheat-bold-duotone",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/Farmhouse.lua",
     },
+    {
+        name = "Jump for Animals",
+        desc = "Auto train squats, steal/hatch eggs, sell pets, buy coils/trails, upgrade barbell, mutation machine. Full automation.",
+        icon = "solar:rabbit-bold-duotone",
+        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/JumpForAnimals.lua",
+    },
     
     -- >>> ADD MORE SCRIPTS HERE <<<
     -- {
