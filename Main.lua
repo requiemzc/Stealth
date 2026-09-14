@@ -167,6 +167,12 @@ local SCRIPTS = {
         icon = "solar:rabbit-bold-duotone",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/JumpForAnimals.lua",
     },
+    {
+        name = "Defeat Anime RNG",
+        desc = "Auto roll, collect cash, farm waves, buy weapons/equip best, sell units, fuse, evolve, upgrade stats, buy zones, auto prestige. Full automation.",
+        icon = "solar:sword-bold-duotone",
+        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/DefeatAnimeRNG.lua",
+    },
     
     -- >>> ADD MORE SCRIPTS HERE <<<
     -- {
