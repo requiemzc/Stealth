@@ -173,6 +173,12 @@ local SCRIPTS = {
         icon = "solar:sword-bold-duotone",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/DefeatAnimeRNG.lua",
     },
+    {
+        name = "catmio — Remote Spy",
+        desc = "Universal remote spy. Captures FireServer/InvokeServer calls, auto-blocks spam remotes, copy/run code, Infinite Yield + Dex++ built in.",
+        icon = "solar:server-bold-duotone",
+        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CatmioRemoteSpy.lua",
+    },
     
     -- >>> ADD MORE SCRIPTS HERE <<<
     -- {
