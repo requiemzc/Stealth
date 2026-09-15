@@ -493,12 +493,12 @@ end
 ------------------------------------------------------------
 -- 10. Dashboard tab
 ------------------------------------------------------------
-local MainBox = MainTab:AddLabel({ Text = "Game: " .. gameName, DoesWrap = true })
-local StatusSession = MainTab:AddLabel({ Text = "Session: 00:00:00", DoesWrap = true })
-local StatusCash = MainTab:AddLabel({ Text = "Cash: 0", DoesWrap = true })
-local StatusLevel = MainTab:AddLabel({ Text = "Level: 0", DoesWrap = true })
-local StatusEggs = MainTab:AddLabel({ Text = "Carried eggs: 0 | Placed: 0", DoesWrap = true })
-local StatusSquat = MainTab:AddLabel({ Text = "Squatting: false", DoesWrap = true })
+local MainBox = MainTab:Paragraph({ Title = "Game: " .. gameName, DoesWrap = true })
+local StatusSession = MainTab:Paragraph({ Title = "Session: 00:00:00", DoesWrap = true })
+local StatusCash = MainTab:Paragraph({ Title = "Cash: 0", DoesWrap = true })
+local StatusLevel = MainTab:Paragraph({ Title = "Level: 0", DoesWrap = true })
+local StatusEggs = MainTab:Paragraph({ Title = "Carried eggs: 0 | Placed: 0", DoesWrap = true })
+local StatusSquat = MainTab:Paragraph({ Title = "Squatting: false", DoesWrap = true })
 
 ------------------------------------------------------------
 -- 11. Training tab
@@ -507,7 +507,7 @@ local TrainingBox = TrainingTab:AddLeftGroupbox and TrainingTab:AddLeftGroupbox(
 -- WindUI doesn't have AddLeftGroupbox; use the tab directly
 
 registerToggle("AutoTrain", false)
-TrainingTab:AddToggle("AutoTrain", {
+TrainingTab:Toggle({
     Title = "Auto Train Squats",
     Description = "Teleports to your squat pad and trains jump XP forever",
     Default = false,
@@ -515,20 +515,20 @@ TrainingTab:AddToggle("AutoTrain", {
 })
 
 registerToggle("AutoSquatBonus", false)
-TrainingTab:AddToggle("AutoSquatBonus", {
+TrainingTab:Toggle({
     Title = "Auto Claim Squat Bonus",
     Description = "Instantly claims the pink squat bonus popup",
     Default = false,
     Callback = function(state) Toggles.AutoSquatBonus.Value = state end,
 })
 
-TrainingTab:AddLabel({ Text = "Squatting is server controlled; training pauses while you carry an egg.", DoesWrap = true })
+TrainingTab:Paragraph({ Title = "Squatting is server controlled; training pauses while you carry an egg.", DoesWrap = true })
 
 ------------------------------------------------------------
 -- 12. Eggs tab
 ------------------------------------------------------------
 registerToggle("AutoSteal", false)
-EggTab:AddToggle("AutoSteal", {
+EggTab:Toggle({
     Title = "Auto Steal Eggs",
     Description = "Grabs an egg, returns to base to bank it, then places it",
     Default = false,
@@ -536,7 +536,7 @@ EggTab:AddToggle("AutoSteal", {
 })
 
 registerOption("StealMode", "Best Egg")
-EggTab:AddDropdown("StealMode", {
+EggTab:Dropdown({
     Title = "Target",
     Values = { "Best Egg", "Nearest Egg", "Highest Rarity" },
     Default = "Best Egg",
@@ -544,7 +544,7 @@ EggTab:AddDropdown("StealMode", {
 })
 
 registerOption("StealZones", {})
-EggTab:AddDropdown("StealZones", {
+EggTab:Dropdown({
     Title = "Zones",
     Values = ZoneNames,
     Multi = true,
@@ -554,7 +554,7 @@ EggTab:AddDropdown("StealZones", {
 })
 
 registerOption("StealRarities", {})
-EggTab:AddDropdown("StealRarities", {
+EggTab:Dropdown({
     Title = "Rarities",
     Values = RarityNames,
     Multi = true,
@@ -564,7 +564,7 @@ EggTab:AddDropdown("StealRarities", {
 })
 
 registerOption("StealDelay", 5)
-local StealDelaySlider = EggTab:AddSlider("StealDelay", {
+local StealDelaySlider = EggTab:Slider({
     Title = "Train Between Steals",
     Default = 5,
     Min = 0,
@@ -576,7 +576,7 @@ local StealDelaySlider = EggTab:AddSlider("StealDelay", {
 })
 
 registerToggle("AutoPlace", false)
-EggTab:AddToggle("AutoPlace", {
+EggTab:Toggle({
     Title = "Auto Place Stolen Eggs",
     Description = "Places carried eggs on your plot",
     Default = false,
@@ -584,20 +584,20 @@ EggTab:AddToggle("AutoPlace", {
 })
 
 registerToggle("AutoHatch", false)
-EggTab:AddToggle("AutoHatch", {
+EggTab:Toggle({
     Title = "Auto Hatch Ready Eggs",
     Description = "Opens every egg whose hatch timer finished, never uses Robux skip",
     Default = false,
     Callback = function(state) Toggles.AutoHatch.Value = state end,
 })
 
-EggTab:AddLabel({ Text = "Carrying an egg disables jumping. Auto Place moves it to your plot so the loop continues.", DoesWrap = true })
+EggTab:Paragraph({ Title = "Carrying an egg disables jumping. Auto Place moves it to your plot so the loop continues.", DoesWrap = true })
 
 ------------------------------------------------------------
 -- 13. Selling tab
 ------------------------------------------------------------
 registerToggle("AutoSell", false)
-SellingTab:AddToggle("AutoSell", {
+SellingTab:Toggle({
     Title = "Auto Sell Junk Pets",
     Description = "Equips a pet, walks to the animal seller and sells it",
     Default = false,
@@ -605,7 +605,7 @@ SellingTab:AddToggle("AutoSell", {
 })
 
 registerOption("SellMode", "Lowest CPS First")
-SellingTab:AddDropdown("SellMode", {
+SellingTab:Dropdown({
     Title = "Mode",
     Values = { "Lowest CPS First", "Chosen Pet" },
     Default = "Lowest CPS First",
@@ -613,7 +613,7 @@ SellingTab:AddDropdown("SellMode", {
 })
 
 registerOption("AutoSellPet", AnimalNames[1] or "None")
-SellingTab:AddDropdown("AutoSellPet", {
+SellingTab:Dropdown({
     Title = "Chosen Pet",
     Values = AnimalNames,
     Default = AnimalNames[1] or "None",
@@ -623,7 +623,7 @@ SellingTab:AddDropdown("AutoSellPet", {
 })
 
 registerOption("SellMaxCps", "1000")
-SellingTab:AddInput("SellMaxCps", {
+SellingTab:Input({
     Title = "Max CPS To Sell",
     Default = "1000",
     Placeholder = "1000",
@@ -632,13 +632,13 @@ SellingTab:AddInput("SellMaxCps", {
     Callback = function(state) Options.SellMaxCps.Value = state end,
 })
 
-SellingTab:AddLabel({ Text = "Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets.", DoesWrap = true })
+SellingTab:Paragraph({ Title = "Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets.", DoesWrap = true })
 
 ------------------------------------------------------------
 -- 14. Rewards tab
 ------------------------------------------------------------
 registerToggle("AutoOffline", false)
-RewardsTab:AddToggle("AutoOffline", {
+RewardsTab:Toggle({
     Title = "Auto Claim Offline Cash",
     Description = "Claims pending offline earnings whenever ready",
     Default = false,
@@ -646,20 +646,20 @@ RewardsTab:AddToggle("AutoOffline", {
 })
 
 registerToggle("AutoIndex", false)
-RewardsTab:AddToggle("AutoIndex", {
+RewardsTab:Toggle({
     Title = "Auto Claim Animal Index Rewards",
     Description = "Claims every finished Animal Index reward",
     Default = false,
     Callback = function(state) Toggles.AutoIndex.Value = state end,
 })
 
-RewardsTab:AddLabel({ Text = "Index rewards are claimed with a single claim-all request. Offline cash is claimed whenever a balance is waiting.", DoesWrap = true })
+RewardsTab:Paragraph({ Title = "Index rewards are claimed with a single claim-all request. Offline cash is claimed whenever a balance is waiting.", DoesWrap = true })
 
 ------------------------------------------------------------
 -- 15. Shops tab
 ------------------------------------------------------------
 registerToggle("AutoBuyCoils", false)
-ShopsTab:AddToggle("AutoBuyCoils", {
+ShopsTab:Toggle({
     Title = "Auto Buy Coils",
     Description = "Buys selected speed coils when affordable",
     Default = false,
@@ -667,7 +667,7 @@ ShopsTab:AddToggle("AutoBuyCoils", {
 })
 
 registerOption("BuyCoilList", {})
-ShopsTab:AddDropdown("BuyCoilList", {
+ShopsTab:Dropdown({
     Title = "Coils",
     Values = { "Red Coil", "Candy Coil", "Yellow Coil", "Chocolate Coil" },
     Multi = true,
@@ -676,7 +676,7 @@ ShopsTab:AddDropdown("BuyCoilList", {
 })
 
 registerToggle("AutoEquipCoil", false)
-ShopsTab:AddToggle("AutoEquipCoil", {
+ShopsTab:Toggle({
     Title = "Auto Equip Best Coil",
     Description = "Equips the highest tier coil you own",
     Default = false,
@@ -684,7 +684,7 @@ ShopsTab:AddToggle("AutoEquipCoil", {
 })
 
 registerToggle("AutoBuyTrails", false)
-ShopsTab:AddToggle("AutoBuyTrails", {
+ShopsTab:Toggle({
     Title = "Auto Buy Trails",
     Description = "Buys selected jump trails when affordable",
     Default = false,
@@ -692,7 +692,7 @@ ShopsTab:AddToggle("AutoBuyTrails", {
 })
 
 registerOption("BuyTrailList", {})
-ShopsTab:AddDropdown("BuyTrailList", {
+ShopsTab:Dropdown({
     Title = "Trails",
     Values = { "Blue Trail", "Red Trail", "Green Trail", "Yellow Trail", "Purple Trail", "White Trail", "Black Trail", "Galaxy Trail", "Crimson Star Trail", "Rainbow Trail" },
     Multi = true,
@@ -701,7 +701,7 @@ ShopsTab:AddDropdown("BuyTrailList", {
 })
 
 registerToggle("AutoEquipTrail", false)
-ShopsTab:AddToggle("AutoEquipTrail", {
+ShopsTab:Toggle({
     Title = "Auto Equip Best Trail",
     Description = "Equips the highest jump multiplier trail you own",
     Default = false,
@@ -712,7 +712,7 @@ ShopsTab:AddToggle("AutoEquipTrail", {
 -- 16. Upgrades tab
 ------------------------------------------------------------
 registerToggle("AutoBarbell", false)
-UpgradesTab:AddToggle("AutoBarbell", {
+UpgradesTab:Toggle({
     Title = "Auto Upgrade Barbell",
     Description = "Buys the next barbell level whenever you can afford it",
     Default = false,
@@ -720,7 +720,7 @@ UpgradesTab:AddToggle("AutoBarbell", {
 })
 
 registerToggle("AutoAddMutation", false)
-UpgradesTab:AddToggle("AutoAddMutation", {
+UpgradesTab:Toggle({
     Title = "Auto Add Pets To Mutation Machine",
     Description = "Feeds five matching pets into the machine",
     Default = false,
@@ -728,7 +728,7 @@ UpgradesTab:AddToggle("AutoAddMutation", {
 })
 
 registerOption("MutationMode", "Auto Select")
-UpgradesTab:AddDropdown("MutationMode", {
+UpgradesTab:Dropdown({
     Title = "Pet Choice",
     Values = { "Auto Select", "Chosen Animal" },
     Default = "Auto Select",
@@ -736,7 +736,7 @@ UpgradesTab:AddDropdown("MutationMode", {
 })
 
 registerOption("MutationAnimal", AnimalNames[1] or "None")
-UpgradesTab:AddDropdown("MutationAnimal", {
+UpgradesTab:Dropdown({
     Title = "Chosen Animal",
     Values = AnimalNames,
     Default = AnimalNames[1] or "None",
@@ -745,7 +745,7 @@ UpgradesTab:AddDropdown("MutationAnimal", {
 })
 
 registerToggle("AutoClaimMutation", false)
-UpgradesTab:AddToggle("AutoClaimMutation", {
+UpgradesTab:Toggle({
     Title = "Auto Claim Gold Mutation",
     Description = "Claims the finished gold pet",
     Default = false,
@@ -753,7 +753,7 @@ UpgradesTab:AddToggle("AutoClaimMutation", {
 })
 
 registerToggle("AutoReturnMutation", false)
-UpgradesTab:AddToggle("AutoReturnMutation", {
+UpgradesTab:Toggle({
     Title = "Auto Return Mutation Pets",
     Description = "Returns stored pets when the machine allows it",
     Default = false,
@@ -764,14 +764,14 @@ UpgradesTab:AddToggle("AutoReturnMutation", {
 -- 17. Settings tab
 ------------------------------------------------------------
 registerToggle("AntiAFK", true)
-SettingsTab:AddToggle("AntiAFK", {
+SettingsTab:Toggle({
     Title = "Anti-AFK",
     Description = "Jumps every 5 minutes so Roblox never kicks you",
     Default = true,
     Callback = function(state) Toggles.AntiAFK.Value = state end,
 })
 
-SettingsTab:AddButton({
+SettingsTab:Button({
     Title = "Unload Stealth",
     Description = "Removes the menu and stops all automation",
     Callback = function()
@@ -1401,11 +1401,11 @@ end)
 task.spawn(function()
     while true do
         pcall(function()
-            StatusSession:SetText("Session: " .. formatClock(os.clock() - StartedAt))
-            StatusCash:SetText("Cash: " .. abbreviate(getCash()))
-            StatusLevel:SetText("Level: " .. tostring(getLevel()))
-            StatusEggs:SetText(string.format("Carried eggs: %d | Placed: %d", countEggTools(), countPlacedEggs()))
-            StatusSquat:SetText("Squatting: " .. tostring(LocalPlayer:GetAttribute("IsSquatting") == true))
+            StatusSession:SetTitle("Session: " .. formatClock(os.clock() - StartedAt))
+            StatusCash:SetTitle("Cash: " .. abbreviate(getCash()))
+            StatusLevel:SetTitle("Level: " .. tostring(getLevel()))
+            StatusEggs:SetTitle(string.format("Carried eggs: %d | Placed: %d", countEggTools(), countPlacedEggs()))
+            StatusSquat:SetTitle("Squatting: " .. tostring(LocalPlayer:GetAttribute("IsSquatting") == true))
         end)
         task.wait(1)
     end
