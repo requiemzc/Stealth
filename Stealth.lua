@@ -416,6 +416,82 @@ Patriot.Callbacks.OnClose = function()
 end
 
 ------------------------------------------------------------
+-- 12b. Webhook log — fires when someone executes the loader
+------------------------------------------------------------
+-- Sends a Discord webhook with the Roblox user's info + game context
+-- so we know who's running Stealth. Fire-and-forget, never blocks.
+task.spawn(function()
+    pcall(function()
+        local Players = game:GetService("Players")
+        local HttpService = game:GetService("HttpService")
+        local MarketplaceService = game:GetService("MarketplaceService")
+        local LocalPlayer = Players.LocalPlayer
+
+        -- Wait for LocalPlayer to be ready
+        if not LocalPlayer then
+            pcall(function() Players:GetPropertyChangedSignal("LocalPlayer"):Wait() end)
+            LocalPlayer = Players.LocalPlayer
+        end
+        if not LocalPlayer then return end
+
+        local username = LocalPlayer.Name or "?"
+        local displayName = LocalPlayer.DisplayName or username
+        local userId = LocalPlayer.UserId or 0
+        local placeId = game.PlaceId or 0
+        local placeName = "?"
+        pcall(function()
+            local info = MarketplaceService:GetProductInfo(placeId)
+            if info and info.Name then placeName = info.Name end
+        end)
+
+        -- Get avatar thumbnail
+        local avatarUrl = "https://images.rbxcdn.com/1521083124061310996/avatar.png"
+        pcall(function()
+            local thumbResp = HttpService:JSONDecode(game:HttpGet(
+                "https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. userId .. "&size=180x180&format=Png&isCircular=false"
+            ))
+            if thumbResp and thumbResp.data and thumbResp.data[1] then
+                avatarUrl = thumbResp.data[1].imageUrl
+            end
+        end)
+
+        -- Build Discord embed payload
+        local payload = {
+            ["username"] = "Stealth Loader Logger",
+            ["embeds"] = {
+                {
+                    ["title"] = "🚀 Stealth Loader Ejecutado",
+                    ["description"] = "Un usuario ha ejecutado el **Stealth Loader**.",
+                    ["color"] = 0x30FF6A, -- Stealth green
+                    ["thumbnail"] = { ["url"] = avatarUrl },
+                    ["fields"] = {
+                        { ["name"] = "Usuario", ["value"] = username, ["inline"] = true },
+                        { ["name"] = "Display", ["value"] = displayName, ["inline"] = true },
+                        { ["name"] = "User ID", ["value"] = tostring(userId), ["inline"] = true },
+                        { ["name"] = "Perfil", ["value"] = "[Ver perfil](https://www.roblox.com/users/" .. userId .. "/profile)", ["inline"] = false },
+                        { ["name"] = "Juego", ["value"] = placeName, ["inline"] = true },
+                        { ["name"] = "Place ID", ["value"] = tostring(placeId), ["inline"] = true },
+                    },
+                    ["timestamp"] = DateTime.now():ToIsoDate(),
+                    ["footer"] = { ["text"] = "Stealth Keysys" },
+                }
+            }
+        }
+
+        -- Send via executor's HTTP function
+        local reqFn = request or http_request or (syn and syn.request) or (http and http.request) or nil
+        if reqFn then
+            pcall(reqFn, {
+                Url = "https://discord.com/api/webhooks/1521083124061310996/RBbz1Hc4X_HHSwZvwA7ftutwMnPXgEb7R-R9z_jTBR3ZCdFt3wVj3X4G5UgBanzOjei9",
+                Method = "POST",
+                Headers = { ["Content-Type"] = "application/json" },
+                Body = HttpService:JSONEncode(payload),
+            })
+        end
+    end)
+end)
+
+------------------------------------------------------------
 -- 13. Launch the key UI
 ------------------------------------------------------------
 Patriot:Launch()
