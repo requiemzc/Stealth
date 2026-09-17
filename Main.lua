@@ -179,6 +179,12 @@ local SCRIPTS = {
         icon = "solar:server-bold-duotone",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CatmioRemoteSpy.lua",
     },
+    {
+        name = "Star RNG",
+        desc = "Auto roll, buy, place best stars, unlock altars, collect income, trash by rarity, upgrade luck/pedestals, buy mutations/eggs/gear. Full automation.",
+        icon = "solar:star-bold-duotone",
+        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/StarRNG.lua",
+    },
     
     -- >>> ADD MORE SCRIPTS HERE <<<
     -- {
