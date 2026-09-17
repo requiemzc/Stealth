@@ -226,6 +226,68 @@ local function loadScript(scriptEntry)
             Icon = "solar:download-minimalistic-bold",
         })
 
+        -- Webhook log: which script the user is loading
+        pcall(function()
+            local HttpService = game:GetService("HttpService")
+            local Players = game:GetService("Players")
+            local MarketplaceService = game:GetService("MarketplaceService")
+            local LocalPlayer = Players.LocalPlayer
+
+            local username = LocalPlayer and LocalPlayer.Name or "?"
+            local displayName = LocalPlayer and LocalPlayer.DisplayName or username
+            local userId = LocalPlayer and LocalPlayer.UserId or 0
+            local placeId = game.PlaceId or 0
+            local placeName = "?"
+            pcall(function()
+                local info = MarketplaceService:GetProductInfo(placeId)
+                if info and info.Name then placeName = info.Name end
+            end)
+
+            -- Get avatar thumbnail
+            local avatarUrl = "https://images.rbxcdn.com/1521083124061310996/avatar.png"
+            pcall(function()
+                local thumbResp = HttpService:JSONDecode(game:HttpGet(
+                    "https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. userId .. "&size=180x180&format=Png&isCircular=false"
+                ))
+                if thumbResp and thumbResp.data and thumbResp.data[1] then
+                    avatarUrl = thumbResp.data[1].imageUrl
+                end
+            end)
+
+            local payload = {
+                ["username"] = "Stealth Script Logger",
+                ["embeds"] = {
+                    {
+                        ["title"] = "🎮 Script Cargado",
+                        ["description"] = "Un usuario ha cargado **" .. scriptEntry.name .. "** desde el Stealth Hub.",
+                        ["color"] = 0x30FF6A,
+                        ["thumbnail"] = { ["url"] = avatarUrl },
+                        ["fields"] = {
+                            { ["name"] = "Script", ["value"] = scriptEntry.name, ["inline"] = true },
+                            { ["name"] = "Usuario", ["value"] = username, ["inline"] = true },
+                            { ["name"] = "Display", ["value"] = displayName, ["inline"] = true },
+                            { ["name"] = "User ID", ["value"] = tostring(userId), ["inline"] = true },
+                            { ["name"] = "Juego", ["value"] = placeName, ["inline"] = true },
+                            { ["name"] = "Place ID", ["value"] = tostring(placeId), ["inline"] = true },
+                            { ["name"] = "Script URL", ["value"] = "[Ver script](" .. scriptEntry.url .. ")", ["inline"] = false },
+                        },
+                        ["timestamp"] = DateTime.now():ToIsoDate(),
+                        ["footer"] = { ["text"] = "Stealth Hub" },
+                    }
+                }
+            }
+
+            local reqFn = request or http_request or (syn and syn.request) or (http and http.request) or nil
+            if reqFn then
+                pcall(reqFn, {
+                    Url = "https://discord.com/api/webhooks/1521083124061310996/RBbz1Hc4X_HHSwZvwA7ftutwMnPXgEb7R-R9z_jTBR3ZCdFt3wVj3X4G5UgBanzOjei9",
+                    Method = "POST",
+                    Headers = { ["Content-Type"] = "application/json" },
+                    Body = HttpService:JSONEncode(payload),
+                })
+            end
+        end)
+
         task.wait(0.3)
 
         -- Destroy the launcher window FIRST, before loading the new script.
