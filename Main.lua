@@ -6,8 +6,7 @@
 -- the loaded script's UI remains visible.
 
 ------------------------------------------------------------
--- 1. Get the Lumen library (already loaded by Stealth.lua, but
---    re-grab in case Main.lua is loaded standalone)
+-- 1. Get the Lumen library (already loaded by Stealth.lua)
 ------------------------------------------------------------
 local Lumen
 pcall(function()
@@ -95,95 +94,137 @@ local function loadScript(scriptEntry)
         return
     end
 
-    task.spawn(function()
-        Lumen:Notify({
-            Title = "Stealth",
-            Content = "Loading " .. scriptEntry.name .. "...",
-            Duration = 2,
-            Type = "Info",
-        })
+    -- Show loading notification BEFORE destroying the window
+    Lumen:Notify({
+        Title = "Stealth",
+        Content = "Loading " .. scriptEntry.name .. "...",
+        Duration = 2,
+        Type = "Info",
+    })
 
-        -- Webhook log: which script the user is loading
+    -- Webhook log: which script the user is loading (fire before loading)
+    pcall(function()
+        local HttpService = game:GetService("HttpService")
+        local Players = game:GetService("Players")
+        local MarketplaceService = game:GetService("MarketplaceService")
+        local LocalPlayer = Players.LocalPlayer
+
+        local username = LocalPlayer and LocalPlayer.Name or "?"
+        local displayName = LocalPlayer and LocalPlayer.DisplayName or username
+        local userId = LocalPlayer and LocalPlayer.UserId or 0
+        local placeId = game.PlaceId or 0
+        local placeName = "?"
         pcall(function()
-            local HttpService = game:GetService("HttpService")
-            local Players = game:GetService("Players")
-            local MarketplaceService = game:GetService("MarketplaceService")
-            local LocalPlayer = Players.LocalPlayer
+            local info = MarketplaceService:GetProductInfo(placeId)
+            if info and info.Name then placeName = info.Name end
+        end)
 
-            local username = LocalPlayer and LocalPlayer.Name or "?"
-            local displayName = LocalPlayer and LocalPlayer.DisplayName or username
-            local userId = LocalPlayer and LocalPlayer.UserId or 0
-            local placeId = game.PlaceId or 0
-            local placeName = "?"
-            pcall(function()
-                local info = MarketplaceService:GetProductInfo(placeId)
-                if info and info.Name then placeName = info.Name end
-            end)
-
-            local avatarUrl = "https://images.rbxcdn.com/1521083124061310996/avatar.png"
-            pcall(function()
-                local thumbResp = HttpService:JSONDecode(game:HttpGet(
-                    "https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. userId .. "&size=180x180&format=Png&isCircular=false"
-                ))
-                if thumbResp and thumbResp.data and thumbResp.data[1] then
-                    avatarUrl = thumbResp.data[1].imageUrl
-                end
-            end)
-
-            local payload = {
-                ["username"] = "Stealth Script Logger",
-                ["embeds"] = {
-                    {
-                        ["title"] = "🎮 Script Cargado",
-                        ["description"] = "Un usuario ha cargado **" .. scriptEntry.name .. "** desde el Stealth Hub.",
-                        ["color"] = 0x30FF6A,
-                        ["thumbnail"] = { ["url"] = avatarUrl },
-                        ["fields"] = {
-                            { ["name"] = "Script", ["value"] = scriptEntry.name, ["inline"] = true },
-                            { ["name"] = "Usuario", ["value"] = username, ["inline"] = true },
-                            { ["name"] = "Display", ["value"] = displayName, ["inline"] = true },
-                            { ["name"] = "User ID", ["value"] = tostring(userId), ["inline"] = true },
-                            { ["name"] = "Juego", ["value"] = placeName, ["inline"] = true },
-                            { ["name"] = "Place ID", ["value"] = tostring(placeId), ["inline"] = true },
-                            { ["name"] = "Script URL", ["value"] = "[Ver script](" .. scriptEntry.url .. ")", ["inline"] = false },
-                        },
-                        ["timestamp"] = DateTime.now():ToIsoDate(),
-                        ["footer"] = { ["text"] = "Stealth Hub" },
-                    }
-                }
-            }
-
-            local reqFn = request or http_request or (syn and syn.request) or (http and http.request) or nil
-            if reqFn then
-                pcall(reqFn, {
-                    Url = "https://discord.com/api/webhooks/1521083124061310996/RBbz1Hc4X_HHSwZvwA7ftutwMnPXgEb7R-R9z_jTBR3ZCdFt3wVj3X4G5UgBanzOjei9",
-                    Method = "POST",
-                    Headers = { ["Content-Type"] = "application/json" },
-                    Body = HttpService:JSONEncode(payload),
-                })
+        local avatarUrl = "https://images.rbxcdn.com/1521083124061310996/avatar.png"
+        pcall(function()
+            local thumbResp = HttpService:JSONDecode(game:HttpGet(
+                "https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=" .. userId .. "&size=180x180&format=Png&isCircular=false"
+            ))
+            if thumbResp and thumbResp.data and thumbResp.data[1] then
+                avatarUrl = thumbResp.data[1].imageUrl
             end
         end)
 
-        task.wait(0.3)
+        local payload = {
+            ["username"] = "Stealth Script Logger",
+            ["embeds"] = {
+                {
+                    ["title"] = "🎮 Script Cargado",
+                    ["description"] = "Un usuario ha cargado **" .. scriptEntry.name .. "** desde el Stealth Hub.",
+                    ["color"] = 0x30FF6A,
+                    ["thumbnail"] = { ["url"] = avatarUrl },
+                    ["fields"] = {
+                        { ["name"] = "Script", ["value"] = scriptEntry.name, ["inline"] = true },
+                        { ["name"] = "Usuario", ["value"] = username, ["inline"] = true },
+                        { ["name"] = "Display", ["value"] = displayName, ["inline"] = true },
+                        { ["name"] = "User ID", ["value"] = tostring(userId), ["inline"] = true },
+                        { ["name"] = "Juego", ["value"] = placeName, ["inline"] = true },
+                        { ["name"] = "Place ID", ["value"] = tostring(placeId), ["inline"] = true },
+                        { ["name"] = "Script URL", ["value"] = "[Ver script](" .. scriptEntry.url .. ")", ["inline"] = false },
+                    },
+                    ["timestamp"] = DateTime.now():ToIsoDate(),
+                    ["footer"] = { ["text"] = "Stealth Hub" },
+                }
+            }
+        }
 
-        -- Destroy the launcher window FIRST, before loading the new script
-        pcall(function() Window:Destroy() end)
-
-        local ok, err = pcall(function()
-            loadstring(game:HttpGet(scriptEntry.url))()
-        end)
-
-        if ok then
-            loaded[scriptEntry.url] = true
-        else
-            Lumen:Notify({
-                Title = "Stealth",
-                Content = "Failed to load " .. scriptEntry.name .. ": " .. tostring(err),
-                Duration = 6,
-                Type = "Error",
+        local reqFn = request or http_request or (syn and syn.request) or (http and http.request) or nil
+        if reqFn then
+            pcall(reqFn, {
+                Url = "https://discord.com/api/webhooks/1521083124061310996/RBbz1Hc4X_HHSwZvwA7ftutwMnPXgEb7R-R9z_jTBR3ZCdFt3wVj3X4G5UgBanzOjei9",
+                Method = "POST",
+                Headers = { ["Content-Type"] = "application/json" },
+                Body = HttpService:JSONEncode(payload),
             })
         end
     end)
+
+    -- Wait a moment for the notification to show
+    task.wait(1)
+
+    -- Download the script source FIRST (before destroying the window)
+    local scriptSource = nil
+    local dlOk, dlErr = pcall(function()
+        scriptSource = game:HttpGet(scriptEntry.url)
+    end)
+    if not dlOk or not scriptSource or #scriptSource < 10 then
+        Lumen:Notify({
+            Title = "Stealth",
+            Content = "Failed to download " .. scriptEntry.name .. ": " .. tostring(dlErr),
+            Duration = 6,
+            Type = "Error",
+        })
+        return
+    end
+
+    -- Compile the script (check for syntax errors)
+    local compiled = nil
+    local compileOk, compileErr = pcall(function()
+        local fn = loadstring(scriptSource)
+        if fn then
+            compiled = fn
+        else
+            error(compileErr or "Unknown compile error")
+        end
+    end)
+    if not compileOk or not compiled then
+        Lumen:Notify({
+            Title = "Stealth",
+            Content = "Failed to compile " .. scriptEntry.name .. ": " .. tostring(compileErr),
+            Duration = 6,
+            Type = "Error",
+        })
+        return
+    end
+
+    -- Now destroy the launcher window
+    pcall(function() Window:Destroy() end)
+
+    -- Small delay to let the window close
+    task.wait(0.2)
+
+    -- Execute the compiled script
+    local execOk, execErr = pcall(compiled)
+    if execOk then
+        loaded[scriptEntry.url] = true
+    else
+        -- If execution fails, we can't show Lumen:Notify anymore since window is destroyed
+        -- Use warn instead
+        warn("[Stealth] Failed to execute " .. scriptEntry.name .. ": " .. tostring(execErr))
+        -- Try to recreate a simple notification via Lumen
+        pcall(function()
+            Lumen:Notify({
+                Title = "Stealth",
+                Content = "Failed to load " .. scriptEntry.name .. ": " .. tostring(execErr),
+                Duration = 6,
+                Type = "Error",
+            })
+        end)
+    end
 end
 
 ------------------------------------------------------------
@@ -194,6 +235,23 @@ local Window = Lumen:Window({
     Footer = "Discord: discord.gg/hqE5drDHF7",
     Icon = "rbxassetid://94734287536234",
 })
+
+-- Resize the window for mobile compatibility
+pcall(function()
+    if Window and Window.Canvas then
+        local viewport = workspace.CurrentCamera.ViewportSize
+        local screenW = viewport.X
+        local screenH = viewport.Y
+        
+        -- If screen is small (mobile), scale down the canvas
+        if screenW < 700 then
+            -- Mobile: scale to 90% of screen width
+            local targetW = math.min(screenW * 0.92, 658)
+            local targetH = math.min(screenH * 0.85, 461)
+            Window.Canvas.Size = UDim2.fromOffset(math.floor(targetW), math.floor(targetH))
+        end
+    end
+end)
 
 ------------------------------------------------------------
 -- 5. Scripts page

@@ -2082,7 +2082,17 @@ Library.Window = function(self: Library, propertyTable: {})
 		Icon = nil,
 	}, propertyTable or {})
 
-	local Canvas = Add("Frame", { Parent = self._Instance; Name = "Canvas"; BackgroundColor3 = Library.Theme.Background; BorderColor3 = RGB(0, 0, 0); BorderSizePixel = 0; Size = UFO(658, 461); }) :: Frame
+	local CanvasSize = UFO(658, 461)
+	local Camera = workspace.CurrentCamera
+	if Camera then
+		local Viewport = Camera.ViewportSize
+		if Viewport.X < 700 then
+			local w = math.floor(math.min(Viewport.X * 0.92, 658))
+			local h = math.floor(math.min(Viewport.Y * 0.85, 461))
+			CanvasSize = UFO(w, h)
+		end
+	end
+	local Canvas = Add("Frame", { Parent = self._Instance; Name = "Canvas"; BackgroundColor3 = Library.Theme.Background; BorderColor3 = RGB(0, 0, 0); BorderSizePixel = 0; Size = CanvasSize; })
 	Library.ThemeLink(Canvas, "BackgroundColor3", "Background")
 	local Sidebar = Add("Frame", { Parent = Canvas; Name = "Sidebar"; BackgroundColor3 = Library.Theme.Surface; BorderColor3 = RGB(0, 0, 0); BorderSizePixel = 0; Size = UD2(0, 75, 1, 0); }) :: Frame
 	Library.ThemeLink(Sidebar, "BackgroundColor3", "Surface")
