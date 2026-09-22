@@ -44887,9 +44887,13 @@ do
     -- still in effect. Most modern executors propagate identity to child
     -- threads, so this is usually enough.
 
-    local Lumen = loadstring(game:HttpGet(
+    local Lumen = getgenv().StealthLumen
+if not Lumen then
+    Lumen = loadstring(game:HttpGet(
         "https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"
     ))()
+    getgenv().StealthLumen = Lumen
+end
 
     -- Re-assert after loadstring (it may reset identity).
     _elevateIdentity()

@@ -66,9 +66,11 @@ end
 ------------------------------------------------------------
 -- 2. Load Lumen
 ------------------------------------------------------------
-local Lumen = loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"
-))()
+local Lumen = getgenv().StealthLumen
+if not Lumen then
+    Lumen = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"))()
+    getgenv().StealthLumen = Lumen
+end
 
 _elevateIdentity()
 
