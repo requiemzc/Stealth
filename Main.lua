@@ -228,30 +228,29 @@ local function loadScript(scriptEntry)
 end
 
 ------------------------------------------------------------
--- 4. Create Lumen window
+-- 4. Use the existing Lumen Window (created by Stealth.lua)
 ------------------------------------------------------------
-local Window = Lumen:Window({
-    Title = "Stealth Hub",
-    Footer = "Discord: discord.gg/hqE5drDHF7",
-    Icon = "rbxassetid://94734287536234",
-})
+local Window = getgenv().StealthWindow
 
--- Resize the window for mobile compatibility
-pcall(function()
-    if Window and Window.Canvas then
-        local viewport = workspace.CurrentCamera.ViewportSize
-        local screenW = viewport.X
-        local screenH = viewport.Y
-        
-        -- If screen is small (mobile), scale down the canvas
-        if screenW < 700 then
-            -- Mobile: scale to 90% of screen width
-            local targetW = math.min(screenW * 0.92, 658)
-            local targetH = math.min(screenH * 0.85, 461)
-            Window.Canvas.Size = UDim2.fromOffset(math.floor(targetW), math.floor(targetH))
+if not Window then
+    -- Fallback: create a new window if Stealth.lua didn't make one
+    Window = Lumen:Window({
+        Title = "Stealth Hub",
+        Footer = "Discord: discord.gg/hqE5drDHF7",
+        Icon = "rbxassetid://94734287536234",
+    })
+    -- Resize for mobile
+    pcall(function()
+        if Window and Window.Canvas then
+            local viewport = workspace.CurrentCamera.ViewportSize
+            if viewport.X < 700 then
+                local w = math.floor(math.min(viewport.X * 0.92, 658))
+                local h = math.floor(math.min(viewport.Y * 0.85, 461))
+                Window.Canvas.Size = UDim2.fromOffset(w, h)
+            end
         end
-    end
-end)
+    end)
+end
 
 ------------------------------------------------------------
 -- 5. Scripts page

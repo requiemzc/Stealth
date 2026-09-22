@@ -14,6 +14,7 @@ local MAIN_SCRIPT_URL = "https://raw.githubusercontent.com/requiemzc/Stealth/mai
 -- 1. Load Lumen
 ------------------------------------------------------------
 local Lumen = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"))()
+getgenv().StealthLumen = Lumen
 
 ------------------------------------------------------------
 -- 2. HWID detection
@@ -54,7 +55,7 @@ local function loadSavedKey()
 end
 
 ------------------------------------------------------------
--- 4. Key validation (synchronous return for Lumen)
+-- 4. Key validation — calls /api/validate
 ------------------------------------------------------------
 local function validateKey(key, finish)
     if not key or key == "" then
@@ -156,7 +157,7 @@ local function validateKey(key, finish)
 end
 
 ------------------------------------------------------------
--- 5. Set up Lumen Key System
+-- 5. Set up Lumen Key System (BEFORE creating Window)
 ------------------------------------------------------------
 Lumen:KeySystem({
     Title = "Stealth",
@@ -166,7 +167,6 @@ Lumen:KeySystem({
     Remember = true,
     RememberFile = "Stealth_Key.txt",
     Validate = function(key, finish)
-        -- Run validation in a background thread so the UI doesn't freeze
         task.spawn(function()
             validateKey(key, finish)
         end)
@@ -174,7 +174,31 @@ Lumen:KeySystem({
 })
 
 ------------------------------------------------------------
--- 6. Webhook log — fires when the loader executes
+-- 6. Create the Window (this triggers _MountKeySystem → shows key prompt)
+------------------------------------------------------------
+local Window = Lumen:Window({
+    Title = "Stealth Hub",
+    Footer = "Discord: discord.gg/hqE5drDHF7",
+    Icon = "rbxassetid://94734287536234",
+})
+
+-- Resize for mobile
+pcall(function()
+    if Window and Window.Canvas then
+        local viewport = workspace.CurrentCamera.ViewportSize
+        if viewport.X < 700 then
+            local w = math.floor(math.min(viewport.X * 0.92, 658))
+            local h = math.floor(math.min(viewport.Y * 0.85, 461))
+            Window.Canvas.Size = UDim2.fromOffset(w, h)
+        end
+    end
+end)
+
+-- Store window globally so Main.lua can use it
+getgenv().StealthWindow = Window
+
+------------------------------------------------------------
+-- 7. Webhook log — fires when the loader executes
 ------------------------------------------------------------
 task.spawn(function()
     pcall(function()
@@ -244,38 +268,26 @@ task.spawn(function()
 end)
 
 ------------------------------------------------------------
--- 7. Create the main window AFTER key validation
+-- 8. Poll for key validation → load Main.lua
 ------------------------------------------------------------
--- Lumen's KeySystem shows the key prompt. When the key is validated,
--- it removes the prompt and we need to create the window + load Main.lua.
--- We hook into Lumen's auth validation to do this.
-
-local originalMountKeySystem = Lumen._MountKeySystem
-Lumen._MountKeySystem = function(window)
-    -- Call original to show key prompt
-    if originalMountKeySystem then
-        originalMountKeySystem(window)
-    end
-end
-
--- After key is validated, Lumen removes the key system overlay.
--- We detect this by polling and then load Main.lua.
 task.spawn(function()
     while true do
         task.wait(0.5)
         if Lumen.Auth and Lumen.Auth.Validated then
             -- Key was validated! Load Main.lua
-            task.wait(0.5) -- small delay to let Lumen settle
+            task.wait(0.5)
             local ok, err = pcall(function()
                 loadstring(game:HttpGet(MAIN_SCRIPT_URL))()
             end)
             if not ok then
-                Lumen:Notify({
-                    Title = "Stealth",
-                    Content = "Failed to load main script: " .. tostring(err),
-                    Duration = 6,
-                    Type = "Error",
-                })
+                pcall(function()
+                    Lumen:Notify({
+                        Title = "Stealth",
+                        Content = "Failed to load main script: " .. tostring(err),
+                        Duration = 6,
+                        Type = "Error",
+                    })
+                end)
             end
             break
         end
@@ -283,7 +295,7 @@ task.spawn(function()
 end)
 
 ------------------------------------------------------------
--- 8. Try auto-loading a saved key
+-- 9. Try auto-loading a saved key
 ------------------------------------------------------------
 local savedKey = loadSavedKey()
 if savedKey then
@@ -304,12 +316,14 @@ if savedKey then
                             end
                         end
                     end
-                    Lumen:Notify({
-                        Title = "Stealth",
-                        Content = "Key loaded from saved file!",
-                        Duration = 3,
-                        Type = "Success",
-                    })
+                    pcall(function()
+                        Lumen:Notify({
+                            Title = "Stealth",
+                            Content = "Key loaded from saved file!",
+                            Duration = 3,
+                            Type = "Success",
+                        })
+                    end)
                 end
             end)
         end
