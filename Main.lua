@@ -185,6 +185,12 @@ local SCRIPTS = {
         icon = "solar:star-bold-duotone",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/StarRNG.lua",
     },
+    {
+        name = "Speed Unraveler Escape",
+        desc = "Auto farm wins, auto win, auto rebirth, INF speed, 2x wins, teleport to win/start zones, anti-AFK. Full automation.",
+        icon = "solar:rocket-bold-duotone",
+        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/SpeedUnravelerEscape.lua",
+    },
     
     -- >>> ADD MORE SCRIPTS HERE <<<
     -- {
