@@ -2285,7 +2285,7 @@ Library.Window = function(self: Library, propertyTable: {})
 			return
 		end
 		local Viewport = Camera.ViewportSize
-		local W, H = 658, 461
+		local W, H = Canvas.AbsoluteSize.X, Canvas.AbsoluteSize.Y
 		local Scale = Library.UIScale or 1
 		local GuiService = Services:GetService("GuiService")
 		local Inset = GuiService:GetGuiInset()
@@ -2299,7 +2299,7 @@ Library.Window = function(self: Library, propertyTable: {})
 
 	Library.SetWatermark(Library.Watermark.Text, Library.Watermark.Enabled)
 	Library.SetKeybindList(Library.KeybindList.Enabled)
-	if Library._MountKeySystem then
+	if Library._MountKeySystem and Library.Auth and not Library.Auth.Validated then
 		Library._MountKeySystem(Window)
 	end
 	task.defer(CenterCanvas)
@@ -4627,7 +4627,7 @@ Library._MountKeySystem = function(Window)
 		if Camera and Canvas.Parent then
 			local Viewport = Camera.ViewportSize
 			local Size = Canvas.AbsoluteSize
-			if Size.X <= 0 then Size = V2(658, 461) end
+			if Size.X <= 0 then Size = V2(560, 380) end
 			local GuiService = Services:GetService("GuiService")
 			local Inset = GuiService:GetGuiInset()
 			Canvas.Position = ClampToScreen(Canvas, UFO(
