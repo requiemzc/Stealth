@@ -1,13 +1,13 @@
 -- [[ Stealth | Star RNG ]]
 --
 -- Original: Star RNG by @hidevin (ObsidianUltra / Linoria-based)
--- Converted to WindUI for Stealth Hub.
+-- Converted to Lumen for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- Game: Star RNG
 
 ------------------------------------------------------------
--- 1. Identity elevation (WindUI needs executor-level identity)
+-- 1. Identity elevation (Lumen needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -64,10 +64,10 @@ if not _taskPatched then
 end
 
 ------------------------------------------------------------
--- 2. Load WindUI
+-- 2. Load Lumen
 ------------------------------------------------------------
-local WindUI = loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"
+local Lumen = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/chromatiks/Lumen/main/Library.lua"
 ))()
 
 _elevateIdentity()
@@ -252,16 +252,16 @@ local function FindTrashTool()
 end
 
 ------------------------------------------------------------
--- 6. Create WindUI window
+-- 6. Create Lumen window
 ------------------------------------------------------------
-local Window = WindUI:CreateWindow({
-    Title = "Stealth",
+local Window = Lumen:Window({
+    Name = "Stealth",
     Folder = "Stealth",
     Icon = "solar:shield-keyhole-bold-duotone",
     NewElements = true,
     HideSearchBar = false,
     OpenButton = {
-        Title = "Open Stealth",
+        Name = "Open Stealth",
         CornerRadius = UDim.new(1, 0),
         StrokeThickness = 3,
         Enabled = true,
@@ -282,123 +282,130 @@ local Window = WindUI:CreateWindow({
 ------------------------------------------------------------
 -- 7. Tabs
 ------------------------------------------------------------
-local MainSection = Window:Section({ Title = "Main" })
-local MainTab = MainSection:Tab({
-    Title = "Dashboard",
+local MainTab = Window:Page({
+    Name = "Dashboard",
     Icon = "solar:widget-bold",
-    IconShape = "Square",
-    Border = true,
+    ,
+    ,
 })
+local MainTabPage = MainTab
 
-local FarmingSection = Window:Section({ Title = "Farming" })
-local FarmingTab = FarmingSection:Tab({
-    Title = "Farming",
+local MainTab = MainTabPage:Section({ Name = "MainTab", Side = "Left", Icon = "box" })
+
+local FarmingTab = Window:Page({
+    Name = "Farming",
     Icon = "solar:sprout-bold",
-    IconShape = "Square",
-    Border = true,
+    ,
+    ,
 })
+local FarmingTabPage = FarmingTab
 
-local InvSection = Window:Section({ Title = "Inventory" })
-local RollBuyTab = InvSection:Tab({
-    Title = "Roll & Buy",
+local FarmingTab = FarmingTabPage:Section({ Name = "FarmingTab", Side = "Left", Icon = "box" })
+
+local RollBuyTab = Window:Page({
+    Name = "Roll & Buy",
     Icon = "solar:box-bold",
-    IconShape = "Square",
-    Border = true,
+    ,
+    ,
 })
-local UpgradesTab = InvSection:Tab({
-    Title = "Upgrades",
-    Icon = "solar:graph-up-bold",
-    IconShape = "Square",
-    Border = true,
-})
-local ShopsTab = InvSection:Tab({
-    Title = "Shops",
-    Icon = "solar:cart-large-bold",
-    IconShape = "Square",
-    Border = true,
-})
+local RollBuyTabPage = RollBuyTab
 
-local SettingsSection = Window:Section({ Title = "Settings" })
-local SettingsTab = SettingsSection:Tab({
-    Title = "Config",
-    Icon = "solar:settings-bold",
-    IconShape = "Square",
-    Border = true,
+local RollBuyTab = RollBuyTabPage:Section({ Name = "RollBuyTab", Side = "Left", Icon = "box" })
+local UpgradesTab = Window:Page({
+    Name = "Upgrades",
+    Icon = "solar:graph-up-bold",
+    ,
+    ,
 })
+local UpgradesTabPage = UpgradesTab
+
+local UpgradesTab = UpgradesTabPage:Section({ Name = "UpgradesTab", Side = "Left", Icon = "box" })
+local ShopsTab = Window:Page({
+    Name = "Shops",
+    Icon = "solar:cart-large-bold",
+    ,
+    ,
+})
+local ShopsTabPage = ShopsTab
+
+local ShopsTab = ShopsTabPage:Section({ Name = "ShopsTab", Side = "Left", Icon = "box" })
+
+local SettingsTab = Window:Page({
+    Name = "Config",
+    Icon = "solar:settings-bold",
+    ,
+    ,
+})
+local SettingsTabPage = SettingsTab
+
+local SettingsTab = SettingsTabPage:Section({ Name = "SettingsTab", Side = "Left", Icon = "box" })
 
 ------------------------------------------------------------
 -- 8. Dashboard tab
 ------------------------------------------------------------
-MainTab:Paragraph({ Title = "Game: " .. gameName, DoesWrap = true })
-MainTab:Paragraph({ Title = "Hub: Stealth (WindUI)", DoesWrap = true })
-MainTab:Paragraph({ Title = "Press RightShift to toggle UI", DoesWrap = true })
+MainTab:Label({ Text = "Game: " .. gameName })
+MainTab:Label({ Text = "Hub: Stealth (Lumen)" })
+MainTab:Label({ Text = "Press RightShift to toggle UI" })
 
-local StatusLabel = MainTab:Paragraph({ Title = "Status: loading...", DoesWrap = true })
-local AreaLabel = MainTab:Paragraph({ Title = "Plot: ...", DoesWrap = true })
-local SessionLabel = MainTab:Paragraph({ Title = "Session: 0s", DoesWrap = true })
+local StatusLabel = MainTab:Label({ Text = "Status: loading..." })
+local AreaLabel = MainTab:Label({ Text = "Plot: ..." })
+local SessionLabel = MainTab:Label({ Text = "Session: 0s" })
 
-MainTab:Space()
 
 MainTab:Button({
-    Title = "Teleport: Base",
+    Name = "Teleport: Base",
     Callback = function() FireRemote("TeleportToBase") end,
 })
 
 MainTab:Button({
-    Title = "Teleport: Market",
+    Name = "Teleport: Market",
     Callback = function() FireRemote("TeleportToMarket") end,
 })
 
-MainTab:Space()
 
-local CashLabel = MainTab:Paragraph({ Title = "Cash: ...", DoesWrap = true })
-local AltarLabel = MainTab:Paragraph({ Title = "Altars: ...", DoesWrap = true })
-local PedestalLabel = MainTab:Paragraph({ Title = "Rolling stars: ...", DoesWrap = true })
+local CashLabel = MainTab:Label({ Text = "Cash: ..." })
+local AltarLabel = MainTab:Label({ Text = "Altars: ..." })
+local PedestalLabel = MainTab:Label({ Text = "Rolling stars: ..." })
 
 ------------------------------------------------------------
 -- 9. Farming tab
 ------------------------------------------------------------
 Toggles.AutoPlace = false
-FarmingTab:Toggle({
-    Title = "Auto Place Best Stars",
-    Description = "Hits Equip Best (EquipBestStarsEvent). 1s loop.",
-    Default = false,
+local _auto_lbl_1 = FarmingTab:Label({ Text = "Auto Place Best Stars" })
+_auto_lbl_1:Toggle({
+    State = false,
     Callback = function(v) Toggles.AutoPlace = v end,
 })
 
 Toggles.AutoUnlock = false
-FarmingTab:Toggle({
-    Title = "Auto Unlock Altars",
-    Description = "Fires UpgradeAltarEvent. 1s loop.",
-    Default = false,
+local _auto_lbl_2 = FarmingTab:Label({ Text = "Auto Unlock Altars" })
+_auto_lbl_2:Toggle({
+    State = false,
     Callback = function(v) Toggles.AutoUnlock = v end,
 })
 
 Toggles.AutoCollect = false
-FarmingTab:Toggle({
-    Title = "Auto Collect Income",
-    Description = "Touches your Collector via firetouchinterest. Works at range. 1s loop.",
-    Default = false,
+local _auto_lbl_3 = FarmingTab:Label({ Text = "Auto Collect Income" })
+_auto_lbl_3:Toggle({
+    State = false,
     Callback = function(v) Toggles.AutoCollect = v end,
 })
 
-FarmingTab:Space()
 
 Toggles.AutoTrash = false
-FarmingTab:Toggle({
-    Title = "Auto Trash Stars",
-    Description = "Equips a matching star, teleports to Dumpster, trashes, returns. 1s loop.",
-    Default = false,
+local _auto_lbl_4 = FarmingTab:Label({ Text = "Auto Trash Stars" })
+_auto_lbl_4:Toggle({
+    State = false,
     Callback = function(v) Toggles.AutoTrash = v end,
 })
 
 OPTIONS = OPTIONS or {}
 Options.TrashRarities = {"Common"}
 FarmingTab:Dropdown({
-    Title = "Rarities To Trash",
-    Values = RARITIES,
+    Name = "Rarities To Trash",
+    Options = RARITIES,
     Multi = true,
-    Searchable = true,
+    Search = true,
     Callback = function(state) Options.TrashRarities = state end,
 })
 
@@ -406,44 +413,40 @@ FarmingTab:Dropdown({
 -- 10. Roll & Buy tab
 ------------------------------------------------------------
 Toggles.AutoRoll = false
-RollBuyTab:Toggle({
-    Title = "Auto Roll Stars",
-    Description = "Fires Roll prompt. Park near your roller. 1s loop.",
-    Default = false,
+local _auto_lbl_5 = RollBuyTab:Label({ Text = "Auto Roll Stars" })
+_auto_lbl_5:Toggle({
+    State = false,
     Callback = function(v) Toggles.AutoRoll = v end,
 })
 
 Options.RollStopRarity = "Legendary"
 RollBuyTab:Dropdown({
-    Title = "Stop On Rarity",
-    Values = RARITIES,
+    Name = "Stop On Rarity",
+    Options = RARITIES,
     Callback = function(state) Options.RollStopRarity = state end,
 })
 
 Toggles.RollStopEnabled = false
-RollBuyTab:Toggle({
-    Title = "Stop Rolling On Target+",
-    Description = "Pause rolling when a pedestal star meets/exceeds target rarity.",
-    Default = false,
+local _auto_lbl_6 = RollBuyTab:Label({ Text = "Stop Rolling On Target+" })
+_auto_lbl_6:Toggle({
+    State = false,
     Callback = function(v) Toggles.RollStopEnabled = v end,
 })
 
-RollBuyTab:Space()
 
 Toggles.AutoBuyStars = false
-RollBuyTab:Toggle({
-    Title = "Auto Buy Stars",
-    Description = "Buys pedestal stars matching rarities. 1s loop.",
-    Default = false,
+local _auto_lbl_7 = RollBuyTab:Label({ Text = "Auto Buy Stars" })
+_auto_lbl_7:Toggle({
+    State = false,
     Callback = function(v) Toggles.AutoBuyStars = v end,
 })
 
 Options.BuyStarRarities = RARITIES
 RollBuyTab:Dropdown({
-    Title = "Rarities To Buy",
-    Values = RARITIES,
+    Name = "Rarities To Buy",
+    Options = RARITIES,
     Multi = true,
-    Searchable = true,
+    Search = true,
     Callback = function(state) Options.BuyStarRarities = state end,
 })
 
@@ -451,18 +454,16 @@ RollBuyTab:Dropdown({
 -- 11. Upgrades tab
 ------------------------------------------------------------
 Toggles.AutoLuck = false
-UpgradesTab:Toggle({
-    Title = "Auto Upgrade Star Luck",
-    Description = "UpgradeBoardEvent Luck. 1s loop.",
-    Default = false,
+local _auto_lbl_8 = UpgradesTab:Label({ Text = "Auto Upgrade Star Luck" })
+_auto_lbl_8:Toggle({
+    State = false,
     Callback = function(v) Toggles.AutoLuck = v end,
 })
 
 Toggles.AutoPedestal = false
-UpgradesTab:Toggle({
-    Title = "Auto Add Pedestals",
-    Description = "UpgradeBoardEvent Pedestal. 1s loop.",
-    Default = false,
+local _auto_lbl_9 = UpgradesTab:Label({ Text = "Auto Add Pedestals" })
+_auto_lbl_9:Toggle({
+    State = false,
     Callback = function(v) Toggles.AutoPedestal = v end,
 })
 
@@ -470,61 +471,59 @@ UpgradesTab:Toggle({
 -- 12. Shops tab
 ------------------------------------------------------------
 Toggles.AutoMut = false
-ShopsTab:Toggle({
-    Title = "Auto Buy Mutation Items",
-    Default = false,
+local _auto_lbl_10 = ShopsTab:Label({ Text = "Auto Buy Mutation Items" })
+_auto_lbl_10:Toggle({
+    State = false,
     Callback = function(v) Toggles.AutoMut = v end,
 })
 
 Options.MutItems = MUTATION_IDS
 ShopsTab:Dropdown({
-    Title = "Mutation Items",
-    Values = MUTATION_IDS,
+    Name = "Mutation Items",
+    Options = MUTATION_IDS,
     Multi = true,
-    Searchable = true,
+    Search = true,
     Callback = function(state) Options.MutItems = state end,
 })
 
-ShopsTab:Space()
 
 Toggles.AutoEgg = false
-ShopsTab:Toggle({
-    Title = "Auto Buy Pet Eggs",
-    Default = false,
+local _auto_lbl_11 = ShopsTab:Label({ Text = "Auto Buy Pet Eggs" })
+_auto_lbl_11:Toggle({
+    State = false,
     Callback = function(v) Toggles.AutoEgg = v end,
 })
 
 Options.EggItems = EGG_NAMES
 ShopsTab:Dropdown({
-    Title = "Pet Eggs",
-    Values = EGG_NAMES,
+    Name = "Pet Eggs",
+    Options = EGG_NAMES,
     Multi = true,
-    Searchable = true,
+    Search = true,
     Callback = function(state) Options.EggItems = state end,
 })
 
-ShopsTab:Space()
 
 Toggles.AutoGear = false
-ShopsTab:Toggle({
-    Title = "Auto Buy Gear",
-    Default = false,
+local _auto_lbl_12 = ShopsTab:Label({ Text = "Auto Buy Gear" })
+_auto_lbl_12:Toggle({
+    State = false,
     Callback = function(v) Toggles.AutoGear = v end,
 })
 
 Options.GearItems = GEAR_IDS
 ShopsTab:Dropdown({
-    Title = "Gear",
-    Values = GEAR_IDS,
+    Name = "Gear",
+    Options = GEAR_IDS,
     Multi = true,
-    Searchable = true,
+    Search = true,
     Callback = function(state) Options.GearItems = state end,
 })
 
 Options.GearQty = "1"
 ShopsTab:Dropdown({
-    Title = "Quantity",
-    Values = {"1", "10"},
+    Name = "Quantity",
+    Options = {"1", "10"},
     Callback = function(state) Options.GearQty = state end,
 })
 
@@ -532,17 +531,15 @@ ShopsTab:Dropdown({
 -- 13. Settings tab
 ------------------------------------------------------------
 Toggles.AntiAFK = true
-SettingsTab:Toggle({
-    Title = "Anti-AFK",
-    Description = "Fires AFKActivity + anti-idle. Enabled by default.",
-    Default = true,
+local _auto_lbl_13 = SettingsTab:Label({ Text = "Anti-AFK" })
+_auto_lbl_13:Toggle({
+    State = true,
     Callback = function(v) Toggles.AntiAFK = v end,
 })
 
-SettingsTab:Space()
 
 SettingsTab:Button({
-    Title = "Unload Stealth",
+    Name = "Unload Stealth",
     Description = "Removes the menu and stops all automation",
     Callback = function()
         Unloaded = true
@@ -697,11 +694,11 @@ task.spawn(function()
     end
 end)
 
-WindUI:Notify({
-    Title = "Stealth",
+Lumen:Notify({
+    Name = "Stealth",
     Content = gameName .. " loaded! Press RightShift",
     Duration = 4,
     Icon = "solar:info-circle-bold",
 })
 
-print("[Stealth] Loaded " .. gameName .. " via WindUI")
+print("[Stealth] Loaded " .. gameName .. " via Lumen")
