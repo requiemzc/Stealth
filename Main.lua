@@ -1,143 +1,22 @@
--- [[ Stealth | Main launcher with script selector menu (WindUI) ]]
+-- [[ Stealth | Main launcher with script selector menu (Lumen UI) ]]
 --
 -- This file is loaded by Stealth.lua AFTER the user's key is validated.
--- It shows a WindUI menu where the user can pick which script to run.
---
--- When the user picks a script, this launcher closes itself so only the
--- loaded script's UI remains visible.
+-- It shows a Lumen menu where the user can pick which script to run.
+-- When the user picks a script, this launcher closes itself so only
+-- the loaded script's UI remains visible.
 
 ------------------------------------------------------------
--- 1. Load WindUI
+-- 1. Get the Lumen library (already loaded by Stealth.lua, but
+--    re-grab in case Main.lua is loaded standalone)
 ------------------------------------------------------------
--- WindUI requires elevated thread identity to create Font objects and
--- access certain Instance APIs. Without this, WindUI's Notify() and
--- font loading crash with "lacking capability Plugin".
---
--- The problem: WindUI calls task.spawn internally for notifications and
--- animations, and those new threads inherit the DEFAULT identity, not
--- the elevated one.
---
--- Fix: patch task.spawn / task.defer / task.delay globally so every
--- new thread gets identity 8 (maximum) before running.
---
--- BUT: `task` is a readonly table in Luau, so `task.spawn = ...` throws
--- "attempt to modify a readonly table". We try 3 approaches in order:
---   1. setreadonly(task, false)  → then direct assignment
---   2. hookfunction              → executor-supported function hooking
---   3. Fall back to just elevating the main thread (most executors
---      propagate identity to child threads automatically)
-
-local function _elevateIdentity()
-    -- Try every known identity-setting function. Different executors
-    -- expose different names. Identity 8 = maximum (executor level).
-    pcall(function() if setthreadidentity then setthreadidentity(8) end end)
-    pcall(function() if setidentity then setidentity(8) end end)
-    pcall(function() if syn and syn.set_thread_identity then syn.set_thread_identity(8) end end)
-    pcall(function() if set_thread_context then set_thread_context(8) end end)
-    pcall(function() if setcontext then setcontext(8) end end)
+local Lumen
+pcall(function()
+    Lumen = getgenv().StealthLumen
+end)
+if not Lumen then
+    Lumen = loadstring(game:HttpGet("https://raw.githubusercontent.com/chromatiks/Lumen/main/Library.lua"))()
 end
-
-_elevateIdentity()
-
-local _taskPatched = false
-
--- Approach 1: unfreeze `task` table and patch directly.
-if not _taskPatched then
-    pcall(function()
-        if setreadonly then setreadonly(task, false) end
-        if not isreadonly or not isreadonly(task) then
-            local _origSpawn = task.spawn
-            local _origDefer  = task.defer
-            local _origDelay  = task.delay
-
-            task.spawn = function(fn, ...)
-                local args = { ... }
-                return _origSpawn(function()
-                    _elevateIdentity()
-                    if type(fn) == "function" then
-                        return fn(table.unpack or unpack, args)
-                    end
-                end)
-            end
-
-            task.defer = function(fn, ...)
-                local args = { ... }
-                return _origDefer(function()
-                    _elevateIdentity()
-                    if type(fn) == "function" then
-                        return fn(table.unpack or unpack, args)
-                    end
-                end)
-            end
-
-            task.delay = function(time, fn, ...)
-                local args = { ... }
-                return _origDelay(time, function()
-                    _elevateIdentity()
-                    if type(fn) == "function" then
-                        return fn(table.unpack or unpack, args)
-                    end
-                end)
-            end
-
-            _taskPatched = true
-        end
-    end)
-end
-
--- Approach 2: use hookfunction (executor-supported C function hooking).
--- hookfunction replaces the function everywhere; calling the saved
--- original still calls the un-hooked version, so no recursion.
-if not _taskPatched and hookfunction then
-    pcall(function()
-        local _origSpawn = task.spawn
-        local _origDefer  = task.defer
-        local _origDelay  = task.delay
-
-        hookfunction(_origSpawn, newcclosure(function(fn, ...)
-            local args = { ... }
-            return _origSpawn(function()
-                _elevateIdentity()
-                if type(fn) == "function" then
-                    return fn(table.unpack or unpack, args)
-                end
-            end)
-        end))
-
-        hookfunction(_origDefer, newcclosure(function(fn, ...)
-            local args = { ... }
-            return _origDefer(function()
-                _elevateIdentity()
-                if type(fn) == "function" then
-                    return fn(table.unpack or unpack, args)
-                end
-            end)
-        end))
-
-        hookfunction(_origDelay, newcclosure(function(time, fn, ...)
-            local args = { ... }
-            return _origDelay(time, function()
-                _elevateIdentity()
-                if type(fn) == "function" then
-                    return fn(table.unpack or unpack, args)
-                end
-            end)
-        end))
-
-        _taskPatched = true
-    end)
-end
-
--- If neither approach worked, _elevateIdentity() on the main thread is
--- still in effect. Most modern executors propagate identity to child
--- threads, so this is usually enough.
-
-local WindUI = loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"
-))()
-
--- Re-assert after loadstring (it may reset identity).
-_elevateIdentity()
+getgenv().StealthLumen = Lumen
 
 ------------------------------------------------------------
 -- 2. Script catalog
@@ -146,59 +25,51 @@ local SCRIPTS = {
     {
         name = "MM2 — Murder Mystery 2",
         desc = "Weapon spawner + visualizer. Spawn any weapon, equip it, see it on your character.",
-        icon = "solar:sword-bold-duotone",
+        icon = "box",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MM2.lua",
     },
-{
+    {
         name = "Deagle Arena",
         desc = "Kill all - works in ranked",
-        icon = "solar:sword-bold-duotone",
-        url = "https://raw.githubusercontent.com/requiemzc/Stealth/refs/heads/main/scripts/Deaglearena.lua",
+        icon = "box",
+        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/refs/heads/main/scripts/Deaglearena.lua",
     },
     {
         name = "Chapter 1 — Farmhouse",
         desc = "Auto farm hay, sell, collect gems, tools, upgrades. Full automation suite.",
-        icon = "solar:wheat-bold-duotone",
+        icon = "box",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/Farmhouse.lua",
     },
     {
         name = "Jump for Animals",
         desc = "Auto train squats, steal/hatch eggs, sell pets, buy coils/trails, upgrade barbell, mutation machine. Full automation.",
-        icon = "solar:rabbit-bold-duotone",
+        icon = "box",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/JumpForAnimals.lua",
     },
     {
         name = "Defeat Anime RNG",
         desc = "Auto roll, collect cash, farm waves, buy weapons/equip best, sell units, fuse, evolve, upgrade stats, buy zones, auto prestige. Full automation.",
-        icon = "solar:sword-bold-duotone",
+        icon = "box",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/DefeatAnimeRNG.lua",
     },
     {
         name = "catmio — Remote Spy",
         desc = "Universal remote spy. Captures FireServer/InvokeServer calls, auto-blocks spam remotes, copy/run code, Infinite Yield + Dex++ built in.",
-        icon = "solar:server-bold-duotone",
+        icon = "box",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CatmioRemoteSpy.lua",
     },
     {
         name = "Star RNG",
         desc = "Auto roll, buy, place best stars, unlock altars, collect income, trash by rarity, upgrade luck/pedestals, buy mutations/eggs/gear. Full automation.",
-        icon = "solar:star-bold-duotone",
+        icon = "box",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/StarRNG.lua",
     },
     {
         name = "Mine a Mountain — Crystal ESP",
         desc = "Highlights high-value crystals (1B+ value) with tier-colored ESP. Shows Mythic, Empyrean, Pulsar, Quasar with value + weight. Top 5 get green highlight.",
-        icon = "solar:gem-bold-duotone",
+        icon = "box",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CrystalESP.lua",
     },
-    
-    -- >>> ADD MORE SCRIPTS HERE <<<
-    -- {
-    --     name = "My New Script",
-    --     desc = "What it does.",
-    --     icon = "solar:package-bold-duotone",
-    --     url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MyNewScript.lua",
-    -- },
 }
 
 ------------------------------------------------------------
@@ -215,21 +86,21 @@ local loaded = {}
 
 local function loadScript(scriptEntry)
     if loaded[scriptEntry.url] then
-        WindUI:Notify({
+        Lumen:Notify({
             Title = "Stealth",
             Content = scriptEntry.name .. " is already loaded.",
             Duration = 3,
-            Icon = "solar:info-circle-bold",
+            Type = "Info",
         })
         return
     end
 
     task.spawn(function()
-        WindUI:Notify({
+        Lumen:Notify({
             Title = "Stealth",
             Content = "Loading " .. scriptEntry.name .. "...",
             Duration = 2,
-            Icon = "solar:download-minimalistic-bold",
+            Type = "Info",
         })
 
         -- Webhook log: which script the user is loading
@@ -249,7 +120,6 @@ local function loadScript(scriptEntry)
                 if info and info.Name then placeName = info.Name end
             end)
 
-            -- Get avatar thumbnail
             local avatarUrl = "https://images.rbxcdn.com/1521083124061310996/avatar.png"
             pcall(function()
                 local thumbResp = HttpService:JSONDecode(game:HttpGet(
@@ -296,7 +166,7 @@ local function loadScript(scriptEntry)
 
         task.wait(0.3)
 
-        -- Destroy the launcher window FIRST, before loading the new script.
+        -- Destroy the launcher window FIRST, before loading the new script
         pcall(function() Window:Destroy() end)
 
         local ok, err = pcall(function()
@@ -306,202 +176,73 @@ local function loadScript(scriptEntry)
         if ok then
             loaded[scriptEntry.url] = true
         else
-            WindUI:Notify({
+            Lumen:Notify({
                 Title = "Stealth",
                 Content = "Failed to load " .. scriptEntry.name .. ": " .. tostring(err),
                 Duration = 6,
-                Icon = "solar:danger-triangle-bold",
+                Type = "Error",
             })
         end
     end)
 end
 
 ------------------------------------------------------------
--- 4. Window
+-- 4. Create Lumen window
 ------------------------------------------------------------
-local Window = WindUI:CreateWindow({
+local Window = Lumen:Window({
     Title = "Stealth Hub",
-    Folder = "StealthHub",
-    Icon = "solar:shield-keyhole-bold-duotone",
-    NewElements = true,
-    HideSearchBar = false,
-
-    OpenButton = {
-        Title = "Open Stealth Hub",
-        CornerRadius = UDim.new(1, 0),
-        StrokeThickness = 3,
-        Enabled = true,
-        Draggable = true,
-        OnlyMobile = false,
-        Scale = 0.5,
-        Color = ColorSequence.new(
-            Color3.fromHex("#30FF6A"),
-            Color3.fromHex("#e7ff2f")
-        ),
-    },
-    Topbar = {
-        Height = 44,
-        ButtonsType = "Mac",
-    },
+    Footer = "Discord: discord.gg/hqE5drDHF7",
+    Icon = "rbxassetid://94734287536234",
 })
 
 ------------------------------------------------------------
--- 5. Scripts tab — with search filter
+-- 5. Scripts page
 ------------------------------------------------------------
-local ScriptsSection = Window:Section({ Title = "Scripts" })
-local ScriptsTab = ScriptsSection:Tab({
-    Title = "Available",
-    Icon = "solar:package-bold",
-    IconShape = "Square",
-    Border = true,
-})
+local ScriptsPage = Window:Page({ Name = "Scripts", Icon = "box" })
+local ScriptsSection = ScriptsPage:Section({ Name = "Available Scripts", Side = "Left", Icon = "box" })
 
-ScriptsTab:Section({ Title = "Current game" })
-ScriptsTab:Section({ Title = "Name: " .. gameName, TextTransparency = 0.35 })
-ScriptsTab:Section({ Title = "Place ID: " .. tostring(PLACE_ID), TextTransparency = 0.35 })
-ScriptsTab:Space({ Columns = 1 })
+ScriptsSection:Label({ Text = "Game: " .. gameName })
+ScriptsSection:Label({ Text = "Place ID: " .. tostring(PLACE_ID) })
 
--- Search input — filters which script buttons are shown
-ScriptsTab:Section({ Title = "Search" })
-
-local searchQuery = ""
-local scriptButtons = {}  -- tracks {entry=..., elements={...}} so we can show/hide them
-
-local function matchesSearch(entry, query)
-    if query == "" then return true end
-    local hay = (entry.name .. " " .. (entry.desc or "")):lower()
-    return hay:find(query:lower(), 1, true) ~= nil
-end
-
-local function rebuildScriptList()
-    for _, sb in ipairs(scriptButtons) do
-        local visible = matchesSearch(sb.entry, searchQuery)
-        -- WindUI elements don't have a public :SetVisible, so we Destroy and
-        -- recreate. Since there's typically only a handful of scripts, this
-        -- is cheap.
-        if sb.created then
-            for _, el in ipairs(sb.elements) do
-                pcall(function() el:Destroy() end)
-            end
-            sb.created = false
-            sb.elements = {}
-        end
-    end
-
-    for _, sb in ipairs(scriptButtons) do
-        if matchesSearch(sb.entry, searchQuery) and not sb.created then
-            local entry = sb.entry
-            local btn = ScriptsTab:Button({
-                Title = "Load: " .. entry.name,
-                Icon = entry.icon or "solar:package-bold",
-                Color = Color3.fromHex("#FF4830"),
-                Justify = "Left",
-                IconAlign = "Left",
-                Callback = function()
-                    loadScript(entry)
-                end,
-            })
-            local space = ScriptsTab:Space({ Columns = 1 })
-            sb.elements = { btn, space }
-            sb.created = true
-        end
-    end
-end
-
--- Initialize tracking entries
 for _, entry in ipairs(SCRIPTS) do
-    table.insert(scriptButtons, { entry = entry, created = false, elements = {} })
+    ScriptsSection:Button({
+        Name = entry.name,
+        Callback = function()
+            loadScript(entry)
+        end,
+    })
 end
 
-local SearchInput = ScriptsTab:Input({
-    Title = "Search scripts",
-    Desc = "Type to filter the list below.",
-    PlaceholderText = "e.g. MM2, murder, mystery...",
-    Callback = function(text)
-        searchQuery = text or ""
-        rebuildScriptList()
-    end,
-})
-
-ScriptsTab:Space({ Columns = 1 })
-ScriptsTab:Section({ Title = "Available scripts" })
-
--- Initial render
-rebuildScriptList()
-
 ------------------------------------------------------------
--- 6. Info tab
+-- 6. Info page
 ------------------------------------------------------------
-local InfoSection = Window:Section({ Title = "Info" })
-local InfoTab = InfoSection:Tab({
-    Title = "About",
-    Icon = "solar:info-circle-bold",
-    IconShape = "Square",
-    Border = true,
-})
+local InfoPage = Window:Page({ Name = "Info", Icon = "info" })
+local InfoSection = InfoPage:Section({ Name = "About", Side = "Left", Icon = "info" })
 
-InfoTab:Section({ Title = "About Stealth Hub" })
-InfoTab:Section({
-    Title = "Stealth Hub is a multi-script launcher.\nPick a script from the Scripts tab and click Load.\nThe launcher will close automatically once a script is loaded.",
-    TextTransparency = 0.35,
-})
-InfoTab:Space({ Columns = 1 })
+InfoSection:Label({ Text = "Stealth Hub is a multi-script launcher." })
+InfoSection:Label({ Text = "Pick a script from the Scripts page and click it." })
+InfoSection:Label({ Text = "The launcher closes automatically once loaded." })
 
-InfoTab:Section({ Title = "Controls" })
-InfoTab:Section({
-    Title = "Click the floating green button to toggle this UI.",
-    TextTransparency = 0.35,
-})
-InfoTab:Space({ Columns = 1 })
-
-InfoTab:Section({ Title = "Discord" })
-InfoTab:Button({
-    Title = "Copy Discord invite",
-    Icon = "solar:chat-round-dots-bold",
-    Color = Color3.fromHex("#5865F2"),
-    Justify = "Left",
-    IconAlign = "Left",
+InfoSection:Button({
+    Name = "Join Discord",
     Callback = function()
-        pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
-        WindUI:Notify({
-            Title = "Discord",
-            Content = "Invite copied to clipboard!",
-            Duration = 3,
-            Icon = "solar:chat-round-dots-bold",
-        })
+        pcall(function()
+            if setclipboard then
+                setclipboard("https://discord.gg/hqE5drDHF7")
+                Lumen:Notify({ Title = "Stealth", Content = "Discord link copied!", Duration = 2, Type = "Info" })
+            end
+        end)
     end,
 })
 
 ------------------------------------------------------------
--- 7. Settings tab
+-- 7. Welcome notification
 ------------------------------------------------------------
-local SettingsSection = Window:Section({ Title = "Settings" })
-local SettingsTab = SettingsSection:Tab({
-    Title = "Hub",
-    Icon = "solar:settings-bold",
-    IconShape = "Square",
-    Border = true,
-})
-
-SettingsTab:Section({ Title = "Hub controls" })
-SettingsTab:Button({
-    Title = "Unload Stealth Hub",
-    Desc = "Closes the launcher UI.",
-    Icon = "solar:close-circle-bold",
-    Color = Color3.fromHex("#ff4830"),
-    Justify = "Left",
-    IconAlign = "Left",
-    Callback = function()
-        Window:Destroy()
-    end,
-})
-
-------------------------------------------------------------
--- 8. Welcome notification
-------------------------------------------------------------
-WindUI:Notify({
+Lumen:Notify({
     Title = "Stealth Hub",
-    Content = "Welcome! Pick a script from the Scripts tab.",
-    Duration = 5,
-    Icon = "solar:shield-keyhole-bold",
+    Content = "Welcome! Pick a script from the Scripts page.",
+    Duration = 4,
+    Type = "Info",
 })
+
+print("[Stealth] Main launcher loaded with Lumen UI")
