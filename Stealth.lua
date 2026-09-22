@@ -187,9 +187,11 @@ pcall(function()
     if Window and Window.Canvas then
         local viewport = workspace.CurrentCamera.ViewportSize
         if viewport.X < 700 then
-            local w = math.floor(math.min(viewport.X * 0.92, 658))
-            local h = math.floor(math.min(viewport.Y * 0.85, 461))
+            local w = math.floor(math.min(viewport.X - 16, 560))
+            local h = math.floor(math.min(viewport.Y - 16, 380))
             Window.Canvas.Size = UDim2.fromOffset(w, h)
+        else
+            Window.Canvas.Size = UDim2.fromOffset(560, 380)
         end
     end
 end)

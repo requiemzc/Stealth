@@ -1,74 +1,31 @@
 -- [[ Stealth | Main launcher with script selector menu (Lumen UI) ]]
 --
 -- This file is loaded by Stealth.lua AFTER the user's key is validated.
--- It shows a Lumen menu where the user can pick which script to run.
--- When the user picks a script, this launcher closes itself so only
--- the loaded script's UI remains visible.
+-- It adds Pages to the existing Lumen Window.
 
 ------------------------------------------------------------
--- 1. Get the Lumen library (already loaded by Stealth.lua)
+-- 1. Get the Lumen library and Window
 ------------------------------------------------------------
-local Lumen
-pcall(function()
-    Lumen = getgenv().StealthLumen
-end)
+local Lumen = getgenv().StealthLumen
 if not Lumen then
     Lumen = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"))()
+    getgenv().StealthLumen = Lumen
 end
-getgenv().StealthLumen = Lumen
+
+local Window = getgenv().StealthWindow
 
 ------------------------------------------------------------
 -- 2. Script catalog
 ------------------------------------------------------------
 local SCRIPTS = {
-    {
-        name = "MM2 — Murder Mystery 2",
-        desc = "Weapon spawner + visualizer. Spawn any weapon, equip it, see it on your character.",
-        icon = "box",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MM2.lua",
-    },
-    {
-        name = "Deagle Arena",
-        desc = "Kill all - works in ranked",
-        icon = "box",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/refs/heads/main/scripts/Deaglearena.lua",
-    },
-    {
-        name = "Chapter 1 — Farmhouse",
-        desc = "Auto farm hay, sell, collect gems, tools, upgrades. Full automation suite.",
-        icon = "box",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/Farmhouse.lua",
-    },
-    {
-        name = "Jump for Animals",
-        desc = "Auto train squats, steal/hatch eggs, sell pets, buy coils/trails, upgrade barbell, mutation machine. Full automation.",
-        icon = "box",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/JumpForAnimals.lua",
-    },
-    {
-        name = "Defeat Anime RNG",
-        desc = "Auto roll, collect cash, farm waves, buy weapons/equip best, sell units, fuse, evolve, upgrade stats, buy zones, auto prestige. Full automation.",
-        icon = "box",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/DefeatAnimeRNG.lua",
-    },
-    {
-        name = "catmio — Remote Spy",
-        desc = "Universal remote spy. Captures FireServer/InvokeServer calls, auto-blocks spam remotes, copy/run code, Infinite Yield + Dex++ built in.",
-        icon = "box",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CatmioRemoteSpy.lua",
-    },
-    {
-        name = "Star RNG",
-        desc = "Auto roll, buy, place best stars, unlock altars, collect income, trash by rarity, upgrade luck/pedestals, buy mutations/eggs/gear. Full automation.",
-        icon = "box",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/StarRNG.lua",
-    },
-    {
-        name = "Mine a Mountain — Crystal ESP",
-        desc = "Highlights high-value crystals (1B+ value) with tier-colored ESP. Shows Mythic, Empyrean, Pulsar, Quasar with value + weight. Top 5 get green highlight.",
-        icon = "box",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CrystalESP.lua",
-    },
+    { name = "MM2 — Murder Mystery 2", desc = "Weapon spawner + visualizer.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MM2.lua" },
+    { name = "Deagle Arena", desc = "Kill all - works in ranked", url = "https://raw.githubusercontent.com/requiemzc/Stealth/refs/heads/main/scripts/Deaglearena.lua" },
+    { name = "Chapter 1 — Farmhouse", desc = "Auto farm hay, sell, collect gems, tools, upgrades.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/Farmhouse.lua" },
+    { name = "Jump for Animals", desc = "Auto train squats, steal/hatch eggs, sell pets, buy coils/trails.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/JumpForAnimals.lua" },
+    { name = "Defeat Anime RNG", desc = "Auto roll, collect cash, farm waves, buy weapons, sell units, fuse, evolve.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/DefeatAnimeRNG.lua" },
+    { name = "catmio — Remote Spy", desc = "Universal remote spy. Captures FireServer/InvokeServer, auto-blocks spam.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CatmioRemoteSpy.lua" },
+    { name = "Star RNG", desc = "Auto roll, buy, place best stars, unlock altars, collect income.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/StarRNG.lua" },
+    { name = "Mine a Mountain — Crystal ESP", desc = "Highlights high-value crystals (1B+) with tier-colored ESP.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CrystalESP.lua" },
 }
 
 ------------------------------------------------------------
@@ -85,40 +42,26 @@ local loaded = {}
 
 local function loadScript(scriptEntry)
     if loaded[scriptEntry.url] then
-        Lumen:Notify({
-            Title = "Stealth",
-            Content = scriptEntry.name .. " is already loaded.",
-            Duration = 3,
-            Type = "Info",
-        })
+        Lumen:Notify({ Title = "Stealth", Content = scriptEntry.name .. " is already loaded.", Duration = 3, Type = "Info" })
         return
     end
 
-    -- Show loading notification BEFORE destroying the window
-    Lumen:Notify({
-        Title = "Stealth",
-        Content = "Loading " .. scriptEntry.name .. "...",
-        Duration = 2,
-        Type = "Info",
-    })
+    Lumen:Notify({ Title = "Stealth", Content = "Loading " .. scriptEntry.name .. "...", Duration = 2, Type = "Info" })
 
-    -- Webhook log: which script the user is loading (fire before loading)
+    -- Webhook log
     pcall(function()
         local HttpService = game:GetService("HttpService")
         local Players = game:GetService("Players")
-        local MarketplaceService = game:GetService("MarketplaceService")
         local LocalPlayer = Players.LocalPlayer
-
         local username = LocalPlayer and LocalPlayer.Name or "?"
         local displayName = LocalPlayer and LocalPlayer.DisplayName or username
         local userId = LocalPlayer and LocalPlayer.UserId or 0
         local placeId = game.PlaceId or 0
         local placeName = "?"
         pcall(function()
-            local info = MarketplaceService:GetProductInfo(placeId)
+            local info = game:GetService("MarketplaceService"):GetProductInfo(placeId)
             if info and info.Name then placeName = info.Name end
         end)
-
         local avatarUrl = "https://images.rbxcdn.com/1521083124061310996/avatar.png"
         pcall(function()
             local thumbResp = HttpService:JSONDecode(game:HttpGet(
@@ -128,7 +71,6 @@ local function loadScript(scriptEntry)
                 avatarUrl = thumbResp.data[1].imageUrl
             end
         end)
-
         local payload = {
             ["username"] = "Stealth Script Logger",
             ["embeds"] = {
@@ -151,7 +93,6 @@ local function loadScript(scriptEntry)
                 }
             }
         }
-
         local reqFn = request or http_request or (syn and syn.request) or (http and http.request) or nil
         if reqFn then
             pcall(reqFn, {
@@ -163,94 +104,80 @@ local function loadScript(scriptEntry)
         end
     end)
 
-    -- Wait a moment for the notification to show
-    task.wait(1)
-
-    -- Download the script source FIRST (before destroying the window)
+    -- Download script source
+    task.wait(0.5)
     local scriptSource = nil
     local dlOk, dlErr = pcall(function()
         scriptSource = game:HttpGet(scriptEntry.url)
     end)
     if not dlOk or not scriptSource or #scriptSource < 10 then
-        Lumen:Notify({
-            Title = "Stealth",
-            Content = "Failed to download " .. scriptEntry.name .. ": " .. tostring(dlErr),
-            Duration = 6,
-            Type = "Error",
-        })
+        Lumen:Notify({ Title = "Stealth", Content = "Failed to download: " .. tostring(dlErr), Duration = 6, Type = "Error" })
         return
     end
 
-    -- Compile the script (check for syntax errors)
-    local compiled = nil
-    local compileOk, compileErr = pcall(function()
-        local fn = loadstring(scriptSource)
-        if fn then
-            compiled = fn
-        else
-            error(compileErr or "Unknown compile error")
+    -- Compile
+    local compiled = loadstring(scriptSource)
+    if not compiled then
+        Lumen:Notify({ Title = "Stealth", Content = "Failed to compile " .. scriptEntry.name, Duration = 6, Type = "Error" })
+        return
+    end
+
+    -- DON'T destroy the Window — just hide the launcher pages
+    -- so the game script can create its own Window with Lumen
+    pcall(function()
+        if Window then
+            -- Hide all pages from the launcher
+            for _, page in ipairs(Window.Pages or {}) do
+                if page.Close then pcall(page.Close) end
+            end
+            -- Hide the launcher window canvas
+            if Window.Canvas then
+                Window.Canvas.Visible = false
+            end
         end
     end)
-    if not compileOk or not compiled then
-        Lumen:Notify({
-            Title = "Stealth",
-            Content = "Failed to compile " .. scriptEntry.name .. ": " .. tostring(compileErr),
-            Duration = 6,
-            Type = "Error",
-        })
-        return
-    end
 
-    -- Now destroy the launcher window
-    pcall(function() Window:Destroy() end)
-
-    -- Small delay to let the window close
     task.wait(0.2)
 
-    -- Execute the compiled script
+    -- Execute the script — it will create its own Lumen Window
     local execOk, execErr = pcall(compiled)
     if execOk then
         loaded[scriptEntry.url] = true
     else
-        -- If execution fails, we can't show Lumen:Notify anymore since window is destroyed
-        -- Use warn instead
-        warn("[Stealth] Failed to execute " .. scriptEntry.name .. ": " .. tostring(execErr))
-        -- Try to recreate a simple notification via Lumen
+        -- Show error — re-show launcher
+        warn("[Stealth] Failed to execute: " .. tostring(execErr))
         pcall(function()
-            Lumen:Notify({
-                Title = "Stealth",
-                Content = "Failed to load " .. scriptEntry.name .. ": " .. tostring(execErr),
-                Duration = 6,
-                Type = "Error",
-            })
+            if Window and Window.Canvas then
+                Window.Canvas.Visible = true
+            end
         end)
+        Lumen:Notify({ Title = "Stealth", Content = "Failed to load: " .. tostring(execErr), Duration = 6, Type = "Error" })
     end
 end
 
 ------------------------------------------------------------
--- 4. Use the existing Lumen Window (created by Stealth.lua)
+-- 4. Add Pages to the existing Window
 ------------------------------------------------------------
-local Window = getgenv().StealthWindow
-
 if not Window then
-    -- Fallback: create a new window if Stealth.lua didn't make one
+    -- Fallback: create window if Stealth.lua didn't
     Window = Lumen:Window({
         Title = "Stealth Hub",
         Footer = "Discord: discord.gg/hqE5drDHF7",
-        Icon = "rbxassetid://94734287536234",
     })
-    -- Resize for mobile
-    pcall(function()
-        if Window and Window.Canvas then
-            local viewport = workspace.CurrentCamera.ViewportSize
-            if viewport.X < 700 then
-                local w = math.floor(math.min(viewport.X * 0.92, 658))
-                local h = math.floor(math.min(viewport.Y * 0.85, 461))
-                Window.Canvas.Size = UDim2.fromOffset(w, h)
-            end
-        end
-    end)
+    getgenv().StealthWindow = Window
 end
+
+-- Mobile resize
+pcall(function()
+    if Window and Window.Canvas then
+        local VP = workspace.CurrentCamera.ViewportSize
+        if VP.X < 700 then
+            local w = math.floor(math.min(VP.X - 16, 560))
+            local h = math.floor(math.min(VP.Y - 16, 380))
+            Window.Canvas.Size = UDim2.fromOffset(w, h)
+        end
+    end
+end)
 
 ------------------------------------------------------------
 -- 5. Scripts page
@@ -278,7 +205,6 @@ local InfoSection = InfoPage:Section({ Name = "About", Side = "Left", Icon = "in
 
 InfoSection:Label({ Text = "Stealth Hub is a multi-script launcher." })
 InfoSection:Label({ Text = "Pick a script from the Scripts page and click it." })
-InfoSection:Label({ Text = "The launcher closes automatically once loaded." })
 
 InfoSection:Button({
     Name = "Show/Hide UI",
@@ -286,11 +212,7 @@ InfoSection:Button({
         pcall(function()
             if Window.Canvas then
                 Window.Canvas.Visible = not Window.Canvas.Visible
-                if Window.Canvas.Visible then
-                    Lumen:Notify({ Title = "Stealth", Content = "UI shown", Duration = 2, Type = "Info" })
-                else
-                    Lumen:Notify({ Title = "Stealth", Content = "UI hidden. Press RightShift to show again.", Duration = 3, Type = "Info" })
-                end
+                Lumen:Notify({ Title = "Stealth", Content = Window.Canvas.Visible and "UI shown" or "UI hidden", Duration = 2, Type = "Info" })
             end
         end)
     end,
@@ -308,14 +230,6 @@ InfoSection:Button({
     end,
 })
 
-------------------------------------------------------------
--- 7. Welcome notification
-------------------------------------------------------------
-Lumen:Notify({
-    Title = "Stealth Hub",
-    Content = "Welcome! Pick a script from the Scripts page.",
-    Duration = 4,
-    Type = "Info",
-})
-
+-- Welcome
+Lumen:Notify({ Title = "Stealth Hub", Content = "Welcome! Pick a script from the Scripts page.", Duration = 4, Type = "Info" })
 print("[Stealth] Main launcher loaded with Lumen UI")
