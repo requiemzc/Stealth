@@ -186,12 +186,6 @@ local SCRIPTS = {
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/StarRNG.lua",
     },
     {
-        name = "Speed Unraveler Escape",
-        desc = "Auto farm wins, auto win, auto rebirth, INF speed, 2x wins, teleport to win/start zones, anti-AFK. Full automation.",
-        icon = "solar:rocket-bold-duotone",
-        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/SpeedUnravelerEscape.lua",
-    },
-    {
         name = "Crystal ESP",
         desc = "Highlights high-value crystals (1B+ value) with tier-colored ESP. Shows Mythic, Empyrean, Pulsar, Quasar with value + weight. Top 5 get green highlight.",
         icon = "solar:gem-bold-duotone",
