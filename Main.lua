@@ -45,8 +45,11 @@ local function loadScript(scriptEntry)
         Lumen:Notify({ Title = "Stealth", Content = scriptEntry.name .. " is already loaded.", Duration = 3, Type = "Info" })
         return
     end
+    loaded[scriptEntry.url] = true
 
-    Lumen:Notify({ Title = "Stealth", Content = "Loading " .. scriptEntry.name .. "...", Duration = 2, Type = "Info" })
+    Lumen:Notify({ Title = "Stealth", Content = "Loading " .. scriptEntry.name .. "...", Duration = 3, Type = "Info" })
+
+    -- Webhook log
 
     -- Webhook log
     pcall(function()
@@ -122,37 +125,28 @@ local function loadScript(scriptEntry)
         return
     end
 
-    -- DON'T destroy the Window — just hide the launcher pages
-    -- so the game script can create its own Window with Lumen
+    -- Hide the launcher canvas so the game script's new window is visible
     pcall(function()
-        if Window then
-            -- Hide all pages from the launcher
-            for _, page in ipairs(Window.Pages or {}) do
-                if page.Close then pcall(page.Close) end
-            end
-            -- Hide the launcher window canvas
-            if Window.Canvas then
-                Window.Canvas.Visible = false
-            end
+        if Window and Window.Canvas then
+            Window.Canvas.Visible = false
         end
     end)
 
-    task.wait(0.2)
-
-    -- Execute the script — it will create its own Lumen Window
-    local execOk, execErr = pcall(compiled)
-    if execOk then
-        loaded[scriptEntry.url] = true
-    else
-        -- Show error — re-show launcher
-        warn("[Stealth] Failed to execute: " .. tostring(execErr))
-        pcall(function()
-            if Window and Window.Canvas then
-                Window.Canvas.Visible = true
-            end
-        end)
-        Lumen:Notify({ Title = "Stealth", Content = "Failed to load: " .. tostring(execErr), Duration = 6, Type = "Error" })
-    end
+    -- Execute the script in a new thread
+    task.spawn(function()
+        local execOk, execErr = pcall(compiled)
+        if not execOk then
+            warn("[Stealth] Failed to execute: " .. tostring(execErr))
+            -- Re-show launcher on failure
+            pcall(function()
+                if Window and Window.Canvas then
+                    Window.Canvas.Visible = true
+                end
+            end)
+            loaded[scriptEntry.url] = nil
+            Lumen:Notify({ Title = "Stealth", Content = "Failed to load: " .. tostring(execErr), Duration = 6, Type = "Error" })
+        end
+    end)
 end
 
 ------------------------------------------------------------
