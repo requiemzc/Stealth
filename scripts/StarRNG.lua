@@ -67,7 +67,7 @@ end
 -- 2. Load Lumen
 ------------------------------------------------------------
 local Lumen = loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/chromatiks/Lumen/main/Library.lua"
+    "https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"
 ))()
 
 _elevateIdentity()

@@ -13,7 +13,7 @@ local MAIN_SCRIPT_URL = "https://raw.githubusercontent.com/requiemzc/Stealth/mai
 ------------------------------------------------------------
 -- 1. Load Lumen
 ------------------------------------------------------------
-local Lumen = loadstring(game:HttpGet("https://raw.githubusercontent.com/chromatiks/Lumen/main/Library.lua"))()
+local Lumen = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"))()
 
 ------------------------------------------------------------
 -- 2. HWID detection

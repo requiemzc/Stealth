@@ -14,7 +14,7 @@ pcall(function()
     Lumen = getgenv().StealthLumen
 end)
 if not Lumen then
-    Lumen = loadstring(game:HttpGet("https://raw.githubusercontent.com/chromatiks/Lumen/main/Library.lua"))()
+    Lumen = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"))()
 end
 getgenv().StealthLumen = Lumen
 
@@ -222,6 +222,22 @@ local InfoSection = InfoPage:Section({ Name = "About", Side = "Left", Icon = "in
 InfoSection:Label({ Text = "Stealth Hub is a multi-script launcher." })
 InfoSection:Label({ Text = "Pick a script from the Scripts page and click it." })
 InfoSection:Label({ Text = "The launcher closes automatically once loaded." })
+
+InfoSection:Button({
+    Name = "Show/Hide UI",
+    Callback = function()
+        pcall(function()
+            if Window.Canvas then
+                Window.Canvas.Visible = not Window.Canvas.Visible
+                if Window.Canvas.Visible then
+                    Lumen:Notify({ Title = "Stealth", Content = "UI shown", Duration = 2, Type = "Info" })
+                else
+                    Lumen:Notify({ Title = "Stealth", Content = "UI hidden. Press RightShift to show again.", Duration = 3, Type = "Info" })
+                end
+            end
+        end)
+    end,
+})
 
 InfoSection:Button({
     Name = "Join Discord",

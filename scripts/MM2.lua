@@ -44888,7 +44888,7 @@ do
     -- threads, so this is usually enough.
 
     local Lumen = loadstring(game:HttpGet(
-        "https://raw.githubusercontent.com/chromatiks/Lumen/main/Library.lua"
+        "https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"
     ))()
 
     -- Re-assert after loadstring (it may reset identity).
