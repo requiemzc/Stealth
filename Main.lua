@@ -191,6 +191,12 @@ local SCRIPTS = {
         icon = "solar:rocket-bold-duotone",
         url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/SpeedUnravelerEscape.lua",
     },
+    {
+        name = "Crystal ESP",
+        desc = "Highlights high-value crystals (1B+ value) with tier-colored ESP. Shows Mythic, Empyrean, Pulsar, Quasar with value + weight. Top 5 get green highlight.",
+        icon = "solar:gem-bold-duotone",
+        url  = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CrystalESP.lua",
+    },
     
     -- >>> ADD MORE SCRIPTS HERE <<<
     -- {
