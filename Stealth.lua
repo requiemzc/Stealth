@@ -4,10 +4,7 @@
 -- Keys are issued at https://sstealth.vercel.app/ and rotate every 15 minutes,
 -- each locked to a single HWID on first validation. Valid keys last 2 hours.
 --
--- After successful validation, Stealth loads Main.lua (from this same repo)
--- which shows a Lumen menu letting the user pick which script to run.
---
--- HOW TO USE (end user):
+-- HOW TO USE:
 --   loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Stealth.lua"))()
 
 local STEALTH_API = "https://sstealth.vercel.app"
@@ -40,7 +37,9 @@ local function saveKey(key)
 end
 
 local function clearSavedKey()
-    pcall(function() if isfile and isfile("Stealth_Key.txt") then delfile("Stealth_Key.txt") end end)
+    pcall(function()
+        if isfile and isfile("Stealth_Key.txt") then delfile("Stealth_Key.txt") end
+    end)
 end
 
 local function loadSavedKey()
@@ -55,12 +54,12 @@ local function loadSavedKey()
 end
 
 ------------------------------------------------------------
--- 4. Key validation — calls /api/validate
+-- 4. Key validation (synchronous return for Lumen)
 ------------------------------------------------------------
 local function validateKey(key, finish)
     if not key or key == "" then
-        finish(false, nil, "Enter a key")
-        return
+        if finish then finish(false, nil, "Enter a key") end
+        return false, nil, "Enter a key"
     end
 
     local HttpService = game:GetService("HttpService")
@@ -69,7 +68,7 @@ local function validateKey(key, finish)
     local LocalPlayer = Players.LocalPlayer
     local hwid = getHWID()
 
-    -- Collect Roblox context for the server log
+    -- Collect Roblox context
     local username, userId, placeId, placeName
     pcall(function()
         if LocalPlayer then
@@ -96,15 +95,15 @@ local function validateKey(key, finish)
         })
     end)
     if not ok or not body then
-        finish(false, nil, "Failed to encode request")
-        return
+        if finish then finish(false, nil, "Failed to encode request") end
+        return false, nil, "Failed to encode request"
     end
 
     -- Fire the request
     local reqFn = request or http_request or nil
     if not reqFn then
-        finish(false, nil, "No HTTP function available")
-        return
+        if finish then finish(false, nil, "No HTTP function available") end
+        return false, nil, "No HTTP function available"
     end
 
     local res
@@ -117,8 +116,8 @@ local function validateKey(key, finish)
         })
     end)
     if not ok or not res then
-        finish(false, nil, "Request failed: " .. tostring(err))
-        return
+        if finish then finish(false, nil, "Request failed: " .. tostring(err)) end
+        return false, nil, "Request failed: " .. tostring(err)
     end
 
     -- Parse response
@@ -127,15 +126,16 @@ local function validateKey(key, finish)
         data = HttpService:JSONDecode(res.Body)
     end)
     if not ok or not data then
-        finish(false, nil, "Bad response from server")
-        return
+        if finish then finish(false, nil, "Bad response from server") end
+        return false, nil, "Bad response from server"
     end
 
     if data.valid == true then
         -- Save the (possibly renewed) key
         local keyToSave = (type(data.key) == "string" and #data.key > 0) and data.key or key
         saveKey(keyToSave)
-        finish(true, data.expiresAt, nil)
+        if finish then finish(true, data.expiresAt, nil) end
+        return true, data.expiresAt, nil
     else
         -- Clear saved key on auth failures
         local errCode = data.error or "UNKNOWN"
@@ -149,7 +149,9 @@ local function validateKey(key, finish)
             HWID_LOCKED   = "This key is locked to a different device.",
             KEY_REVOKED   = "This key has been revoked by an admin.",
         }
-        finish(false, nil, messages[errCode] or "Validation failed: " .. errCode)
+        local msg = messages[errCode] or "Validation failed: " .. errCode
+        if finish then finish(false, nil, msg) end
+        return false, nil, msg
     end
 end
 
@@ -163,7 +165,12 @@ Lumen:KeySystem({
     GetKey = STEALTH_API .. "/keysys",
     Remember = true,
     RememberFile = "Stealth_Key.txt",
-    Validate = validateKey,
+    Validate = function(key, finish)
+        -- Run validation in a background thread so the UI doesn't freeze
+        task.spawn(function()
+            validateKey(key, finish)
+        end)
+    end,
 })
 
 ------------------------------------------------------------
@@ -237,44 +244,72 @@ task.spawn(function()
 end)
 
 ------------------------------------------------------------
--- 7. On key success — create the window and load Main.lua
+-- 7. Create the main window AFTER key validation
 ------------------------------------------------------------
-Lumen.OnKeyValidated = function()
-    -- Load Main.lua which builds the script selector menu
-    local ok, err = pcall(function()
-        loadstring(game:HttpGet(MAIN_SCRIPT_URL))()
-    end)
-    if not ok then
-        Lumen:Notify({
-            Title = "Stealth",
-            Content = "Failed to load main script: " .. tostring(err),
-            Duration = 6,
-            Type = "Error",
-        })
+-- Lumen's KeySystem shows the key prompt. When the key is validated,
+-- it removes the prompt and we need to create the window + load Main.lua.
+-- We hook into Lumen's auth validation to do this.
+
+local originalMountKeySystem = Lumen._MountKeySystem
+Lumen._MountKeySystem = function(window)
+    -- Call original to show key prompt
+    if originalMountKeySystem then
+        originalMountKeySystem(window)
     end
 end
+
+-- After key is validated, Lumen removes the key system overlay.
+-- We detect this by polling and then load Main.lua.
+task.spawn(function()
+    while true do
+        task.wait(0.5)
+        if Lumen.Auth and Lumen.Auth.Validated then
+            -- Key was validated! Load Main.lua
+            task.wait(0.5) -- small delay to let Lumen settle
+            local ok, err = pcall(function()
+                loadstring(game:HttpGet(MAIN_SCRIPT_URL))()
+            end)
+            if not ok then
+                Lumen:Notify({
+                    Title = "Stealth",
+                    Content = "Failed to load main script: " .. tostring(err),
+                    Duration = 6,
+                    Type = "Error",
+                })
+            end
+            break
+        end
+    end
+end)
 
 ------------------------------------------------------------
 -- 8. Try auto-loading a saved key
 ------------------------------------------------------------
 local savedKey = loadSavedKey()
 if savedKey then
-    -- Lumen's Remember feature should handle this automatically
-    -- via the RememberFile, but we also pre-fill it just in case
     task.defer(function()
-        task.wait(0.5)
-        -- If the key system is still showing, try to auto-validate
+        task.wait(1)
         if Lumen.Auth and not Lumen.Auth.Validated then
             validateKey(savedKey, function(success, expiresAt, err)
-                if success and Lumen.OnKeyValidated then
+                if success then
                     Lumen.Auth.Validated = true
+                    Lumen.Auth.Token = savedKey
+                    Lumen.Auth.ExpiresAt = expiresAt
+                    -- Remove key system overlay
+                    for _, win in ipairs(Lumen.Windows or {}) do
+                        if win.Canvas then
+                            local keySystem = win.Canvas:FindFirstChild("KeySystem")
+                            if keySystem then
+                                keySystem:Destroy()
+                            end
+                        end
+                    end
                     Lumen:Notify({
                         Title = "Stealth",
                         Content = "Key loaded from saved file!",
                         Duration = 3,
                         Type = "Success",
                     })
-                    Lumen.OnKeyValidated()
                 end
             end)
         end
