@@ -58,7 +58,7 @@ end
 ------------------------------------------------------------
 -- 2. Load Library
 ------------------------------------------------------------
-local Library = getgenv().StealthObsidian or loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 end
 if not Library then warn("[Stealth] Failed to load Library UI") return end
 _elevateIdentity()
@@ -227,12 +227,10 @@ end
 ------------------------------------------------------------
 -- 6. Create Library window
 ------------------------------------------------------------
-local Window = Library:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
-    Topbar = {
+local Window = Library:CreateWindow({ Title = "Stealth", Footer = "discord.gg/hqE5drDHF7", AutoLoad = true })
         Height = 44,
-        ButtonsType = "Mac"
 })
-}))
+
 ------------------------------------------------------------
 -- 7. Tabs
 ------------------------------------------------------------
@@ -253,10 +251,10 @@ local AreaLabel = MainTab:AddLabel("Plot: ...:  ", true)
 local SessionLabel = MainTab:AddLabel("Session: 0s:  ", true)
 MainTab:AddButton({ Text = "Teleport: Base",
     Callback = function() FireRemote("TeleportToBase") end
-}))
+
 MainTab:AddButton({ Text = "Teleport: Market",
     Callback = function() FireRemote("TeleportToMarket") end
-}))
+
 local CashLabel = MainTab:AddLabel("Cash: ...:  ", true)
 local AltarLabel = MainTab:AddLabel("Altars: ...:  ", true)
 local PedestalLabel = MainTab:AddLabel("Rolling stars: ...:  ", true)
@@ -286,7 +284,7 @@ FarmingTab:AddDropdown("RaritiesToTrash", {
     Options = RARITIES,
     Multi = true,
     Callback = function(state) Options.TrashRarities = state end
- }))
+
 ------------------------------------------------------------
 -- 10. Roll & Buy tab
 ------------------------------------------------------------
@@ -299,7 +297,7 @@ RollBuyTab:AddDropdown("StopOnRarity", {
     Text = "Stop On Rarity",
     Options = RARITIES,
     Callback = function(state) Options.RollStopRarity = state end
- }))
+
 Toggles.RollStopEnabled = false
 RollBuyTab:AddToggle("StopRollingOnTarget", {  Text = "Stop Rolling On Target+", Default = false,
     Callback = function(v) Toggles.RollStopEnabled = v end
@@ -314,7 +312,7 @@ RollBuyTab:AddDropdown("RaritiesToBuy", {
     Options = RARITIES,
     Multi = true,
     Callback = function(state) Options.BuyStarRarities = state end
- }))
+
 ------------------------------------------------------------
 -- 11. Upgrades tab
 ------------------------------------------------------------
@@ -339,7 +337,7 @@ ShopsTab:AddDropdown("MutationItems", {
     Options = MUTATION_IDS,
     Multi = true,
     Callback = function(state) Options.MutItems = state end
- }))
+
 Toggles.AutoEgg = false
 ShopsTab:AddToggle("AutoBuyPetEggs", {  Text = "Auto Buy Pet Eggs", Default = false,
     Callback = function(v) Toggles.AutoEgg = v end
@@ -350,7 +348,7 @@ ShopsTab:AddDropdown("PetEggs", {
     Options = EGG_NAMES,
     Multi = true,
     Callback = function(state) Options.EggItems = state end
- }))
+
 Toggles.AutoGear = false
 ShopsTab:AddToggle("AutoBuyGear", {  Text = "Auto Buy Gear", Default = false,
     Callback = function(v) Toggles.AutoGear = v end
@@ -361,13 +359,13 @@ ShopsTab:AddDropdown("Gear", {
     Options = GEAR_IDS,
     Multi = true,
     Callback = function(state) Options.GearItems = state end
- }))
+
 Options.GearQty = "1"
 ShopsTab:CreateDropdown({
     Name = "Quantity",
     Options = {"1", "10"},
     Callback = function(state) Options.GearQty = state end
-}))
+
 ------------------------------------------------------------
 -- 13. Settings tab
 ------------------------------------------------------------
@@ -381,7 +379,7 @@ SettingsTab:AddButton({ Text = "Unload Stealth",
         Unloaded = true
         pcall(function() Window:Destroy() end)
     end
-}))
+
 ------------------------------------------------------------
 -- 14. Automation loops (from original, unchanged)
 ------------------------------------------------------------
@@ -524,5 +522,5 @@ Library:Notify({
     Name = "Stealth",
     Content = gameName .. " loaded! Press RightShift",
     Duration = 4
-}))
+
 print("[Stealth] Loaded " .. gameName .. " via Library")

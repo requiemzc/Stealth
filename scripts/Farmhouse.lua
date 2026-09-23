@@ -93,7 +93,7 @@ end
 ------------------------------------------------------------
 -- 2. Load Library
 ------------------------------------------------------------
-local Library = getgenv().StealthObsidian or loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 end
 if not Library then warn("[Stealth] Failed to load Library UI") return end
 _elevateIdentity()
@@ -114,7 +114,7 @@ function Library:Notify(opts)
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3
-}))
+
 end
 function Library:Unload()
     if self.Unloaded then return end
@@ -156,12 +156,10 @@ local GemsClientFolder = Workspace:FindFirstChild("GemsClient")
 ------------------------------------------------------------
 -- 5. Create Library window
 ------------------------------------------------------------
-local Window = Library:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
-    Topbar = {
+local Window = Library:CreateWindow({ Title = "Stealth", Footer = "discord.gg/hqE5drDHF7", AutoLoad = true })
         Height = 44,
-        ButtonsType = "Mac"
 })
-}))
+
 Library._window = Window
 ------------------------------------------------------------
 -- 6. Helper to register toggle/slider/dropdown into Toggles/Options
@@ -405,9 +403,9 @@ MainTab:AddButton({ Text = "Copy Discord",
             Name = "Discord",
             Content = "Invite copied to clipboard!",
             Duration = 3
-}))
+
     end
-}))
+
 MainTab:AddLeftGroupbox("Status")})
 MainTab:AddLeftGroupbox("Farming & Inventory tabs hold all automation."), TextTransparency = 0.35})
 MainTab:AddLeftGroupbox("Settings holds Config & Anti-AFK."), TextTransparency = 0.35})
@@ -442,7 +440,7 @@ CollectingTab:AddSlider("LoopInterval", {
     Rounding = 1,
     Suffix = "s",
     Callback = function(v) Options.CollectInterval.Value = v end
- }))
+
 CollectingTab:AddLeftGroupbox("Vacuum needs VacuumOwned. Gems within 35 studs."), TextTransparency = 0.35})
 ------------------------------------------------------------
 -- 11. SELLING TAB
@@ -458,7 +456,7 @@ SellingTab:CreateSlider({
     Range = { 1, 250 }, CurrentValue = 25,
     Rounding = 0,
     Callback = function(v) Options.SellThreshold.Value = v end
-}))
+
 registerToggle("SellOnlyIfFull", false)
 SellingTab:AddToggle("OnlySellIfFull", {  Text = "Only Sell If Full", Default = false,
     Callback = function(v) Toggles.SellOnlyIfFull.Value = v end
@@ -495,7 +493,7 @@ ToolsTab:AddSlider("ToolInterval", {
     Rounding = 1,
     Suffix = "s",
     Callback = function(v) Options.ToolInterval.Value = v end
- }))
+
 ToolsTab:AddLeftGroupbox("Requirements"), TextTransparency = 0.5})
 ToolsTab:AddLeftGroupbox("PitchforkOwned, TntOwned, DroneOwned, VacuumOwned required per tool."), TextTransparency = 0.35})
 ToolsTab:AddLeftGroupbox("TNT cooldown & vacuum heat managed by server."), TextTransparency = 0.35})
@@ -522,7 +520,7 @@ NeedleTab:AddSlider("NeedleInterval", {
     Rounding = 1,
     Suffix = "s",
     Callback = function(v) Options.NeedleInterval.Value = v end
- }))
+
 NeedleTab:AddLeftGroupbox("How Needle Works"), TextTransparency = 0.5})
 NeedleTab:AddLeftGroupbox("Needle spawns under hay. Removing hay reveals it."), TextTransparency = 0.35})
 NeedleTab:AddLeftGroupbox("Pile center from Config.PILE_CENTER used for automation."), TextTransparency = 0.35})
@@ -540,7 +538,7 @@ ShopTab:CreateDropdown({
         -- Library returns a table for multi-select
         Options.BuyToolsList.Value = v or {}
     end
-}))
+
 registerToggle("AutoBuyTools", false)
 ShopTab:AddToggle("AutoBuySelectedTools", {  Text = "Auto Buy Selected Tools", Default = false,
     Callback = function(v) Toggles.AutoBuyTools.Value = v end
@@ -554,7 +552,7 @@ ShopTab:AddSlider("BuyInterval", {
     Rounding = 1,
     Suffix = "s",
     Callback = function(v) Options.BuyInterval.Value = v end
- }))
+
 ShopTab:AddLeftGroupbox("Ownership"), TextTransparency = 0.5})
 ShopTab:AddLeftGroupbox("Attributes: PitchforkOwned, TntOwned, DroneOwned, VacuumOwned, InfiniteBagOwned"), TextTransparency = 0.35})
 ShopTab:AddButton({ Text = "Check Ownership",
@@ -568,7 +566,7 @@ ShopTab:AddButton({ Text = "Check Ownership",
         end
         Library:Notify({Title="Ownership", Description=table.concat(t,"\n"), Time=4})
     end
-}))
+
 ------------------------------------------------------------
 -- 15. UPGRADES TAB
 ------------------------------------------------------------
@@ -599,7 +597,7 @@ UpgradesTab:AddSlider("PermanentLoop", {
     Rounding = 1,
     Suffix = "s",
     Callback = function(v) Options.PermInterval.Value = v end
- }))
+
 UpgradesTab:AddLeftGroupbox("Hand Upgrades (Cash)")})
 registerToggle("UpgHandSpeed", false)
 UpgradesTab:AddToggle("AutoHandSpeed", {  Text = "Auto Hand Speed", Desc = "Speed track 0.55->0.3", Default = false, Callback = function(v) Toggles.UpgHandSpeed.Value = v end })
@@ -654,7 +652,7 @@ SettingsTab:AddButton({ Text = "Unload Stealth",
     Callback = function()
         Library:Unload()
     end
-}))
+
 SettingsTab:AddLeftGroupbox("System")})
 registerToggle("AntiAFK", true)
 SettingsTab:AddToggle("AntiAFKjumpevery5m", {  Text = "Anti-AFK (jump every 5m)", Desc = "Enabled by default. Uses jump to keep alive.",
@@ -1017,5 +1015,5 @@ Library:Notify({
     Name = "Stealth",
     Description = gameName .. " loaded. Farming=collect/sell/tools | Inventory=shop/upgrades",
     Time = 5
-}))
+
 print("[Stealth] Loaded "..gameName.." via Library")

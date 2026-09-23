@@ -76,7 +76,6 @@ local MESHES_OLD =
     Class = "Beam",
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))}),
     LightEmission = 1,
     Texture = "rbxassetid://15374653796",
     TextureLength = 1.5,
@@ -120,7 +119,6 @@ local MESHES_OLD =
     Class = "Beam",
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 255, 0))}),
     LightEmission = 0.5,
     Texture = "",
     TextureLength = 1,
@@ -200,7 +198,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=116657254",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.7, 0.7),
     TextureId = "https://www.roblox.com/asset/?id=445884341",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -244,7 +241,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://107813118898769",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0471, 0.0471, 0.0471),
     TextureId = "rbxassetid://137012201908941",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -296,7 +292,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://107813118898769",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0471, 0.0471, 0.0471),
     TextureId = "rbxassetid://137012201908941",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -337,7 +332,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=92656610",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.4, 0.45, 0.5),
     TextureId = "https://www.roblox.com/asset/?id=386269992",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -391,7 +385,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://77235373292363",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0433, 0.0433, 0.0433),
     TextureId = "rbxassetid://97280881789656",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -433,7 +426,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://12322809632",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0476, 0.0441, 0.0438),
     TextureId = "rbxassetid://12322809917",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -533,7 +525,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://124598402927958",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.1012, 0.1012, 0.1012),
     TextureId = "rbxassetid://123603327635244",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -585,7 +576,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0384, 0.035, 0.035),
     TextureId = "rbxassetid://4728494788",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -630,7 +620,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0364, 0.035, 0.035),
     TextureId = "rbxassetid://4728494788",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -750,7 +739,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://15408863676",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.021, 0.021, 0.0205),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1042,7 +1030,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "rbxassetid://2702668339",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1088,7 +1075,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://11866444071",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0461, 0.0461, 0.0461),
     TextureId = "rbxassetid://11866444253",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1129,7 +1115,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(0, 1, 0)
 })
@@ -1270,7 +1255,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6125843704",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://6125843755",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1311,7 +1295,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://130099641",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1361,7 +1344,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=130099641",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "http://www.roblox.com/asset?id=161254231",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1400,7 +1382,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0364, 0.035, 0.035),
     TextureId = "rbxassetid://5278764604",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1456,7 +1437,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.039, 0.039, 0.039),
     TextureId = "http://www.roblox.com/asset/?id=4728487789",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1501,7 +1481,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1556,7 +1535,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1600,7 +1578,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "rbxassetid://4835358188",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1711,7 +1688,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://13928587755",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0787, 0.0431, 0.0468),
     TextureId = "rbxassetid://13928590054",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1780,7 +1756,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://9702755186",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0424, 0.0463, 0.0439),
     TextureId = "rbxassetid://10015208201",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1847,7 +1822,6 @@ local MESHES_OLD =
     Class = "Beam",
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 255, 0))}),
     LightEmission = 0.5,
     Texture = "",
     TextureLength = 1,
@@ -1892,7 +1866,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://115447220952926",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0472, 0.0472, 0.0472),
     TextureId = "rbxassetid://127881437685243",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -1911,7 +1884,6 @@ local MESHES_OLD =
     Class = "Beam",
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.1834, Color3.fromRGB(170, 0, 156)), ColorSequenceKeypoint.new(0.391, Color3.fromRGB(0, 0, 197)), ColorSequenceKeypoint.new(0.6194, Color3.fromRGB(0, 255, 247)), ColorSequenceKeypoint.new(0.8045, Color3.fromRGB(0, 166, 11)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 238, 0))}),
     LightEmission = 0.5,
     Texture = "",
     TextureLength = 1,
@@ -1957,7 +1929,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(1, 0.2, 0.3)
 })
@@ -2003,7 +1974,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=118269783",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.44, 0.44, 0.44),
     TextureId = "rbxassetid://1106696354",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2047,7 +2017,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://118269783",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.44, 0.44, 0.44),
     TextureId = "rbxassetid://3171214838",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2112,7 +2081,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://99836890880541",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0496, 0.0496, 0.0496),
     TextureId = "rbxassetid://122392330922281",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2121,7 +2089,6 @@ local MESHES_OLD =
     Class = "Beam",
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.1834, Color3.fromRGB(170, 0, 156)), ColorSequenceKeypoint.new(0.391, Color3.fromRGB(0, 0, 197)), ColorSequenceKeypoint.new(0.6194, Color3.fromRGB(0, 255, 247)), ColorSequenceKeypoint.new(0.8045, Color3.fromRGB(0, 166, 11)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 238, 0))}),
     LightEmission = 0.5,
     Texture = "",
     TextureLength = 1,
@@ -2165,7 +2132,6 @@ local MESHES_OLD =
     Class = "Beam",
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))}),
     LightEmission = 0.5,
     Texture = "",
     TextureLength = 1,
@@ -2254,7 +2220,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://11165536294",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0525, 0.0525, 0.0525),
     TextureId = "rbxassetid://11165715120",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2295,7 +2260,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=101086719",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "http://www.roblox.com/asset/?id=101086650",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2341,7 +2305,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://109742397574153",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0471, 0.0471, 0.0471),
     TextureId = "rbxassetid://71731808219690",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2404,7 +2367,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://109742397574153",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0458, 0.0458, 0.0458),
     TextureId = "rbxassetid://71731808219690",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2486,7 +2448,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://8310911339",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://10044501316",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2538,7 +2499,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://15090814396",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0484, 0.0491, 0.0492),
     TextureId = "rbxassetid://15090814672",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2630,7 +2590,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://135790480817772",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0538, 0.0538, 0.0538),
     TextureId = "rbxassetid://86649236464456",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2673,7 +2632,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://126591885289479",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.05, 0.05, 0.05),
     TextureId = "rbxassetid://104946799389637",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2755,7 +2713,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://18280999342",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0395, 0.0395, 0.0395),
     TextureId = "rbxassetid://18281003313",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2795,7 +2752,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://18280999342",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0395, 0.0395, 0.0395),
     TextureId = "rbxassetid://18281003313",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2906,7 +2862,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11810152518",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2947,7 +2902,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://8275033455",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -2988,7 +2942,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://9308790497",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3029,7 +2982,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://12937562728",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3069,7 +3021,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://134978959658778",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3140,7 +3091,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15383614259",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3211,7 +3161,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2513648114",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3252,7 +3201,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2726367848",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3293,7 +3241,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://6121865669",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3334,7 +3281,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15320206276",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3374,7 +3320,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://140562006976774",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3415,7 +3360,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=162262248",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3454,7 +3398,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "http://www.roblox.com/asset/?id=18321971106",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3494,7 +3437,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=202773960",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3533,7 +3475,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://5866373797",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3574,7 +3515,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://6046467922",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3615,7 +3555,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=162976205",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3654,7 +3593,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://7757802804",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3695,7 +3633,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://4659576260",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3735,7 +3672,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15070590716",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3776,7 +3712,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=5359694233",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3817,7 +3752,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://238542777",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3856,7 +3790,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11228808312",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3897,7 +3830,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=159991281",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3936,7 +3868,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://178208194",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -3975,7 +3906,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=4534843833",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4016,7 +3946,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://178240361",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4084,7 +4013,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://115359559909377",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4125,7 +4053,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://4534836730",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4166,7 +4093,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2726741218",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4207,7 +4133,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=5359589686",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4248,7 +4173,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15082826256",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4289,7 +4213,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://18323742549",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4329,7 +4252,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://76059118984667",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4370,7 +4292,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=173912996",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4409,7 +4330,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15045716708",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4450,7 +4370,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11254634864",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4491,7 +4410,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://5866372208",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4532,7 +4450,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=5353677573",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4573,7 +4490,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11810420546",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4644,7 +4560,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://198413638",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4743,7 +4658,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://8275032575",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4784,7 +4698,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2726430730",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4825,7 +4738,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=156263287",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4864,7 +4776,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://7758322982",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4905,7 +4816,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=160570263",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4944,7 +4854,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://4210409812",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -4985,7 +4894,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://315154445",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5056,7 +4964,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15382654157",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5097,7 +5004,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://4659577665",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5137,7 +5043,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://12936824008",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5207,7 +5112,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "http://www.roblox.com/asset/?id=6932359567",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5247,7 +5151,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://122499606241450",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5288,7 +5191,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://6121861331",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5329,7 +5231,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://9309364596",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5370,7 +5271,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15351058932",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5441,7 +5341,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://159883934",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5480,7 +5379,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://8303507091",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5521,7 +5419,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://13896017136",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5597,7 +5494,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://9309270792",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5638,7 +5534,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11810684576",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5679,7 +5574,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://2513708622",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5720,7 +5614,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://7757907850",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5761,7 +5654,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11226858696",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5832,7 +5724,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://160219396",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5871,7 +5762,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://162812733",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5910,7 +5800,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://4856108482",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5950,7 +5839,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=161420087",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -5989,7 +5877,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://4210405561",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6030,7 +5917,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11254925304",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6071,7 +5957,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=160024546",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6110,7 +5995,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15383886872",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6151,7 +6035,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://16856497935",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6191,7 +6074,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://48737841",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6230,7 +6112,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://160274812",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6269,7 +6150,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://83300450889998",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6310,7 +6190,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://8275032831",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6381,7 +6260,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://7758737021",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6422,7 +6300,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://18321972013",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6462,7 +6339,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://114741314080418",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6503,7 +6379,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://4528661973",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6574,7 +6449,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://8275032201",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6615,7 +6489,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://11110689222",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6656,7 +6529,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://6121859173",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6697,7 +6569,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://7758572472",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6738,7 +6609,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11227146152",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6779,7 +6649,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2726425310",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6850,7 +6719,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://105437948088593",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6891,7 +6759,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://4534840659",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6932,7 +6799,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=159686237",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -6971,7 +6837,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://159899596",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7039,7 +6904,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://13904908523",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7086,7 +6950,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11831277409",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7127,7 +6990,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11254380241",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7168,7 +7030,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://5866372623",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7209,7 +7070,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://2513708668",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7250,7 +7110,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=159882296",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7289,7 +7148,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=5538506180",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7330,7 +7188,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://12937817240",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7400,7 +7257,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "http://www.roblox.com/asset/?id=6932361814",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7441,7 +7297,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://18321970792",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7481,7 +7336,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://5866372960",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7522,7 +7376,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2513648149",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7593,7 +7446,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://161976144",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7632,7 +7484,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2726449035",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7673,7 +7524,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11830940122",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7714,7 +7564,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=5538515388",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7755,7 +7604,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://8275033129",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7796,7 +7644,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15382659346",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7837,7 +7684,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://320398770",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7906,7 +7752,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15383997060",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7947,7 +7792,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15044112684",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -7988,7 +7832,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11831384378",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8029,7 +7872,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2726377361",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8130,7 +7972,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://183053133",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8169,7 +8010,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://7758397251",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8210,7 +8050,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://6121866988",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8251,7 +8090,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=5366254539",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8292,7 +8130,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://137311445183389",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8333,7 +8170,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://2513708627",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8374,7 +8210,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://4210410138",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8415,7 +8250,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://7758881558",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8456,7 +8290,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11228269165",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8497,7 +8330,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=476142876",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8536,7 +8368,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://18323742698",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8576,7 +8407,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://127442391741629",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8617,7 +8447,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2513648112",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8658,7 +8487,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=159963965",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8697,7 +8525,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://178259396",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8736,7 +8563,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11809753556",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8777,7 +8603,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11226919330",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8818,7 +8643,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://110799536201694",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8859,7 +8683,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://5866371945",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8930,7 +8753,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://8275031710",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -8971,7 +8793,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://5866372800",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9012,7 +8833,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://7759004533",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9053,7 +8873,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://4663058089",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9093,7 +8912,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://18321972771",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9133,7 +8951,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://8275033614",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9174,7 +8991,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11809114380",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9215,7 +9031,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2726417082",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9256,7 +9071,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=161309663",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9295,7 +9109,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://7758056748",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9336,7 +9149,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11242038756",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9377,7 +9189,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "http://www.roblox.com/asset/?id=91723031",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9417,7 +9228,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15349698419",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9458,7 +9268,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2726466457",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9499,7 +9308,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=5364282819",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9540,7 +9348,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://159670413",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9609,7 +9416,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=172596465",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9648,7 +9454,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://12942152157",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9688,7 +9493,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://4528661069",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9729,7 +9533,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15344638282",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9770,7 +9573,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://6121864116",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9811,7 +9613,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://4534835908",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9852,7 +9653,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://2514719081",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2513648170",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9893,7 +9693,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://181689885",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9932,7 +9731,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2513648133",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -9973,7 +9771,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://73071132008000",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10014,7 +9811,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11227996367",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10055,7 +9851,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://156265112",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10094,7 +9889,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=159707533",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10133,7 +9927,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://320398676",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10202,7 +9995,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://178238688",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10241,7 +10033,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=332358313",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10282,7 +10073,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=5366287766",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10323,7 +10113,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://6121862915",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10364,7 +10153,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://162911948",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10403,7 +10191,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "http://www.roblox.com/asset/?id=91723031",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10444,7 +10231,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://4534870630",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10515,7 +10301,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15044730839",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10556,7 +10341,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://4210409923",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10597,7 +10381,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://18323743340",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10637,7 +10420,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=5359644564",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10678,7 +10460,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15349904283",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10719,7 +10500,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://9309254779",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10790,7 +10570,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://4534835479",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10831,7 +10610,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11830604534",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10872,7 +10650,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2726475301",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10913,7 +10690,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "http://www.roblox.com/asset/?id=6932360857",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10953,7 +10729,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://161642996",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -10992,7 +10767,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://18321970590",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11032,7 +10806,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://5930583738",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11073,7 +10846,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://89311097227409",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11144,7 +10916,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://13905821320",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11184,7 +10955,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://7758615144",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11225,7 +10995,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://139997450438464",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11296,7 +11065,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11830420444",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11337,7 +11105,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://8275033309",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11378,7 +11145,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://119326169521320",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11479,7 +11245,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "rbxassetid://13905642635",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11556,7 +11321,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://15045930187",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11597,7 +11361,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://5866372450",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11638,7 +11401,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://16846545641",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11678,7 +11440,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://7572421266",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11719,7 +11480,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://11255255382",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11760,7 +11520,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.6, 1.6, 1.6),
     TextureId = "rbxassetid://2726770302",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11801,7 +11560,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=25298496",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=164669251",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11840,7 +11598,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=79401500 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11879,7 +11636,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=25298496",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.5, 1.5, 1.5),
     TextureId = "http://www.roblox.com/asset/?id=134632723",
     VertexColor = Vector3.new(1, 1, 0)
 })
@@ -11918,7 +11674,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=18265627",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=18265614",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11957,7 +11712,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=69486593",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.8, 0.8, 0.8),
     TextureId = "http://www.roblox.com/asset/?id=69486519",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -11996,7 +11750,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=162016526",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12035,7 +11788,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=305826272",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2511673515",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12201,7 +11953,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://3183449780",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.085, 0.085, 0.085),
     TextureId = "rbxassetid://2279588369",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12244,7 +11995,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=4535643726",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.96, 0.96, 0.96),
     TextureId = "rbxassetid://5211110240",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12285,7 +12035,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=305826272",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2533345412",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12449,7 +12198,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://86649405964534",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.077, 0.077, 0.077),
     TextureId = "rbxassetid://94763497877100",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12561,7 +12309,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://1084767698",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.56, 0.56, 0.56),
     TextureId = "rbxassetid://1084767901",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12705,7 +12452,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184062977",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12754,7 +12500,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://1857106669",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.73, 0.73, 0.73),
     TextureId = "rbxassetid://2513576265",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12796,7 +12541,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://1857106669",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.7, 0.7),
     TextureId = "rbxassetid://2516324337",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12867,7 +12611,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://7791364860",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.06, 0.06, 0.06),
     TextureId = "rbxassetid://7806078587",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12919,7 +12662,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=19040337",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.1, 1.4, 1.1),
     TextureId = "http://www.roblox.com/asset/?id=19040326",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -12960,7 +12702,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=105329941",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "http://www.roblox.com/asset/?id=105978218",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13001,7 +12742,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=352571495",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.1, 1.6, 1.2),
     TextureId = "http://www.roblox.com/asset/?id=352570357",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13149,7 +12889,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://15020899066",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.08, 0.08, 0.08),
     TextureId = "rbxassetid://15020899218",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13190,7 +12929,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://62275962",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.8, 0.8, 0.8),
     TextureId = "rbxassetid://3167029738",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13255,7 +12993,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=62275962 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.75, 0.75, 0.75),
     TextureId = "http://www.roblox.com/asset/?id=192567360",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13338,7 +13075,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://11238166013",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07, 0.07, 0.07),
     TextureId = "http://www.roblox.com/asset/?id=11370088878",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13390,7 +13126,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://11238166013",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07, 0.07, 0.07),
     TextureId = "rbxassetid://11238176757",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13431,7 +13166,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.45, 0.45, 0.45),
     TextureId = "rbxassetid://532156041",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13470,7 +13204,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.45, 0.45, 0.45),
     TextureId = "rbxassetid://2585776718",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13509,7 +13242,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.47, 0.47, 0.47),
     TextureId = "rbxassetid://5238664918",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13549,7 +13281,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.47, 0.47, 0.47),
     TextureId = "rbxassetid://5222717744",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13589,7 +13320,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://3132923779",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.95, 0.95, 0.95),
     TextureId = "rbxassetid://4488374804",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13630,7 +13360,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://15408280573",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0046, 0.0046, 0.0046),
     TextureId = "rbxassetid://15408244684",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13742,7 +13471,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://15408280573",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0046, 0.0046, 0.0046),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13885,7 +13613,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://117500241",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.4, 0.37, 0.37),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13940,7 +13667,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=117500241",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.4, 0.4, 0.4),
     TextureId = "http://www.roblox.com/asset/?id=117500388",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -13994,7 +13720,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=238314098",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.8, 0.73),
     TextureId = "http://www.roblox.com/asset/?id=238314124",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14085,7 +13810,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=4528435571",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.1, 1.1, 1.1),
     TextureId = "rbxassetid://5211130051",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14126,7 +13850,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://1192795322",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.55, 0.55, 0.6),
     TextureId = "rbxassetid://1192795941",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14177,7 +13900,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://1626714161",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(25, 25, 25),
     TextureId = "rbxassetid://3183577898",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14228,7 +13950,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://1626714161",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(25, 25, 25),
     TextureId = "rbxassetid://3183579677",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14268,7 +13989,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://4217554208",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.05, 0.05, 0.05),
     TextureId = "rbxassetid://5007736173",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14309,7 +14029,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://2682453204",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.61, 0.61, 0.61),
     TextureId = "rbxassetid://2682446647",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14350,7 +14069,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://2682453204",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.61, 0.61, 0.61),
     TextureId = "rbxassetid://2672327402",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14412,7 +14130,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=179155055",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.55, 0.55, 0.555),
     TextureId = "rbxassetid://1132750758",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14453,7 +14170,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=179155055",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.57, 0.57, 0.57),
     TextureId = "http://www.roblox.com/asset?id=179155105",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14564,7 +14280,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://77738838473091",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0782, 0.0782, 0.0782),
     TextureId = "rbxassetid://78842905206144",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14646,7 +14361,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=105333894",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.33, 0.33, 0.33),
     TextureId = "http://www.roblox.com/asset/?id=105334003",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14696,7 +14410,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=105333894",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.3, 0.3, 0.3),
     TextureId = "http://www.roblox.com/asset/?id=105334003",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14735,7 +14448,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=165708869 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "http://www.roblox.com/asset/?id=165708903 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14791,7 +14503,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=188539751",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.85, 0.85, 0.85),
     TextureId = "http://www.roblox.com/asset/?id=188539820",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -14901,7 +14612,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=103838505",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.45, 0.5),
     TextureId = "http://www.roblox.com/asset/?id=103838996",
     VertexColor = Vector3.new(0.4, 0.4, 0.4)
 })
@@ -14950,7 +14660,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=262027449",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.6, 0.6),
     TextureId = "https://www.roblox.com/asset/?id=445805934",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15048,7 +14757,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184063179",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15127,7 +14835,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://116508096109443",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0733, 0.0733, 0.0733),
     TextureId = "rbxassetid://135843404105980",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15198,7 +14905,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6085025295",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0.3, -0.1),
-    Scale = Vector3.new(0.07, 0.07, 0.07),
     TextureId = "rbxassetid://6074789360",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15268,7 +14974,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=361629844",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(3, 3, 3),
     TextureId = "http://www.roblox.com/asset/?id=361630114",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15346,7 +15051,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://5355753728",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.06, 0.0692, 0.06),
     TextureId = "rbxassetid://5355747943",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15386,7 +15090,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=94840342",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.4, 0.4, 0.4),
     TextureId = "rbxassetid://1164426571",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15437,7 +15140,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184063317",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15505,7 +15207,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184063443",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15573,7 +15274,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=168119698",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "http://www.roblox.com/asset?id=168119736",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15612,7 +15312,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://168119698",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.55),
     TextureId = "rbxassetid://3171086347",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15662,7 +15361,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "http://www.roblox.com/asset?id=156092253 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15701,7 +15399,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184059718",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15751,7 +15448,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://283709822",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.45, 0.45, 0.45),
     TextureId = "rbxassetid://3171107559",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15801,7 +15497,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=283709822",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.45, 0.45, 0.45),
     TextureId = "http://www.roblox.com/asset/?id=313894904",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15880,7 +15575,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://140633396635861",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0598, 0.0598, 0.0598),
     TextureId = "rbxassetid://77812964601215",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15922,7 +15616,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://582120569",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.6, 0.6),
     TextureId = "rbxassetid://582120836",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -15973,7 +15666,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://86944837615327",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.077, 0.077, 0.077),
     TextureId = "rbxassetid://86253759560362",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16025,7 +15717,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=302165984",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.6, 0.6),
     TextureId = "rbxassetid://7596177341",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16121,7 +15812,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://137082284051764",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0739, 0.0739, 0.0739),
     TextureId = "rbxassetid://93782017269677",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16163,7 +15853,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://137082284051764",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07, 0.07, 0.07),
     TextureId = "rbxassetid://93782017269677",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16236,7 +15925,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://88250692342609",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0691, 0.0691, 0.0691),
     TextureId = "rbxassetid://120707737118924",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16309,7 +15997,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=238314382",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.9, 0.7),
     TextureId = "http://www.roblox.com/asset/?id=238314431",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16358,7 +16045,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://238314382",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.9, 0.7),
     TextureId = "rbxassetid://3171168641",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16418,7 +16104,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://15320557481",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.056, 0.056, 0.056),
     TextureId = "rbxassetid://15320558272",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16443,7 +16128,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://15414904040",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.056, 0.056, 0.056),
     TextureId = "rbxassetid://15414905407",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16513,7 +16197,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=130101214",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.6, 0.7),
     TextureId = "https://www.roblox.com/asset/?id=386250868",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16586,7 +16269,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=93108071",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.45, 0.45, 0.45),
     TextureId = "http://www.roblox.com/asset/?id=93112631",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16672,7 +16354,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://187852667",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.6, 0.6),
     TextureId = "rbxassetid://187852629",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16724,7 +16405,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184063623",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16763,7 +16443,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://133476959535888",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16833,7 +16512,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://8275036346",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16874,7 +16552,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://13894391232",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16921,7 +16598,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2746385518",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -16962,7 +16638,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://10855586895",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://12237805628",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17002,7 +16677,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://104875261384354",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17042,7 +16716,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4534822092",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17083,7 +16756,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://12927939898",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17123,7 +16795,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://620882210",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17162,7 +16833,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://91124699102770",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17203,7 +16873,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://137589393181339",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17244,7 +16913,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://241077941",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17283,7 +16951,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://173946596",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17322,7 +16989,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://104379655242590",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17363,7 +17029,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://288136894",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17402,7 +17067,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://15344578184",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17443,7 +17107,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://103391577880162",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17484,7 +17147,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://365566399",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17552,7 +17214,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2684774773",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17593,7 +17254,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2745884785",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17634,7 +17294,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://9308767162",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17675,7 +17334,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://9308907230",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17716,7 +17374,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://559676009",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17755,7 +17412,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=15319905553",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17795,7 +17451,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=161367322",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17834,7 +17489,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://125699146017319",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17875,7 +17529,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=198299790",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17914,7 +17567,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=18351264716",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17954,7 +17606,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=161369273",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -17993,7 +17644,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=199611278",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18032,7 +17682,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://9316301864",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18102,7 +17751,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=5580148723",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18142,7 +17790,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4535479726",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18183,7 +17830,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://6123356424",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18224,7 +17870,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1781892712",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18294,7 +17939,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://473623765",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18333,7 +17977,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://9309355347",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18374,7 +18017,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://7756613337",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18415,7 +18057,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://235343795 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18484,7 +18125,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5359685972",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18525,7 +18165,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11215450234",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18595,7 +18234,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4210410129",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18636,7 +18274,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://6380059135",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18675,7 +18312,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4534823003",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18716,7 +18352,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://531836446",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18757,7 +18392,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://12926766355",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18797,7 +18431,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://473621267",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18836,7 +18469,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5872477763",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18877,7 +18509,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4534829449",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18918,7 +18549,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2684776996",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -18959,7 +18589,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5359571109",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19000,7 +18629,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11246439789",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19041,7 +18669,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=161673042",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19109,7 +18736,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=4659571247",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19149,7 +18775,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4210409814",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19190,7 +18815,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://13894957068",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19237,7 +18861,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://121019096457803",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19278,7 +18901,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=192367012",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19346,7 +18968,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5353674093",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19416,7 +19037,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=2124721832",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19457,7 +19077,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://77551638357810",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19498,7 +19117,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1782387127",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19539,7 +19157,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://10855586895",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://12248435132",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19579,7 +19196,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://139678078674313",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19620,7 +19236,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2684779428",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19661,7 +19276,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.0005, 1, 1),
     TextureId = "rbxassetid://2550342275",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19702,7 +19316,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://313561541",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19741,7 +19354,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=112657470655629",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19782,7 +19394,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://155572642",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19821,7 +19432,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://7756613022",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19862,7 +19472,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1782168732",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19903,7 +19512,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11218956882",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19944,7 +19552,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://234944774",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -19983,7 +19590,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://365566387",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20022,7 +19628,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://198766824 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20091,7 +19696,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://12935208652",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20131,7 +19735,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://71491705339389",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20172,7 +19775,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5866364902",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20213,7 +19815,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://473621310",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20252,7 +19853,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=157019835",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20291,7 +19891,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://16833551908",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20331,7 +19930,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://18321899067",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20371,7 +19969,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://6121850778",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20412,7 +20009,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://85646229893233",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20453,7 +20049,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4210409981",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20494,7 +20089,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://9308906310",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20564,7 +20158,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://9308765927",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20605,7 +20198,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://3183404232",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20645,7 +20237,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://73372556711687",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20686,7 +20277,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://162718300",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20753,7 +20343,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://243372276",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20792,7 +20381,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://8303534347",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20833,7 +20421,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://124972846638078",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -20874,7 +20461,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://8294015413",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21002,7 +20588,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://113497909930790",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21043,7 +20628,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2513708625",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21084,7 +20668,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://235347825",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21123,7 +20706,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://7756613596",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21164,7 +20746,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://18321898887",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21204,7 +20785,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11215449757",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21245,7 +20825,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://101379516858862",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21286,7 +20865,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://139481558107907",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21327,7 +20905,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11218741536",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21368,7 +20945,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://125213231050513",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21409,7 +20985,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=192482160",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21448,7 +21023,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://139596499078847",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21489,7 +21063,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://473621164",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21528,7 +21101,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=157904876",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21567,7 +21139,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://89105172362040",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21608,7 +21179,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4210409062",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21649,7 +21219,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4210409800",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21690,7 +21259,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5435976404",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21729,7 +21297,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=6932357946",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21798,7 +21365,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://16845528588",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21838,7 +21404,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://12928323969",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21905,7 +21470,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=161425686",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21944,7 +21508,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://155356565  ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -21983,7 +21546,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://8275035982",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22024,7 +21586,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://136070215876929",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22064,7 +21625,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://159758190 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22103,7 +21663,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=161529618",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22171,7 +21730,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://15382624195",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22212,7 +21770,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1268375270",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22253,7 +21810,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4528568803",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22294,7 +21850,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=163926951",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22333,7 +21888,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11117362816",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22374,7 +21928,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5866362606",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22415,7 +21968,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=190131936",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22454,7 +22006,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4534824961",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22495,7 +22046,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://86777384953188",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22536,7 +22086,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://6121849468",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22577,7 +22126,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://77403934219171",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22647,7 +22195,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://7756611289",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22716,7 +22263,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11217121434",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22757,7 +22303,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://311358906",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22824,7 +22369,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5489009974",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22863,7 +22407,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2684783115",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22904,7 +22447,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://18321899333",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22944,7 +22486,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://365566397",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -22983,7 +22524,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11245572024",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23024,7 +22564,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://107204456338435",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23065,7 +22604,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4534825993",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23106,7 +22644,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://365566400",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23145,7 +22682,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://12926768989",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23185,7 +22721,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://311701292",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23253,7 +22788,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://163625649",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23321,7 +22855,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://136318121608837",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23391,7 +22924,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://87244940102225",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23432,7 +22964,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2513648136",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23473,7 +23004,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5866365511",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23514,7 +23044,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1782155617",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23555,7 +23084,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://128273296066714",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23596,7 +23124,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://179035664 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23635,7 +23162,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://473621215",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23674,7 +23200,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://115347930835748",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23715,7 +23240,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://139564868386734",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23756,7 +23280,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://13884848877",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23832,7 +23355,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1782402938",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23873,7 +23395,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5872477622",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23914,7 +23435,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://92052630861897",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23955,7 +23475,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=15320084464",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -23995,7 +23514,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://473621136",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24034,7 +23552,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://75445127360563",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24075,7 +23592,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://10855586895",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://12238708500",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24115,7 +23631,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://7756610618",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24156,7 +23671,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2684804091",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24226,7 +23740,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://75066955538535",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24267,7 +23780,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5538532923",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24308,7 +23820,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://8275035798",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24349,7 +23860,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5538538671",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24390,7 +23900,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://123132745260166",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24458,7 +23967,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://98911990727243",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24586,7 +24094,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://134310239127931",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24627,7 +24134,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2684808994",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24668,7 +24174,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1268293368",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24709,7 +24214,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://3183403283",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24749,7 +24253,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://117148660034316",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24790,7 +24293,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1268675577",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24831,7 +24333,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://8275034131",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24872,7 +24373,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://18321898428",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24941,7 +24441,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11548074269",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -24981,7 +24480,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=159653725",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25020,7 +24518,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1782366385",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25061,7 +24558,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://101625224396969",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25102,7 +24598,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11245959206",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25172,7 +24667,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://7808358755",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25213,7 +24707,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://6121854102",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25254,7 +24747,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://73121682334065",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25295,7 +24787,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5366242489",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25336,7 +24827,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://100835235112831",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25406,7 +24896,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2513708626",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25447,7 +24936,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://7756611924",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25488,7 +24976,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4210410112",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25556,7 +25043,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=159546779  ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25596,7 +25082,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://545604317",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25635,7 +25120,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11218500706",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25676,7 +25160,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://250006854",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25715,7 +25198,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://116130292497156",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25756,7 +25238,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://134605667915149",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25826,7 +25307,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5930584000",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25896,7 +25376,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://311711104",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -25991,7 +25470,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=155199285",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26059,7 +25537,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://473620934",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26156,7 +25633,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5872478022",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26197,7 +25673,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://137012419503995",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26238,7 +25713,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11217550170",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26308,7 +25782,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://76315981363183",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26378,7 +25851,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1782530105",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26419,7 +25891,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://84607607123689",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26460,7 +25931,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://8293557762",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26501,7 +25971,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://159435782",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26569,7 +26038,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://137285542474252",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26609,7 +26077,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5866356691",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26650,7 +26117,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=155195316",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26689,7 +26155,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://116056287470892",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26729,7 +26194,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://386204101",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26770,7 +26234,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://161495171",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26809,7 +26272,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://197196512",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26848,7 +26310,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://18321899540",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26888,7 +26349,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2684806680",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26958,7 +26418,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://8275036203",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -26999,7 +26458,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1268280806",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27040,7 +26498,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://97056994207188",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27081,7 +26538,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=6932358523",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27121,7 +26577,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=6932358967",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27161,7 +26616,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://3183401534",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27201,7 +26655,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://545392975",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27240,7 +26693,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://7756612787",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27281,7 +26733,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11217282454",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27322,7 +26773,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=121944805",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27362,7 +26812,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=162016526",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27411,7 +26860,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://105839458133429",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27452,7 +26900,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://365566401",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27491,7 +26938,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1782411472",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27561,7 +27007,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://9308754309",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27602,7 +27047,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5364286895",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27672,7 +27116,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://240940193",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27711,7 +27154,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11217645677",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27752,7 +27194,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://12936083164",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27792,7 +27233,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4534831933",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27891,7 +27331,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://128247285156176",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -27961,7 +27400,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://14967635510",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28002,7 +27440,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://6121846201",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28043,7 +27480,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://80884642545249",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28084,7 +27520,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4534828383",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28125,7 +27560,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://8275035514",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28166,7 +27600,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=178402851",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28205,7 +27638,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://2514683594",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2513648160",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28246,7 +27678,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://473620972",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28285,7 +27716,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://240937041",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28381,7 +27811,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://96264372471629",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28422,7 +27851,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://7756611602",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28463,7 +27891,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=363311795",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28502,7 +27929,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://112048035793774",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28543,7 +27969,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://105940775587606",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28584,7 +28009,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11246309889",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28625,7 +28049,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=161313071",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28664,7 +28087,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://126697433046307",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28705,7 +28127,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=240943629",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28744,7 +28165,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11217988441",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28785,7 +28205,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=6978645136",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28824,7 +28243,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=4659588788",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28864,7 +28282,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://15081802321",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28905,7 +28322,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://124090504714382",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28946,7 +28362,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://71217678785248",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -28987,7 +28402,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://172762850",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29026,7 +28440,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://365566383",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29065,7 +28478,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=192527236",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29104,7 +28516,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://10855586895",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://12248652835",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29144,7 +28555,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4659572197",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29184,7 +28594,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://7756612294",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29225,7 +28634,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4210409851",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29266,7 +28674,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=159653652",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29305,7 +28712,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://314421009",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29344,7 +28750,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://240941633",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29383,7 +28788,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://473621067",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29422,7 +28826,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=331744475",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29463,7 +28866,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5366300102",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29504,7 +28906,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://6121852598",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29545,7 +28946,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://363139004",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29611,7 +29011,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://120181028268113",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29652,7 +29051,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1782537628",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29693,7 +29091,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4534830880",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29734,7 +29131,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://15382053242",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29775,7 +29171,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1268314631",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29816,7 +29211,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=297795989",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29855,7 +29249,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4210409792",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29924,7 +29317,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=121944805     ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -29965,7 +29357,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://121109734938655",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30006,7 +29397,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=162671092",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30074,7 +29464,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://8275035072",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30115,7 +29504,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=361630297",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30154,7 +29542,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://365566396",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30193,7 +29580,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1268277801",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30234,7 +29620,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5359654461",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30275,7 +29660,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2684801913",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30316,7 +29700,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://15414881863",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30356,7 +29739,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4659587929",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30396,7 +29778,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://295302778",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30435,7 +29816,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://539831264",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30474,7 +29854,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=178200933",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30513,7 +29892,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://138096730619443",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30554,7 +29932,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5929316036",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30595,7 +29972,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://161577504",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30634,7 +30010,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2513648162",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30675,7 +30050,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4210874138",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30716,7 +30090,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://101965621704869",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30786,7 +30159,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4534831727",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30827,7 +30199,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2684787698",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30897,7 +30268,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://306912202 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30936,7 +30306,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://306921666 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -30975,7 +30344,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=306914370",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31014,7 +30382,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://306916804 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31053,7 +30420,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://306917565 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31092,7 +30458,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://306909649 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31131,7 +30496,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://306915414 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31170,7 +30534,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://306913560 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31209,7 +30572,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://306913268 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31248,7 +30610,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://306919809 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31316,7 +30677,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=16944380350",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31356,7 +30716,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://91790701 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31395,7 +30754,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://18321898656",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31435,7 +30793,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://365566391",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31474,7 +30831,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://7757619418",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31515,7 +30871,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://103668715368570",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31556,7 +30911,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=121944805     ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31597,7 +30951,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://109835260607049",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31638,7 +30991,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://95500762351317",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31679,7 +31031,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://130231206599976",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31720,7 +31071,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://8275034832",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31761,7 +31111,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://91672438499477",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31802,7 +31151,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://11217750489",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31872,7 +31220,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://13895498375",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31912,7 +31259,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://6123161536",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31953,7 +31299,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://75968382870233",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -31994,7 +31339,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://89438438706928",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32035,7 +31379,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=162016526",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32084,7 +31427,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://363142139",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32123,7 +31465,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=201480146",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32162,7 +31503,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://240942385",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32201,7 +31541,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://13884851371",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32248,7 +31587,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://6123160655",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32318,7 +31656,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://101182606016909",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32359,7 +31696,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://363139123",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32427,7 +31763,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://5866358413",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32496,7 +31831,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://4210410097",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32537,7 +31871,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "http://www.roblox.com/asset/?id=191784815",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32576,7 +31909,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://531836445",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32646,7 +31978,6 @@ local MESHES_OLD =
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2672196316",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32687,7 +32018,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://450680781",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32726,7 +32056,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://473621021",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32765,7 +32094,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://1782551901",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32806,7 +32134,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=51682254 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.3),
     TextureId = "http://www.roblox.com/asset/?id=51941734",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32855,7 +32182,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=64131019 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(3, 2, 2),
     TextureId = "http://www.roblox.com/asset/?id=64131051 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32943,7 +32269,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=70990583",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.8, 0.5),
     TextureId = "http://www.roblox.com/asset/?id=70990591",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -32997,7 +32322,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=86297695",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.4, 0.2, 0.2),
     TextureId = "http://www.roblox.com/asset/?id=86290910",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -33051,7 +32375,6 @@ local MESHES_OLD =
     MeshId = "http://www.roblox.com/asset/?id=22771612",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.15, 0.15, 0.15),
     TextureId = "http://www.roblox.com/asset/?id=22771560",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -33129,10 +32452,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))}),
     CurveSize0 = 0,
     CurveSize1 = 0,
-    Enabled = true,
     FaceCamera = false,
     LightEmission = 1,
     LightInfluence = 0,
@@ -33215,10 +32536,8 @@ local MESHES_FULL =
     Id = 3,
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 255, 0))}),
     CurveSize0 = 0,
     CurveSize1 = 0,
-    Enabled = true,
     FaceCamera = false,
     LightEmission = 0.5,
     LightInfluence = 0,
@@ -33284,10 +32603,8 @@ local MESHES_FULL =
     Id = 2,
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 229, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 229, 255))}),
     CurveSize0 = 0,
     CurveSize1 = 0,
-    Enabled = true,
     FaceCamera = false,
     LightEmission = 0.5,
     LightInfluence = 0,
@@ -33365,7 +32682,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=116657254",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.7, 0.7),
     TextureId = "https://www.roblox.com/asset/?id=445884341",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -33423,7 +32739,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://107813118898769",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0471, 0.0471, 0.0471),
     TextureId = "rbxassetid://137012201908941",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -33492,7 +32807,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://107813118898769",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0471, 0.0471, 0.0471),
     TextureId = "rbxassetid://137012201908941",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -33560,7 +32874,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=92656610",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.4, 0.45, 0.5),
     TextureId = "https://www.roblox.com/asset/?id=386269992",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -33622,7 +32935,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://77235373292363",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.04334, 0.04334, 0.04334),
     TextureId = "rbxassetid://97280881789656",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -33678,7 +32990,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://12322809632",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.04763, 0.04413, 0.04382),
     TextureId = "rbxassetid://12322809917",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -33782,7 +33093,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://124598402927958",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.10123, 0.10123, 0.10123),
     TextureId = "rbxassetid://123603327635244",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -33907,7 +33217,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.03841, 0.035, 0.035),
     TextureId = "rbxassetid://4728494788",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -33969,7 +33278,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.03639, 0.035, 0.035),
     TextureId = "rbxassetid://4728494788",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -34149,7 +33457,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://15408863676",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.021, 0.021, 0.0205),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -34646,7 +33953,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "rbxassetid://2702668339",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -34703,7 +34009,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://11866444071",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.04606, 0.04606, 0.04606),
     TextureId = "rbxassetid://11866444253",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -34765,7 +34070,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(0, 1, 0)
 })
@@ -34981,7 +34285,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://6125843704",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://6125843755",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -35037,7 +34340,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://130099641",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -35112,7 +34414,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=130099641",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "http://www.roblox.com/asset?id=161254231",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -35173,7 +34474,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.039, 0.039, 0.039),
     TextureId = "http://www.roblox.com/asset/?id=4728487789",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -35235,7 +34535,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.03639, 0.035, 0.035),
     TextureId = "rbxassetid://5278764604",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -35315,7 +34614,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -35376,7 +34674,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -35458,7 +34755,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "rbxassetid://4835358188",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -35611,7 +34907,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://13928587755",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07872, 0.04308, 0.04678),
     TextureId = "rbxassetid://13928590054",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -35712,7 +35007,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://9702755186",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.04235, 0.04632, 0.04392),
     TextureId = "rbxassetid://10015208201",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -35829,7 +35123,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://115447220952926",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0472, 0.0472, 0.0472),
     TextureId = "rbxassetid://127881437685243",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -35859,10 +35152,8 @@ local MESHES_FULL =
     Id = 7,
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.18339, Color3.fromRGB(170, 0, 156)), ColorSequenceKeypoint.new(0.391, Color3.fromRGB(0, 0, 197)), ColorSequenceKeypoint.new(0.61938, Color3.fromRGB(0, 255, 247)), ColorSequenceKeypoint.new(0.8045, Color3.fromRGB(0, 166, 11)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 238, 0))}),
     CurveSize0 = 0,
     CurveSize1 = 0,
-    Enabled = true,
     FaceCamera = false,
     LightEmission = 0.5,
     LightInfluence = 0,
@@ -35940,10 +35231,8 @@ local MESHES_FULL =
     Id = 5,
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 255, 0))}),
     CurveSize0 = 0,
     CurveSize1 = 0,
-    Enabled = true,
     FaceCamera = false,
     LightEmission = 0.5,
     LightInfluence = 0,
@@ -36009,7 +35298,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.8, 1.8, 1.8),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(1, 0.2, 0.3)
 })
@@ -36070,7 +35358,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://118269783",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.44, 0.44, 0.44),
     TextureId = "rbxassetid://3171214838",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -36150,7 +35437,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=118269783",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.44, 0.44, 0.44),
     TextureId = "rbxassetid://1106696354",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -36224,10 +35510,8 @@ local MESHES_FULL =
     Id = 5,
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))}),
     CurveSize0 = 0,
     CurveSize1 = 0,
-    Enabled = true,
     FaceCamera = false,
     LightEmission = 0.5,
     LightInfluence = 0,
@@ -36333,7 +35617,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://99836890880541",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.04964, 0.04964, 0.04964),
     TextureId = "rbxassetid://122392330922281",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -36343,10 +35626,8 @@ local MESHES_FULL =
     Id = 6,
     Name = "CustomBeam",
     Props = {
-    Color = ColorSequence.new({ ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.18339, Color3.fromRGB(170, 0, 156)), ColorSequenceKeypoint.new(0.391, Color3.fromRGB(0, 0, 197)), ColorSequenceKeypoint.new(0.61938, Color3.fromRGB(0, 255, 247)), ColorSequenceKeypoint.new(0.8045, Color3.fromRGB(0, 166, 11)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 238, 0))}),
     CurveSize0 = 0,
     CurveSize1 = 0,
-    Enabled = true,
     FaceCamera = false,
     LightEmission = 0.5,
     LightInfluence = 0,
@@ -36451,7 +35732,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://11165536294",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.05246, 0.05246, 0.05246),
     TextureId = "rbxassetid://11165715120",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -36513,7 +35793,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=101086719",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "http://www.roblox.com/asset/?id=101086650",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -36571,7 +35850,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://109742397574153",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.04585, 0.04585, 0.04585),
     TextureId = "rbxassetid://71731808219690",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -36642,7 +35920,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://109742397574153",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0471, 0.0471, 0.0471),
     TextureId = "rbxassetid://71731808219690",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -36724,7 +36001,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://8310911339",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://10044501316",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -36894,7 +36170,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://15090814396",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.04839, 0.0491, 0.04924),
     TextureId = "rbxassetid://15090814672",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -36985,7 +36260,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://135790480817772",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.05384, 0.05384, 0.05384),
     TextureId = "rbxassetid://86649236464456",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -37081,7 +36355,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://126591885289479",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.05, 0.05, 0.05),
     TextureId = "rbxassetid://104946799389637",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -37150,7 +36423,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://18280999342",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.03947, 0.03947, 0.03947),
     TextureId = "rbxassetid://18281003313",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -37218,7 +36490,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://18280999342",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.03947, 0.03947, 0.03947),
     TextureId = "rbxassetid://18281003313",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -37326,7 +36597,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=305826272",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2511673515",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -37575,7 +36845,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://3183449780",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.085, 0.085, 0.085),
     TextureId = "rbxassetid://2279588369",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -37632,7 +36901,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=4535643726",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.96, 0.96, 0.96),
     TextureId = "rbxassetid://5211110240",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -37692,7 +36960,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=305826272",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1, 1, 1),
     TextureId = "rbxassetid://2533345412",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -37934,7 +37201,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://86649405964534",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07697, 0.07697, 0.07697),
     TextureId = "rbxassetid://94763497877100",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -38105,7 +37371,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://1084767698",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.56, 0.56, 0.56),
     TextureId = "rbxassetid://1084767901",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -38301,7 +37566,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184062977",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -38358,7 +37622,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://1857106669",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.7, 0.7),
     TextureId = "rbxassetid://2516324337",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -38436,7 +37699,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://1857106669",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.73, 0.73, 0.73),
     TextureId = "rbxassetid://2513576265",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -38540,7 +37802,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://7791364860",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.06, 0.06, 0.06),
     TextureId = "rbxassetid://7806078587",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -38617,7 +37878,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=19040337",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.1, 1.4, 1.1),
     TextureId = "http://www.roblox.com/asset/?id=19040326",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -38674,7 +37934,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=105329941",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "http://www.roblox.com/asset/?id=105978218",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -38739,7 +37998,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=352571495",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.1, 1.6, 1.2),
     TextureId = "http://www.roblox.com/asset/?id=352570357",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -38963,7 +38221,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://15020899066",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.08, 0.08, 0.08),
     TextureId = "rbxassetid://15020899218",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -39033,7 +38290,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=62275962 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.75, 0.75, 0.75),
     TextureId = "http://www.roblox.com/asset/?id=192567360",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -39104,7 +38360,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://62275962",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.8, 0.8, 0.8),
     TextureId = "rbxassetid://3167029738",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -39226,7 +38481,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://11238166013",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07, 0.07, 0.07),
     TextureId = "rbxassetid://11238176757",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -39284,7 +38538,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://11238166013",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07, 0.07, 0.07),
     TextureId = "http://www.roblox.com/asset/?id=11370088878",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -39359,7 +38612,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.45, 0.45, 0.45),
     TextureId = "rbxassetid://532156041",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -39414,7 +38666,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.45, 0.45, 0.45),
     TextureId = "rbxassetid://2585776718",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -39470,7 +38721,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.47, 0.47, 0.47),
     TextureId = "rbxassetid://5238664918",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -39526,7 +38776,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.47, 0.47, 0.47),
     TextureId = "rbxassetid://5222717744",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -39583,7 +38832,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://3132923779",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.95, 0.95, 0.95),
     TextureId = "rbxassetid://4488374804",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -39641,7 +38889,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://15408280573",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0046, 0.0046, 0.0046),
     TextureId = "rbxassetid://15408244684",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -39838,7 +39085,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://15408280573",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.0046, 0.0046, 0.0046),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40076,7 +39322,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=117500241",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.4, 0.4, 0.4),
     TextureId = "http://www.roblox.com/asset/?id=117500388",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40167,7 +39412,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://117500241",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.4, 0.37, 0.37),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40232,7 +39476,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=238314098",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.8, 0.73),
     TextureId = "http://www.roblox.com/asset/?id=238314124",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40364,7 +39607,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=4528435571",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(1.1, 1.1, 1.1),
     TextureId = "rbxassetid://5211130051",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40431,7 +39673,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://1192795322",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.55, 0.55, 0.6),
     TextureId = "rbxassetid://1192795941",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40487,7 +39728,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://1626714161",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(25, 25, 25),
     TextureId = "rbxassetid://3183579677",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40544,7 +39784,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://1626714161",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(25, 25, 25),
     TextureId = "rbxassetid://3183577898",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40621,7 +39860,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://4217554208",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.05, 0.05, 0.05),
     TextureId = "rbxassetid://5007736173",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40679,7 +39917,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://2682453204",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.61, 0.61, 0.61),
     TextureId = "rbxassetid://2672327402",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40782,7 +40019,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://2682453204",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.61, 0.61, 0.61),
     TextureId = "rbxassetid://2682446647",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40845,7 +40081,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=179155055",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.55, 0.55, 0.555),
     TextureId = "rbxassetid://1132750758",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -40910,7 +40145,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=179155055",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.57, 0.57, 0.57),
     TextureId = "http://www.roblox.com/asset?id=179155105",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -41029,7 +40263,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://77738838473091",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07821, 0.07821, 0.07821),
     TextureId = "rbxassetid://78842905206144",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -41195,7 +40428,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=105333894",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.33, 0.33, 0.33),
     TextureId = "http://www.roblox.com/asset/?id=105334003",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -41270,7 +40502,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=105333894",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.3, 0.3, 0.3),
     TextureId = "http://www.roblox.com/asset/?id=105334003",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -41342,7 +40573,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=165708869 ",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "http://www.roblox.com/asset/?id=165708903 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -41409,7 +40639,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=188539751",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.85, 0.85, 0.85),
     TextureId = "http://www.roblox.com/asset/?id=188539820",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -41565,7 +40794,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=103838505",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.45, 0.5),
     TextureId = "http://www.roblox.com/asset/?id=103838996",
     VertexColor = Vector3.new(0.4, 0.4, 0.4)
 })
@@ -41640,7 +40868,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=262027449",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.6, 0.6),
     TextureId = "https://www.roblox.com/asset/?id=445805934",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -41785,7 +41012,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184063179",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -41901,7 +41127,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://116508096109443",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07326, 0.07326, 0.07326),
     TextureId = "rbxassetid://135843404105980",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42003,7 +41228,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://6085025295",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0.3, -0.1),
-    Scale = Vector3.new(0.07, 0.07, 0.07),
     TextureId = "rbxassetid://6074789360",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42118,7 +41342,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=361629844",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(3, 3, 3),
     TextureId = "http://www.roblox.com/asset/?id=361630114",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42219,7 +41442,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://5355753728",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.06, 0.06917, 0.06),
     TextureId = "rbxassetid://5355747943",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42286,7 +41508,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=94840342",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.4, 0.4, 0.4),
     TextureId = "rbxassetid://1164426571",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42341,7 +41562,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184063317",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42441,7 +41661,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184063443",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42541,7 +41760,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=168119698",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.5),
     TextureId = "http://www.roblox.com/asset?id=168119736",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42597,7 +41815,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://168119698",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.5, 0.5, 0.55),
     TextureId = "rbxassetid://3171086347",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42672,7 +41889,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "http://www.roblox.com/asset?id=156092253 ",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42728,7 +41944,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184059718",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42804,7 +42019,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://283709822",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.45, 0.45, 0.45),
     TextureId = "rbxassetid://3171107559",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42879,7 +42093,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=283709822",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.45, 0.45, 0.45),
     TextureId = "http://www.roblox.com/asset/?id=313894904",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -42949,7 +42162,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://140633396635861",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.05978, 0.05978, 0.05978),
     TextureId = "rbxassetid://77812964601215",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -43062,7 +42274,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://582120569",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.6, 0.6),
     TextureId = "rbxassetid://582120836",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -43120,7 +42331,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://86944837615327",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07705, 0.07705, 0.07705),
     TextureId = "rbxassetid://86253759560362",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -43204,7 +42414,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=302165984",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.6, 0.6),
     TextureId = "rbxassetid://7596177341",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -43309,7 +42518,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://137082284051764",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07, 0.07, 0.07),
     TextureId = "rbxassetid://93782017269677",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -43403,7 +42611,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://137082284051764",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.07391, 0.07391, 0.07391),
     TextureId = "rbxassetid://93782017269677",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -43474,7 +42681,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://88250692342609",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.06913, 0.06913, 0.06913),
     TextureId = "rbxassetid://120707737118924",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -43585,7 +42791,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=238314382",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.9, 0.7),
     TextureId = "http://www.roblox.com/asset/?id=238314431",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -43651,7 +42856,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://238314382",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.9, 0.7),
     TextureId = "rbxassetid://3171168641",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -43727,7 +42931,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://15320557481",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.056, 0.056, 0.056),
     TextureId = "rbxassetid://15320558272",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -43748,7 +42951,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://15414904040",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.056, 0.056, 0.056),
     TextureId = "rbxassetid://15414905407",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -43888,7 +43090,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=130101214",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.6, 0.7),
     TextureId = "https://www.roblox.com/asset/?id=386250868",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -44005,7 +43206,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset/?id=93108071",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.45, 0.45, 0.45),
     TextureId = "http://www.roblox.com/asset/?id=93112631",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -44119,7 +43319,6 @@ local MESHES_FULL =
     MeshId = "rbxassetid://187852667",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.6, 0.6, 0.6),
     TextureId = "rbxassetid://187852629",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -44174,7 +43373,6 @@ local MESHES_FULL =
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
     Offset = Vector3.new(0, 0, 0),
-    Scale = Vector3.new(0.7, 0.91, 1),
     TextureId = "rbxassetid://3184063623",
     VertexColor = Vector3.new(1, 1, 1)
 })
@@ -44827,14 +44025,13 @@ do
     -- If neither approach worked, _elevateIdentity() on the main thread is
     -- still in effect. Most modern executors propagate identity to child
     -- threads, so this is usually enough.
-    local Library = getgenv().StealthObsidian or loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 end
 if not Library then warn("[Stealth] Failed to load Library UI") return end
     -- Re-assert after loadstring (it may reset identity).
     _elevateIdentity()
-    local Window = Library:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
-        Topbar = { Height = 44, ButtonsType = "Mac" }
-}))
+    local Window = Library:CreateWindow({ Title = "Stealth", Footer = "discord.gg/hqE5drDHF7", AutoLoad = true })
+
     -- Build weapon lookup tables.
     -- We keep the dropdown entries SHORT (just the weapon name) so they
     -- don't overflow the dropdown container horizontally. Type + rarity
@@ -44864,7 +44061,7 @@ if not Library then warn("[Stealth] Failed to load Library UI") return end
     statusLabel = SpawnTab:Paragraph({
         Name = "Status",
         Content = "Select a weapon, then click Spawn."
-}))
+
     -- Dropdown with all weapons (Library has built-in search in dropdowns).
     -- Entries are SHORT (just the weapon name) to prevent horizontal overflow.
     local WeaponDropdown
@@ -44883,11 +44080,11 @@ if not Library then warn("[Stealth] Failed to load Library UI") return end
                     statusLabel:Set({
                         Text = "Selected",
                         Content = wv.name .. " (" .. wv.type .. " — " .. (wv.rarity or "?") .. ")"
- }))
+
                 end
             end
         end
-}))
+
     SpawnTab:AddButton({ Text = "Spawn Weapon",
         Desc = "Spawns the selected weapon into your inventory (client-side).",
         Color = Color3.fromHex("#30FF6A"),
@@ -44902,7 +44099,7 @@ if not Library then warn("[Stealth] Failed to load Library UI") return end
                     Name = "Stealth",
                     Content = "Select a weapon first.",
                     Duration = 3
-}))
+
                 return
             end
             task.spawn(function()
@@ -44911,16 +44108,16 @@ if not Library then warn("[Stealth] Failed to load Library UI") return end
                     statusLabel:Set({
                         Name = "Spawned",
                         Content = selectedName or selectedKey
-}))
+
                 end
                 Library:Notify({
                     Name = "Stealth",
                     Content = "Spawned: " .. (selectedName or selectedKey),
                     Duration = 3
-}))
+
             end)
         end
-}))
+
     ------------------------------------------------------------ Tab: Settings
     local SettingsTab = Window:AddTab({ Name = "Config" })
     SettingsTab:AddLeftGroupbox("Visualizer options")})
@@ -44946,7 +44143,7 @@ if not Library then warn("[Stealth] Failed to load Library UI") return end
         Callback = function(v)
             CONFIG.PollRate = v
         end
- }))
+
     SettingsTab:AddButton({ Text = "Unload Stealth",
         Desc = "Closes the UI and removes all overlays.",
         Color = Color3.fromHex("#ff4830"),
@@ -44956,12 +44153,12 @@ if not Library then warn("[Stealth] Failed to load Library UI") return end
             if SELF.destroy then SELF.destroy() end
             Window:Destroy()
         end
-}))
+
     Library:Notify({
         Name = "Stealth | MM2",
         Content = ("Ready — %d weapons. Select → Spawn → equip."):format(#weaponList),
         Duration = 5
-}))
+
 end
 -- =========================================================================
 -- Stealth | MM2 — Extended Features (ESP, AutoFarm, Character, Teleport,
@@ -45396,7 +44593,7 @@ do
             ESP.Filter = selected
             RefreshESP()
         end
-}))
+
     ESPTab:CreateToggle({ Name = "Line ESP (Tracers)", 
         Desc = "Draw lines from your character to highlighted players.",
         Value = false,
@@ -45410,7 +44607,7 @@ do
             end
             RefreshESP()
         end
-}))
+
     -- ---------- AutoFarm Tab ----------
     local AutoFarmTab = Window:AddTab({ Name = "Farm" })
     AutoFarmTab:AddLeftGroupbox("Coin & Candy Collection")})
@@ -45427,7 +44624,7 @@ do
         Step = 1,
         Value = { Min = 1, Max = 60, Value = 25 },
         Callback = function(value) AutoFarm.Speed = value end
-}))
+
     AutoFarmTab:AddToggle("AutoResetCharacter", {  Text = "Auto Reset Character", Desc = "Reset your character every N seconds (useful for forcing new round spawns).",
         Value = false,
         Callback = function(v)
@@ -45441,7 +44638,7 @@ do
         Step = 10,
         Value = { Min = 60, Max = 600, Value = 180 },
         Callback = function(value) AutoFarm.ResetDelay = value end
-}))
+
     -- ---------- Character Tab ----------
     local CharacterTab = Window:AddTab({ Name = "Movement" })
     CharacterTab:AddLeftGroupbox("Movement Settings")})
@@ -45451,7 +44648,7 @@ do
         Step = 1,
         Value = { Min = 16, Max = 200, Value = 16 },
         Callback = function(value) Character.WalkSpeed = value end
-}))
+
     CharacterTab:AddToggle("LockWalkSpeed", {  Text = "Lock Walk Speed", Desc = "Re-apply walk speed if the game resets it.",
         Value = false,
         Callback = function(v) Character.LockWalkSpeed = v end
@@ -45462,7 +44659,7 @@ do
         Step = 1,
         Value = { Min = 50, Max = 500, Value = 50 },
         Callback = function(value) Character.JumpPower = value end
-}))
+
     CharacterTab:AddToggle("LockJumpPower", {  Text = "Lock Jump Power", Desc = "Re-apply jump power if the game resets it.",
         Value = false,
         Callback = function(v) Character.LockJumpPower = v end
@@ -45484,7 +44681,7 @@ do
             local hum = getHumanoid()
             if hum then pcall(function() hum.Health = 0 end) end
         end
-}))
+
     -- ---------- Teleport Tab ----------
     local TeleportTab = Window:AddTab({ Name = "Teleport" })
     TeleportTab:AddLeftGroupbox("Player Teleportation")})
@@ -45507,7 +44704,7 @@ do
         Value = nil,
         Multi = false,
         Callback = function(selected) selectedPlayerText = selected end
- }))
+
     TeleportTab:AddButton({ Text = "Teleport to Player",
         Desc = "Teleports you to the selected player.",
         Color = Color3.fromHex("#30FF6A"),
@@ -45518,10 +44715,10 @@ do
             local target = Players:FindFirstChild(selectedPlayerName)
             if target then TeleportToPlayer(target) end
         end
-}))
+
     TeleportTab:AddButton({ Text = "Refresh Player List",
         Callback = refreshPlayerList
-}))
+
     TeleportTab:AddLeftGroupbox("Role Teleportation")})
     TeleportTab:AddButton({ Text = "Teleport to Murderer",
         Desc = "Go to the current murderer (if any).",
@@ -45529,14 +44726,14 @@ do
         Justify = "Left",
         IconAlign = "Left",
         Callback = function() TeleportToRole("Murderer") end
-}))
+
     TeleportTab:AddButton({ Text = "Teleport to Sheriff",
         Desc = "Go to the current sheriff (if any).",
         Color = Color3.fromHex("#4682b4"),
         Justify = "Left",
         IconAlign = "Left",
         Callback = function() TeleportToRole("Sheriff") end
-}))
+
     -- Refresh list on player join/leave
     Players.PlayerAdded:Connect(function() task.wait(1); refreshPlayerList() end)
     Players.PlayerRemoving:Connect(function() task.wait(0.5); refreshPlayerList() end)
@@ -45558,11 +44755,11 @@ do
         Justify = "Left",
         IconAlign = "Left",
         Callback = function() KillAllMurderer() end
-}))
+
     RoleTab:AddButton({ Text = "Equip Knife",
         Desc = "Equip your knife from backpack.",
         Callback = function() EquipKnife() end
-}))
+
     -- ---------- Utilities Tab ----------
     local UtilitiesTab = Window:AddTab({ Name = "Utilities" })
     UtilitiesTab:AddLeftGroupbox("Server Utilities")})
@@ -45584,15 +44781,15 @@ do
                 Name = "Stealth | MM2",
                 Content = "Discord invite copied!",
                 Duration = 3
-}))
+
         end
-}))
+
     -- ---------- Welcome notification ----------
     Library:Notify({
         Name = "Stealth | MM2",
         Content = "Extended features loaded: ESP, AutoFarm, Teleport, Role Functions, Utilities.",
         Duration = 5
-}))
+
 end
 function setStatus(t, color)
     if statusLabel then

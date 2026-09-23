@@ -58,7 +58,7 @@ end
 ------------------------------------------------------------
 -- 2. Load Library
 ------------------------------------------------------------
-local Library = getgenv().StealthObsidian or loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 end
 if not Library then warn("[Stealth] Failed to load Library UI") return end
 _elevateIdentity()
@@ -78,7 +78,7 @@ function Library:Notify(opts)
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3
-}))
+
 end
 function Library:Unload()
     if self.Unloaded then return end
@@ -104,7 +104,7 @@ if not Remotes then
         Name = "Stealth",
         Content = "Remotes folder not found. Join the game first.",
         Duration = 6
-}))
+
     return
 end
 local function waitRemote(name, parent)
@@ -314,12 +314,10 @@ end
 ------------------------------------------------------------
 -- 6. Create Library window
 ------------------------------------------------------------
-local Window = Library:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
-    Topbar = {
+local Window = Library:CreateWindow({ Title = "Stealth", Footer = "discord.gg/hqE5drDHF7", AutoLoad = true })
         Height = 44,
-        ButtonsType = "Mac"
 })
-}))
+
 Library._window = Window
 ------------------------------------------------------------
 -- 7. Helper to register toggle/slider/dropdown into Toggles/Options
@@ -369,7 +367,7 @@ local function notify(title, description, kind)
         Name = title,
         Content = description or "",
         Duration = 5
-}))
+
 end
 ------------------------------------------------------------
 -- 10. Dashboard tab
@@ -407,7 +405,7 @@ EggTab:CreateDropdown({
     Options = { "Best Egg", "Nearest Egg", "Highest Rarity" },
     Default = "Best Egg",
     Callback = function(state) Options.StealMode.Value = state end
-}))
+
 registerOption("StealZones", {})
 EggTab:AddDropdown("Zones", { 
     Text = "Zones",
@@ -415,7 +413,7 @@ EggTab:AddDropdown("Zones", {
     Multi = true,
     Description = "Only steal eggs from these zones",
     Callback = function(state) Options.StealZones.Value = state end
- }))
+
 registerOption("StealRarities", {})
 EggTab:AddDropdown("Rarities", { 
     Text = "Rarities",
@@ -423,7 +421,7 @@ EggTab:AddDropdown("Rarities", {
     Multi = true,
     Description = "Only steal eggs of these rarities",
     Callback = function(state) Options.StealRarities.Value = state end
- }))
+
 registerOption("StealDelay", 5)
 local StealDelaySlider = EggTab:AddSlider("TrainBetweenSteals", { 
     Text = "Train Between Steals",
@@ -434,7 +432,7 @@ local StealDelaySlider = EggTab:AddSlider("TrainBetweenSteals", {
     Suffix = "s",
     Description = "After each egg is placed, train squats for this long before stealing again",
     Callback = function(state) Options.StealDelay.Value = state end
- }))
+
 registerToggle("AutoPlace", false)
 EggTab:AddToggle("AutoPlaceStolenEggs", {  Text = "Auto Place Stolen Eggs", Default = false,
     Callback = function(state) Toggles.AutoPlace.Value = state end
@@ -457,7 +455,7 @@ SellingTab:CreateDropdown({
     Options = { "Lowest CPS First", "Chosen Pet" },
     Default = "Lowest CPS First",
     Callback = function(state) Options.SellMode.Value = state end
-}))
+
 registerOption("AutoSellPet", AnimalNames[1] or "None")
 SellingTab:AddDropdown("ChosenPet", { 
     Text = "Chosen Pet",
@@ -465,7 +463,7 @@ SellingTab:AddDropdown("ChosenPet", {
     Default = AnimalNames[1] or "None",
     Description = "Only used when Mode is Chosen Pet",
     Callback = function(state) Options.AutoSellPet.Value = state end
- }))
+
 registerOption("SellMaxCps", "1000")
 SellingTab:AddInput("MaxCPSToSell", { 
     Text = "Max CPS To Sell",
@@ -474,7 +472,7 @@ SellingTab:AddInput("MaxCPSToSell", {
     Numeric = true,
     Description = "Lowest CPS First mode never sells pets above this value",
     Callback = function(state) Options.SellMaxCps.Value = state end
- }))
+
 SellingTab:AddLabel("Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets.:  ", true)
 ------------------------------------------------------------
 -- 14. Rewards tab
@@ -502,7 +500,7 @@ ShopsTab:CreateDropdown({
     MultipleOptions = true,
     SearchAfter = 6,
     Callback = function(state) Options.BuyCoilList.Value = state end
-}))
+
 registerToggle("AutoEquipCoil", false)
 ShopsTab:AddToggle("AutoEquipBestCoil", {  Text = "Auto Equip Best Coil", Default = false,
     Callback = function(state) Toggles.AutoEquipCoil.Value = state end
@@ -518,7 +516,7 @@ ShopsTab:CreateDropdown({
     MultipleOptions = true,
     SearchAfter = 6,
     Callback = function(state) Options.BuyTrailList.Value = state end
-}))
+
 registerToggle("AutoEquipTrail", false)
 ShopsTab:AddToggle("AutoEquipBestTrail", {  Text = "Auto Equip Best Trail", Default = false,
     Callback = function(state) Toggles.AutoEquipTrail.Value = state end
@@ -540,14 +538,14 @@ UpgradesTab:CreateDropdown({
     Options = { "Auto Select", "Chosen Animal" },
     Default = "Auto Select",
     Callback = function(state) Options.MutationMode.Value = state end
-}))
+
 registerOption("MutationAnimal", AnimalNames[1] or "None")
 UpgradesTab:AddDropdown("ChosenAnimal", { 
     Text = "Chosen Animal",
     Options = AnimalNames,
     Default = AnimalNames[1] or "None",
     Callback = function(state) Options.MutationAnimal.Value = state end
- }))
+
 registerToggle("AutoClaimMutation", false)
 UpgradesTab:AddToggle("AutoClaimGoldMutation", {  Text = "Auto Claim Gold Mutation", Default = false,
     Callback = function(state) Toggles.AutoClaimMutation.Value = state end
@@ -568,7 +566,7 @@ SettingsTab:AddButton({ Text = "Unload Stealth",
     Callback = function()
         Library:Unload()
     end
-}))
+
 ------------------------------------------------------------
 -- 18. Automation logic (from original, unchanged)
 ------------------------------------------------------------
