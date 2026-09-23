@@ -5,7 +5,6 @@
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- Game: Jump for Animals
-
 ------------------------------------------------------------
 -- 1. Identity elevation (Airflow needs executor-level identity)
 ------------------------------------------------------------
@@ -16,9 +15,7 @@ local function _elevateIdentity()
     pcall(function() if set_thread_context then set_thread_context(8) end end)
     pcall(function() if setcontext then setcontext(8) end end)
 end
-
 _elevateIdentity()
-
 local _taskPatched = false
 if not _taskPatched then
     pcall(function()
@@ -27,7 +24,6 @@ if not _taskPatched then
             local _origSpawn = task.spawn
             local _origDefer  = task.defer
             local _origDelay  = task.delay
-
             task.spawn = function(fn, ...)
                 local args = { ... }
                 return _origSpawn(function()
@@ -37,7 +33,6 @@ if not _taskPatched then
                     end
                 end)
             end
-
             task.defer = function(fn, ...)
                 local args = { ... }
                 return _origDefer(function()
@@ -47,7 +42,6 @@ if not _taskPatched then
                     end
                 end)
             end
-
             task.delay = function(time, fn, ...)
                 local args = { ... }
                 return _origDelay(time, function()
@@ -57,19 +51,15 @@ if not _taskPatched then
                     end
                 end)
             end
-
             _taskPatched = true
         end
     end)
 end
-
 ------------------------------------------------------------
 -- 2. Load Airflow
 ------------------------------------------------------------
 local Airflow = getgenv().StealthAirflow or loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
-
 _elevateIdentity()
-
 ------------------------------------------------------------
 -- 3. State tables (mirror ObsidianUltra Toggles/Options pattern)
 ------------------------------------------------------------
@@ -79,28 +69,24 @@ local Library = {
     Toggles = Toggles,
     Options = Options,
     Unloaded = false,
-    ShowCustomCursor = true,
-}
-
+    ShowCustomCursor = true
+})
 function Library:Notify(opts)
     Airflow:Notify({
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
-        Duration = opts.Time or 3,
-    })
+        Duration = opts.Time or 3
+}))
 end
-
 function Library:Unload()
     if self.Unloaded then return end
     self.Unloaded = true
     if self._onUnload then self._onUnload() end
     pcall(function() self._window:Destroy() end)
 end
-
 function Library:OnUnload(fn)
     self._onUnload = fn
 end
-
 ------------------------------------------------------------
 -- 4. Services & game refs
 ------------------------------------------------------------
@@ -108,20 +94,17 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
 local VirtualUser = game:GetService("VirtualUser")
-
 local LocalPlayer = Players.LocalPlayer
 local gameName = "Jump for Animals"
-
 local Remotes = ReplicatedStorage:WaitForChild("Remotes", 15)
 if not Remotes then
     Airflow:Notify({
         Name = "Stealth",
         Content = "Remotes folder not found. Join the game first.",
-        Duration = 6,
-    })
+        Duration = 6
+}))
     return
 end
-
 local function waitRemote(name, parent)
     local success, instance = pcall(function()
         return (parent or Remotes):WaitForChild(name, 10)
@@ -131,7 +114,6 @@ local function waitRemote(name, parent)
     end
     return nil
 end
-
 local PlaceEggRequest = waitRemote("PlaceEggRequest")
 local DropEggRequest = waitRemote("DropEggRequest")
 local SellRemote = waitRemote("Sell")
@@ -142,7 +124,6 @@ local StopSquattingRequest = waitRemote("StopSquattingRequest")
 local SquatBonusRequest = waitRemote("SquatBonusRequest")
 local OfflineRewardsRemote = waitRemote("OfflineRewards")
 local IndexRewardRemote = waitRemote("ClaimAnimalIndexReward")
-
 local Settings = ReplicatedStorage:FindFirstChild("Settings")
 local function requireSetting(name)
     local module = Settings and Settings:FindFirstChild(name)
@@ -155,13 +136,11 @@ local function requireSetting(name)
     end
     return nil
 end
-
 local Rarities = requireSetting("Rarities")
 local SpeedUpgrades = requireSetting("SpeedUpgrades")
 local TrailSettings = requireSetting("Trails")
 local BarbellUpgrades = requireSetting("BarbellUpgrades")
 local RecommendedJumps = requireSetting("RecommendedJumps")
-
 local ZoneJumpRequirements = { Meadow = 25 }
 if RecommendedJumps and type(RecommendedJumps.List) == "table" then
     for key, value in pairs(RecommendedJumps.List) do
@@ -172,26 +151,21 @@ if RecommendedJumps and type(RecommendedJumps.List) == "table" then
         end
     end
 end
-
 local StartedAt = os.clock()
-
 ------------------------------------------------------------
 -- 5. Helper functions (from original, unchanged)
 ------------------------------------------------------------
 local function getCharacter()
     return LocalPlayer.Character
 end
-
 local function getHumanoid()
     local character = getCharacter()
     return character and character:FindFirstChildOfClass("Humanoid")
 end
-
 local function getRoot()
     local character = getCharacter()
     return character and character:FindFirstChild("HumanoidRootPart")
 end
-
 local function teleportTo(position)
     local root = getRoot()
     if root and position then
@@ -200,7 +174,6 @@ local function teleportTo(position)
     end
     return false
 end
-
 local function holderPosition(holder)
     if not holder then
         return nil
@@ -213,46 +186,38 @@ local function holderPosition(holder)
     end
     return nil
 end
-
 local function getPlot()
     local plot = LocalPlayer:FindFirstChild("Plot")
     return plot and plot.Value or nil
 end
-
 local function getSquatDetector()
     local plot = getPlot()
     local zone = plot and plot:FindFirstChild("SquatZone")
     local floor = zone and zone:FindFirstChild("Floor")
     return floor and floor:FindFirstChild("Detector") or nil
 end
-
 local function getPlacementDetector()
     local plot = getPlot()
     return plot and plot:FindFirstChild("Detector", true) or nil
 end
-
 local function getCash()
     local leaderstats = LocalPlayer:FindFirstChild("leaderstats")
     local cash = leaderstats and leaderstats:FindFirstChild("Cash")
     local value = cash and cash:FindFirstChild("V")
     return value and tonumber(value.Value) or 0
 end
-
 local function getLevel()
     local leaderstats = LocalPlayer:FindFirstChild("leaderstats")
     local level = leaderstats and leaderstats:FindFirstChild("Level")
     local value = level and level:FindFirstChild("V")
     return value and tonumber(value.Value) or 0
 end
-
 local function isPetTool(tool)
     return tool:IsA("Tool") and tool:GetAttribute("IsPetInventoryTool") == true
 end
-
 local function isEggTool(tool)
     return tool:IsA("Tool") and tool:GetAttribute("IsEggTool") == true
 end
-
 local function forEachContainer(fn)
     local character = getCharacter()
     if LocalPlayer.Backpack then
@@ -262,7 +227,6 @@ local function forEachContainer(fn)
         fn(character)
     end
 end
-
 local function findTool(predicate)
     local found
     forEachContainer(function(container)
@@ -278,7 +242,6 @@ local function findTool(predicate)
     end)
     return found
 end
-
 local function countEggTools()
     local count = 0
     forEachContainer(function(container)
@@ -290,13 +253,11 @@ local function countEggTools()
     end)
     return count
 end
-
 local function countPlacedEggs()
     local plot = getPlot()
     local placed = plot and plot:FindFirstChild("PlacedEggs")
     return placed and #placed:GetChildren() or 0
 end
-
 local function countReadyEggs()
     local plot = getPlot()
     local placed = plot and plot:FindFirstChild("PlacedEggs")
@@ -311,7 +272,6 @@ local function countReadyEggs()
     end
     return ready
 end
-
 local function uniqueAnimalNames()
     local names = {}
     local seen = {}
@@ -329,7 +289,6 @@ local function uniqueAnimalNames()
     table.sort(names)
     return names
 end
-
 local function abbreviate(value)
     value = tonumber(value) or 0
     local units = { "", "K", "M", "B", "T", "Qa", "Qi" }
@@ -343,7 +302,6 @@ local function abbreviate(value)
     end
     return string.format("%.2f%s", value, units[index])
 end
-
 local function formatClock(seconds)
     seconds = math.max(math.floor(seconds), 0)
     local hours = math.floor(seconds / 3600)
@@ -351,7 +309,6 @@ local function formatClock(seconds)
     local secs = seconds % 60
     return string.format("%02d:%02d:%02d", hours, minutes, secs)
 end
-
 ------------------------------------------------------------
 -- 6. Create Airflow window
 ------------------------------------------------------------
@@ -371,82 +328,34 @@ local Window = Airflow:CreateWindow({
         Color = ColorSequence.new(
             Color3.fromHex("#30FF6A"),
             Color3.fromHex("#e7ff2f")
-        ),
-    },
+        )
+}),
     Topbar = {
         Height = 44,
-        ButtonsType = "Mac",
-    },
+        ButtonsType = "Mac"
 })
-
+}))
 Library._window = Window
-
 ------------------------------------------------------------
 -- 7. Helper to register toggle/slider/dropdown into Toggles/Options
 ------------------------------------------------------------
 local function registerToggle(id, default)
     Toggles[id] = { Value = default }
 end
-
 local function registerOption(id, default)
     Options[id] = { Value = default }
 end
-
 ------------------------------------------------------------
 -- 8. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab({ 
-    Name = "Dashboard",
-    ,
-    ,
- })
-
-
-local TrainingTab = Window:CreateTab({ 
-    Name = "Training",
-    ,
-    ,
- })
-
-local EggTab = Window:CreateTab({ 
-    Name = "Eggs",
-    ,
-    ,
- })
-
-local SellingTab = Window:CreateTab({ 
-    Name = "Selling",
-    ,
-    ,
- })
-
-local RewardsTab = Window:CreateTab({ 
-    Name = "Rewards",
-    ,
-    ,
- })
-
-
-local ShopsTab = Window:CreateTab({ 
-    Name = "Shops",
-    ,
-    ,
- })
-
-local UpgradesTab = Window:CreateTab({ 
-    Name = "Upgrades",
-    ,
-    ,
- })
-
-
-local SettingsTab = Window:CreateTab({ 
-    Name = "Config",
-    ,
-    ,
- })
-
-
+local MainTab = Window:CreateTab({ Name = "Dashboard"})
+local TrainingTab = Window:CreateTab({ Name = "Training"})
+local EggTab = Window:CreateTab({ Name = "Eggs"})
+local SellingTab = Window:CreateTab({ Name = "Selling"})
+local RewardsTab = Window:CreateTab({ Name = "Rewards"})
+local ShopsTab = Window:CreateTab({ Name = "Shops"})
+local UpgradesTab = Window:CreateTab({ Name = "Upgrades"})
+local SettingsTab = Window:CreateTab({ Name = "Config"})
 ------------------------------------------------------------
 -- 9. Build options data
 ------------------------------------------------------------
@@ -454,7 +363,6 @@ local AnimalNames = uniqueAnimalNames()
 if #AnimalNames == 0 then
     AnimalNames = { "None" }
 end
-
 local RarityNames = { "Common", "Uncommon", "Rare", "Epic", "Legendary", "Mythic", "Divine", "Celestial", "Eternal" }
 local ZoneNames = {}
 do
@@ -471,65 +379,50 @@ end
 if #ZoneNames == 0 then
     ZoneNames = { "Meadow", "Coral Reef", "Winter", "Desert", "Crystal Mines", "Jungle", "Mystic Isles", "Prehistoric", "Celestial Heights", "Savannah" }
 end
-
 local function notify(title, description, kind)
     Airflow:Notify({
         Name = title,
         Content = description or "",
-        Duration = 5,
-    })
+        Duration = 5
+}))
 end
-
 ------------------------------------------------------------
 -- 10. Dashboard tab
 ------------------------------------------------------------
-local MainBox = MainTab:CreateLabel({ Text = "Game: " .. gameName })
-local StatusSession = MainTab:CreateLabel({ Text = "Session: 00:00:00" })
-local StatusCash = MainTab:CreateLabel({ Text = "Cash: 0" })
-local StatusLevel = MainTab:CreateLabel({ Text = "Level: 0" })
-local StatusEggs = MainTab:CreateLabel({ Text = "Carried eggs: 0 | Placed: 0" })
-local StatusSquat = MainTab:CreateLabel({ Text = "Squatting: false" })
-
+local MainBox = MainTab:CreateLabel({ Text = "Game: " .. gameName})
+local StatusSession = MainTab:CreateLabel({ Text = "Session: 00:00:00"})
+local StatusCash = MainTab:CreateLabel({ Text = "Cash: 0"})
+local StatusLevel = MainTab:CreateLabel({ Text = "Level: 0"})
+local StatusEggs = MainTab:CreateLabel({ Text = "Carried eggs: 0 | Placed: 0"})
+local StatusSquat = MainTab:CreateLabel({ Text = "Squatting: false"})
 ------------------------------------------------------------
 -- 11. Training tab
 ------------------------------------------------------------
 local TrainingBox = TrainingTab:AddLeftGroupbox and TrainingTab:AddLeftGroupbox("Squats") or TrainingTab
 -- Airflow doesn't have AddLeftGroupbox; use the tab directly
-
 registerToggle("AutoTrain", false)
-local _auto_lbl_1 = TrainingTab:CreateLabel({ Text = "Auto Train Squats" })
-_auto_lbl_1:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoTrain.Value = state end,
+TrainingTab:CreateToggle({ Name = "Auto Train Squats", CurrentValue = false,
+    Callback = function(state) Toggles.AutoTrain.Value = state end
 })
-
 registerToggle("AutoSquatBonus", false)
-local _auto_lbl_2 = TrainingTab:CreateLabel({ Text = "Auto Claim Squat Bonus" })
-_auto_lbl_2:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoSquatBonus.Value = state end,
+TrainingTab:CreateToggle({ Name = "Auto Claim Squat Bonus", CurrentValue = false,
+    Callback = function(state) Toggles.AutoSquatBonus.Value = state end
 })
-
-TrainingTab:CreateLabel({ Text = "Squatting is server controlled; training pauses while you carry an egg." })
-
+TrainingTab:CreateLabel({ Text = "Squatting is server controlled; training pauses while you carry an egg."})
 ------------------------------------------------------------
 -- 12. Eggs tab
 ------------------------------------------------------------
 registerToggle("AutoSteal", false)
-local _auto_lbl_3 = EggTab:CreateLabel({ Text = "Auto Steal Eggs" })
-_auto_lbl_3:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoSteal.Value = state end,
+EggTab:CreateToggle({ Name = "Auto Steal Eggs", CurrentValue = false,
+    Callback = function(state) Toggles.AutoSteal.Value = state end
 })
-
 registerOption("StealMode", "Best Egg")
 EggTab:CreateDropdown({
     Name = "Target",
     Options = { "Best Egg", "Nearest Egg", "Highest Rarity" },
     Default = "Best Egg",
-    Callback = function(state) Options.StealMode.Value = state end,
-})
-
+    Callback = function(state) Options.StealMode.Value = state end
+}))
 registerOption("StealZones", {})
 EggTab:CreateDropdown({
     Name = "Zones",
@@ -537,9 +430,8 @@ EggTab:CreateDropdown({
     MultipleOptions = true,
     SearchAfter = 6,
     Description = "Only steal eggs from these zones",
-    Callback = function(state) Options.StealZones.Value = state end,
-})
-
+    Callback = function(state) Options.StealZones.Value = state end
+}))
 registerOption("StealRarities", {})
 EggTab:CreateDropdown({
     Name = "Rarities",
@@ -547,9 +439,8 @@ EggTab:CreateDropdown({
     MultipleOptions = true,
     SearchAfter = 6,
     Description = "Only steal eggs of these rarities",
-    Callback = function(state) Options.StealRarities.Value = state end,
-})
-
+    Callback = function(state) Options.StealRarities.Value = state end
+}))
 registerOption("StealDelay", 5)
 local StealDelaySlider = EggTab:CreateSlider({
     Name = "Train Between Steals",
@@ -559,43 +450,31 @@ local StealDelaySlider = EggTab:CreateSlider({
     Rounding = 0,
     Suffix = "s",
     Description = "After each egg is placed, train squats for this long before stealing again",
-    Callback = function(state) Options.StealDelay.Value = state end,
-})
-
+    Callback = function(state) Options.StealDelay.Value = state end
+}))
 registerToggle("AutoPlace", false)
-local _auto_lbl_4 = EggTab:CreateLabel({ Text = "Auto Place Stolen Eggs" })
-_auto_lbl_4:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoPlace.Value = state end,
+EggTab:CreateToggle({ Name = "Auto Place Stolen Eggs", CurrentValue = false,
+    Callback = function(state) Toggles.AutoPlace.Value = state end
 })
-
 registerToggle("AutoHatch", false)
-local _auto_lbl_5 = EggTab:CreateLabel({ Text = "Auto Hatch Ready Eggs" })
-_auto_lbl_5:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoHatch.Value = state end,
+EggTab:CreateToggle({ Name = "Auto Hatch Ready Eggs", CurrentValue = false,
+    Callback = function(state) Toggles.AutoHatch.Value = state end
 })
-
-EggTab:CreateLabel({ Text = "Carrying an egg disables jumping. Auto Place moves it to your plot so the loop continues." })
-
+EggTab:CreateLabel({ Text = "Carrying an egg disables jumping. Auto Place moves it to your plot so the loop continues."})
 ------------------------------------------------------------
 -- 13. Selling tab
 ------------------------------------------------------------
 registerToggle("AutoSell", false)
-local _auto_lbl_6 = SellingTab:CreateLabel({ Text = "Auto Sell Junk Pets" })
-_auto_lbl_6:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoSell.Value = state end,
+SellingTab:CreateToggle({ Name = "Auto Sell Junk Pets", CurrentValue = false,
+    Callback = function(state) Toggles.AutoSell.Value = state end
 })
-
 registerOption("SellMode", "Lowest CPS First")
 SellingTab:CreateDropdown({
     Name = "Mode",
     Options = { "Lowest CPS First", "Chosen Pet" },
     Default = "Lowest CPS First",
-    Callback = function(state) Options.SellMode.Value = state end,
-})
-
+    Callback = function(state) Options.SellMode.Value = state end
+}))
 registerOption("AutoSellPet", AnimalNames[1] or "None")
 SellingTab:CreateDropdown({
     Name = "Chosen Pet",
@@ -603,9 +482,8 @@ SellingTab:CreateDropdown({
     Default = AnimalNames[1] or "None",
     SearchAfter = 6,
     Description = "Only used when Mode is Chosen Pet",
-    Callback = function(state) Options.AutoSellPet.Value = state end,
-})
-
+    Callback = function(state) Options.AutoSellPet.Value = state end
+}))
 registerOption("SellMaxCps", "1000")
 SellingTab:CreateInput({
     Name = "Max CPS To Sell",
@@ -613,145 +491,104 @@ SellingTab:CreateInput({
     Placeholder = "1000",
     Numeric = true,
     Description = "Lowest CPS First mode never sells pets above this value",
-    Callback = function(state) Options.SellMaxCps.Value = state end,
-})
-
-SellingTab:CreateLabel({ Text = "Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets." })
-
+    Callback = function(state) Options.SellMaxCps.Value = state end
+}))
+SellingTab:CreateLabel({ Text = "Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets."})
 ------------------------------------------------------------
 -- 14. Rewards tab
 ------------------------------------------------------------
 registerToggle("AutoOffline", false)
-local _auto_lbl_7 = RewardsTab:CreateLabel({ Text = "Auto Claim Offline Cash" })
-_auto_lbl_7:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoOffline.Value = state end,
+RewardsTab:CreateToggle({ Name = "Auto Claim Offline Cash", CurrentValue = false,
+    Callback = function(state) Toggles.AutoOffline.Value = state end
 })
-
 registerToggle("AutoIndex", false)
-local _auto_lbl_8 = RewardsTab:CreateLabel({ Text = "Auto Claim Animal Index Rewards" })
-_auto_lbl_8:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoIndex.Value = state end,
+RewardsTab:CreateToggle({ Name = "Auto Claim Animal Index Rewards", CurrentValue = false,
+    Callback = function(state) Toggles.AutoIndex.Value = state end
 })
-
-RewardsTab:CreateLabel({ Text = "Index rewards are claimed with a single claim-all request. Offline cash is claimed whenever a balance is waiting." })
-
+RewardsTab:CreateLabel({ Text = "Index rewards are claimed with a single claim-all request. Offline cash is claimed whenever a balance is waiting."})
 ------------------------------------------------------------
 -- 15. Shops tab
 ------------------------------------------------------------
 registerToggle("AutoBuyCoils", false)
-local _auto_lbl_9 = ShopsTab:CreateLabel({ Text = "Auto Buy Coils" })
-_auto_lbl_9:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoBuyCoils.Value = state end,
+ShopsTab:CreateToggle({ Name = "Auto Buy Coils", CurrentValue = false,
+    Callback = function(state) Toggles.AutoBuyCoils.Value = state end
 })
-
 registerOption("BuyCoilList", {})
 ShopsTab:CreateDropdown({
     Name = "Coils",
     Options = { "Red Coil", "Candy Coil", "Yellow Coil", "Chocolate Coil" },
     MultipleOptions = true,
     SearchAfter = 6,
-    Callback = function(state) Options.BuyCoilList.Value = state end,
-})
-
+    Callback = function(state) Options.BuyCoilList.Value = state end
+}))
 registerToggle("AutoEquipCoil", false)
-local _auto_lbl_10 = ShopsTab:CreateLabel({ Text = "Auto Equip Best Coil" })
-_auto_lbl_10:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoEquipCoil.Value = state end,
+ShopsTab:CreateToggle({ Name = "Auto Equip Best Coil", CurrentValue = false,
+    Callback = function(state) Toggles.AutoEquipCoil.Value = state end
 })
-
 registerToggle("AutoBuyTrails", false)
-local _auto_lbl_11 = ShopsTab:CreateLabel({ Text = "Auto Buy Trails" })
-_auto_lbl_11:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoBuyTrails.Value = state end,
+ShopsTab:CreateToggle({ Name = "Auto Buy Trails", CurrentValue = false,
+    Callback = function(state) Toggles.AutoBuyTrails.Value = state end
 })
-
 registerOption("BuyTrailList", {})
 ShopsTab:CreateDropdown({
     Name = "Trails",
     Options = { "Blue Trail", "Red Trail", "Green Trail", "Yellow Trail", "Purple Trail", "White Trail", "Black Trail", "Galaxy Trail", "Crimson Star Trail", "Rainbow Trail" },
     MultipleOptions = true,
     SearchAfter = 6,
-    Callback = function(state) Options.BuyTrailList.Value = state end,
-})
-
+    Callback = function(state) Options.BuyTrailList.Value = state end
+}))
 registerToggle("AutoEquipTrail", false)
-local _auto_lbl_12 = ShopsTab:CreateLabel({ Text = "Auto Equip Best Trail" })
-_auto_lbl_12:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoEquipTrail.Value = state end,
+ShopsTab:CreateToggle({ Name = "Auto Equip Best Trail", CurrentValue = false,
+    Callback = function(state) Toggles.AutoEquipTrail.Value = state end
 })
-
 ------------------------------------------------------------
 -- 16. Upgrades tab
 ------------------------------------------------------------
 registerToggle("AutoBarbell", false)
-local _auto_lbl_13 = UpgradesTab:CreateLabel({ Text = "Auto Upgrade Barbell" })
-_auto_lbl_13:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoBarbell.Value = state end,
+UpgradesTab:CreateToggle({ Name = "Auto Upgrade Barbell", CurrentValue = false,
+    Callback = function(state) Toggles.AutoBarbell.Value = state end
 })
-
 registerToggle("AutoAddMutation", false)
-local _auto_lbl_14 = UpgradesTab:CreateLabel({ Text = "Auto Add Pets To Mutation Machine" })
-_auto_lbl_14:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoAddMutation.Value = state end,
+UpgradesTab:CreateToggle({ Name = "Auto Add Pets To Mutation Machine", CurrentValue = false,
+    Callback = function(state) Toggles.AutoAddMutation.Value = state end
 })
-
 registerOption("MutationMode", "Auto Select")
 UpgradesTab:CreateDropdown({
     Name = "Pet Choice",
     Options = { "Auto Select", "Chosen Animal" },
     Default = "Auto Select",
-    Callback = function(state) Options.MutationMode.Value = state end,
-})
-
+    Callback = function(state) Options.MutationMode.Value = state end
+}))
 registerOption("MutationAnimal", AnimalNames[1] or "None")
 UpgradesTab:CreateDropdown({
     Name = "Chosen Animal",
     Options = AnimalNames,
     Default = AnimalNames[1] or "None",
     SearchAfter = 6,
-    Callback = function(state) Options.MutationAnimal.Value = state end,
-})
-
+    Callback = function(state) Options.MutationAnimal.Value = state end
+}))
 registerToggle("AutoClaimMutation", false)
-local _auto_lbl_15 = UpgradesTab:CreateLabel({ Text = "Auto Claim Gold Mutation" })
-_auto_lbl_15:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoClaimMutation.Value = state end,
+UpgradesTab:CreateToggle({ Name = "Auto Claim Gold Mutation", CurrentValue = false,
+    Callback = function(state) Toggles.AutoClaimMutation.Value = state end
 })
-
 registerToggle("AutoReturnMutation", false)
-local _auto_lbl_16 = UpgradesTab:CreateLabel({ Text = "Auto Return Mutation Pets" })
-_auto_lbl_16:CreateToggle({
-    CurrentValue = false,
-    Callback = function(state) Toggles.AutoReturnMutation.Value = state end,
+UpgradesTab:CreateToggle({ Name = "Auto Return Mutation Pets", CurrentValue = false,
+    Callback = function(state) Toggles.AutoReturnMutation.Value = state end
 })
-
 ------------------------------------------------------------
 -- 17. Settings tab
 ------------------------------------------------------------
 registerToggle("AntiAFK", true)
-local _auto_lbl_17 = SettingsTab:CreateLabel({ Text = "Anti-AFK" })
-_auto_lbl_17:CreateToggle({
-    CurrentValue = true,
-    Callback = function(state) Toggles.AntiAFK.Value = state end,
+SettingsTab:CreateToggle({ Name = "Anti-AFK", CurrentValue = true,
+    Callback = function(state) Toggles.AntiAFK.Value = state end
 })
-
 SettingsTab:CreateButton({
     Name = "Unload Stealth",
     Description = "Removes the menu and stops all automation",
     Callback = function()
         Library:Unload()
-    end,
-})
-
+    end
+}))
 ------------------------------------------------------------
 -- 18. Automation logic (from original, unchanged)
 ------------------------------------------------------------
@@ -768,7 +605,6 @@ local function isSelected(selection, value)
     end
     return selection[value] == true
 end
-
 local function zoneReachable(zone)
     local required = ZoneJumpRequirements[zone]
     if required == nil then
@@ -778,7 +614,6 @@ local function zoneReachable(zone)
     jumpPower = jumpPower and tonumber(jumpPower.Value) or 0
     return jumpPower >= required
 end
-
 local function findEggPrompt(mode)
     local map = workspace:FindFirstChild("Map")
     local stages = map and map:FindFirstChild("Stages")
@@ -827,14 +662,12 @@ local function findEggPrompt(mode)
     end
     return bestPrompt, bestPosition
 end
-
 local LastIndexClaim = 0
 local LastBarbellAction = 0
 local CarryWatchSince = nil
 local NextStealAt = 0
 local NextPlaceAttempt = 0
 local PlaceRotation = 0
-
 local function doCarryRecovery()
     if not Toggles.AutoSteal.Value and not Toggles.AutoPlace.Value then
         CarryWatchSince = nil
@@ -860,7 +693,6 @@ local function doCarryRecovery()
         CarryWatchSince = nil
     end
 end
-
 local function doAutoTrain()
     if not Toggles.AutoTrain.Value then
         return
@@ -888,7 +720,6 @@ local function doAutoTrain()
         task.wait(0.25)
     end
 end
-
 local LastBonusClaim = 0
 local function doAutoSquatBonus()
     if not Toggles.AutoSquatBonus.Value or not SquatBonusRequest then
@@ -904,7 +735,6 @@ local function doAutoSquatBonus()
     local version = math.floor(tonumber(LocalPlayer:GetAttribute("SquatBonusVersion")) or 0)
     SquatBonusRequest:FireServer(version)
 end
-
 local function doAutoPlace()
     if not Toggles.AutoPlace.Value or not PlaceEggRequest then
         return
@@ -942,7 +772,6 @@ local function doAutoPlace()
         NextStealAt = os.clock() + math.max(delay, 0)
     end
 end
-
 local function doAutoSteal()
     if not Toggles.AutoSteal.Value then
         return
@@ -979,7 +808,6 @@ local function doAutoSteal()
         task.wait(0.6)
     end
 end
-
 local function doAutoHatch()
     if not Toggles.AutoHatch.Value then
         return
@@ -1005,7 +833,6 @@ local function doAutoHatch()
         end
     end
 end
-
 local function findSellTarget()
     local mode = Options.SellMode.Value
     local chosen = Options.AutoSellPet.Value
@@ -1028,7 +855,6 @@ local function findSellTarget()
     end)
     return bestTool
 end
-
 local function doAutoSell()
     if not Toggles.AutoSell.Value then
         return
@@ -1061,7 +887,6 @@ local function doAutoSell()
     end
     task.wait(0.4)
 end
-
 local function doAutoOffline()
     if not Toggles.AutoOffline.Value or not OfflineRewardsRemote then
         return
@@ -1072,7 +897,6 @@ local function doAutoOffline()
         task.wait(0.25)
     end
 end
-
 local function doAutoIndex()
     if not Toggles.AutoIndex.Value or not IndexRewardRemote then
         return
@@ -1083,12 +907,10 @@ local function doAutoIndex()
     LastIndexClaim = os.clock()
     IndexRewardRemote:FireServer("__ALL__")
 end
-
 local function ownedValue(folder, name)
     local entry = folder and folder:FindFirstChild(name)
     return entry and entry.Value == true
 end
-
 local function doAutoCoils()
     local coilData = LocalPlayer:FindFirstChild("CoilData")
     if not coilData or not CoilsRemote then
@@ -1127,7 +949,6 @@ local function doAutoCoils()
         end
     end
 end
-
 local function doAutoTrails()
     local trailData = LocalPlayer:FindFirstChild("TrailData")
     if not trailData or not TrailsRemote then
@@ -1166,7 +987,6 @@ local function doAutoTrails()
         end
     end
 end
-
 local function doAutoBarbell()
     if not Toggles.AutoBarbell.Value or not BarbellUpgrades or not BarbellUpgrades.GetNext then
         return
@@ -1202,7 +1022,6 @@ local function doAutoBarbell()
     fireproximityprompt(prompt)
     task.wait(0.4)
 end
-
 local function findMutationPet(targetName)
     local candidate, candidateCps
     forEachContainer(function(container)
@@ -1218,7 +1037,6 @@ local function findMutationPet(targetName)
     end)
     return candidate
 end
-
 local function findDuplicateAnimal()
     local counts, lowest = {}, {}
     forEachContainer(function(container)
@@ -1241,7 +1059,6 @@ local function findDuplicateAnimal()
     end
     return bestName
 end
-
 local function mutationPromptByName(name)
     local map = workspace:FindFirstChild("Map")
     local mutations = map and map:FindFirstChild("Mutations")
@@ -1249,7 +1066,6 @@ local function mutationPromptByName(name)
     local prompt = detector and detector:FindFirstChild(name, true)
     return prompt, detector
 end
-
 local function fireMutation(name, detector)
     local prompt = detector and detector:FindFirstChild(name, true)
     if not prompt or not prompt.Enabled then
@@ -1264,7 +1080,6 @@ local function fireMutation(name, detector)
     task.wait(0.35)
     return true
 end
-
 local function doAutoMutation()
     local active = LocalPlayer:GetAttribute("MutationCraftActive") == true
     local ready = LocalPlayer:GetAttribute("MutationCraftReady") == true
@@ -1306,7 +1121,6 @@ local function doAutoMutation()
     task.wait(0.2)
     fireMutation("MutationPrompt", detector)
 end
-
 ------------------------------------------------------------
 -- 19. Feature loops (from original, unchanged)
 ------------------------------------------------------------
@@ -1328,7 +1142,6 @@ task.spawn(function()
         task.wait(0.5)
     end
 end)
-
 task.spawn(function()
     while true do
         local success, err = pcall(function()
@@ -1343,7 +1156,6 @@ task.spawn(function()
         task.wait(0.5)
     end
 end)
-
 task.spawn(function()
     while true do
         local success, err = pcall(doAutoMutation)
@@ -1353,7 +1165,6 @@ task.spawn(function()
         task.wait(6)
     end
 end)
-
 task.spawn(function()
     while true do
         task.wait(300)
@@ -1370,7 +1181,6 @@ task.spawn(function()
         end
     end
 end)
-
 task.spawn(function()
     while true do
         pcall(function()
@@ -1383,6 +1193,5 @@ task.spawn(function()
         task.wait(1)
     end
 end)
-
 notify("Stealth", "Loaded for " .. gameName .. ". RightShift toggles the menu.")
 print("[Stealth] Loaded " .. gameName .. " via Airflow")

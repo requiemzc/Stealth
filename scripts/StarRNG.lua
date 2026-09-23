@@ -5,7 +5,6 @@
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- Game: Star RNG
-
 ------------------------------------------------------------
 -- 1. Identity elevation (Airflow needs executor-level identity)
 ------------------------------------------------------------
@@ -16,9 +15,7 @@ local function _elevateIdentity()
     pcall(function() if set_thread_context then set_thread_context(8) end end)
     pcall(function() if setcontext then setcontext(8) end end)
 end
-
 _elevateIdentity()
-
 local _taskPatched = false
 if not _taskPatched then
     pcall(function()
@@ -27,7 +24,6 @@ if not _taskPatched then
             local _origSpawn = task.spawn
             local _origDefer  = task.defer
             local _origDelay  = task.delay
-
             task.spawn = function(fn, ...)
                 local args = { ... }
                 return _origSpawn(function()
@@ -37,7 +33,6 @@ if not _taskPatched then
                     end
                 end)
             end
-
             task.defer = function(fn, ...)
                 local args = { ... }
                 return _origDefer(function()
@@ -47,7 +42,6 @@ if not _taskPatched then
                     end
                 end)
             end
-
             task.delay = function(time, fn, ...)
                 local args = { ... }
                 return _origDelay(time, function()
@@ -57,19 +51,15 @@ if not _taskPatched then
                     end
                 end)
             end
-
             _taskPatched = true
         end
     end)
 end
-
 ------------------------------------------------------------
 -- 2. Load Airflow
 ------------------------------------------------------------
 local Airflow = getgenv().StealthAirflow or loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
-
 _elevateIdentity()
-
 ------------------------------------------------------------
 -- 3. Services & state
 ------------------------------------------------------------
@@ -78,28 +68,23 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
 local VirtualUser = game:GetService("VirtualUser")
 local LocalPlayer = Players.LocalPlayer
-
 local gameName = "Star RNG"
 pcall(function()
     local info = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
     if info and info.Name then gameName = info.Name end
 end)
-
 local Unloaded = false
 local Toggles = {}
 local Options = {}
-
 ------------------------------------------------------------
 -- 4. Data
 ------------------------------------------------------------
 local RARITIES = {"Common","Uncommon","Rare","Epic","Legendary","Mythic","Exotic","Radiant","Secret","Exalted","Divine","Eternal","Transcendent","Absolute"}
 local RARITY_ORDER = {}
 for i, r in ipairs(RARITIES) do RARITY_ORDER[r] = i end
-
 local MUTATION_IDS = {"SyringeNeedle","MoonNeedle","CometNeedle","PlanetNeedle","AlienNeedle","GalaxyNeedle","BlackholeNeedle"}
 local EGG_NAMES = {"Starlight Egg","Orbit Egg","Nebula Egg","Cosmic Egg","Eclipse Egg","Celestial Egg","Mythic Egg","Apex Egg"}
 local GEAR_IDS = {"Energizer","Overloader","Supercharger","Turbocharger"}
-
 ------------------------------------------------------------
 -- 5. Helper functions (from original)
 ------------------------------------------------------------
@@ -114,7 +99,6 @@ local function GetOwnArea()
     end
     return nil
 end
-
 local function GetRollPrompt()
     local area = GetOwnArea()
     if not area then return nil end
@@ -124,7 +108,6 @@ local function GetRollPrompt()
     local p = anchor and anchor:FindFirstChildOfClass("ProximityPrompt")
     return p
 end
-
 local function GetTrashPrompt()
     local area = GetOwnArea()
     if not area then return nil end
@@ -133,7 +116,6 @@ local function GetTrashPrompt()
     if d then return d:FindFirstChild("TrashPrompt") end
     return nil
 end
-
 local function GetCollectTrigger()
     local area = GetOwnArea()
     if not area then return nil end
@@ -141,7 +123,6 @@ local function GetCollectTrigger()
     if c then return c:FindFirstChild("CollectTrigger") end
     return nil
 end
-
 local function GetOwnRollingStars()
     local out = {}
     local area = GetOwnArea()
@@ -153,7 +134,6 @@ local function GetOwnRollingStars()
     end
     return out
 end
-
 local function GetEmptyAltars()
     local out = {}
     local area = GetOwnArea()
@@ -168,7 +148,6 @@ local function GetEmptyAltars()
     end
     return out
 end
-
 local function FireRemote(name, a, b)
     local r
     local ok = pcall(function() r = ReplicatedStorage:WaitForChild(name, 5) end)
@@ -181,13 +160,11 @@ local function FireRemote(name, a, b)
         pcall(function() r:FireServer(a, b) end)
     end
 end
-
 local function FirePrompt(p)
     if p ~= nil and p.Parent ~= nil then
         pcall(function() fireproximityprompt(p) end)
     end
 end
-
 local function DoPromptNear(prompt, holdWait)
     if prompt == nil or prompt.Parent == nil then return false end
     local char = LocalPlayer.Character
@@ -209,7 +186,6 @@ local function DoPromptNear(prompt, holdWait)
     pcall(function() hrp.CFrame = orig end)
     return true
 end
-
 local function FindStarTool()
     local places = {LocalPlayer.Character, LocalPlayer:FindFirstChild("Backpack")}
     for _, c in ipairs(places) do
@@ -223,7 +199,6 @@ local function FindStarTool()
     end
     return nil
 end
-
 local function IsSelected(idx, key)
     local o = Options[idx]
     if not o then return false end
@@ -233,7 +208,6 @@ local function IsSelected(idx, key)
     for _, k in pairs(v) do if k == key then return true end end
     return false
 end
-
 local function FindTrashTool()
     local places = {LocalPlayer.Character, LocalPlayer:FindFirstChild("Backpack")}
     for _, c in ipairs(places) do
@@ -248,7 +222,6 @@ local function FindTrashTool()
     end
     return nil
 end
-
 ------------------------------------------------------------
 -- 6. Create Airflow window
 ------------------------------------------------------------
@@ -268,116 +241,61 @@ local Window = Airflow:CreateWindow({
         Color = ColorSequence.new(
             Color3.fromHex("#30FF6A"),
             Color3.fromHex("#e7ff2f")
-        ),
-    },
+        )
+}),
     Topbar = {
         Height = 44,
-        ButtonsType = "Mac",
-    },
+        ButtonsType = "Mac"
 })
-
+}))
 ------------------------------------------------------------
 -- 7. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab({ 
-    Name = "Dashboard",
-    ,
-    ,
- })
-
-
-local FarmingTab = Window:CreateTab({ 
-    Name = "Farming",
-    ,
-    ,
- })
-
-
-local RollBuyTab = Window:CreateTab({ 
-    Name = "Roll & Buy",
-    ,
-    ,
- })
-
-local UpgradesTab = Window:CreateTab({ 
-    Name = "Upgrades",
-    ,
-    ,
- })
-
-local ShopsTab = Window:CreateTab({ 
-    Name = "Shops",
-    ,
-    ,
- })
-
-
-local SettingsTab = Window:CreateTab({ 
-    Name = "Config",
-    ,
-    ,
- })
-
-
+local MainTab = Window:CreateTab({ Name = "Dashboard"})
+local FarmingTab = Window:CreateTab({ Name = "Farming"})
+local RollBuyTab = Window:CreateTab({ Name = "Roll & Buy"})
+local UpgradesTab = Window:CreateTab({ Name = "Upgrades"})
+local ShopsTab = Window:CreateTab({ Name = "Shops"})
+local SettingsTab = Window:CreateTab({ Name = "Config"})
 ------------------------------------------------------------
 -- 8. Dashboard tab
 ------------------------------------------------------------
-MainTab:CreateLabel({ Text = "Game: " .. gameName })
-MainTab:CreateLabel({ Text = "Hub: Stealth (Airflow)" })
-MainTab:CreateLabel({ Text = "Press RightShift to toggle UI" })
-
-local StatusLabel = MainTab:CreateLabel({ Text = "Status: loading..." })
-local AreaLabel = MainTab:CreateLabel({ Text = "Plot: ..." })
-local SessionLabel = MainTab:CreateLabel({ Text = "Session: 0s" })
-
-
+MainTab:CreateLabel({ Text = "Game: " .. gameName})
+MainTab:CreateLabel({ Text = "Hub: Stealth (Airflow)"})
+MainTab:CreateLabel({ Text = "Press RightShift to toggle UI"})
+local StatusLabel = MainTab:CreateLabel({ Text = "Status: loading..."})
+local AreaLabel = MainTab:CreateLabel({ Text = "Plot: ..."})
+local SessionLabel = MainTab:CreateLabel({ Text = "Session: 0s"})
 MainTab:CreateButton({
     Name = "Teleport: Base",
-    Callback = function() FireRemote("TeleportToBase") end,
-})
-
+    Callback = function() FireRemote("TeleportToBase") end
+}))
 MainTab:CreateButton({
     Name = "Teleport: Market",
-    Callback = function() FireRemote("TeleportToMarket") end,
-})
-
-
-local CashLabel = MainTab:CreateLabel({ Text = "Cash: ..." })
-local AltarLabel = MainTab:CreateLabel({ Text = "Altars: ..." })
-local PedestalLabel = MainTab:CreateLabel({ Text = "Rolling stars: ..." })
-
+    Callback = function() FireRemote("TeleportToMarket") end
+}))
+local CashLabel = MainTab:CreateLabel({ Text = "Cash: ..."})
+local AltarLabel = MainTab:CreateLabel({ Text = "Altars: ..."})
+local PedestalLabel = MainTab:CreateLabel({ Text = "Rolling stars: ..."})
 ------------------------------------------------------------
 -- 9. Farming tab
 ------------------------------------------------------------
 Toggles.AutoPlace = false
-local _auto_lbl_1 = FarmingTab:CreateLabel({ Text = "Auto Place Best Stars" })
-_auto_lbl_1:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.AutoPlace = v end,
+FarmingTab:CreateToggle({ Name = "Auto Place Best Stars", CurrentValue = false,
+    Callback = function(v) Toggles.AutoPlace = v end
 })
-
 Toggles.AutoUnlock = false
-local _auto_lbl_2 = FarmingTab:CreateLabel({ Text = "Auto Unlock Altars" })
-_auto_lbl_2:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.AutoUnlock = v end,
+FarmingTab:CreateToggle({ Name = "Auto Unlock Altars", CurrentValue = false,
+    Callback = function(v) Toggles.AutoUnlock = v end
 })
-
 Toggles.AutoCollect = false
-local _auto_lbl_3 = FarmingTab:CreateLabel({ Text = "Auto Collect Income" })
-_auto_lbl_3:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.AutoCollect = v end,
+FarmingTab:CreateToggle({ Name = "Auto Collect Income", CurrentValue = false,
+    Callback = function(v) Toggles.AutoCollect = v end
 })
-
-
 Toggles.AutoTrash = false
-local _auto_lbl_4 = FarmingTab:CreateLabel({ Text = "Auto Trash Stars" })
-_auto_lbl_4:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.AutoTrash = v end,
+FarmingTab:CreateToggle({ Name = "Auto Trash Stars", CurrentValue = false,
+    Callback = function(v) Toggles.AutoTrash = v end
 })
-
 OPTIONS = OPTIONS or {}
 Options.TrashRarities = {"Common"}
 FarmingTab:CreateDropdown({
@@ -385,147 +303,108 @@ FarmingTab:CreateDropdown({
     Options = RARITIES,
     MultipleOptions = true,
     SearchAfter = 6,
-    Callback = function(state) Options.TrashRarities = state end,
-})
-
+    Callback = function(state) Options.TrashRarities = state end
+}))
 ------------------------------------------------------------
 -- 10. Roll & Buy tab
 ------------------------------------------------------------
 Toggles.AutoRoll = false
-local _auto_lbl_5 = RollBuyTab:CreateLabel({ Text = "Auto Roll Stars" })
-_auto_lbl_5:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.AutoRoll = v end,
+RollBuyTab:CreateToggle({ Name = "Auto Roll Stars", CurrentValue = false,
+    Callback = function(v) Toggles.AutoRoll = v end
 })
-
 Options.RollStopRarity = "Legendary"
 RollBuyTab:CreateDropdown({
     Name = "Stop On Rarity",
     Options = RARITIES,
-    Callback = function(state) Options.RollStopRarity = state end,
-})
-
+    Callback = function(state) Options.RollStopRarity = state end
+}))
 Toggles.RollStopEnabled = false
-local _auto_lbl_6 = RollBuyTab:CreateLabel({ Text = "Stop Rolling On Target+" })
-_auto_lbl_6:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.RollStopEnabled = v end,
+RollBuyTab:CreateToggle({ Name = "Stop Rolling On Target+", CurrentValue = false,
+    Callback = function(v) Toggles.RollStopEnabled = v end
 })
-
-
 Toggles.AutoBuyStars = false
-local _auto_lbl_7 = RollBuyTab:CreateLabel({ Text = "Auto Buy Stars" })
-_auto_lbl_7:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.AutoBuyStars = v end,
+RollBuyTab:CreateToggle({ Name = "Auto Buy Stars", CurrentValue = false,
+    Callback = function(v) Toggles.AutoBuyStars = v end
 })
-
 Options.BuyStarRarities = RARITIES
 RollBuyTab:CreateDropdown({
     Name = "Rarities To Buy",
     Options = RARITIES,
     MultipleOptions = true,
     SearchAfter = 6,
-    Callback = function(state) Options.BuyStarRarities = state end,
-})
-
+    Callback = function(state) Options.BuyStarRarities = state end
+}))
 ------------------------------------------------------------
 -- 11. Upgrades tab
 ------------------------------------------------------------
 Toggles.AutoLuck = false
-local _auto_lbl_8 = UpgradesTab:CreateLabel({ Text = "Auto Upgrade Star Luck" })
-_auto_lbl_8:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.AutoLuck = v end,
+UpgradesTab:CreateToggle({ Name = "Auto Upgrade Star Luck", CurrentValue = false,
+    Callback = function(v) Toggles.AutoLuck = v end
 })
-
 Toggles.AutoPedestal = false
-local _auto_lbl_9 = UpgradesTab:CreateLabel({ Text = "Auto Add Pedestals" })
-_auto_lbl_9:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.AutoPedestal = v end,
+UpgradesTab:CreateToggle({ Name = "Auto Add Pedestals", CurrentValue = false,
+    Callback = function(v) Toggles.AutoPedestal = v end
 })
-
 ------------------------------------------------------------
 -- 12. Shops tab
 ------------------------------------------------------------
 Toggles.AutoMut = false
-local _auto_lbl_10 = ShopsTab:CreateLabel({ Text = "Auto Buy Mutation Items" })
-_auto_lbl_10:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.AutoMut = v end,
+ShopsTab:CreateToggle({ Name = "Auto Buy Mutation Items", CurrentValue = false,
+    Callback = function(v) Toggles.AutoMut = v end
 })
-
 Options.MutItems = MUTATION_IDS
 ShopsTab:CreateDropdown({
     Name = "Mutation Items",
     Options = MUTATION_IDS,
     MultipleOptions = true,
     SearchAfter = 6,
-    Callback = function(state) Options.MutItems = state end,
-})
-
-
+    Callback = function(state) Options.MutItems = state end
+}))
 Toggles.AutoEgg = false
-local _auto_lbl_11 = ShopsTab:CreateLabel({ Text = "Auto Buy Pet Eggs" })
-_auto_lbl_11:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.AutoEgg = v end,
+ShopsTab:CreateToggle({ Name = "Auto Buy Pet Eggs", CurrentValue = false,
+    Callback = function(v) Toggles.AutoEgg = v end
 })
-
 Options.EggItems = EGG_NAMES
 ShopsTab:CreateDropdown({
     Name = "Pet Eggs",
     Options = EGG_NAMES,
     MultipleOptions = true,
     SearchAfter = 6,
-    Callback = function(state) Options.EggItems = state end,
-})
-
-
+    Callback = function(state) Options.EggItems = state end
+}))
 Toggles.AutoGear = false
-local _auto_lbl_12 = ShopsTab:CreateLabel({ Text = "Auto Buy Gear" })
-_auto_lbl_12:CreateToggle({
-    CurrentValue = false,
-    Callback = function(v) Toggles.AutoGear = v end,
+ShopsTab:CreateToggle({ Name = "Auto Buy Gear", CurrentValue = false,
+    Callback = function(v) Toggles.AutoGear = v end
 })
-
 Options.GearItems = GEAR_IDS
 ShopsTab:CreateDropdown({
     Name = "Gear",
     Options = GEAR_IDS,
     MultipleOptions = true,
     SearchAfter = 6,
-    Callback = function(state) Options.GearItems = state end,
-})
-
+    Callback = function(state) Options.GearItems = state end
+}))
 Options.GearQty = "1"
 ShopsTab:CreateDropdown({
     Name = "Quantity",
     Options = {"1", "10"},
-    Callback = function(state) Options.GearQty = state end,
-})
-
+    Callback = function(state) Options.GearQty = state end
+}))
 ------------------------------------------------------------
 -- 13. Settings tab
 ------------------------------------------------------------
 Toggles.AntiAFK = true
-local _auto_lbl_13 = SettingsTab:CreateLabel({ Text = "Anti-AFK" })
-_auto_lbl_13:CreateToggle({
-    CurrentValue = true,
-    Callback = function(v) Toggles.AntiAFK = v end,
+SettingsTab:CreateToggle({ Name = "Anti-AFK", CurrentValue = true,
+    Callback = function(v) Toggles.AntiAFK = v end
 })
-
-
 SettingsTab:CreateButton({
     Name = "Unload Stealth",
     Description = "Removes the menu and stops all automation",
     Callback = function()
         Unloaded = true
         pcall(function() Window:Destroy() end)
-    end,
-})
-
+    end
+}))
 ------------------------------------------------------------
 -- 14. Automation loops (from original, unchanged)
 ------------------------------------------------------------
@@ -546,7 +425,6 @@ task.spawn(function()
         task.wait(1)
     end
 end)
-
 task.spawn(function()
     while not Unloaded do
         if Toggles.AutoBuyStars then
@@ -558,7 +436,6 @@ task.spawn(function()
         task.wait(1)
     end
 end)
-
 task.spawn(function()
     while not Unloaded do
         if Toggles.AutoPlace then
@@ -567,7 +444,6 @@ task.spawn(function()
         task.wait(1)
     end
 end)
-
 task.spawn(function()
     while not Unloaded do
         if Toggles.AutoUnlock then FireRemote("UpgradeAltarEvent") end
@@ -587,7 +463,6 @@ task.spawn(function()
         task.wait(1)
     end
 end)
-
 task.spawn(function()
     while not Unloaded do
         if Toggles.AutoMut then
@@ -610,7 +485,6 @@ task.spawn(function()
         task.wait(1)
     end
 end)
-
 task.spawn(function()
     while not Unloaded do
         if Toggles.AutoTrash then
@@ -632,7 +506,6 @@ task.spawn(function()
         task.wait(1)
     end
 end)
-
 -- Anti-AFK
 pcall(function()
     LocalPlayer.Idled:Connect(function()
@@ -642,14 +515,12 @@ pcall(function()
         end
     end)
 end)
-
 task.spawn(function()
     while not Unloaded do
         if Toggles.AntiAFK then FireRemote("AFKActivity") end
         task.wait(30)
     end
 end)
-
 -- Status updater
 local t0 = os.clock()
 task.spawn(function()
@@ -672,11 +543,9 @@ task.spawn(function()
         task.wait(1)
     end
 end)
-
 Airflow:Notify({
     Name = "Stealth",
     Content = gameName .. " loaded! Press RightShift",
-    Duration = 4,
-})
-
+    Duration = 4
+}))
 print("[Stealth] Loaded " .. gameName .. " via Airflow")
