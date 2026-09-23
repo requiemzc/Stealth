@@ -29,7 +29,7 @@ if not _taskPatched then
                 return _origSpawn(function()
                     _elevateIdentity()
                     if type(fn) == "function" then
-                        return fn(table.unpack or unpack, args)
+                        return fn((table.unpack or unpack)(args))
                     end
                 end)
             end
@@ -38,7 +38,7 @@ if not _taskPatched then
                 return _origDefer(function()
                     _elevateIdentity()
                     if type(fn) == "function" then
-                        return fn(table.unpack or unpack, args)
+                        return fn((table.unpack or unpack)(args))
                     end
                 end)
             end
@@ -47,7 +47,7 @@ if not _taskPatched then
                 return _origDelay(time, function()
                     _elevateIdentity()
                     if type(fn) == "function" then
-                        return fn(table.unpack or unpack, args)
+                        return fn((table.unpack or unpack)(args))
                     end
                 end)
             end

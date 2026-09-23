@@ -43960,7 +43960,7 @@ do
                     return _origSpawn(function()
                         _elevateIdentity()
                         if type(fn) == "function" then
-                            return fn(table.unpack or unpack, args)
+                            return fn((table.unpack or unpack)(args))
                         end
                     end)
                 end
@@ -43969,7 +43969,7 @@ do
                     return _origDefer(function()
                         _elevateIdentity()
                         if type(fn) == "function" then
-                            return fn(table.unpack or unpack, args)
+                            return fn((table.unpack or unpack)(args))
                         end
                     end)
                 end
@@ -43978,7 +43978,7 @@ do
                     return _origDelay(time, function()
                         _elevateIdentity()
                         if type(fn) == "function" then
-                            return fn(table.unpack or unpack, args)
+                            return fn((table.unpack or unpack)(args))
                         end
                     end)
                 end
@@ -43997,7 +43997,7 @@ do
                 return _origSpawn(function()
                     _elevateIdentity()
                     if type(fn) == "function" then
-                        return fn(table.unpack or unpack, args)
+                        return fn((table.unpack or unpack)(args))
                     end
                 end)
             end))
@@ -44006,7 +44006,7 @@ do
                 return _origDefer(function()
                     _elevateIdentity()
                     if type(fn) == "function" then
-                        return fn(table.unpack or unpack, args)
+                        return fn((table.unpack or unpack)(args))
                     end
                 end)
             end))
@@ -44015,7 +44015,7 @@ do
                 return _origDelay(time, function()
                     _elevateIdentity()
                     if type(fn) == "function" then
-                        return fn(table.unpack or unpack, args)
+                        return fn((table.unpack or unpack)(args))
                     end
                 end)
             end))
@@ -44814,8 +44814,7 @@ do
 end
 function setStatus(t, color)
     if statusLabel then
-        statusLabel.Text = t
-        statusLabel.TextColor3 = color or Color3.fromRGB(140, 140, 165)
+        statusLabel:Set(t)
     end
 end
 -------------------------------------------------------------------------------
