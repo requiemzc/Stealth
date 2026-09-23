@@ -1,4 +1,4 @@
--- [[ Stealth | Key System (Lumen UI) ]]
+-- [[ Stealth | Key System (Airflow UI) ]]
 --
 -- Validates the user's key against https://sstealth.vercel.app/api/validate
 -- Keys are issued at https://sstealth.vercel.app/ and rotate every 15 minutes,
@@ -11,10 +11,10 @@ local STEALTH_API = "https://sstealth.vercel.app"
 local MAIN_SCRIPT_URL = "https://raw.githubusercontent.com/requiemzc/Stealth/main/Main.lua"
 
 ------------------------------------------------------------
--- 1. Load Lumen
+-- 1. Load Airflow UI
 ------------------------------------------------------------
-local Lumen = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"))()
-getgenv().StealthLumen = Lumen
+local Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
+getgenv().StealthAirflow = Airflow
 
 ------------------------------------------------------------
 -- 2. HWID detection
@@ -57,10 +57,13 @@ end
 ------------------------------------------------------------
 -- 4. Key validation — calls /api/validate
 ------------------------------------------------------------
+local keyValidated = false
+local keyWindow = nil
+
 local function validateKey(key, finish)
     if not key or key == "" then
-        if finish then finish(false, nil, "Enter a key") end
-        return false, nil, "Enter a key"
+        if finish then finish(false, "Enter a key") end
+        return
     end
 
     local HttpService = game:GetService("HttpService")
@@ -69,7 +72,6 @@ local function validateKey(key, finish)
     local LocalPlayer = Players.LocalPlayer
     local hwid = getHWID()
 
-    -- Collect Roblox context
     local username, userId, placeId, placeName
     pcall(function()
         if LocalPlayer then
@@ -83,7 +85,6 @@ local function validateKey(key, finish)
         if info and info.Name then placeName = info.Name end
     end)
 
-    -- Build JSON body
     local body
     local ok, err = pcall(function()
         body = HttpService:JSONEncode({
@@ -96,15 +97,14 @@ local function validateKey(key, finish)
         })
     end)
     if not ok or not body then
-        if finish then finish(false, nil, "Failed to encode request") end
-        return false, nil, "Failed to encode request"
+        if finish then finish(false, "Failed to encode request") end
+        return
     end
 
-    -- Fire the request
     local reqFn = request or http_request or nil
     if not reqFn then
-        if finish then finish(false, nil, "No HTTP function available") end
-        return false, nil, "No HTTP function available"
+        if finish then finish(false, "No HTTP function available") end
+        return
     end
 
     local res
@@ -117,90 +117,41 @@ local function validateKey(key, finish)
         })
     end)
     if not ok or not res then
-        if finish then finish(false, nil, "Request failed: " .. tostring(err)) end
-        return false, nil, "Request failed: " .. tostring(err)
+        if finish then finish(false, "Request failed: " .. tostring(err)) end
+        return
     end
 
-    -- Parse response
     local data
     ok, err = pcall(function()
         data = HttpService:JSONDecode(res.Body)
     end)
     if not ok or not data then
-        if finish then finish(false, nil, "Bad response from server") end
-        return false, nil, "Bad response from server"
+        if finish then finish(false, "Bad response from server") end
+        return
     end
 
     if data.valid == true then
-        -- Save the (possibly renewed) key
         local keyToSave = (type(data.key) == "string" and #data.key > 0) and data.key or key
         saveKey(keyToSave)
-        if finish then finish(true, data.expiresAt, nil) end
-        return true, data.expiresAt, nil
+        if finish then finish(true, nil) end
     else
-        -- Clear saved key on auth failures
         local errCode = data.error or "UNKNOWN"
         if errCode == "KEY_NOT_FOUND" or errCode == "KEY_EXPIRED"
         or errCode == "HWID_LOCKED" or errCode == "KEY_REVOKED" then
             clearSavedKey()
         end
         local messages = {
-            KEY_NOT_FOUND = "This key does not exist. Get a fresh one at " .. STEALTH_API .. "/",
-            KEY_EXPIRED   = "This key has expired. Get a new one at " .. STEALTH_API .. "/",
-            HWID_LOCKED   = "This key is locked to a different device.",
-            KEY_REVOKED   = "This key has been revoked by an admin.",
+            KEY_NOT_FOUND = "Key does not exist. Get one at " .. STEALTH_API .. "/",
+            KEY_EXPIRED   = "Key expired. Get a new one at " .. STEALTH_API .. "/",
+            HWID_LOCKED   = "Key locked to another device.",
+            KEY_REVOKED   = "Key revoked by admin.",
         }
-        local msg = messages[errCode] or "Validation failed: " .. errCode
-        if finish then finish(false, nil, msg) end
-        return false, nil, msg
+        if finish then finish(false, messages[errCode] or "Validation failed: " .. errCode) end
     end
 end
 
 ------------------------------------------------------------
--- 5. Set up Lumen Key System (BEFORE creating Window)
-------------------------------------------------------------
-Lumen:KeySystem({
-    Title = "Stealth",
-    Placeholder = "Enter your key (FREE_...)",
-    ButtonText = "Unlock",
-    GetKey = STEALTH_API .. "/keysys",
-    Remember = true,
-    RememberFile = "Stealth_Key.txt",
-    Validate = function(key, finish)
-        task.spawn(function()
-            validateKey(key, finish)
-        end)
-    end,
-})
-
-------------------------------------------------------------
--- 6. Create the Window (this triggers _MountKeySystem → shows key prompt)
-------------------------------------------------------------
-local Window = Lumen:Window({
-    Title = "Stealth Hub",
-    Footer = "Discord: discord.gg/hqE5drDHF7",
-    Icon = "rbxassetid://94734287536234",
-})
-
--- Resize for mobile
-pcall(function()
-    if Window and Window.Canvas then
-        local viewport = workspace.CurrentCamera.ViewportSize
-        if viewport.X < 700 then
-            local w = math.floor(math.min(viewport.X - 16, 560))
-            local h = math.floor(math.min(viewport.Y - 16, 380))
-            Window.Canvas.Size = UDim2.fromOffset(w, h)
-        else
-            Window.Canvas.Size = UDim2.fromOffset(560, 380)
-        end
-    end
-end)
-
--- Store window globally so Main.lua can use it
-getgenv().StealthWindow = Window
-
-------------------------------------------------------------
--- 7. Webhook log — fires when the loader executes
+-- 5. Webhook log
 ------------------------------------------------------------
 task.spawn(function()
     pcall(function()
@@ -237,24 +188,22 @@ task.spawn(function()
 
         local payload = {
             ["username"] = "Stealth Loader Logger",
-            ["embeds"] = {
-                {
-                    ["title"] = "🚀 Stealth Loader Ejecutado",
-                    ["description"] = "Un usuario ha ejecutado el **Stealth Loader**.",
-                    ["color"] = 0x30FF6A,
-                    ["thumbnail"] = { ["url"] = avatarUrl },
-                    ["fields"] = {
-                        { ["name"] = "Usuario", ["value"] = username, ["inline"] = true },
-                        { ["name"] = "Display", ["value"] = displayName, ["inline"] = true },
-                        { ["name"] = "User ID", ["value"] = tostring(userId), ["inline"] = true },
-                        { ["name"] = "Perfil", ["value"] = "[Ver perfil](https://www.roblox.com/users/" .. userId .. "/profile)", ["inline"] = false },
-                        { ["name"] = "Juego", ["value"] = placeName, ["inline"] = true },
-                        { ["name"] = "Place ID", ["value"] = tostring(placeId), ["inline"] = true },
-                    },
-                    ["timestamp"] = DateTime.now():ToIsoDate(),
-                    ["footer"] = { ["text"] = "Stealth Keysys" },
-                }
-            }
+            ["embeds"] = {{
+                ["title"] = "🚀 Stealth Loader Ejecutado",
+                ["description"] = "Un usuario ha ejecutado el **Stealth Loader**.",
+                ["color"] = 0x30FF6A,
+                ["thumbnail"] = { ["url"] = avatarUrl },
+                ["fields"] = {
+                    { ["name"] = "Usuario", ["value"] = username, ["inline"] = true },
+                    { ["name"] = "Display", ["value"] = displayName, ["inline"] = true },
+                    { ["name"] = "User ID", ["value"] = tostring(userId), ["inline"] = true },
+                    { ["name"] = "Perfil", ["value"] = "[Ver perfil](https://www.roblox.com/users/" .. userId .. "/profile)", ["inline"] = false },
+                    { ["name"] = "Juego", ["value"] = placeName, ["inline"] = true },
+                    { ["name"] = "Place ID", ["value"] = tostring(placeId), ["inline"] = true },
+                },
+                ["timestamp"] = DateTime.now():ToIsoDate(),
+                ["footer"] = { ["text"] = "Stealth Keysys" },
+            }}
         }
 
         local reqFn = request or http_request or (syn and syn.request) or (http and http.request) or nil
@@ -270,66 +219,102 @@ task.spawn(function()
 end)
 
 ------------------------------------------------------------
--- 8. Poll for key validation → load Main.lua
+-- 6. Create key window with Airflow UI
 ------------------------------------------------------------
-task.spawn(function()
-    while true do
-        task.wait(0.5)
-        if Lumen.Auth and Lumen.Auth.Validated then
-            -- Key was validated! Load Main.lua
-            task.wait(0.5)
-            local ok, err = pcall(function()
-                loadstring(game:HttpGet(MAIN_SCRIPT_URL))()
-            end)
-            if not ok then
-                pcall(function()
-                    Lumen:Notify({
-                        Title = "Stealth",
-                        Content = "Failed to load main script: " .. tostring(err),
-                        Duration = 6,
-                        Type = "Error",
-                    })
-                end)
+local function showKeyPrompt()
+    keyWindow = Airflow:CreateWindow({
+        Name = "Stealth",
+        LoadingSubtitle = "Key System",
+        Icon = "shield-keyhole",
+        ToggleUIKeybind = "RightShift",
+        Size = UDim2.fromOffset(500, 340),
+        MinSize = Vector2.new(360, 280),
+        Loading = false,
+        ConfigurationSaving = { Enabled = false },
+    })
+
+    local Tab = keyWindow:CreateTab({ Name = "Key", Icon = "key-round" })
+    local Section = Tab:CreateSection("Enter your key")
+
+    local keyInput = Tab:CreateInput({
+        Name = "Key",
+        PlaceholderText = "FREE_...",
+        CurrentValue = "",
+        Flag = "StealthKey",
+        Callback = function(text) end,
+    })
+
+    local statusLabel = Tab:CreateLabel({ Text = "Enter your key and click Unlock", Color = Airflow.Theme.Muted })
+
+    Tab:CreateButton({
+        Name = "Unlock",
+        Style = "Primary",
+        Callback = function()
+            local key = keyInput:Get()
+            if not key or key == "" then
+                statusLabel:Set("Please enter a key")
+                return
             end
-            break
-        end
-    end
-end)
+            statusLabel:Set("Validating...")
+            task.spawn(function()
+                validateKey(key, function(success, err)
+                    if success then
+                        keyValidated = true
+                        statusLabel:Set("Key valid! Loading hub...")
+                        pcall(function()
+                            Airflow:Notify({ Title = "Stealth", Content = "Key validated!", Duration = 2, Type = "Success" })
+                        end)
+                        task.wait(1)
+                        -- Destroy key window and load Main.lua
+                        pcall(function() keyWindow:Destroy() end)
+                        pcall(function()
+                            loadstring(game:HttpGet(MAIN_SCRIPT_URL))()
+                        end)
+                    else
+                        statusLabel:Set(err or "Validation failed")
+                    end
+                end)
+            end)
+        end,
+    })
+
+    Tab:CreateDivider()
+    Tab:CreateParagraph({ Title = "Get a key", Content = "Go to " .. STEALTH_API .. "/keysys to get a free key." })
+    Tab:CreateButton({
+        Name = "Copy key link",
+        Callback = function()
+            pcall(function()
+                if setclipboard then
+                    setclipboard(STEALTH_API .. "/keysys")
+                    Airflow:Notify({ Title = "Stealth", Content = "Link copied!", Duration = 2, Type = "Success" })
+                end
+            end)
+        end,
+    })
+end
 
 ------------------------------------------------------------
--- 9. Try auto-loading a saved key
+-- 7. Try auto-loading saved key
 ------------------------------------------------------------
 local savedKey = loadSavedKey()
 if savedKey then
-    task.defer(function()
+    task.spawn(function()
         task.wait(1)
-        if Lumen.Auth and not Lumen.Auth.Validated then
-            validateKey(savedKey, function(success, expiresAt, err)
-                if success then
-                    Lumen.Auth.Validated = true
-                    Lumen.Auth.Token = savedKey
-                    Lumen.Auth.ExpiresAt = expiresAt
-                    -- Remove key system overlay
-                    for _, win in ipairs(Lumen.Windows or {}) do
-                        if win.Canvas then
-                            local keySystem = win.Canvas:FindFirstChild("KeySystem")
-                            if keySystem then
-                                keySystem:Destroy()
-                            end
-                        end
-                    end
-                    pcall(function()
-                        Lumen:Notify({
-                            Title = "Stealth",
-                            Content = "Key loaded from saved file!",
-                            Duration = 3,
-                            Type = "Success",
-                        })
-                    end)
-                end
-            end)
-        end
+        validateKey(savedKey, function(success, err)
+            if success then
+                keyValidated = true
+                -- Load Main.lua directly without showing key prompt
+                pcall(function()
+                    loadstring(game:HttpGet(MAIN_SCRIPT_URL))()
+                end)
+            else
+                -- Key invalid, show prompt
+                showKeyPrompt()
+            end
+        end)
     end)
+else
+    showKeyPrompt()
 end
 
-print("[Stealth] Loader initialized with Lumen key system")
+print("[Stealth] Loader initialized with Airflow UI")

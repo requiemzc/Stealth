@@ -1,13 +1,13 @@
 -- [[ Stealth | Chapter 1 (FARMHOUSE) ]]
 --
 -- Original: Ouroboros Hub @hidevin (ObsidianUltra)
--- Converted to Lumen for Stealth Hub.
+-- Converted to Airflow for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- GameId 10756011174 | PlaceId 108628039999641
 
 ------------------------------------------------------------
--- 1. Identity elevation (Lumen needs executor-level identity)
+-- 1. Identity elevation (Airflow needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -104,13 +104,9 @@ if not _taskPatched and hookfunction then
 end
 
 ------------------------------------------------------------
--- 2. Load Lumen
+-- 2. Load Airflow
 ------------------------------------------------------------
-local Lumen = getgenv().StealthLumen
-if not Lumen then
-    Lumen = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"))()
-    getgenv().StealthLumen = Lumen
-end
+local Airflow = getgenv().StealthAirflow or loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
 
 _elevateIdentity()
 
@@ -128,7 +124,7 @@ local Library = {
 }
 
 function Library:Notify(opts)
-    Lumen:Notify({
+    Airflow:Notify({
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3,
@@ -181,9 +177,9 @@ local DroppedHayFolder = Workspace:FindFirstChild("DroppedHay")
 local GemsClientFolder = Workspace:FindFirstChild("GemsClient")
 
 ------------------------------------------------------------
--- 5. Create Lumen window
+-- 5. Create Airflow window
 ------------------------------------------------------------
-local Window = Lumen:Window({
+local Window = Airflow:CreateWindow({
     Name = "Stealth",
     Folder = "Stealth",
     Icon = "solar:shield-keyhole-bold-duotone",
@@ -224,81 +220,65 @@ end
 ------------------------------------------------------------
 -- 7. Tabs
 ------------------------------------------------------------
-local MainTab = Window:Page({
+local MainTab = Window:CreateTab({ 
     Name = "Dashboard",
     Icon = "solar:widget-bold",
     ,
     ,
-})
-local MainTabPage = MainTab
+ })
 
-local MainTab = MainTabPage:Section({ Name = "MainTab", Side = "Left", Icon = "box" })
 
-local CollectingTab = Window:Page({
+local CollectingTab = Window:CreateTab({ 
     Name = "Collecting",
     Icon = "solar:wheat-bold",
     ,
     ,
-})
-local CollectingTabPage = CollectingTab
+ })
 
-local CollectingTab = CollectingTabPage:Section({ Name = "CollectingTab", Side = "Left", Icon = "box" })
-local SellingTab = Window:Page({
+local SellingTab = Window:CreateTab({ 
     Name = "Selling",
     Icon = "solar:hand-money-bold",
     ,
     ,
-})
-local SellingTabPage = SellingTab
+ })
 
-local SellingTab = SellingTabPage:Section({ Name = "SellingTab", Side = "Left", Icon = "box" })
-local ToolsTab = Window:Page({
+local ToolsTab = Window:CreateTab({ 
     Name = "Tools",
     Icon = "solar:hammer-bold",
     ,
     ,
-})
-local ToolsTabPage = ToolsTab
+ })
 
-local ToolsTab = ToolsTabPage:Section({ Name = "ToolsTab", Side = "Left", Icon = "box" })
-local NeedleTab = Window:Page({
+local NeedleTab = Window:CreateTab({ 
     Name = "Needle",
     Icon = "solar:magnifer-bold",
     ,
     ,
-})
-local NeedleTabPage = NeedleTab
+ })
 
-local NeedleTab = NeedleTabPage:Section({ Name = "NeedleTab", Side = "Left", Icon = "box" })
 
-local ShopTab = Window:Page({
+local ShopTab = Window:CreateTab({ 
     Name = "Shop",
     Icon = "solar:cart-large-bold",
     ,
     ,
-})
-local ShopTabPage = ShopTab
+ })
 
-local ShopTab = ShopTabPage:Section({ Name = "ShopTab", Side = "Left", Icon = "box" })
-local UpgradesTab = Window:Page({
+local UpgradesTab = Window:CreateTab({ 
     Name = "Upgrades",
     Icon = "solar:graph-up-bold",
     ,
     ,
-})
-local UpgradesTabPage = UpgradesTab
+ })
 
-local UpgradesTab = UpgradesTabPage:Section({ Name = "UpgradesTab", Side = "Left", Icon = "box" })
 
-local SettingsTab = Window:Page({
+local SettingsTab = Window:CreateTab({ 
     Name = "Config",
     Icon = "solar:settings-bold",
     ,
     ,
-})
-local SettingsTabPage = SettingsTab
+ })
 
-local SettingsTab = SettingsTabPage:Section({ Name = "SettingsTab", Side = "Left", Icon = "box" })
 
 ------------------------------------------------------------
 -- 8. Helpers (from original script, unchanged)
@@ -501,15 +481,15 @@ end
 ------------------------------------------------------------
 -- 9. MAIN TAB
 ------------------------------------------------------------
-MainTab:Section({ Name = "Dashboard" })
-MainTab:Section({ Name = "Game: " .. gameName, TextTransparency = 0.35 })
-MainTab:Section({ Name = "Hub: Stealth", TextTransparency = 0.35 })
-MainTab:Section({ Name = "Toggle UI: RightShift or floating button", TextTransparency = 0.35 })
+MainTab:CreateSection("Dashboard") })
+MainTab:CreateSection("Game: ") .. gameName, TextTransparency = 0.35 })
+MainTab:CreateSection("Hub: Stealth"), TextTransparency = 0.35 })
+MainTab:CreateSection("Toggle UI: RightShift or floating button"), TextTransparency = 0.35 })
 
-MainTab:Section({ Name = "Session" })
+MainTab:CreateSection("Session") })
 
 local sessionLabel
-MainTab:Section({ Name = "0s elapsed", TextTransparency = 0.35 })
+MainTab:CreateSection("0s elapsed"), TextTransparency = 0.35 })
 
 task.spawn(function()
     local s=0
@@ -517,13 +497,13 @@ task.spawn(function()
         task.wait(1)
         if Library.Unloaded then break end
         s+=1
-        -- Lumen sections are static; we can't update text in place easily.
+        -- Airflow sections are static; we can't update text in place easily.
         -- Skip live session update (would need a label element with :SetText).
     end
 end)
 
-MainTab:Section({ Name = "Discord" })
-MainTab:Button({
+MainTab:CreateSection("Discord") })
+MainTab:CreateButton({
     Name = "Copy Discord",
     Desc = "discord.gg/hqE5drDHF7",
     Icon = "solar:chat-round-dots-bold",
@@ -532,7 +512,7 @@ MainTab:Button({
     IconAlign = "Left",
     Callback = function()
         pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
-        Lumen:Notify({
+        Airflow:Notify({
             Name = "Discord",
             Content = "Invite copied to clipboard!",
             Duration = 3,
@@ -541,47 +521,47 @@ MainTab:Button({
     end,
 })
 
-MainTab:Section({ Name = "Status" })
-MainTab:Section({ Name = "Farming & Inventory tabs hold all automation.", TextTransparency = 0.35 })
-MainTab:Section({ Name = "Settings holds Config & Anti-AFK.", TextTransparency = 0.35 })
+MainTab:CreateSection("Status") })
+MainTab:CreateSection("Farming & Inventory tabs hold all automation."), TextTransparency = 0.35 })
+MainTab:CreateSection("Settings holds Config & Anti-AFK."), TextTransparency = 0.35 })
 
 ------------------------------------------------------------
 -- 10. COLLECTING TAB
 ------------------------------------------------------------
-CollectingTab:Section({ Name = "Resource Collecting" })
+CollectingTab:CreateSection("Resource Collecting") })
 
 registerToggle("AutoPickHay", false)
-local _auto_lbl_1 = CollectingTab:Label({ Text = "Auto Pick Hay" })
-_auto_lbl_1:Toggle({
+local _auto_lbl_1 = CollectingTab:CreateLabel({ Text = "Auto Pick Hay" })
+_auto_lbl_1:CreateToggle({
     Desc = "Pick hay from stack continuously",
-    State = false,
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoPickHay.Value = v end,
 })
 
 registerToggle("AutoCollectDroppedHay", false)
-local _auto_lbl_2 = CollectingTab:Label({ Text = "Auto Collect Dropped Hay" })
-_auto_lbl_2:Toggle({
-    State = false,
+local _auto_lbl_2 = CollectingTab:CreateLabel({ Text = "Auto Collect Dropped Hay" })
+_auto_lbl_2:CreateToggle({
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoCollectDroppedHay.Value = v end,
 })
 
 registerToggle("AutoCollectGems", false)
-local _auto_lbl_3 = CollectingTab:Label({ Text = "Auto Collect Gems" })
-_auto_lbl_3:Toggle({
-    State = false,
+local _auto_lbl_3 = CollectingTab:CreateLabel({ Text = "Auto Collect Gems" })
+_auto_lbl_3:CreateToggle({
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoCollectGems.Value = v end,
 })
 
 registerToggle("AutoVacuumCollect", false)
-local _auto_lbl_4 = CollectingTab:Label({ Text = "Auto Vacuum Collect" })
-_auto_lbl_4:Toggle({
+local _auto_lbl_4 = CollectingTab:CreateLabel({ Text = "Auto Vacuum Collect" })
+_auto_lbl_4:CreateToggle({
     Desc = "Uses Vacuum Start/Stop (requires Vacuum tool)",
-    State = false,
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoVacuumCollect.Value = v end,
 })
 
 registerOption("CollectInterval", 1)
-CollectingTab:Slider({
+CollectingTab:CreateSlider({
     Name = "Loop Interval",
     Value = 1,
     Min = 0.1,
@@ -591,76 +571,74 @@ CollectingTab:Slider({
     Callback = function(v) Options.CollectInterval.Value = v end,
 })
 
-CollectingTab:Section({ Name = "Vacuum needs VacuumOwned. Gems within 35 studs.", TextTransparency = 0.35 })
+CollectingTab:CreateSection("Vacuum needs VacuumOwned. Gems within 35 studs."), TextTransparency = 0.35 })
 
 ------------------------------------------------------------
 -- 11. SELLING TAB
 ------------------------------------------------------------
-SellingTab:Section({ Name = "Selling" })
+SellingTab:CreateSection("Selling") })
 
 registerToggle("AutoSellHay", false)
-local _auto_lbl_5 = SellingTab:Label({ Text = "Auto Sell Hay" })
-_auto_lbl_5:Toggle({
-    State = false,
+local _auto_lbl_5 = SellingTab:CreateLabel({ Text = "Auto Sell Hay" })
+_auto_lbl_5:CreateToggle({
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoSellHay.Value = v end,
 })
 
 registerOption("SellThreshold", 25)
-SellingTab:Slider({
+SellingTab:CreateSlider({
     Name = "Sell When Hay >=",
-    Value = 25,
-    Min = 1,
-    Max = 250,
+    Range = { 1, 250 }, CurrentValue = 25,
     Rounding = 0,
     Callback = function(v) Options.SellThreshold.Value = v end,
 })
 
 registerToggle("SellOnlyIfFull", false)
-local _auto_lbl_6 = SellingTab:Label({ Text = "Only Sell If Full" })
-_auto_lbl_6:Toggle({
-    State = false,
+local _auto_lbl_6 = SellingTab:CreateLabel({ Text = "Only Sell If Full" })
+_auto_lbl_6:CreateToggle({
+    CurrentValue = false,
     Callback = function(v) Toggles.SellOnlyIfFull.Value = v end,
 })
 
-SellingTab:Section({ Name = "Fires SellHay:FireServer() near cow.", TextTransparency = 0.35 })
-SellingTab:Section({ Name = "VacuumLoad also counts as held.", TextTransparency = 0.35 })
+SellingTab:CreateSection("Fires SellHay:FireServer() near cow."), TextTransparency = 0.35 })
+SellingTab:CreateSection("VacuumLoad also counts as held."), TextTransparency = 0.35 })
 
 ------------------------------------------------------------
 -- 12. TOOLS TAB
 ------------------------------------------------------------
-ToolsTab:Section({ Name = "Auto Tool Usage" })
+ToolsTab:CreateSection("Auto Tool Usage") })
 
 registerToggle("AutoUseTNT", false)
-local _auto_lbl_7 = ToolsTab:Label({ Text = "Auto Use TNT" })
-_auto_lbl_7:Toggle({
+local _auto_lbl_7 = ToolsTab:CreateLabel({ Text = "Auto Use TNT" })
+_auto_lbl_7:CreateToggle({
     Desc = "Light & throw TNT on cooldown",
-    State = false,
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoUseTNT.Value = v end,
 })
 
 registerToggle("AutoUsePitchfork", false)
-local _auto_lbl_8 = ToolsTab:Label({ Text = "Auto Use Pitchfork" })
-_auto_lbl_8:Toggle({
-    State = false,
+local _auto_lbl_8 = ToolsTab:CreateLabel({ Text = "Auto Use Pitchfork" })
+_auto_lbl_8:CreateToggle({
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoUsePitchfork.Value = v end,
 })
 
 registerToggle("AutoDeployDrone", false)
-local _auto_lbl_9 = ToolsTab:Label({ Text = "Auto Deploy Drone" })
-_auto_lbl_9:Toggle({
-    State = false,
+local _auto_lbl_9 = ToolsTab:CreateLabel({ Text = "Auto Deploy Drone" })
+_auto_lbl_9:CreateToggle({
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoDeployDrone.Value = v end,
 })
 
 registerToggle("AutoVacuum", false)
-local _auto_lbl_10 = ToolsTab:Label({ Text = "Auto Vacuum (Loop)" })
-_auto_lbl_10:Toggle({
-    State = false,
+local _auto_lbl_10 = ToolsTab:CreateLabel({ Text = "Auto Vacuum (Loop)" })
+_auto_lbl_10:CreateToggle({
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoVacuum.Value = v end,
 })
 
 registerOption("ToolInterval", 1)
-ToolsTab:Slider({
+ToolsTab:CreateSlider({
     Name = "Tool Interval",
     Value = 1,
     Min = 0.2,
@@ -670,33 +648,33 @@ ToolsTab:Slider({
     Callback = function(v) Options.ToolInterval.Value = v end,
 })
 
-ToolsTab:Section({ Name = "Requirements", TextTransparency = 0.5 })
-ToolsTab:Section({ Name = "PitchforkOwned, TntOwned, DroneOwned, VacuumOwned required per tool.", TextTransparency = 0.35 })
-ToolsTab:Section({ Name = "TNT cooldown & vacuum heat managed by server.", TextTransparency = 0.35 })
+ToolsTab:CreateSection("Requirements"), TextTransparency = 0.5 })
+ToolsTab:CreateSection("PitchforkOwned, TntOwned, DroneOwned, VacuumOwned required per tool."), TextTransparency = 0.35 })
+ToolsTab:CreateSection("TNT cooldown & vacuum heat managed by server."), TextTransparency = 0.35 })
 
 ------------------------------------------------------------
 -- 13. NEEDLE TAB
 ------------------------------------------------------------
-NeedleTab:Section({ Name = "Needle" })
+NeedleTab:CreateSection("Needle") })
 
 registerToggle("AutoFindNeedle", false)
-local _auto_lbl_11 = NeedleTab:Label({ Text = "Auto Find Needle" })
-_auto_lbl_11:Toggle({
+local _auto_lbl_11 = NeedleTab:CreateLabel({ Text = "Auto Find Needle" })
+_auto_lbl_11:CreateToggle({
     Desc = "Continuously pick around pile center to reveal needle",
-    State = false,
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoFindNeedle.Value = v end,
 })
 
 registerToggle("AutoHandInNeedle", false)
-local _auto_lbl_12 = NeedleTab:Label({ Text = "Auto Hand In Needle" })
-_auto_lbl_12:Toggle({
+local _auto_lbl_12 = NeedleTab:CreateLabel({ Text = "Auto Hand In Needle" })
+_auto_lbl_12:CreateToggle({
     Desc = "Fires NeedleHandIn when near NPC",
-    State = false,
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoHandInNeedle.Value = v end,
 })
 
 registerOption("NeedleInterval", 1)
-NeedleTab:Slider({
+NeedleTab:CreateSlider({
     Name = "Needle Interval",
     Value = 1,
     Min = 0.2,
@@ -706,36 +684,36 @@ NeedleTab:Slider({
     Callback = function(v) Options.NeedleInterval.Value = v end,
 })
 
-NeedleTab:Section({ Name = "How Needle Works", TextTransparency = 0.5 })
-NeedleTab:Section({ Name = "Needle spawns under hay. Removing hay reveals it.", TextTransparency = 0.35 })
-NeedleTab:Section({ Name = "Pile center from Config.PILE_CENTER used for automation.", TextTransparency = 0.35 })
+NeedleTab:CreateSection("How Needle Works"), TextTransparency = 0.5 })
+NeedleTab:CreateSection("Needle spawns under hay. Removing hay reveals it."), TextTransparency = 0.35 })
+NeedleTab:CreateSection("Pile center from Config.PILE_CENTER used for automation."), TextTransparency = 0.35 })
 
 ------------------------------------------------------------
 -- 14. SHOP TAB
 ------------------------------------------------------------
-ShopTab:Section({ Name = "Purchasing" })
+ShopTab:CreateSection("Purchasing") })
 
 registerOption("BuyToolsList", {})
-ShopTab:Dropdown({
+ShopTab:CreateDropdown({
     Name = "Buy Tools Selection",
     Options = { "Pitchfork", "TNT", "Drone", "Vacuum", "Infinite Bag", "Capacity Bag" },
-    Multi = true,
+    MultipleOptions = true,
     Default = {},
     Callback = function(v)
-        -- Lumen returns a table for multi-select
+        -- Airflow returns a table for multi-select
         Options.BuyToolsList.Value = v or {}
     end,
 })
 
 registerToggle("AutoBuyTools", false)
-local _auto_lbl_13 = ShopTab:Label({ Text = "Auto Buy Selected Tools" })
-_auto_lbl_13:Toggle({
-    State = false,
+local _auto_lbl_13 = ShopTab:CreateLabel({ Text = "Auto Buy Selected Tools" })
+_auto_lbl_13:CreateToggle({
+    CurrentValue = false,
     Callback = function(v) Toggles.AutoBuyTools.Value = v end,
 })
 
 registerOption("BuyInterval", 1)
-ShopTab:Slider({
+ShopTab:CreateSlider({
     Name = "Buy Interval",
     Value = 1,
     Min = 0.5,
@@ -745,10 +723,10 @@ ShopTab:Slider({
     Callback = function(v) Options.BuyInterval.Value = v end,
 })
 
-ShopTab:Section({ Name = "Ownership", TextTransparency = 0.5 })
-ShopTab:Section({ Name = "Attributes: PitchforkOwned, TntOwned, DroneOwned, VacuumOwned, InfiniteBagOwned", TextTransparency = 0.35 })
+ShopTab:CreateSection("Ownership"), TextTransparency = 0.5 })
+ShopTab:CreateSection("Attributes: PitchforkOwned, TntOwned, DroneOwned, VacuumOwned, InfiniteBagOwned"), TextTransparency = 0.35 })
 
-ShopTab:Button({
+ShopTab:CreateButton({
     Name = "Check Ownership",
     Icon = "solar:check-circle-bold",
     Color = Color3.fromHex("#30FF6A"),
@@ -766,39 +744,39 @@ ShopTab:Button({
 ------------------------------------------------------------
 -- 15. UPGRADES TAB
 ------------------------------------------------------------
-UpgradesTab:Section({ Name = "Permanent (Gems)" })
+UpgradesTab:CreateSection("Permanent (Gems)") })
 
 registerToggle("UpgBagSize", false)
-local _auto_lbl_14 = UpgradesTab:Label({ Text = "Auto Upgrade Bag Size" })
-_auto_lbl_14:Toggle({
+local _auto_lbl_14 = UpgradesTab:CreateLabel({ Text = "Auto Upgrade Bag Size" })
+_auto_lbl_14:CreateToggle({
     Desc = "ExtraHoldAmount -> Gems 25,50,75,100,150,450",
-    State = false,
+    CurrentValue = false,
     Callback = function(v) Toggles.UpgBagSize.Value = v end,
 })
 
 registerToggle("UpgExtraTake", false)
-local _auto_lbl_15 = UpgradesTab:Label({ Text = "Auto Upgrade Hand Grab Amount" })
-_auto_lbl_15:Toggle({
-    State = false,
+local _auto_lbl_15 = UpgradesTab:CreateLabel({ Text = "Auto Upgrade Hand Grab Amount" })
+_auto_lbl_15:CreateToggle({
+    CurrentValue = false,
     Callback = function(v) Toggles.UpgExtraTake.Value = v end,
 })
 
 registerToggle("UpgGemValue", false)
-local _auto_lbl_16 = UpgradesTab:Label({ Text = "Auto Upgrade Gem Value" })
-_auto_lbl_16:Toggle({
-    State = false,
+local _auto_lbl_16 = UpgradesTab:CreateLabel({ Text = "Auto Upgrade Gem Value" })
+_auto_lbl_16:CreateToggle({
+    CurrentValue = false,
     Callback = function(v) Toggles.UpgGemValue.Value = v end,
 })
 
 registerToggle("UpgHayValue", false)
-local _auto_lbl_17 = UpgradesTab:Label({ Text = "Auto Upgrade Hay Value" })
-_auto_lbl_17:Toggle({
-    State = false,
+local _auto_lbl_17 = UpgradesTab:CreateLabel({ Text = "Auto Upgrade Hay Value" })
+_auto_lbl_17:CreateToggle({
+    CurrentValue = false,
     Callback = function(v) Toggles.UpgHayValue.Value = v end,
 })
 
 registerOption("PermInterval", 1)
-UpgradesTab:Slider({
+UpgradesTab:CreateSlider({
     Name = "Permanent Loop",
     Value = 1,
     Min = 0.5,
@@ -808,94 +786,94 @@ UpgradesTab:Slider({
     Callback = function(v) Options.PermInterval.Value = v end,
 })
 
-UpgradesTab:Section({ Name = "Hand Upgrades (Cash)" })
+UpgradesTab:CreateSection("Hand Upgrades (Cash)") })
 
 registerToggle("UpgHandSpeed", false)
-local _auto_lbl_18 = UpgradesTab:Label({ Text = "Auto Hand Speed" })
-_auto_lbl_18:Toggle({ Desc = "Speed track 0.55->0.3", State = false, Callback = function(v) Toggles.UpgHandSpeed.Value = v end })
+local _auto_lbl_18 = UpgradesTab:CreateLabel({ Text = "Auto Hand Speed" })
+_auto_lbl_18:CreateToggle({ Desc = "Speed track 0.55->0.3", CurrentValue = false, Callback = function(v) Toggles.UpgHandSpeed.Value = v end })
 
 registerToggle("UpgHandGrab", false)
-local _auto_lbl_19 = UpgradesTab:Label({ Text = "Auto Hand Grasp" })
-_auto_lbl_19:Toggle({ State = false, Callback = function(v) Toggles.UpgHandGrab.Value = v end })
+local _auto_lbl_19 = UpgradesTab:CreateLabel({ Text = "Auto Hand Grasp" })
+_auto_lbl_19:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgHandGrab.Value = v end })
 
 registerToggle("UpgHandHold", false)
-local _auto_lbl_20 = UpgradesTab:Label({ Text = "Auto Hand Hold" })
-_auto_lbl_20:Toggle({ State = false, Callback = function(v) Toggles.UpgHandHold.Value = v end })
+local _auto_lbl_20 = UpgradesTab:CreateLabel({ Text = "Auto Hand Hold" })
+_auto_lbl_20:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgHandHold.Value = v end })
 
-UpgradesTab:Section({ Name = "TNT Upgrades" })
+UpgradesTab:CreateSection("TNT Upgrades") })
 
 registerToggle("UpgTntLuck", false)
-local _auto_lbl_21 = UpgradesTab:Label({ Text = "Auto TNT Lucky Blast" })
-_auto_lbl_21:Toggle({ State = false, Callback = function(v) Toggles.UpgTntLuck.Value = v end })
+local _auto_lbl_21 = UpgradesTab:CreateLabel({ Text = "Auto TNT Lucky Blast" })
+_auto_lbl_21:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgTntLuck.Value = v end })
 
 registerToggle("UpgTntCooldown", false)
-local _auto_lbl_22 = UpgradesTab:Label({ Text = "Auto TNT Cooldown" })
-_auto_lbl_22:Toggle({ State = false, Callback = function(v) Toggles.UpgTntCooldown.Value = v end })
+local _auto_lbl_22 = UpgradesTab:CreateLabel({ Text = "Auto TNT Cooldown" })
+_auto_lbl_22:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgTntCooldown.Value = v end })
 
 registerToggle("UpgTntPower", false)
-local _auto_lbl_23 = UpgradesTab:Label({ Text = "Auto TNT Power" })
-_auto_lbl_23:Toggle({ State = false, Callback = function(v) Toggles.UpgTntPower.Value = v end })
+local _auto_lbl_23 = UpgradesTab:CreateLabel({ Text = "Auto TNT Power" })
+_auto_lbl_23:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgTntPower.Value = v end })
 
-UpgradesTab:Section({ Name = "Pitchfork Upgrades" })
+UpgradesTab:CreateSection("Pitchfork Upgrades") })
 
 registerToggle("UpgPitchCooldown", false)
-local _auto_lbl_24 = UpgradesTab:Label({ Text = "Auto Pitchfork Cooldown" })
-_auto_lbl_24:Toggle({ State = false, Callback = function(v) Toggles.UpgPitchCooldown.Value = v end })
+local _auto_lbl_24 = UpgradesTab:CreateLabel({ Text = "Auto Pitchfork Cooldown" })
+_auto_lbl_24:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgPitchCooldown.Value = v end })
 
 registerToggle("UpgPitchHold", false)
-local _auto_lbl_25 = UpgradesTab:Label({ Text = "Auto Pitchfork Hold" })
-_auto_lbl_25:Toggle({ State = false, Callback = function(v) Toggles.UpgPitchHold.Value = v end })
+local _auto_lbl_25 = UpgradesTab:CreateLabel({ Text = "Auto Pitchfork Hold" })
+_auto_lbl_25:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgPitchHold.Value = v end })
 
 registerToggle("UpgPitchSweep", false)
-local _auto_lbl_26 = UpgradesTab:Label({ Text = "Auto Pitchfork Sweep" })
-_auto_lbl_26:Toggle({ State = false, Callback = function(v) Toggles.UpgPitchSweep.Value = v end })
+local _auto_lbl_26 = UpgradesTab:CreateLabel({ Text = "Auto Pitchfork Sweep" })
+_auto_lbl_26:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgPitchSweep.Value = v end })
 
-UpgradesTab:Section({ Name = "Drone Upgrades" })
+UpgradesTab:CreateSection("Drone Upgrades") })
 
 registerToggle("UpgDroneSpeed", false)
-local _auto_lbl_27 = UpgradesTab:Label({ Text = "Auto Drone Speed" })
-_auto_lbl_27:Toggle({ State = false, Callback = function(v) Toggles.UpgDroneSpeed.Value = v end })
+local _auto_lbl_27 = UpgradesTab:CreateLabel({ Text = "Auto Drone Speed" })
+_auto_lbl_27:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgDroneSpeed.Value = v end })
 
 registerToggle("UpgDroneGrab", false)
-local _auto_lbl_28 = UpgradesTab:Label({ Text = "Auto Drone Grasp" })
-_auto_lbl_28:Toggle({ State = false, Callback = function(v) Toggles.UpgDroneGrab.Value = v end })
+local _auto_lbl_28 = UpgradesTab:CreateLabel({ Text = "Auto Drone Grasp" })
+_auto_lbl_28:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgDroneGrab.Value = v end })
 
 registerToggle("UpgDroneCapacity", false)
-local _auto_lbl_29 = UpgradesTab:Label({ Text = "Auto Drone Capacity" })
-_auto_lbl_29:Toggle({ State = false, Callback = function(v) Toggles.UpgDroneCapacity.Value = v end })
+local _auto_lbl_29 = UpgradesTab:CreateLabel({ Text = "Auto Drone Capacity" })
+_auto_lbl_29:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgDroneCapacity.Value = v end })
 
-UpgradesTab:Section({ Name = "Vacuum Upgrades" })
+UpgradesTab:CreateSection("Vacuum Upgrades") })
 
 registerToggle("UpgVacPower", false)
-local _auto_lbl_30 = UpgradesTab:Label({ Text = "Auto Vacuum Power" })
-_auto_lbl_30:Toggle({ State = false, Callback = function(v) Toggles.UpgVacPower.Value = v end })
+local _auto_lbl_30 = UpgradesTab:CreateLabel({ Text = "Auto Vacuum Power" })
+_auto_lbl_30:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgVacPower.Value = v end })
 
 registerToggle("UpgVacCooling", false)
-local _auto_lbl_31 = UpgradesTab:Label({ Text = "Auto Vacuum Cooling" })
-_auto_lbl_31:Toggle({ State = false, Callback = function(v) Toggles.UpgVacCooling.Value = v end })
+local _auto_lbl_31 = UpgradesTab:CreateLabel({ Text = "Auto Vacuum Cooling" })
+_auto_lbl_31:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgVacCooling.Value = v end })
 
 registerToggle("UpgVacRuntime", false)
-local _auto_lbl_32 = UpgradesTab:Label({ Text = "Auto Vacuum Runtime" })
-_auto_lbl_32:Toggle({ State = false, Callback = function(v) Toggles.UpgVacRuntime.Value = v end })
+local _auto_lbl_32 = UpgradesTab:CreateLabel({ Text = "Auto Vacuum Runtime" })
+_auto_lbl_32:CreateToggle({ CurrentValue = false, Callback = function(v) Toggles.UpgVacRuntime.Value = v end })
 
-UpgradesTab:Section({ Name = "Capacity" })
+UpgradesTab:CreateSection("Capacity") })
 
 registerToggle("UpgCapacity", false)
-local _auto_lbl_33 = UpgradesTab:Label({ Text = "Auto Upgrade Carry Capacity" })
-_auto_lbl_33:Toggle({
+local _auto_lbl_33 = UpgradesTab:CreateLabel({ Text = "Auto Upgrade Carry Capacity" })
+_auto_lbl_33:CreateToggle({
     Desc = "25->250 cash upgrades",
-    State = false,
+    CurrentValue = false,
     Callback = function(v) Toggles.UpgCapacity.Value = v end,
 })
 
-UpgradesTab:Section({ Name = "Cash upgrades use BuyUpgrade with track names.", TextTransparency = 0.35 })
+UpgradesTab:CreateSection("Cash upgrades use BuyUpgrade with track names."), TextTransparency = 0.35 })
 
 ------------------------------------------------------------
 -- 16. SETTINGS TAB
 ------------------------------------------------------------
-SettingsTab:Section({ Name = "Menu" })
+SettingsTab:CreateSection("Menu") })
 
-SettingsTab:Button({
+SettingsTab:CreateButton({
     Name = "Unload Stealth",
     Desc = "Closes the UI and stops all automation.",
     Icon = "solar:close-circle-bold",
@@ -907,13 +885,13 @@ SettingsTab:Button({
     end,
 })
 
-SettingsTab:Section({ Name = "System" })
+SettingsTab:CreateSection("System") })
 
 registerToggle("AntiAFK", true)
-local _auto_lbl_34 = SettingsTab:Label({ Text = "Anti-AFK (jump every 5m)" })
-_auto_lbl_34:Toggle({
+local _auto_lbl_34 = SettingsTab:CreateLabel({ Text = "Anti-AFK (jump every 5m)" })
+_auto_lbl_34:CreateToggle({
     Desc = "Enabled by default. Uses jump to keep alive.",
-    State = true,
+    CurrentValue = true,
     Callback = function(v) Toggles.AntiAFK.Value = v end,
 })
 
@@ -1292,4 +1270,4 @@ Library:Notify({
     Description = gameName .. " loaded. Farming=collect/sell/tools | Inventory=shop/upgrades",
     Time = 5,
 })
-print("[Stealth] Loaded "..gameName.." via Lumen")
+print("[Stealth] Loaded "..gameName.." via Airflow")

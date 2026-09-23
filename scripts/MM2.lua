@@ -44580,7 +44580,7 @@ end
 -------------------------------------------------------------------------------
 -- IN-ROUND overlay (weld skin over the real murderer/sheriff weapon Handle)
 -------------------------------------------------------------------------------
-local toolState = {}
+local toolCurrentValue = {}
 local function isMine(inst)
     if inst:IsDescendantOf(LocalPlayer) then return true end
     local c = char(); return c ~= nil and inst:IsDescendantOf(c)
@@ -44763,14 +44763,14 @@ local selectedName = nil
 
 do
     ------------------------------------------------------------
-    -- Lumen — Stealth | MM2 Weapon Spawner
+    -- Airflow — Stealth | MM2 Weapon Spawner
     ------------------------------------------------------------
-    -- Lumen requires elevated thread identity to create Font objects and
-    -- access certain Instance APIs. Without this, Lumen's Notify() and
+    -- Airflow requires elevated thread identity to create Font objects and
+    -- access certain Instance APIs. Without this, Airflow's Notify() and
     -- font loading crash with:
     --   "The current thread cannot access 'Instance' (lacking capability Plugin)"
     --
-    -- The problem: Lumen calls task.spawn internally for notifications and
+    -- The problem: Airflow calls task.spawn internally for notifications and
     -- animations, and those new threads inherit the DEFAULT identity, not
     -- the elevated one.
     --
@@ -44887,18 +44887,12 @@ do
     -- still in effect. Most modern executors propagate identity to child
     -- threads, so this is usually enough.
 
-    local Lumen = getgenv().StealthLumen
-if not Lumen then
-    Lumen = loadstring(game:HttpGet(
-        "https://raw.githubusercontent.com/requiemzc/Stealth/main/Lumen.lua"
-    ))()
-    getgenv().StealthLumen = Lumen
-end
+    local Airflow = getgenv().StealthAirflow or loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
 
     -- Re-assert after loadstring (it may reset identity).
     _elevateIdentity()
 
-    local Window = Lumen:Window({
+    local Window = Airflow:CreateWindow({
         Name = "Stealth | MM2",
         Folder = "Stealth",
         Icon = "solar:sword-bold-duotone",
@@ -44943,17 +44937,15 @@ end
     table.sort(weaponNames, function(a, b) return a:lower() < b:lower() end)
 
     ------------------------------------------------------------ Tab: Spawner
-    local SpawnTab = Window:Page({
+    local SpawnTab = Window:CreateTab({ 
         Name = "Weapons",
         Icon = "solar:sword-bold",
         ,
         ,
-    })
-local SpawnTabPage = SpawnTab
+     })
 
-local SpawnTab = SpawnTabPage:Section({ Name = "SpawnTab", Side = "Left", Icon = "box" })
 
-    SpawnTab:Section({ Name = "Select weapon" })
+    SpawnTab:CreateSection("Select weapon") })
 
     -- Status label (replaces the old statusLabel)
     -- We use a Paragraph that we can update via :Set()
@@ -44963,15 +44955,15 @@ local SpawnTab = SpawnTabPage:Section({ Name = "SpawnTab", Side = "Left", Icon =
     })
 
 
-    -- Dropdown with all weapons (Lumen has built-in search in dropdowns).
+    -- Dropdown with all weapons (Airflow has built-in search in dropdowns).
     -- Entries are SHORT (just the weapon name) to prevent horizontal overflow.
     local WeaponDropdown
-    WeaponDropdown = SpawnTab:Dropdown({
+    WeaponDropdown = SpawnTab:CreateDropdown({
         Name = "Weapon",
         Desc = "Click and type to search.",
         Options = weaponNames,
         Value = nil,
-        Multi = false,
+        MultipleOptions = false,
         Callback = function(selected)
             local wv = weaponByKey[selected]
             if wv then
@@ -44988,7 +44980,7 @@ local SpawnTab = SpawnTabPage:Section({ Name = "SpawnTab", Side = "Left", Icon =
     })
 
 
-    SpawnTab:Button({
+    SpawnTab:CreateButton({
         Name = "Spawn Weapon",
         Desc = "Spawns the selected weapon into your inventory (client-side).",
         Icon = "solar:add-circle-bold",
@@ -45000,7 +44992,7 @@ local SpawnTab = SpawnTabPage:Section({ Name = "SpawnTab", Side = "Left", Icon =
                 if statusLabel then
                     statusLabel:Set({ Title = "Warning", Content = "Select a weapon first." })
                 end
-                Lumen:Notify({
+                Airflow:Notify({
                     Name = "Stealth",
                     Content = "Select a weapon first.",
                     Duration = 3,
@@ -45016,7 +45008,7 @@ local SpawnTab = SpawnTabPage:Section({ Name = "SpawnTab", Side = "Left", Icon =
                         Content = selectedName or selectedKey,
                     })
                 end
-                Lumen:Notify({
+                Airflow:Notify({
                     Name = "Stealth",
                     Content = "Spawned: " .. (selectedName or selectedKey),
                     Duration = 3,
@@ -45027,20 +45019,18 @@ local SpawnTab = SpawnTabPage:Section({ Name = "SpawnTab", Side = "Left", Icon =
     })
 
     ------------------------------------------------------------ Tab: Settings
-    local SettingsTab = Window:Page({
+    local SettingsTab = Window:CreateTab({ 
         Name = "Config",
         Icon = "solar:settings-bold",
         ,
         ,
-    })
-local SettingsTabPage = SettingsTab
+     })
 
-local SettingsTab = SettingsTabPage:Section({ Name = "SettingsTab", Side = "Left", Icon = "box" })
 
-    SettingsTab:Section({ Name = "Visualizer options" })
+    SettingsTab:CreateSection("Visualizer options") })
 
-    local _auto_lbl_1 = SettingsTab:Label({ Text = "Inject Particles" })
-    _auto_lbl_1:Toggle({
+    local _auto_lbl_1 = SettingsTab:CreateLabel({ Text = "Inject Particles" })
+    _auto_lbl_1:CreateToggle({
         Desc = "ParticleEmitter / Fire / Smoke / Sparkles / Lights on spawned weapons.",
         Value = CONFIG.InjectParticles,
         Callback = function(v)
@@ -45048,8 +45038,8 @@ local SettingsTab = SettingsTabPage:Section({ Name = "SettingsTab", Side = "Left
         end,
     })
 
-    local _auto_lbl_2 = SettingsTab:Label({ Text = "Hide Original Weapon" })
-    _auto_lbl_2:Toggle({
+    local _auto_lbl_2 = SettingsTab:CreateLabel({ Text = "Hide Original Weapon" })
+    _auto_lbl_2:CreateToggle({
         Desc = "Hide your real held weapon so only the spawn shows.",
         Value = CONFIG.HideOriginal,
         Callback = function(v)
@@ -45057,7 +45047,7 @@ local SettingsTab = SettingsTabPage:Section({ Name = "SettingsTab", Side = "Left
         end,
     })
 
-    SettingsTab:Slider({
+    SettingsTab:CreateSlider({
         Name = "Poll Rate",
         Desc = "How often to check for equip changes (seconds).",
         Min = 0.05,
@@ -45069,7 +45059,7 @@ local SettingsTab = SettingsTabPage:Section({ Name = "SettingsTab", Side = "Left
         end,
     })
 
-    SettingsTab:Button({
+    SettingsTab:CreateButton({
         Name = "Unload Stealth",
         Desc = "Closes the UI and removes all overlays.",
         Icon = "solar:close-circle-bold",
@@ -45082,7 +45072,7 @@ local SettingsTab = SettingsTabPage:Section({ Name = "SettingsTab", Side = "Left
         end,
     })
 
-    Lumen:Notify({
+    Airflow:Notify({
         Name = "Stealth | MM2",
         Content = ("Ready — %d weapons. Select → Spawn → equip."):format(#weaponList),
         Duration = 5,
@@ -45095,7 +45085,7 @@ end
 -- Stealth | MM2 — Extended Features (ESP, AutoFarm, Character, Teleport,
 --                                   Role Functions, Anti-AFK)
 -- =========================================================================
--- Adapted from BenjoHub (Lumen) + MvS Hub GodMode + Zeion AimAssist.
+-- Adapted from BenjoHub (Airflow) + MvS Hub GodMode + Zeion AimAssist.
 -- Stripped: webhooks, Discord links to other communities, server lagger,
 -- trade scam (griefing), weapon dupe (bannable). Kept: legitimate QoL
 -- features.
@@ -45541,36 +45531,34 @@ do
     ------------------------------------------------------------
     -- Extended Tabs (added to the existing Window)
     ------------------------------------------------------------
-    -- NOTE: `Window` is the Lumen window created earlier in this file.
+    -- NOTE: `Window` is the Airflow window created earlier in this file.
     -- We attach new sections/tabs to it.
 
     -- ---------- ESP Tab ----------
-    local ESPTab = Window:Page({
+    local ESPTab = Window:CreateTab({ 
         Name = "ESP",
         Icon = "solar:eye-bold",
         ,
         ,
-    })
-local ESPTabPage = ESPTab
+     })
 
-local ESPTab = ESPTabPage:Section({ Name = "ESPTab", Side = "Left", Icon = "box" })
 
-    ESPTab:Section({ Name = "Player ESP Settings" })
+    ESPTab:CreateSection("Player ESP Settings") })
 
-    local _auto_lbl_3 = ESPTab:Label({ Text = "Enable ESP" })
-    _auto_lbl_3:Toggle({
+    local _auto_lbl_3 = ESPTab:CreateLabel({ Text = "Enable ESP" })
+    _auto_lbl_3:CreateToggle({
         Desc = "Highlight players through walls.",
         Value = false,
         Callback = function(v) ESP.Enabled = v; RefreshESP() end,
     })
 
 
-    ESPTab:Dropdown({
+    ESPTab:CreateDropdown({
         Name = "Filter ESP",
         Desc = "Choose which roles to highlight.",
         Options = { "All", "Murderer", "Sheriff", "Both" },
         Value = 1,
-        Multi = false,
+        MultipleOptions = false,
         Callback = function(selected)
             ESP.Filter = selected
             RefreshESP()
@@ -45578,8 +45566,8 @@ local ESPTab = ESPTabPage:Section({ Name = "ESPTab", Side = "Left", Icon = "box"
     })
 
 
-    local _auto_lbl_4 = ESPTab:Label({ Text = "Line ESP (Tracers)" })
-    _auto_lbl_4:Toggle({
+    local _auto_lbl_4 = ESPTab:CreateLabel({ Text = "Line ESP (Tracers)" })
+    _auto_lbl_4:CreateToggle({
         Desc = "Draw lines from your character to highlighted players.",
         Value = false,
         Callback = function(v)
@@ -45595,20 +45583,18 @@ local ESPTab = ESPTabPage:Section({ Name = "ESPTab", Side = "Left", Icon = "box"
     })
 
     -- ---------- AutoFarm Tab ----------
-    local AutoFarmTab = Window:Page({
+    local AutoFarmTab = Window:CreateTab({ 
         Name = "Farm",
         Icon = "solar:money-bag-bold",
         ,
         ,
-    })
-local AutoFarmTabPage = AutoFarmTab
+     })
 
-local AutoFarmTab = AutoFarmTabPage:Section({ Name = "AutoFarmTab", Side = "Left", Icon = "box" })
 
-    AutoFarmTab:Section({ Name = "Coin & Candy Collection" })
+    AutoFarmTab:CreateSection("Coin & Candy Collection") })
 
-    local _auto_lbl_5 = AutoFarmTab:Label({ Text = "Coin Autofarm" })
-    _auto_lbl_5:Toggle({
+    local _auto_lbl_5 = AutoFarmTab:CreateLabel({ Text = "Coin Autofarm" })
+    _auto_lbl_5:CreateToggle({
         Desc = "Automatically collect coins in the map.",
         Value = false,
         Callback = function(v)
@@ -45618,7 +45604,7 @@ local AutoFarmTab = AutoFarmTabPage:Section({ Name = "AutoFarmTab", Side = "Left
     })
 
 
-    AutoFarmTab:Slider({
+    AutoFarmTab:CreateSlider({
         Name = "Autofarm Speed",
         Desc = "Seconds between collection cycles. Higher = safer (less likely to get kicked).",
         Step = 1,
@@ -45627,8 +45613,8 @@ local AutoFarmTab = AutoFarmTabPage:Section({ Name = "AutoFarmTab", Side = "Left
     })
 
 
-    local _auto_lbl_6 = AutoFarmTab:Label({ Text = "Auto Reset Character" })
-    _auto_lbl_6:Toggle({
+    local _auto_lbl_6 = AutoFarmTab:CreateLabel({ Text = "Auto Reset Character" })
+    _auto_lbl_6:CreateToggle({
         Desc = "Reset your character every N seconds (useful for forcing new round spawns).",
         Value = false,
         Callback = function(v)
@@ -45637,7 +45623,7 @@ local AutoFarmTab = AutoFarmTabPage:Section({ Name = "AutoFarmTab", Side = "Left
         end,
     })
 
-    AutoFarmTab:Slider({
+    AutoFarmTab:CreateSlider({
         Name = "Reset Delay (sec)",
         Desc = "Time between auto-resets.",
         Step = 10,
@@ -45646,19 +45632,17 @@ local AutoFarmTab = AutoFarmTabPage:Section({ Name = "AutoFarmTab", Side = "Left
     })
 
     -- ---------- Character Tab ----------
-    local CharacterTab = Window:Page({
+    local CharacterTab = Window:CreateTab({ 
         Name = "Movement",
         Icon = "solar:running-bold",
         ,
         ,
-    })
-local CharacterTabPage = CharacterTab
+     })
 
-local CharacterTab = CharacterTabPage:Section({ Name = "CharacterTab", Side = "Left", Icon = "box" })
 
-    CharacterTab:Section({ Name = "Movement Settings" })
+    CharacterTab:CreateSection("Movement Settings") })
 
-    CharacterTab:Slider({
+    CharacterTab:CreateSlider({
         Name = "Walk Speed",
         Desc = "Default: 16",
         Step = 1,
@@ -45666,15 +45650,15 @@ local CharacterTab = CharacterTabPage:Section({ Name = "CharacterTab", Side = "L
         Callback = function(value) Character.WalkSpeed = value end,
     })
 
-    local _auto_lbl_7 = CharacterTab:Label({ Text = "Lock Walk Speed" })
-    _auto_lbl_7:Toggle({
+    local _auto_lbl_7 = CharacterTab:CreateLabel({ Text = "Lock Walk Speed" })
+    _auto_lbl_7:CreateToggle({
         Desc = "Re-apply walk speed if the game resets it.",
         Value = false,
         Callback = function(v) Character.LockWalkSpeed = v end,
     })
 
 
-    CharacterTab:Slider({
+    CharacterTab:CreateSlider({
         Name = "Jump Power",
         Desc = "Default: 50",
         Step = 1,
@@ -45682,30 +45666,30 @@ local CharacterTab = CharacterTabPage:Section({ Name = "CharacterTab", Side = "L
         Callback = function(value) Character.JumpPower = value end,
     })
 
-    local _auto_lbl_8 = CharacterTab:Label({ Text = "Lock Jump Power" })
-    _auto_lbl_8:Toggle({
+    local _auto_lbl_8 = CharacterTab:CreateLabel({ Text = "Lock Jump Power" })
+    _auto_lbl_8:CreateToggle({
         Desc = "Re-apply jump power if the game resets it.",
         Value = false,
         Callback = function(v) Character.LockJumpPower = v end,
     })
 
 
-    local _auto_lbl_9 = CharacterTab:Label({ Text = "Noclip" })
-    _auto_lbl_9:Toggle({
+    local _auto_lbl_9 = CharacterTab:CreateLabel({ Text = "Noclip" })
+    _auto_lbl_9:CreateToggle({
         Desc = "Walk through walls. Disable before round end to avoid suspicion.",
         Value = false,
         Callback = function(v) SetNoclip(v) end,
     })
 
-    local _auto_lbl_10 = CharacterTab:Label({ Text = "Infinite Jump" })
-    _auto_lbl_10:Toggle({
+    local _auto_lbl_10 = CharacterTab:CreateLabel({ Text = "Infinite Jump" })
+    _auto_lbl_10:CreateToggle({
         Desc = "Jump in mid-air.",
         Value = false,
         Callback = function(v) SetInfiniteJump(v) end,
     })
 
 
-    CharacterTab:Button({
+    CharacterTab:CreateButton({
         Name = "Reset Character",
         Desc = "Force respawn.",
         Icon = "solar:refresh-bold",
@@ -45719,17 +45703,15 @@ local CharacterTab = CharacterTabPage:Section({ Name = "CharacterTab", Side = "L
     })
 
     -- ---------- Teleport Tab ----------
-    local TeleportTab = Window:Page({
+    local TeleportTab = Window:CreateTab({ 
         Name = "Teleport",
         Icon = "solar:map-point-bold",
         ,
         ,
-    })
-local TeleportTabPage = TeleportTab
+     })
 
-local TeleportTab = TeleportTabPage:Section({ Name = "TeleportTab", Side = "Left", Icon = "box" })
 
-    TeleportTab:Section({ Name = "Player Teleportation" })
+    TeleportTab:CreateSection("Player Teleportation") })
 
     local playerList = {}
     local playerDropdown
@@ -45744,17 +45726,17 @@ local TeleportTab = TeleportTabPage:Section({ Name = "TeleportTab", Side = "Left
     end
 
     local selectedPlayerName = nil
-    playerDropdown = TeleportTab:Dropdown({
+    playerDropdown = TeleportTab:CreateDropdown({
         Name = "Select Player",
         Desc = "Choose a player to teleport to.",
         Options = playerList,
         Value = nil,
-        Multi = false,
+        MultipleOptions = false,
         Callback = function(selected) selectedPlayerName = selected end,
     })
 
 
-    TeleportTab:Button({
+    TeleportTab:CreateButton({
         Name = "Teleport to Player",
         Desc = "Teleports you to the selected player.",
         Icon = "solar:map-arrow-right-bold",
@@ -45768,15 +45750,15 @@ local TeleportTab = TeleportTabPage:Section({ Name = "TeleportTab", Side = "Left
         end,
     })
 
-    TeleportTab:Button({
+    TeleportTab:CreateButton({
         Name = "Refresh Player List",
         Callback = refreshPlayerList,
     })
 
 
-    TeleportTab:Section({ Name = "Role Teleportation" })
+    TeleportTab:CreateSection("Role Teleportation") })
 
-    TeleportTab:Button({
+    TeleportTab:CreateButton({
         Name = "Teleport to Murderer",
         Desc = "Go to the current murderer (if any).",
         Icon = "solar:knife-bold",
@@ -45786,7 +45768,7 @@ local TeleportTab = TeleportTabPage:Section({ Name = "TeleportTab", Side = "Left
         Callback = function() TeleportToRole("Murderer") end,
     })
 
-    TeleportTab:Button({
+    TeleportTab:CreateButton({
         Name = "Teleport to Sheriff",
         Desc = "Go to the current sheriff (if any).",
         Icon = "solar:shield-bold",
@@ -45802,20 +45784,18 @@ local TeleportTab = TeleportTabPage:Section({ Name = "TeleportTab", Side = "Left
     refreshPlayerList()
 
     -- ---------- Role Functions Tab ----------
-    local RoleTab = Window:Page({
+    local RoleTab = Window:CreateTab({ 
         Name = "Role",
         Icon = "solar:users-group-rounded-bold",
         ,
         ,
-    })
-local RoleTabPage = RoleTab
+     })
 
-local RoleTab = RoleTabPage:Section({ Name = "RoleTab", Side = "Left", Icon = "box" })
 
-    RoleTab:Section({ Name = "Innocent" })
+    RoleTab:CreateSection("Innocent") })
 
-    local _auto_lbl_11 = RoleTab:Label({ Text = "Auto Grab Gun" })
-    _auto_lbl_11:Toggle({
+    local _auto_lbl_11 = RoleTab:CreateLabel({ Text = "Auto Grab Gun" })
+    _auto_lbl_11:CreateToggle({
         Desc = "When a gun is dropped, teleport to it automatically.",
         Value = false,
         Callback = function(v)
@@ -45825,9 +45805,9 @@ local RoleTab = RoleTabPage:Section({ Name = "RoleTab", Side = "Left", Icon = "b
     })
 
 
-    RoleTab:Section({ Name = "Murderer" })
+    RoleTab:CreateSection("Murderer") })
 
-    RoleTab:Button({
+    RoleTab:CreateButton({
         Name = "Kill All Players",
         Desc = "Teleport-and-touch every player (only works if you're the murderer).",
         Icon = "solar:knife-bold",
@@ -45837,7 +45817,7 @@ local RoleTab = RoleTabPage:Section({ Name = "RoleTab", Side = "Left", Icon = "b
         Callback = function() KillAllMurderer() end,
     })
 
-    RoleTab:Button({
+    RoleTab:CreateButton({
         Name = "Equip Knife",
         Desc = "Equip your knife from backpack.",
         Icon = "solar:knife-bold",
@@ -45845,20 +45825,18 @@ local RoleTab = RoleTabPage:Section({ Name = "RoleTab", Side = "Left", Icon = "b
     })
 
     -- ---------- Utilities Tab ----------
-    local UtilitiesTab = Window:Page({
+    local UtilitiesTab = Window:CreateTab({ 
         Name = "Utilities",
         Icon = "solar:settings-bold",
         ,
         ,
-    })
-local UtilitiesTabPage = UtilitiesTab
+     })
 
-local UtilitiesTab = UtilitiesTabPage:Section({ Name = "UtilitiesTab", Side = "Left", Icon = "box" })
 
-    UtilitiesTab:Section({ Name = "Server Utilities" })
+    UtilitiesTab:CreateSection("Server Utilities") })
 
-    local _auto_lbl_12 = UtilitiesTab:Label({ Text = "Anti-AFK" })
-    _auto_lbl_12:Toggle({
+    local _auto_lbl_12 = UtilitiesTab:CreateLabel({ Text = "Anti-AFK" })
+    _auto_lbl_12:CreateToggle({
         Desc = "Prevents being kicked for inactivity.",
         Value = false,
         Callback = function(v)
@@ -45868,7 +45846,7 @@ local UtilitiesTab = UtilitiesTabPage:Section({ Name = "UtilitiesTab", Side = "L
     })
 
 
-    UtilitiesTab:Button({
+    UtilitiesTab:CreateButton({
         Name = "Copy Discord Invite",
         Desc = "Copies the Stealth Discord link to your clipboard.",
         Icon = "solar:chat-round-dots-bold",
@@ -45877,7 +45855,7 @@ local UtilitiesTab = UtilitiesTabPage:Section({ Name = "UtilitiesTab", Side = "L
         IconAlign = "Left",
         Callback = function()
             pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
-            Lumen:Notify({
+            Airflow:Notify({
                 Name = "Stealth | MM2",
                 Content = "Discord invite copied!",
                 Duration = 3,
@@ -45887,7 +45865,7 @@ local UtilitiesTab = UtilitiesTabPage:Section({ Name = "UtilitiesTab", Side = "L
     })
 
     -- ---------- Welcome notification ----------
-    Lumen:Notify({
+    Airflow:Notify({
         Name = "Stealth | MM2",
         Content = "Extended features loaded: ESP, AutoFarm, Teleport, Role Functions, Utilities.",
         Duration = 5,
