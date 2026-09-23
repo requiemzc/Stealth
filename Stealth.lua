@@ -333,15 +333,11 @@ Patriot.Callbacks.OnClose = function()
 end
 
 ------------------------------------------------------------
--- 15. Launch
 ------------------------------------------------------------
-Patriot:Launch()
+-- 15. Check maintenance BEFORE launching Patriot
+------------------------------------------------------------
+local STEALTH_DOWN = false
 
-print("[Stealth] Loader initialized with Patriot key system")
-
-------------------------------------------------------------
--- 16. Check maintenance status before showing Patriot
-------------------------------------------------------------
 local function showShutdownScreen(msg)
     local Players = game:GetService("Players")
     local player = Players.LocalPlayer
@@ -413,52 +409,42 @@ local function showShutdownScreen(msg)
     link.BackgroundTransparency = 1
     link.Size = UDim2.new(0.4, 0, 0.035, 0)
     link.Position = UDim2.new(0.3, 0, 0.665, 0)
-    link.Text = "https://discord.gg/hqE5drDHF7"
+    link.Text = "https://discord.gg/69cKKWg639"
     link.TextScaled = true
     link.Font = Enum.Font.Gotham
     link.TextColor3 = Color3.fromRGB(130, 130, 230)
     link.Parent = bg
 
     link.MouseButton1Click:Connect(function()
-        if setclipboard then setclipboard("https://discord.gg/hqE5drDHF7") end
+        if setclipboard then
+            setclipboard("https://discord.gg/69cKKWg639")
+        end
     end)
 end
 
--- Check maintenance BEFORE Patriot:Launch
-task.spawn(function()
-    task.wait(0.3)
-    local reqFn = request or http_request or nil
-    if not reqFn then return end -- no HTTP, just show Patriot
-
+-- Synchronous maintenance check (blocks until response)
+local reqFn = request or http_request or nil
+if reqFn then
     local ok, res = pcall(function()
-        return reqFn({
+        return reqFn({ Timeout = 5,
             Url = STEALTH_API .. "/api/maintenance",
             Method = "GET",
         })
     end)
-
     if ok and res then
         local body = res.Body or ""
         if body:find("^DOWN") then
-            -- Maintenance is ON — show shutdown screen, DON'T show Patriot
+            -- Maintenance is ON — show shutdown, DON'T launch Patriot
             local msg = body:match("^DOWN|(.*)")
             showShutdownScreen(msg)
-            -- Destroy Patriot if it already launched
-            pcall(function()
-                local CoreGui = game:GetService("CoreGui")
-                for _, child in ipairs(CoreGui:GetChildren()) do
-                    if child.Name:find("Patriot") or child.Name:find("Key") then
-                        child:Destroy()
-                    end
-                end
-            end)
             print("[Stealth] Maintenance mode active — showing shutdown screen")
+            -- Return here so Patriot:Launch() is NEVER called
             return
         end
     end
-    -- If UP or request failed, Patriot is already launched (line 325)
-end)
+end
 
+-- If we get here, maintenance is OFF — launch Patriot normally
 Patriot:Launch()
 
 print("[Stealth] Loader initialized with Patriot key system")
