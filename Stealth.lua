@@ -429,28 +429,41 @@ local function showShutdownScreen(msg)
 end
 
 -- Synchronous maintenance check (blocks until response)
+local maintenanceActive = false
 local reqFn = request or http_request or nil
+
 if reqFn then
     local ok, res = pcall(function()
-        return reqFn({ Timeout = 5,
+        return reqFn({
             Url = STEALTH_API .. "/api/maintenance",
             Method = "GET",
         })
     end)
+    
     if ok and res then
-        local body = res.Body or ""
-        if body:find("^DOWN") then
-            -- Maintenance is ON — show shutdown, DON'T launch Patriot
-            local msg = body:match("^DOWN|(.*)")
-            showShutdownScreen(msg)
-            print("[Stealth] Maintenance mode active — showing shutdown screen")
-            -- Return here so Patriot:Launch() is NEVER called
-            return
+        -- Try multiple ways to get the body
+        local body = ""
+        if type(res) == "string" then
+            body = res
+        elseif type(res) == "table" then
+            body = res.Body or res.body or ""
         end
+        
+        print("[Stealth] Maintenance check response: " .. tostring(body:sub(1, 50)))
+        
+        if body:find("DOWN") then
+            maintenanceActive = true
+            local msg = body:match("DOWN|(.*)")
+            showShutdownScreen(msg)
+            print("[Stealth] Maintenance mode active - showing shutdown screen")
+        end
+    else
+        print("[Stealth] Maintenance check failed, assuming UP")
     end
 end
 
--- If we get here, maintenance is OFF — launch Patriot normally
-Patriot:Launch()
-
-print("[Stealth] Loader initialized with Patriot key system")
+-- Only launch Patriot if maintenance is NOT active
+if not maintenanceActive then
+    Patriot:Launch()
+    print("[Stealth] Loader initialized with Patriot key system")
+end
