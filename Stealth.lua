@@ -299,8 +299,7 @@ Patriot.Callbacks.OnSuccess = function()
     print("[Stealth] Key validated! Loading main script...")
     Patriot:Notify("Stealth", "Key validated! Loading...", 2, "success")
 
-    -- Preload ObsidianUltra for game scripts
-    end)
+    -- ObsidianUltra is loaded by each game script independently
 
     local ok, err = pcall(function()
         loadstring(game:HttpGet(MAIN_SCRIPT_URL))()
