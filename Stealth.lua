@@ -1,11 +1,18 @@
--- [[ Stealth | Key System (Custom UI) ]]
--- Custom built UI, no external library needed.
+-- [[ Stealth | Key System (Patriot) ]]
+-- Key system with Patriot UI, validated against sstealth.vercel.app
 
 local STEALTH_API = "https://sstealth.vercel.app"
 local MAIN_SCRIPT_URL = "https://raw.githubusercontent.com/requiemzc/Stealth/main/Main.lua"
 
 ------------------------------------------------------------
--- 1. HWID
+-- 1. Load Patriot
+------------------------------------------------------------
+local Patriot = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/SyndromeXph/Patriot-Key-System-Ui-Library/refs/heads/main/PatriotUi.luau"
+))()
+
+------------------------------------------------------------
+-- 2. HWID
 ------------------------------------------------------------
 local function getHWID()
     local ok, id = pcall(function() return gethwid and gethwid() end)
@@ -17,7 +24,7 @@ local function getHWID()
 end
 
 ------------------------------------------------------------
--- 2. Key persistence
+-- 3. Key persistence
 ------------------------------------------------------------
 local function saveKey(key) pcall(function() writefile("Stealth_Key.txt", key or "") end) end
 local function clearSavedKey() pcall(function() if isfile and isfile("Stealth_Key.txt") then delfile("Stealth_Key.txt") end end) end
@@ -28,10 +35,10 @@ local function loadSavedKey()
 end
 
 ------------------------------------------------------------
--- 3. Key validation
+-- 4. Key validation
 ------------------------------------------------------------
-local function validateKey(key, callback)
-    if not key or key == "" then callback(false, "Enter a key") return end
+local function validateKey(key)
+    if not key or key == "" then return false, "Enter a key" end
     local HttpService = game:GetService("HttpService")
     local hwid = getHWID()
     local username, userId, placeId, placeName
@@ -46,28 +53,28 @@ local function validateKey(key, callback)
     end)
     local body
     pcall(function() body = HttpService:JSONEncode({ key = key, hwid = hwid, username = username, userId = userId, placeId = placeId, placeName = placeName }) end)
-    if not body then callback(false, "Encode failed") return end
+    if not body then return false, "Encode failed" end
     local reqFn = request or http_request or nil
-    if not reqFn then callback(false, "No HTTP") return end
+    if not reqFn then return false, "No HTTP" end
     local res
     local ok, err = pcall(function() res = reqFn({ Url = STEALTH_API .. "/api/validate", Method = "POST", Headers = { ["Content-Type"] = "application/json" }, Body = body }) end)
-    if not ok or not res then callback(false, "Request failed") return end
+    if not ok or not res then return false, "Request failed" end
     local data
     pcall(function() data = HttpService:JSONDecode(res.Body) end)
-    if not data then callback(false, "Bad response") return end
+    if not data then return false, "Bad response" end
     if data.valid == true then
         saveKey((type(data.key) == "string" and #data.key > 0) and data.key or key)
-        callback(true, nil)
+        return true
     else
         local errCode = data.error or "UNKNOWN"
         if errCode == "KEY_NOT_FOUND" or errCode == "KEY_EXPIRED" or errCode == "HWID_LOCKED" or errCode == "KEY_REVOKED" then clearSavedKey() end
-        local messages = { KEY_NOT_FOUND = "Key does not exist", KEY_EXPIRED = "Key expired", HWID_LOCKED = "Key locked to another device", KEY_REVOKED = "Key revoked by admin" }
-        callback(false, messages[errCode] or "Validation failed: " .. errCode)
+        local messages = { KEY_NOT_FOUND = "Key does not exist. Get one at " .. STEALTH_API .. "/", KEY_EXPIRED = "Key expired. Get a new one.", HWID_LOCKED = "Key locked to another device.", KEY_REVOKED = "Key revoked by admin." }
+        return false, messages[errCode] or "Validation failed: " .. errCode
     end
 end
 
 ------------------------------------------------------------
--- 4. Webhook log
+-- 5. Webhook log
 ------------------------------------------------------------
 task.spawn(function()
     pcall(function()
@@ -95,238 +102,226 @@ task.spawn(function()
 end)
 
 ------------------------------------------------------------
--- 5. Custom UI — Key Prompt
+-- 6. Key save/load from file (Patriot Storage)
 ------------------------------------------------------------
-local function createKeyPrompt()
-    local CoreGui = game:GetService("CoreGui")
-    local TweenService = game:GetService("TweenService")
-    local UserInputService = game:GetService("UserInputService")
-    
-    -- Colors
-    local BG = Color3.fromRGB(15, 15, 18)
-    local ACCENT = Color3.fromRGB(48, 255, 106)
-    local TEXT = Color3.fromRGB(255, 255, 255)
-    local MUTED = Color3.fromRGB(130, 130, 140)
-    local SURFACE = Color3.fromRGB(22, 22, 28)
-    local STROKE = Color3.fromRGB(40, 40, 48)
-    
-    -- ScreenGui
-    local gui = Instance.new("ScreenGui")
-    gui.Name = "StealthKey"
-    gui.ResetOnSpawn = false
-    gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    pcall(function() gui.Parent = gethui() or CoreGui end)
-    if not gui.Parent then gui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui") end
-    
-    -- Main frame
-    local frame = Instance.new("Frame")
-    frame.Size = UDim2.fromOffset(380, 280)
-    frame.Position = UDim2.fromScale(0.5, 0.5)
-    frame.AnchorPoint = Vector2.new(0.5, 0.5)
-    frame.BackgroundColor3 = BG
-    frame.BorderSizePixel = 0
-    frame.Parent = gui
-    local corner = Instance.new("UICorner")
-    corner.CornerRadius = UDim.new(0, 10)
-    corner.Parent = frame
-    local stroke = Instance.new("UIStroke")
-    stroke.Color = STROKE
-    stroke.Thickness = 1
-    stroke.Parent = frame
-    
-    -- Shadow
-    local shadow = Instance.new("ImageLabel")
-    shadow.Size = UDim2.new(1, 30, 1, 30)
-    shadow.Position = UDim2.fromOffset(-15, -15)
-    shadow.BackgroundTransparency = 1
-    shadow.Image = "rbxassetid://6014261993"
-    shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
-    shadow.ImageTransparency = 0.5
-    shadow.ZIndex = -1
-    shadow.Parent = frame
-    
-    -- Title
-    local title = Instance.new("TextLabel")
-    title.Size = UDim2.new(1, -40, 0, 30)
-    title.Position = UDim2.fromOffset(20, 20)
-    title.BackgroundTransparency = 1
-    title.Text = "STEALTH"
-    title.Font = Enum.Font.GothamBold
-    title.TextSize = 22
-    title.TextColor3 = ACCENT
-    title.TextXAlignment = Enum.TextXAlignment.Left
-    title.Parent = frame
-    
-    -- Subtitle
-    local subtitle = Instance.new("TextLabel")
-    subtitle.Size = UDim2.new(1, -40, 0, 16)
-    subtitle.Position = UDim2.fromOffset(20, 48)
-    subtitle.BackgroundTransparency = 1
-    subtitle.Text = "Enter your key to unlock"
-    subtitle.Font = Enum.Font.Gotham
-    subtitle.TextSize = 13
-    subtitle.TextColor3 = MUTED
-    subtitle.TextXAlignment = Enum.TextXAlignment.Left
-    subtitle.Parent = frame
-    
-    -- Key input
-    local inputBox = Instance.new("TextBox")
-    inputBox.Size = UDim2.new(1, -40, 0, 40)
-    inputBox.Position = UDim2.fromOffset(20, 80)
-    inputBox.BackgroundColor3 = SURFACE
-    inputBox.BorderSizePixel = 0
-    inputBox.Font = Enum.Font.Gotham
-    inputBox.TextSize = 14
-    inputBox.TextColor3 = TEXT
-    inputBox.PlaceholderText = "FREE_..."
-    inputBox.PlaceholderColor3 = MUTED
-    inputBox.Text = ""
-    inputBox.ClearTextOnFocus = false
-    inputBox.Parent = frame
-    local inputCorner = Instance.new("UICorner")
-    inputCorner.CornerRadius = UDim.new(0, 6)
-    inputCorner.Parent = inputBox
-    local inputStroke = Instance.new("UIStroke")
-    inputStroke.Color = STROKE
-    inputStroke.Thickness = 1
-    inputStroke.Parent = inputBox
-    local inputPad = Instance.new("UIPadding")
-    inputPad.PaddingLeft = UDim.new(0, 12)
-    inputPad.PaddingRight = UDim.new(0, 12)
-    inputPad.Parent = inputBox
-    
-    -- Status label
-    local statusLabel = Instance.new("TextLabel")
-    statusLabel.Size = UDim2.new(1, -40, 0, 16)
-    statusLabel.Position = UDim2.fromOffset(20, 128)
-    statusLabel.BackgroundTransparency = 1
-    statusLabel.Text = ""
-    statusLabel.Font = Enum.Font.Gotham
-    statusLabel.TextSize = 12
-    statusLabel.TextColor3 = Color3.fromRGB(255, 100, 100)
-    statusLabel.TextXAlignment = Enum.TextXAlignment.Left
-    statusLabel.Parent = frame
-    
-    -- Unlock button
-    local btn = Instance.new("TextButton")
-    btn.Size = UDim2.new(1, -40, 0, 40)
-    btn.Position = UDim2.fromOffset(20, 150)
-    btn.BackgroundColor3 = ACCENT
-    btn.BorderSizePixel = 0
-    btn.Text = "Unlock"
-    btn.Font = Enum.Font.GothamBold
-    btn.TextSize = 15
-    btn.TextColor3 = Color3.fromRGB(0, 0, 0)
-    btn.Parent = frame
-    local btnCorner = Instance.new("UICorner")
-    btnCorner.CornerRadius = UDim.new(0, 6)
-    btnCorner.Parent = btn
-    
-    -- Get key link
-    local link = Instance.new("TextButton")
-    link.Size = UDim2.new(1, -40, 0, 20)
-    link.Position = UDim2.fromOffset(20, 200)
-    link.BackgroundTransparency = 1
-    link.Text = "Get a key at sstealth.vercel.app/keysys"
-    link.Font = Enum.Font.Gotham
-    link.TextSize = 12
-    link.TextColor3 = ACCENT
-    link.Parent = frame
-    
-    link.MouseButton1Click:Connect(function()
-        pcall(function() if setclipboard then setclipboard(STEALTH_API .. "/keysys") end end)
-        statusLabel.Text = "Link copied to clipboard!"
-        statusLabel.TextColor3 = ACCENT
-        TweenService:Create(statusLabel, TweenInfo.new(0.3), { TextTransparency = 0 }):Play()
-        task.delay(2, function() statusLabel.Text = "" end)
-    end)
-    
-    -- Make draggable
-    local dragging = false
-    local dragStart = nil
-    local startPos = nil
-    frame.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-            dragging = true
-            dragStart = input.Position
-            startPos = frame.Position
-        end
-    end)
-    UserInputService.InputChanged:Connect(function(input)
-        if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
-            local delta = input.Position - dragStart
-            frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-        end
-    end)
-    UserInputService.InputEnded:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-            dragging = false
-        end
-    end)
-    
-    -- Unlock action
-    local function doUnlock()
-        local key = inputBox.Text
-        if not key or key == "" then
-            statusLabel.Text = "Please enter a key"
-            statusLabel.TextColor3 = Color3.fromRGB(255, 100, 100)
-            return
-        end
-        statusLabel.Text = "Validating..."
-        statusLabel.TextColor3 = MUTED
-        btn.Text = "..."
-        
-        task.spawn(function()
-            validateKey(key, function(success, err)
-                if success then
-                    statusLabel.Text = "Key valid! Loading..."
-                    statusLabel.TextColor3 = ACCENT
-                    btn.Text = "✓"
-                    task.wait(0.8)
-                    -- Destroy key UI and load Main.lua
-                    gui:Destroy()
-                    pcall(function() loadstring(game:HttpGet(MAIN_SCRIPT_URL))() end)
-                else
-                    statusLabel.Text = err or "Validation failed"
-                    statusLabel.TextColor3 = Color3.fromRGB(255, 100, 100)
-                    btn.Text = "Unlock"
-                end
-            end)
-        end)
+local KEY_FILE = "Stealth_Key.txt"
+
+local function safeReadFile(name)
+    if not readfile then return nil end
+    local ok, content = pcall(function() return readfile(name) end)
+    if ok and type(content) == "string" and #content > 0 then return content end
+    return nil
+end
+
+local function safeWriteFile(name, content)
+    if not writefile then return false end
+    local ok = pcall(function() writefile(name, content) end)
+    return ok
+end
+
+local function safeDeleteFile(name)
+    if not delfile then return end
+    pcall(function() delfile(name) end)
+end
+
+local function saveKey(key) safeWriteFile(KEY_FILE, key or "") end
+local function clearSavedKey() safeDeleteFile(KEY_FILE) end
+local function loadSavedKey()
+    local content = safeReadFile(KEY_FILE)
+    if content then
+        content = content:match("^%s*(.-)%s*$") or content
+        if content:find("^FREE_") then return content end
     end
-    
-    btn.MouseButton1Click:Connect(doUnlock)
-    inputBox.FocusLost:Connect(function(enter) if enter then doUnlock() end end)
-    
-    -- Toggle with RightShift
-    UserInputService.InputBegan:Connect(function(input)
-        if input.KeyCode == Enum.KeyCode.RightShift then
-            gui.Enabled = not gui.Enabled
-        end
-    end)
-    
-    return gui
+    return nil
 end
 
 ------------------------------------------------------------
--- 6. Main flow
+-- 7. Patriot setup
 ------------------------------------------------------------
+Patriot.Callbacks.OnVerify = function(key)
+    if not key or key == "" then return false end
+
+    local HttpService = game:GetService("HttpService")
+    local Players = game:GetService("Players")
+    local MarketplaceService = game:GetService("MarketplaceService")
+    local hwid = getHWID()
+
+    local username, userId, placeId, placeName
+    pcall(function()
+        local lp = Players.LocalPlayer
+        username = lp.Name
+        userId = lp.UserId
+    end)
+    pcall(function()
+        placeId = game.PlaceId
+        local info = MarketplaceService:GetProductInfo(game.PlaceId)
+        placeName = info and info.Name or nil
+    end)
+
+    local body
+    local ok, err = pcall(function()
+        body = HttpService:JSONEncode({ key = key, hwid = hwid, username = username, userId = userId, placeId = placeId, placeName = placeName })
+    end)
+    if not ok or not body then
+        return { valid = false, error = "CLIENT_ERROR", message = "Failed to encode request" }
+    end
+
+    local reqFn = request or http_request or nil
+    if not reqFn then
+        return { valid = false, error = "NO_HTTP", message = "No HTTP function available" }
+    end
+
+    local res
+    ok, err = pcall(function()
+        res = reqFn({ Url = STEALTH_API .. "/api/validate", Method = "POST", Headers = { ["Content-Type"] = "application/json" }, Body = body })
+    end)
+    if not ok or not res then
+        return { valid = false, error = "REQUEST_FAILED", message = tostring(err) }
+    end
+
+    local data
+    ok, err = pcall(function() data = HttpService:JSONDecode(res.Body) end)
+    if not ok or not data then
+        return { valid = false, error = "BAD_RESPONSE", message = tostring(res.Body) }
+    end
+
+    if data.valid == true then
+        local keyToSave = (type(data.key) == "string" and #data.key > 0) and data.key or key
+        saveKey(keyToSave)
+        return true
+    end
+
+    if data.error == "KEY_NOT_FOUND" or data.error == "KEY_EXPIRED" or data.error == "HWID_LOCKED" or data.error == "KEY_REVOKED" then
+        clearSavedKey()
+    end
+
+    local messages = {
+        KEY_NOT_FOUND = "This key does not exist. Get a fresh one at " .. STEALTH_API .. "/",
+        KEY_EXPIRED   = "This key has expired. Get a new one at " .. STEALTH_API .. "/",
+        HWID_LOCKED   = "This key is locked to a different device. Get your own at " .. STEALTH_API .. "/",
+        KEY_REVOKED   = "This key has been revoked by an admin.",
+    }
+    return { valid = false, error = data.error or "UNKNOWN", message = messages[data.error] or "Validation failed." }
+end
+
+------------------------------------------------------------
+-- 8. Branding
+------------------------------------------------------------
+Patriot.Appearance = {
+    Title    = "Stealth",
+    Subtitle = "Verify your key to continue",
+    Icon     = "rbxassetid://94734287536234",
+    IconSize = UDim2.new(0, 30, 0, 30),
+}
+
+------------------------------------------------------------
+-- 9. Links
+------------------------------------------------------------
+local getKeyURL = STEALTH_API .. "/keysys"
+do
+    local ok, err = pcall(function()
+        local lp = game:GetService("Players").LocalPlayer
+        if lp then
+            local u = tostring(lp.UserId)
+            local n = game:GetService("HttpService"):UrlEncode(lp.Name)
+            if #u > 0 and #n > 0 then
+                getKeyURL = getKeyURL .. "?u=" .. u .. "&n=" .. n
+            end
+        end
+    end)
+end
+
+Patriot.Links = {
+    GetKey  = getKeyURL,
+    Discord = "https://discord.gg/hqE5drDHF7",
+}
+
+------------------------------------------------------------
+-- 10. Storage
+------------------------------------------------------------
+Patriot.Storage = {
+    FileName = "Stealth_Key",
+    Remember = true,
+    AutoLoad = true,
+}
+
+------------------------------------------------------------
+-- 11. Inject saved key
+------------------------------------------------------------
+local function tryInjectSavedKey(key)
+    if not key then return end
+    pcall(function() Patriot.SavedKey = key end)
+    pcall(function() if Patriot.SetKey then Patriot:SetKey(key) end end)
+    pcall(function() if Patriot.AutoLoadKey then Patriot:AutoLoadKey(key) end end)
+    pcall(function() if Patriot.LoadKey then Patriot:LoadKey(key) end end)
+end
+
 local savedKey = loadSavedKey()
 if savedKey then
-    task.spawn(function()
-        task.wait(1)
-        validateKey(savedKey, function(success, err)
-            if success then
-                -- Load Main.lua directly
-                pcall(function() loadstring(game:HttpGet(MAIN_SCRIPT_URL))() end)
-            else
-                -- Show key prompt
-                createKeyPrompt()
-            end
-        end)
-    end)
-else
-    createKeyPrompt()
+    print("[Stealth] Found saved key, attempting auto-load...")
+    tryInjectSavedKey(savedKey)
 end
 
-print("[Stealth] Loader initialized with custom UI")
+------------------------------------------------------------
+-- 12. Options
+------------------------------------------------------------
+Patriot.Options = {
+    Keyless  = false,
+    Blur     = true,
+    Draggable= true,
+}
+
+------------------------------------------------------------
+-- 13. Theme
+------------------------------------------------------------
+Patriot.Theme = {
+    Accent       = Color3.fromRGB(48, 255, 106),
+    AccentHover  = Color3.fromRGB(80, 255, 130),
+    Background   = Color3.fromRGB(10, 10, 12),
+    Header       = Color3.fromRGB(15, 15, 18),
+    Input        = Color3.fromRGB(20, 20, 25),
+    Text         = Color3.fromRGB(255, 255, 255),
+    TextDim      = Color3.fromRGB(130, 130, 140),
+    Success      = Color3.fromRGB(48, 255, 106),
+    Error        = Color3.fromRGB(255, 50, 80),
+    Warning      = Color3.fromRGB(255, 200, 0),
+    StatusIdle   = Color3.fromRGB(48, 255, 106),
+    Discord      = Color3.fromRGB(48, 255, 106),
+    DiscordHover = Color3.fromRGB(80, 255, 130),
+    Divider      = Color3.fromRGB(30, 30, 35),
+    Pending      = Color3.fromRGB(40, 40, 45),
+}
+
+------------------------------------------------------------
+-- 14. On success — load Main.lua
+------------------------------------------------------------
+Patriot.Callbacks.OnSuccess = function()
+    print("[Stealth] Key validated! Loading main script...")
+    Patriot:Notify("Stealth", "Key validated! Loading...", 2, "success")
+
+    local ok, err = pcall(function()
+        loadstring(game:HttpGet(MAIN_SCRIPT_URL))()
+    end)
+    if not ok then
+        warn("[Stealth] Failed to load main script:", err)
+        Patriot:Notify("Stealth", "Failed to load main script: " .. tostring(err), 6, "error")
+        return
+    end
+
+    Patriot:Notify("Stealth", "Main script loaded!", 4, "shield")
+end
+
+Patriot.Callbacks.OnFail = function(errorMsg)
+    print("[Stealth] Verification failed:", errorMsg)
+end
+
+Patriot.Callbacks.OnClose = function()
+    print("[Stealth] User closed the verification window")
+end
+
+------------------------------------------------------------
+-- 15. Launch
+------------------------------------------------------------
+Patriot:Launch()
+
+print("[Stealth] Loader initialized with Patriot key system")

