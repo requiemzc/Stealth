@@ -386,6 +386,12 @@ local function showShutdownScreen(msg)
     btn.Font = Enum.Font.GothamBold
     btn.Parent = bg
 
+    btn.MouseButton1Click:Connect(function()
+        if setclipboard then
+            setclipboard("https://discord.gg/69cKKWg639")
+        end
+    end)
+
     local corner = Instance.new("UICorner")
     corner.CornerRadius = UDim.new(1, 0)
     corner.Parent = btn
