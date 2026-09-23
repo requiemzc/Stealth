@@ -6,13 +6,13 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naell
 
 local SCRIPTS = {
     { name = "MM2 — Murder Mystery 2", desc = "Weapon spawner + visualizer.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MM2.lua" },
+    { name = "Murderers VS Sheriffs Duels", desc = "Auto-kill all + auto-equip gun with prediction.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MVSDuel.lua" },
     { name = "Deagle Arena", desc = "Kill all - works in ranked", url = "https://raw.githubusercontent.com/requiemzc/Stealth/refs/heads/main/scripts/Deaglearena.lua" },
     { name = "Chapter 1 — Farmhouse", desc = "Auto farm hay, sell, collect gems.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/Farmhouse.lua" },
     { name = "Jump for Animals", desc = "Auto train squats, steal/hatch eggs.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/JumpForAnimals.lua" },
     { name = "Defeat Anime RNG", desc = "Auto roll, farm waves, buy weapons.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/DefeatAnimeRNG.lua" },
     { name = "catmio — Remote Spy", desc = "Universal remote spy.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CatmioRemoteSpy.lua" },
     { name = "Star RNG", desc = "Auto roll, buy, place best stars.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/StarRNG.lua" },
-    { name = "Mine a Mountain — Crystal ESP", desc = "Highlights high-value crystals.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CrystalESP.lua" },
 }
 
 local PLACE_ID = game.PlaceId
