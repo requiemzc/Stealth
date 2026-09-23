@@ -1,23 +1,11 @@
--- [[ Stealth | Key System (Airflow UI) ]]
+-- [[ Stealth | Key System (Custom UI) ]]
+-- Custom built UI, no external library needed.
 
 local STEALTH_API = "https://sstealth.vercel.app"
 local MAIN_SCRIPT_URL = "https://raw.githubusercontent.com/requiemzc/Stealth/main/Main.lua"
 
 ------------------------------------------------------------
--- 1. Load Airflow UI
-------------------------------------------------------------
-local Airflow
-local loadOk, loadErr = pcall(function()
-    Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
-end)
-if not loadOk or type(Airflow) ~= "table" then
-    warn("[Stealth] Failed to load Airflow UI: " .. tostring(loadErr))
-    return
-end
-getgenv().StealthAirflow = Airflow
-
-------------------------------------------------------------
--- 2. HWID detection
+-- 1. HWID
 ------------------------------------------------------------
 local function getHWID()
     local ok, id = pcall(function() return gethwid and gethwid() end)
@@ -29,7 +17,7 @@ local function getHWID()
 end
 
 ------------------------------------------------------------
--- 3. Key persistence
+-- 2. Key persistence
 ------------------------------------------------------------
 local function saveKey(key) pcall(function() writefile("Stealth_Key.txt", key or "") end) end
 local function clearSavedKey() pcall(function() if isfile and isfile("Stealth_Key.txt") then delfile("Stealth_Key.txt") end end) end
@@ -40,16 +28,16 @@ local function loadSavedKey()
 end
 
 ------------------------------------------------------------
--- 4. Key validation
+-- 3. Key validation
 ------------------------------------------------------------
-local function validateKey(key, finish)
-    if not key or key == "" then if finish then finish(false, "Enter a key") end return end
+local function validateKey(key, callback)
+    if not key or key == "" then callback(false, "Enter a key") return end
     local HttpService = game:GetService("HttpService")
     local hwid = getHWID()
     local username, userId, placeId, placeName
     pcall(function()
         local lp = game:GetService("Players").LocalPlayer
-        if lp then username = lp.Name; userId = lp.UserId end
+        if lp then username = lp.Name userId = lp.UserId end
     end)
     pcall(function()
         placeId = game.PlaceId
@@ -58,28 +46,28 @@ local function validateKey(key, finish)
     end)
     local body
     pcall(function() body = HttpService:JSONEncode({ key = key, hwid = hwid, username = username, userId = userId, placeId = placeId, placeName = placeName }) end)
-    if not body then if finish then finish(false, "Encode failed") end return end
+    if not body then callback(false, "Encode failed") return end
     local reqFn = request or http_request or nil
-    if not reqFn then if finish then finish(false, "No HTTP") end return end
+    if not reqFn then callback(false, "No HTTP") return end
     local res
     local ok, err = pcall(function() res = reqFn({ Url = STEALTH_API .. "/api/validate", Method = "POST", Headers = { ["Content-Type"] = "application/json" }, Body = body }) end)
-    if not ok or not res then if finish then finish(false, "Request failed: " .. tostring(err)) end return end
+    if not ok or not res then callback(false, "Request failed") return end
     local data
     pcall(function() data = HttpService:JSONDecode(res.Body) end)
-    if not data then if finish then finish(false, "Bad response") end return end
+    if not data then callback(false, "Bad response") return end
     if data.valid == true then
         saveKey((type(data.key) == "string" and #data.key > 0) and data.key or key)
-        if finish then finish(true, nil) end
+        callback(true, nil)
     else
         local errCode = data.error or "UNKNOWN"
         if errCode == "KEY_NOT_FOUND" or errCode == "KEY_EXPIRED" or errCode == "HWID_LOCKED" or errCode == "KEY_REVOKED" then clearSavedKey() end
-        local messages = { KEY_NOT_FOUND = "Key does not exist. Get one at " .. STEALTH_API .. "/", KEY_EXPIRED = "Key expired. Get a new one.", HWID_LOCKED = "Key locked to another device.", KEY_REVOKED = "Key revoked by admin." }
-        if finish then finish(false, messages[errCode] or "Validation failed: " .. errCode) end
+        local messages = { KEY_NOT_FOUND = "Key does not exist", KEY_EXPIRED = "Key expired", HWID_LOCKED = "Key locked to another device", KEY_REVOKED = "Key revoked by admin" }
+        callback(false, messages[errCode] or "Validation failed: " .. errCode)
     end
 end
 
 ------------------------------------------------------------
--- 5. Webhook log
+-- 4. Webhook log
 ------------------------------------------------------------
 task.spawn(function()
     pcall(function()
@@ -107,71 +95,221 @@ task.spawn(function()
 end)
 
 ------------------------------------------------------------
--- 6. Key prompt window
+-- 5. Custom UI — Key Prompt
 ------------------------------------------------------------
-local function showKeyPrompt()
-    local Window
-    local winOk, winErr = pcall(function()
-        Window = Airflow:CreateWindow({
-            Name = "Stealth",
-            LoadingSubtitle = "Key System",
-            ToggleUIKeybind = "RightShift",
-            Size = UDim2.fromOffset(480, 320),
-            MinSize = Vector2.new(320, 240),
-            Loading = false,
-            ConfigurationSaving = { Enabled = false },
-        })
+local function createKeyPrompt()
+    local CoreGui = game:GetService("CoreGui")
+    local TweenService = game:GetService("TweenService")
+    local UserInputService = game:GetService("UserInputService")
+    
+    -- Colors
+    local BG = Color3.fromRGB(15, 15, 18)
+    local ACCENT = Color3.fromRGB(48, 255, 106)
+    local TEXT = Color3.fromRGB(255, 255, 255)
+    local MUTED = Color3.fromRGB(130, 130, 140)
+    local SURFACE = Color3.fromRGB(22, 22, 28)
+    local STROKE = Color3.fromRGB(40, 40, 48)
+    
+    -- ScreenGui
+    local gui = Instance.new("ScreenGui")
+    gui.Name = "StealthKey"
+    gui.ResetOnSpawn = false
+    gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    pcall(function() gui.Parent = gethui() or CoreGui end)
+    if not gui.Parent then gui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui") end
+    
+    -- Main frame
+    local frame = Instance.new("Frame")
+    frame.Size = UDim2.fromOffset(380, 280)
+    frame.Position = UDim2.fromScale(0.5, 0.5)
+    frame.AnchorPoint = Vector2.new(0.5, 0.5)
+    frame.BackgroundColor3 = BG
+    frame.BorderSizePixel = 0
+    frame.Parent = gui
+    local corner = Instance.new("UICorner")
+    corner.CornerRadius = UDim.new(0, 10)
+    corner.Parent = frame
+    local stroke = Instance.new("UIStroke")
+    stroke.Color = STROKE
+    stroke.Thickness = 1
+    stroke.Parent = frame
+    
+    -- Shadow
+    local shadow = Instance.new("ImageLabel")
+    shadow.Size = UDim2.new(1, 30, 1, 30)
+    shadow.Position = UDim2.fromOffset(-15, -15)
+    shadow.BackgroundTransparency = 1
+    shadow.Image = "rbxassetid://6014261993"
+    shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+    shadow.ImageTransparency = 0.5
+    shadow.ZIndex = -1
+    shadow.Parent = frame
+    
+    -- Title
+    local title = Instance.new("TextLabel")
+    title.Size = UDim2.new(1, -40, 0, 30)
+    title.Position = UDim2.fromOffset(20, 20)
+    title.BackgroundTransparency = 1
+    title.Text = "STEALTH"
+    title.Font = Enum.Font.GothamBold
+    title.TextSize = 22
+    title.TextColor3 = ACCENT
+    title.TextXAlignment = Enum.TextXAlignment.Left
+    title.Parent = frame
+    
+    -- Subtitle
+    local subtitle = Instance.new("TextLabel")
+    subtitle.Size = UDim2.new(1, -40, 0, 16)
+    subtitle.Position = UDim2.fromOffset(20, 48)
+    subtitle.BackgroundTransparency = 1
+    subtitle.Text = "Enter your key to unlock"
+    subtitle.Font = Enum.Font.Gotham
+    subtitle.TextSize = 13
+    subtitle.TextColor3 = MUTED
+    subtitle.TextXAlignment = Enum.TextXAlignment.Left
+    subtitle.Parent = frame
+    
+    -- Key input
+    local inputBox = Instance.new("TextBox")
+    inputBox.Size = UDim2.new(1, -40, 0, 40)
+    inputBox.Position = UDim2.fromOffset(20, 80)
+    inputBox.BackgroundColor3 = SURFACE
+    inputBox.BorderSizePixel = 0
+    inputBox.Font = Enum.Font.Gotham
+    inputBox.TextSize = 14
+    inputBox.TextColor3 = TEXT
+    inputBox.PlaceholderText = "FREE_..."
+    inputBox.PlaceholderColor3 = MUTED
+    inputBox.Text = ""
+    inputBox.ClearTextOnFocus = false
+    inputBox.Parent = frame
+    local inputCorner = Instance.new("UICorner")
+    inputCorner.CornerRadius = UDim.new(0, 6)
+    inputCorner.Parent = inputBox
+    local inputStroke = Instance.new("UIStroke")
+    inputStroke.Color = STROKE
+    inputStroke.Thickness = 1
+    inputStroke.Parent = inputBox
+    local inputPad = Instance.new("UIPadding")
+    inputPad.PaddingLeft = UDim.new(0, 12)
+    inputPad.PaddingRight = UDim.new(0, 12)
+    inputPad.Parent = inputBox
+    
+    -- Status label
+    local statusLabel = Instance.new("TextLabel")
+    statusLabel.Size = UDim2.new(1, -40, 0, 16)
+    statusLabel.Position = UDim2.fromOffset(20, 128)
+    statusLabel.BackgroundTransparency = 1
+    statusLabel.Text = ""
+    statusLabel.Font = Enum.Font.Gotham
+    statusLabel.TextSize = 12
+    statusLabel.TextColor3 = Color3.fromRGB(255, 100, 100)
+    statusLabel.TextXAlignment = Enum.TextXAlignment.Left
+    statusLabel.Parent = frame
+    
+    -- Unlock button
+    local btn = Instance.new("TextButton")
+    btn.Size = UDim2.new(1, -40, 0, 40)
+    btn.Position = UDim2.fromOffset(20, 150)
+    btn.BackgroundColor3 = ACCENT
+    btn.BorderSizePixel = 0
+    btn.Text = "Unlock"
+    btn.Font = Enum.Font.GothamBold
+    btn.TextSize = 15
+    btn.TextColor3 = Color3.fromRGB(0, 0, 0)
+    btn.Parent = frame
+    local btnCorner = Instance.new("UICorner")
+    btnCorner.CornerRadius = UDim.new(0, 6)
+    btnCorner.Parent = btn
+    
+    -- Get key link
+    local link = Instance.new("TextButton")
+    link.Size = UDim2.new(1, -40, 0, 20)
+    link.Position = UDim2.fromOffset(20, 200)
+    link.BackgroundTransparency = 1
+    link.Text = "Get a key at sstealth.vercel.app/keysys"
+    link.Font = Enum.Font.Gotham
+    link.TextSize = 12
+    link.TextColor3 = ACCENT
+    link.Parent = frame
+    
+    link.MouseButton1Click:Connect(function()
+        pcall(function() if setclipboard then setclipboard(STEALTH_API .. "/keysys") end end)
+        statusLabel.Text = "Link copied to clipboard!"
+        statusLabel.TextColor3 = ACCENT
+        TweenService:Create(statusLabel, TweenInfo.new(0.3), { TextTransparency = 0 }):Play()
+        task.delay(2, function() statusLabel.Text = "" end)
     end)
-    if not winOk or not Window then
-        warn("[Stealth] Failed to create Airflow window: " .. tostring(winErr))
-        return
-    end
-
-    local Tab = Window:CreateTab({ Name = "Key" })
-    Tab:CreateSection("Enter your key")
-
-    local keyInput = Tab:CreateInput({ Name = "Key", PlaceholderText = "FREE_...", CurrentValue = "", Flag = "StealthKey" })
-    local statusLabel = Tab:CreateLabel({ Text = "Enter your key and click Unlock", Color = Airflow.Theme.Muted })
-
-    Tab:CreateButton({
-        Name = "Unlock",
-        Style = "Primary",
-        Callback = function()
-            local key = keyInput:Get()
-            if not key or key == "" then statusLabel:Set("Please enter a key") return end
-            statusLabel:Set("Validating...")
-            task.spawn(function()
-                validateKey(key, function(success, err)
-                    if success then
-                        statusLabel:Set("Key valid! Loading hub...")
-                        task.wait(1)
-                        pcall(function() Window:Destroy() end)
-                        pcall(function() loadstring(game:HttpGet(MAIN_SCRIPT_URL))() end)
-                    else
-                        statusLabel:Set(err or "Validation failed")
-                    end
-                end)
-            end)
-        end,
-    })
-
-    Tab:CreateDivider()
-    Tab:CreateParagraph({ Title = "Get a key", Content = "Go to " .. STEALTH_API .. "/keysys to get a free key." })
-    Tab:CreateButton({
-        Name = "Copy key link",
-        Callback = function()
-            pcall(function()
-                if setclipboard then
-                    setclipboard(STEALTH_API .. "/keysys")
-                    Airflow:Notify({ Title = "Stealth", Content = "Link copied!", Duration = 2, Type = "Success" })
+    
+    -- Make draggable
+    local dragging = false
+    local dragStart = nil
+    local startPos = nil
+    frame.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = frame.Position
+        end
+    end)
+    UserInputService.InputChanged:Connect(function(input)
+        if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+            local delta = input.Position - dragStart
+            frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+        end
+    end)
+    UserInputService.InputEnded:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = false
+        end
+    end)
+    
+    -- Unlock action
+    local function doUnlock()
+        local key = inputBox.Text
+        if not key or key == "" then
+            statusLabel.Text = "Please enter a key"
+            statusLabel.TextColor3 = Color3.fromRGB(255, 100, 100)
+            return
+        end
+        statusLabel.Text = "Validating..."
+        statusLabel.TextColor3 = MUTED
+        btn.Text = "..."
+        
+        task.spawn(function()
+            validateKey(key, function(success, err)
+                if success then
+                    statusLabel.Text = "Key valid! Loading..."
+                    statusLabel.TextColor3 = ACCENT
+                    btn.Text = "✓"
+                    task.wait(0.8)
+                    -- Destroy key UI and load Main.lua
+                    gui:Destroy()
+                    pcall(function() loadstring(game:HttpGet(MAIN_SCRIPT_URL))() end)
+                else
+                    statusLabel.Text = err or "Validation failed"
+                    statusLabel.TextColor3 = Color3.fromRGB(255, 100, 100)
+                    btn.Text = "Unlock"
                 end
             end)
-        end,
-    })
+        end)
+    end
+    
+    btn.MouseButton1Click:Connect(doUnlock)
+    inputBox.FocusLost:Connect(function(enter) if enter then doUnlock() end end)
+    
+    -- Toggle with RightShift
+    UserInputService.InputBegan:Connect(function(input)
+        if input.KeyCode == Enum.KeyCode.RightShift then
+            gui.Enabled = not gui.Enabled
+        end
+    end)
+    
+    return gui
 end
 
 ------------------------------------------------------------
--- 7. Auto-load saved key
+-- 6. Main flow
 ------------------------------------------------------------
 local savedKey = loadSavedKey()
 if savedKey then
@@ -179,14 +317,16 @@ if savedKey then
         task.wait(1)
         validateKey(savedKey, function(success, err)
             if success then
+                -- Load Main.lua directly
                 pcall(function() loadstring(game:HttpGet(MAIN_SCRIPT_URL))() end)
             else
-                showKeyPrompt()
+                -- Show key prompt
+                createKeyPrompt()
             end
         end)
     end)
 else
-    showKeyPrompt()
+    createKeyPrompt()
 end
 
-print("[Stealth] Loader initialized with Airflow UI")
+print("[Stealth] Loader initialized with custom UI")
