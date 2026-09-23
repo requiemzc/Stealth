@@ -59,7 +59,6 @@ end
 -- 2. Load WindUI
 ------------------------------------------------------------
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
-end
 if not WindUI then warn("[Stealth] Failed to load WindUI UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
@@ -72,13 +71,13 @@ local WindUI = {
     Options = Options,
     Unloaded = false,
     ShowCustomCursor = true
-})
+}
 function WindUI:Notify(opts)
     WindUI:Notify({
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3
-
+    })
 end
 function Window:Destroy()
     if self.Unloaded then return end
@@ -104,7 +103,7 @@ if not Remotes then
         Name = "Stealth",
         Content = "Remotes folder not found. Join the game first.",
         Duration = 6
-
+    })
     return
 end
 local function waitRemote(name, parent)
@@ -373,7 +372,7 @@ local function notify(title, description, kind)
         Name = title,
         Content = description or "",
         Duration = 5
-
+    })
 end
 ------------------------------------------------------------
 -- 10. Dashboard tab
@@ -387,7 +386,7 @@ local StatusSquat = MainTab:Label({ Text = "Squatting: false:  ", DoesWrap = tru
 ------------------------------------------------------------
 -- 11. Training tab
 ------------------------------------------------------------
-local TrainingBox = TrainingTab:AddLeftGroupbox and TrainingTab:AddLeftGroupbox("Squats") or TrainingTab
+local TrainingBox = (TrainingTab.AddLeftGroupbox and TrainingTab:AddLeftGroupbox("Squats")) or TrainingTab
 -- WindUI doesn't have AddLeftGroupbox; use the tab directly
 registerToggle("AutoTrain", false)
 TrainingTab:Toggle({ Title = "Auto Train Squats", Default = false,
@@ -412,6 +411,7 @@ EggTab:CreateDropdown({
     Default = "Best Egg",
     Callback = function(state) Options.StealMode.Value = state end
 
+})
 registerOption("StealZones", {})
 EggTab:Dropdown({ 
     Text = "Zones",
@@ -420,6 +420,7 @@ EggTab:Dropdown({
     Description = "Only steal eggs from these zones",
     Callback = function(state) Options.StealZones.Value = state end
 
+})
 registerOption("StealRarities", {})
 EggTab:Dropdown({ 
     Text = "Rarities",
@@ -428,6 +429,7 @@ EggTab:Dropdown({
     Description = "Only steal eggs of these rarities",
     Callback = function(state) Options.StealRarities.Value = state end
 
+})
 registerOption("StealDelay", 5)
 local StealDelaySlider = EggTab:Slider({ 
     Text = "Train Between Steals",
@@ -439,6 +441,7 @@ local StealDelaySlider = EggTab:Slider({
     Description = "After each egg is placed, train squats for this long before stealing again",
     Callback = function(state) Options.StealDelay.Value = state end
 
+})
 registerToggle("AutoPlace", false)
 EggTab:Toggle({ Title = "Auto Place Stolen Eggs", Default = false,
     Callback = function(state) Toggles.AutoPlace.Value = state end
@@ -462,6 +465,7 @@ SellingTab:CreateDropdown({
     Default = "Lowest CPS First",
     Callback = function(state) Options.SellMode.Value = state end
 
+})
 registerOption("AutoSellPet", AnimalNames[1] or "None")
 SellingTab:Dropdown({ 
     Text = "Chosen Pet",
@@ -470,6 +474,7 @@ SellingTab:Dropdown({
     Description = "Only used when Mode is Chosen Pet",
     Callback = function(state) Options.AutoSellPet.Value = state end
 
+})
 registerOption("SellMaxCps", "1000")
 SellingTab:Input({ 
     Text = "Max CPS To Sell",
@@ -479,6 +484,7 @@ SellingTab:Input({
     Description = "Lowest CPS First mode never sells pets above this value",
     Callback = function(state) Options.SellMaxCps.Value = state end
 
+})
 SellingTab:Label({ Text = "Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets.:  ", DoesWrap = true })
 ------------------------------------------------------------
 -- 14. Rewards tab
@@ -507,6 +513,7 @@ ShopsTab:CreateDropdown({
     SearchAfter = 6,
     Callback = function(state) Options.BuyCoilList.Value = state end
 
+})
 registerToggle("AutoEquipCoil", false)
 ShopsTab:Toggle({ Title = "Auto Equip Best Coil", Default = false,
     Callback = function(state) Toggles.AutoEquipCoil.Value = state end
@@ -523,6 +530,7 @@ ShopsTab:CreateDropdown({
     SearchAfter = 6,
     Callback = function(state) Options.BuyTrailList.Value = state end
 
+})
 registerToggle("AutoEquipTrail", false)
 ShopsTab:Toggle({ Title = "Auto Equip Best Trail", Default = false,
     Callback = function(state) Toggles.AutoEquipTrail.Value = state end
@@ -545,6 +553,7 @@ UpgradesTab:CreateDropdown({
     Default = "Auto Select",
     Callback = function(state) Options.MutationMode.Value = state end
 
+})
 registerOption("MutationAnimal", AnimalNames[1] or "None")
 UpgradesTab:Dropdown({ 
     Text = "Chosen Animal",
@@ -552,6 +561,7 @@ UpgradesTab:Dropdown({
     Default = AnimalNames[1] or "None",
     Callback = function(state) Options.MutationAnimal.Value = state end
 
+})
 registerToggle("AutoClaimMutation", false)
 UpgradesTab:Toggle({ Title = "Auto Claim Gold Mutation", Default = false,
     Callback = function(state) Toggles.AutoClaimMutation.Value = state end
@@ -576,6 +586,7 @@ SettingsTab:Button({ Title = "Unload Stealth",
 ------------------------------------------------------------
 -- 18. Automation logic (from original, unchanged)
 ------------------------------------------------------------
+})
 local function isSelected(selection, value)
     if type(selection) ~= "table" then
         return true

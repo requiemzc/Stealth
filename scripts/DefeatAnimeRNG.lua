@@ -59,7 +59,6 @@ end
 -- 2. Load WindUI
 ------------------------------------------------------------
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
-end
 if not WindUI then warn("[Stealth] Failed to load WindUI UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
@@ -138,7 +137,7 @@ local Remotes = {
     ChallengeStart     = getRemote("ChallengeStartRequestEvent"),
     ClaimEventQuest    = getRemote("ClaimEventQuestRequestFunction"),
     Prestige           = getRemote("PrestigeEvent")
-})
+}
 local UnitDatabase, WeaponsDatabase, UpgradeConfig, ZoneDatabase, InventoryConfig, XPConfig = nil, nil, nil, nil, nil, nil
 pcall(function() UnitDatabase    = require(Databases:WaitForChild("UnitDatabase", 5)) end)
 pcall(function() WeaponsDatabase = require(Databases:WaitForChild("WeaponsDatabase", 5)) end)
@@ -177,7 +176,7 @@ local function notify(title, desc, time)
         Name = title,
         Content = desc or "",
         Duration = time or 3
-
+    })
 end
 -- State table to mirror Toggles/Options for the automation logic
 local Toggles = {}
@@ -351,7 +350,7 @@ local function collectWantedOnce()
         elseif keep[r] and s.price and s.price <= cap then
             if cash >= s.price then
                 local ok = pcall(function() fireproximityprompt(s.prompt) end)
-                if ok then cash = cash - s.price bought += 1 end
+                if ok then cash = cash - s.price; bought += 1 end
             else
                 waiting += 1
             end
@@ -493,14 +492,16 @@ FarmingTab:Button({ Title = "Collect Once",
         if Remotes.CollectCash then Remotes.CollectCash:FireServer() end
         notify("Collect Cash", "Fired once", 1)
     end
+})
 
 -- Selling
 Options.SellRarities = RarityList
-FarmingTab:Dropdown({ 
+FarmingTab:Dropdown({
     Text = "Sell Rarities",
     Options = RarityList,
     Multi = true,
     Callback = function(state) Options.SellRarities = state end
+})
 
 Toggles.AutoSellUnits = false
 FarmingTab:Toggle({ Title = "Auto Sell Units", Default = false,
@@ -516,6 +517,7 @@ FarmingTab:Button({ Title = "Sell Selected Once",
 ------------------------------------------------------------
 -- 11. Quests tab
 ------------------------------------------------------------
+})
 Options.QuestTiers = QuestTierList
 QuestsTab:Dropdown({ 
     Text = "Quest Tiers",
@@ -523,6 +525,7 @@ QuestsTab:Dropdown({
     Multi = true,
     Callback = function(state) Options.QuestTiers = state end
 
+})
 Toggles.AutoCompleteQuests = false
 QuestsTab:Toggle({ Title = "Auto Complete Quests", Default = false,
     Callback = function(v)
@@ -540,6 +543,7 @@ QuestsTab:Toggle({ Title = "Auto Complete Quests", Default = false,
         else stopLoop("AutoCompleteQuests") end
     end
 
+})
 Options.ChallengeTiers = ChallengeTierList
 QuestsTab:Dropdown({ 
     Text = "Challenge Tiers",
@@ -547,6 +551,7 @@ QuestsTab:Dropdown({
     Multi = true,
     Callback = function(state) Options.ChallengeTiers = state end
 
+})
 Toggles.AutoCompleteChallenges = false
 QuestsTab:Toggle({ Title = "Auto Complete Challenges", Default = false,
     Callback = function(v)
@@ -617,6 +622,7 @@ QuestsTab:Button({ Title = "Claim Daily Now",
         end
     end
 
+})
 QuestsTab:Button({ Title = "Claim Group Now",
     Callback = function()
         if Remotes.ClaimGroup then
@@ -628,6 +634,7 @@ QuestsTab:Button({ Title = "Claim Group Now",
 ------------------------------------------------------------
 -- 12. Inventory tab (Roll & Units)
 ------------------------------------------------------------
+})
 Toggles.AutoRoll = false
 InventoryTab:Toggle({ Title = "Auto Roll (Station)", Default = false,
     Callback = function(v)
@@ -659,6 +666,7 @@ InventoryTab:Dropdown({
     Multi = true,
     Callback = function(state) Options.KeepRarities = state end
 
+})
 Options.MaxBuyPrice = "100000"
 InventoryTab:Input({ 
     Text = "Max Buy Price",
@@ -666,6 +674,7 @@ InventoryTab:Input({
     Placeholder = "e.g. 50000, 1M, 2.5M",
     Callback = function(state) Options.MaxBuyPrice = state end
 
+})
 InventoryTab:Label({ Text = "Wanted but short on cash waits. Mythic+ is never auto-destroyed.:  ", DoesWrap = true })
 InventoryTab:Button({ Title = "Roll Once",
     Callback = function()
@@ -679,6 +688,7 @@ InventoryTab:Button({ Title = "Roll Once",
         end
     end
 
+})
 InventoryTab:Button({ Title = "Collect Wanted Once",
     Callback = function()
         local bought, waiting, precious, total = collectWantedOnce()
@@ -688,6 +698,7 @@ InventoryTab:Button({ Title = "Collect Wanted Once",
         else notify("Collect", total > 0 and "Nothing wanted on stand" or "Stand empty", 2) end
     end
 
+})
 InventoryTab:Button({ Title = "Go To Station",
     Callback = function()
         local rb = getRollButton()
@@ -697,6 +708,7 @@ InventoryTab:Button({ Title = "Go To Station",
     end
 
 -- Unit Management
+})
 Toggles.AutoEquipBestUnits = false
 InventoryTab:Toggle({ Title = "Auto Equip Best Units", Default = false,
     Callback = function(v)
@@ -716,6 +728,7 @@ InventoryTab:Button({ Title = "Pick Up Placed Units",
         end
     end
 
+})
 InventoryTab:Button({ Title = "Fuse Duplicates",
     Callback = function()
         if not Remotes.Fuse then return end
@@ -732,6 +745,7 @@ InventoryTab:Button({ Title = "Fuse Duplicates",
         notify("Fuse", fused > 0 and ("Fused " .. fused) or "No duplicates found")
     end
 
+})
 Options.EvolveTargets = EvolveList
 InventoryTab:Dropdown({ 
     Text = "Evolve Targets",
@@ -739,6 +753,7 @@ InventoryTab:Dropdown({
     Multi = true,
     Callback = function(state) Options.EvolveTargets = state end
 
+})
 InventoryTab:Button({ Title = "Start Evolve",
     Callback = function()
         if not Remotes.Evolve then return end
@@ -755,6 +770,7 @@ InventoryTab:Button({ Title = "Start Evolve",
         end
     end
 
+})
 InventoryTab:Button({ Title = "Claim Evolve",
     Callback = function()
         if Remotes.ClaimEvolve then
@@ -763,6 +779,7 @@ InventoryTab:Button({ Title = "Claim Evolve",
         end
     end
 
+})
 InventoryTab:Label({ Text = "Fuse needs 2+ copies of one unit. Evolve needs copies plus materials.:  ", DoesWrap = true })
 -- Stat Upgrades
 Toggles.AutoUpgradeAll = false
@@ -799,6 +816,7 @@ ShopTab:Dropdown({
     Multi = true,
     Callback = function(state) Options.BuyWeapons = state end
 
+})
 Toggles.AutoBuyWeapons = false
 ShopTab:Toggle({ Title = "Auto Buy Weapons", Default = false,
     Callback = function(v)
@@ -845,6 +863,7 @@ ShopTab:Button({ Title = "Equip Best Now",
         notify("Equip", "No owned weapon equipped", 2)
     end
 
+})
 Options.PotionTypes = PotionList
 ShopTab:Dropdown({ 
     Text = "Potions",
@@ -852,6 +871,7 @@ ShopTab:Dropdown({
     Multi = true,
     Callback = function(state) Options.PotionTypes = state end
 
+})
 Toggles.AutoUsePotions = false
 ShopTab:Toggle({ Title = "Auto Use Potions", Default = false,
     Callback = function(v)
@@ -907,6 +927,7 @@ ShopTab:Button({ Title = "Use All Abilities",
 ------------------------------------------------------------
 -- 14. Zones tab
 ------------------------------------------------------------
+})
 Toggles.AutoPurchaseZones = false
 ZonesTab:Toggle({ Title = "Auto Purchase Zones", Default = false,
     Callback = function(v)
@@ -944,6 +965,7 @@ ZonesTab:Dropdown({
     Multi = false,
     Callback = function(state) Options.TravelZones = state end
 
+})
 ZonesTab:Button({ Title = "Travel Now",
     Callback = function()
         if not Remotes.ZoneTravel then return end
@@ -956,6 +978,7 @@ ZonesTab:Button({ Title = "Travel Now",
 ------------------------------------------------------------
 -- 15. Rebirth tab
 ------------------------------------------------------------
+})
 local gateLabel = RebirthTab:Label({ Text = "...:  ", DoesWrap = true })
 LiveLabels.PrestigeGate = gateLabel
 RebirthTab:Button({ Title = "Prestige Now",
@@ -969,6 +992,7 @@ RebirthTab:Button({ Title = "Prestige Now",
         end
     end
 
+})
 Toggles.AutoPrestige = false
 RebirthTab:Toggle({ Title = "Auto Prestige", Default = false,
     Callback = function(v)
@@ -1014,6 +1038,7 @@ SettingsTab:Button({ Title = "Unload Stealth",
     end
 
 -- Kick off Anti-AFK if it defaulted to on
+})
 task.defer(function()
     task.wait(0.5)
     if Toggles.AntiAFK then setAntiAFK(Toggles.AntiAFK) end

@@ -94,7 +94,6 @@ end
 -- 2. Load WindUI
 ------------------------------------------------------------
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
-end
 if not WindUI then warn("[Stealth] Failed to load WindUI UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
@@ -108,13 +107,13 @@ local WindUI = {
     Options = Options,
     Unloaded = false,
     ShowCustomCursor = true
-})
+}
 function WindUI:Notify(opts)
     WindUI:Notify({
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3
-
+    })
 end
 function Window:Destroy()
     if self.Unloaded then return end
@@ -409,8 +408,9 @@ MainTab:Button({ Title = "Copy Discord",
             Name = "Discord",
             Content = "Invite copied to clipboard!",
             Duration = 3
-
+        })
     end
+})
 
 MainTab:AddLeftGroupbox("Status")
 MainTab:AddLeftGroupbox("Farming & Inventory tabs hold all automation.")
@@ -446,6 +446,7 @@ CollectingTab:Slider({
     Rounding = 1,
     Suffix = "s",
     Callback = function(v) Options.CollectInterval.Value = v end
+})
 
 CollectingTab:AddLeftGroupbox("Vacuum needs VacuumOwned. Gems within 35 studs.")
 ------------------------------------------------------------
@@ -463,6 +464,7 @@ SellingTab:CreateSlider({
     Rounding = 0,
     Callback = function(v) Options.SellThreshold.Value = v end
 
+})
 registerToggle("SellOnlyIfFull", false)
 SellingTab:Toggle({ Title = "Only Sell If Full", Default = false,
     Callback = function(v) Toggles.SellOnlyIfFull.Value = v end
@@ -500,6 +502,7 @@ ToolsTab:Slider({
     Suffix = "s",
     Callback = function(v) Options.ToolInterval.Value = v end
 
+})
 ToolsTab:AddLeftGroupbox("Requirements")
 ToolsTab:AddLeftGroupbox("PitchforkOwned, TntOwned, DroneOwned, VacuumOwned required per tool.")
 ToolsTab:AddLeftGroupbox("TNT cooldown & vacuum heat managed by server.")
@@ -527,6 +530,7 @@ NeedleTab:Slider({
     Suffix = "s",
     Callback = function(v) Options.NeedleInterval.Value = v end
 
+})
 NeedleTab:AddLeftGroupbox("How Needle Works")
 NeedleTab:AddLeftGroupbox("Needle spawns under hay. Removing hay reveals it.")
 NeedleTab:AddLeftGroupbox("Pile center from Config.PILE_CENTER used for automation.")
@@ -545,6 +549,7 @@ ShopTab:CreateDropdown({
         Options.BuyToolsList.Value = v or {}
     end
 
+})
 registerToggle("AutoBuyTools", false)
 ShopTab:Toggle({ Title = "Auto Buy Selected Tools", Default = false,
     Callback = function(v) Toggles.AutoBuyTools.Value = v end
@@ -559,6 +564,7 @@ ShopTab:Slider({
     Suffix = "s",
     Callback = function(v) Options.BuyInterval.Value = v end
 
+})
 ShopTab:AddLeftGroupbox("Ownership")
 ShopTab:AddLeftGroupbox("Attributes: PitchforkOwned, TntOwned, DroneOwned, VacuumOwned, InfiniteBagOwned")
 ShopTab:Button({ Title = "Check Ownership",
@@ -576,6 +582,7 @@ ShopTab:Button({ Title = "Check Ownership",
 ------------------------------------------------------------
 -- 15. UPGRADES TAB
 ------------------------------------------------------------
+})
 UpgradesTab:AddLeftGroupbox("Permanent (Gems)")
 registerToggle("UpgBagSize", false)
 UpgradesTab:Toggle({ Title = "Auto Upgrade Bag Size", Desc = "ExtraHoldAmount -> Gems 25,50,75,100,150,450",
@@ -604,6 +611,7 @@ UpgradesTab:Slider({
     Suffix = "s",
     Callback = function(v) Options.PermInterval.Value = v end
 
+})
 UpgradesTab:AddLeftGroupbox("Hand Upgrades (Cash)")
 registerToggle("UpgHandSpeed", false)
 UpgradesTab:Toggle({ Title = "Auto Hand Speed", Desc = "Speed track 0.55->0.3", Default = false, Callback = function(v) Toggles.UpgHandSpeed.Value = v end })
@@ -659,6 +667,7 @@ SettingsTab:Button({ Title = "Unload Stealth",
         Window:Destroy()
     end
 
+})
 SettingsTab:AddLeftGroupbox("System")
 registerToggle("AntiAFK", true)
 SettingsTab:Toggle({ Title = "Anti-AFK (jump every 5m)", Desc = "Enabled by default. Uses jump to keep alive.",
@@ -1022,4 +1031,5 @@ WindUI:Notify({
     Description = gameName .. " loaded. Farming=collect/sell/tools | Inventory=shop/upgrades",
     Time = 5
 
+})
 print("[Stealth] Loaded "..gameName.." via WindUI")

@@ -59,7 +59,6 @@ end
 -- 2. Load WindUI
 ------------------------------------------------------------
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
-end
 if not WindUI then warn("[Stealth] Failed to load WindUI UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
@@ -255,9 +254,11 @@ local AreaLabel = MainTab:Label({ Text = "Plot: ...:  ", DoesWrap = true })
 local SessionLabel = MainTab:Label({ Text = "Session: 0s:  ", DoesWrap = true })
 MainTab:Button({ Title = "Teleport: Base",
     Callback = function() FireRemote("TeleportToBase") end
+})
 
 MainTab:Button({ Title = "Teleport: Market",
     Callback = function() FireRemote("TeleportToMarket") end
+})
 
 local CashLabel = MainTab:Label({ Text = "Cash: ...:  ", DoesWrap = true })
 local AltarLabel = MainTab:Label({ Text = "Altars: ...:  ", DoesWrap = true })
@@ -283,11 +284,12 @@ FarmingTab:Toggle({ Title = "Auto Trash Stars", Default = false,
  })
 OPTIONS = OPTIONS or {}
 Options.TrashRarities = {"Common"}
-FarmingTab:Dropdown({ 
+FarmingTab:Dropdown({
     Text = "Rarities To Trash",
     Options = RARITIES,
     Multi = true,
     Callback = function(state) Options.TrashRarities = state end
+})
 
 ------------------------------------------------------------
 -- 10. Roll & Buy tab
@@ -297,10 +299,11 @@ RollBuyTab:Toggle({ Title = "Auto Roll Stars", Default = false,
     Callback = function(v) Toggles.AutoRoll = v end
  })
 Options.RollStopRarity = "Legendary"
-RollBuyTab:Dropdown({ 
+RollBuyTab:Dropdown({
     Text = "Stop On Rarity",
     Options = RARITIES,
     Callback = function(state) Options.RollStopRarity = state end
+})
 
 Toggles.RollStopEnabled = false
 RollBuyTab:Toggle({ Title = "Stop Rolling On Target+", Default = false,
@@ -311,11 +314,12 @@ RollBuyTab:Toggle({ Title = "Auto Buy Stars", Default = false,
     Callback = function(v) Toggles.AutoBuyStars = v end
  })
 Options.BuyStarRarities = RARITIES
-RollBuyTab:Dropdown({ 
+RollBuyTab:Dropdown({
     Text = "Rarities To Buy",
     Options = RARITIES,
     Multi = true,
     Callback = function(state) Options.BuyStarRarities = state end
+})
 
 ------------------------------------------------------------
 -- 11. Upgrades tab
@@ -336,39 +340,43 @@ ShopsTab:Toggle({ Title = "Auto Buy Mutation Items", Default = false,
     Callback = function(v) Toggles.AutoMut = v end
  })
 Options.MutItems = MUTATION_IDS
-ShopsTab:Dropdown({ 
+ShopsTab:Dropdown({
     Text = "Mutation Items",
     Options = MUTATION_IDS,
     Multi = true,
     Callback = function(state) Options.MutItems = state end
+})
 
 Toggles.AutoEgg = false
 ShopsTab:Toggle({ Title = "Auto Buy Pet Eggs", Default = false,
     Callback = function(v) Toggles.AutoEgg = v end
  })
 Options.EggItems = EGG_NAMES
-ShopsTab:Dropdown({ 
+ShopsTab:Dropdown({
     Text = "Pet Eggs",
     Options = EGG_NAMES,
     Multi = true,
     Callback = function(state) Options.EggItems = state end
+})
 
 Toggles.AutoGear = false
 ShopsTab:Toggle({ Title = "Auto Buy Gear", Default = false,
     Callback = function(v) Toggles.AutoGear = v end
  })
 Options.GearItems = GEAR_IDS
-ShopsTab:Dropdown({ 
+ShopsTab:Dropdown({
     Text = "Gear",
     Options = GEAR_IDS,
     Multi = true,
     Callback = function(state) Options.GearItems = state end
+})
 
 Options.GearQty = "1"
 ShopsTab:CreateDropdown({
     Name = "Quantity",
     Options = {"1", "10"},
     Callback = function(state) Options.GearQty = state end
+})
 
 ------------------------------------------------------------
 -- 13. Settings tab
@@ -383,6 +391,7 @@ SettingsTab:Button({ Title = "Unload Stealth",
         Unloaded = true
         pcall(function() Window:Destroy() end)
     end
+})
 
 ------------------------------------------------------------
 -- 14. Automation loops (from original, unchanged)
@@ -526,5 +535,6 @@ WindUI:Notify({
     Name = "Stealth",
     Content = gameName .. " loaded! Press RightShift",
     Duration = 4
+})
 
 print("[Stealth] Loaded " .. gameName .. " via WindUI")

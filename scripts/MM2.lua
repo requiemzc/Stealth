@@ -56,8 +56,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.2697, 1.2582, 4.2087),
     TextureID = "rbxassetid://15409041564",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "Scope",
@@ -70,8 +70,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.1871, 0.1871, 1.4135),
     TextureID = "",
     Transparency = 0.35
-})
-}),
+}
+},
     {
     Class = "Beam",
     Name = "CustomBeam",
@@ -82,9 +82,9 @@ local MESHES_OLD =
     Transparency = NumberSequence.new({ NumberSequenceKeypoint.new(0, 0, 0), NumberSequenceKeypoint.new(1, 0, 0)}),
     Width0 = 1,
     Width1 = 1
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -95,8 +95,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2023"
-})
-}),
+}
+},
     ["Harvester"] = {
         Complete = false,
         Display = {
@@ -113,8 +113,8 @@ local MESHES_OLD =
     Size = Vector3.new(2.2448, 0.6549, 2.88),
     TextureID = "http://www.roblox.com/asset/?id=7775245551",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Beam",
     Name = "CustomBeam",
@@ -125,16 +125,16 @@ local MESHES_OLD =
     Transparency = NumberSequence.new({ NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}),
     Width0 = 0.2,
     Width1 = 0.2
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Angles = {
     X = 0.6109,
     Y = 3.1416,
     Z = 1.5708
-}),
+},
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800847534",
     ItemID = 7800847534,
@@ -142,8 +142,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2021"
-})
-}),
+}
+},
     ["Icepiercer"] = {
         Complete = false,
         Display = {
@@ -160,9 +160,9 @@ local MESHES_OLD =
     Size = Vector3.new(2.2448, 0.6549, 2.88),
     TextureID = "http://www.roblox.com/asset/?id=7775245551",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -172,8 +172,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2022"
-})
-}),
+}
+},
     ["Amerilaser"] = {
         Complete = true,
         Display = {
@@ -189,8 +189,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.6, 1, 1.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -200,23 +200,23 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "https://www.roblox.com/asset/?id=445884341",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = -2.1817,
     Y = 0,
     Z = 0
-}),
+},
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=446050753",
     ItemID = 446050753,
     ItemName = "Amerilaser",
     ItemType = "Gun",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["BaubleChroma"] = {
         Complete = true,
         Display = {
@@ -232,8 +232,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4842, 1.3751, 2.0852),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -243,8 +243,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://137012201908941",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -253,9 +253,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://129391884956433",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -266,8 +266,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-})
-}),
+}
+},
     ["Bauble"] = {
         Complete = true,
         Display = {
@@ -283,8 +283,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4842, 1.3751, 2.0852),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -294,9 +294,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://137012201908941",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -306,8 +306,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-})
-}),
+}
+},
     ["Blaster"] = {
         Complete = true,
         Display = {
@@ -323,8 +323,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.8, 2, 3.1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -334,23 +334,23 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "https://www.roblox.com/asset/?id=386269992",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 4.0143,
     Y = 0,
     Z = 0
-}),
+},
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=386277381",
     ItemID = 386277381,
     ItemName = "Blaster",
     ItemType = "Gun",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["BlizzardChroma"] = {
         Complete = true,
         Display = {
@@ -366,8 +366,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4211, 1.4348, 2.0708),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -376,8 +376,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://110354859513948",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -387,9 +387,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://97280881789656",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -400,8 +400,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["Blossom_G"] = {
         Complete = true,
         Display = {
@@ -417,8 +417,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.6061, 0.2658, 1.1624),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -428,9 +428,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12322809917",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339377105",
@@ -439,8 +439,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["AuroraGun"] = {
         Complete = false,
         Display = {
@@ -457,9 +457,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4591, 1.3549, 2.3463),
     TextureID = "rbxassetid://107873598804292",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -469,8 +469,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-})
-}),
+}
+},
     ["Constellation"] = {
         Complete = false,
         Display = {
@@ -487,9 +487,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.5372, 1.583, 2.3671),
     TextureID = "rbxassetid://79010754957272",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -499,8 +499,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-})
-}),
+}
+},
     ["ConstellationChroma"] = {
         Complete = true,
         Display = {
@@ -516,8 +516,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.537, 1.583, 2.367),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -527,8 +527,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://123603327635244",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -537,9 +537,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://97672028439457",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -550,8 +550,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-})
-}),
+}
+},
     ["Darkbringer"] = {
         Complete = true,
         Display = {
@@ -567,8 +567,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.45, 1.26, 1.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -578,24 +578,24 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4728494788",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 3.7525,
     Y = 0,
     Z = 0
-}),
+},
     Image = "http://www.roblox.com/asset/?id=4751387674",
     ItemID = 4749071819,
     ItemName = "Darkbringer",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["ChromaDarkbringer"] = {
         Complete = true,
         Display = {
@@ -611,8 +611,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4266, 1.37, 1.65),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -622,8 +622,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4728494788",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -632,16 +632,16 @@ local MESHES_OLD =
     Face = Enum.NormalId.Back,
     Texture = "rbxassetid://5278766434",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 3.7525,
     Y = 0,
     Z = 0
-}),
+},
     Chroma = true,
     Image = "http://www.roblox.com/asset/?id=4751507011",
     ItemID = 4751501078,
@@ -649,8 +649,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Darkshot"] = {
         Complete = false,
         Display = {
@@ -666,9 +666,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 0.8, 2),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -678,8 +678,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
-})
-}),
+}
+},
     ["ElderwoodGun"] = {
         Complete = false,
         Display = {
@@ -696,16 +696,16 @@ local MESHES_OLD =
     Size = Vector3.new(1.49, 1.132, 0.3587),
     TextureID = "http://www.roblox.com/asset/?id=4210038158",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Angles = {
     X = 2.7925,
     Y = 1.5708,
     Z = 0.7854
-}),
+},
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4468571736",
     ItemID = 4211142894,
@@ -713,8 +713,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
-})
-}),
+}
+},
     ["TreeGun2023Chroma"] = {
         Complete = true,
         Display = {
@@ -730,8 +730,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.833, 1.384, 2.519),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -741,8 +741,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Decal",
@@ -751,8 +751,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://15694616343",
     Transparency = 0.8
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Decal",
@@ -761,8 +761,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://15694615445",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -775,8 +775,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.7273, 0.8329, 1.2679),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -789,8 +789,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.5964, 0.8754, 1.3052),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -803,8 +803,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.6152, 0.8472, 0.6705),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -817,8 +817,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.6461, 0.7764, 1.1034),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -831,9 +831,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.052, 0.0987, 0.0677),
     TextureID = "",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 6,
         Meta = {
     Chroma = true,
@@ -845,8 +845,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
-})
-}),
+}
+},
     ["TreeGun2023"] = {
         Complete = true,
         Display = {
@@ -863,8 +863,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.8334, 1.3837, 2.5195),
     TextureID = "rbxassetid://15408849730",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "Lights",
@@ -877,8 +877,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.7273, 0.8329, 1.2679),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "Lights",
@@ -891,8 +891,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.6461, 0.7764, 1.1034),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "Lights",
@@ -905,8 +905,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.052, 0.0987, 0.0677),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "Lights",
@@ -919,8 +919,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.5964, 0.8754, 1.3052),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "Lights",
@@ -933,9 +933,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.6152, 0.8472, 0.6705),
     TextureID = "",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 5,
         Meta = {
     Event = "Christmas",
@@ -946,8 +946,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
-})
-}),
+}
+},
     ["Flora"] = {
         Complete = false,
         Display = {
@@ -964,9 +964,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.5891, 1.5671, 2.2852),
     TextureID = "rbxassetid://116621225933096",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "rbxassetid://139276091458016",
@@ -975,8 +975,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["FlowerwoodGun"] = {
         Complete = false,
         Display = {
@@ -993,9 +993,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.6652, 1.54, 2.5945),
     TextureID = "rbxassetid://16895448237",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16963894455",
@@ -1004,8 +1004,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["GingerLuger"] = {
         Complete = true,
         Display = {
@@ -1021,8 +1021,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1032,16 +1032,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2702668339",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 4.1888,
     Y = 0,
     Z = 0
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2674983099",
     ItemID = 2674983099,
@@ -1049,8 +1049,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2018"
-})
-}),
+}
+},
     ["Gingermint_G"] = {
         Complete = true,
         Display = {
@@ -1066,8 +1066,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.3979, 1.028, 2.3777),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1077,9 +1077,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11866444253",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -1089,8 +1089,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
-})
-}),
+}
+},
     ["GreenLuger"] = {
         Complete = true,
         Display = {
@@ -1106,8 +1106,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1117,16 +1117,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(0, 1, 0)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 4.1888,
     Y = 0,
     Z = 0
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332044679",
     ItemID = 332044679,
@@ -1134,8 +1134,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
-})
-}),
+}
+},
     ["Hallowgun"] = {
         Complete = false,
         Display = {
@@ -1152,16 +1152,16 @@ local MESHES_OLD =
     Size = Vector3.new(2.04, 1.0799, 0.3719),
     TextureID = "http://www.roblox.com/asset/?id=5841868338",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Angles = {
     X = 2.7925,
     Y = 1.5708,
     Z = 0.7854
-}),
+},
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5877089721",
     ItemID = 5878721461,
@@ -1169,8 +1169,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
-})
-}),
+}
+},
     ["Icebeam"] = {
         Complete = false,
         Display = {
@@ -1187,9 +1187,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.328, 2.199, 1.09),
     TextureID = "rbxassetid://8231066536",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -1199,8 +1199,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
-})
-}),
+}
+},
     ["Iceblaster"] = {
         Complete = false,
         Display = {
@@ -1217,9 +1217,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4432, 1.93, 1.0238),
     TextureID = "rbxassetid://6120563948",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -1229,8 +1229,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
-})
-}),
+}
+},
     ["Jinglegun"] = {
         Complete = true,
         Display = {
@@ -1246,8 +1246,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.751, 1.799, 1.175),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1257,9 +1257,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6125843755",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -1269,8 +1269,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
-})
-}),
+}
+},
     ["LaserChroma"] = {
         Complete = true,
         Display = {
@@ -1286,8 +1286,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1297,8 +1297,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -1307,9 +1307,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://3171220436",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -1318,8 +1318,8 @@ local MESHES_OLD =
     ItemName = "Laser",
     ItemType = "Gun",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Laser"] = {
         Complete = true,
         Display = {
@@ -1335,8 +1335,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1346,9 +1346,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset?id=161254231",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3187422496",
@@ -1356,8 +1356,8 @@ local MESHES_OLD =
     ItemName = "Laser",
     ItemType = "Gun",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["ChromaLightbringer"] = {
         Complete = true,
         Display = {
@@ -1373,8 +1373,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4266, 1.37, 1.65),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1384,8 +1384,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5278764604",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -1394,16 +1394,16 @@ local MESHES_OLD =
     Face = Enum.NormalId.Back,
     Texture = "rbxassetid://5278766434",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 3.7525,
     Y = 0,
     Z = 0
-}),
+},
     Chroma = true,
     Image = "http://www.roblox.com/asset/?id=4751507078",
     ItemID = 4751500761,
@@ -1411,8 +1411,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Lightbringer"] = {
         Complete = true,
         Display = {
@@ -1428,8 +1428,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.398, 1.62, 1.964),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1439,24 +1439,24 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=4728487789",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 3.7525,
     Y = 0,
     Z = 0
-}),
+},
     Image = "http://www.roblox.com/asset/?id=4751387063",
     ItemID = 4749070432,
     ItemName = "Lightbringer",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["LugerChroma"] = {
         Complete = true,
         Display = {
@@ -1472,8 +1472,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1483,8 +1483,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -1493,24 +1493,24 @@ local MESHES_OLD =
     Face = Enum.NormalId.Back,
     Texture = "rbxassetid://3171206966",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 4.1888,
     Y = 0,
     Z = 0
-}),
+},
     Chroma = true,
     Image = "rbxassetid://3187399258",
     ItemID = 3187395551,
     ItemName = "Luger",
     ItemType = "Gun",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Luger"] = {
         Complete = true,
         Display = {
@@ -1526,8 +1526,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1537,23 +1537,23 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 4.1888,
     Y = 0,
     Z = 0
-}),
+},
     Image = "rbxassetid://3187399148",
     ItemID = 198042673,
     ItemName = "Luger",
     ItemType = "Gun",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Lugercane"] = {
         Complete = true,
         Display = {
@@ -1569,8 +1569,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1580,16 +1580,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4835358188",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 4.1888,
     Y = 0,
     Z = 0
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4535482609",
     ItemID = 4535482609,
@@ -1597,8 +1597,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
-})
-}),
+}
+},
     ["Makeshift"] = {
         Complete = false,
         Display = {
@@ -1615,9 +1615,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.5883, 1.25, 2.7314),
     TextureID = "http://www.roblox.com/asset/?id=11274360089",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -1627,8 +1627,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
-})
-}),
+}
+},
     ["Minty"] = {
         Complete = false,
         Display = {
@@ -1645,16 +1645,16 @@ local MESHES_OLD =
     Size = Vector3.new(0.3335, 1.3504, 1.88),
     TextureID = "rbxassetid://4528424475",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Angles = {
     X = 0.5236,
     Y = 3.1416,
     Z = 0
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4528291487",
     ItemID = 4535408229,
@@ -1662,8 +1662,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
-})
-}),
+}
+},
     ["Ocean_G"] = {
         Complete = true,
         Display = {
@@ -1679,8 +1679,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.03, 0.23, 0.0539),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1690,9 +1690,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://13928590054",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://13933165014",
@@ -1701,8 +1701,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Pearl_G"] = {
         Complete = false,
         Display = {
@@ -1719,9 +1719,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.5685, 1.3816, 2.1548),
     TextureID = "rbxassetid://18280805635",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322646152",
@@ -1730,8 +1730,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Plasmabeam"] = {
         Complete = true,
         Display = {
@@ -1747,8 +1747,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.3656, 1.1718, 2.1575),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1758,9 +1758,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://10015208201",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=10014717343",
@@ -1769,8 +1769,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Rainbow_G"] = {
         Complete = false,
         Display = {
@@ -1787,9 +1787,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4284, 1.2199, 2.5946),
     TextureID = "rbxassetid://12921231088",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12966354606",
@@ -1798,8 +1798,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Raygun"] = {
         Complete = false,
         Display = {
@@ -1816,8 +1816,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.6902, 1.643, 2.3554),
     TextureID = "rbxassetid://127881437685243",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Beam",
     Name = "CustomBeam",
@@ -1828,9 +1828,9 @@ local MESHES_OLD =
     Transparency = NumberSequence.new({ NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}),
     Width0 = 0.2,
     Width1 = 0.2
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -1840,8 +1840,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["RaygunChroma"] = {
         Complete = true,
         Display = {
@@ -1857,8 +1857,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.69, 1.643, 2.355),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1868,8 +1868,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://127881437685243",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -1878,8 +1878,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://73231950532216",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Beam",
     Name = "CustomBeam",
@@ -1890,9 +1890,9 @@ local MESHES_OLD =
     Transparency = NumberSequence.new({ NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}),
     Width0 = 0.2,
     Width1 = 0.2
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -1903,8 +1903,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["RedLuger"] = {
         Complete = true,
         Display = {
@@ -1920,8 +1920,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1931,16 +1931,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(1, 0.2, 0.3)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 4.1888,
     Y = 0,
     Z = 0
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332044583",
     ItemID = 332044583,
@@ -1948,8 +1948,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
-})
-}),
+}
+},
     ["Shark"] = {
         Complete = true,
         Display = {
@@ -1965,8 +1965,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.58, 1.34, 2.48),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -1976,23 +1976,23 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1106696354",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = -2.0944,
     Y = 0,
     Z = 0
-}),
+},
     Image = "rbxassetid://3187421705",
     ItemID = 203858533,
     ItemName = "Shark",
     ItemType = "Gun",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["SharkChroma"] = {
         Complete = true,
         Display = {
@@ -2008,8 +2008,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.8, 1.02, 2.07),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2019,8 +2019,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3171214838",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -2029,24 +2029,24 @@ local MESHES_OLD =
     Face = Enum.NormalId.Back,
     Texture = "rbxassetid://3171214969",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = -2.0944,
     Y = 0,
     Z = 0
-}),
+},
     Chroma = true,
     Image = "rbxassetid://3187421856",
     ItemID = 3187395738,
     ItemName = "Shark",
     ItemType = "Gun",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["SnowcannonChroma"] = {
         Complete = true,
         Display = {
@@ -2062,8 +2062,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.559, 1.355, 2.5),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -2072,8 +2072,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://84894022221722",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2083,8 +2083,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://122392330922281",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Beam",
     Name = "CustomBeam",
@@ -2095,9 +2095,9 @@ local MESHES_OLD =
     Transparency = NumberSequence.new({ NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}),
     Width0 = 0.5,
     Width1 = 0.5
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -2108,8 +2108,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["Snowcannon"] = {
         Complete = true,
         Display = {
@@ -2126,8 +2126,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.5586, 1.3549, 2.4996),
     TextureID = "rbxassetid://122392330922281",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Beam",
     Name = "CustomBeam",
@@ -2138,8 +2138,8 @@ local MESHES_OLD =
     Transparency = NumberSequence.new({ NumberSequenceKeypoint.new(0, 0.5, 0), NumberSequenceKeypoint.new(1, 0.5, 0)}),
     Width0 = 0.5,
     Width1 = 0.5
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "Glass",
@@ -2152,9 +2152,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4614, 0.4614, 1.4033),
     TextureID = "",
     Transparency = 0.8
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -2164,8 +2164,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["WraithGun"] = {
         Complete = false,
         Display = {
@@ -2182,9 +2182,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4552, 1.3727, 2.2193),
     TextureID = "rbxassetid://80102752403085",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -2194,8 +2194,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-})
-}),
+}
+},
     ["Spectre2022"] = {
         Complete = true,
         Display = {
@@ -2211,8 +2211,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2222,9 +2222,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11165715120",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -2234,8 +2234,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
-})
-}),
+}
+},
     ["Sugar"] = {
         Complete = true,
         Display = {
@@ -2251,8 +2251,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1, 1.9),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2262,16 +2262,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=101086650",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 4.1888,
     Y = 0,
     Z = 3.1416
-}),
+},
     Event = "Christmas",
     Image = "rbxassetid://3215356000",
     ItemID = 332848695,
@@ -2279,8 +2279,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
-})
-}),
+}
+},
     ["SunsetGunChroma"] = {
         Complete = true,
         Display = {
@@ -2296,8 +2296,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4842, 1.3751, 2.0852),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2307,8 +2307,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://71731808219690",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -2317,8 +2317,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://87234234470516",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Glow",
@@ -2327,9 +2327,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://122480499480858",
     Transparency = 1
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -2341,8 +2341,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["SunsetGun"] = {
         Complete = true,
         Display = {
@@ -2358,8 +2358,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.459, 1.355, 2.346),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2369,8 +2369,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://71731808219690",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -2379,9 +2379,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://122480499480858",
     Transparency = 1
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -2392,8 +2392,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["SwirlyGun"] = {
         Complete = false,
         Display = {
@@ -2410,9 +2410,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.469, 2.539, 1.1515),
     TextureID = "rbxassetid://8293539377",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -2422,8 +2422,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
-})
-}),
+}
+},
     ["SwirlyGunChroma"] = {
         Complete = true,
         Display = {
@@ -2439,8 +2439,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(1.0497, 3.2087, 1.6),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2450,8 +2450,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://10044501316",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -2460,9 +2460,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://10044507532",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -2473,8 +2473,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
-})
-}),
+}
+},
     ["TravelerGunChroma"] = {
         Complete = true,
         Display = {
@@ -2490,8 +2490,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.572, 0.5287, 2.52),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2501,8 +2501,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15090814672",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -2511,9 +2511,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Top,
     Texture = "rbxassetid://138224985315804",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -2524,8 +2524,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
-})
-}),
+}
+},
     ["TravelerGun"] = {
         Complete = false,
         Display = {
@@ -2542,9 +2542,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4816, 1.2632, 2.4551),
     TextureID = "rbxassetid://15090814672",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -2554,8 +2554,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
-})
-}),
+}
+},
     ["TreatChroma"] = {
         Complete = true,
         Display = {
@@ -2571,8 +2571,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5535, 1.5721, 2.3838),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -2581,8 +2581,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://71260815789113",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2592,9 +2592,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://86649236464456",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -2606,8 +2606,8 @@ local MESHES_OLD =
     Rarity = "Godly",
     Season = 1,
     Year = "2026"
-})
-}),
+}
+},
     ["VampireGunChroma"] = {
         Complete = true,
         Display = {
@@ -2623,8 +2623,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.422, 1.292, 2.412),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2634,8 +2634,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://104946799389637",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -2644,9 +2644,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://126923923696531",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -2657,8 +2657,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-})
-}),
+}
+},
     ["VampireGun"] = {
         Complete = false,
         Display = {
@@ -2675,9 +2675,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4225, 1.2927, 2.4127),
     TextureID = "rbxassetid://104946799389637",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -2687,8 +2687,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-})
-}),
+}
+},
     ["Watergun"] = {
         Complete = true,
         Display = {
@@ -2704,8 +2704,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.448, 1.365, 2),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2715,9 +2715,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18281003313",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18351388416",
@@ -2726,8 +2726,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["WatergunChroma"] = {
         Complete = true,
         Display = {
@@ -2743,8 +2743,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.448, 1.365, 2),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2754,8 +2754,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18281003313",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -2764,9 +2764,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://18335602807",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -2776,8 +2776,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["XenoGun"] = {
         Complete = false,
         Display = {
@@ -2794,9 +2794,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.2816, 1.3183, 2.6675),
     TextureID = "rbxassetid://103568875118220",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -2806,8 +2806,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["Aquarium_G_2025"] = {
         Complete = false,
         Display = {
@@ -2824,9 +2824,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://87938563271071",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Summer",
@@ -2836,8 +2836,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2025"
-})
-}),
+}
+},
     ["Arctic_G_2022"] = {
         Complete = true,
         Display = {
@@ -2853,8 +2853,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2864,9 +2864,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11810152518",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -2876,8 +2876,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2022"
-})
-}),
+}
+},
     ["Aurora_G_2021"] = {
         Complete = true,
         Display = {
@@ -2893,8 +2893,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2904,9 +2904,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275033455",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -2916,8 +2916,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2021"
-})
-}),
+}
+},
     ["Cavern_G_2019"] = {
         Complete = true,
         Display = {
@@ -2933,8 +2933,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2944,9 +2944,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://9308790497",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -2956,8 +2956,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2019"
-})
-}),
+}
+},
     ["Chromatic_G_2023"] = {
         Complete = true,
         Display = {
@@ -2973,8 +2973,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -2984,9 +2984,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12937562728",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965339774",
@@ -2995,8 +2995,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Season = 1
-})
-}),
+}
+},
     ["Cursed_G_2024"] = {
         Complete = true,
         Display = {
@@ -3012,8 +3012,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3023,9 +3023,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://134978959658778",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -3035,8 +3035,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2024"
-})
-}),
+}
+},
     ["Energized_G_2025"] = {
         Complete = false,
         Display = {
@@ -3053,9 +3053,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://96975375477860",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -3065,8 +3065,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2025"
-})
-}),
+}
+},
     ["Frostfade_G_2023"] = {
         Complete = true,
         Display = {
@@ -3082,8 +3082,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3093,9 +3093,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15383614259",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -3105,8 +3105,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2023"
-})
-}),
+}
+},
     ["Frozen_G_2025"] = {
         Complete = false,
         Display = {
@@ -3123,9 +3123,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://87079980851460",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -3135,8 +3135,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2025"
-})
-}),
+}
+},
     ["GhostG2018"] = {
         Complete = true,
         Display = {
@@ -3152,8 +3152,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3163,9 +3163,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513648114",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -3175,8 +3175,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2018"
-})
-}),
+}
+},
     ["Ginger_G_2018"] = {
         Complete = true,
         Display = {
@@ -3192,8 +3192,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3203,9 +3203,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2726367848",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -3215,8 +3215,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2018"
-})
-}),
+}
+},
     ["Icedriller_G_2020"] = {
         Complete = true,
         Display = {
@@ -3232,8 +3232,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3243,9 +3243,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6121865669",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -3255,8 +3255,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2020"
-})
-}),
+}
+},
     ["Latte_G_2023"] = {
         Complete = true,
         Display = {
@@ -3272,8 +3272,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3283,9 +3283,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15320206276",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15413116029",
@@ -3294,8 +3294,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Season = 1
-})
-}),
+}
+},
     ["Constellation_G_2024"] = {
         Complete = true,
         Display = {
@@ -3311,8 +3311,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3322,9 +3322,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://140562006976774",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -3334,8 +3334,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2024"
-})
-}),
+}
+},
     ["Overseer"] = {
         Complete = true,
         Display = {
@@ -3351,8 +3351,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3362,9 +3362,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=162262248",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=175668680",
@@ -3372,8 +3372,8 @@ local MESHES_OLD =
     ItemName = "Overseer",
     ItemType = "Gun",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Palms_G_2024"] = {
         Complete = true,
         Display = {
@@ -3389,8 +3389,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3400,9 +3400,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=18321971106",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322192817",
@@ -3411,8 +3411,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Season = 1
-})
-}),
+}
+},
     ["Predator"] = {
         Complete = true,
         Display = {
@@ -3428,8 +3428,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3439,9 +3439,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=202773960",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203810176",
@@ -3449,8 +3449,8 @@ local MESHES_OLD =
     ItemName = "Predator",
     ItemType = "Gun",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Ripper_G_2020"] = {
         Complete = true,
         Display = {
@@ -3466,8 +3466,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3477,9 +3477,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866373797",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -3489,8 +3489,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2020"
-})
-}),
+}
+},
     ["Bleed"] = {
         Complete = true,
         Display = {
@@ -3506,8 +3506,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3517,9 +3517,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6046467922",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -3529,8 +3529,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2015"
-})
-}),
+}
+},
     ["Sparkle"] = {
         Complete = true,
         Display = {
@@ -3546,8 +3546,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3557,9 +3557,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=162976205",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203869110",
@@ -3567,8 +3567,8 @@ local MESHES_OLD =
     ItemName = "Sparkle",
     ItemType = "Gun",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Spectral_G_2021"] = {
         Complete = true,
         Display = {
@@ -3584,8 +3584,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3595,9 +3595,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7757802804",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -3607,8 +3607,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2021"
-})
-}),
+}
+},
     ["Splash_G"] = {
         Complete = true,
         Display = {
@@ -3624,8 +3624,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3635,9 +3635,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4659576260",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659626370",
@@ -3646,8 +3646,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Season = 1
-})
-}),
+}
+},
     ["Traveler_G_2023"] = {
         Complete = true,
         Display = {
@@ -3663,8 +3663,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3674,9 +3674,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15070590716",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -3686,8 +3686,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2023"
-})
-}),
+}
+},
     ["TreeGun"] = {
         Complete = true,
         Display = {
@@ -3703,8 +3703,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3714,9 +3714,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=5359694233",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -3726,8 +3726,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2015"
-})
-}),
+}
+},
     ["Universe"] = {
         Complete = true,
         Display = {
@@ -3743,8 +3743,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3754,9 +3754,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://238542777",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546660",
@@ -3764,8 +3764,8 @@ local MESHES_OLD =
     ItemName = "Universe",
     ItemType = "Gun",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Vampire_G_2022"] = {
         Complete = true,
         Display = {
@@ -3781,8 +3781,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3792,9 +3792,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11228808312",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -3804,8 +3804,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2022"
-})
-}),
+}
+},
     ["Viper"] = {
         Complete = true,
         Display = {
@@ -3821,8 +3821,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3832,9 +3832,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=159991281",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=160299600",
@@ -3842,8 +3842,8 @@ local MESHES_OLD =
     ItemName = "Viper",
     ItemType = "Gun",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Ace"] = {
         Complete = true,
         Display = {
@@ -3859,8 +3859,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3870,9 +3870,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://178208194",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546577",
@@ -3880,8 +3880,8 @@ local MESHES_OLD =
     ItemName = "Ace",
     ItemType = "Gun",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Aurora_G_2019"] = {
         Complete = true,
         Display = {
@@ -3897,8 +3897,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3908,9 +3908,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=4534843833",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -3920,8 +3920,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2019"
-})
-}),
+}
+},
     ["Bacon"] = {
         Complete = true,
         Display = {
@@ -3937,8 +3937,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -3948,9 +3948,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://178240361",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546467",
@@ -3958,8 +3958,8 @@ local MESHES_OLD =
     ItemName = "Bacon",
     ItemType = "Gun",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Butterflies_G_2025"] = {
         Complete = false,
         Display = {
@@ -3976,9 +3976,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "http://www.roblox.com/asset/?id=124763121225655",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=135662872427976",
@@ -3987,8 +3987,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Candleflame_G_2024"] = {
         Complete = true,
         Display = {
@@ -4004,8 +4004,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4015,9 +4015,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://115359559909377",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -4027,8 +4027,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2024"
-})
-}),
+}
+},
     ["CandySwirl_G_2019"] = {
         Complete = true,
         Display = {
@@ -4044,8 +4044,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4055,9 +4055,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534836730",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -4067,8 +4067,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2019"
-})
-}),
+}
+},
     ["Cane_G_2018"] = {
         Complete = true,
         Display = {
@@ -4084,8 +4084,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4095,9 +4095,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2726741218",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -4107,8 +4107,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2018"
-})
-}),
+}
+},
     ["CaneGun"] = {
         Complete = true,
         Display = {
@@ -4124,8 +4124,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4135,9 +4135,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=5359589686",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -4147,8 +4147,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2015"
-})
-}),
+}
+},
     ["Dark_G_2023"] = {
         Complete = true,
         Display = {
@@ -4164,8 +4164,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4175,9 +4175,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15082826256",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -4187,8 +4187,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2023"
-})
-}),
+}
+},
     ["Floral_G_2024"] = {
         Complete = true,
         Display = {
@@ -4204,8 +4204,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4215,9 +4215,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18323742549",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18323751219",
@@ -4226,8 +4226,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Frostflame_G_2024"] = {
         Complete = true,
         Display = {
@@ -4243,8 +4243,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4254,9 +4254,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://76059118984667",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -4266,8 +4266,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2024"
-})
-}),
+}
+},
     ["Galactic"] = {
         Complete = true,
         Display = {
@@ -4283,8 +4283,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4294,9 +4294,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=173912996",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=173913533",
@@ -4304,8 +4304,8 @@ local MESHES_OLD =
     ItemName = "Galactic",
     ItemType = "Gun",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Ghastly_G_2023"] = {
         Complete = true,
         Display = {
@@ -4321,8 +4321,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4332,9 +4332,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15045716708",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -4344,8 +4344,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2023"
-})
-}),
+}
+},
     ["Ghostfire_G_2022"] = {
         Complete = true,
         Display = {
@@ -4361,8 +4361,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4372,9 +4372,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11254634864",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -4384,8 +4384,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2022"
-})
-}),
+}
+},
     ["Ghosts_G_2020"] = {
         Complete = true,
         Display = {
@@ -4401,8 +4401,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4412,9 +4412,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866372208",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -4424,8 +4424,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2020"
-})
-}),
+}
+},
     ["GingerGun"] = {
         Complete = true,
         Display = {
@@ -4441,8 +4441,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4452,9 +4452,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=5353677573",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -4464,8 +4464,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2015"
-})
-}),
+}
+},
     ["Gingerbread_G_2022"] = {
         Complete = true,
         Display = {
@@ -4481,8 +4481,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4492,9 +4492,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11810420546",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -4504,8 +4504,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2022"
-})
-}),
+}
+},
     ["Gingercookie_G_2025"] = {
         Complete = false,
         Display = {
@@ -4522,9 +4522,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://112196863510306",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -4534,8 +4534,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["Hacker"] = {
         Complete = true,
         Display = {
@@ -4551,8 +4551,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4562,9 +4562,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://198413638",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203819271",
@@ -4572,8 +4572,8 @@ local MESHES_OLD =
     ItemName = "Hacker",
     ItemType = "Gun",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Heartbreak_G_2026"] = {
         Complete = false,
         Display = {
@@ -4590,9 +4590,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://102957418708034",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Valentines",
@@ -4602,8 +4602,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2026"
-})
-}),
+}
+},
     ["Hologram_G_2025"] = {
         Complete = false,
         Display = {
@@ -4620,9 +4620,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://130121703557220",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -4632,8 +4632,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["IceCamo_G_2021"] = {
         Complete = true,
         Display = {
@@ -4649,8 +4649,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4660,9 +4660,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275032575",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -4672,8 +4672,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2021"
-})
-}),
+}
+},
     ["Icicles_G_2018"] = {
         Complete = true,
         Display = {
@@ -4689,8 +4689,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4700,9 +4700,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2726430730",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -4712,8 +4712,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2018"
-})
-}),
+}
+},
     ["Imbued"] = {
         Complete = true,
         Display = {
@@ -4729,8 +4729,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4740,9 +4740,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=156263287",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=162668312",
@@ -4750,8 +4750,8 @@ local MESHES_OLD =
     ItemName = "Imbued",
     ItemType = "Gun",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Magma_G_2021"] = {
         Complete = true,
         Display = {
@@ -4767,8 +4767,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4778,9 +4778,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7758322982",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -4790,8 +4790,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2021"
-})
-}),
+}
+},
     ["Molten"] = {
         Complete = true,
         Display = {
@@ -4807,8 +4807,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4818,9 +4818,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=160570263",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203869308",
@@ -4828,8 +4828,8 @@ local MESHES_OLD =
     ItemName = "Molten",
     ItemType = "Gun",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Monster"] = {
         Complete = true,
         Display = {
@@ -4845,8 +4845,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4856,9 +4856,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210409812",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -4868,8 +4868,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2019"
-})
-}),
+}
+},
     ["Mummy"] = {
         Complete = true,
         Display = {
@@ -4885,8 +4885,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4896,9 +4896,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://315154445",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -4908,8 +4908,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2015"
-})
-}),
+}
+},
     ["Neon_G_2025"] = {
         Complete = false,
         Display = {
@@ -4926,9 +4926,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://73839340981831",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Summer",
@@ -4938,8 +4938,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["Neon_G_2023"] = {
         Complete = true,
         Display = {
@@ -4955,8 +4955,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -4966,9 +4966,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15382654157",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -4978,8 +4978,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2023"
-})
-}),
+}
+},
     ["Nightfire"] = {
         Complete = true,
         Display = {
@@ -4995,8 +4995,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5006,9 +5006,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4659577665",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659626966",
@@ -5017,8 +5017,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Nuke_G_2023"] = {
         Complete = true,
         Display = {
@@ -5034,8 +5034,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5045,9 +5045,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12936824008",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965335931",
@@ -5056,8 +5056,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["PopArt_G_2025"] = {
         Complete = false,
         Display = {
@@ -5074,9 +5074,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://91632676208966",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Summer",
@@ -5086,8 +5086,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["RainbowGun"] = {
         Complete = true,
         Display = {
@@ -5103,8 +5103,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5114,9 +5114,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=6932359567",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183640145",
@@ -5125,8 +5125,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Ritual_G_2024"] = {
         Complete = true,
         Display = {
@@ -5142,8 +5142,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5153,9 +5153,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://122499606241450",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -5165,8 +5165,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2024"
-})
-}),
+}
+},
     ["SilentNight_G_2020"] = {
         Complete = true,
         Display = {
@@ -5182,8 +5182,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5193,9 +5193,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6121861331",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -5205,8 +5205,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2020"
-})
-}),
+}
+},
     ["SnakebiteG"] = {
         Complete = true,
         Display = {
@@ -5222,8 +5222,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5233,9 +5233,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://9309364596",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -5245,8 +5245,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2019"
-})
-}),
+}
+},
     ["Snowflake_G_2023"] = {
         Complete = true,
         Display = {
@@ -5262,8 +5262,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5273,9 +5273,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15351058932",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -5285,8 +5285,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2023"
-})
-}),
+}
+},
     ["Spearmint_G_2025"] = {
         Complete = false,
         Display = {
@@ -5303,9 +5303,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://125101257679057",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -5315,8 +5315,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["Spitfire"] = {
         Complete = true,
         Display = {
@@ -5332,8 +5332,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5343,9 +5343,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://159883934",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=159971321",
@@ -5353,8 +5353,8 @@ local MESHES_OLD =
     ItemName = "Spitfire",
     ItemType = "Gun",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Starry_G_2021"] = {
         Complete = true,
         Display = {
@@ -5370,8 +5370,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5381,9 +5381,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8303507091",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -5393,8 +5393,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2021"
-})
-}),
+}
+},
     ["Sunset_G_2023"] = {
         Complete = true,
         Display = {
@@ -5410,8 +5410,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 0.8755),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5421,16 +5421,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://13896017136",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Vector3Value",
     Name = "OriginalPosition",
     Props = {
     Value = Vector3.new(0, 0, 0)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://13944156090",
@@ -5439,8 +5439,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Sunny_G_2025"] = {
         Complete = false,
         Display = {
@@ -5457,9 +5457,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://105937622090347",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=93906279038399",
@@ -5468,8 +5468,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["ToxicG"] = {
         Complete = true,
         Display = {
@@ -5485,8 +5485,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5496,9 +5496,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://9309270792",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -5508,8 +5508,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2018"
-})
-}),
+}
+},
     ["Tree_G_2022"] = {
         Complete = true,
         Display = {
@@ -5525,8 +5525,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5536,9 +5536,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11810684576",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -5548,8 +5548,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2022"
-})
-}),
+}
+},
     ["VampireG2018"] = {
         Complete = true,
         Display = {
@@ -5565,8 +5565,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.3, 1.8, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5576,9 +5576,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513708622",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -5588,8 +5588,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2018"
-})
-}),
+}
+},
     ["Watcher_G_2021"] = {
         Complete = true,
         Display = {
@@ -5605,8 +5605,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5616,9 +5616,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7757907850",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -5628,8 +5628,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2021"
-})
-}),
+}
+},
     ["Wraith_G_2022"] = {
         Complete = true,
         Display = {
@@ -5645,8 +5645,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5656,9 +5656,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11226858696",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -5668,8 +5668,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2022"
-})
-}),
+}
+},
     ["Xeno_G_2025"] = {
         Complete = false,
         Display = {
@@ -5686,9 +5686,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://88277879999522",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -5698,8 +5698,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["iRevolver"] = {
         Complete = true,
         Display = {
@@ -5715,8 +5715,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5726,9 +5726,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://160219396",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203809168",
@@ -5736,8 +5736,8 @@ local MESHES_OLD =
     ItemName = "iRevolver",
     ItemType = "Gun",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["AduriteGun"] = {
         Complete = true,
         Display = {
@@ -5753,8 +5753,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 2.02, 1.33),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5764,9 +5764,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://162812733",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=175668921",
@@ -5774,8 +5774,8 @@ local MESHES_OLD =
     ItemName = "Adurite",
     ItemType = "Gun",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Biogun"] = {
         Complete = true,
         Display = {
@@ -5791,8 +5791,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5802,9 +5802,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4856108482",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659627458",
@@ -5813,8 +5813,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["BluesteelGun"] = {
         Complete = true,
         Display = {
@@ -5830,8 +5830,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5841,9 +5841,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=161420087",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=162668203",
@@ -5851,8 +5851,8 @@ local MESHES_OLD =
     ItemName = "Bluesteel",
     ItemType = "Gun",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Bones2019"] = {
         Complete = true,
         Display = {
@@ -5868,8 +5868,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5879,9 +5879,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210405561",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -5891,8 +5891,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2019"
-})
-}),
+}
+},
     ["Brains_G_2022"] = {
         Complete = true,
         Display = {
@@ -5908,8 +5908,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5919,9 +5919,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11254925304",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -5931,8 +5931,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Camo"] = {
         Complete = true,
         Display = {
@@ -5948,8 +5948,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5959,9 +5959,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=160024546",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=160024789",
@@ -5969,8 +5969,8 @@ local MESHES_OLD =
     ItemName = "Camo",
     ItemType = "Gun",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Canes_G_2023"] = {
         Complete = true,
         Display = {
@@ -5986,8 +5986,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -5997,9 +5997,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15383886872",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -6009,8 +6009,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["Carrot_G_2024"] = {
         Complete = true,
         Display = {
@@ -6026,8 +6026,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6037,9 +6037,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://16856497935",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16960082652",
@@ -6048,8 +6048,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Caution"] = {
         Complete = true,
         Display = {
@@ -6065,8 +6065,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6076,9 +6076,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://48737841",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546422",
@@ -6086,8 +6086,8 @@ local MESHES_OLD =
     ItemName = "Caution",
     ItemType = "Gun",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Cheddar"] = {
         Complete = true,
         Display = {
@@ -6103,8 +6103,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6114,9 +6114,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://160274812",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203808317",
@@ -6124,8 +6124,8 @@ local MESHES_OLD =
     ItemName = "Cheddar",
     ItemType = "Gun",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Clown_G_2024"] = {
         Complete = true,
         Display = {
@@ -6141,8 +6141,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6152,9 +6152,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://83300450889998",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -6164,8 +6164,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["Cookie_G_2021"] = {
         Complete = true,
         Display = {
@@ -6181,8 +6181,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6192,9 +6192,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275032831",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -6204,8 +6204,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Eyes_G_2025"] = {
         Complete = false,
         Display = {
@@ -6222,9 +6222,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://81682248459741",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -6234,8 +6234,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["FallCamo_G_2021"] = {
         Complete = true,
         Display = {
@@ -6251,8 +6251,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6262,9 +6262,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7758737021",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -6274,8 +6274,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Floatie_G_2024"] = {
         Complete = true,
         Display = {
@@ -6291,8 +6291,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6302,9 +6302,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18321972013",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322194067",
@@ -6313,8 +6313,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Forest_G_2024"] = {
         Complete = true,
         Display = {
@@ -6330,8 +6330,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6341,9 +6341,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://114741314080418",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -6353,8 +6353,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["Frozen_G_2019"] = {
         Complete = true,
         Display = {
@@ -6370,8 +6370,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6381,9 +6381,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4528661973",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -6393,8 +6393,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2019"
-})
-}),
+}
+},
     ["Gingerbread_G_2025"] = {
         Complete = false,
         Display = {
@@ -6411,9 +6411,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://77398327971959",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -6423,8 +6423,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Gingerbread_G_2021"] = {
         Complete = true,
         Display = {
@@ -6440,8 +6440,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6451,9 +6451,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275032201",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -6463,8 +6463,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Gingerbread_G_2019"] = {
         Complete = true,
         Display = {
@@ -6480,8 +6480,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6491,9 +6491,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11110689222",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -6503,8 +6503,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2019"
-})
-}),
+}
+},
     ["Gingerbread_G_2020"] = {
         Complete = true,
         Display = {
@@ -6520,8 +6520,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6531,9 +6531,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6121859173",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -6543,8 +6543,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2020"
-})
-}),
+}
+},
     ["Gothic_G_2021"] = {
         Complete = true,
         Display = {
@@ -6560,8 +6560,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6571,9 +6571,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7758572472",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -6583,8 +6583,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Hazard_G_2022"] = {
         Complete = true,
         Display = {
@@ -6600,8 +6600,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6611,9 +6611,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11227146152",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -6623,8 +6623,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Holly_G_2018"] = {
         Complete = true,
         Display = {
@@ -6640,8 +6640,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6651,9 +6651,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2726425310",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -6663,8 +6663,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["Lava_G_2025"] = {
         Complete = false,
         Display = {
@@ -6681,9 +6681,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://125638583962587",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Summer",
@@ -6693,8 +6693,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Leaves_G_2024"] = {
         Complete = true,
         Display = {
@@ -6710,8 +6710,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6721,9 +6721,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://105437948088593",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -6733,8 +6733,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["Lights_G_2019"] = {
         Complete = true,
         Display = {
@@ -6750,8 +6750,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6761,9 +6761,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534840659",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -6773,8 +6773,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2019"
-})
-}),
+}
+},
     ["LoveGun"] = {
         Complete = true,
         Display = {
@@ -6790,8 +6790,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.3, 1.8, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6801,9 +6801,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=159686237",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203867650",
@@ -6811,8 +6811,8 @@ local MESHES_OLD =
     ItemName = "Love",
     ItemType = "Gun",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Marina"] = {
         Complete = true,
         Display = {
@@ -6828,8 +6828,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6839,9 +6839,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://159899596",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203808190",
@@ -6849,8 +6849,8 @@ local MESHES_OLD =
     ItemName = "Marina",
     ItemType = "Gun",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Meadow_G_2025"] = {
         Complete = false,
         Display = {
@@ -6867,9 +6867,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://107182071164823",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=107321881182350",
@@ -6878,8 +6878,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Melon_G_2023"] = {
         Complete = true,
         Display = {
@@ -6895,8 +6895,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 0.8755),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6906,16 +6906,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://13904908523",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Vector3Value",
     Name = "OriginalPosition",
     Props = {
     Value = Vector3.new(0, 0, 0)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://13944154336",
@@ -6924,8 +6924,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Mistletoe_G_2022"] = {
         Complete = true,
         Display = {
@@ -6941,8 +6941,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6952,9 +6952,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11831277409",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -6964,8 +6964,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Moonlight_G_2022"] = {
         Complete = true,
         Display = {
@@ -6981,8 +6981,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -6992,9 +6992,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11254380241",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -7004,8 +7004,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Mummy_G_2020"] = {
         Complete = true,
         Display = {
@@ -7021,8 +7021,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7032,9 +7032,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866372623",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -7044,8 +7044,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2020"
-})
-}),
+}
+},
     ["MummyG2018"] = {
         Complete = true,
         Display = {
@@ -7061,8 +7061,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.3, 1.8, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7072,9 +7072,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513708668",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -7084,8 +7084,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["Night"] = {
         Complete = true,
         Display = {
@@ -7101,8 +7101,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7112,9 +7112,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=159882296",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=159971385",
@@ -7122,8 +7122,8 @@ local MESHES_OLD =
     ItemName = "Night",
     ItemType = "Gun",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Nutcracker"] = {
         Complete = true,
         Display = {
@@ -7139,8 +7139,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7150,9 +7150,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=5538506180",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -7162,8 +7162,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2015"
-})
-}),
+}
+},
     ["Painted_G_2023"] = {
         Complete = true,
         Display = {
@@ -7179,8 +7179,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7190,9 +7190,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12937817240",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965344675",
@@ -7201,8 +7201,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Paws_G_2026"] = {
         Complete = false,
         Display = {
@@ -7219,9 +7219,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://108504597564281",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Valentines",
@@ -7231,8 +7231,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2026"
-})
-}),
+}
+},
     ["Pirate"] = {
         Complete = true,
         Display = {
@@ -7248,8 +7248,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7259,9 +7259,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=6932361814",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     ChinaItemID = 6683072559,
@@ -7271,8 +7271,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Popsicle_G_2024"] = {
         Complete = true,
         Display = {
@@ -7288,8 +7288,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7299,9 +7299,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18321970792",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322191060",
@@ -7310,8 +7310,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Portal_G_2020"] = {
         Complete = true,
         Display = {
@@ -7327,8 +7327,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7338,9 +7338,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866372960",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -7350,8 +7350,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2020"
-})
-}),
+}
+},
     ["PotionG2018"] = {
         Complete = true,
         Display = {
@@ -7367,8 +7367,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7378,9 +7378,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513648149",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -7390,8 +7390,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["PumpkinPatch_G_2025"] = {
         Complete = false,
         Display = {
@@ -7408,9 +7408,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://134888889060353",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -7420,8 +7420,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Sketch"] = {
         Complete = true,
         Display = {
@@ -7437,8 +7437,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7448,9 +7448,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://161976144",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203808108",
@@ -7458,8 +7458,8 @@ local MESHES_OLD =
     ItemName = "Sketch",
     ItemType = "Gun",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Snowflake_G_2018"] = {
         Complete = true,
         Display = {
@@ -7475,8 +7475,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7486,9 +7486,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2726449035",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -7498,8 +7498,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["Snowflake_G_2022"] = {
         Complete = true,
         Display = {
@@ -7515,8 +7515,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7526,9 +7526,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11830940122",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -7538,8 +7538,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["SnowmanGun"] = {
         Complete = true,
         Display = {
@@ -7555,8 +7555,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7566,9 +7566,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=5538515388",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -7578,8 +7578,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2015"
-})
-}),
+}
+},
     ["Snowman_G_2021"] = {
         Complete = true,
         Display = {
@@ -7595,8 +7595,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7606,9 +7606,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275033129",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -7618,8 +7618,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Snowman_G_2023"] = {
         Complete = true,
         Display = {
@@ -7635,8 +7635,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7646,9 +7646,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15382659346",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -7658,8 +7658,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["Cola"] = {
         Complete = true,
         Display = {
@@ -7675,8 +7675,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7686,9 +7686,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://320398770",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546400",
@@ -7696,8 +7696,8 @@ local MESHES_OLD =
     ItemName = "Soda",
     ItemType = "Gun",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Soda_G_2025"] = {
         Complete = false,
         Display = {
@@ -7714,9 +7714,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://123130532636657",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Summer",
@@ -7726,8 +7726,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Stars_G_2023"] = {
         Complete = true,
         Display = {
@@ -7743,8 +7743,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7754,9 +7754,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15383997060",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -7766,8 +7766,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["Steel_G_2023"] = {
         Complete = true,
         Display = {
@@ -7783,8 +7783,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7794,9 +7794,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15044112684",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -7806,8 +7806,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["Stockings_G_2022"] = {
         Complete = true,
         Display = {
@@ -7823,8 +7823,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7834,9 +7834,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11831384378",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -7846,8 +7846,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Sweater_G_2018"] = {
         Complete = true,
         Display = {
@@ -7863,8 +7863,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7874,9 +7874,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2726377361",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -7886,8 +7886,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["Sweater_G_2025"] = {
         Complete = false,
         Display = {
@@ -7904,9 +7904,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://83785504897240",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -7916,8 +7916,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Treats_G_2025"] = {
         Complete = false,
         Display = {
@@ -7934,9 +7934,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://121735248301175",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -7946,8 +7946,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Wooden"] = {
         Complete = true,
         Display = {
@@ -7963,8 +7963,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -7974,9 +7974,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://183053133",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546356",
@@ -7984,8 +7984,8 @@ local MESHES_OLD =
     ItemName = "Wooden",
     ItemType = "Gun",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Ghosts_G_2021"] = {
         Complete = true,
         Display = {
@@ -8001,8 +8001,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8012,9 +8012,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7758397251",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8024,8 +8024,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Gift_G_2020"] = {
         Complete = true,
         Display = {
@@ -8041,8 +8041,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8052,9 +8052,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6121866988",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -8064,8 +8064,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2020"
-})
-}),
+}
+},
     ["WrappedGun"] = {
         Complete = true,
         Display = {
@@ -8081,8 +8081,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8092,9 +8092,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=5366254539",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -8104,8 +8104,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2015"
-})
-}),
+}
+},
     ["Wrapped_G_2024"] = {
         Complete = true,
         Display = {
@@ -8121,8 +8121,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8132,9 +8132,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://137311445183389",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -8144,8 +8144,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["ZombieG2018"] = {
         Complete = true,
         Display = {
@@ -8161,8 +8161,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.3, 1.8, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8172,9 +8172,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513708627",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8184,8 +8184,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["ZombifiedG"] = {
         Complete = true,
         Display = {
@@ -8201,8 +8201,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8212,9 +8212,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210410138",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8224,8 +8224,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2019"
-})
-}),
+}
+},
     ["Aliens_G_2021"] = {
         Complete = true,
         Display = {
@@ -8241,8 +8241,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8252,9 +8252,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7758881558",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8264,8 +8264,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Apoc_G_2022"] = {
         Complete = true,
         Display = {
@@ -8281,8 +8281,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8292,9 +8292,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11228269165",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8304,8 +8304,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Asteroid"] = {
         Complete = true,
         Display = {
@@ -8321,8 +8321,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8332,9 +8332,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=476142876",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=476599365",
@@ -8342,8 +8342,8 @@ local MESHES_OLD =
     ItemName = "Asteroid",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["WaterBalloons_G_2024"] = {
         Complete = true,
         Display = {
@@ -8359,8 +8359,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8370,9 +8370,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18323742698",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18323751962",
@@ -8381,8 +8381,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Bats_G_2024"] = {
         Complete = true,
         Display = {
@@ -8398,8 +8398,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8409,9 +8409,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://127442391741629",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8421,8 +8421,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["BatsG"] = {
         Complete = true,
         Display = {
@@ -8438,8 +8438,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8449,9 +8449,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513648112",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8461,8 +8461,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["BigKill"] = {
         Complete = true,
         Display = {
@@ -8478,8 +8478,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8489,9 +8489,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=159963965",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=162669041",
@@ -8499,8 +8499,8 @@ local MESHES_OLD =
     ItemName = "Big Kill",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Bit"] = {
         Complete = true,
         Display = {
@@ -8516,8 +8516,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8527,9 +8527,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://178259396",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238549030",
@@ -8537,8 +8537,8 @@ local MESHES_OLD =
     ItemName = "Bit",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Candied_G_2022"] = {
         Complete = true,
         Display = {
@@ -8554,8 +8554,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8565,9 +8565,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11809753556",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -8577,8 +8577,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["CandyCorn_G_2022"] = {
         Complete = true,
         Display = {
@@ -8594,8 +8594,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8605,9 +8605,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11226919330",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8617,8 +8617,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["CandyCorn_G_2024"] = {
         Complete = true,
         Display = {
@@ -8634,8 +8634,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8645,9 +8645,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://110799536201694",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8657,8 +8657,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["CandyCorn_G_2020"] = {
         Complete = true,
         Display = {
@@ -8674,8 +8674,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8685,9 +8685,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866371945",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8697,8 +8697,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["CandyCorn_G_2025"] = {
         Complete = false,
         Display = {
@@ -8715,9 +8715,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://88054952272755",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -8727,8 +8727,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Cane_G_2021"] = {
         Complete = true,
         Display = {
@@ -8744,8 +8744,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8755,9 +8755,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275031710",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -8767,8 +8767,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Carved_G_2020"] = {
         Complete = true,
         Display = {
@@ -8784,8 +8784,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8795,9 +8795,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866372800",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8807,8 +8807,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Cat_G_2021"] = {
         Complete = true,
         Display = {
@@ -8824,8 +8824,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8835,9 +8835,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7759004533",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -8847,8 +8847,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Clown_G"] = {
         Complete = true,
         Display = {
@@ -8864,8 +8864,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8875,9 +8875,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4663058089",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659627976",
@@ -8886,8 +8886,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Clownfish_G_2024"] = {
         Complete = true,
         Display = {
@@ -8903,8 +8903,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8914,9 +8914,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18321972771",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322197952",
@@ -8925,8 +8925,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Coal_G_2021"] = {
         Complete = true,
         Display = {
@@ -8942,8 +8942,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8953,9 +8953,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275033614",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -8965,8 +8965,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Coal_G_2022"] = {
         Complete = true,
         Display = {
@@ -8982,8 +8982,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -8993,9 +8993,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11809114380",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -9005,8 +9005,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Coal_G_2018"] = {
         Complete = true,
         Display = {
@@ -9022,8 +9022,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9033,9 +9033,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2726417082",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -9045,8 +9045,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["Cold"] = {
         Complete = true,
         Display = {
@@ -9062,8 +9062,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9073,9 +9073,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=161309663",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=161309889",
@@ -9083,8 +9083,8 @@ local MESHES_OLD =
     ItemName = "Cold",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Cracks_G_2021"] = {
         Complete = true,
         Display = {
@@ -9100,8 +9100,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9111,9 +9111,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7758056748",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -9123,8 +9123,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Darkness_G_2022"] = {
         Complete = true,
         Display = {
@@ -9140,8 +9140,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9151,9 +9151,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11242038756",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -9163,8 +9163,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["DefaultGun"] = {
         Complete = true,
         Display = {
@@ -9180,8 +9180,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9191,9 +9191,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=91723031",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=197518111",
@@ -9202,8 +9202,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Elf_G_2023"] = {
         Complete = true,
         Display = {
@@ -9219,8 +9219,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9230,9 +9230,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15349698419",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -9242,8 +9242,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Santa_G_2018"] = {
         Complete = true,
         Display = {
@@ -9259,8 +9259,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9270,9 +9270,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2726466457",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -9282,8 +9282,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["ElfGun"] = {
         Complete = true,
         Display = {
@@ -9299,8 +9299,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9310,9 +9310,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=5364282819",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -9322,8 +9322,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2015"
-})
-}),
+}
+},
     ["Engraved"] = {
         Complete = true,
         Display = {
@@ -9339,8 +9339,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9350,9 +9350,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://159670413",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203807690",
@@ -9360,8 +9360,8 @@ local MESHES_OLD =
     ItemName = "Engraved",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Fall_G_2025"] = {
         Complete = false,
         Display = {
@@ -9378,9 +9378,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://72560612536240",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -9390,8 +9390,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Fallout"] = {
         Complete = true,
         Display = {
@@ -9407,8 +9407,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9418,9 +9418,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=172596465",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=175668592",
@@ -9428,8 +9428,8 @@ local MESHES_OLD =
     ItemName = "Fallout",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Fragile_G_2023"] = {
         Complete = true,
         Display = {
@@ -9445,8 +9445,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9456,9 +9456,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12942152157",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965349193",
@@ -9467,8 +9467,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Frosted_G_2019"] = {
         Complete = true,
         Display = {
@@ -9484,8 +9484,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9495,9 +9495,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4528661069",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -9507,8 +9507,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Frozen_G_2023"] = {
         Complete = true,
         Display = {
@@ -9524,8 +9524,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9535,9 +9535,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15344638282",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -9547,8 +9547,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Giftbag_G_2020"] = {
         Complete = true,
         Display = {
@@ -9564,8 +9564,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9575,9 +9575,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6121864116",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -9587,8 +9587,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Gifts_G_2019"] = {
         Complete = true,
         Display = {
@@ -9604,8 +9604,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9615,9 +9615,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534835908",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -9627,8 +9627,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["GraveG"] = {
         Complete = true,
         Display = {
@@ -9644,8 +9644,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.3, 1.8, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9655,9 +9655,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513648170",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -9667,8 +9667,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["HL2"] = {
         Complete = true,
         Display = {
@@ -9684,8 +9684,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9695,9 +9695,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://181689885",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546100",
@@ -9705,8 +9705,8 @@ local MESHES_OLD =
     ItemName = "HL2",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["HauntedG"] = {
         Complete = true,
         Display = {
@@ -9722,8 +9722,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9733,9 +9733,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513648133",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -9745,8 +9745,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["Igloo_G_2024"] = {
         Complete = true,
         Display = {
@@ -9762,8 +9762,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9773,9 +9773,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://73071132008000",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -9785,8 +9785,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["Infected_G_2022"] = {
         Complete = true,
         Display = {
@@ -9802,8 +9802,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9813,9 +9813,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11227996367",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -9825,8 +9825,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Infiltrator"] = {
         Complete = true,
         Display = {
@@ -9842,8 +9842,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9853,9 +9853,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://156265112",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203806022",
@@ -9863,8 +9863,8 @@ local MESHES_OLD =
     ItemName = "Infiltrator",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Iron"] = {
         Complete = true,
         Display = {
@@ -9880,8 +9880,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9891,9 +9891,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=159707533",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=160201541",
@@ -9901,8 +9901,8 @@ local MESHES_OLD =
     ItemName = "Iron",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Aid"] = {
         Complete = true,
         Display = {
@@ -9918,8 +9918,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9929,9 +9929,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://320398676",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203807397",
@@ -9939,8 +9939,8 @@ local MESHES_OLD =
     ItemName = "Juice",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Lights_G_2025"] = {
         Complete = false,
         Display = {
@@ -9957,9 +9957,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://80557940854587",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -9969,8 +9969,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["News"] = {
         Complete = true,
         Display = {
@@ -9986,8 +9986,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -9997,9 +9997,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://178238688",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546032",
@@ -10007,8 +10007,8 @@ local MESHES_OLD =
     ItemName = "News",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Ornament1Gun"] = {
         Complete = true,
         Display = {
@@ -10024,8 +10024,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10035,9 +10035,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=332358313",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -10047,8 +10047,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2015"
-})
-}),
+}
+},
     ["Ornament2Gun"] = {
         Complete = true,
         Display = {
@@ -10064,8 +10064,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10075,9 +10075,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=5366287766",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -10087,8 +10087,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2015"
-})
-}),
+}
+},
     ["Ornaments_G_2020"] = {
         Complete = true,
         Display = {
@@ -10104,8 +10104,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10115,9 +10115,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6121862915",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -10127,8 +10127,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Pea"] = {
         Complete = true,
         Display = {
@@ -10144,8 +10144,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10155,9 +10155,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://162911948",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238545971",
@@ -10165,8 +10165,8 @@ local MESHES_OLD =
     ItemName = "Pea",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Peppermint_G_2025"] = {
         Complete = true,
         Display = {
@@ -10182,8 +10182,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10193,9 +10193,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=91723031",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -10205,8 +10205,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Pine_G_2019"] = {
         Complete = true,
         Display = {
@@ -10222,8 +10222,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10233,9 +10233,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534870630",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -10245,8 +10245,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Plaid_G_2026"] = {
         Complete = false,
         Display = {
@@ -10263,9 +10263,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://100185145262613",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Valentines",
@@ -10275,8 +10275,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2026"
-})
-}),
+}
+},
     ["Pumpkin_G_2023"] = {
         Complete = true,
         Display = {
@@ -10292,8 +10292,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10303,9 +10303,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15044730839",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -10315,8 +10315,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["RIP"] = {
         Complete = true,
         Display = {
@@ -10332,8 +10332,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10343,9 +10343,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210409923",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -10355,8 +10355,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Sandy_G_2024"] = {
         Complete = true,
         Display = {
@@ -10372,8 +10372,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10383,9 +10383,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18323743340",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18323752709",
@@ -10394,8 +10394,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["SantaGun"] = {
         Complete = true,
         Display = {
@@ -10411,8 +10411,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10422,9 +10422,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=5359644564",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -10434,8 +10434,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2015"
-})
-}),
+}
+},
     ["Santa_G_2023"] = {
         Complete = true,
         Display = {
@@ -10451,8 +10451,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10462,9 +10462,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15349904283",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -10474,8 +10474,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["SlimeG"] = {
         Complete = true,
         Display = {
@@ -10491,8 +10491,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10502,9 +10502,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://9309254779",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -10514,8 +10514,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["Snowball_G_2025"] = {
         Complete = false,
         Display = {
@@ -10532,9 +10532,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://81738515769034",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -10544,8 +10544,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Snowflakes_G_2019"] = {
         Complete = true,
         Display = {
@@ -10561,8 +10561,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10572,9 +10572,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534835479",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -10584,8 +10584,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Snowman_G_2022"] = {
         Complete = true,
         Display = {
@@ -10601,8 +10601,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10612,9 +10612,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11830604534",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -10624,8 +10624,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Snowman_G_2018"] = {
         Complete = true,
         Display = {
@@ -10641,8 +10641,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10652,9 +10652,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2726475301",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -10664,8 +10664,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["Splat"] = {
         Complete = true,
         Display = {
@@ -10681,8 +10681,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10692,9 +10692,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=6932360857",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183639522",
@@ -10703,8 +10703,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Star"] = {
         Complete = true,
         Display = {
@@ -10720,8 +10720,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10731,9 +10731,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://161642996",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203807904",
@@ -10741,8 +10741,8 @@ local MESHES_OLD =
     ItemName = "Star",
     ItemType = "Gun",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Starfish_G_2024"] = {
         Complete = true,
         Display = {
@@ -10758,8 +10758,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10769,9 +10769,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18321970590",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322189584",
@@ -10780,8 +10780,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Starry_G_2020"] = {
         Complete = true,
         Display = {
@@ -10797,8 +10797,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10808,9 +10808,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5930583738",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -10820,8 +10820,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Stickers_G_2024"] = {
         Complete = true,
         Display = {
@@ -10837,8 +10837,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10848,9 +10848,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://89311097227409",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -10860,8 +10860,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["Stickers_G_2025"] = {
         Complete = false,
         Display = {
@@ -10878,9 +10878,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://72308464511333",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Summer",
@@ -10890,8 +10890,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Summer_Stickers_G_2023"] = {
         Complete = true,
         Display = {
@@ -10907,8 +10907,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10918,9 +10918,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://13905821320",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://13944151909",
@@ -10929,8 +10929,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Stickers_G_2021"] = {
         Complete = true,
         Display = {
@@ -10946,8 +10946,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.18, 1.35),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10957,9 +10957,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7758615144",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -10969,8 +10969,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Stickers_X_G_2024"] = {
         Complete = true,
         Display = {
@@ -10986,8 +10986,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -10997,9 +10997,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://139997450438464",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -11009,8 +11009,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["StickersX_G_2025"] = {
         Complete = false,
         Display = {
@@ -11027,9 +11027,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://123572826899313",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -11039,8 +11039,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["StickersX_G_2022"] = {
         Complete = true,
         Display = {
@@ -11056,8 +11056,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11067,9 +11067,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11830420444",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -11079,8 +11079,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["XmasStickers_G_2021"] = {
         Complete = true,
         Display = {
@@ -11096,8 +11096,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11107,9 +11107,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275033309",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -11119,8 +11119,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Stockings_G_2024"] = {
         Complete = true,
         Display = {
@@ -11136,8 +11136,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11147,9 +11147,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://119326169521320",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -11159,8 +11159,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["Strawberries_G_2026"] = {
         Complete = false,
         Display = {
@@ -11177,9 +11177,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://103202994163470",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Valentines",
@@ -11189,8 +11189,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2026"
-})
-}),
+}
+},
     ["Striped_G_2025"] = {
         Complete = false,
         Display = {
@@ -11207,9 +11207,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://105991246402157",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Summer",
@@ -11219,8 +11219,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Toy_G_2023"] = {
         Complete = true,
         Display = {
@@ -11236,8 +11236,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 0.8755),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11247,16 +11247,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://13905642635",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Vector3Value",
     Name = "OriginalPosition",
     Props = {
     Value = Vector3.new(0, 0, 0)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://13944153112",
@@ -11265,8 +11265,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["UFOs_G_2025"] = {
         Complete = false,
         Display = {
@@ -11283,9 +11283,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.83, 0.95, 0.325),
     TextureID = "rbxassetid://81729797666928",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -11295,8 +11295,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Vines_G_2023"] = {
         Complete = true,
         Display = {
@@ -11312,8 +11312,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11323,9 +11323,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15045930187",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -11335,8 +11335,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Eyes_G_2020"] = {
         Complete = true,
         Display = {
@@ -11352,8 +11352,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11363,9 +11363,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866372450",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -11375,8 +11375,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Wavy_G_2024"] = {
         Complete = true,
         Display = {
@@ -11392,8 +11392,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11403,9 +11403,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://16846545641",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16960077712",
@@ -11414,8 +11414,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["WebbedG"] = {
         Complete = true,
         Display = {
@@ -11431,8 +11431,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11442,9 +11442,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7572421266",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -11454,8 +11454,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Webs_G_2022"] = {
         Complete = true,
         Display = {
@@ -11471,8 +11471,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11482,9 +11482,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11255255382",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -11494,8 +11494,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Wrapped_G_2018"] = {
         Complete = true,
         Display = {
@@ -11511,8 +11511,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11522,9 +11522,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2726770302",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -11534,8 +11534,8 @@ local MESHES_OLD =
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["AmericaGun"] = {
         Complete = true,
         Display = {
@@ -11551,8 +11551,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11562,9 +11562,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=164669251",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=164676043",
@@ -11572,8 +11572,8 @@ local MESHES_OLD =
     ItemName = "America",
     ItemType = "Gun",
     Rarity = "Classic"
-})
-}),
+}
+},
     ["Gun1"] = {
         Complete = true,
         Display = {
@@ -11589,8 +11589,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11600,9 +11600,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=79401500 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=144290769",
@@ -11610,8 +11610,8 @@ local MESHES_OLD =
     ItemName = "Cowboy",
     ItemType = "Gun",
     Rarity = "Classic"
-})
-}),
+}
+},
     ["GoldenGun"] = {
         Complete = true,
         Display = {
@@ -11627,8 +11627,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11638,9 +11638,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=134632723",
     VertexColor = Vector3.new(1, 1, 0)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=147835357",
@@ -11648,8 +11648,8 @@ local MESHES_OLD =
     ItemName = "Golden",
     ItemType = "Gun",
     Rarity = "Classic"
-})
-}),
+}
+},
     ["Disint"] = {
         Complete = true,
         Display = {
@@ -11665,8 +11665,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11676,9 +11676,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=18265614",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=54798135",
@@ -11686,8 +11686,8 @@ local MESHES_OLD =
     ItemName = "Laser",
     ItemType = "Gun",
     Rarity = "Classic"
-})
-}),
+}
+},
     ["Phaser"] = {
         Complete = true,
         Display = {
@@ -11703,8 +11703,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.4, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11714,9 +11714,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=69486519",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=144325423",
@@ -11724,8 +11724,8 @@ local MESHES_OLD =
     ItemName = "Phaser",
     ItemType = "Gun",
     Rarity = "Classic"
-})
-}),
+}
+},
     ["Sorry"] = {
         Complete = true,
         Display = {
@@ -11741,8 +11741,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11752,9 +11752,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=162016526",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=197879343",
@@ -11762,8 +11762,8 @@ local MESHES_OLD =
     ItemName = "Corrupt",
     ItemType = "Knife",
     Rarity = "Unique"
-})
-}),
+}
+},
     ["Scythe"] = {
         Complete = true,
         Display = {
@@ -11779,8 +11779,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 2.9, 1.6),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11790,9 +11790,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2511673515",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -11804,11 +11804,11 @@ local MESHES_OLD =
     X = -1.1,
     Y = -1.4,
     Z = -0.2
-}),
+},
     Rarity = "Ancient",
     Year = "2018"
-})
-}),
+}
+},
     ["Celestial"] = {
         Complete = false,
         Display = {
@@ -11825,9 +11825,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.3976, 2.6649, 2.364),
     TextureID = "rbxassetid://79010754957272",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -11837,8 +11837,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2024"
-})
-}),
+}
+},
     ["ElderwoodScythe"] = {
         Complete = false,
         Display = {
@@ -11855,9 +11855,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.2881, 3.8218, 2.6153),
     TextureID = "http://www.roblox.com/asset/?id=4210044808",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -11867,8 +11867,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2019"
-})
-}),
+}
+},
     ["Hallowscythe"] = {
         Complete = false,
         Display = {
@@ -11885,9 +11885,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.3924, 3.5416, 2.9425),
     TextureID = "http://www.roblox.com/asset/?id=5841879647",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -11897,8 +11897,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2020"
-})
-}),
+}
+},
     ["Icebreaker"] = {
         Complete = false,
         Display = {
@@ -11915,9 +11915,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4106, 3.0743, 1.9554),
     TextureID = "rbxassetid://6124173821",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -11927,8 +11927,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2020"
-})
-}),
+}
+},
     ["Icewing"] = {
         Complete = true,
         Display = {
@@ -11944,8 +11944,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 4.05, 1.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11955,9 +11955,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2279588369",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     DisplayID = 3183212622,
@@ -11969,8 +11969,8 @@ local MESHES_OLD =
     Rarity = "Ancient",
     ThrowingHandle = 3183093706,
     Year = "2018"
-})
-}),
+}
+},
     ["Logchopper"] = {
         Complete = true,
         Display = {
@@ -11986,8 +11986,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -11997,9 +11997,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5211110240",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -12009,8 +12009,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2019"
-})
-}),
+}
+},
     ["NikKnife"] = {
         Complete = true,
         Display = {
@@ -12026,8 +12026,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12037,9 +12037,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2533345412",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2533350813",
@@ -12050,10 +12050,10 @@ local MESHES_OLD =
     X = -1.1,
     Y = -1.4,
     Z = -0.2
-}),
+},
     Rarity = "Ancient"
-})
-}),
+}
+},
     ["SwirlyAxe"] = {
         Complete = false,
         Display = {
@@ -12070,9 +12070,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.5135, 2.8965, 2.66),
     TextureID = "rbxassetid://8293464070",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -12082,8 +12082,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2021"
-})
-}),
+}
+},
     ["TravelerAxe"] = {
         Complete = false,
         Display = {
@@ -12100,9 +12100,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.6044, 3.406, 2.1874),
     TextureID = "rbxassetid://15057460725",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -12112,8 +12112,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2023"
-})
-}),
+}
+},
     ["VampireAxe"] = {
         Complete = false,
         Display = {
@@ -12130,9 +12130,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.312, 3.6275, 1.9228),
     TextureID = "rbxassetid://73008954478338",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -12142,8 +12142,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2024"
-})
-}),
+}
+},
     ["UFOKnife"] = {
         Complete = false,
         Display = {
@@ -12160,9 +12160,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.9329, 3.7912, 1.0541),
     TextureID = "rbxassetid://94763497877100",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -12172,8 +12172,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["UFOKnifeChroma"] = {
         Complete = true,
         Display = {
@@ -12189,8 +12189,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.933, 3.791, 1.054),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12200,8 +12200,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://94763497877100",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -12210,9 +12210,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://138018131999412",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -12223,8 +12223,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["AuroraKnife"] = {
         Complete = false,
         Display = {
@@ -12241,9 +12241,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.2299, 3.766, 1.1534),
     TextureID = "rbxassetid://97521579968070",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -12253,8 +12253,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2024"
-})
-}),
+}
+},
     ["ZombieBat"] = {
         Complete = false,
         Display = {
@@ -12271,9 +12271,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.782, 3.7031, 0.7837),
     TextureID = "rbxassetid://11192090515",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -12283,8 +12283,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-})
-}),
+}
+},
     ["BattleAxe"] = {
         Complete = true,
         Display = {
@@ -12300,8 +12300,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12311,9 +12311,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1084767901",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -12325,16 +12325,16 @@ local MESHES_OLD =
     X = 2.0944,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.4,
     Z = 0.2
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-})
-}),
+}
+},
     ["BattleAxe2"] = {
         Complete = false,
         Display = {
@@ -12351,9 +12351,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.3788, 3.6555, 1.6701),
     TextureID = "rbxassetid://2513526862",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -12363,8 +12363,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
-})
-}),
+}
+},
     ["Bioblade"] = {
         Complete = false,
         Display = {
@@ -12381,9 +12381,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.3106, 3.421, 1.0878),
     TextureID = "http://www.roblox.com/asset/?id=4751538400",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=4751540097",
@@ -12394,11 +12394,11 @@ local MESHES_OLD =
     X = -0.1,
     Y = -0.2,
     Z = 0.6
-}),
+},
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Bloom"] = {
         Complete = false,
         Display = {
@@ -12415,9 +12415,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4614, 3.7, 1.0385),
     TextureID = "rbxassetid://103489229144925",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "rbxassetid://132419834610569",
@@ -12426,8 +12426,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["BlueSeer"] = {
         Complete = true,
         Display = {
@@ -12443,8 +12443,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12454,9 +12454,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184062977",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3184139996",
@@ -12464,8 +12464,8 @@ local MESHES_OLD =
     ItemName = "Blue Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["BonebladeChroma"] = {
         Complete = true,
         Display = {
@@ -12481,8 +12481,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -12491,8 +12491,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://2513578115",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12502,9 +12502,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513576265",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -12515,8 +12515,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
-})
-}),
+}
+},
     ["Boneblade"] = {
         Complete = true,
         Display = {
@@ -12532,8 +12532,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12543,9 +12543,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2516324337",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -12555,8 +12555,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
-})
-}),
+}
+},
     ["Candleflame"] = {
         Complete = false,
         Display = {
@@ -12573,9 +12573,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4498, 3.3376, 1.1087),
     TextureID = "rbxassetid://7791364988",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -12585,8 +12585,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
-})
-}),
+}
+},
     ["CandleflameChroma"] = {
         Complete = true,
         Display = {
@@ -12602,8 +12602,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12613,8 +12613,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7806078587",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -12623,9 +12623,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://7806088865",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -12636,8 +12636,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
-})
-}),
+}
+},
     ["Candy"] = {
         Complete = true,
         Display = {
@@ -12653,8 +12653,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.6),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12664,9 +12664,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=19040326",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -12676,8 +12676,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2015"
-})
-}),
+}
+},
     ["Chill"] = {
         Complete = true,
         Display = {
@@ -12693,8 +12693,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12704,9 +12704,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=105978218",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -12716,8 +12716,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2015"
-})
-}),
+}
+},
     ["Clockwork"] = {
         Complete = true,
         Display = {
@@ -12733,8 +12733,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 0.65, 3),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12744,9 +12744,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=352570357",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=360609441",
@@ -12757,15 +12757,15 @@ local MESHES_OLD =
     X = 3.6652,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.3,
     Z = 0
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Cookieblade"] = {
         Complete = false,
         Display = {
@@ -12782,9 +12782,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.233, 2.64, 0.9),
     TextureID = "rbxassetid://6123168583",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -12794,8 +12794,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
-})
-}),
+}
+},
     ["Gingermint_K"] = {
         Complete = false,
         Display = {
@@ -12811,9 +12811,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -12823,8 +12823,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-})
-}),
+}
+},
     ["Gingermint_KChroma"] = {
         Complete = false,
         Display = {
@@ -12840,8 +12840,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -12850,9 +12850,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Back,
     Texture = "rbxassetid://11883888650",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Chroma = true,
@@ -12863,8 +12863,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-})
-}),
+}
+},
     ["Darksword"] = {
         Complete = true,
         Display = {
@@ -12880,8 +12880,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12891,9 +12891,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15020899218",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -12903,8 +12903,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
-})
-}),
+}
+},
     ["DeathshardChroma"] = {
         Complete = true,
         Display = {
@@ -12920,8 +12920,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.55, 2.39, 0.2),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12931,8 +12931,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3167029738",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -12941,16 +12941,16 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://3167033529",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 0,
     Y = 0,
     Z = 0.7854
-}),
+},
     Chroma = true,
     Image = "rbxassetid://3187397317",
     ItemID = 3187390667,
@@ -12960,15 +12960,15 @@ local MESHES_OLD =
     X = -1.0472,
     Y = 1.5708,
     Z = 3.1416
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.2,
     Z = 0
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Deathshard"] = {
         Complete = true,
         Display = {
@@ -12984,8 +12984,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.55, 2.39, 0.2),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -12995,16 +12995,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=192567360",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 0,
     Y = 0,
     Z = 0.7854
-}),
+},
     Image = "rbxassetid://3175017717",
     ItemID = 196750305,
     ItemName = "Deathshard",
@@ -13013,15 +13013,15 @@ local MESHES_OLD =
     X = -1.0472,
     Y = 1.5708,
     Z = 3.1416
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.2,
     Z = 0
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Eggblade"] = {
         Complete = false,
         Display = {
@@ -13038,9 +13038,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.7214, 3.4319, 0.9119),
     TextureID = "http://www.roblox.com/asset/?id=6596824396",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=6607512359",
@@ -13049,8 +13049,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["ElderwoodKnifeChroma"] = {
         Complete = true,
         Display = {
@@ -13066,8 +13066,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.276, 3.531, 1.041),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13077,8 +13077,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=11370088878",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -13087,9 +13087,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Right,
     Texture = "rbxassetid://11370095395",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -13100,8 +13100,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-})
-}),
+}
+},
     ["ElderwoodKnife"] = {
         Complete = true,
         Display = {
@@ -13117,8 +13117,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.276, 3.531, 1.041),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13128,9 +13128,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11238176757",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -13140,8 +13140,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-})
-}),
+}
+},
     ["Eternal"] = {
         Complete = true,
         Display = {
@@ -13157,8 +13157,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.23, 2.7, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13168,9 +13168,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://532156041",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=538706317",
@@ -13178,8 +13178,8 @@ local MESHES_OLD =
     ItemName = "Eternal",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Eternal2"] = {
         Complete = true,
         Display = {
@@ -13195,8 +13195,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.23, 2.7, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13206,9 +13206,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2585776718",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2545253030",
@@ -13216,8 +13216,8 @@ local MESHES_OLD =
     ItemName = "Eternal II",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Eternal3"] = {
         Complete = true,
         Display = {
@@ -13233,8 +13233,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3.24, 0.77),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13244,9 +13244,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5238664918",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3281170430",
@@ -13255,8 +13255,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Eternal4"] = {
         Complete = true,
         Display = {
@@ -13272,8 +13272,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3.24, 0.77),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13283,9 +13283,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5222717744",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4999958740",
@@ -13294,8 +13294,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["EternalCane"] = {
         Complete = true,
         Display = {
@@ -13311,8 +13311,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.23, 2.7, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13322,9 +13322,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4488374804",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -13334,8 +13334,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
-})
-}),
+}
+},
     ["TreeKnife2023"] = {
         Complete = true,
         Display = {
@@ -13351,8 +13351,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4143, 4.1435, 1.0211),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13362,8 +13362,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15408244684",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -13376,8 +13376,8 @@ local MESHES_OLD =
     Size = Vector3.new(1.0546, 2.2052, 0.8456),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -13390,8 +13390,8 @@ local MESHES_OLD =
     Size = Vector3.new(1.0034, 2.1422, 1.0312),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -13404,8 +13404,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.113, 0.1332, 0.0631),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -13418,8 +13418,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.9353, 1.8643, 0.9162),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -13432,9 +13432,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.0206, 1.1329, 0.8723),
     TextureID = "",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 6,
         Meta = {
     Event = "Christmas",
@@ -13445,8 +13445,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
-})
-}),
+}
+},
     ["TreeKnife2023Chroma"] = {
         Complete = true,
         Display = {
@@ -13462,8 +13462,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4143, 4.1435, 1.0211),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13473,8 +13473,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Decal",
@@ -13483,8 +13483,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://15693337518",
     Transparency = 0.6
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Decal",
@@ -13493,8 +13493,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://15693352412",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -13507,8 +13507,8 @@ local MESHES_OLD =
     Size = Vector3.new(1.0546, 2.2052, 0.8456),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -13521,8 +13521,8 @@ local MESHES_OLD =
     Size = Vector3.new(1.0034, 2.1422, 1.0312),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -13535,8 +13535,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.113, 0.1332, 0.0631),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -13549,8 +13549,8 @@ local MESHES_OLD =
     Size = Vector3.new(0.9353, 1.8643, 0.9162),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Name = "LightPart",
@@ -13563,9 +13563,9 @@ local MESHES_OLD =
     Size = Vector3.new(1.0206, 1.1329, 0.8723),
     TextureID = "",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 6,
         Meta = {
     Chroma = true,
@@ -13577,8 +13577,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
-})
-}),
+}
+},
     ["FangChroma"] = {
         Complete = true,
         Display = {
@@ -13594,8 +13594,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.99, 3, 0.23),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -13604,8 +13604,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://3167057391",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13615,16 +13615,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 0,
     Y = 0,
     Z = 0.7854
-}),
+},
     Chroma = true,
     Image = "rbxassetid://3187397850",
     ItemID = 3187392501,
@@ -13634,15 +13634,15 @@ local MESHES_OLD =
     X = -1.0472,
     Y = 1.5708,
     Z = 3.1416
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.2,
     Z = 0
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Fang"] = {
         Complete = true,
         Display = {
@@ -13658,8 +13658,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.75, 3, 0.42),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13669,16 +13669,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=117500388",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 0,
     Y = 0,
     Z = 0.7854
-}),
+},
     Image = "rbxassetid://3187397768",
     ItemID = 198442811,
     ItemName = "Fang",
@@ -13687,15 +13687,15 @@ local MESHES_OLD =
     X = -1.0472,
     Y = 1.5708,
     Z = 3.1416
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.2,
     Z = 0
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Flames"] = {
         Complete = true,
         Display = {
@@ -13711,8 +13711,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 0.7, 2.85),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13722,8 +13722,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=238314124",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Part",
     Name = "EffectCenter",
@@ -13735,9 +13735,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 0.2, 0.2),
     Transparency = 1
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=585873746",
@@ -13748,15 +13748,15 @@ local MESHES_OLD =
     X = 3.6652,
     Y = 0,
     Z = 3.1416
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.5,
     Z = 0.1
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["FlowerwoodKnife"] = {
         Complete = false,
         Display = {
@@ -13773,9 +13773,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4445, 3.9582, 1.0733),
     TextureID = "rbxassetid://16895441338",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16963860501",
@@ -13784,8 +13784,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Frostbite"] = {
         Complete = true,
         Display = {
@@ -13801,8 +13801,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 2.6, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13812,9 +13812,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5211130051",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -13824,8 +13824,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
-})
-}),
+}
+},
     ["Frostsaber"] = {
         Complete = true,
         Display = {
@@ -13841,8 +13841,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.3, 0.85, 3.05),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13852,9 +13852,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1192795941",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -13866,16 +13866,16 @@ local MESHES_OLD =
     X = 3.4907,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.4,
     Z = 0.1
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-})
-}),
+}
+},
     ["GemstoneChroma"] = {
         Complete = true,
         Display = {
@@ -13891,8 +13891,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13902,8 +13902,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3183577898",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -13912,9 +13912,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://3183578044",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -13924,8 +13924,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Gemstone"] = {
         Complete = true,
         Display = {
@@ -13941,8 +13941,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3.15, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13952,9 +13952,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3183579677",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3183657748",
@@ -13963,8 +13963,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Ghostblade"] = {
         Complete = true,
         Display = {
@@ -13980,8 +13980,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.605, 1.65, 1.01),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -13991,9 +13991,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5007736173",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -14003,8 +14003,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
-})
-}),
+}
+},
     ["Gingerblade"] = {
         Complete = true,
         Display = {
@@ -14020,8 +14020,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3, 0.5),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14031,9 +14031,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2682446647",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -14043,8 +14043,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
-})
-}),
+}
+},
     ["GingerbladeChroma"] = {
         Complete = true,
         Display = {
@@ -14060,8 +14060,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3, 0.5),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14071,8 +14071,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2672327402",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -14081,8 +14081,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://2672332704",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -14091,9 +14091,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://2672332700",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -14104,8 +14104,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
-})
-}),
+}
+},
     ["HallowsBlade"] = {
         Complete = true,
         Display = {
@@ -14121,8 +14121,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14132,9 +14132,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1132750758",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -14144,8 +14144,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2017"
-})
-}),
+}
+},
     ["Hallow"] = {
         Complete = true,
         Display = {
@@ -14161,8 +14161,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14172,9 +14172,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset?id=179155105",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -14184,8 +14184,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2016"
-})
-}),
+}
+},
     ["Handsaw"] = {
         Complete = false,
         Display = {
@@ -14201,9 +14201,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -14215,16 +14215,16 @@ local MESHES_OLD =
     X = 0.3491,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.4,
     Z = 0
-}),
+},
     Rarity = "Godly",
     Year = "2015"
-})
-}),
+}
+},
     ["HeartWand"] = {
         Complete = false,
         Display = {
@@ -14241,9 +14241,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4327, 3.3587, 1.9187),
     TextureID = "rbxassetid://76246633927299",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Valentines",
@@ -14254,8 +14254,8 @@ local MESHES_OLD =
     Rarity = "Godly",
     Season = 1,
     Year = "2026"
-})
-}),
+}
+},
     ["HeartWandChroma"] = {
         Complete = true,
         Display = {
@@ -14271,8 +14271,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.804, 2.2835, 3.4627),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14282,8 +14282,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://78842905206144",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -14292,9 +14292,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://106915560132163",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -14306,8 +14306,8 @@ local MESHES_OLD =
     Rarity = "Godly",
     Season = 1,
     Year = "2026"
-})
-}),
+}
+},
     ["Heartblade"] = {
         Complete = false,
         Display = {
@@ -14324,9 +14324,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.2795, 3.29, 1.1465),
     TextureID = "http://www.roblox.com/asset/?id=6413074818",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=6413214382",
@@ -14335,8 +14335,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["HeatChroma"] = {
         Complete = true,
         Display = {
@@ -14352,8 +14352,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14363,8 +14363,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=105334003",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -14373,9 +14373,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://3171194830",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -14384,8 +14384,8 @@ local MESHES_OLD =
     ItemName = "Heat",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Heat"] = {
         Complete = true,
         Display = {
@@ -14401,8 +14401,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 2.9, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14412,9 +14412,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=105334003",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3187444758",
@@ -14422,8 +14422,8 @@ local MESHES_OLD =
     ItemName = "Heat",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["IceDragon"] = {
         Complete = true,
         Display = {
@@ -14439,8 +14439,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.35, 0.72, 2.98),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14450,9 +14450,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=165708903 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -14464,21 +14464,21 @@ local MESHES_OLD =
     X = 0,
     Y = 0,
     Z = 0.55
-}),
+},
     RadioAngles = {
     X = 3.6652,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.5,
     Z = -0.05
-}),
+},
     Rarity = "Godly",
     Year = "2016"
-})
-}),
+}
+},
     ["IceShard"] = {
         Complete = true,
         Display = {
@@ -14494,8 +14494,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14505,9 +14505,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=188539820",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -14519,16 +14519,16 @@ local MESHES_OLD =
     X = 3.6652,
     Y = 0,
     Z = 3.1416
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.3,
     Z = 0.1
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-})
-}),
+}
+},
     ["Iceflake"] = {
         Complete = false,
         Display = {
@@ -14545,9 +14545,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.1845, 3.3769, 0.8258),
     TextureID = "rbxassetid://8231046270",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -14557,8 +14557,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
-})
-}),
+}
+},
     ["Nebula"] = {
         Complete = false,
         Display = {
@@ -14575,9 +14575,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.3169, 3.4062, 1.1591),
     TextureID = "http://www.roblox.com/asset/?id=6256756879",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6598123521",
@@ -14586,8 +14586,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Nightblade"] = {
         Complete = true,
         Display = {
@@ -14603,8 +14603,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 3.1, 0.6),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14614,9 +14614,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=103838996",
     VertexColor = Vector3.new(0.4, 0.4, 0.4)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=475478854",
@@ -14627,15 +14627,15 @@ local MESHES_OLD =
     X = 2.0944,
     Y = 3.1416,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.1,
     Y = -1.3,
     Z = 0.1
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["AmericaSword"] = {
         Complete = true,
         Display = {
@@ -14651,8 +14651,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 0.6, 3.05),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14662,8 +14662,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "https://www.roblox.com/asset/?id=445805934",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Part",
     Name = "EffectFull",
@@ -14675,8 +14675,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3, 0.65),
     Transparency = 1
-})
-}),
+}
+},
     {
     Class = "Part",
     Name = "EffectHalf",
@@ -14688,8 +14688,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 1.8, 0.65),
     Transparency = 1
-})
-}),
+}
+},
     {
     Class = "Part",
     Name = "EffectCenter",
@@ -14701,16 +14701,16 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 0.2, 0.4),
     Transparency = 1
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = -1.5708,
     Y = 2.2689,
     Z = 1.5708
-}),
+},
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=446047742",
     ItemID = 473570051,
     ItemName = "Old Glory",
@@ -14719,20 +14719,20 @@ local MESHES_OLD =
     X = -0.1,
     Y = 0,
     Z = 0.55
-}),
+},
     RadioAngles = {
     X = 3.6652,
     Y = 0,
     Z = 3.1416
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.5,
     Z = 0.1
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["OrangeSeer"] = {
         Complete = true,
         Display = {
@@ -14748,8 +14748,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14759,9 +14759,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184063179",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3184139504",
@@ -14769,8 +14769,8 @@ local MESHES_OLD =
     ItemName = "Orange Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["BaubleKnife"] = {
         Complete = false,
         Display = {
@@ -14787,9 +14787,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4929, 3.6559, 0.83),
     TextureID = "rbxassetid://135843404105980",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -14799,8 +14799,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["BaubleKnifeChroma"] = {
         Complete = true,
         Display = {
@@ -14816,8 +14816,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4687, 3.4761, 0.7892),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -14826,8 +14826,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://101916509598198",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14837,9 +14837,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://135843404105980",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -14850,8 +14850,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["Pearl_K"] = {
         Complete = false,
         Display = {
@@ -14868,9 +14868,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.2201, 3.486, 0.8077),
     TextureID = "rbxassetid://18276866373",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322621319",
@@ -14879,8 +14879,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Peppermint"] = {
         Complete = true,
         Display = {
@@ -14896,8 +14896,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14907,9 +14907,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0.3, -0.1),
     TextureId = "rbxassetid://6074789360",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -14919,8 +14919,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
-})
-}),
+}
+},
     ["Phantom2022"] = {
         Complete = false,
         Display = {
@@ -14936,9 +14936,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.37, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -14948,8 +14948,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-})
-}),
+}
+},
     ["Pixel"] = {
         Complete = true,
         Display = {
@@ -14965,8 +14965,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -14976,9 +14976,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=361630114",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365347166",
@@ -14989,15 +14989,15 @@ local MESHES_OLD =
     X = 0,
     Y = 0.2,
     Z = 0.5
-}),
+},
     RadioAngles = {
     X = 3.6652,
     Y = 0,
     Z = 0
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Plasmablade"] = {
         Complete = false,
         Display = {
@@ -15014,9 +15014,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.3381, 3.6228, 0.8484),
     TextureID = "rbxassetid://10015130416",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=10014680882",
@@ -15025,8 +15025,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Prismatic"] = {
         Complete = true,
         Display = {
@@ -15042,8 +15042,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.425, 1.9023, 1.21),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15053,9 +15053,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5355747943",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5360359935",
@@ -15064,8 +15064,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Pumpking"] = {
         Complete = true,
         Display = {
@@ -15081,8 +15081,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 4.5, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15092,9 +15092,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1164426571",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -15106,16 +15106,16 @@ local MESHES_OLD =
     X = 2.0944,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.1,
     Y = -1.4,
     Z = 0
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-})
-}),
+}
+},
     ["PurpleSeer"] = {
         Complete = true,
         Display = {
@@ -15131,8 +15131,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15142,9 +15142,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184063317",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3184140119",
@@ -15152,8 +15152,8 @@ local MESHES_OLD =
     ItemName = "Purple Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Rainbow_K"] = {
         Complete = false,
         Display = {
@@ -15170,9 +15170,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.2614, 3.2611, 1.0089),
     TextureID = "rbxassetid://12921241867",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12966184630",
@@ -15181,8 +15181,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["RedSeer"] = {
         Complete = true,
         Display = {
@@ -15198,8 +15198,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15209,9 +15209,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184063443",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3184139367",
@@ -15219,8 +15219,8 @@ local MESHES_OLD =
     ItemName = "Red Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Sakura_K"] = {
         Complete = false,
         Display = {
@@ -15237,9 +15237,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.5299, 3.7059, 0.5218),
     TextureID = "rbxassetid://12307707797",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339366064",
@@ -15248,8 +15248,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["Saw"] = {
         Complete = true,
         Display = {
@@ -15265,8 +15265,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15276,9 +15276,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset?id=168119736",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3187397991",
@@ -15286,8 +15286,8 @@ local MESHES_OLD =
     ItemName = "Saw",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["SawChroma"] = {
         Complete = true,
         Display = {
@@ -15303,8 +15303,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3.08, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15314,8 +15314,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3171086347",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -15324,9 +15324,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://3171091036",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -15335,8 +15335,8 @@ local MESHES_OLD =
     ItemName = "Saw",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["TheSeer"] = {
         Complete = true,
         Display = {
@@ -15352,8 +15352,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15363,9 +15363,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset?id=156092253 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3184139765",
@@ -15373,8 +15373,8 @@ local MESHES_OLD =
     ItemName = "Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["SeerChroma"] = {
         Complete = true,
         Display = {
@@ -15390,8 +15390,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15401,8 +15401,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184059718",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -15411,9 +15411,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Front,
     Texture = "rbxassetid://3184061374",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -15422,8 +15422,8 @@ local MESHES_OLD =
     ItemName = "Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["SlasherChroma"] = {
         Complete = true,
         Display = {
@@ -15439,8 +15439,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3.17, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15450,8 +15450,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3171107559",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -15460,9 +15460,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Back,
     Texture = "rbxassetid://3171107715",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -15471,8 +15471,8 @@ local MESHES_OLD =
     ItemName = "Slasher",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Slasher"] = {
         Complete = true,
         Display = {
@@ -15488,8 +15488,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3.17, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15499,9 +15499,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=313894904",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3187398274",
@@ -15509,8 +15509,8 @@ local MESHES_OLD =
     ItemName = "Slasher",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["SnowDagger"] = {
         Complete = false,
         Display = {
@@ -15527,9 +15527,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.3604, 2.9901, 0.7138),
     TextureID = "rbxassetid://77812964601215",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -15539,8 +15539,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["SnowDaggerChroma"] = {
         Complete = true,
         Display = {
@@ -15556,8 +15556,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.3313, 2.7513, 0.657),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -15566,8 +15566,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://109403096491788",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15577,9 +15577,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://77812964601215",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -15590,8 +15590,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["Snowflake"] = {
         Complete = true,
         Display = {
@@ -15607,8 +15607,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3.79, 0.86),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15618,9 +15618,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://582120836",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -15632,16 +15632,16 @@ local MESHES_OLD =
     X = -4.3633,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.4,
     Z = 0.1
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-})
-}),
+}
+},
     ["SnowstormChroma"] = {
         Complete = true,
         Display = {
@@ -15657,8 +15657,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.26, 3.852, 0.958),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15668,8 +15668,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://86253759560362",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -15678,9 +15678,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://118939212650553",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -15691,8 +15691,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["Spider"] = {
         Complete = true,
         Display = {
@@ -15708,8 +15708,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15719,9 +15719,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7596177341",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -15733,21 +15733,21 @@ local MESHES_OLD =
     X = 0,
     Y = 0,
     Z = 0.55
-}),
+},
     RadioAngles = {
     X = 3.6652,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.3,
     Z = 0
-}),
+},
     Rarity = "Godly",
     Year = "2015"
-})
-}),
+}
+},
     ["WraithKnife"] = {
         Complete = false,
         Display = {
@@ -15764,9 +15764,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.2256, 3.5684, 0.9525),
     TextureID = "rbxassetid://131787177447081",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -15776,8 +15776,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2024"
-})
-}),
+}
+},
     ["SunsetKnife"] = {
         Complete = true,
         Display = {
@@ -15793,8 +15793,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2361, 3.866, 1.1836),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -15803,8 +15803,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://95001575076131",
     Transparency = 1
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15814,9 +15814,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://93782017269677",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -15827,8 +15827,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["SunsetKnifeChroma"] = {
         Complete = true,
         Display = {
@@ -15844,8 +15844,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.276, 3.531, 1.041),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15855,8 +15855,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://93782017269677",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -15865,8 +15865,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Right,
     Texture = "rbxassetid://70538223885127",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Glow",
@@ -15875,9 +15875,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://95001575076131",
     Transparency = 1
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -15889,8 +15889,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["SweetChroma"] = {
         Complete = true,
         Display = {
@@ -15906,8 +15906,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.7107, 2.0184, 3.0606),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -15916,8 +15916,8 @@ local MESHES_OLD =
     Face = Enum.NormalId.Left,
     Texture = "rbxassetid://87741741305052",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15927,9 +15927,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://120707737118924",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -15941,8 +15941,8 @@ local MESHES_OLD =
     Rarity = "Godly",
     Season = 1,
     Year = "2026"
-})
-}),
+}
+},
     ["SwirlyBlade"] = {
         Complete = false,
         Display = {
@@ -15959,9 +15959,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.4691, 3.347, 0.8558),
     TextureID = "rbxassetid://8302965681",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -15971,8 +15971,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
-})
-}),
+}
+},
     ["Tides"] = {
         Complete = true,
         Display = {
@@ -15988,8 +15988,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -15999,9 +15999,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=238314431",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3187398809",
@@ -16012,15 +16012,15 @@ local MESHES_OLD =
     X = 3.6652,
     Y = 0,
     Z = 3.1416
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.5,
     Z = 0.1
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["TidesChroma"] = {
         Complete = true,
         Display = {
@@ -16036,8 +16036,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.45, 0.7, 3.05),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16047,8 +16047,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3171168641",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Chroma",
@@ -16057,9 +16057,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Back,
     Texture = "rbxassetid://3171161741",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Chroma = true,
@@ -16071,15 +16071,15 @@ local MESHES_OLD =
     X = 3.6652,
     Y = 0,
     Z = 3.1416
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.5,
     Z = 0.1
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Turkey2023"] = {
         Complete = true,
         Display = {
@@ -16095,8 +16095,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(1.099, 2.812, 1.072),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16106,8 +16106,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15320558272",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Part",
     Name = "BiteLoad",
@@ -16119,8 +16119,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(1.099, 2.812, 1.072),
     Transparency = 0.999
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16130,9 +16130,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15414905407",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 2,
         Meta = {
     Image = "rbxassetid://15413162319",
@@ -16141,8 +16141,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["VampiresEdge"] = {
         Complete = false,
         Display = {
@@ -16159,9 +16159,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.3955, 3.3514, 1.0144),
     TextureID = "http://www.roblox.com/asset/?id=5842343736",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -16171,8 +16171,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
-})
-}),
+}
+},
     ["Virtual"] = {
         Complete = true,
         Display = {
@@ -16188,8 +16188,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16199,9 +16199,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "https://www.roblox.com/asset/?id=386250868",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=386276987",
@@ -16212,10 +16212,10 @@ local MESHES_OLD =
     X = -1.05,
     Y = -1.3,
     Z = 0
-}),
+},
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Waves_K"] = {
         Complete = false,
         Display = {
@@ -16232,9 +16232,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.3045, 3.962, 1.2656),
     TextureID = "rbxassetid://13916939964",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "rbxassetid://13933066522",
@@ -16243,8 +16243,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-})
-}),
+}
+},
     ["WintersEdge"] = {
         Complete = true,
         Display = {
@@ -16260,8 +16260,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.66, 3, 0.38),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16271,16 +16271,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=93112631",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = 0,
     Y = 0,
     Z = 0.7854
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268708987",
     ItemID = 1268708987,
@@ -16290,16 +16290,16 @@ local MESHES_OLD =
     X = 2.1817,
     Y = 1.5708,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.35,
     Z = 0.1
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-})
-}),
+}
+},
     ["XenoKnife"] = {
         Complete = false,
         Display = {
@@ -16316,9 +16316,9 @@ local MESHES_OLD =
     Size = Vector3.new(0.2041, 3.9191, 0.7431),
     TextureID = "rbxassetid://113651973865393",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -16328,8 +16328,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-})
-}),
+}
+},
     ["Xmas"] = {
         Complete = true,
         Display = {
@@ -16345,8 +16345,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16356,9 +16356,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://187852629",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     ChristmasPrice = 75,
@@ -16371,16 +16371,16 @@ local MESHES_OLD =
     X = 3.6652,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.3,
     Z = 0
-}),
+},
     Rarity = "Godly",
     Year = "2015"
-})
-}),
+}
+},
     ["YellowSeer"] = {
         Complete = true,
         Display = {
@@ -16396,8 +16396,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16407,9 +16407,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184063623",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://3184139648",
@@ -16417,8 +16417,8 @@ local MESHES_OLD =
     ItemName = "Yellow Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-})
-}),
+}
+},
     ["Aquarium_K_2025"] = {
         Complete = true,
         Display = {
@@ -16434,8 +16434,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16445,9 +16445,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://133476959535888",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -16457,8 +16457,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2025"
-})
-}),
+}
+},
     ["Arctic_K_2022"] = {
         Complete = false,
         Display = {
@@ -16474,9 +16474,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -16486,8 +16486,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2022"
-})
-}),
+}
+},
     ["Aurora_K_2021"] = {
         Complete = true,
         Display = {
@@ -16503,8 +16503,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16514,9 +16514,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275036346",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -16526,8 +16526,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2021"
-})
-}),
+}
+},
     ["Beach_K_2023"] = {
         Complete = true,
         Display = {
@@ -16543,8 +16543,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.595),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16554,16 +16554,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://13894391232",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Vector3Value",
     Name = "OriginalPosition",
     Props = {
     Value = Vector3.new(0, 0, 0)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://13944136198",
@@ -16572,8 +16572,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
-})
-}),
+}
+},
     ["EliteBlue"] = {
         Complete = true,
         Display = {
@@ -16589,8 +16589,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16600,9 +16600,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2746385518",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -16612,8 +16612,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2017"
-})
-}),
+}
+},
     ["Broken_K_2023"] = {
         Complete = true,
         Display = {
@@ -16629,8 +16629,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.355, 3, 0.768),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16640,9 +16640,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12237805628",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339323856",
@@ -16651,8 +16651,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
-})
-}),
+}
+},
     ["Bunnies_K_2025"] = {
         Complete = true,
         Display = {
@@ -16668,8 +16668,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16679,9 +16679,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://104875261384354",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=90549252812333",
@@ -16690,8 +16690,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
-})
-}),
+}
+},
     ["Cavern_K_2019"] = {
         Complete = true,
         Display = {
@@ -16707,8 +16707,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16718,9 +16718,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534822092",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -16730,8 +16730,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2019"
-})
-}),
+}
+},
     ["Chromatic_K_2023"] = {
         Complete = true,
         Display = {
@@ -16747,8 +16747,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16758,9 +16758,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12927939898",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965304445",
@@ -16769,8 +16769,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
-})
-}),
+}
+},
     ["CottonCandy"] = {
         Complete = true,
         Display = {
@@ -16786,8 +16786,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16797,9 +16797,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://620882210",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=435933179",
@@ -16807,8 +16807,8 @@ local MESHES_OLD =
     ItemName = "Cotton Candy",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Cupid_K_2026"] = {
         Complete = true,
         Display = {
@@ -16824,8 +16824,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16835,9 +16835,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://91124699102770",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Valentines",
@@ -16847,8 +16847,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2026"
-})
-}),
+}
+},
     ["Cursed_K_2024"] = {
         Complete = true,
         Display = {
@@ -16864,8 +16864,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16875,9 +16875,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://137589393181339",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -16887,8 +16887,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2024"
-})
-}),
+}
+},
     ["Elite"] = {
         Complete = true,
         Display = {
@@ -16904,8 +16904,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16915,9 +16915,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://241077941",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=241095344",
@@ -16925,8 +16925,8 @@ local MESHES_OLD =
     ItemName = "Elite",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Emerald"] = {
         Complete = true,
         Display = {
@@ -16942,8 +16942,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16953,9 +16953,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://173946596",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198461276",
@@ -16963,8 +16963,8 @@ local MESHES_OLD =
     ItemName = "Emerald",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Energized_K_2025"] = {
         Complete = true,
         Display = {
@@ -16980,8 +16980,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -16991,9 +16991,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://104379655242590",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -17003,8 +17003,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2025"
-})
-}),
+}
+},
     ["Fade"] = {
         Complete = true,
         Display = {
@@ -17020,8 +17020,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17031,9 +17031,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://288136894",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501640",
@@ -17041,8 +17041,8 @@ local MESHES_OLD =
     ItemName = "Fade",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Frostfade_K_2023"] = {
         Complete = true,
         Display = {
@@ -17058,8 +17058,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17069,9 +17069,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15344578184",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -17081,8 +17081,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2023"
-})
-}),
+}
+},
     ["Frozen_K_2025"] = {
         Complete = true,
         Display = {
@@ -17098,8 +17098,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17109,9 +17109,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://103391577880162",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -17121,8 +17121,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2025"
-})
-}),
+}
+},
     ["Fusion"] = {
         Complete = true,
         Display = {
@@ -17138,8 +17138,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17149,9 +17149,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://365566399",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365569686",
@@ -17159,8 +17159,8 @@ local MESHES_OLD =
     ItemName = "Fusion",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["GhostK2018"] = {
         Complete = false,
         Display = {
@@ -17176,9 +17176,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -17188,8 +17188,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2018"
-})
-}),
+}
+},
     ["Ginger_K_2018"] = {
         Complete = true,
         Display = {
@@ -17205,8 +17205,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17216,9 +17216,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2684774773",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -17228,8 +17228,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2018"
-})
-}),
+}
+},
     ["EliteGreen"] = {
         Complete = true,
         Display = {
@@ -17245,8 +17245,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17256,9 +17256,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2745884785",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -17268,8 +17268,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2015"
-})
-}),
+}
+},
     ["GreenFire"] = {
         Complete = true,
         Display = {
@@ -17285,8 +17285,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17296,9 +17296,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://9308767162",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -17308,8 +17308,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2017"
-})
-}),
+}
+},
     ["Icecracker_K_2020"] = {
         Complete = true,
         Display = {
@@ -17325,8 +17325,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17336,9 +17336,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://9308907230",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -17348,8 +17348,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2020"
-})
-}),
+}
+},
     ["JD"] = {
         Complete = true,
         Display = {
@@ -17365,8 +17365,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17376,9 +17376,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://559676009",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=566867312",
@@ -17386,8 +17386,8 @@ local MESHES_OLD =
     ItemName = "JD",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Latte_K_2023"] = {
         Complete = true,
         Display = {
@@ -17403,8 +17403,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17414,9 +17414,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=15319905553",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15413114703",
@@ -17425,8 +17425,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
-})
-}),
+}
+},
     ["Midnight"] = {
         Complete = true,
         Display = {
@@ -17442,8 +17442,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17453,9 +17453,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=161367322",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=197664126",
@@ -17463,8 +17463,8 @@ local MESHES_OLD =
     ItemName = "Midnight",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Constellation_K_2024"] = {
         Complete = true,
         Display = {
@@ -17480,8 +17480,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17491,9 +17491,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://125699146017319",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -17503,8 +17503,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2024"
-})
-}),
+}
+},
     ["OverseerKnife"] = {
         Complete = true,
         Display = {
@@ -17520,8 +17520,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17531,9 +17531,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=198299790",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198458910",
@@ -17541,8 +17541,8 @@ local MESHES_OLD =
     ItemName = "Overseer",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Palms_K_2024"] = {
         Complete = true,
         Display = {
@@ -17558,8 +17558,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17569,9 +17569,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=18351264716",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322137551",
@@ -17580,8 +17580,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
-})
-}),
+}
+},
     ["Plasmite"] = {
         Complete = true,
         Display = {
@@ -17597,8 +17597,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17608,9 +17608,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=161369273",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=161369368",
@@ -17618,8 +17618,8 @@ local MESHES_OLD =
     ItemName = "Plasmite",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["PredatorKnife"] = {
         Complete = true,
         Display = {
@@ -17635,8 +17635,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17646,9 +17646,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=199611278",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235372015",
@@ -17656,8 +17656,8 @@ local MESHES_OLD =
     ItemName = "Predator",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["RedFire"] = {
         Complete = true,
         Display = {
@@ -17673,8 +17673,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17684,9 +17684,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://9316301864",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -17696,8 +17696,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2017"
-})
-}),
+}
+},
     ["Ripper_K_2020"] = {
         Complete = false,
         Display = {
@@ -17713,9 +17713,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -17725,8 +17725,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2020"
-})
-}),
+}
+},
     ["Rune"] = {
         Complete = true,
         Display = {
@@ -17742,8 +17742,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17753,9 +17753,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=5580148723",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183607894",
@@ -17764,8 +17764,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
-})
-}),
+}
+},
     ["SantasMagic"] = {
         Complete = true,
         Display = {
@@ -17781,8 +17781,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17792,9 +17792,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4535479726",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -17804,8 +17804,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2019"
-})
-}),
+}
+},
     ["SantasSpirit"] = {
         Complete = true,
         Display = {
@@ -17821,8 +17821,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17832,9 +17832,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6123356424",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -17844,8 +17844,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2020"
-})
-}),
+}
+},
     ["ScratchBlue"] = {
         Complete = true,
         Display = {
@@ -17861,8 +17861,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17872,9 +17872,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1781892712",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -17884,8 +17884,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2017"
-})
-}),
+}
+},
     ["Scratch"] = {
         Complete = false,
         Display = {
@@ -17901,9 +17901,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -17913,8 +17913,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2016"
-})
-}),
+}
+},
     ["MLG"] = {
         Complete = true,
         Display = {
@@ -17930,8 +17930,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17941,9 +17941,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://473623765",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626979",
@@ -17951,8 +17951,8 @@ local MESHES_OLD =
     ItemName = "Shiny",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Skulls"] = {
         Complete = true,
         Display = {
@@ -17968,8 +17968,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -17979,9 +17979,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://9309355347",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -17991,8 +17991,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2019"
-})
-}),
+}
+},
     ["Spectral_K_2021"] = {
         Complete = true,
         Display = {
@@ -18008,8 +18008,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18019,9 +18019,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7756613337",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -18031,8 +18031,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2021"
-})
-}),
+}
+},
     ["Splash"] = {
         Complete = true,
         Display = {
@@ -18048,8 +18048,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18059,9 +18059,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://235343795 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     ChinaItemID = 6711939181,
@@ -18070,8 +18070,8 @@ local MESHES_OLD =
     ItemName = "Splash",
     ItemType = "Knife",
     Rarity = "Legendary"
-})
-}),
+}
+},
     ["Traveler_K_2023"] = {
         Complete = false,
         Display = {
@@ -18087,9 +18087,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -18099,8 +18099,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2023"
-})
-}),
+}
+},
     ["Tree"] = {
         Complete = true,
         Display = {
@@ -18116,8 +18116,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18127,9 +18127,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5359685972",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -18139,8 +18139,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2015"
-})
-}),
+}
+},
     ["Vampire_K_2022"] = {
         Complete = true,
         Display = {
@@ -18156,8 +18156,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18167,9 +18167,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11215450234",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -18179,8 +18179,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2022"
-})
-}),
+}
+},
     ["Web"] = {
         Complete = false,
         Display = {
@@ -18196,9 +18196,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -18208,8 +18208,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2015"
-})
-}),
+}
+},
     ["Witched"] = {
         Complete = true,
         Display = {
@@ -18225,8 +18225,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18236,9 +18236,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210410129",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -18248,8 +18248,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2019"
-})
-}),
+}
+},
     ["Abstract"] = {
         Complete = true,
         Display = {
@@ -18265,8 +18265,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18276,9 +18276,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6380059135",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365569428",
@@ -18286,8 +18286,8 @@ local MESHES_OLD =
     ItemName = "Abstract",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Aurora_K_2019"] = {
         Complete = true,
         Display = {
@@ -18303,8 +18303,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18314,9 +18314,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534823003",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -18326,8 +18326,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2019"
-})
-}),
+}
+},
     ["Bats"] = {
         Complete = true,
         Display = {
@@ -18343,8 +18343,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18354,9 +18354,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://531836446",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -18366,8 +18366,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2016"
-})
-}),
+}
+},
     ["Bio_K_2023"] = {
         Complete = true,
         Display = {
@@ -18383,8 +18383,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18394,9 +18394,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12926766355",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965298174",
@@ -18405,8 +18405,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Dew"] = {
         Complete = true,
         Display = {
@@ -18422,8 +18422,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18433,9 +18433,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://473621267",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626646",
@@ -18443,8 +18443,8 @@ local MESHES_OLD =
     ItemName = "Black",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Bones_K_2020"] = {
         Complete = true,
         Display = {
@@ -18460,8 +18460,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18471,9 +18471,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5872477763",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -18483,8 +18483,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2020"
-})
-}),
+}
+},
     ["CandySwirl_K_2019"] = {
         Complete = true,
         Display = {
@@ -18500,8 +18500,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18511,9 +18511,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534829449",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -18523,8 +18523,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2019"
-})
-}),
+}
+},
     ["Cane_K_2018"] = {
         Complete = true,
         Display = {
@@ -18540,8 +18540,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18551,9 +18551,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2684776996",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -18563,8 +18563,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2018"
-})
-}),
+}
+},
     ["Cane"] = {
         Complete = true,
         Display = {
@@ -18580,8 +18580,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18591,9 +18591,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5359571109",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -18603,8 +18603,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2015"
-})
-}),
+}
+},
     ["Runic_K_2022"] = {
         Complete = true,
         Display = {
@@ -18620,8 +18620,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18631,9 +18631,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11246439789",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -18643,8 +18643,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
-})
-}),
+}
+},
     ["Damp"] = {
         Complete = true,
         Display = {
@@ -18660,8 +18660,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18671,9 +18671,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=161673042",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198461253",
@@ -18681,8 +18681,8 @@ local MESHES_OLD =
     ItemName = "Damp",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Dark_K_2023"] = {
         Complete = false,
         Display = {
@@ -18698,9 +18698,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -18710,8 +18710,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2023"
-})
-}),
+}
+},
     ["DeepSea"] = {
         Complete = true,
         Display = {
@@ -18727,8 +18727,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18738,9 +18738,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=4659571247",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659634072",
@@ -18749,8 +18749,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Dungeon"] = {
         Complete = true,
         Display = {
@@ -18766,8 +18766,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18777,9 +18777,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210409814",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -18789,8 +18789,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2019"
-})
-}),
+}
+},
     ["Floral_K_2023"] = {
         Complete = true,
         Display = {
@@ -18806,8 +18806,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.595),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18817,16 +18817,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://13894957068",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Vector3Value",
     Name = "OriginalPosition",
     Props = {
     Value = Vector3.new(0, 0, 0)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://13944135218",
@@ -18835,8 +18835,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Frostflame_K_2024"] = {
         Complete = true,
         Display = {
@@ -18852,8 +18852,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18863,9 +18863,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://121019096457803",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -18875,8 +18875,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2024"
-})
-}),
+}
+},
     ["Galaxy"] = {
         Complete = true,
         Display = {
@@ -18892,8 +18892,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18903,9 +18903,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=192367012",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=192480941",
@@ -18913,8 +18913,8 @@ local MESHES_OLD =
     ItemName = "Galaxy",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Ghastly_K_2023"] = {
         Complete = false,
         Display = {
@@ -18930,9 +18930,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -18942,8 +18942,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2023"
-})
-}),
+}
+},
     ["Ginger"] = {
         Complete = true,
         Display = {
@@ -18959,8 +18959,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -18970,9 +18970,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5353674093",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -18982,8 +18982,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2015"
-})
-}),
+}
+},
     ["Gingerbread_K_2022"] = {
         Complete = false,
         Display = {
@@ -18999,9 +18999,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -19011,8 +19011,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
-})
-}),
+}
+},
     ["Gingerbread2017"] = {
         Complete = true,
         Display = {
@@ -19028,8 +19028,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19039,9 +19039,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=2124721832",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -19051,8 +19051,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2017"
-})
-}),
+}
+},
     ["Gingercookie_K_2025"] = {
         Complete = true,
         Display = {
@@ -19068,8 +19068,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19079,9 +19079,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://77551638357810",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -19091,8 +19091,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["GreenMarble"] = {
         Complete = true,
         Display = {
@@ -19108,8 +19108,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19119,9 +19119,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1782387127",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -19131,8 +19131,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2017"
-})
-}),
+}
+},
     ["Heart_K_2023"] = {
         Complete = true,
         Display = {
@@ -19148,8 +19148,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.355, 3, 0.768),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19159,9 +19159,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12248435132",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339327069",
@@ -19170,8 +19170,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Hologram_K_2025"] = {
         Complete = true,
         Display = {
@@ -19187,8 +19187,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19198,9 +19198,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://139678078674313",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -19210,8 +19210,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["Icicles_K_2018"] = {
         Complete = true,
         Display = {
@@ -19227,8 +19227,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19238,9 +19238,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2684779428",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -19250,8 +19250,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2018"
-})
-}),
+}
+},
     ["Jack"] = {
         Complete = true,
         Display = {
@@ -19267,8 +19267,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4002, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19278,9 +19278,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2550342275",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -19290,8 +19290,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2015"
-})
-}),
+}
+},
     ["Korblox"] = {
         Complete = true,
         Display = {
@@ -19307,8 +19307,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19318,9 +19318,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://313561541",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501501",
@@ -19328,8 +19328,8 @@ local MESHES_OLD =
     ItemName = "Korblox",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Kraken_K_2024"] = {
         Complete = true,
         Display = {
@@ -19345,8 +19345,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19356,9 +19356,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=112657470655629",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -19368,8 +19368,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2024"
-})
-}),
+}
+},
     ["Krypto"] = {
         Complete = true,
         Display = {
@@ -19385,8 +19385,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19396,9 +19396,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://155572642",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198458841",
@@ -19406,8 +19406,8 @@ local MESHES_OLD =
     ItemName = "Krypto",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Magma_K_2021"] = {
         Complete = true,
         Display = {
@@ -19423,8 +19423,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19434,9 +19434,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7756613022",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -19446,8 +19446,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2021"
-})
-}),
+}
+},
     ["MagmaK"] = {
         Complete = true,
         Display = {
@@ -19463,8 +19463,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19474,9 +19474,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1782168732",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -19486,8 +19486,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2017"
-})
-}),
+}
+},
     ["Survivors_K_2022"] = {
         Complete = true,
         Display = {
@@ -19503,8 +19503,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19514,9 +19514,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11218956882",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -19526,8 +19526,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
-})
-}),
+}
+},
     ["MoltenKnife"] = {
         Complete = true,
         Display = {
@@ -19543,8 +19543,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19554,9 +19554,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://234944774",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235371809",
@@ -19564,8 +19564,8 @@ local MESHES_OLD =
     ItemName = "Molten",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Musical"] = {
         Complete = true,
         Display = {
@@ -19581,8 +19581,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19592,9 +19592,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://365566387",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365569566",
@@ -19602,8 +19602,8 @@ local MESHES_OLD =
     ItemName = "Musical",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Nova"] = {
         Complete = true,
         Display = {
@@ -19619,8 +19619,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19630,9 +19630,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://198766824 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     ChinaItemID = 6711924013,
@@ -19641,8 +19641,8 @@ local MESHES_OLD =
     ItemName = "Nova",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["OrangeMarble"] = {
         Complete = false,
         Display = {
@@ -19658,9 +19658,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -19670,8 +19670,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2016"
-})
-}),
+}
+},
     ["Painted_K_2023"] = {
         Complete = true,
         Display = {
@@ -19687,8 +19687,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19698,9 +19698,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12935208652",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965311567",
@@ -19709,8 +19709,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["PopArt_K_2025"] = {
         Complete = true,
         Display = {
@@ -19726,8 +19726,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19737,9 +19737,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://71491705339389",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -19749,8 +19749,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["Portal_K_2020"] = {
         Complete = true,
         Display = {
@@ -19766,8 +19766,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19777,9 +19777,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866364902",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -19789,8 +19789,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2020"
-})
-}),
+}
+},
     ["Doritos"] = {
         Complete = true,
         Display = {
@@ -19806,8 +19806,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19817,9 +19817,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://473621310",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626740",
@@ -19827,8 +19827,8 @@ local MESHES_OLD =
     ItemName = "Purple",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Rainbow"] = {
         Complete = true,
         Display = {
@@ -19844,8 +19844,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19855,9 +19855,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=157019835",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=159747377",
@@ -19865,8 +19865,8 @@ local MESHES_OLD =
     ItemName = "Rainbow",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Robot_K_2024"] = {
         Complete = true,
         Display = {
@@ -19882,8 +19882,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19893,9 +19893,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://16833551908",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16959778188",
@@ -19904,8 +19904,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Sharky_K_2024"] = {
         Complete = true,
         Display = {
@@ -19921,8 +19921,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19932,9 +19932,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18321899067",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322179563",
@@ -19943,8 +19943,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["SilentNight_K_2020"] = {
         Complete = true,
         Display = {
@@ -19960,8 +19960,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -19971,9 +19971,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6121850778",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -19983,8 +19983,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2020"
-})
-}),
+}
+},
     ["Sleigh_K_2024"] = {
         Complete = true,
         Display = {
@@ -20000,8 +20000,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20011,9 +20011,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://85646229893233",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -20023,8 +20023,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2024"
-})
-}),
+}
+},
     ["SnakebiteK"] = {
         Complete = true,
         Display = {
@@ -20040,8 +20040,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20051,9 +20051,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210409981",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -20063,8 +20063,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2019"
-})
-}),
+}
+},
     ["Snowflakes_K_2020"] = {
         Complete = true,
         Display = {
@@ -20080,8 +20080,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20091,9 +20091,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://9308906310",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -20103,8 +20103,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2020"
-})
-}),
+}
+},
     ["Snowglobe_K_2023"] = {
         Complete = false,
         Display = {
@@ -20120,9 +20120,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -20132,8 +20132,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2023"
-})
-}),
+}
+},
     ["Snowy2017"] = {
         Complete = true,
         Display = {
@@ -20149,8 +20149,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20160,9 +20160,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://9308765927",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -20172,8 +20172,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2017"
-})
-}),
+}
+},
     ["Space"] = {
         Complete = true,
         Display = {
@@ -20189,8 +20189,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20200,9 +20200,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3183404232",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183607442",
@@ -20211,8 +20211,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Spearmint_K_2025"] = {
         Complete = true,
         Display = {
@@ -20228,8 +20228,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20239,9 +20239,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://73372556711687",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -20251,8 +20251,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["Spectrum"] = {
         Complete = true,
         Display = {
@@ -20268,8 +20268,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20279,9 +20279,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://162718300",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198458862",
@@ -20289,8 +20289,8 @@ local MESHES_OLD =
     ItemName = "Spectrum",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Spring_K_2024"] = {
         Complete = false,
         Display = {
@@ -20306,9 +20306,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16959775902",
@@ -20317,8 +20317,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Squire"] = {
         Complete = true,
         Display = {
@@ -20334,8 +20334,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20345,9 +20345,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://243372276",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501560",
@@ -20355,8 +20355,8 @@ local MESHES_OLD =
     ItemName = "Squire",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Starry_K_2021"] = {
         Complete = true,
         Display = {
@@ -20372,8 +20372,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20383,9 +20383,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8303534347",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -20395,8 +20395,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2021"
-})
-}),
+}
+},
     ["Storm_K_2024"] = {
         Complete = true,
         Display = {
@@ -20412,8 +20412,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20423,9 +20423,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://124972846638078",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -20435,8 +20435,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2024"
-})
-}),
+}
+},
     ["Swirl_K_2021"] = {
         Complete = true,
         Display = {
@@ -20452,8 +20452,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20463,9 +20463,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8294015413",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -20475,8 +20475,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2021"
-})
-}),
+}
+},
     ["ToxicK"] = {
         Complete = false,
         Display = {
@@ -20492,9 +20492,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -20504,8 +20504,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2018"
-})
-}),
+}
+},
     ["Tree_K_2022"] = {
         Complete = false,
         Display = {
@@ -20521,9 +20521,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -20533,8 +20533,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
-})
-}),
+}
+},
     ["Tree_K_2023"] = {
         Complete = false,
         Display = {
@@ -20550,9 +20550,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -20562,8 +20562,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2023"
-})
-}),
+}
+},
     ["Tropical_K_2025"] = {
         Complete = true,
         Display = {
@@ -20579,8 +20579,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20590,9 +20590,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://113497909930790",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -20602,8 +20602,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["VampireK2018"] = {
         Complete = true,
         Display = {
@@ -20619,8 +20619,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20630,9 +20630,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513708625",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -20642,8 +20642,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2018"
-})
-}),
+}
+},
     ["Vortex"] = {
         Complete = true,
         Display = {
@@ -20659,8 +20659,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20670,9 +20670,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://235347825",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235371508",
@@ -20680,8 +20680,8 @@ local MESHES_OLD =
     ItemName = "Vortex",
     ItemType = "Knife",
     Rarity = "Rare"
-})
-}),
+}
+},
     ["Watcher_K_2021"] = {
         Complete = true,
         Display = {
@@ -20697,8 +20697,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20708,9 +20708,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7756613596",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -20720,8 +20720,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2021"
-})
-}),
+}
+},
     ["Waves_K_2024"] = {
         Complete = true,
         Display = {
@@ -20737,8 +20737,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20748,9 +20748,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18321898887",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322178053",
@@ -20759,8 +20759,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
-})
-}),
+}
+},
     ["Wraith_K_2022"] = {
         Complete = true,
         Display = {
@@ -20776,8 +20776,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20787,9 +20787,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11215449757",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -20799,8 +20799,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
-})
-}),
+}
+},
     ["Xeno_K_2025"] = {
         Complete = true,
         Display = {
@@ -20816,8 +20816,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20827,9 +20827,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://101379516858862",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -20839,8 +20839,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
-})
-}),
+}
+},
     ["Sweet_K_2026"] = {
         Complete = true,
         Display = {
@@ -20856,8 +20856,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20867,9 +20867,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://139481558107907",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Valentines",
@@ -20879,8 +20879,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2026"
-})
-}),
+}
+},
     ["Zombified_K_2022"] = {
         Complete = true,
         Display = {
@@ -20896,8 +20896,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20907,9 +20907,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11218741536",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -20919,8 +20919,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
-})
-}),
+}
+},
     ["Abduction_K_2025"] = {
         Complete = true,
         Display = {
@@ -20936,8 +20936,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20947,9 +20947,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://125213231050513",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -20959,8 +20959,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Adurite"] = {
         Complete = true,
         Display = {
@@ -20976,8 +20976,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -20987,9 +20987,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=192482160",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=192492943",
@@ -20997,8 +20997,8 @@ local MESHES_OLD =
     ItemName = "Adurite",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Blossom_K_2026"] = {
         Complete = true,
         Display = {
@@ -21014,8 +21014,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21025,9 +21025,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://139596499078847",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Valentines",
@@ -21037,8 +21037,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2026"
-})
-}),
+}
+},
     ["Chips"] = {
         Complete = true,
         Display = {
@@ -21054,8 +21054,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21065,9 +21065,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://473621164",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626317",
@@ -21075,8 +21075,8 @@ local MESHES_OLD =
     ItemName = "Blue",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Bluesteel"] = {
         Complete = true,
         Display = {
@@ -21092,8 +21092,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21103,9 +21103,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=157904876",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=159947939",
@@ -21113,8 +21113,8 @@ local MESHES_OLD =
     ItemName = "Bluesteel",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Bones_K_2024"] = {
         Complete = true,
         Display = {
@@ -21130,8 +21130,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21141,9 +21141,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://89105172362040",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -21153,8 +21153,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["Brains2019"] = {
         Complete = true,
         Display = {
@@ -21170,8 +21170,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21181,9 +21181,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210409062",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -21193,8 +21193,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
-})
-}),
+}
+},
     ["Branches"] = {
         Complete = true,
         Display = {
@@ -21210,8 +21210,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21221,9 +21221,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210409800",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -21233,8 +21233,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
-})
-}),
+}
+},
     ["Brush"] = {
         Complete = true,
         Display = {
@@ -21250,8 +21250,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21261,9 +21261,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5435976404",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365568602",
@@ -21271,8 +21271,8 @@ local MESHES_OLD =
     ItemName = "Brush",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["CamoKnife"] = {
         Complete = true,
         Display = {
@@ -21288,8 +21288,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21299,9 +21299,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=6932357946",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183606225",
@@ -21310,8 +21310,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Canes_K_2023"] = {
         Complete = false,
         Display = {
@@ -21327,9 +21327,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -21339,8 +21339,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["Carrot_K_2024"] = {
         Complete = true,
         Display = {
@@ -21356,8 +21356,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.595),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21367,9 +21367,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://16845528588",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16959771850",
@@ -21378,8 +21378,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Carrot_K_2023"] = {
         Complete = true,
         Display = {
@@ -21395,8 +21395,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21406,9 +21406,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12928323969",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965307410",
@@ -21417,8 +21417,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Checker"] = {
         Complete = false,
         Display = {
@@ -21434,9 +21434,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198461230",
@@ -21444,8 +21444,8 @@ local MESHES_OLD =
     ItemName = "Checker",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Cheesy"] = {
         Complete = true,
         Display = {
@@ -21461,8 +21461,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21472,9 +21472,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=161425686",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198455898",
@@ -21482,8 +21482,8 @@ local MESHES_OLD =
     ItemName = "Cheesy",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Circuit"] = {
         Complete = true,
         Display = {
@@ -21499,8 +21499,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21510,9 +21510,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://155356565  ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366945",
@@ -21520,8 +21520,8 @@ local MESHES_OLD =
     ItemName = "Circuit",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Cookie_K_2021"] = {
         Complete = true,
         Display = {
@@ -21537,8 +21537,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21548,9 +21548,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275035982",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -21560,8 +21560,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Decorated_K_2025"] = {
         Complete = true,
         Display = {
@@ -21577,8 +21577,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21588,9 +21588,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://136070215876929",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=124860763249593",
@@ -21599,8 +21599,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Doge"] = {
         Complete = true,
         Display = {
@@ -21616,8 +21616,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21627,9 +21627,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://159758190 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235371276",
@@ -21637,8 +21637,8 @@ local MESHES_OLD =
     ItemName = "Doge",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Donut"] = {
         Complete = true,
         Display = {
@@ -21654,8 +21654,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21665,9 +21665,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=161529618",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366815",
@@ -21675,8 +21675,8 @@ local MESHES_OLD =
     ItemName = "Donut",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Eclipse_K_2023"] = {
         Complete = false,
         Display = {
@@ -21692,9 +21692,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -21704,8 +21704,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["Fireplace_K_2023"] = {
         Complete = true,
         Display = {
@@ -21721,8 +21721,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21732,9 +21732,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15382624195",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -21744,8 +21744,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["Frosty"] = {
         Complete = true,
         Display = {
@@ -21761,8 +21761,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21772,9 +21772,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1268375270",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -21784,8 +21784,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
-})
-}),
+}
+},
     ["Frozen_K_2019"] = {
         Complete = true,
         Display = {
@@ -21801,8 +21801,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21812,9 +21812,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4528568803",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -21824,8 +21824,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
-})
-}),
+}
+},
     ["Future"] = {
         Complete = true,
         Display = {
@@ -21841,8 +21841,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 2.8, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21852,9 +21852,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=163926951",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=197639041",
@@ -21862,8 +21862,8 @@ local MESHES_OLD =
     ItemName = "Future",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["GhostRbx_K_2022"] = {
         Complete = true,
         Display = {
@@ -21879,8 +21879,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21890,9 +21890,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11117362816",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -21902,8 +21902,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Ghosts_K_2020"] = {
         Complete = true,
         Display = {
@@ -21919,8 +21919,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21930,9 +21930,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866362606",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -21942,8 +21942,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2020"
-})
-}),
+}
+},
     ["Gifted"] = {
         Complete = true,
         Display = {
@@ -21959,8 +21959,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -21970,9 +21970,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=190131936",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=197627734",
@@ -21980,8 +21980,8 @@ local MESHES_OLD =
     ItemName = "Gifted",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Gingerbread_K_2019"] = {
         Complete = true,
         Display = {
@@ -21997,8 +21997,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22008,9 +22008,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534824961",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -22020,8 +22020,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
-})
-}),
+}
+},
     ["Gingerbread_K_2025"] = {
         Complete = true,
         Display = {
@@ -22037,8 +22037,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22048,9 +22048,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://86777384953188",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -22060,8 +22060,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Gingerbread_K_2020"] = {
         Complete = true,
         Display = {
@@ -22077,8 +22077,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22088,9 +22088,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6121849468",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -22100,8 +22100,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2020"
-})
-}),
+}
+},
     ["Gingerheart_K_2024"] = {
         Complete = true,
         Display = {
@@ -22117,8 +22117,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22128,9 +22128,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://77403934219171",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -22140,8 +22140,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["Glowy_K_2023"] = {
         Complete = false,
         Display = {
@@ -22157,9 +22157,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -22169,8 +22169,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["Gothic_K_2021"] = {
         Complete = true,
         Display = {
@@ -22186,8 +22186,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22197,9 +22197,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7756611289",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -22209,8 +22209,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Graffiti"] = {
         Complete = false,
         Display = {
@@ -22226,9 +22226,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659634630",
@@ -22237,8 +22237,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Hazard_K_2022"] = {
         Complete = true,
         Display = {
@@ -22254,8 +22254,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22265,9 +22265,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11217121434",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -22277,8 +22277,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Hazmat"] = {
         Complete = true,
         Display = {
@@ -22294,8 +22294,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22305,9 +22305,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://311358906",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501297",
@@ -22315,8 +22315,8 @@ local MESHES_OLD =
     ItemName = "Hazmat",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["HighTech"] = {
         Complete = false,
         Display = {
@@ -22332,9 +22332,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659635055",
@@ -22343,8 +22343,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Hive"] = {
         Complete = true,
         Display = {
@@ -22360,8 +22360,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22371,9 +22371,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5489009974",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501434",
@@ -22381,8 +22381,8 @@ local MESHES_OLD =
     ItemName = "Hive",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Holly_K_2018"] = {
         Complete = true,
         Display = {
@@ -22398,8 +22398,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22409,9 +22409,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2684783115",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -22421,8 +22421,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["Jellyfish_K_2024"] = {
         Complete = true,
         Display = {
@@ -22438,8 +22438,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.595),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22449,9 +22449,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18321899333",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322181701",
@@ -22460,8 +22460,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Jigsaw"] = {
         Complete = true,
         Display = {
@@ -22477,8 +22477,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22488,9 +22488,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://365566397",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365569126",
@@ -22498,8 +22498,8 @@ local MESHES_OLD =
     ItemName = "Jigsaw",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Jack_K_2022"] = {
         Complete = true,
         Display = {
@@ -22515,8 +22515,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22526,9 +22526,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11245572024",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -22538,8 +22538,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Lava_K_2025"] = {
         Complete = true,
         Display = {
@@ -22555,8 +22555,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22566,9 +22566,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://107204456338435",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -22578,8 +22578,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Lights_K_2019"] = {
         Complete = true,
         Display = {
@@ -22595,8 +22595,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22606,9 +22606,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534825993",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -22618,8 +22618,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
-})
-}),
+}
+},
     ["Lucky"] = {
         Complete = true,
         Display = {
@@ -22635,8 +22635,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22646,9 +22646,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://365566400",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365569265",
@@ -22656,8 +22656,8 @@ local MESHES_OLD =
     ItemName = "Lucky",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Marble_K_2023"] = {
         Complete = true,
         Display = {
@@ -22673,8 +22673,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22684,9 +22684,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12926768989",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965302237",
@@ -22695,8 +22695,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Melon"] = {
         Complete = true,
         Display = {
@@ -22712,8 +22712,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22723,9 +22723,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://311701292",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501369",
@@ -22733,8 +22733,8 @@ local MESHES_OLD =
     ItemName = "Melon",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Meltdown_K_2023"] = {
         Complete = false,
         Display = {
@@ -22750,9 +22750,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -22762,8 +22762,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["Missing"] = {
         Complete = true,
         Display = {
@@ -22779,8 +22779,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22790,9 +22790,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://163625649",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198455936",
@@ -22800,8 +22800,8 @@ local MESHES_OLD =
     ItemName = "Missing",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Mistletoe_K_2022"] = {
         Complete = false,
         Display = {
@@ -22817,9 +22817,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -22829,8 +22829,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Monster_K_2024"] = {
         Complete = true,
         Display = {
@@ -22846,8 +22846,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22857,9 +22857,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://136318121608837",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -22869,8 +22869,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["Moons"] = {
         Complete = false,
         Display = {
@@ -22886,9 +22886,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -22898,8 +22898,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2016"
-})
-}),
+}
+},
     ["Moons_K_2024"] = {
         Complete = true,
         Display = {
@@ -22915,8 +22915,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22926,9 +22926,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://87244940102225",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -22938,8 +22938,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["MummyK2018"] = {
         Complete = true,
         Display = {
@@ -22955,8 +22955,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -22966,9 +22966,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513648136",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -22978,8 +22978,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["Mummy_K_2020"] = {
         Complete = true,
         Display = {
@@ -22995,8 +22995,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23006,9 +23006,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866365511",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -23018,8 +23018,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2020"
-})
-}),
+}
+},
     ["MummyK"] = {
         Complete = true,
         Display = {
@@ -23035,8 +23035,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23046,9 +23046,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1782155617",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -23058,8 +23058,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
-})
-}),
+}
+},
     ["Ornaments_K_2025"] = {
         Complete = true,
         Display = {
@@ -23075,8 +23075,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23086,9 +23086,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://128273296066714",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -23098,8 +23098,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Paper"] = {
         Complete = true,
         Display = {
@@ -23115,8 +23115,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23126,9 +23126,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://179035664 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366870",
@@ -23136,8 +23136,8 @@ local MESHES_OLD =
     ItemName = "Paper",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["LMFAO"] = {
         Complete = true,
         Display = {
@@ -23153,8 +23153,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23164,9 +23164,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://473621215",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626473",
@@ -23174,8 +23174,8 @@ local MESHES_OLD =
     ItemName = "Pink",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["PolarBear_K_2025"] = {
         Complete = true,
         Display = {
@@ -23191,8 +23191,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23202,9 +23202,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://115347930835748",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -23214,8 +23214,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Pool_K_2025"] = {
         Complete = true,
         Display = {
@@ -23231,8 +23231,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23242,9 +23242,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://139564868386734",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -23254,8 +23254,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Popsicle_K_2023"] = {
         Complete = true,
         Display = {
@@ -23271,8 +23271,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.595),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23282,16 +23282,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://13884848877",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Vector3Value",
     Name = "OriginalPosition",
     Props = {
     Value = Vector3.new(0, 0, 0)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://13944131578",
@@ -23300,8 +23300,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["PotionK2018"] = {
         Complete = false,
         Display = {
@@ -23317,9 +23317,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -23329,8 +23329,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["Potion"] = {
         Complete = true,
         Display = {
@@ -23346,8 +23346,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23357,9 +23357,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1782402938",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -23369,8 +23369,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
-})
-}),
+}
+},
     ["Pumpkin_K_2020"] = {
         Complete = true,
         Display = {
@@ -23386,8 +23386,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23397,9 +23397,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5872477622",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -23409,8 +23409,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2020"
-})
-}),
+}
+},
     ["PumpkinPatch_K_2025"] = {
         Complete = true,
         Display = {
@@ -23426,8 +23426,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23437,9 +23437,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://92052630861897",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -23449,8 +23449,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["PumpkinPie_K_2023"] = {
         Complete = true,
         Display = {
@@ -23466,8 +23466,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23477,9 +23477,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=15320084464",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15413117611",
@@ -23488,8 +23488,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Snoop"] = {
         Complete = true,
         Display = {
@@ -23505,8 +23505,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23516,9 +23516,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://473621136",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626150",
@@ -23526,8 +23526,8 @@ local MESHES_OLD =
     ItemName = "Red",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Retro_K_2025"] = {
         Complete = true,
         Display = {
@@ -23543,8 +23543,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23554,9 +23554,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://75445127360563",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -23566,8 +23566,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Rose_K_2023"] = {
         Complete = true,
         Display = {
@@ -23583,8 +23583,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.355, 3, 0.768),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23594,9 +23594,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12238708500",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339325736",
@@ -23605,8 +23605,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Skulls_K_2021"] = {
         Complete = true,
         Display = {
@@ -23622,8 +23622,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23633,9 +23633,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7756610618",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -23645,8 +23645,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Snowflake_K_2018"] = {
         Complete = true,
         Display = {
@@ -23662,8 +23662,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23673,9 +23673,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2684804091",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -23685,8 +23685,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["Snowflake_K_2022"] = {
         Complete = false,
         Display = {
@@ -23702,9 +23702,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -23714,8 +23714,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Snowman_K_2024"] = {
         Complete = true,
         Display = {
@@ -23731,8 +23731,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23742,9 +23742,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://75066955538535",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -23754,8 +23754,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["Snowman"] = {
         Complete = true,
         Display = {
@@ -23771,8 +23771,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23782,9 +23782,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5538532923",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -23794,8 +23794,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2015"
-})
-}),
+}
+},
     ["Snowman_K_2021"] = {
         Complete = true,
         Display = {
@@ -23811,8 +23811,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23822,9 +23822,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275035798",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -23834,8 +23834,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Snowy"] = {
         Complete = true,
         Display = {
@@ -23851,8 +23851,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23862,9 +23862,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5538538671",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -23874,8 +23874,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2015"
-})
-}),
+}
+},
     ["Soda_K_2025"] = {
         Complete = true,
         Display = {
@@ -23891,8 +23891,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23902,9 +23902,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://123132745260166",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -23914,8 +23914,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Stalker"] = {
         Complete = false,
         Display = {
@@ -23931,9 +23931,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198455980",
@@ -23941,8 +23941,8 @@ local MESHES_OLD =
     ItemName = "Stalker",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Starry_K_2026"] = {
         Complete = true,
         Display = {
@@ -23958,8 +23958,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -23969,9 +23969,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://98911990727243",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Valentines",
@@ -23981,8 +23981,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2026"
-})
-}),
+}
+},
     ["Stars_K_2023"] = {
         Complete = false,
         Display = {
@@ -23998,9 +23998,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -24010,8 +24010,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["Steel_K_2023"] = {
         Complete = false,
         Display = {
@@ -24027,9 +24027,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -24039,8 +24039,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["Stockings_K_2022"] = {
         Complete = false,
         Display = {
@@ -24056,9 +24056,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -24068,8 +24068,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Sweater_K_2025"] = {
         Complete = true,
         Display = {
@@ -24085,8 +24085,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24096,9 +24096,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://134310239127931",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -24108,8 +24108,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Sweater_K_2018"] = {
         Complete = true,
         Display = {
@@ -24125,8 +24125,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24136,9 +24136,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2684808994",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -24148,8 +24148,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["Sweater"] = {
         Complete = true,
         Display = {
@@ -24165,8 +24165,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24176,9 +24176,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1268293368",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -24188,8 +24188,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
-})
-}),
+}
+},
     ["Tiger"] = {
         Complete = true,
         Display = {
@@ -24205,8 +24205,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24216,9 +24216,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3183403283",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183606579",
@@ -24227,8 +24227,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Treats_K_2025"] = {
         Complete = true,
         Display = {
@@ -24244,8 +24244,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24255,9 +24255,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://117148660034316",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -24267,8 +24267,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
-})
-}),
+}
+},
     ["Tree2017"] = {
         Complete = true,
         Display = {
@@ -24284,8 +24284,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24295,9 +24295,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1268675577",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -24307,8 +24307,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
-})
-}),
+}
+},
     ["Tree_K_2021"] = {
         Complete = true,
         Display = {
@@ -24324,8 +24324,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24335,9 +24335,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275034131",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -24347,8 +24347,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Turtle_K_2024"] = {
         Complete = true,
         Display = {
@@ -24364,8 +24364,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.595),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24375,9 +24375,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18321898428",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322166908",
@@ -24386,8 +24386,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Vampire"] = {
         Complete = false,
         Display = {
@@ -24403,9 +24403,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -24415,8 +24415,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2016"
-})
-}),
+}
+},
     ["VoidRbx"] = {
         Complete = true,
         Display = {
@@ -24432,8 +24432,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24443,9 +24443,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11548074269",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11548082732",
@@ -24454,8 +24454,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
-})
-}),
+}
+},
     ["Wanwood"] = {
         Complete = true,
         Display = {
@@ -24471,8 +24471,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24482,9 +24482,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=159653725",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=192132094",
@@ -24492,8 +24492,8 @@ local MESHES_OLD =
     ItemName = "Wanwood",
     ItemType = "Knife",
     Rarity = "Uncommon"
-})
-}),
+}
+},
     ["Webs"] = {
         Complete = true,
         Display = {
@@ -24509,8 +24509,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24520,9 +24520,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1782366385",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -24532,8 +24532,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
-})
-}),
+}
+},
     ["WitchBrew_K_2024"] = {
         Complete = true,
         Display = {
@@ -24549,8 +24549,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24560,9 +24560,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://101625224396969",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -24572,8 +24572,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["Witch_K_2022"] = {
         Complete = true,
         Display = {
@@ -24589,8 +24589,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24600,9 +24600,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11245959206",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -24612,8 +24612,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
-})
-}),
+}
+},
     ["Wolf"] = {
         Complete = false,
         Display = {
@@ -24629,9 +24629,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -24641,8 +24641,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2016"
-})
-}),
+}
+},
     ["Ghosts_K_2021"] = {
         Complete = true,
         Display = {
@@ -24658,8 +24658,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24669,9 +24669,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7808358755",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -24681,8 +24681,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["Gift_K_2020"] = {
         Complete = true,
         Display = {
@@ -24698,8 +24698,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24709,9 +24709,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6121854102",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -24721,8 +24721,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2020"
-})
-}),
+}
+},
     ["Wrapped_K_2024"] = {
         Complete = true,
         Display = {
@@ -24738,8 +24738,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24749,9 +24749,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://73121682334065",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -24761,8 +24761,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["Wrapped"] = {
         Complete = true,
         Display = {
@@ -24778,8 +24778,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24789,9 +24789,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5366242489",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -24801,8 +24801,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2015"
-})
-}),
+}
+},
     ["Wreaths_K_2024"] = {
         Complete = true,
         Display = {
@@ -24818,8 +24818,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24829,9 +24829,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://100835235112831",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -24841,8 +24841,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
-})
-}),
+}
+},
     ["Zombie_K_2023"] = {
         Complete = false,
         Display = {
@@ -24858,9 +24858,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -24870,8 +24870,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
-})
-}),
+}
+},
     ["ZombieK2018"] = {
         Complete = true,
         Display = {
@@ -24887,8 +24887,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24898,9 +24898,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513708626",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -24910,8 +24910,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
-})
-}),
+}
+},
     ["Zombie_K_2021"] = {
         Complete = true,
         Display = {
@@ -24927,8 +24927,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24938,9 +24938,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7756611924",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -24950,8 +24950,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
-})
-}),
+}
+},
     ["ZombifiedK"] = {
         Complete = true,
         Display = {
@@ -24967,8 +24967,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -24978,9 +24978,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210410112",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -24990,8 +24990,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
-})
-}),
+}
+},
     ["2015"] = {
         Complete = false,
         Display = {
@@ -25007,9 +25007,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=199026945",
@@ -25017,8 +25017,8 @@ local MESHES_OLD =
     ItemName = "2015",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["8bit"] = {
         Complete = true,
         Display = {
@@ -25034,8 +25034,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25045,9 +25045,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=159546779  ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     ChinaItemID = 6711880940,
@@ -25056,8 +25056,8 @@ local MESHES_OLD =
     ItemName = "8bit",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Alex"] = {
         Complete = true,
         Display = {
@@ -25073,8 +25073,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25084,9 +25084,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://545604317",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=546159020",
@@ -25094,8 +25094,8 @@ local MESHES_OLD =
     ItemName = "Alex",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Apoc_K_2022"] = {
         Complete = true,
         Display = {
@@ -25111,8 +25111,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25122,9 +25122,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11218500706",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -25134,8 +25134,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Aqua"] = {
         Complete = true,
         Display = {
@@ -25151,8 +25151,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25162,9 +25162,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://250006854",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501208",
@@ -25172,8 +25172,8 @@ local MESHES_OLD =
     ItemName = "Aqua",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Bats_K_2025"] = {
         Complete = true,
         Display = {
@@ -25189,8 +25189,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25200,9 +25200,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://116130292497156",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -25212,8 +25212,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Bats_K_2024"] = {
         Complete = true,
         Display = {
@@ -25229,8 +25229,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25240,9 +25240,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://134605667915149",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -25252,8 +25252,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["BatsK"] = {
         Complete = false,
         Display = {
@@ -25269,9 +25269,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -25281,8 +25281,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["Bats_K_2020"] = {
         Complete = true,
         Display = {
@@ -25298,8 +25298,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25309,9 +25309,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5930584000",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -25321,8 +25321,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Bells_K_2023"] = {
         Complete = false,
         Display = {
@@ -25338,9 +25338,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -25350,8 +25350,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Bleached"] = {
         Complete = true,
         Display = {
@@ -25367,8 +25367,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25378,9 +25378,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://311711104",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315500879",
@@ -25388,8 +25388,8 @@ local MESHES_OLD =
     ItemName = "Bleached",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Blossom"] = {
         Complete = false,
         Display = {
@@ -25405,9 +25405,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=363150561",
@@ -25415,8 +25415,8 @@ local MESHES_OLD =
     ItemName = "Blossom",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Bones"] = {
         Complete = false,
         Display = {
@@ -25432,9 +25432,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -25444,8 +25444,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
-})
-}),
+}
+},
     ["Borders"] = {
         Complete = true,
         Display = {
@@ -25461,8 +25461,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25472,9 +25472,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=155199285",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198453499",
@@ -25482,8 +25482,8 @@ local MESHES_OLD =
     ItemName = "Borders",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Brains"] = {
         Complete = false,
         Display = {
@@ -25499,9 +25499,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -25511,8 +25511,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
-})
-}),
+}
+},
     ["Pepper"] = {
         Complete = true,
         Display = {
@@ -25528,8 +25528,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25539,9 +25539,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://473620934",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473625645",
@@ -25549,8 +25549,8 @@ local MESHES_OLD =
     ItemName = "Brown",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Bunny"] = {
         Complete = false,
         Display = {
@@ -25566,9 +25566,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -25578,8 +25578,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
-})
-}),
+}
+},
     ["Candied_K_2022"] = {
         Complete = false,
         Display = {
@@ -25595,9 +25595,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -25607,8 +25607,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Candle_K_2020"] = {
         Complete = true,
         Display = {
@@ -25624,8 +25624,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25635,9 +25635,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5872478022",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -25647,8 +25647,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Candles_K_2024"] = {
         Complete = true,
         Display = {
@@ -25664,8 +25664,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25675,9 +25675,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://137012419503995",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -25687,8 +25687,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["CandyCorn_K_2022"] = {
         Complete = true,
         Display = {
@@ -25704,8 +25704,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25715,9 +25715,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11217550170",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -25727,8 +25727,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["CandyCorn_K_2020"] = {
         Complete = false,
         Display = {
@@ -25744,9 +25744,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -25756,8 +25756,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["CandyCorn_K_2024"] = {
         Complete = true,
         Display = {
@@ -25773,8 +25773,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25784,9 +25784,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://76315981363183",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -25796,8 +25796,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["CandyCorn2019"] = {
         Complete = false,
         Display = {
@@ -25813,9 +25813,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -25825,8 +25825,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["CandyCorn"] = {
         Complete = true,
         Display = {
@@ -25842,8 +25842,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25853,9 +25853,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1782530105",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -25865,8 +25865,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
-})
-}),
+}
+},
     ["CandyCorn_K_2025"] = {
         Complete = true,
         Display = {
@@ -25882,8 +25882,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25893,9 +25893,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://84607607123689",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -25905,8 +25905,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Cane_K_2021"] = {
         Complete = true,
         Display = {
@@ -25922,8 +25922,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25933,9 +25933,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8293557762",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -25945,8 +25945,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Cardboard"] = {
         Complete = true,
         Display = {
@@ -25962,8 +25962,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -25973,9 +25973,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://159435782",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366729",
@@ -25983,8 +25983,8 @@ local MESHES_OLD =
     ItemName = "Cardboard",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Carrot"] = {
         Complete = false,
         Display = {
@@ -26000,9 +26000,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -26012,8 +26012,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
-})
-}),
+}
+},
     ["Carrots_K_2025"] = {
         Complete = true,
         Display = {
@@ -26029,8 +26029,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26040,9 +26040,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://137285542474252",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=76914260444878",
@@ -26051,8 +26051,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Carved_K_2020"] = {
         Complete = true,
         Display = {
@@ -26068,8 +26068,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26079,9 +26079,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866356691",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -26091,8 +26091,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Cherry"] = {
         Complete = true,
         Display = {
@@ -26108,8 +26108,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26119,9 +26119,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=155195316",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6711852603",
@@ -26129,8 +26129,8 @@ local MESHES_OLD =
     ItemName = "Cherry",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Chick_K_2025"] = {
         Complete = true,
         Display = {
@@ -26146,8 +26146,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26157,9 +26157,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://116056287470892",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=116361515042274",
@@ -26168,8 +26168,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Choco"] = {
         Complete = true,
         Display = {
@@ -26185,8 +26185,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26196,9 +26196,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://386204101",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -26208,8 +26208,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
-})
-}),
+}
+},
     ["Clan"] = {
         Complete = true,
         Display = {
@@ -26225,8 +26225,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26236,9 +26236,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://161495171",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366460",
@@ -26246,8 +26246,8 @@ local MESHES_OLD =
     ItemName = "Clan",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Clown"] = {
         Complete = true,
         Display = {
@@ -26263,8 +26263,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26274,9 +26274,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://197196512",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501118",
@@ -26284,8 +26284,8 @@ local MESHES_OLD =
     ItemName = "Clown",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Clownfish_K_2024"] = {
         Complete = true,
         Display = {
@@ -26301,8 +26301,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26312,9 +26312,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18321899540",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322183619",
@@ -26323,8 +26323,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Coal_K_2018"] = {
         Complete = true,
         Display = {
@@ -26340,8 +26340,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26351,9 +26351,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2684806680",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -26363,8 +26363,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["Coal_K_2022"] = {
         Complete = false,
         Display = {
@@ -26380,9 +26380,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -26392,8 +26392,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Coal_K_2021"] = {
         Complete = true,
         Display = {
@@ -26409,8 +26409,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26420,9 +26420,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275036203",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -26432,8 +26432,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Coal"] = {
         Complete = true,
         Display = {
@@ -26449,8 +26449,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26460,9 +26460,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1268280806",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -26472,8 +26472,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
-})
-}),
+}
+},
     ["Coconut_K_2025"] = {
         Complete = true,
         Display = {
@@ -26489,8 +26489,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26500,9 +26500,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://97056994207188",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -26512,8 +26512,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Combat"] = {
         Complete = true,
         Display = {
@@ -26529,8 +26529,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26540,9 +26540,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=6932358523",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183604570",
@@ -26551,8 +26551,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Combat2"] = {
         Complete = true,
         Display = {
@@ -26568,8 +26568,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26579,9 +26579,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=6932358967",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4972196241",
@@ -26590,8 +26590,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Copper"] = {
         Complete = true,
         Display = {
@@ -26607,8 +26607,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26618,9 +26618,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3183401534",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183605392",
@@ -26629,8 +26629,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Corl"] = {
         Complete = true,
         Display = {
@@ -26646,8 +26646,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26657,9 +26657,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://545392975",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=546161858",
@@ -26667,8 +26667,8 @@ local MESHES_OLD =
     ItemName = "Corl",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Cracks_K_2021"] = {
         Complete = true,
         Display = {
@@ -26684,8 +26684,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26695,9 +26695,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7756612787",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -26707,8 +26707,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Darkness_K_2022"] = {
         Complete = true,
         Display = {
@@ -26724,8 +26724,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26735,9 +26735,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11217282454",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -26747,8 +26747,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["DefaultKnife"] = {
         Complete = true,
         Display = {
@@ -26764,8 +26764,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26775,9 +26775,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=121944805",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://584555920",
@@ -26786,8 +26786,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Denis"] = {
         Complete = true,
         Display = {
@@ -26803,8 +26803,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26814,8 +26814,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=162016526",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Decal",
@@ -26824,9 +26824,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Right,
     Texture = "rbxassetid://872382723",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=546161062",
@@ -26834,8 +26834,8 @@ local MESHES_OLD =
     ItemName = "Denis",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Dolphins_K_2025"] = {
         Complete = true,
         Display = {
@@ -26851,8 +26851,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26862,9 +26862,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://105839458133429",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -26874,8 +26874,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Eco"] = {
         Complete = true,
         Display = {
@@ -26891,8 +26891,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26902,9 +26902,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://365566401",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365567889",
@@ -26912,8 +26912,8 @@ local MESHES_OLD =
     ItemName = "Eco",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Ecto"] = {
         Complete = true,
         Display = {
@@ -26929,8 +26929,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -26940,9 +26940,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1782411472",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -26952,8 +26952,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
-})
-}),
+}
+},
     ["Eggs"] = {
         Complete = false,
         Display = {
@@ -26969,9 +26969,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -26981,8 +26981,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
-})
-}),
+}
+},
     ["Elf2017"] = {
         Complete = true,
         Display = {
@@ -26998,8 +26998,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27009,9 +27009,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://9308754309",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -27021,8 +27021,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
-})
-}),
+}
+},
     ["Elf"] = {
         Complete = true,
         Display = {
@@ -27038,8 +27038,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27049,9 +27049,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5364286895",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -27061,8 +27061,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2015"
-})
-}),
+}
+},
     ["Skull_K_2023"] = {
         Complete = false,
         Display = {
@@ -27078,9 +27078,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -27090,8 +27090,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Euro"] = {
         Complete = true,
         Display = {
@@ -27107,8 +27107,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27118,9 +27118,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://240940193",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305504173",
@@ -27128,8 +27128,8 @@ local MESHES_OLD =
     ItemName = "Euro",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Eyeball_K_2022"] = {
         Complete = true,
         Display = {
@@ -27145,8 +27145,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27156,9 +27156,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11217645677",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -27168,8 +27168,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Fragile_K_2023"] = {
         Complete = true,
         Display = {
@@ -27185,8 +27185,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27196,9 +27196,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12936083164",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965294432",
@@ -27207,8 +27207,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Frosted_K_2019"] = {
         Complete = true,
         Display = {
@@ -27224,8 +27224,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27235,9 +27235,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534831933",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -27247,8 +27247,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Frozen_K_2023"] = {
         Complete = false,
         Display = {
@@ -27264,9 +27264,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -27276,8 +27276,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Ghosts_K_2023"] = {
         Complete = false,
         Display = {
@@ -27293,9 +27293,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -27305,8 +27305,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Ghosts_K_2024"] = {
         Complete = true,
         Display = {
@@ -27322,8 +27322,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27333,9 +27333,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://128247285156176",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -27345,8 +27345,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["Ghosty"] = {
         Complete = false,
         Display = {
@@ -27362,9 +27362,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -27374,8 +27374,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
-})
-}),
+}
+},
     ["RbxScary_K_2023"] = {
         Complete = true,
         Display = {
@@ -27391,8 +27391,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27402,9 +27402,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://14967635510",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -27414,8 +27414,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Giftbag_K_2020"] = {
         Complete = true,
         Display = {
@@ -27431,8 +27431,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27442,9 +27442,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6121846201",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -27454,8 +27454,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Gifts_K_2024"] = {
         Complete = true,
         Display = {
@@ -27471,8 +27471,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27482,9 +27482,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://80884642545249",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -27494,8 +27494,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["Gifts_K_2019"] = {
         Complete = true,
         Display = {
@@ -27511,8 +27511,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27522,9 +27522,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534828383",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -27534,8 +27534,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Giftwrap_K_2021"] = {
         Complete = true,
         Display = {
@@ -27551,8 +27551,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27562,9 +27562,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275035514",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -27574,8 +27574,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Goo"] = {
         Complete = true,
         Display = {
@@ -27591,8 +27591,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 2.8, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27602,9 +27602,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=178402851",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=237336076",
@@ -27612,8 +27612,8 @@ local MESHES_OLD =
     ItemName = "Goo",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["GraveK"] = {
         Complete = true,
         Display = {
@@ -27629,8 +27629,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27640,9 +27640,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513648160",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -27652,8 +27652,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["Marley"] = {
         Complete = true,
         Display = {
@@ -27669,8 +27669,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27680,9 +27680,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://473620972",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473625785",
@@ -27690,8 +27690,8 @@ local MESHES_OLD =
     ItemName = "Green",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Grind"] = {
         Complete = true,
         Display = {
@@ -27707,8 +27707,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27718,9 +27718,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://240937041",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305503942",
@@ -27728,8 +27728,8 @@ local MESHES_OLD =
     ItemName = "Grind",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Hardened"] = {
         Complete = false,
         Display = {
@@ -27745,9 +27745,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183605810",
@@ -27756,8 +27756,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["HauntedK"] = {
         Complete = false,
         Display = {
@@ -27773,9 +27773,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -27785,8 +27785,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["HauntedHouse_K_2025"] = {
         Complete = true,
         Display = {
@@ -27802,8 +27802,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27813,9 +27813,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://96264372471629",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -27825,8 +27825,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Haunted_K_2021"] = {
         Complete = true,
         Display = {
@@ -27842,8 +27842,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27853,9 +27853,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7756611602",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -27865,8 +27865,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Hearts"] = {
         Complete = true,
         Display = {
@@ -27882,8 +27882,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27893,9 +27893,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=363311795",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "https://www.roblox.com/asset/?id=363362737",
@@ -27903,8 +27903,8 @@ local MESHES_OLD =
     ItemName = "Hearts",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Hearts_K_2026"] = {
         Complete = true,
         Display = {
@@ -27920,8 +27920,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27931,9 +27931,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://112048035793774",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Valentines",
@@ -27943,8 +27943,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2026"
-})
-}),
+}
+},
     ["HotChocolate_K_2024"] = {
         Complete = true,
         Display = {
@@ -27960,8 +27960,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -27971,9 +27971,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://105940775587606",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -27983,8 +27983,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["Hunter_K_2022"] = {
         Complete = true,
         Display = {
@@ -28000,8 +28000,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28011,9 +28011,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11246309889",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -28023,8 +28023,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Ice"] = {
         Complete = true,
         Display = {
@@ -28040,8 +28040,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28051,9 +28051,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=161313071",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=191976710",
@@ -28061,8 +28061,8 @@ local MESHES_OLD =
     ItemName = "Ice",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Igloo_K_2024"] = {
         Complete = true,
         Display = {
@@ -28078,8 +28078,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28089,9 +28089,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://126697433046307",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -28101,8 +28101,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["Indy"] = {
         Complete = true,
         Display = {
@@ -28118,8 +28118,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28129,9 +28129,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=240943629",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305506951",
@@ -28139,8 +28139,8 @@ local MESHES_OLD =
     ItemName = "Indy",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Infected_K_2022"] = {
         Complete = true,
         Display = {
@@ -28156,8 +28156,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28167,9 +28167,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11217988441",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -28179,8 +28179,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Infected"] = {
         Complete = true,
         Display = {
@@ -28196,8 +28196,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(1, 3, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28207,9 +28207,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=6978645136",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=200953094",
@@ -28217,8 +28217,8 @@ local MESHES_OLD =
     ItemName = "Infected",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Leaf"] = {
         Complete = true,
         Display = {
@@ -28234,8 +28234,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28245,9 +28245,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=4659588788",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659636452",
@@ -28256,8 +28256,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Leaves_K_2023"] = {
         Complete = true,
         Display = {
@@ -28273,8 +28273,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28284,9 +28284,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15081802321",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -28296,8 +28296,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Leaves_K_2025"] = {
         Complete = true,
         Display = {
@@ -28313,8 +28313,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28324,9 +28324,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://124090504714382",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -28336,8 +28336,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Lights_K_2025"] = {
         Complete = true,
         Display = {
@@ -28353,8 +28353,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28364,9 +28364,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://71217678785248",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -28376,8 +28376,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Linked"] = {
         Complete = true,
         Display = {
@@ -28393,8 +28393,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28404,9 +28404,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://172762850",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198453528",
@@ -28414,8 +28414,8 @@ local MESHES_OLD =
     ItemName = "Linked",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Log"] = {
         Complete = true,
         Display = {
@@ -28431,8 +28431,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28442,9 +28442,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://365566383",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365567962",
@@ -28452,8 +28452,8 @@ local MESHES_OLD =
     ItemName = "Log",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Love"] = {
         Complete = true,
         Display = {
@@ -28469,8 +28469,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28480,9 +28480,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=192527236",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=196750845",
@@ -28490,8 +28490,8 @@ local MESHES_OLD =
     ItemName = "Love",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Love_K_2023"] = {
         Complete = true,
         Display = {
@@ -28507,8 +28507,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.355, 3, 0.768),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28518,9 +28518,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12248652835",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339328595",
@@ -28529,8 +28529,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Lovely"] = {
         Complete = true,
         Display = {
@@ -28546,8 +28546,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28557,9 +28557,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4659572197",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659635584",
@@ -28568,8 +28568,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Moon_K_2021"] = {
         Complete = true,
         Display = {
@@ -28585,8 +28585,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28596,9 +28596,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7756612294",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -28608,8 +28608,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Mummified"] = {
         Complete = true,
         Display = {
@@ -28625,8 +28625,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28636,9 +28636,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210409851",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -28648,8 +28648,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Neon"] = {
         Complete = true,
         Display = {
@@ -28665,8 +28665,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28676,9 +28676,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=159653652",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=159746637",
@@ -28686,8 +28686,8 @@ local MESHES_OLD =
     ItemName = "Neon",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Oily"] = {
         Complete = true,
         Display = {
@@ -28703,8 +28703,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28714,9 +28714,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://314421009",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501170",
@@ -28724,8 +28724,8 @@ local MESHES_OLD =
     ItemName = "Oily",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Ollie"] = {
         Complete = true,
         Display = {
@@ -28741,8 +28741,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28752,9 +28752,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://240941633",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305504399",
@@ -28762,8 +28762,8 @@ local MESHES_OLD =
     ItemName = "Ollie",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Fanta"] = {
         Complete = true,
         Display = {
@@ -28779,8 +28779,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28790,9 +28790,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://473621067",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626025",
@@ -28800,8 +28800,8 @@ local MESHES_OLD =
     ItemName = "Orange",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Ornament1"] = {
         Complete = true,
         Display = {
@@ -28817,8 +28817,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28828,9 +28828,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=331744475",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -28840,8 +28840,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2015"
-})
-}),
+}
+},
     ["Ornament2"] = {
         Complete = true,
         Display = {
@@ -28857,8 +28857,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28868,9 +28868,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5366300102",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -28880,8 +28880,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2015"
-})
-}),
+}
+},
     ["Ornaments_K_2020"] = {
         Complete = true,
         Display = {
@@ -28897,8 +28897,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28908,9 +28908,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6121852598",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -28920,8 +28920,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Passion"] = {
         Complete = true,
         Display = {
@@ -28937,8 +28937,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -28948,9 +28948,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://363139004",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=363150334",
@@ -28958,8 +28958,8 @@ local MESHES_OLD =
     ItemName = "Passion",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Patrick"] = {
         Complete = false,
         Display = {
@@ -28975,9 +28975,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=383476085",
@@ -28985,8 +28985,8 @@ local MESHES_OLD =
     ItemName = "Patrick",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Peppermint_K_2025"] = {
         Complete = true,
         Display = {
@@ -29002,8 +29002,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29013,9 +29013,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://120181028268113",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -29025,8 +29025,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Phantom"] = {
         Complete = true,
         Display = {
@@ -29042,8 +29042,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29053,9 +29053,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1782537628",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -29065,8 +29065,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
-})
-}),
+}
+},
     ["Pine_K_2019"] = {
         Complete = true,
         Display = {
@@ -29082,8 +29082,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29093,9 +29093,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534830880",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -29105,8 +29105,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Present_K_2023"] = {
         Complete = true,
         Display = {
@@ -29122,8 +29122,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29133,9 +29133,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15382053242",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -29145,8 +29145,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Present"] = {
         Complete = true,
         Display = {
@@ -29162,8 +29162,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29173,9 +29173,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1268314631",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -29185,8 +29185,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
-})
-}),
+}
+},
     ["Prism"] = {
         Complete = true,
         Display = {
@@ -29202,8 +29202,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29213,9 +29213,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=297795989",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=306046703",
@@ -29223,8 +29223,8 @@ local MESHES_OLD =
     ItemName = "Prism",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["PumpkinPatch"] = {
         Complete = true,
         Display = {
@@ -29240,8 +29240,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29251,9 +29251,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210409792",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -29263,8 +29263,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["RBKnife"] = {
         Complete = false,
         Display = {
@@ -29280,9 +29280,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5984754897",
@@ -29291,8 +29291,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Reindeer_K_2025"] = {
         Complete = true,
         Display = {
@@ -29308,8 +29308,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29319,9 +29319,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=121944805     ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -29331,8 +29331,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Reindeer_K_2024"] = {
         Complete = true,
         Display = {
@@ -29348,8 +29348,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29359,9 +29359,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://121109734938655",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -29371,8 +29371,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["Reptile"] = {
         Complete = true,
         Display = {
@@ -29388,8 +29388,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 2.8, 1),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29399,9 +29399,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=162671092",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=162672131",
@@ -29409,8 +29409,8 @@ local MESHES_OLD =
     ItemName = "Reptile",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Ribbon_K_2023"] = {
         Complete = false,
         Display = {
@@ -29426,9 +29426,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -29438,8 +29438,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Ribbons_K_2021"] = {
         Complete = true,
         Display = {
@@ -29455,8 +29455,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29466,9 +29466,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275035072",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -29478,8 +29478,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Roses"] = {
         Complete = true,
         Display = {
@@ -29495,8 +29495,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29506,9 +29506,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=361630297",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=363352002",
@@ -29516,8 +29516,8 @@ local MESHES_OLD =
     ItemName = "Roses",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Sandy"] = {
         Complete = true,
         Display = {
@@ -29533,8 +29533,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29544,9 +29544,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://365566396",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365568056",
@@ -29554,8 +29554,8 @@ local MESHES_OLD =
     ItemName = "Sandy",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Santa2017"] = {
         Complete = true,
         Display = {
@@ -29571,8 +29571,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29582,9 +29582,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1268277801",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -29594,8 +29594,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
-})
-}),
+}
+},
     ["Santa"] = {
         Complete = true,
         Display = {
@@ -29611,8 +29611,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29622,9 +29622,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5359654461",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -29634,8 +29634,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2015"
-})
-}),
+}
+},
     ["Santa_K_2018"] = {
         Complete = true,
         Display = {
@@ -29651,8 +29651,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29662,9 +29662,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2684801913",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -29674,8 +29674,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["Scarf_K_2023"] = {
         Complete = true,
         Display = {
@@ -29691,8 +29691,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29702,9 +29702,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15414881863",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15415482999",
@@ -29713,8 +29713,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Shaded"] = {
         Complete = true,
         Display = {
@@ -29730,8 +29730,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29741,9 +29741,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4659587929",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659636085",
@@ -29752,8 +29752,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Sidewinder"] = {
         Complete = true,
         Display = {
@@ -29769,8 +29769,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29780,9 +29780,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://295302778",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305503783",
@@ -29790,8 +29790,8 @@ local MESHES_OLD =
     ItemName = "Sidewinder",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["SketchYT"] = {
         Complete = true,
         Display = {
@@ -29807,8 +29807,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29818,9 +29818,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://539831264",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=546161470",
@@ -29828,8 +29828,8 @@ local MESHES_OLD =
     ItemName = "Sketchy",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Skool"] = {
         Complete = true,
         Display = {
@@ -29845,8 +29845,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29856,9 +29856,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=178200933",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=295269977",
@@ -29866,8 +29866,8 @@ local MESHES_OLD =
     ItemName = "Skool",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Skyline_K_2025"] = {
         Complete = true,
         Display = {
@@ -29883,8 +29883,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29894,9 +29894,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://138096730619443",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -29906,8 +29906,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Slashed_K_2020"] = {
         Complete = true,
         Display = {
@@ -29923,8 +29923,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29934,9 +29934,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5929316036",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -29946,8 +29946,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Slate"] = {
         Complete = true,
         Display = {
@@ -29963,8 +29963,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -29974,9 +29974,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://161577504",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198453556",
@@ -29984,8 +29984,8 @@ local MESHES_OLD =
     ItemName = "Slate",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["SlimeK"] = {
         Complete = true,
         Display = {
@@ -30001,8 +30001,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30012,9 +30012,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513648162",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -30024,8 +30024,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["SlimyK"] = {
         Complete = true,
         Display = {
@@ -30041,8 +30041,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30052,9 +30052,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210874138",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -30064,8 +30064,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Snowball_K_2025"] = {
         Complete = true,
         Display = {
@@ -30081,8 +30081,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30092,9 +30092,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://101965621704869",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -30104,8 +30104,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Snowfall_K_2023"] = {
         Complete = false,
         Display = {
@@ -30121,9 +30121,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -30133,8 +30133,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Snowflakes_K_2019"] = {
         Complete = true,
         Display = {
@@ -30150,8 +30150,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30161,9 +30161,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4534831727",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -30173,8 +30173,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Snowman_K_2018"] = {
         Complete = true,
         Display = {
@@ -30190,8 +30190,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30201,9 +30201,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2684787698",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -30213,8 +30213,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["Snowman_K_2022"] = {
         Complete = false,
         Display = {
@@ -30230,9 +30230,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -30242,8 +30242,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Sparkle1"] = {
         Complete = true,
         Display = {
@@ -30259,8 +30259,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30270,9 +30270,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://306912202 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310709709",
@@ -30280,8 +30280,8 @@ local MESHES_OLD =
     ItemName = "Sparkle1",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Sparkle10"] = {
         Complete = true,
         Display = {
@@ -30297,8 +30297,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30308,9 +30308,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://306921666 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310715768",
@@ -30318,8 +30318,8 @@ local MESHES_OLD =
     ItemName = "Sparkle10",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Sparkle2"] = {
         Complete = true,
         Display = {
@@ -30335,8 +30335,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30346,9 +30346,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=306914370",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310710191",
@@ -30356,8 +30356,8 @@ local MESHES_OLD =
     ItemName = "Sparkle2",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Sparkle3"] = {
         Complete = true,
         Display = {
@@ -30373,8 +30373,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30384,9 +30384,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://306916804 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310710694",
@@ -30394,8 +30394,8 @@ local MESHES_OLD =
     ItemName = "Sparkle3",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Sparkle4"] = {
         Complete = true,
         Display = {
@@ -30411,8 +30411,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30422,9 +30422,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://306917565 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310712788",
@@ -30432,8 +30432,8 @@ local MESHES_OLD =
     ItemName = "Sparkle4",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Sparkle5"] = {
         Complete = true,
         Display = {
@@ -30449,8 +30449,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30460,9 +30460,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://306909649 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310713235",
@@ -30470,8 +30470,8 @@ local MESHES_OLD =
     ItemName = "Sparkle5",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Sparkle6"] = {
         Complete = true,
         Display = {
@@ -30487,8 +30487,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30498,9 +30498,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://306915414 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310713648",
@@ -30508,8 +30508,8 @@ local MESHES_OLD =
     ItemName = "Sparkle6",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Sparkle7"] = {
         Complete = true,
         Display = {
@@ -30525,8 +30525,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30536,9 +30536,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://306913560 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310714089",
@@ -30546,8 +30546,8 @@ local MESHES_OLD =
     ItemName = "Sparkle7",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Sparkle8"] = {
         Complete = true,
         Display = {
@@ -30563,8 +30563,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30574,9 +30574,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://306913268 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310714407",
@@ -30584,8 +30584,8 @@ local MESHES_OLD =
     ItemName = "Sparkle8",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Sparkle9"] = {
         Complete = true,
         Display = {
@@ -30601,8 +30601,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30612,9 +30612,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://306919809 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310715104",
@@ -30622,8 +30622,8 @@ local MESHES_OLD =
     ItemName = "Sparkle9",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Spider_K_2023"] = {
         Complete = false,
         Display = {
@@ -30639,9 +30639,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -30651,8 +30651,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Splatter"] = {
         Complete = true,
         Display = {
@@ -30668,8 +30668,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30679,9 +30679,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=16944380350",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     ChinaItemID = 473626150,
@@ -30690,8 +30690,8 @@ local MESHES_OLD =
     ItemName = "Splatter",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Stainless"] = {
         Complete = true,
         Display = {
@@ -30707,8 +30707,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30718,9 +30718,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://91790701 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366771",
@@ -30728,8 +30728,8 @@ local MESHES_OLD =
     ItemName = "Stainless",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Starfish_K_2024"] = {
         Complete = true,
         Display = {
@@ -30745,8 +30745,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.595),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30756,9 +30756,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18321898656",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322176343",
@@ -30767,8 +30767,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Static"] = {
         Complete = true,
         Display = {
@@ -30784,8 +30784,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30795,9 +30795,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://365566391",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365568163",
@@ -30805,8 +30805,8 @@ local MESHES_OLD =
     ItemName = "Static",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Stickers_K_2021"] = {
         Complete = true,
         Display = {
@@ -30822,8 +30822,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30833,9 +30833,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7757619418",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -30845,8 +30845,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["Stickers_K_2024"] = {
         Complete = true,
         Display = {
@@ -30862,8 +30862,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30873,9 +30873,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://103668715368570",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -30885,8 +30885,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["StickersX25"] = {
         Complete = true,
         Display = {
@@ -30902,8 +30902,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30913,9 +30913,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=121944805     ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=115280072896190",
@@ -30925,8 +30925,8 @@ local MESHES_OLD =
     Rarity = "Common",
     Season = 1,
     Year = "2025"
-})
-}),
+}
+},
     ["Stickers_X_K_2024"] = {
         Complete = true,
         Display = {
@@ -30942,8 +30942,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30953,9 +30953,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://109835260607049",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -30965,8 +30965,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
-})
-}),
+}
+},
     ["Stickers_K_2025"] = {
         Complete = true,
         Display = {
@@ -30982,8 +30982,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -30993,9 +30993,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://95500762351317",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -31005,8 +31005,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["StickersX_K_2025"] = {
         Complete = true,
         Display = {
@@ -31022,8 +31022,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31033,9 +31033,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://130231206599976",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -31045,8 +31045,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["XmasStickers_K_2021"] = {
         Complete = true,
         Display = {
@@ -31062,8 +31062,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31073,9 +31073,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://8275034832",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -31085,8 +31085,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
-})
-}),
+}
+},
     ["StickersH_K_2025"] = {
         Complete = true,
         Display = {
@@ -31102,8 +31102,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31113,9 +31113,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://91672438499477",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -31125,8 +31125,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Stickers_K_2022"] = {
         Complete = true,
         Display = {
@@ -31142,8 +31142,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31153,9 +31153,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11217750489",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -31165,8 +31165,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["StickersX_K_2022"] = {
         Complete = false,
         Display = {
@@ -31182,9 +31182,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -31194,8 +31194,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
-})
-}),
+}
+},
     ["Summer_Stickers_K_2023"] = {
         Complete = true,
         Display = {
@@ -31211,8 +31211,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31222,9 +31222,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://13895498375",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://13944129977",
@@ -31233,8 +31233,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Stockings_K_2020"] = {
         Complete = true,
         Display = {
@@ -31250,8 +31250,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31261,9 +31261,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6123161536",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -31273,8 +31273,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Strawberries_K_2026"] = {
         Complete = true,
         Display = {
@@ -31290,8 +31290,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31301,9 +31301,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://75968382870233",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Valentines",
@@ -31313,8 +31313,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2026"
-})
-}),
+}
+},
     ["Striped_K_2025"] = {
         Complete = true,
         Display = {
@@ -31330,8 +31330,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31341,9 +31341,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://89438438706928",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Summer",
@@ -31353,8 +31353,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Sub"] = {
         Complete = true,
         Display = {
@@ -31370,8 +31370,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31381,8 +31381,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=162016526",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Name = "Decal",
@@ -31391,9 +31391,9 @@ local MESHES_OLD =
     Face = Enum.NormalId.Right,
     Texture = "rbxassetid://872393925",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=546159250",
@@ -31401,8 +31401,8 @@ local MESHES_OLD =
     ItemName = "Sub",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Sweetheart"] = {
         Complete = true,
         Display = {
@@ -31418,8 +31418,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31429,9 +31429,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://363142139",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=363150761",
@@ -31439,8 +31439,8 @@ local MESHES_OLD =
     ItemName = "Sweetheart",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["TNL"] = {
         Complete = true,
         Display = {
@@ -31456,8 +31456,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31467,9 +31467,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=201480146",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=201542790",
@@ -31477,8 +31477,8 @@ local MESHES_OLD =
     ItemName = "TNL",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Tailslide"] = {
         Complete = true,
         Display = {
@@ -31494,8 +31494,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31505,9 +31505,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://240942385",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305506822",
@@ -31515,8 +31515,8 @@ local MESHES_OLD =
     ItemName = "Tailslide",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Toy_K_2023"] = {
         Complete = true,
         Display = {
@@ -31532,8 +31532,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.595),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31543,16 +31543,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://13884851371",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Vector3Value",
     Name = "OriginalPosition",
     Props = {
     Value = Vector3.new(0, 0, 0)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "rbxassetid://13944128440",
@@ -31561,8 +31561,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["Trees_K_2020"] = {
         Complete = true,
         Display = {
@@ -31578,8 +31578,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31589,9 +31589,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6123160655",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -31601,8 +31601,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Tulip"] = {
         Complete = false,
         Display = {
@@ -31618,9 +31618,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Christmas",
@@ -31630,8 +31630,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
-})
-}),
+}
+},
     ["UFOs_K_2025"] = {
         Complete = true,
         Display = {
@@ -31647,8 +31647,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31658,9 +31658,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://101182606016909",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -31670,8 +31670,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
-})
-}),
+}
+},
     ["Valentine"] = {
         Complete = true,
         Display = {
@@ -31687,8 +31687,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31698,9 +31698,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://363139123",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "https://www.roblox.com/asset/?id=363362726",
@@ -31708,8 +31708,8 @@ local MESHES_OLD =
     ItemName = "Valentine",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Vines_K_2023"] = {
         Complete = false,
         Display = {
@@ -31725,9 +31725,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -31737,8 +31737,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Eyes_K_2020"] = {
         Complete = true,
         Display = {
@@ -31754,8 +31754,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31765,9 +31765,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5866358413",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -31777,8 +31777,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
-})
-}),
+}
+},
     ["Wavy_K_2024"] = {
         Complete = false,
         Display = {
@@ -31794,9 +31794,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16959755393",
@@ -31805,8 +31805,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
-})
-}),
+}
+},
     ["WebbedK"] = {
         Complete = true,
         Display = {
@@ -31822,8 +31822,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31833,9 +31833,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4210410097",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -31845,8 +31845,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
-})
-}),
+}
+},
     ["Whiteout"] = {
         Complete = true,
         Display = {
@@ -31862,8 +31862,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31873,9 +31873,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=191784815",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=191788694",
@@ -31883,8 +31883,8 @@ local MESHES_OLD =
     ItemName = "Whiteout",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Witch"] = {
         Complete = true,
         Display = {
@@ -31900,8 +31900,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31911,9 +31911,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://531836445",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -31923,8 +31923,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
-})
-}),
+}
+},
     ["Wood_K_2023"] = {
         Complete = false,
         Display = {
@@ -31940,9 +31940,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
         MeshCount = 0,
         Meta = {
     Event = "Halloween",
@@ -31952,8 +31952,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
-})
-}),
+}
+},
     ["Wrapped_K_2018"] = {
         Complete = true,
         Display = {
@@ -31969,8 +31969,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -31980,9 +31980,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2672196316",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Christmas",
@@ -31992,8 +31992,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
-})
-}),
+}
+},
     ["Xbox"] = {
         Complete = true,
         Display = {
@@ -32009,8 +32009,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -32020,9 +32020,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://450680781",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=439325100",
@@ -32030,8 +32030,8 @@ local MESHES_OLD =
     ItemName = "Xbox",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Kool"] = {
         Complete = true,
         Display = {
@@ -32047,8 +32047,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -32058,9 +32058,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://473621021",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473625906",
@@ -32068,8 +32068,8 @@ local MESHES_OLD =
     ItemName = "Yellow",
     ItemType = "Knife",
     Rarity = "Common"
-})
-}),
+}
+},
     ["Zombie"] = {
         Complete = true,
         Display = {
@@ -32085,8 +32085,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -32096,9 +32096,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1782551901",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Event = "Halloween",
@@ -32108,8 +32108,8 @@ local MESHES_OLD =
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
-})
-}),
+}
+},
     ["BloodKnife"] = {
         Complete = true,
         Display = {
@@ -32125,8 +32125,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.6, 0.4, 2.4),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -32136,9 +32136,9 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=51941734",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=144307188",
@@ -32149,15 +32149,15 @@ local MESHES_OLD =
     X = 0.3491,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.3,
     Z = 0
-}),
+},
     Rarity = "Classic"
-})
-}),
+}
+},
     ["GhostKnife"] = {
         Complete = true,
         Display = {
@@ -32173,8 +32173,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.6, 0.4, 2.4),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -32184,8 +32184,8 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=64131051 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Part",
     Name = "EffectCenter",
@@ -32197,8 +32197,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 0.2, 0.4),
     Transparency = 1
-})
-}),
+}
+},
     {
     Class = "Part",
     Name = "EffectHalf",
@@ -32210,8 +32210,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.6, 0.4),
     Transparency = 1
-})
-}),
+}
+},
     {
     Class = "Part",
     Name = "EffectFull",
@@ -32223,9 +32223,9 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.6, 0.4),
     Transparency = 1
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Image = "http://www.roblox.com/asset/?id=144268841",
@@ -32236,15 +32236,15 @@ local MESHES_OLD =
     X = 0.3491,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.4,
     Z = 0.1
-}),
+},
     Rarity = "Classic"
-})
-}),
+}
+},
     ["TimeKnife"] = {
         Complete = true,
         Display = {
@@ -32260,8 +32260,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.6, 0.4, 2.4),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -32271,16 +32271,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=70990591",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = -1.5708,
     Y = -0.7854,
     Z = 0
-}),
+},
     Image = "http://www.roblox.com/asset/?id=143917700",
     ItemID = 473575049,
     ItemName = "Prince",
@@ -32289,15 +32289,15 @@ local MESHES_OLD =
     X = 0.3491,
     Y = 0,
     Z = 1.5708
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.4,
     Z = 0.23
-}),
+},
     Rarity = "Classic"
-})
-}),
+}
+},
     ["ShadowKnife"] = {
         Complete = true,
         Display = {
@@ -32313,8 +32313,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.6, 0.4, 2.4),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -32324,16 +32324,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=86290910",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = -1.5708,
     Y = -0.7854,
     Z = 0
-}),
+},
     Image = "http://www.roblox.com/asset/?id=144070096",
     ItemID = 474030882,
     ItemName = "Shadow",
@@ -32342,15 +32342,15 @@ local MESHES_OLD =
     X = 0.3491,
     Y = 0,
     Z = 1.5708
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.3,
     Z = 0.1
-}),
+},
     Rarity = "Classic"
-})
-}),
+}
+},
     ["Knife1"] = {
         Complete = true,
         Display = {
@@ -32366,8 +32366,8 @@ local MESHES_OLD =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.6, 0.4, 2.4),
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Name = "Mesh",
@@ -32377,16 +32377,16 @@ local MESHES_OLD =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=22771560",
     VertexColor = Vector3.new(1, 1, 1)
-})
-})
-}),
+}
+}
+},
         MeshCount = 1,
         Meta = {
     Angles = {
     X = -1.5708,
     Y = 0.7854,
     Z = 0
-}),
+},
     Image = "http://www.roblox.com/asset/?id=143820641",
     ItemID = 473574001,
     ItemName = "Splitter",
@@ -32395,16 +32395,16 @@ local MESHES_OLD =
     X = 0.3491,
     Y = 0,
     Z = 1.5708
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.3,
     Z = 0
-}),
+},
     Rarity = "Classic"
-})
-})
-})
+}
+}
+}
 local MESHES_FULL =
 {
     ["Gingerscope"] = {
@@ -32418,7 +32418,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2023"
-}),
+},
         Model = {
     Children = {
     {
@@ -32428,8 +32428,8 @@ local MESHES_FULL =
     Id = 3,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 2,
     Name = "Scope",
@@ -32445,8 +32445,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.18712, 0.18712, 1.41355),
     TextureID = "",
     Transparency = 0.35
-})
-}),
+}
+},
     {
     Class = "Beam",
     Id = 4,
@@ -32466,29 +32466,29 @@ local MESHES_FULL =
     Width0 = 1,
     Width1 = 1,
     ZOffset = 0
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.12991, -0.00003, 0.075, 1, 0, 0, 0, 0.70713, 0.70708, -0, -0.70708, 0.70713)
-})
-}),
+}
+},
     {
     Class = "Sound",
     Id = 6,
     Name = "AltSound",
     Props = {}
-}),
+},
     {
     Class = "RigidConstraint",
     Id = 7,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -32504,9 +32504,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.2697, 1.25815, 4.20871),
     TextureID = "rbxassetid://15409041564",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Harvester"] = {
         Complete = true,
         Meta = {
@@ -32514,7 +32514,7 @@ local MESHES_FULL =
     X = 0.61087,
     Y = 3.14159,
     Z = 1.5708
-}),
+},
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800847534",
     ItemID = 7800847534,
@@ -32522,7 +32522,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2021"
-}),
+},
         Model = {
     Children = {
     {
@@ -32530,7 +32530,7 @@ local MESHES_FULL =
     Id = 2,
     Name = "AltSound",
     Props = {}
-}),
+},
     {
     Class = "Beam",
     Id = 3,
@@ -32550,23 +32550,23 @@ local MESHES_FULL =
     Width0 = 0.2,
     Width1 = 0.2,
     ZOffset = 0
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.12991, 0, 0.07501, 0.00002, -0.5, -0.86603, 1, -0.00004, 0.00005, -0.00006, -0.86603, 0.5)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -32582,9 +32582,9 @@ local MESHES_FULL =
     Size = Vector3.new(2.24476, 0.65492, 2.88),
     TextureID = "http://www.roblox.com/asset/?id=7775245551",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Icepiercer"] = {
         Complete = true,
         Meta = {
@@ -32595,7 +32595,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2022"
-}),
+},
         Model = {
     Children = {
     {
@@ -32617,29 +32617,29 @@ local MESHES_FULL =
     Width0 = 0.2,
     Width1 = 0.2,
     ZOffset = 0
-})
-}),
+}
+},
     {
     Class = "Sound",
     Id = 3,
     Name = "AltSound",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.12988, 0, 0.07498, 0.00002, -0.5, -0.86603, 1, -0.00004, 0.00005, -0.00006, -0.86603, 0.5)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -32655,9 +32655,9 @@ local MESHES_FULL =
     Size = Vector3.new(2.46939, 0.75263, 2.73835),
     TextureID = "rbxassetid://11869075814",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Amerilaser"] = {
         Complete = true,
         Meta = {
@@ -32665,13 +32665,13 @@ local MESHES_FULL =
     X = -2.18166,
     Y = 0,
     Z = 0
-}),
+},
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=446050753",
     ItemID = 446050753,
     ItemName = "Amerilaser",
     ItemType = "Gun",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -32684,23 +32684,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "https://www.roblox.com/asset/?id=445884341",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -32714,9 +32714,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.6, 1, 1.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["BaubleChroma"] = {
         Complete = true,
         Meta = {
@@ -32728,7 +32728,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -32741,8 +32741,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://137012201908941",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 3,
@@ -32753,23 +32753,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://129391884956433",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.23862, 0.10727, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -32783,9 +32783,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.48417, 1.37511, 2.08516),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Bauble"] = {
         Complete = true,
         Meta = {
@@ -32796,7 +32796,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -32809,23 +32809,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://137012201908941",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.23862, 0.10727, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -32839,9 +32839,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.48417, 1.37511, 2.08516),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Blaster"] = {
         Complete = true,
         Meta = {
@@ -32849,13 +32849,13 @@ local MESHES_FULL =
     X = 4.01426,
     Y = 0,
     Z = 0
-}),
+},
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=386277381",
     ItemID = 386277381,
     ItemName = "Blaster",
     ItemType = "Gun",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -32864,8 +32864,8 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.15, 0.05489, 0.2049, 1, -0, -0, -0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Id = 3,
@@ -32876,15 +32876,15 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "https://www.roblox.com/asset/?id=386269992",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -32898,9 +32898,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.8, 2, 3.1),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["BlizzardChroma"] = {
         Complete = true,
         Meta = {
@@ -32912,7 +32912,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -32925,8 +32925,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://110354859513948",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Id = 3,
@@ -32937,23 +32937,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://97280881789656",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.19272, 0.08664, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -32967,9 +32967,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4211, 1.43482, 2.0708),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Blossom_G"] = {
         Complete = true,
         Meta = {
@@ -32979,7 +32979,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -32992,23 +32992,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://12322809917",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.20001, 0.0899, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -33022,9 +33022,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.60612, 0.26582, 1.16242),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["AuroraGun"] = {
         Complete = true,
         Meta = {
@@ -33035,7 +33035,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -33043,16 +33043,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -33068,9 +33068,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.45911, 1.35493, 2.3463),
     TextureID = "rbxassetid://107873598804292",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["ConstellationChroma"] = {
         Complete = true,
         Meta = {
@@ -33082,7 +33082,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -33095,8 +33095,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://123603327635244",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 3,
@@ -33107,23 +33107,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://97672028439457",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.51294, 0.23058, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -33137,9 +33137,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.537, 1.583, 2.367),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Constellation"] = {
         Complete = true,
         Meta = {
@@ -33150,7 +33150,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -33158,22 +33158,22 @@ local MESHES_FULL =
     Id = 2,
     Name = "SurfaceAppearance",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0, -0.20001, 0.08991, 1, 0, 0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -33189,9 +33189,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.53716, 1.58302, 2.36713),
     TextureID = "rbxassetid://79010754957272",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Darkbringer"] = {
         Complete = true,
         Meta = {
@@ -33199,14 +33199,14 @@ local MESHES_FULL =
     X = 3.75246,
     Y = 0,
     Z = 0
-}),
+},
     Image = "http://www.roblox.com/asset/?id=4751387674",
     ItemID = 4749071819,
     ItemName = "Darkbringer",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -33219,23 +33219,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4728494788",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.18661, 0.12323, 1, -0, 0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -33249,9 +33249,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.45, 1.26, 1.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["ChromaDarkbringer"] = {
         Complete = true,
         Meta = {
@@ -33259,7 +33259,7 @@ local MESHES_FULL =
     X = 3.75246,
     Y = 0,
     Z = 0
-}),
+},
     Chroma = true,
     Image = "http://www.roblox.com/asset/?id=4751507011",
     ItemID = 4751501078,
@@ -33267,7 +33267,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -33280,8 +33280,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4728494788",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -33289,8 +33289,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -33300,23 +33300,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://5278766434",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0, -0.18665, 0.12321, 1, 0, 0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 6,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -33330,9 +33330,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.42663, 1.37, 1.65),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Darkshot"] = {
         Complete = false,
         Meta = {
@@ -33343,7 +33343,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
-}),
+},
         Model = {
     Children = {
     {
@@ -33351,22 +33351,22 @@ local MESHES_FULL =
     Id = 2,
     Name = "Mesh",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.20001, 0.08994, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -33380,9 +33380,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 0.8, 2),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["ElderwoodGun"] = {
         Complete = true,
         Meta = {
@@ -33390,7 +33390,7 @@ local MESHES_FULL =
     X = 2.79253,
     Y = 1.5708,
     Z = 0.7854
-}),
+},
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4468571736",
     ItemID = 4211142894,
@@ -33398,7 +33398,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
-}),
+},
         Model = {
     Children = {
     {
@@ -33407,15 +33407,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.22989, 0.09821, 0.1, 0.00001, 0.98481, -0.17362, -0.00001, 0.17362, 0.98481, 1, -0.00001, 0.00001)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -33431,9 +33431,9 @@ local MESHES_FULL =
     Size = Vector3.new(1.49, 1.13204, 0.3587),
     TextureID = "http://www.roblox.com/asset/?id=4210038158",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["TreeGun2023Chroma"] = {
         Complete = true,
         Meta = {
@@ -33446,7 +33446,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
-}),
+},
         Model = {
     Children = {
     {
@@ -33459,16 +33459,16 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0, -0.19998, 0.08992, 1, 0, -0, -0, 0.64276, 0.76607, -0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 4,
@@ -33479,8 +33479,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://15694616343",
     Transparency = 0.8,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 5,
@@ -33491,8 +33491,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://15694615445",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -33502,8 +33502,8 @@ local MESHES_FULL =
     Id = 8,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 7,
     Name = "LightPart",
@@ -33519,8 +33519,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.72726, 0.83294, 1.26788),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -33528,8 +33528,8 @@ local MESHES_FULL =
     Id = 10,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 9,
     Name = "LightPart",
@@ -33545,8 +33545,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.5964, 0.87543, 1.30518),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -33554,8 +33554,8 @@ local MESHES_FULL =
     Id = 12,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 11,
     Name = "LightPart",
@@ -33571,8 +33571,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.6152, 0.84724, 0.67052),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -33580,8 +33580,8 @@ local MESHES_FULL =
     Id = 14,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 13,
     Name = "LightPart",
@@ -33597,8 +33597,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.64613, 0.7764, 1.10341),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -33606,8 +33606,8 @@ local MESHES_FULL =
     Id = 16,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 15,
     Name = "LightPart",
@@ -33623,27 +33623,27 @@ local MESHES_FULL =
     Size = Vector3.new(0.05203, 0.09871, 0.06772),
     TextureID = "",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     Class = "Model",
     Id = 6,
     Name = "LightParts",
     Props = {}
-}),
+},
     {
     Class = "Script",
     Id = 17,
     Name = "ChromaScript",
     Props = {}
-}),
+},
     {
     Class = "RigidConstraint",
     Id = 18,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -33657,9 +33657,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.833, 1.384, 2.519),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["TreeGun2023"] = {
         Complete = true,
         Meta = {
@@ -33671,7 +33671,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
-}),
+},
         Model = {
     Children = {
     {
@@ -33681,8 +33681,8 @@ local MESHES_FULL =
     Id = 3,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 2,
     Name = "Lights",
@@ -33698,8 +33698,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.72726, 0.83294, 1.26788),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -33707,8 +33707,8 @@ local MESHES_FULL =
     Id = 5,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 4,
     Name = "Lights",
@@ -33724,8 +33724,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.64613, 0.7764, 1.10341),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -33733,8 +33733,8 @@ local MESHES_FULL =
     Id = 7,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 6,
     Name = "Lights",
@@ -33750,8 +33750,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.05203, 0.09871, 0.06772),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -33759,8 +33759,8 @@ local MESHES_FULL =
     Id = 9,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 8,
     Name = "Lights",
@@ -33776,8 +33776,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.5964, 0.87543, 1.30518),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -33785,8 +33785,8 @@ local MESHES_FULL =
     Id = 11,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 10,
     Name = "Lights",
@@ -33802,23 +33802,23 @@ local MESHES_FULL =
     Size = Vector3.new(0.6152, 0.84724, 0.67052),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 12,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.00001, -0.20001, 0.0899, 1, 0, 0, 0, 0.64276, 0.76607, -0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 13,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -33834,9 +33834,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.83339, 1.38372, 2.5195),
     TextureID = "rbxassetid://15408849730",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Flora"] = {
         Complete = true,
         Meta = {
@@ -33846,7 +33846,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -33855,15 +33855,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0, -0.20001, 0.08992, 1, -0, -0, -0, 0.64276, 0.76607, 0, -0.76606, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -33879,9 +33879,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.58906, 1.56705, 2.28524),
     TextureID = "rbxassetid://116621225933096",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["FlowerwoodGun"] = {
         Complete = true,
         Meta = {
@@ -33891,7 +33891,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -33900,15 +33900,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.18661, 0.12323, 1, 0, 0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -33924,9 +33924,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.66524, 1.54, 2.59449),
     TextureID = "rbxassetid://16895448237",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["GingerLuger"] = {
         Complete = true,
         Meta = {
@@ -33934,7 +33934,7 @@ local MESHES_FULL =
     X = 4.18879,
     Y = 0,
     Z = 0
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2674983099",
     ItemID = 2674983099,
@@ -33942,7 +33942,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2018"
-}),
+},
         Model = {
     Children = {
     {
@@ -33955,23 +33955,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2702668339",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.14999, 0.03833, 0.33319, 1, -0, 0, 0, 0, 1, 0, -1, -0)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -33985,9 +33985,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Gingermint_G"] = {
         Complete = true,
         Meta = {
@@ -33998,7 +33998,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
-}),
+},
         Model = {
     Children = {
     {
@@ -34011,23 +34011,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11866444253",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.09469, -0.09924, 0.23668, 0.99179, 0.11365, 0.05858, -0.11578, 0.60394, 0.78857, 0.05425, -0.78888, 0.61214)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -34041,9 +34041,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.39795, 1.02803, 2.37765),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["GreenLuger"] = {
         Complete = true,
         Meta = {
@@ -34051,7 +34051,7 @@ local MESHES_FULL =
     X = 4.18879,
     Y = 0,
     Z = 0
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332044679",
     ItemID = 332044679,
@@ -34059,7 +34059,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
-}),
+},
         Model = {
     Children = {
     {
@@ -34072,23 +34072,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(0, 1, 0)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.14999, 0.03836, 0.33319, 1, 0, 0, 0, -0, 1, 0, -1, 0)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -34102,9 +34102,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Hallowgun"] = {
         Complete = true,
         Meta = {
@@ -34112,7 +34112,7 @@ local MESHES_FULL =
     X = 2.79253,
     Y = 1.5708,
     Z = 0.7854
-}),
+},
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5877089721",
     ItemID = 5878721461,
@@ -34120,7 +34120,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
-}),
+},
         Model = {
     Children = {
     {
@@ -34129,15 +34129,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.22485, 0.04465, -0, 0, 0.99619, -0.08719, -0, 0.08719, 0.99619, 1, -0, 0)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -34153,9 +34153,9 @@ local MESHES_FULL =
     Size = Vector3.new(2.04, 1.07989, 0.37193),
     TextureID = "http://www.roblox.com/asset/?id=5841868338",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Icebeam"] = {
         Complete = true,
         Meta = {
@@ -34166,7 +34166,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
-}),
+},
         Model = {
     Children = {
     {
@@ -34174,16 +34174,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -34199,9 +34199,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.328, 2.199, 1.09),
     TextureID = "rbxassetid://8231066536",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Iceblaster"] = {
         Complete = true,
         Meta = {
@@ -34212,7 +34212,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
-}),
+},
         Model = {
     Children = {
     {
@@ -34221,31 +34221,31 @@ local MESHES_FULL =
     Name = "Forward",
     Props = {
     RelCF = CFrame.new(0, 1, 0.00003, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Up",
     Props = {
     RelCF = CFrame.new(-0.00002, 0, 1.00003, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -34261,9 +34261,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.4432, 1.92998, 1.02381),
     TextureID = "rbxassetid://6120563948",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Jinglegun"] = {
         Complete = true,
         Meta = {
@@ -34274,7 +34274,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
-}),
+},
         Model = {
     Children = {
     {
@@ -34287,23 +34287,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://6125843755",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -34317,9 +34317,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.751, 1.799, 1.175),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["LaserChroma"] = {
         Complete = true,
         Meta = {
@@ -34329,7 +34329,7 @@ local MESHES_FULL =
     ItemName = "Laser",
     ItemType = "Gun",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -34342,8 +34342,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -34351,8 +34351,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -34362,23 +34362,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://3171220436",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -34392,9 +34392,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Laser"] = {
         Complete = true,
         Meta = {
@@ -34403,7 +34403,7 @@ local MESHES_FULL =
     ItemName = "Laser",
     ItemType = "Gun",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -34416,23 +34416,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset?id=161254231",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -34446,9 +34446,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Lightbringer"] = {
         Complete = true,
         Meta = {
@@ -34456,14 +34456,14 @@ local MESHES_FULL =
     X = 3.75246,
     Y = 0,
     Z = 0
-}),
+},
     Image = "http://www.roblox.com/asset/?id=4751387063",
     ItemID = 4749070432,
     ItemName = "Lightbringer",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -34476,23 +34476,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=4728487789",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.1866, 0.12323, 1, -0, -0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -34506,9 +34506,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.398, 1.62, 1.964),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["ChromaLightbringer"] = {
         Complete = true,
         Meta = {
@@ -34516,7 +34516,7 @@ local MESHES_FULL =
     X = 3.75246,
     Y = 0,
     Z = 0
-}),
+},
     Chroma = true,
     Image = "http://www.roblox.com/asset/?id=4751507078",
     ItemID = 4751500761,
@@ -34524,7 +34524,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -34537,8 +34537,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5278764604",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -34546,8 +34546,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -34557,23 +34557,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://5278766434",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.18661, 0.12323, 1, 0, 0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 6,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -34587,9 +34587,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.42663, 1.37, 1.65),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Luger"] = {
         Complete = true,
         Meta = {
@@ -34597,13 +34597,13 @@ local MESHES_FULL =
     X = 4.18879,
     Y = 0,
     Z = 0
-}),
+},
     Image = "rbxassetid://3187399148",
     ItemID = 198042673,
     ItemName = "Luger",
     ItemType = "Gun",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -34616,23 +34616,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.15, 0.03836, 0.33322, 1, 0, 0, 0, 0, 1, 0, -1, -0)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -34646,9 +34646,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["LugerChroma"] = {
         Complete = true,
         Meta = {
@@ -34656,14 +34656,14 @@ local MESHES_FULL =
     X = 4.18879,
     Y = 0,
     Z = 0
-}),
+},
     Chroma = true,
     Image = "rbxassetid://3187399258",
     ItemID = 3187395551,
     ItemName = "Luger",
     ItemType = "Gun",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -34676,8 +34676,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -34685,8 +34685,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -34696,23 +34696,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://3171206966",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.15, 0.03835, 0.33322, 1, 0, 0, 0, 0, 1, -0, -1, -0)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 6,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -34726,9 +34726,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Lugercane"] = {
         Complete = true,
         Meta = {
@@ -34736,7 +34736,7 @@ local MESHES_FULL =
     X = 4.18879,
     Y = 0,
     Z = 0
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4535482609",
     ItemID = 4535482609,
@@ -34744,7 +34744,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
-}),
+},
         Model = {
     Children = {
     {
@@ -34757,23 +34757,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4835358188",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0, -0.18655, 0.12321, 1, 0, 0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -34787,9 +34787,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Makeshift"] = {
         Complete = true,
         Meta = {
@@ -34800,7 +34800,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
-}),
+},
         Model = {
     Children = {
     {
@@ -34809,15 +34809,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.08992, 1, -0, 0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -34833,9 +34833,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.58832, 1.25, 2.73145),
     TextureID = "http://www.roblox.com/asset/?id=11274360089",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Minty"] = {
         Complete = true,
         Meta = {
@@ -34843,7 +34843,7 @@ local MESHES_FULL =
     X = 0.5236,
     Y = 3.14159,
     Z = 0
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4528291487",
     ItemID = 4535408229,
@@ -34851,7 +34851,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
-}),
+},
         Model = {
     Children = {
     {
@@ -34860,15 +34860,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.05, -0.07257, 0.23923, -1, 0, 0, 0, -0, -1, 0, -1, -0)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -34884,9 +34884,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.33348, 1.35042, 1.88001),
     TextureID = "rbxassetid://4528424475",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Ocean_G"] = {
         Complete = true,
         Meta = {
@@ -34896,7 +34896,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -34909,23 +34909,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://13928590054",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.19999, 0.08994, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -34939,9 +34939,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.03, 0.23, 0.05387),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Pearl_G"] = {
         Complete = true,
         Meta = {
@@ -34951,7 +34951,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -34960,15 +34960,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.20001, 0.08991, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -34984,9 +34984,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.56846, 1.38161, 2.15482),
     TextureID = "rbxassetid://18280805635",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Plasmabeam"] = {
         Complete = true,
         Meta = {
@@ -34996,7 +34996,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -35009,23 +35009,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://10015208201",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.06429, 0.05646, 0.19186, 1, -0, 0, -0, 0.29232, 0.95632, 0, -0.95632, 0.29232)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -35039,9 +35039,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.36561, 1.17183, 2.1575),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Rainbow_G"] = {
         Complete = true,
         Meta = {
@@ -35051,7 +35051,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -35060,15 +35060,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.08991, 1, -0, 0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -35084,9 +35084,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.42839, 1.21989, 2.59464),
     TextureID = "rbxassetid://12921231088",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["RaygunChroma"] = {
         Complete = true,
         Meta = {
@@ -35098,7 +35098,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -35108,13 +35108,13 @@ local MESHES_FULL =
     Id = 3,
     Name = "EqualizerSoundEffect",
     Props = {}
-})
-}),
+}
+},
     Class = "Sound",
     Id = 2,
     Name = "AltSound",
     Props = {}
-}),
+},
     {
     Class = "SpecialMesh",
     Id = 4,
@@ -35125,8 +35125,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://127881437685243",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 5,
@@ -35137,16 +35137,16 @@ local MESHES_FULL =
     Texture = "rbxassetid://73231950532216",
     Transparency = 0,
     ZIndex = 0
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.20004, 0.08991, 1, 0, -0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "Beam",
     Id = 7,
@@ -35166,15 +35166,15 @@ local MESHES_FULL =
     Width0 = 0.2,
     Width1 = 0.2,
     ZOffset = 0
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 8,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -35188,9 +35188,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.69, 1.643, 2.355),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Raygun"] = {
         Complete = true,
         Meta = {
@@ -35201,7 +35201,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -35211,21 +35211,21 @@ local MESHES_FULL =
     Id = 3,
     Name = "EqualizerSoundEffect",
     Props = {}
-})
-}),
+}
+},
     Class = "Sound",
     Id = 2,
     Name = "AltSound",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0, -0.20001, 0.08994, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "Beam",
     Id = 5,
@@ -35245,15 +35245,15 @@ local MESHES_FULL =
     Width0 = 0.2,
     Width1 = 0.2,
     ZOffset = 0
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 6,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -35269,9 +35269,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.69024, 1.64298, 2.35538),
     TextureID = "rbxassetid://127881437685243",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["RedLuger"] = {
         Complete = true,
         Meta = {
@@ -35279,7 +35279,7 @@ local MESHES_FULL =
     X = 4.18879,
     Y = 0,
     Z = 0
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332044583",
     ItemID = 332044583,
@@ -35287,7 +35287,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
-}),
+},
         Model = {
     Children = {
     {
@@ -35300,23 +35300,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=126534866",
     VertexColor = Vector3.new(1, 0.2, 0.3)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.15, 0.03833, 0.33322, 1, 0, 0, 0, 0, 1, 0, -1, 0)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -35330,9 +35330,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.51, 1.18, 1.35),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SharkChroma"] = {
         Complete = true,
         Meta = {
@@ -35340,14 +35340,14 @@ local MESHES_FULL =
     X = -2.0944,
     Y = 0,
     Z = 0
-}),
+},
     Chroma = true,
     Image = "rbxassetid://3187421856",
     ItemID = 3187395738,
     ItemName = "Shark",
     ItemType = "Gun",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -35360,8 +35360,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3171214838",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -35369,8 +35369,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -35380,23 +35380,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://3171214969",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.15, -0.24356, 0.23059, 1, 0, 0, 0, 0, 1, 0, -1, -0)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 6,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -35410,9 +35410,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.8, 1.02, 2.07),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Shark"] = {
         Complete = true,
         Meta = {
@@ -35420,13 +35420,13 @@ local MESHES_FULL =
     X = -2.0944,
     Y = 0,
     Z = 0
-}),
+},
     Image = "rbxassetid://3187421705",
     ItemID = 203858533,
     ItemName = "Shark",
     ItemType = "Gun",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -35439,23 +35439,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1106696354",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.00634, 0.03519, -0.22076, 0.99817, -0.06049, -0.00075, 0.00608, 0.08798, 0.9961, -0.06019, -0.99428, 0.08818)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -35469,9 +35469,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.58, 1.34, 2.48),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Snowcannon"] = {
         Complete = true,
         Meta = {
@@ -35482,7 +35482,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -35490,21 +35490,21 @@ local MESHES_FULL =
     Id = 2,
     Name = "AltSound",
     Props = {}
-}),
+},
     {
     Class = "WeldConstraint",
     Id = 3,
     Name = "WeldConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, 0.00003, 0.0899, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "Beam",
     Id = 5,
@@ -35524,8 +35524,8 @@ local MESHES_FULL =
     Width0 = 0.5,
     Width1 = 0.5,
     ZOffset = 0
-})
-}),
+}
+},
     {
     Class = "MeshPart",
     Id = 6,
@@ -35542,15 +35542,15 @@ local MESHES_FULL =
     Size = Vector3.new(0.46142, 0.46142, 1.40329),
     TextureID = "",
     Transparency = 0.8
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 7,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -35566,9 +35566,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.55858, 1.35489, 2.49957),
     TextureID = "rbxassetid://122392330922281",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SnowcannonChroma"] = {
         Complete = true,
         Meta = {
@@ -35580,7 +35580,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -35588,7 +35588,7 @@ local MESHES_FULL =
     Id = 2,
     Name = "AltSound",
     Props = {}
-}),
+},
     {
     Class = "Decal",
     Id = 3,
@@ -35599,16 +35599,16 @@ local MESHES_FULL =
     Texture = "rbxassetid://84894022221722",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0, -0.25153, 0.11305, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Id = 5,
@@ -35619,8 +35619,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://122392330922281",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Beam",
     Id = 6,
@@ -35640,15 +35640,15 @@ local MESHES_FULL =
     Width0 = 0.5,
     Width1 = 0.5,
     ZOffset = 0
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 7,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -35662,9 +35662,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.559, 1.355, 2.5),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["WraithGun"] = {
         Complete = true,
         Meta = {
@@ -35675,7 +35675,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -35684,15 +35684,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.0899, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -35708,9 +35708,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.45523, 1.37271, 2.21931),
     TextureID = "rbxassetid://80102752403085",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Spectre2022"] = {
         Complete = true,
         Meta = {
@@ -35721,7 +35721,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
-}),
+},
         Model = {
     Children = {
     {
@@ -35734,23 +35734,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11165715120",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -35764,9 +35764,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1.83, 1.03),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Sugar"] = {
         Complete = true,
         Meta = {
@@ -35774,7 +35774,7 @@ local MESHES_FULL =
     X = 4.18879,
     Y = 0,
     Z = 3.14159
-}),
+},
     Event = "Christmas",
     Image = "rbxassetid://3215356000",
     ItemID = 332848695,
@@ -35782,7 +35782,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
-}),
+},
         Model = {
     Children = {
     {
@@ -35795,23 +35795,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=101086650",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.1, 0.28233, 0.30722, -1, 0, 0, 0, -0.08713, -0.9962, 0, -0.9962, 0.08713)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -35825,9 +35825,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 1, 1.9),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SunsetGun"] = {
         Complete = true,
         Meta = {
@@ -35839,7 +35839,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -35852,8 +35852,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://71731808219690",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 3,
@@ -35864,23 +35864,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://122480499480858",
     Transparency = 1,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.0899, 1, -0, -0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -35894,9 +35894,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.459, 1.355, 2.346),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SunsetGunChroma"] = {
         Complete = true,
         Meta = {
@@ -35909,7 +35909,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -35922,16 +35922,16 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://71731808219690",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.08992, 1, 0, -0, -0, 0.64276, 0.76607, -0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 4,
@@ -35942,8 +35942,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://87234234470516",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 5,
@@ -35954,15 +35954,15 @@ local MESHES_FULL =
     Texture = "rbxassetid://122480499480858",
     Transparency = 1,
     ZIndex = 2
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 6,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -35976,9 +35976,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.48417, 1.37511, 2.08516),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SwirlyGunChroma"] = {
         Complete = true,
         Meta = {
@@ -35990,7 +35990,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
-}),
+},
         Model = {
     Children = {
     {
@@ -36003,8 +36003,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://10044501316",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -36012,8 +36012,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -36023,23 +36023,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://10044507532",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -36053,9 +36053,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(1.04973, 3.2087, 1.6),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SwirlyGun"] = {
         Complete = true,
         Meta = {
@@ -36066,7 +36066,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
-}),
+},
         Model = {
     Children = {
     {
@@ -36074,16 +36074,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -36099,9 +36099,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.469, 2.539, 1.1515),
     TextureID = "rbxassetid://8293539377",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["TravelerGun"] = {
         Complete = true,
         Meta = {
@@ -36112,7 +36112,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
-}),
+},
         Model = {
     Children = {
     {
@@ -36120,16 +36120,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -36145,9 +36145,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.48155, 1.26318, 2.45505),
     TextureID = "rbxassetid://15090814672",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["TravelerGunChroma"] = {
         Complete = true,
         Meta = {
@@ -36159,7 +36159,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
-}),
+},
         Model = {
     Children = {
     {
@@ -36172,8 +36172,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15090814672",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 3,
@@ -36184,23 +36184,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://138224985315804",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -36214,9 +36214,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.57198, 0.52873, 2.52),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["TreatChroma"] = {
         Complete = true,
         Meta = {
@@ -36229,7 +36229,7 @@ local MESHES_FULL =
     Rarity = "Godly",
     Season = 1,
     Year = "2026"
-}),
+},
         Model = {
     Children = {
     {
@@ -36242,16 +36242,16 @@ local MESHES_FULL =
     Texture = "rbxassetid://71260815789113",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.20004, 0.08987, 1, 0, -0, 0, 0.64276, 0.76607, -0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Id = 4,
@@ -36262,15 +36262,15 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://86649236464456",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -36284,9 +36284,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.55352, 1.57208, 2.38384),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["VampireGun"] = {
         Complete = true,
         Meta = {
@@ -36297,7 +36297,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -36306,15 +36306,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0, -0.20001, 0.08992, 1, -0, 0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -36330,9 +36330,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.42254, 1.29266, 2.41271),
     TextureID = "rbxassetid://104946799389637",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["VampireGunChroma"] = {
         Complete = true,
         Meta = {
@@ -36344,7 +36344,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -36357,8 +36357,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://104946799389637",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 3,
@@ -36369,23 +36369,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://126923923696531",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.20001, 0.08989, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -36399,9 +36399,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.422, 1.292, 2.412),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["WatergunChroma"] = {
         Complete = true,
         Meta = {
@@ -36412,7 +36412,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -36425,8 +36425,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18281003313",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 3,
@@ -36437,23 +36437,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://18335602807",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.20004, 0.0899, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -36467,9 +36467,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.448, 1.365, 2),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Watergun"] = {
         Complete = true,
         Meta = {
@@ -36479,7 +36479,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -36492,23 +36492,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://18281003313",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0, -0.20001, 0.08992, 1, -0, 0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "GunDisplay",
@@ -36522,9 +36522,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.448, 1.365, 2),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["XenoGun"] = {
         Complete = true,
         Meta = {
@@ -36535,7 +36535,7 @@ local MESHES_FULL =
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -36544,15 +36544,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.0899, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "GunDisplay",
@@ -36568,9 +36568,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.28155, 1.31834, 2.66752),
     TextureID = "rbxassetid://103568875118220",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Scythe"] = {
         Complete = true,
         Meta = {
@@ -36583,10 +36583,10 @@ local MESHES_FULL =
     X = -1.1,
     Y = -1.4,
     Z = -0.2
-}),
+},
     Rarity = "Ancient",
     Year = "2018"
-}),
+},
         Model = {
     Children = {
     {
@@ -36599,23 +36599,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2511673515",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -36629,9 +36629,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 2.9, 1.6),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Celestial"] = {
         Complete = true,
         Meta = {
@@ -36642,7 +36642,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -36650,22 +36650,22 @@ local MESHES_FULL =
     Id = 2,
     Name = "SurfaceAppearance",
     Props = {}
-}),
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -36681,9 +36681,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.39762, 2.66487, 2.364),
     TextureID = "rbxassetid://79010754957272",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["ElderwoodScythe"] = {
         Complete = true,
         Meta = {
@@ -36694,7 +36694,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2019"
-}),
+},
         Model = {
     Children = {
     {
@@ -36703,15 +36703,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.10158, 0.15964, 0.15613, 0.999, -0.02982, -0.03345, 0.04003, 0.92926, 0.36726, 0.02013, -0.36823, 0.92952)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -36727,9 +36727,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.28809, 3.82182, 2.61529),
     TextureID = "http://www.roblox.com/asset/?id=4210044808",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Hallowscythe"] = {
         Complete = true,
         Meta = {
@@ -36740,7 +36740,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2020"
-}),
+},
         Model = {
     Children = {
     {
@@ -36749,15 +36749,15 @@ local MESHES_FULL =
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.00824, 0.0546, 0.62405, -0.99868, 0.04691, 0.02085, 0.04573, 0.99751, -0.05374, -0.02332, -0.05271, -0.99834)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -36773,9 +36773,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.39243, 3.54155, 2.9425),
     TextureID = "http://www.roblox.com/asset/?id=5841879647",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Icebreaker"] = {
         Complete = true,
         Meta = {
@@ -36786,7 +36786,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2020"
-}),
+},
         Model = {
     Children = {
     {
@@ -36794,16 +36794,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -36819,9 +36819,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.41062, 3.07429, 1.95539),
     TextureID = "rbxassetid://6124173821",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Icewing"] = {
         Complete = true,
         Meta = {
@@ -36834,7 +36834,7 @@ local MESHES_FULL =
     Rarity = "Ancient",
     ThrowingHandle = 3183093706,
     Year = "2018"
-}),
+},
         Model = {
     Children = {
     {
@@ -36847,23 +36847,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2279588369",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.0031, -0.00953, 0.2059, -0.99976, 0.01674, 0.01386, 0.02037, 0.9442, 0.32875, -0.00759, 0.32896, -0.94431)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -36877,9 +36877,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.40003, 4.05, 1.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Logchopper"] = {
         Complete = true,
         Meta = {
@@ -36890,7 +36890,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2019"
-}),
+},
         Model = {
     Children = {
     {
@@ -36903,23 +36903,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5211110240",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -36933,9 +36933,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["NikKnife"] = {
         Complete = true,
         Meta = {
@@ -36947,9 +36947,9 @@ local MESHES_FULL =
     X = -1.1,
     Y = -1.4,
     Z = -0.2
-}),
+},
     Rarity = "Ancient"
-}),
+},
         Model = {
     Children = {
     {
@@ -36962,23 +36962,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2533345412",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -36992,9 +36992,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SwirlyAxe"] = {
         Complete = true,
         Meta = {
@@ -37005,7 +37005,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2021"
-}),
+},
         Model = {
     Children = {
     {
@@ -37013,16 +37013,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37038,9 +37038,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.51346, 2.89648, 2.66),
     TextureID = "rbxassetid://8293464070",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["TravelerAxe"] = {
         Complete = true,
         Meta = {
@@ -37051,7 +37051,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2023"
-}),
+},
         Model = {
     Children = {
     {
@@ -37059,16 +37059,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37084,9 +37084,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.60441, 3.406, 2.18736),
     TextureID = "rbxassetid://15057460725",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["VampireAxe"] = {
         Complete = true,
         Meta = {
@@ -37097,7 +37097,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -37105,16 +37105,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37130,9 +37130,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.31198, 3.62749, 1.92278),
     TextureID = "rbxassetid://73008954478338",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["UFOKnife"] = {
         Complete = true,
         Meta = {
@@ -37143,7 +37143,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -37151,16 +37151,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37176,9 +37176,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.93289, 3.79124, 1.0541),
     TextureID = "rbxassetid://94763497877100",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["UFOKnifeChroma"] = {
         Complete = true,
         Meta = {
@@ -37190,7 +37190,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -37203,8 +37203,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://94763497877100",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 3,
@@ -37215,23 +37215,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://138018131999412",
     Transparency = 0,
     ZIndex = 0
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37245,9 +37245,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.933, 3.791, 1.054),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["AuroraKnife"] = {
         Complete = true,
         Meta = {
@@ -37258,7 +37258,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -37266,16 +37266,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37291,9 +37291,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.22988, 3.76599, 1.15339),
     TextureID = "rbxassetid://97521579968070",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["ZombieBat"] = {
         Complete = true,
         Meta = {
@@ -37304,7 +37304,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-}),
+},
         Model = {
     Children = {
     {
@@ -37312,16 +37312,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37337,9 +37337,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.78195, 3.70306, 0.78373),
     TextureID = "rbxassetid://11192090515",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["BattleAxe"] = {
         Complete = true,
         Meta = {
@@ -37352,15 +37352,15 @@ local MESHES_FULL =
     X = 2.0944,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.4,
     Z = 0.2
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-}),
+},
         Model = {
     Children = {
     {
@@ -37373,23 +37373,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1084767901",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37403,9 +37403,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["BattleAxe2"] = {
         Complete = true,
         Meta = {
@@ -37416,7 +37416,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
-}),
+},
         Model = {
     Children = {
     {
@@ -37424,16 +37424,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37449,9 +37449,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.37879, 3.6555, 1.67011),
     TextureID = "rbxassetid://2513526862",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Bioblade"] = {
         Complete = true,
         Meta = {
@@ -37463,10 +37463,10 @@ local MESHES_FULL =
     X = -0.1,
     Y = -0.2,
     Z = 0.6
-}),
+},
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -37474,16 +37474,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37499,9 +37499,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.31064, 3.42103, 1.08776),
     TextureID = "http://www.roblox.com/asset/?id=4751538400",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Bloom"] = {
         Complete = true,
         Meta = {
@@ -37511,7 +37511,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -37519,16 +37519,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37544,9 +37544,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.46137, 3.7, 1.03854),
     TextureID = "rbxassetid://103489229144925",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["BlueSeer"] = {
         Complete = true,
         Meta = {
@@ -37555,7 +37555,7 @@ local MESHES_FULL =
     ItemName = "Blue Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -37568,23 +37568,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184062977",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37598,9 +37598,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Boneblade"] = {
         Complete = true,
         Meta = {
@@ -37611,7 +37611,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
-}),
+},
         Model = {
     Children = {
     {
@@ -37624,23 +37624,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2516324337",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37654,9 +37654,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["BonebladeChroma"] = {
         Complete = true,
         Meta = {
@@ -37668,7 +37668,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
-}),
+},
         Model = {
     Children = {
     {
@@ -37678,8 +37678,8 @@ local MESHES_FULL =
     Id = 3,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 2,
     Name = "Chroma",
@@ -37689,8 +37689,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://2513578115",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Id = 4,
@@ -37701,23 +37701,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2513576265",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37731,9 +37731,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Candleflame"] = {
         Complete = true,
         Meta = {
@@ -37744,7 +37744,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
-}),
+},
         Model = {
     Children = {
     {
@@ -37752,16 +37752,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37777,9 +37777,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.44978, 3.33759, 1.10873),
     TextureID = "rbxassetid://7791364988",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["CandleflameChroma"] = {
         Complete = true,
         Meta = {
@@ -37791,7 +37791,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
-}),
+},
         Model = {
     Children = {
     {
@@ -37804,8 +37804,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7806078587",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -37813,8 +37813,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -37824,23 +37824,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://7806088865",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37854,9 +37854,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Candy"] = {
         Complete = true,
         Meta = {
@@ -37867,7 +37867,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2015"
-}),
+},
         Model = {
     Children = {
     {
@@ -37880,23 +37880,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=19040326",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37910,9 +37910,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.6),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Chill"] = {
         Complete = true,
         Meta = {
@@ -37923,7 +37923,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2015"
-}),
+},
         Model = {
     Children = {
     {
@@ -37936,23 +37936,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=105978218",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -37966,9 +37966,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Clockwork"] = {
         Complete = true,
         Meta = {
@@ -37980,14 +37980,14 @@ local MESHES_FULL =
     X = 3.66519,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.3,
     Z = 0
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -38000,23 +38000,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=352570357",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.00151, -0.12701, -0.15448, -0.99867, 0.03727, 0.03568, -0.04098, -0.15276, -0.98741, -0.03135, -0.98756, 0.15409)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38030,9 +38030,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 0.65, 3),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Cookieblade"] = {
         Complete = true,
         Meta = {
@@ -38043,7 +38043,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
-}),
+},
         Model = {
     Children = {
     {
@@ -38051,16 +38051,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38076,9 +38076,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.233, 2.64, 0.89999),
     TextureID = "rbxassetid://6123168583",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Gingermint_K"] = {
         Complete = false,
         Meta = {
@@ -38089,7 +38089,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-}),
+},
         Model = {
     Children = {
     {
@@ -38097,22 +38097,22 @@ local MESHES_FULL =
     Id = 2,
     Name = "Mesh",
     Props = {}
-}),
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38126,9 +38126,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Gingermint_KChroma"] = {
         Complete = false,
         Meta = {
@@ -38140,7 +38140,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-}),
+},
         Model = {
     Children = {
     {
@@ -38148,7 +38148,7 @@ local MESHES_FULL =
     Id = 2,
     Name = "Mesh",
     Props = {}
-}),
+},
     {
     Children = {
     {
@@ -38156,8 +38156,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -38167,23 +38167,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://11883888650",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38197,9 +38197,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Darksword"] = {
         Complete = true,
         Meta = {
@@ -38210,7 +38210,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
-}),
+},
         Model = {
     Children = {
     {
@@ -38223,23 +38223,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15020899218",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38253,9 +38253,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Deathshard"] = {
         Complete = true,
         Meta = {
@@ -38263,7 +38263,7 @@ local MESHES_FULL =
     X = 0,
     Y = 0,
     Z = 0.7854
-}),
+},
     Image = "rbxassetid://3175017717",
     ItemID = 196750305,
     ItemName = "Deathshard",
@@ -38272,14 +38272,14 @@ local MESHES_FULL =
     X = -1.0472,
     Y = 1.5708,
     Z = 3.14159
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.2,
     Z = 0
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -38292,23 +38292,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=192567360",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, -0.0446, -0.00031, -0.99901, 0.03549, 0.99937, -0.00189, 0.99837, -0.03553, -0.04456)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38322,9 +38322,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.55, 2.39, 0.2),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["DeathshardChroma"] = {
         Complete = true,
         Meta = {
@@ -38332,7 +38332,7 @@ local MESHES_FULL =
     X = 0,
     Y = 0,
     Z = 0.7854
-}),
+},
     Chroma = true,
     Image = "rbxassetid://3187397317",
     ItemID = 3187390667,
@@ -38342,14 +38342,14 @@ local MESHES_FULL =
     X = -1.0472,
     Y = 1.5708,
     Z = 3.14159
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.2,
     Z = 0
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -38362,8 +38362,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3167029738",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -38371,8 +38371,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -38382,23 +38382,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://3167033529",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, 0.00003, 0, -0.0446, -0.00031, -0.999, 0.03549, 0.99937, -0.00189, 0.99837, -0.03553, -0.04456)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 6,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38412,9 +38412,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.55, 2.39, 0.2),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Eggblade"] = {
         Complete = true,
         Meta = {
@@ -38424,7 +38424,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -38432,16 +38432,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38457,9 +38457,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.72136, 3.43189, 0.91195),
     TextureID = "http://www.roblox.com/asset/?id=6596824396",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["ElderwoodKnife"] = {
         Complete = true,
         Meta = {
@@ -38470,7 +38470,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-}),
+},
         Model = {
     Children = {
     {
@@ -38483,23 +38483,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://11238176757",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38513,9 +38513,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.276, 3.531, 1.041),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["ElderwoodKnifeChroma"] = {
         Complete = true,
         Meta = {
@@ -38527,7 +38527,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-}),
+},
         Model = {
     Children = {
     {
@@ -38540,8 +38540,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=11370088878",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -38549,8 +38549,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -38560,23 +38560,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://11370095395",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38590,9 +38590,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.276, 3.531, 1.041),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Eternal"] = {
         Complete = true,
         Meta = {
@@ -38601,7 +38601,7 @@ local MESHES_FULL =
     ItemName = "Eternal",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -38614,23 +38614,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://532156041",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38644,9 +38644,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.23, 2.7, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Eternal2"] = {
         Complete = true,
         Meta = {
@@ -38655,7 +38655,7 @@ local MESHES_FULL =
     ItemName = "Eternal II",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -38668,23 +38668,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2585776718",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38698,9 +38698,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.23, 2.7, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Eternal3"] = {
         Complete = true,
         Meta = {
@@ -38710,7 +38710,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -38723,23 +38723,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5238664918",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38753,9 +38753,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3.24, 0.77),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Eternal4"] = {
         Complete = true,
         Meta = {
@@ -38765,7 +38765,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -38778,23 +38778,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5222717744",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38808,9 +38808,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3.24, 0.77),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["EternalCane"] = {
         Complete = true,
         Meta = {
@@ -38821,7 +38821,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
-}),
+},
         Model = {
     Children = {
     {
@@ -38834,23 +38834,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://4488374804",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -38864,9 +38864,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.23, 2.7, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["TreeKnife2023"] = {
         Complete = true,
         Meta = {
@@ -38878,7 +38878,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
-}),
+},
         Model = {
     Children = {
     {
@@ -38891,8 +38891,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15408244684",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -38902,8 +38902,8 @@ local MESHES_FULL =
     Id = 5,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 4,
     Name = "LightPart",
@@ -38919,8 +38919,8 @@ local MESHES_FULL =
     Size = Vector3.new(1.0546, 2.20523, 0.84565),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -38928,8 +38928,8 @@ local MESHES_FULL =
     Id = 7,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 6,
     Name = "LightPart",
@@ -38945,8 +38945,8 @@ local MESHES_FULL =
     Size = Vector3.new(1.00342, 2.14222, 1.0312),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -38954,8 +38954,8 @@ local MESHES_FULL =
     Id = 9,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 8,
     Name = "LightPart",
@@ -38971,8 +38971,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.11299, 0.13324, 0.06312),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -38980,8 +38980,8 @@ local MESHES_FULL =
     Id = 11,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 10,
     Name = "LightPart",
@@ -38997,8 +38997,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.93531, 1.86433, 0.91616),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -39006,8 +39006,8 @@ local MESHES_FULL =
     Id = 13,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 12,
     Name = "LightPart",
@@ -39023,29 +39023,29 @@ local MESHES_FULL =
     Size = Vector3.new(1.02064, 1.13292, 0.87231),
     TextureID = "",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     Class = "Model",
     Id = 3,
     Name = "LightParts",
     Props = {}
-}),
+},
     {
     Class = "RigidConstraint",
     Id = 14,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 15,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39059,9 +39059,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.41435, 4.1435, 1.02114),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["TreeKnife2023Chroma"] = {
         Complete = true,
         Meta = {
@@ -39074,7 +39074,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
-}),
+},
         Model = {
     Children = {
     {
@@ -39087,8 +39087,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 3,
@@ -39099,8 +39099,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://15693337518",
     Transparency = 0.6,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 4,
@@ -39111,8 +39111,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://15693352412",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -39122,8 +39122,8 @@ local MESHES_FULL =
     Id = 7,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 6,
     Name = "LightPart",
@@ -39139,8 +39139,8 @@ local MESHES_FULL =
     Size = Vector3.new(1.0546, 2.20523, 0.84565),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -39148,8 +39148,8 @@ local MESHES_FULL =
     Id = 9,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 8,
     Name = "LightPart",
@@ -39165,8 +39165,8 @@ local MESHES_FULL =
     Size = Vector3.new(1.00342, 2.14222, 1.0312),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -39174,8 +39174,8 @@ local MESHES_FULL =
     Id = 11,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 10,
     Name = "LightPart",
@@ -39191,8 +39191,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.11299, 0.13324, 0.06312),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -39200,8 +39200,8 @@ local MESHES_FULL =
     Id = 13,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 12,
     Name = "LightPart",
@@ -39217,8 +39217,8 @@ local MESHES_FULL =
     Size = Vector3.new(0.93531, 1.86433, 0.91616),
     TextureID = "",
     Transparency = 0
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -39226,8 +39226,8 @@ local MESHES_FULL =
     Id = 15,
     Name = "WeldConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "MeshPart",
     Id = 14,
     Name = "LightPart",
@@ -39243,35 +39243,35 @@ local MESHES_FULL =
     Size = Vector3.new(1.02064, 1.13292, 0.87231),
     TextureID = "",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     Class = "Model",
     Id = 5,
     Name = "LightParts",
     Props = {}
-}),
+},
     {
     Class = "Script",
     Id = 16,
     Name = "ChromaScript",
     Props = {}
-}),
+},
     {
     Class = "RigidConstraint",
     Id = 17,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 18,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39285,9 +39285,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.41435, 4.1435, 1.02114),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Fang"] = {
         Complete = true,
         Meta = {
@@ -39295,7 +39295,7 @@ local MESHES_FULL =
     X = 0,
     Y = 0,
     Z = 0.7854
-}),
+},
     Image = "rbxassetid://3187397768",
     ItemID = 198442811,
     ItemName = "Fang",
@@ -39304,14 +39304,14 @@ local MESHES_FULL =
     X = -1.0472,
     Y = 1.5708,
     Z = 3.14159
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.2,
     Z = 0
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -39324,23 +39324,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=117500388",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, -0.03957, -0.0005, -0.99922, 0.01768, 0.99984, -0.0012, 0.99906, -0.01771, -0.03955)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39354,9 +39354,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.75, 3, 0.42),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["FangChroma"] = {
         Complete = true,
         Meta = {
@@ -39364,7 +39364,7 @@ local MESHES_FULL =
     X = 0,
     Y = 0,
     Z = 0.7854
-}),
+},
     Chroma = true,
     Image = "rbxassetid://3187397850",
     ItemID = 3187392501,
@@ -39374,14 +39374,14 @@ local MESHES_FULL =
     X = -1.0472,
     Y = 1.5708,
     Z = 3.14159
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.2,
     Z = 0
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -39391,8 +39391,8 @@ local MESHES_FULL =
     Id = 3,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 2,
     Name = "Chroma",
@@ -39402,8 +39402,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://3167057391",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Id = 4,
@@ -39414,23 +39414,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, -0.03957, -0.0005, -0.99922, 0.01768, 0.99984, -0.0012, 0.99906, -0.01771, -0.03955)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 6,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39444,9 +39444,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.99, 3, 0.23),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Flames"] = {
         Complete = true,
         Meta = {
@@ -39458,14 +39458,14 @@ local MESHES_FULL =
     X = 3.66519,
     Y = 0,
     Z = 3.14159
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.5,
     Z = 0.1
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -39478,8 +39478,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=238314124",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -39487,14 +39487,14 @@ local MESHES_FULL =
     Id = 4,
     Name = "ManualWeld",
     Props = {}
-}),
+},
     {
     Class = "ManualWeld",
     Id = 5,
     Name = "ManualWeld",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 3,
     Name = "EffectCenter",
@@ -39508,23 +39508,23 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 0.2, 0.2),
     Transparency = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.00653, 0.08929, -0.12036, 1, 0.00227, -0.00214, 0.00189, 0.10443, 0.99453, 0.00248, -0.99453, 0.10442)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 7,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39538,9 +39538,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 0.7, 2.85),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["FlowerwoodKnife"] = {
         Complete = true,
         Meta = {
@@ -39550,7 +39550,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -39558,16 +39558,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39583,9 +39583,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.44447, 3.95816, 1.07334),
     TextureID = "rbxassetid://16895441338",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Frostbite"] = {
         Complete = true,
         Meta = {
@@ -39596,7 +39596,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
-}),
+},
         Model = {
     Children = {
     {
@@ -39609,23 +39609,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5211130051",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39639,9 +39639,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 2.6, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Frostsaber"] = {
         Complete = true,
         Meta = {
@@ -39654,15 +39654,15 @@ local MESHES_FULL =
     X = 3.49066,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.4,
     Z = 0.1
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-}),
+},
         Model = {
     Children = {
     {
@@ -39675,23 +39675,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1192795941",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.00214, 0.01834, -0.04645, 1, -0, 0, 0, -0.15645, 0.98769, 0, -0.98769, -0.15645)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39705,9 +39705,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.3, 0.85, 3.05),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Gemstone"] = {
         Complete = true,
         Meta = {
@@ -39717,7 +39717,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -39730,23 +39730,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3183579677",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39760,9 +39760,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3.15, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["GemstoneChroma"] = {
         Complete = true,
         Meta = {
@@ -39773,7 +39773,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -39786,8 +39786,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3183577898",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -39795,8 +39795,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -39806,23 +39806,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://3183578044",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39836,9 +39836,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Ghostblade"] = {
         Complete = true,
         Meta = {
@@ -39849,7 +39849,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
-}),
+},
         Model = {
     Children = {
     {
@@ -39862,23 +39862,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5007736173",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39892,9 +39892,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.605, 1.65, 1.01),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["GingerbladeChroma"] = {
         Complete = true,
         Meta = {
@@ -39906,7 +39906,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
-}),
+},
         Model = {
     Children = {
     {
@@ -39919,14 +39919,14 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2672327402",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Weld",
     Id = 3,
     Name = "Weld",
     Props = {}
-}),
+},
     {
     Children = {
     {
@@ -39934,8 +39934,8 @@ local MESHES_FULL =
     Id = 5,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 4,
     Name = "Chroma",
@@ -39945,8 +39945,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://2672332704",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -39954,8 +39954,8 @@ local MESHES_FULL =
     Id = 7,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 6,
     Name = "Chroma",
@@ -39965,23 +39965,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://2672332700",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 8,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 9,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -39995,9 +39995,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3, 0.5),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Gingerblade"] = {
         Complete = true,
         Meta = {
@@ -40008,7 +40008,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
-}),
+},
         Model = {
     Children = {
     {
@@ -40021,29 +40021,29 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://2682446647",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Weld",
     Id = 3,
     Name = "Weld",
     Props = {}
-}),
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40057,9 +40057,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3, 0.5),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["HallowsBlade"] = {
         Complete = true,
         Meta = {
@@ -40070,7 +40070,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2017"
-}),
+},
         Model = {
     Children = {
     {
@@ -40083,31 +40083,31 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1132750758",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40121,9 +40121,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Hallow"] = {
         Complete = true,
         Meta = {
@@ -40134,7 +40134,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2016"
-}),
+},
         Model = {
     Children = {
     {
@@ -40147,23 +40147,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset?id=179155105",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40177,9 +40177,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Handsaw"] = {
         Complete = false,
         Meta = {
@@ -40192,15 +40192,15 @@ local MESHES_FULL =
     X = 0.34907,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.4,
     Z = 0
-}),
+},
     Rarity = "Godly",
     Year = "2015"
-}),
+},
         Model = {
     Children = {
     {
@@ -40208,22 +40208,22 @@ local MESHES_FULL =
     Id = 2,
     Name = "Mesh",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.00497, 0.07639, 0.12897, -0.99699, 0.07369, 0.02425, 0.02431, -0.00008, 0.9997, 0.07367, 0.99728, -0.00171)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40237,9 +40237,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["HeartWandChroma"] = {
         Complete = true,
         Meta = {
@@ -40252,7 +40252,7 @@ local MESHES_FULL =
     Rarity = "Godly",
     Season = 1,
     Year = "2026"
-}),
+},
         Model = {
     Children = {
     {
@@ -40265,8 +40265,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://78842905206144",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 3,
@@ -40277,23 +40277,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://106915560132163",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40307,9 +40307,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.80402, 2.28355, 3.46268),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["HeartWand"] = {
         Complete = true,
         Meta = {
@@ -40321,7 +40321,7 @@ local MESHES_FULL =
     Rarity = "Godly",
     Season = 1,
     Year = "2026"
-}),
+},
         Model = {
     Children = {
     {
@@ -40329,22 +40329,22 @@ local MESHES_FULL =
     Id = 2,
     Name = "SurfaceAppearance",
     Props = {}
-}),
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40360,9 +40360,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.43272, 3.35869, 1.91866),
     TextureID = "rbxassetid://76246633927299",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Heartblade"] = {
         Complete = true,
         Meta = {
@@ -40372,7 +40372,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -40380,16 +40380,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40405,9 +40405,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.27948, 3.29, 1.14654),
     TextureID = "http://www.roblox.com/asset/?id=6413074818",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["HeatChroma"] = {
         Complete = true,
         Meta = {
@@ -40417,7 +40417,7 @@ local MESHES_FULL =
     ItemName = "Heat",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -40430,8 +40430,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=105334003",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -40439,8 +40439,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -40450,23 +40450,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://3171194830",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40480,9 +40480,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Heat"] = {
         Complete = true,
         Meta = {
@@ -40491,7 +40491,7 @@ local MESHES_FULL =
     ItemName = "Heat",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -40504,23 +40504,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=105334003",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40534,9 +40534,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 2.9, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["IceDragon"] = {
         Complete = true,
         Meta = {
@@ -40549,20 +40549,20 @@ local MESHES_FULL =
     X = 0,
     Y = 0,
     Z = 0.55
-}),
+},
     RadioAngles = {
     X = 3.66519,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.5,
     Z = -0.05
-}),
+},
     Rarity = "Godly",
     Year = "2016"
-}),
+},
         Model = {
     Children = {
     {
@@ -40575,23 +40575,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=165708903 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.00896, -0.12686, -0.15436, -0.99993, -0.00781, 0.00911, -0.00781, -0.15308, -0.98818, 0.00911, -0.98818, 0.15301)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40605,9 +40605,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.35, 0.72, 2.98),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["IceShard"] = {
         Complete = true,
         Meta = {
@@ -40620,15 +40620,15 @@ local MESHES_FULL =
     X = 3.66519,
     Y = 0,
     Z = 3.14159
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.3,
     Z = 0.1
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-}),
+},
         Model = {
     Children = {
     {
@@ -40641,23 +40641,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=188539820",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.01, -0.13699, -0.17639, 0.99782, -0.06573, -0.00656, 0.00088, -0.08616, 0.99628, -0.06605, -0.99411, -0.08592)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40671,9 +40671,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Iceflake"] = {
         Complete = true,
         Meta = {
@@ -40684,7 +40684,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
-}),
+},
         Model = {
     Children = {
     {
@@ -40692,16 +40692,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40717,9 +40717,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.18449, 3.37688, 0.82576),
     TextureID = "rbxassetid://8231046270",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Nebula"] = {
         Complete = true,
         Meta = {
@@ -40729,7 +40729,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -40737,16 +40737,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40762,9 +40762,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.31685, 3.4062, 1.15913),
     TextureID = "http://www.roblox.com/asset/?id=6256756879",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Nightblade"] = {
         Complete = true,
         Meta = {
@@ -40776,14 +40776,14 @@ local MESHES_FULL =
     X = 2.0944,
     Y = 3.14159,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.1,
     Y = -1.3,
     Z = 0.1
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -40796,23 +40796,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=103838996",
     VertexColor = Vector3.new(0.4, 0.4, 0.4)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.00607, 0.15098, 0.04654, 0.99999, 0.00282, -0.00272, -0.00304, 0.9962, -0.0871, 0.00246, 0.08711, 0.9962)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40826,9 +40826,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.2, 3.1, 0.6),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["AmericaSword"] = {
         Complete = true,
         Meta = {
@@ -40836,7 +40836,7 @@ local MESHES_FULL =
     X = -1.5708,
     Y = 2.26893,
     Z = 1.5708
-}),
+},
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=446047742",
     ItemID = 473570051,
     ItemName = "Old Glory",
@@ -40845,19 +40845,19 @@ local MESHES_FULL =
     X = -0.1,
     Y = 0,
     Z = 0.55
-}),
+},
     RadioAngles = {
     X = 3.66519,
     Y = 0,
     Z = 3.14159
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.5,
     Z = 0.1
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -40870,8 +40870,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "https://www.roblox.com/asset/?id=445805934",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -40879,14 +40879,14 @@ local MESHES_FULL =
     Id = 4,
     Name = "ManualWeld",
     Props = {}
-}),
+},
     {
     Class = "ManualWeld",
     Id = 5,
     Name = "ManualWeld",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 3,
     Name = "EffectFull",
@@ -40900,8 +40900,8 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3, 0.65),
     Transparency = 1
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -40909,14 +40909,14 @@ local MESHES_FULL =
     Id = 7,
     Name = "ManualWeld",
     Props = {}
-}),
+},
     {
     Class = "ManualWeld",
     Id = 8,
     Name = "ManualWeld",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 6,
     Name = "EffectHalf",
@@ -40930,8 +40930,8 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 1.8, 0.65),
     Transparency = 1
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -40939,14 +40939,14 @@ local MESHES_FULL =
     Id = 10,
     Name = "ManualWeld",
     Props = {}
-}),
+},
     {
     Class = "ManualWeld",
     Id = 11,
     Name = "ManualWeld",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 9,
     Name = "EffectCenter",
@@ -40960,23 +40960,23 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 0.2, 0.4),
     Transparency = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 12,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0.01773, 0.08072, -0.12479, 0.99918, 0.00772, 0.03986, -0.04038, 0.08672, 0.99542, 0.00423, -0.9962, 0.08696)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 13,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -40990,9 +40990,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 0.6, 3.05),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["OrangeSeer"] = {
         Complete = true,
         Meta = {
@@ -41001,7 +41001,7 @@ local MESHES_FULL =
     ItemName = "Orange Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -41014,23 +41014,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184063179",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41044,9 +41044,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["BaubleKnife"] = {
         Complete = true,
         Meta = {
@@ -41057,7 +41057,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -41065,16 +41065,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41090,9 +41090,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.49288, 3.65592, 0.83005),
     TextureID = "rbxassetid://135843404105980",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["BaubleKnifeChroma"] = {
         Complete = true,
         Meta = {
@@ -41104,7 +41104,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -41117,8 +41117,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://101916509598198",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Id = 3,
@@ -41129,23 +41129,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://135843404105980",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41159,9 +41159,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.46874, 3.47609, 0.78916),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Pearl_K"] = {
         Complete = true,
         Meta = {
@@ -41171,7 +41171,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -41179,16 +41179,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41204,9 +41204,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.22011, 3.48599, 0.80767),
     TextureID = "rbxassetid://18276866373",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Peppermint"] = {
         Complete = true,
         Meta = {
@@ -41217,7 +41217,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
-}),
+},
         Model = {
     Children = {
     {
@@ -41230,23 +41230,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0.3, -0.1),
     TextureId = "rbxassetid://6074789360",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41260,9 +41260,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Phantom2022"] = {
         Complete = false,
         Meta = {
@@ -41273,7 +41273,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
-}),
+},
         Model = {
     Children = {
     {
@@ -41281,22 +41281,22 @@ local MESHES_FULL =
     Id = 2,
     Name = "Mesh",
     Props = {}
-}),
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41310,9 +41310,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.37, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Pixel"] = {
         Complete = true,
         Meta = {
@@ -41324,14 +41324,14 @@ local MESHES_FULL =
     X = 0,
     Y = 0.2,
     Z = 0.5
-}),
+},
     RadioAngles = {
     X = 3.66519,
     Y = 0,
     Z = 0
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -41344,23 +41344,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=361630114",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.00634, 0.03519, -0.22073, 0.99817, -0.06049, -0.00075, 0.00608, 0.08798, 0.9961, -0.06019, -0.99428, 0.08818)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41374,9 +41374,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Plasmablade"] = {
         Complete = true,
         Meta = {
@@ -41386,7 +41386,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -41394,16 +41394,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41419,9 +41419,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.33805, 3.62275, 0.84841),
     TextureID = "rbxassetid://10015130416",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Prismatic"] = {
         Complete = true,
         Meta = {
@@ -41431,7 +41431,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -41444,23 +41444,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://5355747943",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41474,9 +41474,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.425, 1.90227, 1.21),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Pumpking"] = {
         Complete = true,
         Meta = {
@@ -41489,15 +41489,15 @@ local MESHES_FULL =
     X = 2.0944,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.1,
     Y = -1.4,
     Z = 0
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-}),
+},
         Model = {
     Children = {
     {
@@ -41510,23 +41510,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://1164426571",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41540,9 +41540,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 4.5, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["PurpleSeer"] = {
         Complete = true,
         Meta = {
@@ -41551,7 +41551,7 @@ local MESHES_FULL =
     ItemName = "Purple Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -41564,23 +41564,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184063317",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41594,9 +41594,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Rainbow_K"] = {
         Complete = true,
         Meta = {
@@ -41606,7 +41606,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -41614,16 +41614,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41639,9 +41639,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.26142, 3.2611, 1.00893),
     TextureID = "rbxassetid://12921241867",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["RedSeer"] = {
         Complete = true,
         Meta = {
@@ -41650,7 +41650,7 @@ local MESHES_FULL =
     ItemName = "Red Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -41663,23 +41663,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184063443",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41693,9 +41693,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Sakura_K"] = {
         Complete = true,
         Meta = {
@@ -41705,7 +41705,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -41713,16 +41713,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41738,9 +41738,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.52985, 3.70591, 0.52184),
     TextureID = "rbxassetid://12307707797",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Saw"] = {
         Complete = true,
         Meta = {
@@ -41749,7 +41749,7 @@ local MESHES_FULL =
     ItemName = "Saw",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -41762,23 +41762,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset?id=168119736",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41792,9 +41792,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SawChroma"] = {
         Complete = true,
         Meta = {
@@ -41804,7 +41804,7 @@ local MESHES_FULL =
     ItemName = "Saw",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -41817,8 +41817,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3171086347",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -41826,8 +41826,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -41837,23 +41837,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://3171091036",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41867,9 +41867,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.25, 3.08, 1),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["TheSeer"] = {
         Complete = true,
         Meta = {
@@ -41878,7 +41878,7 @@ local MESHES_FULL =
     ItemName = "Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -41891,23 +41891,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset?id=156092253 ",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41921,9 +41921,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SeerChroma"] = {
         Complete = true,
         Meta = {
@@ -41933,7 +41933,7 @@ local MESHES_FULL =
     ItemName = "Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -41946,8 +41946,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184059718",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -41955,8 +41955,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -41966,23 +41966,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://3184061374",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -41996,9 +41996,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SlasherChroma"] = {
         Complete = true,
         Meta = {
@@ -42008,7 +42008,7 @@ local MESHES_FULL =
     ItemName = "Slasher",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -42021,8 +42021,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3171107559",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -42030,8 +42030,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -42041,23 +42041,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://3171107715",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42071,9 +42071,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3.17, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Slasher"] = {
         Complete = true,
         Meta = {
@@ -42082,7 +42082,7 @@ local MESHES_FULL =
     ItemName = "Slasher",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -42095,23 +42095,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=313894904",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42125,9 +42125,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3.17, 0.7),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SnowDaggerChroma"] = {
         Complete = true,
         Meta = {
@@ -42139,7 +42139,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -42152,8 +42152,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://109403096491788",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Id = 3,
@@ -42164,23 +42164,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://77812964601215",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42194,9 +42194,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.33126, 2.75126, 0.65699),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SnowDagger"] = {
         Complete = true,
         Meta = {
@@ -42207,7 +42207,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -42215,16 +42215,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42240,9 +42240,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.36039, 2.99009, 0.71375),
     TextureID = "rbxassetid://77812964601215",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Snowflake"] = {
         Complete = true,
         Meta = {
@@ -42255,15 +42255,15 @@ local MESHES_FULL =
     X = -4.36332,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.4,
     Z = 0.1
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-}),
+},
         Model = {
     Children = {
     {
@@ -42276,23 +42276,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://582120836",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42306,9 +42306,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3.79, 0.86),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SnowstormChroma"] = {
         Complete = true,
         Meta = {
@@ -42320,7 +42320,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -42333,8 +42333,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://86253759560362",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 3,
@@ -42345,23 +42345,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://118939212650553",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42375,9 +42375,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.26, 3.852, 0.958),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Spider"] = {
         Complete = true,
         Meta = {
@@ -42390,20 +42390,20 @@ local MESHES_FULL =
     X = 0,
     Y = 0,
     Z = 0.55
-}),
+},
     RadioAngles = {
     X = 3.66519,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.3,
     Z = 0
-}),
+},
     Rarity = "Godly",
     Year = "2015"
-}),
+},
         Model = {
     Children = {
     {
@@ -42416,23 +42416,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://7596177341",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.00147, 0.08734, -0.12192, 0.99817, -0.06049, -0.00075, 0.00608, 0.08798, 0.9961, -0.06019, -0.99428, 0.08818)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42446,9 +42446,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["WraithKnife"] = {
         Complete = true,
         Meta = {
@@ -42459,7 +42459,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2024"
-}),
+},
         Model = {
     Children = {
     {
@@ -42467,16 +42467,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42492,9 +42492,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.22556, 3.56844, 0.95248),
     TextureID = "rbxassetid://131787177447081",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SunsetKnifeChroma"] = {
         Complete = true,
         Meta = {
@@ -42507,7 +42507,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -42520,8 +42520,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://93782017269677",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 3,
@@ -42532,8 +42532,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://70538223885127",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Decal",
     Id = 4,
@@ -42544,23 +42544,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://95001575076131",
     Transparency = 1,
     ZIndex = 2
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 5,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 6,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42574,9 +42574,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.276, 3.531, 1.041),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SunsetKnife"] = {
         Complete = true,
         Meta = {
@@ -42588,7 +42588,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -42601,8 +42601,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://95001575076131",
     Transparency = 1,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Id = 3,
@@ -42613,23 +42613,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://93782017269677",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42643,9 +42643,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.23611, 3.866, 1.18362),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SweetChroma"] = {
         Complete = true,
         Meta = {
@@ -42658,7 +42658,7 @@ local MESHES_FULL =
     Rarity = "Godly",
     Season = 1,
     Year = "2026"
-}),
+},
         Model = {
     Children = {
     {
@@ -42671,8 +42671,8 @@ local MESHES_FULL =
     Texture = "rbxassetid://87741741305052",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "SpecialMesh",
     Id = 3,
@@ -42683,23 +42683,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://120707737118924",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42713,9 +42713,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.71067, 2.0184, 3.06062),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["SwirlyBlade"] = {
         Complete = true,
         Meta = {
@@ -42726,7 +42726,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
-}),
+},
         Model = {
     Children = {
     {
@@ -42734,16 +42734,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42759,9 +42759,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.46908, 3.34704, 0.85579),
     TextureID = "rbxassetid://8302965681",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Tides"] = {
         Complete = true,
         Meta = {
@@ -42773,14 +42773,14 @@ local MESHES_FULL =
     X = 3.66519,
     Y = 0,
     Z = 3.14159
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.5,
     Z = 0.1
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -42793,23 +42793,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=238314431",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.0034, 0.12729, -0.21518, 0.99799, -0.06327, -0.00357, 0.00363, 0.00083, 0.99999, -0.06326, -0.998, 0.00106)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42823,9 +42823,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["TidesChroma"] = {
         Complete = true,
         Meta = {
@@ -42838,14 +42838,14 @@ local MESHES_FULL =
     X = 3.66519,
     Y = 0,
     Z = 3.14159
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.5,
     Z = 0.1
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -42858,8 +42858,8 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3171168641",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Children = {
     {
@@ -42867,8 +42867,8 @@ local MESHES_FULL =
     Id = 4,
     Name = "ChromaScript",
     Props = {}
-})
-}),
+}
+},
     Class = "Decal",
     Id = 3,
     Name = "Chroma",
@@ -42878,23 +42878,23 @@ local MESHES_FULL =
     Texture = "rbxassetid://3171161741",
     Transparency = 0,
     ZIndex = 1
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 5,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.0034, 0.12729, -0.21515, 0.99799, -0.06327, -0.00357, 0.00363, 0.00083, 0.99999, -0.06326, -0.998, 0.00106)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 6,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -42908,9 +42908,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.45, 0.7, 3.05),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Turkey2023"] = {
         Complete = true,
         Meta = {
@@ -42920,7 +42920,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -42933,14 +42933,14 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15320558272",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Sound",
     Id = 3,
     Name = "Bite",
     Props = {}
-}),
+},
     {
     Children = {
     {
@@ -42953,27 +42953,27 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://15414905407",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Sound",
     Id = 6,
     Name = "Bite",
     Props = {}
-}),
+},
     {
     Class = "WeldConstraint",
     Id = 7,
     Name = "WeldConstraint",
     Props = {}
-}),
+},
     {
     Class = "ManualWeld",
     Id = 8,
     Name = "ManualWeld",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 4,
     Name = "BiteLoad",
@@ -42987,23 +42987,23 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(1.099, 2.812, 1.072),
     Transparency = 0.999
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 9,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 10,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -43017,9 +43017,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(1.099, 2.812, 1.072),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["VampiresEdge"] = {
         Complete = true,
         Meta = {
@@ -43030,7 +43030,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
-}),
+},
         Model = {
     Children = {
     {
@@ -43038,16 +43038,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -43063,9 +43063,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.39547, 3.35145, 1.01441),
     TextureID = "http://www.roblox.com/asset/?id=5842343736",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Virtual"] = {
         Complete = true,
         Meta = {
@@ -43077,9 +43077,9 @@ local MESHES_FULL =
     X = -1.05,
     Y = -1.3,
     Z = 0
-}),
+},
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -43092,23 +43092,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "https://www.roblox.com/asset/?id=386250868",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -43122,9 +43122,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Waves_K"] = {
         Complete = true,
         Meta = {
@@ -43134,7 +43134,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
-}),
+},
         Model = {
     Children = {
     {
@@ -43142,16 +43142,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -43167,9 +43167,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.30452, 3.96204, 1.26561),
     TextureID = "rbxassetid://13916939964",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["WintersEdge"] = {
         Complete = true,
         Meta = {
@@ -43177,7 +43177,7 @@ local MESHES_FULL =
     X = 0,
     Y = 0,
     Z = 0.7854
-}),
+},
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268708987",
     ItemID = 1268708987,
@@ -43187,15 +43187,15 @@ local MESHES_FULL =
     X = 2.18166,
     Y = 1.5708,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1,
     Y = -1.35,
     Z = 0.1
-}),
+},
     Rarity = "Godly",
     Year = "2017"
-}),
+},
         Model = {
     Children = {
     {
@@ -43208,23 +43208,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "http://www.roblox.com/asset/?id=93112631",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(-0.05109, 0.08594, -0.00051, -0.03483, -0.00184, -0.99939, 0.03474, 0.99939, -0.00305, 0.99879, -0.03482, -0.03474)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -43238,9 +43238,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.66, 3, 0.38),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["XenoKnife"] = {
         Complete = true,
         Meta = {
@@ -43251,7 +43251,7 @@ local MESHES_FULL =
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
-}),
+},
         Model = {
     Children = {
     {
@@ -43259,16 +43259,16 @@ local MESHES_FULL =
     Id = 2,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "MeshPart",
     Id = 1,
     Name = "KnifeDisplay",
@@ -43284,9 +43284,9 @@ local MESHES_FULL =
     Size = Vector3.new(0.20411, 3.91908, 0.74307),
     TextureID = "rbxassetid://113651973865393",
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["Xmas"] = {
         Complete = true,
         Meta = {
@@ -43300,15 +43300,15 @@ local MESHES_FULL =
     X = 3.66519,
     Y = 0,
     Z = 0
-}),
+},
     RadioOffset = {
     X = -1.05,
     Y = -1.3,
     Z = 0
-}),
+},
     Rarity = "Godly",
     Year = "2015"
-}),
+},
         Model = {
     Children = {
     {
@@ -43321,23 +43321,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://187852629",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "Attachment",
     Id = 3,
     Name = "CustomAttachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 0.99799, -0.06327, -0.00357, 0.00363, 0.00083, 0.99999, -0.06326, -0.998, 0.00106)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 4,
     Name = "RigidConstraint",
     Props = {}
-})
-}),
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -43351,9 +43351,9 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.4, 3, 0.8),
     Transparency = 0
-})
-})
-}),
+}
+}
+},
     ["YellowSeer"] = {
         Complete = true,
         Meta = {
@@ -43362,7 +43362,7 @@ local MESHES_FULL =
     ItemName = "Yellow Seer",
     ItemType = "Knife",
     Rarity = "Godly"
-}),
+},
         Model = {
     Children = {
     {
@@ -43375,23 +43375,23 @@ local MESHES_FULL =
     Offset = Vector3.new(0, 0, 0),
     TextureId = "rbxassetid://3184063623",
     VertexColor = Vector3.new(1, 1, 1)
-})
-}),
+}
+},
     {
     Class = "RigidConstraint",
     Id = 3,
     Name = "RigidConstraint",
     Props = {}
-}),
+},
     {
     Class = "Attachment",
     Id = 4,
     Name = "Attachment",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
-})
-})
-}),
+}
+}
+},
     Class = "Part",
     Id = 1,
     Name = "KnifeDisplay",
@@ -43405,10 +43405,10 @@ local MESHES_FULL =
     Shape = Enum.PartType.Block,
     Size = Vector3.new(0.5, 3.1, 1),
     Transparency = 0
-})
-})
-})
-})
+}
+}
+}
+}
 -- merge: FULL data (Godly/Ancient, has .Model tree) overrides the old flat data
 local MESHES = {}
 for k, v in pairs(MESHES_OLD) do MESHES[k] = v end
@@ -43455,7 +43455,7 @@ end
 local CHROMA = {
     Color3.fromRGB(255,0,0), Color3.fromRGB(255,255,0), Color3.fromRGB(0,255,0),
     Color3.fromRGB(0,255,255), Color3.fromRGB(0,0,255), Color3.fromRGB(255,0,255)
-})
+}
 local function chromaColor(t)
     local n = #CHROMA; local phase = t % n; local i = math.floor(phase)
     return CHROMA[i + 1]:Lerp(CHROMA[((i + 1) % n) + 1], phase - i)
@@ -43845,7 +43845,7 @@ end
 local BLOCKED_RARITY = {
     common = true, uncommon = true, rare = true, legendary = true,
     ["classic rare"] = true, ["classic uncommon"] = true, ["classic common"] = true
-})
+}
 local function isHighRarity(rarity)
     if not rarity or rarity == "" then return false end
     local r = tostring(rarity):lower():gsub("^%s+",""):gsub("%s+$","")
@@ -43869,7 +43869,7 @@ for key, info in pairs(WeaponDB) do
                 name = info.ItemName or key,
                 type = info.ItemType,
                 rarity = rarity
-})
+}
         end
     end
 end
@@ -43884,7 +43884,7 @@ for key, data in pairs(MESHES) do
                 name = meta.ItemName or key,
                 type = typ,
                 rarity = rarity
-})
+}
         end
     end
 end
@@ -44026,8 +44026,7 @@ do
     -- still in effect. Most modern executors propagate identity to child
     -- threads, so this is usually enough.
     local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
-end
-if not WindUI then warn("[Stealth] Failed to load WindUI UI") return end
+    if not WindUI then warn("[Stealth] Failed to load WindUI UI") return end
     -- Re-assert after loadstring (it may reset identity).
     _elevateIdentity()
     local Window = WindUI:CreateWindow({ Title = "Stealth", Folder = "Stealth", Icon = "solar:shield-keyhole-bold-duotone", OpenButton = { Title = "Open Stealth", Enabled = true }, Topbar = { Height = 44, ButtonsType = "Mac" } })
@@ -44062,6 +44061,7 @@ local SpawnTab = _sec_SpawnTab:Tab({ Title = "Weapons", Icon = "solar:widget-bol
     statusLabel = SpawnTab:Paragraph({
         Name = "Status",
         Content = "Select a weapon, then click Spawn."
+    })
 
     -- Dropdown with all weapons (WindUI has built-in search in dropdowns).
     -- Entries are SHORT (just the weapon name) to prevent horizontal overflow.
@@ -44081,10 +44081,11 @@ local SpawnTab = _sec_SpawnTab:Tab({ Title = "Weapons", Icon = "solar:widget-bol
                     statusLabel:SetText({
                         Text = "Selected",
                         Content = wv.name .. " (" .. wv.type .. " — " .. (wv.rarity or "?") .. ")"
-
+                    })
                 end
             end
         end
+    })
 
     SpawnTab:Button({ Title = "Spawn Weapon",
         Desc = "Spawns the selected weapon into your inventory (client-side).",
@@ -44100,7 +44101,7 @@ local SpawnTab = _sec_SpawnTab:Tab({ Title = "Weapons", Icon = "solar:widget-bol
                     Name = "Stealth",
                     Content = "Select a weapon first.",
                     Duration = 3
-
+                })
                 return
             end
             task.spawn(function()
@@ -44109,15 +44110,16 @@ local SpawnTab = _sec_SpawnTab:Tab({ Title = "Weapons", Icon = "solar:widget-bol
                     statusLabel:SetText({
                         Name = "Spawned",
                         Content = selectedName or selectedKey
-
+                    })
                 end
                 WindUI:Notify({
                     Name = "Stealth",
                     Content = "Spawned: " .. (selectedName or selectedKey),
                     Duration = 3
-
+                })
             end)
         end
+    })
 
     ------------------------------------------------------------ Tab: Settings
     local _sec_SettingsTab = Window:Section({ Title = "Config" })
@@ -44145,6 +44147,7 @@ local SettingsTab = _sec_SettingsTab:Tab({ Title = "Config", Icon = "solar:widge
         Callback = function(v)
             CONFIG.PollRate = v
         end
+    })
 
     SettingsTab:Button({ Title = "Unload Stealth",
         Desc = "Closes the UI and removes all overlays.",
@@ -44155,12 +44158,13 @@ local SettingsTab = _sec_SettingsTab:Tab({ Title = "Config", Icon = "solar:widge
             if SELF.destroy then SELF.destroy() end
             Window:Destroy()
         end
+    })
 
     WindUI:Notify({
         Name = "Stealth | MM2",
         Content = ("Ready — %d weapons. Select → Spawn → equip."):format(#weaponList),
         Duration = 5
-
+    })
 end
 -- =========================================================================
 -- Stealth | MM2 — Extended Features (ESP, AutoFarm, Character, Teleport,
@@ -44233,7 +44237,7 @@ do
         Enabled = false,
         Filter = "All", -- All | Murderer | Sheriff | Both
         ShowTracers = false
-})
+}
     local espHighlights = {} -- player -> Highlight instance
     local espTracers = {}    -- player -> Beam instance
     local AutoFarm = {
@@ -44248,7 +44252,7 @@ do
         JumpPower = 50,
         LockWalkSpeed = false,
         LockJumpPower = false
-})
+}
     local noclipConn = nil
     local infiniteJumpConn = nil
     local AntiAFK = false
@@ -44261,7 +44265,7 @@ do
         Murderer = Color3.fromRGB(220, 20, 60),
         Sheriff = Color3.fromRGB(70, 130, 255),
         Innocent = Color3.fromRGB(140, 140, 165)
-})
+}
     ------------------------------------------------------------
     -- ESP implementation
     ------------------------------------------------------------
@@ -44596,8 +44600,9 @@ local ESPTab = _sec_ESPTab:Tab({ Title = "ESP", Icon = "solar:widget-bold", Icon
             ESP.Filter = selected
             RefreshESP()
         end
+    })
 
-    ESPTab:CreateToggle({ Name = "Line ESP (Tracers)", 
+    ESPTab:CreateToggle({ Name = "Line ESP (Tracers)",
         Desc = "Draw lines from your character to highlighted players.",
         Value = false,
         Callback = function(v)
@@ -44610,6 +44615,7 @@ local ESPTab = _sec_ESPTab:Tab({ Title = "ESP", Icon = "solar:widget-bold", Icon
             end
             RefreshESP()
         end
+    })
 
     -- ---------- AutoFarm Tab ----------
     local _sec_AutoFarmTab = Window:Section({ Title = "Farm" })
@@ -44628,6 +44634,7 @@ local AutoFarmTab = _sec_AutoFarmTab:Tab({ Title = "Farm", Icon = "solar:widget-
         Step = 1,
         Value = { Min = 1, Max = 60, Value = 25 },
         Callback = function(value) AutoFarm.Speed = value end
+    })
 
     AutoFarmTab:Toggle({ Title = "Auto Reset Character", Desc = "Reset your character every N seconds (useful for forcing new round spawns).",
         Value = false,
@@ -44642,6 +44649,7 @@ local AutoFarmTab = _sec_AutoFarmTab:Tab({ Title = "Farm", Icon = "solar:widget-
         Step = 10,
         Value = { Min = 60, Max = 600, Value = 180 },
         Callback = function(value) AutoFarm.ResetDelay = value end
+    })
 
     -- ---------- Character Tab ----------
     local _sec_CharacterTab = Window:Section({ Title = "Movement" })
@@ -44653,6 +44661,7 @@ local CharacterTab = _sec_CharacterTab:Tab({ Title = "Movement", Icon = "solar:w
         Step = 1,
         Value = { Min = 16, Max = 200, Value = 16 },
         Callback = function(value) Character.WalkSpeed = value end
+    })
 
     CharacterTab:Toggle({ Title = "Lock Walk Speed", Desc = "Re-apply walk speed if the game resets it.",
         Value = false,
@@ -44664,6 +44673,7 @@ local CharacterTab = _sec_CharacterTab:Tab({ Title = "Movement", Icon = "solar:w
         Step = 1,
         Value = { Min = 50, Max = 500, Value = 50 },
         Callback = function(value) Character.JumpPower = value end
+    })
 
     CharacterTab:Toggle({ Title = "Lock Jump Power", Desc = "Re-apply jump power if the game resets it.",
         Value = false,
@@ -44686,6 +44696,7 @@ local CharacterTab = _sec_CharacterTab:Tab({ Title = "Movement", Icon = "solar:w
             local hum = getHumanoid()
             if hum then pcall(function() hum.Health = 0 end) end
         end
+    })
 
     -- ---------- Teleport Tab ----------
     local _sec_TeleportTab = Window:Section({ Title = "Teleport" })
@@ -44710,6 +44721,7 @@ local TeleportTab = _sec_TeleportTab:Tab({ Title = "Teleport", Icon = "solar:wid
         Value = nil,
         Multi = false,
         Callback = function(selected) selectedPlayerText = selected end
+    })
 
     TeleportTab:Button({ Title = "Teleport to Player",
         Desc = "Teleports you to the selected player.",
@@ -44721,9 +44733,11 @@ local TeleportTab = _sec_TeleportTab:Tab({ Title = "Teleport", Icon = "solar:wid
             local target = Players:FindFirstChild(selectedPlayerName)
             if target then TeleportToPlayer(target) end
         end
+    })
 
     TeleportTab:Button({ Title = "Refresh Player List",
         Callback = refreshPlayerList
+    })
 
     TeleportTab:AddLeftGroupbox("Role Teleportation")
     TeleportTab:Button({ Title = "Teleport to Murderer",
@@ -44732,6 +44746,7 @@ local TeleportTab = _sec_TeleportTab:Tab({ Title = "Teleport", Icon = "solar:wid
         Justify = "Left",
         IconAlign = "Left",
         Callback = function() TeleportToRole("Murderer") end
+    })
 
     TeleportTab:Button({ Title = "Teleport to Sheriff",
         Desc = "Go to the current sheriff (if any).",
@@ -44739,6 +44754,7 @@ local TeleportTab = _sec_TeleportTab:Tab({ Title = "Teleport", Icon = "solar:wid
         Justify = "Left",
         IconAlign = "Left",
         Callback = function() TeleportToRole("Sheriff") end
+    })
 
     -- Refresh list on player join/leave
     Players.PlayerAdded:Connect(function() task.wait(1); refreshPlayerList() end)
@@ -44762,10 +44778,12 @@ local RoleTab = _sec_RoleTab:Tab({ Title = "Role", Icon = "solar:widget-bold", I
         Justify = "Left",
         IconAlign = "Left",
         Callback = function() KillAllMurderer() end
+    })
 
     RoleTab:Button({ Title = "Equip Knife",
         Desc = "Equip your knife from backpack.",
         Callback = function() EquipKnife() end
+    })
 
     -- ---------- Utilities Tab ----------
     local _sec_UtilitiesTab = Window:Section({ Title = "Utilities" })
@@ -44789,15 +44807,16 @@ local UtilitiesTab = _sec_UtilitiesTab:Tab({ Title = "Utilities", Icon = "solar:
                 Name = "Stealth | MM2",
                 Content = "Discord invite copied!",
                 Duration = 3
-
+            })
         end
+    })
 
     -- ---------- Welcome notification ----------
     WindUI:Notify({
         Name = "Stealth | MM2",
         Content = "Extended features loaded: ESP, AutoFarm, Teleport, Role Functions, Utilities.",
         Duration = 5
-
+    })
 end
 function setStatus(t, color)
     if statusLabel then
