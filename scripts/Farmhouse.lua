@@ -1,12 +1,12 @@
 -- [[ Stealth | Chapter 1 (FARMHOUSE) ]]
 --
 -- Original: Ouroboros Hub @hidevin (ObsidianUltra)
--- Converted to Library for Stealth Hub.
+-- Converted to WindUI for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- GameId 10756011174 | PlaceId 108628039999641
 ------------------------------------------------------------
--- 1. Identity elevation (Library needs executor-level identity)
+-- 1. Identity elevation (WindUI needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -91,11 +91,11 @@ if not _taskPatched and hookfunction then
     end)
 end
 ------------------------------------------------------------
--- 2. Load Library
+-- 2. Load WindUI
 ------------------------------------------------------------
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
 end
-if not Library then warn("[Stealth] Failed to load Library UI") return end
+if not WindUI then warn("[Stealth] Failed to load WindUI UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
 -- 3. State tables (mirror ObsidianUltra Toggles/Options pattern
@@ -103,26 +103,26 @@ _elevateIdentity()
 ------------------------------------------------------------
 local Toggles = {}
 local Options = {}
-local Library = {
+local WindUI = {
     Toggles = Toggles,
     Options = Options,
     Unloaded = false,
     ShowCustomCursor = true
 })
-function Library:Notify(opts)
-    Library:Notify({
+function WindUI:Notify(opts)
+    WindUI:Notify({
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3
 
 end
-function Library:Unload()
+function Window:Destroy()
     if self.Unloaded then return end
     self.Unloaded = true
     if self._onUnload then self._onUnload() end
     pcall(function() self._window:Destroy() end)
 end
-function Library:OnUnload(fn)
+function WindUI:OnUnload(fn)
     self._onUnload = fn
 end
 ------------------------------------------------------------
@@ -154,11 +154,11 @@ local BarnShop = Workspace:WaitForChild("BarnShop")
 local DroppedHayFolder = Workspace:FindFirstChild("DroppedHay")
 local GemsClientFolder = Workspace:FindFirstChild("GemsClient")
 ------------------------------------------------------------
--- 5. Create Library window
+-- 5. Create WindUI window
 ------------------------------------------------------------
-local Window = Library:CreateWindow({ Title = "Stealth", Footer = "discord.gg/hqE5drDHF7", AutoLoad = true })
+local Window = WindUI:CreateWindow({ Title = "Stealth", Folder = "Stealth", Icon = "solar:shield-keyhole-bold-duotone", OpenButton = { Title = "Open Stealth", Enabled = true }, Topbar = { Height = 44, ButtonsType = "Mac" } })
 
-Library._window = Window
+WindUI._window = Window
 ------------------------------------------------------------
 -- 6. Helper to register toggle/slider/dropdown into Toggles/Options
 ------------------------------------------------------------
@@ -171,14 +171,22 @@ end
 ------------------------------------------------------------
 -- 7. Tabs
 ------------------------------------------------------------
-local MainTab = Window:AddTab({ Name = "Dashboard" })
-local CollectingTab = Window:AddTab({ Name = "Collecting" })
-local SellingTab = Window:AddTab({ Name = "Selling" })
-local ToolsTab = Window:AddTab({ Name = "Tools" })
-local NeedleTab = Window:AddTab({ Name = "Needle" })
-local ShopTab = Window:AddTab({ Name = "Shop" })
-local UpgradesTab = Window:AddTab({ Name = "Upgrades" })
-local SettingsTab = Window:AddTab({ Name = "Config" })
+local _sec_MainTab = Window:Section({ Title = "Dashboard" })
+local MainTab = _sec_MainTab:Tab({ Title = "Dashboard", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
+local _sec_CollectingTab = Window:Section({ Title = "Collecting" })
+local CollectingTab = _sec_CollectingTab:Tab({ Title = "Collecting", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
+local _sec_SellingTab = Window:Section({ Title = "Selling" })
+local SellingTab = _sec_SellingTab:Tab({ Title = "Selling", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
+local _sec_ToolsTab = Window:Section({ Title = "Tools" })
+local ToolsTab = _sec_ToolsTab:Tab({ Title = "Tools", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
+local _sec_NeedleTab = Window:Section({ Title = "Needle" })
+local NeedleTab = _sec_NeedleTab:Tab({ Title = "Needle", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
+local _sec_ShopTab = Window:Section({ Title = "Shop" })
+local ShopTab = _sec_ShopTab:Tab({ Title = "Shop", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
+local _sec_UpgradesTab = Window:Section({ Title = "Upgrades" })
+local UpgradesTab = _sec_UpgradesTab:Tab({ Title = "Upgrades", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
+local _sec_SettingsTab = Window:Section({ Title = "Config" })
+local SettingsTab = _sec_SettingsTab:Tab({ Title = "Config", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
 ------------------------------------------------------------
 -- 8. Helpers (from original script, unchanged)
 ------------------------------------------------------------
@@ -336,7 +344,7 @@ local function trySell()
     end
     local ok, err = pcall(function() SellHay:FireServer() end)
     if not ok then
-        Library:Notify({Title="Sell Failed", Description=tostring(err), Time=2})
+        WindUI:Notify({Title="Sell Failed", Description=tostring(err), Time=2})
     end
     task.spawn(function()
         local before = getHayHeld()
@@ -383,21 +391,21 @@ task.spawn(function()
     local s=0
     while true do
         task.wait(1)
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         s+=1
-        -- Library sections are static; we can't update text in place easily.
+        -- WindUI sections are static; we can't update text in place easily.
         -- Skip live session update (would need a label element with :SetText).
     end
 end)
 MainTab:AddLeftGroupbox("Discord")
-MainTab:AddButton({ Text = "Copy Discord",
+MainTab:Button({ Title = "Copy Discord",
     Desc = "discord.gg/hqE5drDHF7",
     Color = Color3.fromHex("#5865F2"),
     Justify = "Left",
     IconAlign = "Left",
     Callback = function()
         pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
-        Library:Notify({
+        WindUI:Notify({
             Name = "Discord",
             Content = "Invite copied to clipboard!",
             Duration = 3
@@ -412,25 +420,25 @@ MainTab:AddLeftGroupbox("Settings holds Config & Anti-AFK.")
 ------------------------------------------------------------
 CollectingTab:AddLeftGroupbox("Resource Collecting")
 registerToggle("AutoPickHay", false)
-CollectingTab:AddToggle("AutoPickHay", {  Text = "Auto Pick Hay", Desc = "Pick hay from stack continuously",
+CollectingTab:Toggle({ Title = "Auto Pick Hay", Desc = "Pick hay from stack continuously",
     Default = false,
     Callback = function(v) Toggles.AutoPickHay.Value = v end
  })
 registerToggle("AutoCollectDroppedHay", false)
-CollectingTab:AddToggle("AutoCollectDroppedHay", {  Text = "Auto Collect Dropped Hay", Default = false,
+CollectingTab:Toggle({ Title = "Auto Collect Dropped Hay", Default = false,
     Callback = function(v) Toggles.AutoCollectDroppedHay.Value = v end
  })
 registerToggle("AutoCollectGems", false)
-CollectingTab:AddToggle("AutoCollectGems", {  Text = "Auto Collect Gems", Default = false,
+CollectingTab:Toggle({ Title = "Auto Collect Gems", Default = false,
     Callback = function(v) Toggles.AutoCollectGems.Value = v end
  })
 registerToggle("AutoVacuumCollect", false)
-CollectingTab:AddToggle("AutoVacuumCollect", {  Text = "Auto Vacuum Collect", Desc = "Uses Vacuum Start/Stop (requires Vacuum tool)",
+CollectingTab:Toggle({ Title = "Auto Vacuum Collect", Desc = "Uses Vacuum Start/Stop (requires Vacuum tool)",
     Default = false,
     Callback = function(v) Toggles.AutoVacuumCollect.Value = v end
  })
 registerOption("CollectInterval", 1)
-CollectingTab:AddSlider("LoopInterval", { 
+CollectingTab:Slider({ 
     Text = "Loop Interval",
     Value = 1,
     Min = 0.1,
@@ -445,7 +453,7 @@ CollectingTab:AddLeftGroupbox("Vacuum needs VacuumOwned. Gems within 35 studs.")
 ------------------------------------------------------------
 SellingTab:AddLeftGroupbox("Selling")
 registerToggle("AutoSellHay", false)
-SellingTab:AddToggle("AutoSellHay", {  Text = "Auto Sell Hay", Default = false,
+SellingTab:Toggle({ Title = "Auto Sell Hay", Default = false,
     Callback = function(v) Toggles.AutoSellHay.Value = v end
  })
 registerOption("SellThreshold", 25)
@@ -456,7 +464,7 @@ SellingTab:CreateSlider({
     Callback = function(v) Options.SellThreshold.Value = v end
 
 registerToggle("SellOnlyIfFull", false)
-SellingTab:AddToggle("OnlySellIfFull", {  Text = "Only Sell If Full", Default = false,
+SellingTab:Toggle({ Title = "Only Sell If Full", Default = false,
     Callback = function(v) Toggles.SellOnlyIfFull.Value = v end
  })
 SellingTab:AddLeftGroupbox("Fires SellHay:FireServer() near cow.")
@@ -466,24 +474,24 @@ SellingTab:AddLeftGroupbox("VacuumLoad also counts as held.")
 ------------------------------------------------------------
 ToolsTab:AddLeftGroupbox("Auto Tool Usage")
 registerToggle("AutoUseTNT", false)
-ToolsTab:AddToggle("AutoUseTNT", {  Text = "Auto Use TNT", Desc = "Light & throw TNT on cooldown",
+ToolsTab:Toggle({ Title = "Auto Use TNT", Desc = "Light & throw TNT on cooldown",
     Default = false,
     Callback = function(v) Toggles.AutoUseTNT.Value = v end
  })
 registerToggle("AutoUsePitchfork", false)
-ToolsTab:AddToggle("AutoUsePitchfork", {  Text = "Auto Use Pitchfork", Default = false,
+ToolsTab:Toggle({ Title = "Auto Use Pitchfork", Default = false,
     Callback = function(v) Toggles.AutoUsePitchfork.Value = v end
  })
 registerToggle("AutoDeployDrone", false)
-ToolsTab:AddToggle("AutoDeployDrone", {  Text = "Auto Deploy Drone", Default = false,
+ToolsTab:Toggle({ Title = "Auto Deploy Drone", Default = false,
     Callback = function(v) Toggles.AutoDeployDrone.Value = v end
  })
 registerToggle("AutoVacuum", false)
-ToolsTab:AddToggle("AutoVacuumLoop", {  Text = "Auto Vacuum (Loop)", Default = false,
+ToolsTab:Toggle({ Title = "Auto Vacuum (Loop)", Default = false,
     Callback = function(v) Toggles.AutoVacuum.Value = v end
  })
 registerOption("ToolInterval", 1)
-ToolsTab:AddSlider("ToolInterval", { 
+ToolsTab:Slider({ 
     Text = "Tool Interval",
     Value = 1,
     Min = 0.2,
@@ -500,17 +508,17 @@ ToolsTab:AddLeftGroupbox("TNT cooldown & vacuum heat managed by server.")
 ------------------------------------------------------------
 NeedleTab:AddLeftGroupbox("Needle")
 registerToggle("AutoFindNeedle", false)
-NeedleTab:AddToggle("AutoFindNeedle", {  Text = "Auto Find Needle", Desc = "Continuously pick around pile center to reveal needle",
+NeedleTab:Toggle({ Title = "Auto Find Needle", Desc = "Continuously pick around pile center to reveal needle",
     Default = false,
     Callback = function(v) Toggles.AutoFindNeedle.Value = v end
  })
 registerToggle("AutoHandInNeedle", false)
-NeedleTab:AddToggle("AutoHandInNeedle", {  Text = "Auto Hand In Needle", Desc = "Fires NeedleHandIn when near NPC",
+NeedleTab:Toggle({ Title = "Auto Hand In Needle", Desc = "Fires NeedleHandIn when near NPC",
     Default = false,
     Callback = function(v) Toggles.AutoHandInNeedle.Value = v end
  })
 registerOption("NeedleInterval", 1)
-NeedleTab:AddSlider("NeedleInterval", { 
+NeedleTab:Slider({ 
     Text = "Needle Interval",
     Value = 1,
     Min = 0.2,
@@ -533,16 +541,16 @@ ShopTab:CreateDropdown({
     MultipleOptions = true,
     Default = {},
     Callback = function(v)
-        -- Library returns a table for multi-select
+        -- WindUI returns a table for multi-select
         Options.BuyToolsList.Value = v or {}
     end
 
 registerToggle("AutoBuyTools", false)
-ShopTab:AddToggle("AutoBuySelectedTools", {  Text = "Auto Buy Selected Tools", Default = false,
+ShopTab:Toggle({ Title = "Auto Buy Selected Tools", Default = false,
     Callback = function(v) Toggles.AutoBuyTools.Value = v end
  })
 registerOption("BuyInterval", 1)
-ShopTab:AddSlider("BuyInterval", { 
+ShopTab:Slider({ 
     Text = "Buy Interval",
     Value = 1,
     Min = 0.5,
@@ -553,7 +561,7 @@ ShopTab:AddSlider("BuyInterval", {
 
 ShopTab:AddLeftGroupbox("Ownership")
 ShopTab:AddLeftGroupbox("Attributes: PitchforkOwned, TntOwned, DroneOwned, VacuumOwned, InfiniteBagOwned")
-ShopTab:AddButton({ Text = "Check Ownership",
+ShopTab:Button({ Title = "Check Ownership",
     Color = Color3.fromHex("#30FF6A"),
     Justify = "Left",
     IconAlign = "Left",
@@ -562,7 +570,7 @@ ShopTab:AddButton({ Text = "Check Ownership",
         for _,k in ipairs({"PitchforkOwned","TntOwned","DroneOwned","VacuumOwned","InfiniteBagOwned","HayUpgradeCapacity"}) do
             table.insert(t, k..": "..tostring(LocalPlayer:GetAttribute(k)))
         end
-        Library:Notify({Title="Ownership", Description=table.concat(t,"\n"), Time=4})
+        WindUI:Notify({Title="Ownership", Description=table.concat(t,"\n"), Time=4})
     end
 
 ------------------------------------------------------------
@@ -570,24 +578,24 @@ ShopTab:AddButton({ Text = "Check Ownership",
 ------------------------------------------------------------
 UpgradesTab:AddLeftGroupbox("Permanent (Gems)")
 registerToggle("UpgBagSize", false)
-UpgradesTab:AddToggle("AutoUpgradeBagSize", {  Text = "Auto Upgrade Bag Size", Desc = "ExtraHoldAmount -> Gems 25,50,75,100,150,450",
+UpgradesTab:Toggle({ Title = "Auto Upgrade Bag Size", Desc = "ExtraHoldAmount -> Gems 25,50,75,100,150,450",
     Default = false,
     Callback = function(v) Toggles.UpgBagSize.Value = v end
  })
 registerToggle("UpgExtraTake", false)
-UpgradesTab:AddToggle("AutoUpgradeHandGrabAmount", {  Text = "Auto Upgrade Hand Grab Amount", Default = false,
+UpgradesTab:Toggle({ Title = "Auto Upgrade Hand Grab Amount", Default = false,
     Callback = function(v) Toggles.UpgExtraTake.Value = v end
  })
 registerToggle("UpgGemValue", false)
-UpgradesTab:AddToggle("AutoUpgradeGemValue", {  Text = "Auto Upgrade Gem Value", Default = false,
+UpgradesTab:Toggle({ Title = "Auto Upgrade Gem Value", Default = false,
     Callback = function(v) Toggles.UpgGemValue.Value = v end
  })
 registerToggle("UpgHayValue", false)
-UpgradesTab:AddToggle("AutoUpgradeHayValue", {  Text = "Auto Upgrade Hay Value", Default = false,
+UpgradesTab:Toggle({ Title = "Auto Upgrade Hay Value", Default = false,
     Callback = function(v) Toggles.UpgHayValue.Value = v end
  })
 registerOption("PermInterval", 1)
-UpgradesTab:AddSlider("PermanentLoop", { 
+UpgradesTab:Slider({ 
     Text = "Permanent Loop",
     Value = 1,
     Min = 0.5,
@@ -598,42 +606,42 @@ UpgradesTab:AddSlider("PermanentLoop", {
 
 UpgradesTab:AddLeftGroupbox("Hand Upgrades (Cash)")
 registerToggle("UpgHandSpeed", false)
-UpgradesTab:AddToggle("AutoHandSpeed", {  Text = "Auto Hand Speed", Desc = "Speed track 0.55->0.3", Default = false, Callback = function(v) Toggles.UpgHandSpeed.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Hand Speed", Desc = "Speed track 0.55->0.3", Default = false, Callback = function(v) Toggles.UpgHandSpeed.Value = v end })
 registerToggle("UpgHandGrab", false)
-UpgradesTab:AddToggle("AutoHandGrasp", {  Text = "Auto Hand Grasp", Default = false, Callback = function(v) Toggles.UpgHandGrab.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Hand Grasp", Default = false, Callback = function(v) Toggles.UpgHandGrab.Value = v end })
 registerToggle("UpgHandHold", false)
-UpgradesTab:AddToggle("AutoHandHold", {  Text = "Auto Hand Hold", Default = false, Callback = function(v) Toggles.UpgHandHold.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Hand Hold", Default = false, Callback = function(v) Toggles.UpgHandHold.Value = v end })
 UpgradesTab:AddLeftGroupbox("TNT Upgrades")
 registerToggle("UpgTntLuck", false)
-UpgradesTab:AddToggle("AutoTNTLuckyBlast", {  Text = "Auto TNT Lucky Blast", Default = false, Callback = function(v) Toggles.UpgTntLuck.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto TNT Lucky Blast", Default = false, Callback = function(v) Toggles.UpgTntLuck.Value = v end })
 registerToggle("UpgTntCooldown", false)
-UpgradesTab:AddToggle("AutoTNTCooldown", {  Text = "Auto TNT Cooldown", Default = false, Callback = function(v) Toggles.UpgTntCooldown.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto TNT Cooldown", Default = false, Callback = function(v) Toggles.UpgTntCooldown.Value = v end })
 registerToggle("UpgTntPower", false)
-UpgradesTab:AddToggle("AutoTNTPower", {  Text = "Auto TNT Power", Default = false, Callback = function(v) Toggles.UpgTntPower.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto TNT Power", Default = false, Callback = function(v) Toggles.UpgTntPower.Value = v end })
 UpgradesTab:AddLeftGroupbox("Pitchfork Upgrades")
 registerToggle("UpgPitchCooldown", false)
-UpgradesTab:AddToggle("AutoPitchforkCooldown", {  Text = "Auto Pitchfork Cooldown", Default = false, Callback = function(v) Toggles.UpgPitchCooldown.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Pitchfork Cooldown", Default = false, Callback = function(v) Toggles.UpgPitchCooldown.Value = v end })
 registerToggle("UpgPitchHold", false)
-UpgradesTab:AddToggle("AutoPitchforkHold", {  Text = "Auto Pitchfork Hold", Default = false, Callback = function(v) Toggles.UpgPitchHold.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Pitchfork Hold", Default = false, Callback = function(v) Toggles.UpgPitchHold.Value = v end })
 registerToggle("UpgPitchSweep", false)
-UpgradesTab:AddToggle("AutoPitchforkSweep", {  Text = "Auto Pitchfork Sweep", Default = false, Callback = function(v) Toggles.UpgPitchSweep.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Pitchfork Sweep", Default = false, Callback = function(v) Toggles.UpgPitchSweep.Value = v end })
 UpgradesTab:AddLeftGroupbox("Drone Upgrades")
 registerToggle("UpgDroneSpeed", false)
-UpgradesTab:AddToggle("AutoDroneSpeed", {  Text = "Auto Drone Speed", Default = false, Callback = function(v) Toggles.UpgDroneSpeed.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Drone Speed", Default = false, Callback = function(v) Toggles.UpgDroneSpeed.Value = v end })
 registerToggle("UpgDroneGrab", false)
-UpgradesTab:AddToggle("AutoDroneGrasp", {  Text = "Auto Drone Grasp", Default = false, Callback = function(v) Toggles.UpgDroneGrab.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Drone Grasp", Default = false, Callback = function(v) Toggles.UpgDroneGrab.Value = v end })
 registerToggle("UpgDroneCapacity", false)
-UpgradesTab:AddToggle("AutoDroneCapacity", {  Text = "Auto Drone Capacity", Default = false, Callback = function(v) Toggles.UpgDroneCapacity.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Drone Capacity", Default = false, Callback = function(v) Toggles.UpgDroneCapacity.Value = v end })
 UpgradesTab:AddLeftGroupbox("Vacuum Upgrades")
 registerToggle("UpgVacPower", false)
-UpgradesTab:AddToggle("AutoVacuumPower", {  Text = "Auto Vacuum Power", Default = false, Callback = function(v) Toggles.UpgVacPower.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Vacuum Power", Default = false, Callback = function(v) Toggles.UpgVacPower.Value = v end })
 registerToggle("UpgVacCooling", false)
-UpgradesTab:AddToggle("AutoVacuumCooling", {  Text = "Auto Vacuum Cooling", Default = false, Callback = function(v) Toggles.UpgVacCooling.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Vacuum Cooling", Default = false, Callback = function(v) Toggles.UpgVacCooling.Value = v end })
 registerToggle("UpgVacRuntime", false)
-UpgradesTab:AddToggle("AutoVacuumRuntime", {  Text = "Auto Vacuum Runtime", Default = false, Callback = function(v) Toggles.UpgVacRuntime.Value = v end })
+UpgradesTab:Toggle({ Title = "Auto Vacuum Runtime", Default = false, Callback = function(v) Toggles.UpgVacRuntime.Value = v end })
 UpgradesTab:AddLeftGroupbox("Capacity")
 registerToggle("UpgCapacity", false)
-UpgradesTab:AddToggle("AutoUpgradeCarryCapacity", {  Text = "Auto Upgrade Carry Capacity", Desc = "25->250 cash upgrades",
+UpgradesTab:Toggle({ Title = "Auto Upgrade Carry Capacity", Desc = "25->250 cash upgrades",
     Default = false,
     Callback = function(v) Toggles.UpgCapacity.Value = v end
  })
@@ -642,18 +650,18 @@ UpgradesTab:AddLeftGroupbox("Cash upgrades use BuyUpgrade with track names.")
 -- 16. SETTINGS TAB
 ------------------------------------------------------------
 SettingsTab:AddLeftGroupbox("Menu")
-SettingsTab:AddButton({ Text = "Unload Stealth",
+SettingsTab:Button({ Title = "Unload Stealth",
     Desc = "Closes the UI and stops all automation.",
     Color = Color3.fromHex("#ff4830"),
     Justify = "Left",
     IconAlign = "Left",
     Callback = function()
-        Library:Unload()
+        Window:Destroy()
     end
 
 SettingsTab:AddLeftGroupbox("System")
 registerToggle("AntiAFK", true)
-SettingsTab:AddToggle("AntiAFKjumpevery5m", {  Text = "Anti-AFK (jump every 5m)", Desc = "Enabled by default. Uses jump to keep alive.",
+SettingsTab:Toggle({ Title = "Anti-AFK (jump every 5m)", Desc = "Enabled by default. Uses jump to keep alive.",
     Default = true,
     Callback = function(v) Toggles.AntiAFK.Value = v end
  })
@@ -697,7 +705,7 @@ end
 task.spawn(function()
     while true do
         task.wait(waitInterval("CollectInterval",1))
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.AutoPickHay and Toggles.AutoPickHay.Value then
             if not isBagFull() then
                 local hay = findClosestHay()
@@ -725,7 +733,7 @@ end)
 task.spawn(function()
     while true do
         task.wait(waitInterval("CollectInterval",1))
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.AutoCollectDroppedHay and Toggles.AutoCollectDroppedHay.Value then
             if not isBagFull() then
                 local d = findClosestDropped()
@@ -746,7 +754,7 @@ end)
 task.spawn(function()
     while true do
         task.wait(waitInterval("CollectInterval",1))
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.AutoCollectGems and Toggles.AutoCollectGems.Value then
             local gemPart, id = findClosestGem()
             if not gemPart then
@@ -764,7 +772,7 @@ end)
 task.spawn(function()
     while true do
         task.wait(1)
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.AutoSellHay and Toggles.AutoSellHay.Value then
             local held = getHayHeld()
             local thresh = Options.SellThreshold and Options.SellThreshold.Value or 25
@@ -782,7 +790,7 @@ do
     task.spawn(function()
         while true do
             task.wait(waitInterval("CollectInterval",1))
-            if Library.Unloaded then break end
+            if WindUI.Unloaded then break end
             local want = Toggles.AutoVacuumCollect and Toggles.AutoVacuumCollect.Value
             local want2 = Toggles.AutoVacuum and Toggles.AutoVacuum.Value
             local should = want or want2
@@ -813,7 +821,7 @@ end
 task.spawn(function()
     while true do
         task.wait(waitInterval("ToolInterval",1))
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.AutoUseTNT and Toggles.AutoUseTNT.Value and owns("TntOwned") then
             local ok = not LocalPlayer:GetAttribute("NeedleInputLocked")
             if ok then
@@ -833,7 +841,7 @@ end)
 task.spawn(function()
     while true do
         task.wait(waitInterval("ToolInterval",1))
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.AutoUsePitchfork and Toggles.AutoUsePitchfork.Value and owns("PitchforkOwned") then
             local hay = findClosestHay()
             if not hay then ensureNearPileForPick() hay = findClosestHay() end
@@ -855,7 +863,7 @@ end)
 task.spawn(function()
     while true do
         task.wait(waitInterval("ToolInterval",1))
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.AutoDeployDrone and Toggles.AutoDeployDrone.Value and owns("DroneOwned") then
             if not LocalPlayer:GetAttribute("DroneDeployed") then
                 pcall(function() DeployDrone:FireServer() end)
@@ -867,7 +875,7 @@ end)
 task.spawn(function()
     while true do
         task.wait(waitInterval("NeedleInterval",1))
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.AutoFindNeedle and Toggles.AutoFindNeedle.Value then
             if not LocalPlayer:GetAttribute("NeedleRoundComplete") then
                 local hay = findClosestHay()
@@ -902,7 +910,7 @@ end)
 task.spawn(function()
     while true do
         task.wait(waitInterval("BuyInterval",1))
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.AutoBuyTools and Toggles.AutoBuyTools.Value then
             local sel = Options.BuyToolsList and Options.BuyToolsList.Value or {}
             local list = {}
@@ -956,7 +964,7 @@ end
 task.spawn(function()
     while true do
         task.wait(waitInterval("PermInterval",1))
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.UpgBagSize and Toggles.UpgBagSize.Value then tryBuyPermanent("ExtraHoldAmount") end
         if Toggles.UpgExtraTake and Toggles.UpgExtraTake.Value then tryBuyPermanent("ExtraTakeAmount") end
         if Toggles.UpgGemValue and Toggles.UpgGemValue.Value then tryBuyPermanent("GemValue") end
@@ -967,7 +975,7 @@ end)
 task.spawn(function()
     while true do
         task.wait(1.2)
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.UpgCapacity and Toggles.UpgCapacity.Value then tryBuyTrack("Capacity") end
         if Toggles.UpgHandSpeed and Toggles.UpgHandSpeed.Value then tryBuyTrack("Speed") end
         if Toggles["UpgHandGrab"] and Toggles["UpgHandGrab"].Value then
@@ -992,7 +1000,7 @@ end)
 task.spawn(function()
     while true do
         task.wait(300)
-        if Library.Unloaded then break end
+        if WindUI.Unloaded then break end
         if Toggles.AntiAFK and Toggles.AntiAFK.Value then
             pcall(function()
                 local char = LocalPlayer.Character
@@ -1005,13 +1013,13 @@ task.spawn(function()
     end
 end)
 -- Safety: unload clean
-Library:OnUnload(function()
+WindUI:OnUnload(function()
     pcall(function() VacuumAction:FireServer("Stop") end)
     print("[Stealth] Unloaded - "..gameName)
 end)
-Library:Notify({
+WindUI:Notify({
     Name = "Stealth",
     Description = gameName .. " loaded. Farming=collect/sell/tools | Inventory=shop/upgrades",
     Time = 5
 
-print("[Stealth] Loaded "..gameName.." via Library")
+print("[Stealth] Loaded "..gameName.." via WindUI")
