@@ -44718,14 +44718,14 @@ local selectedKey = nil
 local selectedName = nil
 do
     ------------------------------------------------------------
-    -- Airflow — Stealth | MM2 Weapon Spawner
+    -- Rayfield — Stealth | MM2 Weapon Spawner
     ------------------------------------------------------------
-    -- Airflow requires elevated thread identity to create Font objects and
-    -- access certain Instance APIs. Without this, Airflow's Notify() and
+    -- Rayfield requires elevated thread identity to create Font objects and
+    -- access certain Instance APIs. Without this, Rayfield's Notify() and
     -- font loading crash with:
     --   "The current thread cannot access 'Instance' (lacking capability Plugin)"
     --
-    -- The problem: Airflow calls task.spawn internally for notifications and
+    -- The problem: Rayfield calls task.spawn internally for notifications and
     -- animations, and those new threads inherit the DEFAULT identity, not
     -- the elevated one.
     --
@@ -44827,32 +44827,12 @@ do
     -- If neither approach worked, _elevateIdentity() on the main thread is
     -- still in effect. Most modern executors propagate identity to child
     -- threads, so this is usually enough.
-    local Airflow = getgenv().StealthAirflow
-if not Airflow then
-    Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
-    if Airflow then getgenv().StealthAirflow = Airflow end
+    local Rayfield = getgenv().StealthRayfield or loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 end
-if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
+if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
     -- Re-assert after loadstring (it may reset identity).
     _elevateIdentity()
-    local Window = Airflow:CreateWindow({
-        Name = "Stealth | MM2",
-        Folder = "Stealth",
-        NewElements = true,
-        HideSearchBar = false,
-        OpenButton = {
-            Name = "Open Stealth",
-            CornerRadius = UDim.new(1, 0),
-            StrokeThickness = 3,
-            Enabled = true,
-            Draggable = true,
-            OnlyMobile = false,
-            Scale = 0.5,
-            Color = ColorSequence.new(
-                Color3.fromHex("#30FF6A"),
-                Color3.fromHex("#e7ff2f")
-            )
-}),
+    local Window = Rayfield:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
         Topbar = { Height = 44, ButtonsType = "Mac" }
 }))
     -- Build weapon lookup tables.
@@ -44877,7 +44857,7 @@ if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
     end
     table.sort(weaponNames, function(a, b) return a:lower() < b:lower() end)
     ------------------------------------------------------------ Tab: Spawner
-    local SpawnTab = Window:CreateTab({ Name = "Weapons"})
+    local SpawnTab = Window:CreateTab("Weapons")
     SpawnTab:CreateSection("Select weapon")})
     -- Status label (replaces the old statusLabel)
     -- We use a Paragraph that we can update via :Set()
@@ -44885,7 +44865,7 @@ if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
         Name = "Status",
         Content = "Select a weapon, then click Spawn."
 }))
-    -- Dropdown with all weapons (Airflow has built-in search in dropdowns).
+    -- Dropdown with all weapons (Rayfield has built-in search in dropdowns).
     -- Entries are SHORT (just the weapon name) to prevent horizontal overflow.
     local WeaponDropdown
     WeaponDropdown = SpawnTab:CreateDropdown({
@@ -44919,7 +44899,7 @@ if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
                 if statusLabel then
                     statusLabel:Set({ Title = "Warning", Content = "Select a weapon first."})
                 end
-                Airflow:Notify({
+                Rayfield:Notify({
                     Name = "Stealth",
                     Content = "Select a weapon first.",
                     Duration = 3
@@ -44934,7 +44914,7 @@ if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
                         Content = selectedName or selectedKey
 }))
                 end
-                Airflow:Notify({
+                Rayfield:Notify({
                     Name = "Stealth",
                     Content = "Spawned: " .. (selectedName or selectedKey),
                     Duration = 3
@@ -44943,7 +44923,7 @@ if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
         end
 }))
     ------------------------------------------------------------ Tab: Settings
-    local SettingsTab = Window:CreateTab({ Name = "Config"})
+    local SettingsTab = Window:CreateTab("Config")
     SettingsTab:CreateSection("Visualizer options")})
     SettingsTab:CreateToggle({ Name = "Inject Particles", Desc = "ParticleEmitter / Fire / Smoke / Sparkles / Lights on spawned weapons.",
         Value = CONFIG.InjectParticles,
@@ -44979,7 +44959,7 @@ if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
             Window:Destroy()
         end
 }))
-    Airflow:Notify({
+    Rayfield:Notify({
         Name = "Stealth | MM2",
         Content = ("Ready — %d weapons. Select → Spawn → equip."):format(#weaponList),
         Duration = 5
@@ -44989,7 +44969,7 @@ end
 -- Stealth | MM2 — Extended Features (ESP, AutoFarm, Character, Teleport,
 --                                   Role Functions, Anti-AFK)
 -- =========================================================================
--- Adapted from BenjoHub (Airflow) + MvS Hub GodMode + Zeion AimAssist.
+-- Adapted from BenjoHub (Rayfield) + MvS Hub GodMode + Zeion AimAssist.
 -- Stripped: webhooks, Discord links to other communities, server lagger,
 -- trade scam (griefing), weapon dupe (bannable). Kept: legitimate QoL
 -- features.
@@ -45399,10 +45379,10 @@ do
     ------------------------------------------------------------
     -- Extended Tabs (added to the existing Window)
     ------------------------------------------------------------
-    -- NOTE: `Window` is the Airflow window created earlier in this file.
+    -- NOTE: `Window` is the Rayfield window created earlier in this file.
     -- We attach new sections/tabs to it.
     -- ---------- ESP Tab ----------
-    local ESPTab = Window:CreateTab({ Name = "ESP"})
+    local ESPTab = Window:CreateTab("ESP")
     ESPTab:CreateSection("Player ESP Settings")})
     ESPTab:CreateToggle({ Name = "Enable ESP", Desc = "Highlight players through walls.",
         Value = false,
@@ -45434,7 +45414,7 @@ do
         end
 }))
     -- ---------- AutoFarm Tab ----------
-    local AutoFarmTab = Window:CreateTab({ Name = "Farm"})
+    local AutoFarmTab = Window:CreateTab("Farm")
     AutoFarmTab:CreateSection("Coin & Candy Collection")})
     AutoFarmTab:CreateToggle({ Name = "Coin Autofarm", Desc = "Automatically collect coins in the map.",
         Value = false,
@@ -45465,7 +45445,7 @@ do
         Callback = function(value) AutoFarm.ResetDelay = value end
 }))
     -- ---------- Character Tab ----------
-    local CharacterTab = Window:CreateTab({ Name = "Movement"})
+    local CharacterTab = Window:CreateTab("Movement")
     CharacterTab:CreateSection("Movement Settings")})
     CharacterTab:CreateSlider({
         Name = "Walk Speed",
@@ -45509,7 +45489,7 @@ do
         end
 }))
     -- ---------- Teleport Tab ----------
-    local TeleportTab = Window:CreateTab({ Name = "Teleport"})
+    local TeleportTab = Window:CreateTab("Teleport")
     TeleportTab:CreateSection("Player Teleportation")})
     local playerList = {}
     local playerDropdown
@@ -45569,7 +45549,7 @@ do
     Players.PlayerRemoving:Connect(function() task.wait(0.5); refreshPlayerList() end)
     refreshPlayerList()
     -- ---------- Role Functions Tab ----------
-    local RoleTab = Window:CreateTab({ Name = "Role"})
+    local RoleTab = Window:CreateTab("Role")
     RoleTab:CreateSection("Innocent")})
     RoleTab:CreateToggle({ Name = "Auto Grab Gun", Desc = "When a gun is dropped, teleport to it automatically.",
         Value = false,
@@ -45593,7 +45573,7 @@ do
         Callback = function() EquipKnife() end
 }))
     -- ---------- Utilities Tab ----------
-    local UtilitiesTab = Window:CreateTab({ Name = "Utilities"})
+    local UtilitiesTab = Window:CreateTab("Utilities")
     UtilitiesTab:CreateSection("Server Utilities")})
     UtilitiesTab:CreateToggle({ Name = "Anti-AFK", Desc = "Prevents being kicked for inactivity.",
         Value = false,
@@ -45610,7 +45590,7 @@ do
         IconAlign = "Left",
         Callback = function()
             pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
-            Airflow:Notify({
+            Rayfield:Notify({
                 Name = "Stealth | MM2",
                 Content = "Discord invite copied!",
                 Duration = 3
@@ -45618,7 +45598,7 @@ do
         end
 }))
     -- ---------- Welcome notification ----------
-    Airflow:Notify({
+    Rayfield:Notify({
         Name = "Stealth | MM2",
         Content = "Extended features loaded: ESP, AutoFarm, Teleport, Role Functions, Utilities.",
         Duration = 5

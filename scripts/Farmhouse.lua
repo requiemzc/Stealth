@@ -1,12 +1,12 @@
 -- [[ Stealth | Chapter 1 (FARMHOUSE) ]]
 --
 -- Original: Ouroboros Hub @hidevin (ObsidianUltra)
--- Converted to Airflow for Stealth Hub.
+-- Converted to Rayfield for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- GameId 10756011174 | PlaceId 108628039999641
 ------------------------------------------------------------
--- 1. Identity elevation (Airflow needs executor-level identity)
+-- 1. Identity elevation (Rayfield needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -91,14 +91,11 @@ if not _taskPatched and hookfunction then
     end)
 end
 ------------------------------------------------------------
--- 2. Load Airflow
+-- 2. Load Rayfield
 ------------------------------------------------------------
-local Airflow = getgenv().StealthAirflow
-if not Airflow then
-    Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
-    if Airflow then getgenv().StealthAirflow = Airflow end
+local Rayfield = getgenv().StealthRayfield or loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 end
-if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
+if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
 -- 3. State tables (mirror ObsidianUltra Toggles/Options pattern
@@ -113,7 +110,7 @@ local Library = {
     ShowCustomCursor = true
 })
 function Library:Notify(opts)
-    Airflow:Notify({
+    Rayfield:Notify({
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3
@@ -157,26 +154,9 @@ local BarnShop = Workspace:WaitForChild("BarnShop")
 local DroppedHayFolder = Workspace:FindFirstChild("DroppedHay")
 local GemsClientFolder = Workspace:FindFirstChild("GemsClient")
 ------------------------------------------------------------
--- 5. Create Airflow window
+-- 5. Create Rayfield window
 ------------------------------------------------------------
-local Window = Airflow:CreateWindow({
-    Name = "Stealth",
-    Folder = "Stealth",
-    NewElements = true,
-    HideSearchBar = false,
-    OpenButton = {
-        Name = "Open Stealth",
-        CornerRadius = UDim.new(1, 0),
-        StrokeThickness = 3,
-        Enabled = true,
-        Draggable = true,
-        OnlyMobile = false,
-        Scale = 0.5,
-        Color = ColorSequence.new(
-            Color3.fromHex("#30FF6A"),
-            Color3.fromHex("#e7ff2f")
-        )
-}),
+local Window = Rayfield:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
     Topbar = {
         Height = 44,
         ButtonsType = "Mac"
@@ -195,14 +175,14 @@ end
 ------------------------------------------------------------
 -- 7. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab({ Name = "Dashboard"})
-local CollectingTab = Window:CreateTab({ Name = "Collecting"})
-local SellingTab = Window:CreateTab({ Name = "Selling"})
-local ToolsTab = Window:CreateTab({ Name = "Tools"})
-local NeedleTab = Window:CreateTab({ Name = "Needle"})
-local ShopTab = Window:CreateTab({ Name = "Shop"})
-local UpgradesTab = Window:CreateTab({ Name = "Upgrades"})
-local SettingsTab = Window:CreateTab({ Name = "Config"})
+local MainTab = Window:CreateTab("Dashboard")
+local CollectingTab = Window:CreateTab("Collecting")
+local SellingTab = Window:CreateTab("Selling")
+local ToolsTab = Window:CreateTab("Tools")
+local NeedleTab = Window:CreateTab("Needle")
+local ShopTab = Window:CreateTab("Shop")
+local UpgradesTab = Window:CreateTab("Upgrades")
+local SettingsTab = Window:CreateTab("Config")
 ------------------------------------------------------------
 -- 8. Helpers (from original script, unchanged)
 ------------------------------------------------------------
@@ -409,7 +389,7 @@ task.spawn(function()
         task.wait(1)
         if Library.Unloaded then break end
         s+=1
-        -- Airflow sections are static; we can't update text in place easily.
+        -- Rayfield sections are static; we can't update text in place easily.
         -- Skip live session update (would need a label element with :SetText).
     end
 end)
@@ -422,7 +402,7 @@ MainTab:CreateButton({
     IconAlign = "Left",
     Callback = function()
         pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
-        Airflow:Notify({
+        Rayfield:Notify({
             Name = "Discord",
             Content = "Invite copied to clipboard!",
             Duration = 3
@@ -558,7 +538,7 @@ ShopTab:CreateDropdown({
     MultipleOptions = true,
     Default = {},
     Callback = function(v)
-        -- Airflow returns a table for multi-select
+        -- Rayfield returns a table for multi-select
         Options.BuyToolsList.Value = v or {}
     end
 }))
@@ -1041,4 +1021,4 @@ Library:Notify({
     Description = gameName .. " loaded. Farming=collect/sell/tools | Inventory=shop/upgrades",
     Time = 5
 }))
-print("[Stealth] Loaded "..gameName.." via Airflow")
+print("[Stealth] Loaded "..gameName.." via Rayfield")

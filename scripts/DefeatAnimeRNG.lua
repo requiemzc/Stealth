@@ -1,12 +1,12 @@
 -- [[ Stealth | Defeat Anime RNG ]]
 --
 -- Original: CheixHub (Rayfield UI) — based on Ouroboros Hub (ObsidianUltra)
--- Converted to Airflow for Stealth Hub.
+-- Converted to Rayfield for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- Game: [UPD] Defeat Anime RNG
 ------------------------------------------------------------
--- 1. Identity elevation (Airflow needs executor-level identity)
+-- 1. Identity elevation (Rayfield needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -56,14 +56,11 @@ if not _taskPatched then
     end)
 end
 ------------------------------------------------------------
--- 2. Load Airflow
+-- 2. Load Rayfield
 ------------------------------------------------------------
-local Airflow = getgenv().StealthAirflow
-if not Airflow then
-    Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
-    if Airflow then getgenv().StealthAirflow = Airflow end
+local Rayfield = getgenv().StealthRayfield or loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 end
-if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
+if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
 -- 3. Services & shared state
@@ -82,26 +79,9 @@ local Unloaded = false
 local Loops = {}
 local LiveLabels = {}
 ------------------------------------------------------------
--- 4. Create Airflow window
+-- 4. Create Rayfield window
 ------------------------------------------------------------
-local Window = Airflow:CreateWindow({
-    Name = "Stealth",
-    Folder = "Stealth",
-    NewElements = true,
-    HideSearchBar = false,
-    OpenButton = {
-        Name = "Open Stealth",
-        CornerRadius = UDim.new(1, 0),
-        StrokeThickness = 3,
-        Enabled = true,
-        Draggable = true,
-        OnlyMobile = false,
-        Scale = 0.5,
-        Color = ColorSequence.new(
-            Color3.fromHex("#30FF6A"),
-            Color3.fromHex("#e7ff2f")
-        )
-}),
+local Window = Rayfield:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
     Topbar = {
         Height = 44,
         ButtonsType = "Mac"
@@ -110,14 +90,14 @@ local Window = Airflow:CreateWindow({
 ------------------------------------------------------------
 -- 5. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab({ Name = "Dashboard"})
-local FarmingTab = Window:CreateTab({ Name = "Farming"})
-local QuestsTab = Window:CreateTab({ Name = "Quests"})
-local InventoryTab = Window:CreateTab({ Name = "Roll & Units"})
-local ShopTab = Window:CreateTab({ Name = "Shop"})
-local ZonesTab = Window:CreateTab({ Name = "Zones"})
-local RebirthTab = Window:CreateTab({ Name = "Prestige"})
-local SettingsTab = Window:CreateTab({ Name = "Config"})
+local MainTab = Window:CreateTab("Dashboard")
+local FarmingTab = Window:CreateTab("Farming")
+local QuestsTab = Window:CreateTab("Quests")
+local InventoryTab = Window:CreateTab("Roll & Units")
+local ShopTab = Window:CreateTab("Shop")
+local ZonesTab = Window:CreateTab("Zones")
+local RebirthTab = Window:CreateTab("Prestige")
+local SettingsTab = Window:CreateTab("Config")
 ------------------------------------------------------------
 -- 6. Remotes / Databases / data lists
 ------------------------------------------------------------
@@ -189,7 +169,7 @@ local function startLoop(id, fn, interval)
 end
 local function stopLoop(id) if Loops[id] then Loops[id].Running = false end end
 local function notify(title, desc, time)
-    Airflow:Notify({
+    Rayfield:Notify({
         Name = title,
         Content = desc or "",
         Duration = time or 3
@@ -449,9 +429,9 @@ end
 -- 9. Dashboard tab
 ------------------------------------------------------------
 MainTab:CreateLabel({ Text = "Game: " .. gameName})
-MainTab:CreateLabel({ Text = "Hub: Stealth (Airflow)"})
-MainTab:CreateLabel({ Text = "Press RightShift to toggle UI"})
-local SessionLabel = MainTab:CreateLabel({ Text = "Session: 00:00"})
+MainTab:CreateParagraph({ Title = "Hub: Stealth (Rayfield)", Content = " " })
+MainTab:CreateParagraph({ Title = "Press RightShift to toggle UI", Content = " " })
+local SessionLabel = MainTab:CreateParagraph({ Title = "Session: 00:00", Content = " " })
 LiveLabels.Session = SessionLabel
 task.spawn(function()
     local s = 0
@@ -460,10 +440,10 @@ task.spawn(function()
         pcall(function() SessionLabel:Set(string.format("Session: %02d:%02d", math.floor(s / 60), s % 60)) end)
     end
 end)
-MainTab:CreateLabel({ Text = "--- Live Status ---"})
-local cashLabel  = MainTab:CreateLabel({ Text = "Cash: ..."})
-local lvlLabel   = MainTab:CreateLabel({ Text = "Level: ..."})
-local unitLabel  = MainTab:CreateLabel({ Text = "Units: ..."})
+MainTab:CreateParagraph({ Title = "--- Live Status ---", Content = " " })
+local cashLabel  = MainTab:CreateParagraph({ Title = "Cash: ...", Content = " " })
+local lvlLabel   = MainTab:CreateParagraph({ Title = "Level: ...", Content = " " })
+local unitLabel  = MainTab:CreateParagraph({ Title = "Units: ...", Content = " " })
 LiveLabels.Cash, LiveLabels.Level, LiveLabels.Units = cashLabel, lvlLabel, unitLabel
 task.spawn(function()
     while not Unloaded do
@@ -690,7 +670,7 @@ InventoryTab:CreateInput({
     Placeholder = "e.g. 50000, 1M, 2.5M",
     Callback = function(state) Options.MaxBuyPrice = state end
 }))
-InventoryTab:CreateLabel({ Text = "Wanted but short on cash waits. Mythic+ is never auto-destroyed."})
+InventoryTab:CreateParagraph({ Title = "Wanted but short on cash waits. Mythic+ is never auto-destroyed.", Content = " " })
 InventoryTab:CreateButton({
     Name = "Roll Once",
     Callback = function()
@@ -795,7 +775,7 @@ InventoryTab:CreateButton({
         end
     end
 }))
-InventoryTab:CreateLabel({ Text = "Fuse needs 2+ copies of one unit. Evolve needs copies plus materials."})
+InventoryTab:CreateParagraph({ Title = "Fuse needs 2+ copies of one unit. Evolve needs copies plus materials.", Content = " " })
 -- Stat Upgrades
 Toggles.AutoUpgradeAll = false
 InventoryTab:CreateToggle({ Name = "Auto Upgrade All Stats", CurrentValue = false,
@@ -958,7 +938,7 @@ ZonesTab:CreateToggle({ Name = "Auto Purchase Zones", CurrentValue = false,
         else stopLoop("AutoPurchaseZones") end
     end
 })
-local zoneLabel = ZonesTab:CreateLabel({ Text = "Next: ..."})
+local zoneLabel = ZonesTab:CreateParagraph({ Title = "Next: ...", Content = " " })
 LiveLabels.NextZone = zoneLabel
 task.spawn(function()
     while not Unloaded do
@@ -994,7 +974,7 @@ ZonesTab:CreateButton({
 ------------------------------------------------------------
 -- 15. Rebirth tab
 ------------------------------------------------------------
-local gateLabel = RebirthTab:CreateLabel({ Text = "..."})
+local gateLabel = RebirthTab:CreateParagraph({ Title = "...", Content = " " })
 LiveLabels.PrestigeGate = gateLabel
 RebirthTab:CreateButton({
     Name = "Prestige Now",
@@ -1022,7 +1002,7 @@ RebirthTab:CreateToggle({ Name = "Auto Prestige", CurrentValue = false,
         else stopLoop("AutoPrestige") end
     end
 })
-RebirthTab:CreateLabel({ Text = "Prestige resets progress for permanent rewards. Formula: level 10 plus 5 per early prestige."})
+RebirthTab:CreateParagraph({ Title = "Prestige resets progress for permanent rewards. Formula: level 10 plus 5 per early prestige.", Content = " " })
 task.spawn(function()
     while not Unloaded do
         task.wait(1)
@@ -1043,7 +1023,7 @@ SettingsTab:CreateToggle({ Name = "Anti-AFK", CurrentValue = true,
         setAntiAFK(v)
     end
 })
-SettingsTab:CreateLabel({ Text = "Menu Keybind: RightShift"})
+SettingsTab:CreateParagraph({ Title = "Menu Keybind: RightShift", Content = " " })
 SettingsTab:CreateButton({
     Name = "Unload Stealth",
     Description = "Removes the menu and stops all automation",
@@ -1062,4 +1042,4 @@ end)
 -- 17. Final
 ------------------------------------------------------------
 notify("Stealth", gameName .. " loaded! Press RightShift", 4)
-print("[Stealth] Loaded " .. gameName .. " via Airflow")
+print("[Stealth] Loaded " .. gameName .. " via Rayfield")

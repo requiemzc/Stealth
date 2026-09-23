@@ -299,15 +299,15 @@ Patriot.Callbacks.OnSuccess = function()
     print("[Stealth] Key validated! Loading main script...")
     Patriot:Notify("Stealth", "Key validated! Loading...", 2, "success")
 
-    -- Preload Airflow UI so game scripts can find it in getgenv
+    -- Preload Rayfield for game scripts
     task.spawn(function()
         pcall(function()
-            local Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
-            if Airflow and type(Airflow) == "table" then
-                getgenv().StealthAirflow = Airflow
-                print("[Stealth] Airflow UI preloaded for game scripts")
+            local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+            if Rayfield and type(Rayfield) == "table" then
+                getgenv().StealthRayfield = Rayfield
+                print("[Stealth] Rayfield preloaded for game scripts")
             else
-                warn("[Stealth] Failed to preload Airflow UI")
+                warn("[Stealth] Failed to preload Rayfield")
             end
         end)
     end)

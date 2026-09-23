@@ -1,12 +1,12 @@
 -- [[ Stealth | Star RNG ]]
 --
 -- Original: Star RNG by @hidevin (ObsidianUltra / Linoria-based)
--- Converted to Airflow for Stealth Hub.
+-- Converted to Rayfield for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- Game: Star RNG
 ------------------------------------------------------------
--- 1. Identity elevation (Airflow needs executor-level identity)
+-- 1. Identity elevation (Rayfield needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -56,14 +56,11 @@ if not _taskPatched then
     end)
 end
 ------------------------------------------------------------
--- 2. Load Airflow
+-- 2. Load Rayfield
 ------------------------------------------------------------
-local Airflow = getgenv().StealthAirflow
-if not Airflow then
-    Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
-    if Airflow then getgenv().StealthAirflow = Airflow end
+local Rayfield = getgenv().StealthRayfield or loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 end
-if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
+if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
 -- 3. Services & state
@@ -228,26 +225,9 @@ local function FindTrashTool()
     return nil
 end
 ------------------------------------------------------------
--- 6. Create Airflow window
+-- 6. Create Rayfield window
 ------------------------------------------------------------
-local Window = Airflow:CreateWindow({
-    Name = "Stealth",
-    Folder = "Stealth",
-    NewElements = true,
-    HideSearchBar = false,
-    OpenButton = {
-        Name = "Open Stealth",
-        CornerRadius = UDim.new(1, 0),
-        StrokeThickness = 3,
-        Enabled = true,
-        Draggable = true,
-        OnlyMobile = false,
-        Scale = 0.5,
-        Color = ColorSequence.new(
-            Color3.fromHex("#30FF6A"),
-            Color3.fromHex("#e7ff2f")
-        )
-}),
+local Window = Rayfield:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
     Topbar = {
         Height = 44,
         ButtonsType = "Mac"
@@ -256,21 +236,21 @@ local Window = Airflow:CreateWindow({
 ------------------------------------------------------------
 -- 7. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab({ Name = "Dashboard"})
-local FarmingTab = Window:CreateTab({ Name = "Farming"})
-local RollBuyTab = Window:CreateTab({ Name = "Roll & Buy"})
-local UpgradesTab = Window:CreateTab({ Name = "Upgrades"})
-local ShopsTab = Window:CreateTab({ Name = "Shops"})
-local SettingsTab = Window:CreateTab({ Name = "Config"})
+local MainTab = Window:CreateTab("Dashboard")
+local FarmingTab = Window:CreateTab("Farming")
+local RollBuyTab = Window:CreateTab("Roll & Buy")
+local UpgradesTab = Window:CreateTab("Upgrades")
+local ShopsTab = Window:CreateTab("Shops")
+local SettingsTab = Window:CreateTab("Config")
 ------------------------------------------------------------
 -- 8. Dashboard tab
 ------------------------------------------------------------
 MainTab:CreateLabel({ Text = "Game: " .. gameName})
-MainTab:CreateLabel({ Text = "Hub: Stealth (Airflow)"})
-MainTab:CreateLabel({ Text = "Press RightShift to toggle UI"})
-local StatusLabel = MainTab:CreateLabel({ Text = "Status: loading..."})
-local AreaLabel = MainTab:CreateLabel({ Text = "Plot: ..."})
-local SessionLabel = MainTab:CreateLabel({ Text = "Session: 0s"})
+MainTab:CreateParagraph({ Title = "Hub: Stealth (Rayfield)", Content = " " })
+MainTab:CreateParagraph({ Title = "Press RightShift to toggle UI", Content = " " })
+local StatusLabel = MainTab:CreateParagraph({ Title = "Status: loading...", Content = " " })
+local AreaLabel = MainTab:CreateParagraph({ Title = "Plot: ...", Content = " " })
+local SessionLabel = MainTab:CreateParagraph({ Title = "Session: 0s", Content = " " })
 MainTab:CreateButton({
     Name = "Teleport: Base",
     Callback = function() FireRemote("TeleportToBase") end
@@ -279,9 +259,9 @@ MainTab:CreateButton({
     Name = "Teleport: Market",
     Callback = function() FireRemote("TeleportToMarket") end
 }))
-local CashLabel = MainTab:CreateLabel({ Text = "Cash: ..."})
-local AltarLabel = MainTab:CreateLabel({ Text = "Altars: ..."})
-local PedestalLabel = MainTab:CreateLabel({ Text = "Rolling stars: ..."})
+local CashLabel = MainTab:CreateParagraph({ Title = "Cash: ...", Content = " " })
+local AltarLabel = MainTab:CreateParagraph({ Title = "Altars: ...", Content = " " })
+local PedestalLabel = MainTab:CreateParagraph({ Title = "Rolling stars: ...", Content = " " })
 ------------------------------------------------------------
 -- 9. Farming tab
 ------------------------------------------------------------
@@ -548,9 +528,9 @@ task.spawn(function()
         task.wait(1)
     end
 end)
-Airflow:Notify({
+Rayfield:Notify({
     Name = "Stealth",
     Content = gameName .. " loaded! Press RightShift",
     Duration = 4
 }))
-print("[Stealth] Loaded " .. gameName .. " via Airflow")
+print("[Stealth] Loaded " .. gameName .. " via Rayfield")

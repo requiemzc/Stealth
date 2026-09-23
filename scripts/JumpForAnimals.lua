@@ -1,12 +1,12 @@
 -- [[ Stealth | Jump for Animals ]]
 --
 -- Original: Ouroboros Hub @hidevin (ObsidianUltra)
--- Converted to Airflow for Stealth Hub.
+-- Converted to Rayfield for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- Game: Jump for Animals
 ------------------------------------------------------------
--- 1. Identity elevation (Airflow needs executor-level identity)
+-- 1. Identity elevation (Rayfield needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -56,14 +56,11 @@ if not _taskPatched then
     end)
 end
 ------------------------------------------------------------
--- 2. Load Airflow
+-- 2. Load Rayfield
 ------------------------------------------------------------
-local Airflow = getgenv().StealthAirflow
-if not Airflow then
-    Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
-    if Airflow then getgenv().StealthAirflow = Airflow end
+local Rayfield = getgenv().StealthRayfield or loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 end
-if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
+if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
 -- 3. State tables (mirror ObsidianUltra Toggles/Options pattern)
@@ -77,7 +74,7 @@ local Library = {
     ShowCustomCursor = true
 })
 function Library:Notify(opts)
-    Airflow:Notify({
+    Rayfield:Notify({
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3
@@ -103,7 +100,7 @@ local LocalPlayer = Players.LocalPlayer
 local gameName = "Jump for Animals"
 local Remotes = ReplicatedStorage:WaitForChild("Remotes", 15)
 if not Remotes then
-    Airflow:Notify({
+    Rayfield:Notify({
         Name = "Stealth",
         Content = "Remotes folder not found. Join the game first.",
         Duration = 6
@@ -315,26 +312,9 @@ local function formatClock(seconds)
     return string.format("%02d:%02d:%02d", hours, minutes, secs)
 end
 ------------------------------------------------------------
--- 6. Create Airflow window
+-- 6. Create Rayfield window
 ------------------------------------------------------------
-local Window = Airflow:CreateWindow({
-    Name = "Stealth",
-    Folder = "Stealth",
-    NewElements = true,
-    HideSearchBar = false,
-    OpenButton = {
-        Name = "Open Stealth",
-        CornerRadius = UDim.new(1, 0),
-        StrokeThickness = 3,
-        Enabled = true,
-        Draggable = true,
-        OnlyMobile = false,
-        Scale = 0.5,
-        Color = ColorSequence.new(
-            Color3.fromHex("#30FF6A"),
-            Color3.fromHex("#e7ff2f")
-        )
-}),
+local Window = Rayfield:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
     Topbar = {
         Height = 44,
         ButtonsType = "Mac"
@@ -353,14 +333,14 @@ end
 ------------------------------------------------------------
 -- 8. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab({ Name = "Dashboard"})
-local TrainingTab = Window:CreateTab({ Name = "Training"})
-local EggTab = Window:CreateTab({ Name = "Eggs"})
-local SellingTab = Window:CreateTab({ Name = "Selling"})
-local RewardsTab = Window:CreateTab({ Name = "Rewards"})
-local ShopsTab = Window:CreateTab({ Name = "Shops"})
-local UpgradesTab = Window:CreateTab({ Name = "Upgrades"})
-local SettingsTab = Window:CreateTab({ Name = "Config"})
+local MainTab = Window:CreateTab("Dashboard")
+local TrainingTab = Window:CreateTab("Training")
+local EggTab = Window:CreateTab("Eggs")
+local SellingTab = Window:CreateTab("Selling")
+local RewardsTab = Window:CreateTab("Rewards")
+local ShopsTab = Window:CreateTab("Shops")
+local UpgradesTab = Window:CreateTab("Upgrades")
+local SettingsTab = Window:CreateTab("Config")
 ------------------------------------------------------------
 -- 9. Build options data
 ------------------------------------------------------------
@@ -385,7 +365,7 @@ if #ZoneNames == 0 then
     ZoneNames = { "Meadow", "Coral Reef", "Winter", "Desert", "Crystal Mines", "Jungle", "Mystic Isles", "Prehistoric", "Celestial Heights", "Savannah" }
 end
 local function notify(title, description, kind)
-    Airflow:Notify({
+    Rayfield:Notify({
         Name = title,
         Content = description or "",
         Duration = 5
@@ -395,16 +375,16 @@ end
 -- 10. Dashboard tab
 ------------------------------------------------------------
 local MainBox = MainTab:CreateLabel({ Text = "Game: " .. gameName})
-local StatusSession = MainTab:CreateLabel({ Text = "Session: 00:00:00"})
-local StatusCash = MainTab:CreateLabel({ Text = "Cash: 0"})
-local StatusLevel = MainTab:CreateLabel({ Text = "Level: 0"})
-local StatusEggs = MainTab:CreateLabel({ Text = "Carried eggs: 0 | Placed: 0"})
-local StatusSquat = MainTab:CreateLabel({ Text = "Squatting: false"})
+local StatusSession = MainTab:CreateParagraph({ Title = "Session: 00:00:00", Content = " " })
+local StatusCash = MainTab:CreateParagraph({ Title = "Cash: 0", Content = " " })
+local StatusLevel = MainTab:CreateParagraph({ Title = "Level: 0", Content = " " })
+local StatusEggs = MainTab:CreateParagraph({ Title = "Carried eggs: 0 | Placed: 0", Content = " " })
+local StatusSquat = MainTab:CreateParagraph({ Title = "Squatting: false", Content = " " })
 ------------------------------------------------------------
 -- 11. Training tab
 ------------------------------------------------------------
 local TrainingBox = TrainingTab:AddLeftGroupbox and TrainingTab:AddLeftGroupbox("Squats") or TrainingTab
--- Airflow doesn't have AddLeftGroupbox; use the tab directly
+-- Rayfield doesn't have AddLeftGroupbox; use the tab directly
 registerToggle("AutoTrain", false)
 TrainingTab:CreateToggle({ Name = "Auto Train Squats", CurrentValue = false,
     Callback = function(state) Toggles.AutoTrain.Value = state end
@@ -413,7 +393,7 @@ registerToggle("AutoSquatBonus", false)
 TrainingTab:CreateToggle({ Name = "Auto Claim Squat Bonus", CurrentValue = false,
     Callback = function(state) Toggles.AutoSquatBonus.Value = state end
 })
-TrainingTab:CreateLabel({ Text = "Squatting is server controlled; training pauses while you carry an egg."})
+TrainingTab:CreateParagraph({ Title = "Squatting is server controlled; training pauses while you carry an egg.", Content = " " })
 ------------------------------------------------------------
 -- 12. Eggs tab
 ------------------------------------------------------------
@@ -465,7 +445,7 @@ registerToggle("AutoHatch", false)
 EggTab:CreateToggle({ Name = "Auto Hatch Ready Eggs", CurrentValue = false,
     Callback = function(state) Toggles.AutoHatch.Value = state end
 })
-EggTab:CreateLabel({ Text = "Carrying an egg disables jumping. Auto Place moves it to your plot so the loop continues."})
+EggTab:CreateParagraph({ Title = "Carrying an egg disables jumping. Auto Place moves it to your plot so the loop continues.", Content = " " })
 ------------------------------------------------------------
 -- 13. Selling tab
 ------------------------------------------------------------
@@ -498,7 +478,7 @@ SellingTab:CreateInput({
     Description = "Lowest CPS First mode never sells pets above this value",
     Callback = function(state) Options.SellMaxCps.Value = state end
 }))
-SellingTab:CreateLabel({ Text = "Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets."})
+SellingTab:CreateParagraph({ Title = "Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets.", Content = " " })
 ------------------------------------------------------------
 -- 14. Rewards tab
 ------------------------------------------------------------
@@ -510,7 +490,7 @@ registerToggle("AutoIndex", false)
 RewardsTab:CreateToggle({ Name = "Auto Claim Animal Index Rewards", CurrentValue = false,
     Callback = function(state) Toggles.AutoIndex.Value = state end
 })
-RewardsTab:CreateLabel({ Text = "Index rewards are claimed with a single claim-all request. Offline cash is claimed whenever a balance is waiting."})
+RewardsTab:CreateParagraph({ Title = "Index rewards are claimed with a single claim-all request. Offline cash is claimed whenever a balance is waiting.", Content = " " })
 ------------------------------------------------------------
 -- 15. Shops tab
 ------------------------------------------------------------
@@ -1199,4 +1179,4 @@ task.spawn(function()
     end
 end)
 notify("Stealth", "Loaded for " .. gameName .. ". RightShift toggles the menu.")
-print("[Stealth] Loaded " .. gameName .. " via Airflow")
+print("[Stealth] Loaded " .. gameName .. " via Rayfield")
