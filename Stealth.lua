@@ -340,11 +340,12 @@ Patriot:Launch()
 print("[Stealth] Loader initialized with Patriot key system")
 
 ------------------------------------------------------------
--- 16. Check maintenance status before launching
+-- 16. Check maintenance status before showing Patriot
 ------------------------------------------------------------
-local function showShutdownScreen(message)
+local function showShutdownScreen(msg)
     local Players = game:GetService("Players")
     local player = Players.LocalPlayer
+    if not player then return end
 
     local gui = Instance.new("ScreenGui")
     gui.Name = "Stealth_Down"
@@ -402,7 +403,7 @@ local function showShutdownScreen(message)
     status.BackgroundTransparency = 1
     status.Size = UDim2.new(0.6, 0, 0.05, 0)
     status.Position = UDim2.new(0.2, 0, 0.61, 0)
-    status.Text = message or "its currently down, join the discord for further news"
+    status.Text = msg or "its currently down, join the discord for further news"
     status.TextScaled = true
     status.Font = Enum.Font.GothamMedium
     status.TextColor3 = Color3.new(1, 1, 1)
@@ -419,35 +420,45 @@ local function showShutdownScreen(message)
     link.Parent = bg
 
     link.MouseButton1Click:Connect(function()
-        if setclipboard then
-            setclipboard("https://discord.gg/hqE5drDHF7")
-        end
+        if setclipboard then setclipboard("https://discord.gg/hqE5drDHF7") end
     end)
 end
 
--- Check maintenance before showing Patriot
+-- Check maintenance BEFORE Patriot:Launch
 task.spawn(function()
-    task.wait(0.5)
-    local HttpService = game:GetService("HttpService")
+    task.wait(0.3)
     local reqFn = request or http_request or nil
-    if reqFn then
-        local ok, res = pcall(function()
-            return reqFn({
-                Url = STEALTH_API .. "/api/validate",
-                Method = "POST",
-                Headers = { ["Content-Type"] = "application/json" },
-                Body = HttpService:JSONEncode({ key = "FREE_maintenance_check", hwid = "check" }),
-            })
-        end)
-        if ok and res then
-            local data
-            pcall(function() data = HttpService:JSONDecode(res.Body) end)
-            if data and data.error == "STEALTH_DOWN" then
-                -- Show shutdown screen instead of Patriot
-                showShutdownScreen(data.message)
-                return
-            end
+    if not reqFn then return end -- no HTTP, just show Patriot
+
+    local ok, res = pcall(function()
+        return reqFn({
+            Url = STEALTH_API .. "/api/maintenance",
+            Method = "GET",
+        })
+    end)
+
+    if ok and res then
+        local body = res.Body or ""
+        if body:find("^DOWN") then
+            -- Maintenance is ON — show shutdown screen, DON'T show Patriot
+            local msg = body:match("^DOWN|(.*)")
+            showShutdownScreen(msg)
+            -- Destroy Patriot if it already launched
+            pcall(function()
+                local CoreGui = game:GetService("CoreGui")
+                for _, child in ipairs(CoreGui:GetChildren()) do
+                    if child.Name:find("Patriot") or child.Name:find("Key") then
+                        child:Destroy()
+                    end
+                end
+            end)
+            print("[Stealth] Maintenance mode active — showing shutdown screen")
+            return
         end
     end
-    -- If no maintenance, Patriot is already launched
+    -- If UP or request failed, Patriot is already launched (line 325)
 end)
+
+Patriot:Launch()
+
+print("[Stealth] Loader initialized with Patriot key system")
