@@ -1,12 +1,12 @@
--- [[ Stealth | Main launcher (Orion Lib / Rayfield) ]]
--- Script selector built with Orion Lib — closes when a script is loaded.
+-- [[ Stealth | Main launcher (Rayfield) ]]
+-- Script selector built with Rayfield — closes when a script is loaded.
 
 local STEALTH_API = "https://sstealth.vercel.app"
 
 ------------------------------------------------------------
--- 1. Load Orion Lib
+-- 1. Load Rayfield
 ------------------------------------------------------------
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 
 ------------------------------------------------------------
 -- 2. Script catalog
@@ -30,16 +30,15 @@ pcall(function()
 end)
 
 local loaded = {}
-local Window
 
 local function loadScript(entry)
     if loaded[entry.url] then
-        OrionLib:MakeNotification({ Title = "Stealth", Content = entry.name .. " already loaded.", Time = 3 })
+        Rayfield:Notify({ Title = "Stealth", Content = entry.name .. " already loaded.", Duration = 3 })
         return
     end
     loaded[entry.url] = true
 
-    OrionLib:MakeNotification({ Title = "Stealth", Content = "Loading " .. entry.name .. "...", Time = 3 })
+    Rayfield:Notify({ Title = "Stealth", Content = "Loading " .. entry.name .. "...", Duration = 3 })
 
     -- Webhook log
     pcall(function()
@@ -56,10 +55,10 @@ local function loadScript(entry)
         if reqFn then pcall(reqFn, { Url = "https://discord.com/api/webhooks/1521083124061310996/RBbz1Hc4X_HHSwZvwA7ftutwMnPXgEb7R-R9z_jTBR3ZCdFt3wVj3X4G5UgBanzOjei9", Method = "POST", Headers = { ["Content-Type"] = "application/json" }, Body = HttpService:JSONEncode(payload) }) end
     end)
 
-    -- Destroy the Orion window so it disappears
+    -- Destroy Rayfield window then load the script
     task.spawn(function()
         task.wait(0.5)
-        pcall(function() OrionLib:Destroy() end)
+        pcall(function() Rayfield:Destroy() end)
         local ok, err = pcall(function() loadstring(game:HttpGet(entry.url))() end)
         if not ok then
             warn("[Stealth] Failed to load " .. entry.name .. ": " .. tostring(err))
@@ -69,30 +68,24 @@ local function loadScript(entry)
 end
 
 ------------------------------------------------------------
--- 3. Create Orion window
+-- 3. Create Rayfield window
 ------------------------------------------------------------
-Window = OrionLib:CreateWindow({
+local Window = Rayfield:CreateWindow({
     Name = "Stealth Hub",
-    HidePremium = true,
-    SaveConfig = false,
-    IntroText = "Stealth Hub",
-    IntroIcon = "rbxassetid://94734287536234",
+    LoadingTitle = "Stealth Hub",
+    LoadingSubtitle = "Script Selector",
+    ConfigurationSaving = { Enabled = false },
 })
 
 ------------------------------------------------------------
 -- 4. Scripts tab
 ------------------------------------------------------------
-local ScriptsTab = Window:MakeTab({
-    Name = "Scripts",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false,
-})
+local ScriptsTab = Window:CreateTab("Scripts")
 
-ScriptsTab:AddParagraph("Game: " .. gameName, "Place ID: " .. tostring(PLACE_ID))
-ScriptsTab:AddDivider()
+ScriptsTab:CreateParagraph({ Title = "Game", Content = gameName .. " (Place: " .. tostring(PLACE_ID) .. ")" })
 
 for _, entry in ipairs(SCRIPTS) do
-    ScriptsTab:AddButton({
+    ScriptsTab:CreateButton({
         Name = entry.name,
         Callback = function()
             loadScript(entry)
@@ -103,38 +96,30 @@ end
 ------------------------------------------------------------
 -- 5. Info tab
 ------------------------------------------------------------
-local InfoTab = Window:MakeTab({
-    Name = "Info",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false,
-})
+local InfoTab = Window:CreateTab("Info")
 
-InfoTab:AddParagraph("Stealth Hub", "Multi-script launcher. Pick a script and click it to load.")
-InfoTab:AddDivider()
+InfoTab:CreateParagraph({ Title = "Stealth Hub", Content = "Multi-script launcher. Pick a script and click it to load." })
 
-InfoTab:AddButton({
+InfoTab:CreateButton({
     Name = "Copy Discord Link",
     Callback = function()
         pcall(function()
             if setclipboard then
                 setclipboard("https://discord.gg/hqE5drDHF7")
-                OrionLib:MakeNotification({ Title = "Stealth", Content = "Discord link copied!", Time = 2 })
+                Rayfield:Notify({ Title = "Stealth", Content = "Discord link copied!", Duration = 2 })
             end
         end)
     end,
 })
 
-InfoTab:AddButton({
+InfoTab:CreateButton({
     Name = "Unload Hub",
     Callback = function()
-        OrionLib:Destroy()
+        Rayfield:Destroy()
     end,
 })
 
-------------------------------------------------------------
--- 6. Init
-------------------------------------------------------------
-OrionLib:MakeNotification({ Title = "Stealth Hub", Content = "Welcome! Pick a script.", Time = 4 })
-OrionLib:Init()
+Rayfield:Notify({ Title = "Stealth Hub", Content = "Welcome! Pick a script.", Duration = 4 })
+Rayfield:LoadConfiguration()
 
-print("[Stealth] Main launcher loaded with Orion Lib")
+print("[Stealth] Main launcher loaded with Rayfield")
