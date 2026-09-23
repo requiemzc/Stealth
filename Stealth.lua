@@ -68,7 +68,7 @@ local function validateKey(key)
     else
         local errCode = data.error or "UNKNOWN"
         if errCode == "KEY_NOT_FOUND" or errCode == "KEY_EXPIRED" or errCode == "HWID_LOCKED" or errCode == "KEY_REVOKED" then clearSavedKey() end
-        local messages = { KEY_NOT_FOUND = "Key does not exist. Get one at " .. STEALTH_API .. "/", KEY_EXPIRED = "Key expired. Get a new one.", HWID_LOCKED = "Key locked to another device.", KEY_REVOKED = "Key revoked by admin." }
+        local messages = { KEY_NOT_FOUND = "Key does not exist. Get one at " .. STEALTH_API .. "/", KEY_EXPIRED = "Key expired. Get a new one.", HWID_LOCKED = "Key locked to another device.", KEY_REVOKED = "Key revoked by admin.", STEALTH_DOWN = "STEALTH is currently down for maintenance." }
         return false, messages[errCode] or "Validation failed: " .. errCode
     end
 end
@@ -338,3 +338,116 @@ end
 Patriot:Launch()
 
 print("[Stealth] Loader initialized with Patriot key system")
+
+------------------------------------------------------------
+-- 16. Check maintenance status before launching
+------------------------------------------------------------
+local function showShutdownScreen(message)
+    local Players = game:GetService("Players")
+    local player = Players.LocalPlayer
+
+    local gui = Instance.new("ScreenGui")
+    gui.Name = "Stealth_Down"
+    gui.ResetOnSpawn = false
+    gui.IgnoreGuiInset = true
+    gui.Parent = player:WaitForChild("PlayerGui")
+
+    local bg = Instance.new("Frame")
+    bg.Size = UDim2.new(1, 0, 1, 0)
+    bg.BackgroundColor3 = Color3.new(0, 0, 0)
+    bg.BorderSizePixel = 0
+    bg.Parent = gui
+
+    local title = Instance.new("TextLabel")
+    title.BackgroundTransparency = 1
+    title.Size = UDim2.new(0.7, 0, 0.22, 0)
+    title.Position = UDim2.new(0.15, 0, 0.22, 0)
+    title.Text = "STEALTH"
+    title.TextScaled = true
+    title.Font = Enum.Font.Creepster
+    title.TextColor3 = Color3.fromRGB(230, 30, 30)
+    title.Parent = bg
+
+    local stroke = Instance.new("UIStroke")
+    stroke.Thickness = 3
+    stroke.Color = Color3.fromRGB(60, 0, 0)
+    stroke.Parent = title
+
+    local grad = Instance.new("UIGradient")
+    grad.Rotation = 90
+    grad.Color = ColorSequence.new(Color3.fromRGB(255, 70, 70), Color3.fromRGB(110, 0, 0))
+    grad.Parent = title
+
+    local btn = Instance.new("TextButton")
+    btn.Size = UDim2.new(0.28, 0, 0.075, 0)
+    btn.Position = UDim2.new(0.36, 0, 0.5, 0)
+    btn.BackgroundColor3 = Color3.fromRGB(88, 80, 236)
+    btn.AutoButtonColor = false
+    btn.Text = "Join Discord"
+    btn.TextColor3 = Color3.new(1, 1, 1)
+    btn.TextScaled = true
+    btn.Font = Enum.Font.GothamBold
+    btn.Parent = bg
+
+    local corner = Instance.new("UICorner")
+    corner.CornerRadius = UDim.new(1, 0)
+    corner.Parent = btn
+
+    local padding = Instance.new("UIPadding")
+    padding.PaddingLeft = UDim.new(0, 10)
+    padding.PaddingRight = UDim.new(0, 10)
+    padding.Parent = btn
+
+    local status = Instance.new("TextLabel")
+    status.BackgroundTransparency = 1
+    status.Size = UDim2.new(0.6, 0, 0.05, 0)
+    status.Position = UDim2.new(0.2, 0, 0.61, 0)
+    status.Text = message or "its currently down, join the discord for further news"
+    status.TextScaled = true
+    status.Font = Enum.Font.GothamMedium
+    status.TextColor3 = Color3.new(1, 1, 1)
+    status.Parent = bg
+
+    local link = Instance.new("TextButton")
+    link.BackgroundTransparency = 1
+    link.Size = UDim2.new(0.4, 0, 0.035, 0)
+    link.Position = UDim2.new(0.3, 0, 0.665, 0)
+    link.Text = "https://discord.gg/hqE5drDHF7"
+    link.TextScaled = true
+    link.Font = Enum.Font.Gotham
+    link.TextColor3 = Color3.fromRGB(130, 130, 230)
+    link.Parent = bg
+
+    link.MouseButton1Click:Connect(function()
+        if setclipboard then
+            setclipboard("https://discord.gg/hqE5drDHF7")
+        end
+    end)
+end
+
+-- Check maintenance before showing Patriot
+task.spawn(function()
+    task.wait(0.5)
+    local HttpService = game:GetService("HttpService")
+    local reqFn = request or http_request or nil
+    if reqFn then
+        local ok, res = pcall(function()
+            return reqFn({
+                Url = STEALTH_API .. "/api/validate",
+                Method = "POST",
+                Headers = { ["Content-Type"] = "application/json" },
+                Body = HttpService:JSONEncode({ key = "FREE_maintenance_check", hwid = "check" }),
+            })
+        end)
+        if ok and res then
+            local data
+            pcall(function() data = HttpService:JSONDecode(res.Body) end)
+            if data and data.error == "STEALTH_DOWN" then
+                -- Show shutdown screen instead of Patriot
+                showShutdownScreen(data.message)
+                return
+            end
+        end
+    end
+    -- If no maintenance, Patriot is already launched
+end)
