@@ -82,8 +82,6 @@ local LiveLabels = {}
 -- 4. Create Library window
 ------------------------------------------------------------
 local Window = Library:CreateWindow({ Title = "Stealth", Footer = "discord.gg/hqE5drDHF7", AutoLoad = true })
-        Height = 44,
-})
 
 ------------------------------------------------------------
 -- 5. Tabs

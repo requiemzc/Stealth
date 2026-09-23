@@ -157,8 +157,6 @@ local GemsClientFolder = Workspace:FindFirstChild("GemsClient")
 -- 5. Create Library window
 ------------------------------------------------------------
 local Window = Library:CreateWindow({ Title = "Stealth", Footer = "discord.gg/hqE5drDHF7", AutoLoad = true })
-        Height = 44,
-})
 
 Library._window = Window
 ------------------------------------------------------------
@@ -374,13 +372,13 @@ end
 ------------------------------------------------------------
 -- 9. MAIN TAB
 ------------------------------------------------------------
-MainTab:AddLeftGroupbox("Dashboard")})
-MainTab:AddLeftGroupbox("Game: ") .. gameName, TextTransparency = 0.35})
-MainTab:AddLeftGroupbox("Hub: Stealth"), TextTransparency = 0.35})
-MainTab:AddLeftGroupbox("Toggle UI: RightShift or floating button"), TextTransparency = 0.35})
-MainTab:AddLeftGroupbox("Session")})
+MainTab:AddLeftGroupbox("Dashboard")
+MainTab:AddLeftGroupbox("Game: ")
+MainTab:AddLeftGroupbox("Hub: Stealth")
+MainTab:AddLeftGroupbox("Toggle UI: RightShift or floating button")
+MainTab:AddLeftGroupbox("Session")
 local sessionLabel
-MainTab:AddLeftGroupbox("0s elapsed"), TextTransparency = 0.35})
+MainTab:AddLeftGroupbox("0s elapsed")
 task.spawn(function()
     local s=0
     while true do
@@ -391,7 +389,7 @@ task.spawn(function()
         -- Skip live session update (would need a label element with :SetText).
     end
 end)
-MainTab:AddLeftGroupbox("Discord")})
+MainTab:AddLeftGroupbox("Discord")
 MainTab:AddButton({ Text = "Copy Discord",
     Desc = "discord.gg/hqE5drDHF7",
     Color = Color3.fromHex("#5865F2"),
@@ -406,13 +404,13 @@ MainTab:AddButton({ Text = "Copy Discord",
 
     end
 
-MainTab:AddLeftGroupbox("Status")})
-MainTab:AddLeftGroupbox("Farming & Inventory tabs hold all automation."), TextTransparency = 0.35})
-MainTab:AddLeftGroupbox("Settings holds Config & Anti-AFK."), TextTransparency = 0.35})
+MainTab:AddLeftGroupbox("Status")
+MainTab:AddLeftGroupbox("Farming & Inventory tabs hold all automation.")
+MainTab:AddLeftGroupbox("Settings holds Config & Anti-AFK.")
 ------------------------------------------------------------
 -- 10. COLLECTING TAB
 ------------------------------------------------------------
-CollectingTab:AddLeftGroupbox("Resource Collecting")})
+CollectingTab:AddLeftGroupbox("Resource Collecting")
 registerToggle("AutoPickHay", false)
 CollectingTab:AddToggle("AutoPickHay", {  Text = "Auto Pick Hay", Desc = "Pick hay from stack continuously",
     Default = false,
@@ -441,11 +439,11 @@ CollectingTab:AddSlider("LoopInterval", {
     Suffix = "s",
     Callback = function(v) Options.CollectInterval.Value = v end
 
-CollectingTab:AddLeftGroupbox("Vacuum needs VacuumOwned. Gems within 35 studs."), TextTransparency = 0.35})
+CollectingTab:AddLeftGroupbox("Vacuum needs VacuumOwned. Gems within 35 studs.")
 ------------------------------------------------------------
 -- 11. SELLING TAB
 ------------------------------------------------------------
-SellingTab:AddLeftGroupbox("Selling")})
+SellingTab:AddLeftGroupbox("Selling")
 registerToggle("AutoSellHay", false)
 SellingTab:AddToggle("AutoSellHay", {  Text = "Auto Sell Hay", Default = false,
     Callback = function(v) Toggles.AutoSellHay.Value = v end
@@ -461,12 +459,12 @@ registerToggle("SellOnlyIfFull", false)
 SellingTab:AddToggle("OnlySellIfFull", {  Text = "Only Sell If Full", Default = false,
     Callback = function(v) Toggles.SellOnlyIfFull.Value = v end
  })
-SellingTab:AddLeftGroupbox("Fires SellHay:FireServer() near cow."), TextTransparency = 0.35})
-SellingTab:AddLeftGroupbox("VacuumLoad also counts as held."), TextTransparency = 0.35})
+SellingTab:AddLeftGroupbox("Fires SellHay:FireServer() near cow.")
+SellingTab:AddLeftGroupbox("VacuumLoad also counts as held.")
 ------------------------------------------------------------
 -- 12. TOOLS TAB
 ------------------------------------------------------------
-ToolsTab:AddLeftGroupbox("Auto Tool Usage")})
+ToolsTab:AddLeftGroupbox("Auto Tool Usage")
 registerToggle("AutoUseTNT", false)
 ToolsTab:AddToggle("AutoUseTNT", {  Text = "Auto Use TNT", Desc = "Light & throw TNT on cooldown",
     Default = false,
@@ -494,13 +492,13 @@ ToolsTab:AddSlider("ToolInterval", {
     Suffix = "s",
     Callback = function(v) Options.ToolInterval.Value = v end
 
-ToolsTab:AddLeftGroupbox("Requirements"), TextTransparency = 0.5})
-ToolsTab:AddLeftGroupbox("PitchforkOwned, TntOwned, DroneOwned, VacuumOwned required per tool."), TextTransparency = 0.35})
-ToolsTab:AddLeftGroupbox("TNT cooldown & vacuum heat managed by server."), TextTransparency = 0.35})
+ToolsTab:AddLeftGroupbox("Requirements")
+ToolsTab:AddLeftGroupbox("PitchforkOwned, TntOwned, DroneOwned, VacuumOwned required per tool.")
+ToolsTab:AddLeftGroupbox("TNT cooldown & vacuum heat managed by server.")
 ------------------------------------------------------------
 -- 13. NEEDLE TAB
 ------------------------------------------------------------
-NeedleTab:AddLeftGroupbox("Needle")})
+NeedleTab:AddLeftGroupbox("Needle")
 registerToggle("AutoFindNeedle", false)
 NeedleTab:AddToggle("AutoFindNeedle", {  Text = "Auto Find Needle", Desc = "Continuously pick around pile center to reveal needle",
     Default = false,
@@ -521,13 +519,13 @@ NeedleTab:AddSlider("NeedleInterval", {
     Suffix = "s",
     Callback = function(v) Options.NeedleInterval.Value = v end
 
-NeedleTab:AddLeftGroupbox("How Needle Works"), TextTransparency = 0.5})
-NeedleTab:AddLeftGroupbox("Needle spawns under hay. Removing hay reveals it."), TextTransparency = 0.35})
-NeedleTab:AddLeftGroupbox("Pile center from Config.PILE_CENTER used for automation."), TextTransparency = 0.35})
+NeedleTab:AddLeftGroupbox("How Needle Works")
+NeedleTab:AddLeftGroupbox("Needle spawns under hay. Removing hay reveals it.")
+NeedleTab:AddLeftGroupbox("Pile center from Config.PILE_CENTER used for automation.")
 ------------------------------------------------------------
 -- 14. SHOP TAB
 ------------------------------------------------------------
-ShopTab:AddLeftGroupbox("Purchasing")})
+ShopTab:AddLeftGroupbox("Purchasing")
 registerOption("BuyToolsList", {})
 ShopTab:CreateDropdown({
     Name = "Buy Tools Selection",
@@ -553,8 +551,8 @@ ShopTab:AddSlider("BuyInterval", {
     Suffix = "s",
     Callback = function(v) Options.BuyInterval.Value = v end
 
-ShopTab:AddLeftGroupbox("Ownership"), TextTransparency = 0.5})
-ShopTab:AddLeftGroupbox("Attributes: PitchforkOwned, TntOwned, DroneOwned, VacuumOwned, InfiniteBagOwned"), TextTransparency = 0.35})
+ShopTab:AddLeftGroupbox("Ownership")
+ShopTab:AddLeftGroupbox("Attributes: PitchforkOwned, TntOwned, DroneOwned, VacuumOwned, InfiniteBagOwned")
 ShopTab:AddButton({ Text = "Check Ownership",
     Color = Color3.fromHex("#30FF6A"),
     Justify = "Left",
@@ -570,7 +568,7 @@ ShopTab:AddButton({ Text = "Check Ownership",
 ------------------------------------------------------------
 -- 15. UPGRADES TAB
 ------------------------------------------------------------
-UpgradesTab:AddLeftGroupbox("Permanent (Gems)")})
+UpgradesTab:AddLeftGroupbox("Permanent (Gems)")
 registerToggle("UpgBagSize", false)
 UpgradesTab:AddToggle("AutoUpgradeBagSize", {  Text = "Auto Upgrade Bag Size", Desc = "ExtraHoldAmount -> Gems 25,50,75,100,150,450",
     Default = false,
@@ -598,52 +596,52 @@ UpgradesTab:AddSlider("PermanentLoop", {
     Suffix = "s",
     Callback = function(v) Options.PermInterval.Value = v end
 
-UpgradesTab:AddLeftGroupbox("Hand Upgrades (Cash)")})
+UpgradesTab:AddLeftGroupbox("Hand Upgrades (Cash)")
 registerToggle("UpgHandSpeed", false)
 UpgradesTab:AddToggle("AutoHandSpeed", {  Text = "Auto Hand Speed", Desc = "Speed track 0.55->0.3", Default = false, Callback = function(v) Toggles.UpgHandSpeed.Value = v end })
 registerToggle("UpgHandGrab", false)
 UpgradesTab:AddToggle("AutoHandGrasp", {  Text = "Auto Hand Grasp", Default = false, Callback = function(v) Toggles.UpgHandGrab.Value = v end })
 registerToggle("UpgHandHold", false)
 UpgradesTab:AddToggle("AutoHandHold", {  Text = "Auto Hand Hold", Default = false, Callback = function(v) Toggles.UpgHandHold.Value = v end })
-UpgradesTab:AddLeftGroupbox("TNT Upgrades")})
+UpgradesTab:AddLeftGroupbox("TNT Upgrades")
 registerToggle("UpgTntLuck", false)
 UpgradesTab:AddToggle("AutoTNTLuckyBlast", {  Text = "Auto TNT Lucky Blast", Default = false, Callback = function(v) Toggles.UpgTntLuck.Value = v end })
 registerToggle("UpgTntCooldown", false)
 UpgradesTab:AddToggle("AutoTNTCooldown", {  Text = "Auto TNT Cooldown", Default = false, Callback = function(v) Toggles.UpgTntCooldown.Value = v end })
 registerToggle("UpgTntPower", false)
 UpgradesTab:AddToggle("AutoTNTPower", {  Text = "Auto TNT Power", Default = false, Callback = function(v) Toggles.UpgTntPower.Value = v end })
-UpgradesTab:AddLeftGroupbox("Pitchfork Upgrades")})
+UpgradesTab:AddLeftGroupbox("Pitchfork Upgrades")
 registerToggle("UpgPitchCooldown", false)
 UpgradesTab:AddToggle("AutoPitchforkCooldown", {  Text = "Auto Pitchfork Cooldown", Default = false, Callback = function(v) Toggles.UpgPitchCooldown.Value = v end })
 registerToggle("UpgPitchHold", false)
 UpgradesTab:AddToggle("AutoPitchforkHold", {  Text = "Auto Pitchfork Hold", Default = false, Callback = function(v) Toggles.UpgPitchHold.Value = v end })
 registerToggle("UpgPitchSweep", false)
 UpgradesTab:AddToggle("AutoPitchforkSweep", {  Text = "Auto Pitchfork Sweep", Default = false, Callback = function(v) Toggles.UpgPitchSweep.Value = v end })
-UpgradesTab:AddLeftGroupbox("Drone Upgrades")})
+UpgradesTab:AddLeftGroupbox("Drone Upgrades")
 registerToggle("UpgDroneSpeed", false)
 UpgradesTab:AddToggle("AutoDroneSpeed", {  Text = "Auto Drone Speed", Default = false, Callback = function(v) Toggles.UpgDroneSpeed.Value = v end })
 registerToggle("UpgDroneGrab", false)
 UpgradesTab:AddToggle("AutoDroneGrasp", {  Text = "Auto Drone Grasp", Default = false, Callback = function(v) Toggles.UpgDroneGrab.Value = v end })
 registerToggle("UpgDroneCapacity", false)
 UpgradesTab:AddToggle("AutoDroneCapacity", {  Text = "Auto Drone Capacity", Default = false, Callback = function(v) Toggles.UpgDroneCapacity.Value = v end })
-UpgradesTab:AddLeftGroupbox("Vacuum Upgrades")})
+UpgradesTab:AddLeftGroupbox("Vacuum Upgrades")
 registerToggle("UpgVacPower", false)
 UpgradesTab:AddToggle("AutoVacuumPower", {  Text = "Auto Vacuum Power", Default = false, Callback = function(v) Toggles.UpgVacPower.Value = v end })
 registerToggle("UpgVacCooling", false)
 UpgradesTab:AddToggle("AutoVacuumCooling", {  Text = "Auto Vacuum Cooling", Default = false, Callback = function(v) Toggles.UpgVacCooling.Value = v end })
 registerToggle("UpgVacRuntime", false)
 UpgradesTab:AddToggle("AutoVacuumRuntime", {  Text = "Auto Vacuum Runtime", Default = false, Callback = function(v) Toggles.UpgVacRuntime.Value = v end })
-UpgradesTab:AddLeftGroupbox("Capacity")})
+UpgradesTab:AddLeftGroupbox("Capacity")
 registerToggle("UpgCapacity", false)
 UpgradesTab:AddToggle("AutoUpgradeCarryCapacity", {  Text = "Auto Upgrade Carry Capacity", Desc = "25->250 cash upgrades",
     Default = false,
     Callback = function(v) Toggles.UpgCapacity.Value = v end
  })
-UpgradesTab:AddLeftGroupbox("Cash upgrades use BuyUpgrade with track names."), TextTransparency = 0.35})
+UpgradesTab:AddLeftGroupbox("Cash upgrades use BuyUpgrade with track names.")
 ------------------------------------------------------------
 -- 16. SETTINGS TAB
 ------------------------------------------------------------
-SettingsTab:AddLeftGroupbox("Menu")})
+SettingsTab:AddLeftGroupbox("Menu")
 SettingsTab:AddButton({ Text = "Unload Stealth",
     Desc = "Closes the UI and stops all automation.",
     Color = Color3.fromHex("#ff4830"),
@@ -653,7 +651,7 @@ SettingsTab:AddButton({ Text = "Unload Stealth",
         Library:Unload()
     end
 
-SettingsTab:AddLeftGroupbox("System")})
+SettingsTab:AddLeftGroupbox("System")
 registerToggle("AntiAFK", true)
 SettingsTab:AddToggle("AntiAFKjumpevery5m", {  Text = "Anti-AFK (jump every 5m)", Desc = "Enabled by default. Uses jump to keep alive.",
     Default = true,

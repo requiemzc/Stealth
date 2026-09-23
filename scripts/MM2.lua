@@ -44055,7 +44055,7 @@ if not Library then warn("[Stealth] Failed to load Library UI") return end
     table.sort(weaponNames, function(a, b) return a:lower() < b:lower() end)
     ------------------------------------------------------------ Tab: Spawner
     local SpawnTab = Window:AddTab({ Name = "Weapons" })
-    SpawnTab:AddLeftGroupbox("Select weapon")})
+    SpawnTab:AddLeftGroupbox("Select weapon")
     -- Status label (replaces the old statusLabel)
     -- We use a Paragraph that we can update via :Set()
     statusLabel = SpawnTab:Paragraph({
@@ -44120,7 +44120,7 @@ if not Library then warn("[Stealth] Failed to load Library UI") return end
 
     ------------------------------------------------------------ Tab: Settings
     local SettingsTab = Window:AddTab({ Name = "Config" })
-    SettingsTab:AddLeftGroupbox("Visualizer options")})
+    SettingsTab:AddLeftGroupbox("Visualizer options")
     SettingsTab:AddToggle("InjectParticles", {  Text = "Inject Particles", Desc = "ParticleEmitter / Fire / Smoke / Sparkles / Lights on spawned weapons.",
         Value = CONFIG.InjectParticles,
         Callback = function(v)
@@ -44578,7 +44578,7 @@ do
     -- We attach new sections/tabs to it.
     -- ---------- ESP Tab ----------
     local ESPTab = Window:AddTab({ Name = "ESP" })
-    ESPTab:AddLeftGroupbox("Player ESP Settings")})
+    ESPTab:AddLeftGroupbox("Player ESP Settings")
     ESPTab:AddToggle("EnableESP", {  Text = "Enable ESP", Desc = "Highlight players through walls.",
         Value = false,
         Callback = function(v) ESP.Enabled = v; RefreshESP() end
@@ -44610,7 +44610,7 @@ do
 
     -- ---------- AutoFarm Tab ----------
     local AutoFarmTab = Window:AddTab({ Name = "Farm" })
-    AutoFarmTab:AddLeftGroupbox("Coin & Candy Collection")})
+    AutoFarmTab:AddLeftGroupbox("Coin & Candy Collection")
     AutoFarmTab:AddToggle("CoinAutofarm", {  Text = "Coin Autofarm", Desc = "Automatically collect coins in the map.",
         Value = false,
         Callback = function(v)
@@ -44641,7 +44641,7 @@ do
 
     -- ---------- Character Tab ----------
     local CharacterTab = Window:AddTab({ Name = "Movement" })
-    CharacterTab:AddLeftGroupbox("Movement Settings")})
+    CharacterTab:AddLeftGroupbox("Movement Settings")
     CharacterTab:CreateSlider({
         Name = "Walk Speed",
         Desc = "Default: 16",
@@ -44684,7 +44684,7 @@ do
 
     -- ---------- Teleport Tab ----------
     local TeleportTab = Window:AddTab({ Name = "Teleport" })
-    TeleportTab:AddLeftGroupbox("Player Teleportation")})
+    TeleportTab:AddLeftGroupbox("Player Teleportation")
     local playerList = {}
     local playerDropdown
     local function refreshPlayerList()
@@ -44719,7 +44719,7 @@ do
     TeleportTab:AddButton({ Text = "Refresh Player List",
         Callback = refreshPlayerList
 
-    TeleportTab:AddLeftGroupbox("Role Teleportation")})
+    TeleportTab:AddLeftGroupbox("Role Teleportation")
     TeleportTab:AddButton({ Text = "Teleport to Murderer",
         Desc = "Go to the current murderer (if any).",
         Color = Color3.fromHex("#dc143c"),
@@ -44740,7 +44740,7 @@ do
     refreshPlayerList()
     -- ---------- Role Functions Tab ----------
     local RoleTab = Window:AddTab({ Name = "Role" })
-    RoleTab:AddLeftGroupbox("Innocent")})
+    RoleTab:AddLeftGroupbox("Innocent")
     RoleTab:AddToggle("AutoGrabGun", {  Text = "Auto Grab Gun", Desc = "When a gun is dropped, teleport to it automatically.",
         Value = false,
         Callback = function(v)
@@ -44748,7 +44748,7 @@ do
             if v then AutoGrabGun() end
         end
  })
-    RoleTab:AddLeftGroupbox("Murderer")})
+    RoleTab:AddLeftGroupbox("Murderer")
     RoleTab:AddButton({ Text = "Kill All Players",
         Desc = "Teleport-and-touch every player (only works if you're the murderer).",
         Color = Color3.fromHex("#dc143c"),
@@ -44762,7 +44762,7 @@ do
 
     -- ---------- Utilities Tab ----------
     local UtilitiesTab = Window:AddTab({ Name = "Utilities" })
-    UtilitiesTab:AddLeftGroupbox("Server Utilities")})
+    UtilitiesTab:AddLeftGroupbox("Server Utilities")
     UtilitiesTab:AddToggle("AntiAFK", {  Text = "Anti-AFK", Desc = "Prevents being kicked for inactivity.",
         Value = false,
         Callback = function(v)
