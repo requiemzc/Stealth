@@ -43914,6 +43914,8 @@ print(("[Stealth] High-tier working weapons: %d"):format(#weaponList))
 local statusLabel
 local selectedKey = nil
 local selectedName = nil
+local Toggles = {}  -- Will be aliased to Airflow.Flags after Airflow loads
+local Options = {}  -- For dropdown/slider values that aren't Flag-based
 do
     ------------------------------------------------------------
     -- Airflow — Stealth | MM2 Weapon Spawner
@@ -44026,6 +44028,9 @@ do
     -- still in effect. Most modern executors propagate identity to child
     -- threads, so this is usually enough.
     local Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/PookiePepelsss/Airflow-UI/refs/heads/main/Source.luau"))()
+    if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
+    -- Alias Toggles to Airflow.Flags so Toggles.X.Value works for Flag-based toggles
+    Toggles = Airflow.Flags
         -- Re-assert after loadstring (it may reset identity).
     _elevateIdentity()
     local Window = Airflow:CreateWindow({
@@ -44808,6 +44813,11 @@ do
     -- =============================================================
     -- Stealth | MM2 — Additional Features (MBN + mm2Farm + Zeion + Benjo)
     -- =============================================================
+    -- Service refs not defined in outer scope
+    local Workspace = game:GetService("Workspace")
+    local Lighting = game:GetService("Lighting")
+    local UserInputService = game:GetService("UserInputService")
+    local Camera = Workspace.CurrentCamera
     -- Local helpers (re-uses helpers from outer scope where possible)
     local _GetChar = function() return LocalPlayer.Character end
     local _GetHum = function() local c = _GetChar() return c and c:FindFirstChildOfClass("Humanoid") end
