@@ -255,7 +255,6 @@ end
 local Window = Airflow:CreateWindow({
     Name = "Stealth",
     Folder = "Stealth",
-    Icon = "solar:shield-keyhole-bold-duotone",
     NewElements = true,
     HideSearchBar = false,
     OpenButton = {
@@ -282,7 +281,6 @@ local Window = Airflow:CreateWindow({
 ------------------------------------------------------------
 local MainTab = Window:CreateTab({ 
     Name = "Dashboard",
-    Icon = "solar:widget-bold",
     ,
     ,
  })
@@ -290,7 +288,6 @@ local MainTab = Window:CreateTab({
 
 local FarmingTab = Window:CreateTab({ 
     Name = "Farming",
-    Icon = "solar:sprout-bold",
     ,
     ,
  })
@@ -298,21 +295,18 @@ local FarmingTab = Window:CreateTab({
 
 local RollBuyTab = Window:CreateTab({ 
     Name = "Roll & Buy",
-    Icon = "solar:box-bold",
     ,
     ,
  })
 
 local UpgradesTab = Window:CreateTab({ 
     Name = "Upgrades",
-    Icon = "solar:graph-up-bold",
     ,
     ,
  })
 
 local ShopsTab = Window:CreateTab({ 
     Name = "Shops",
-    Icon = "solar:cart-large-bold",
     ,
     ,
  })
@@ -320,7 +314,6 @@ local ShopsTab = Window:CreateTab({
 
 local SettingsTab = Window:CreateTab({ 
     Name = "Config",
-    Icon = "solar:settings-bold",
     ,
     ,
  })
@@ -684,7 +677,6 @@ Airflow:Notify({
     Name = "Stealth",
     Content = gameName .. " loaded! Press RightShift",
     Duration = 4,
-    Icon = "solar:info-circle-bold",
 })
 
 print("[Stealth] Loaded " .. gameName .. " via Airflow")

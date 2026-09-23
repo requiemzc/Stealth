@@ -128,7 +128,6 @@ function Library:Notify(opts)
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3,
-        Icon = "solar:info-circle-bold",
     })
 end
 
@@ -182,7 +181,6 @@ local GemsClientFolder = Workspace:FindFirstChild("GemsClient")
 local Window = Airflow:CreateWindow({
     Name = "Stealth",
     Folder = "Stealth",
-    Icon = "solar:shield-keyhole-bold-duotone",
     NewElements = true,
     HideSearchBar = false,
     OpenButton = {
@@ -222,7 +220,6 @@ end
 ------------------------------------------------------------
 local MainTab = Window:CreateTab({ 
     Name = "Dashboard",
-    Icon = "solar:widget-bold",
     ,
     ,
  })
@@ -230,28 +227,24 @@ local MainTab = Window:CreateTab({
 
 local CollectingTab = Window:CreateTab({ 
     Name = "Collecting",
-    Icon = "solar:wheat-bold",
     ,
     ,
  })
 
 local SellingTab = Window:CreateTab({ 
     Name = "Selling",
-    Icon = "solar:hand-money-bold",
     ,
     ,
  })
 
 local ToolsTab = Window:CreateTab({ 
     Name = "Tools",
-    Icon = "solar:hammer-bold",
     ,
     ,
  })
 
 local NeedleTab = Window:CreateTab({ 
     Name = "Needle",
-    Icon = "solar:magnifer-bold",
     ,
     ,
  })
@@ -259,14 +252,12 @@ local NeedleTab = Window:CreateTab({
 
 local ShopTab = Window:CreateTab({ 
     Name = "Shop",
-    Icon = "solar:cart-large-bold",
     ,
     ,
  })
 
 local UpgradesTab = Window:CreateTab({ 
     Name = "Upgrades",
-    Icon = "solar:graph-up-bold",
     ,
     ,
  })
@@ -274,7 +265,6 @@ local UpgradesTab = Window:CreateTab({
 
 local SettingsTab = Window:CreateTab({ 
     Name = "Config",
-    Icon = "solar:settings-bold",
     ,
     ,
  })
@@ -506,7 +496,6 @@ MainTab:CreateSection("Discord") })
 MainTab:CreateButton({
     Name = "Copy Discord",
     Desc = "discord.gg/hqE5drDHF7",
-    Icon = "solar:chat-round-dots-bold",
     Color = Color3.fromHex("#5865F2"),
     Justify = "Left",
     IconAlign = "Left",
@@ -516,7 +505,6 @@ MainTab:CreateButton({
             Name = "Discord",
             Content = "Invite copied to clipboard!",
             Duration = 3,
-            Icon = "solar:chat-round-dots-bold",
         })
     end,
 })
@@ -728,7 +716,6 @@ ShopTab:CreateSection("Attributes: PitchforkOwned, TntOwned, DroneOwned, VacuumO
 
 ShopTab:CreateButton({
     Name = "Check Ownership",
-    Icon = "solar:check-circle-bold",
     Color = Color3.fromHex("#30FF6A"),
     Justify = "Left",
     IconAlign = "Left",
@@ -876,7 +863,6 @@ SettingsTab:CreateSection("Menu") })
 SettingsTab:CreateButton({
     Name = "Unload Stealth",
     Desc = "Closes the UI and stops all automation.",
-    Icon = "solar:close-circle-bold",
     Color = Color3.fromHex("#ff4830"),
     Justify = "Left",
     IconAlign = "Left",

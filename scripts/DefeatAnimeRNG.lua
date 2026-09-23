@@ -95,7 +95,6 @@ local LiveLabels = {}
 local Window = Airflow:CreateWindow({
     Name = "Stealth",
     Folder = "Stealth",
-    Icon = "solar:shield-keyhole-bold-duotone",
     NewElements = true,
     HideSearchBar = false,
     OpenButton = {
@@ -122,7 +121,6 @@ local Window = Airflow:CreateWindow({
 ------------------------------------------------------------
 local MainTab = Window:CreateTab({ 
     Name = "Dashboard",
-    Icon = "solar:widget-bold",
     ,
     ,
  })
@@ -130,14 +128,12 @@ local MainTab = Window:CreateTab({
 
 local FarmingTab = Window:CreateTab({ 
     Name = "Farming",
-    Icon = "solar:sprout-bold",
     ,
     ,
  })
 
 local QuestsTab = Window:CreateTab({ 
     Name = "Quests",
-    Icon = "solar:checklist-bold",
     ,
     ,
  })
@@ -145,21 +141,18 @@ local QuestsTab = Window:CreateTab({
 
 local InventoryTab = Window:CreateTab({ 
     Name = "Roll & Units",
-    Icon = "solar:box-bold",
     ,
     ,
  })
 
 local ShopTab = Window:CreateTab({ 
     Name = "Shop",
-    Icon = "solar:cart-large-bold",
     ,
     ,
  })
 
 local ZonesTab = Window:CreateTab({ 
     Name = "Zones",
-    Icon = "solar:map-point-bold",
     ,
     ,
  })
@@ -167,7 +160,6 @@ local ZonesTab = Window:CreateTab({
 
 local RebirthTab = Window:CreateTab({ 
     Name = "Prestige",
-    Icon = "solar:crown-bold",
     ,
     ,
  })
@@ -175,7 +167,6 @@ local RebirthTab = Window:CreateTab({
 
 local SettingsTab = Window:CreateTab({ 
     Name = "Config",
-    Icon = "solar:settings-bold",
     ,
     ,
  })
@@ -262,7 +253,6 @@ local function notify(title, desc, time)
         Name = title,
         Content = desc or "",
         Duration = time or 3,
-        Icon = "solar:info-circle-bold",
     })
 end
 

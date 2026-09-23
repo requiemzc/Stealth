@@ -44895,7 +44895,6 @@ do
     local Window = Airflow:CreateWindow({
         Name = "Stealth | MM2",
         Folder = "Stealth",
-        Icon = "solar:sword-bold-duotone",
         NewElements = true,
         HideSearchBar = false,
         OpenButton = {
@@ -44939,7 +44938,6 @@ do
     ------------------------------------------------------------ Tab: Spawner
     local SpawnTab = Window:CreateTab({ 
         Name = "Weapons",
-        Icon = "solar:sword-bold",
         ,
         ,
      })
@@ -44983,7 +44981,6 @@ do
     SpawnTab:CreateButton({
         Name = "Spawn Weapon",
         Desc = "Spawns the selected weapon into your inventory (client-side).",
-        Icon = "solar:add-circle-bold",
         Color = Color3.fromHex("#30FF6A"),
         Justify = "Left",
         IconAlign = "Left",
@@ -44996,7 +44993,6 @@ do
                     Name = "Stealth",
                     Content = "Select a weapon first.",
                     Duration = 3,
-                    Icon = "solar:danger-triangle-bold",
                 })
                 return
             end
@@ -45012,7 +45008,6 @@ do
                     Name = "Stealth",
                     Content = "Spawned: " .. (selectedName or selectedKey),
                     Duration = 3,
-                    Icon = "solar:check-circle-bold",
                 })
             end)
         end,
@@ -45021,7 +45016,6 @@ do
     ------------------------------------------------------------ Tab: Settings
     local SettingsTab = Window:CreateTab({ 
         Name = "Config",
-        Icon = "solar:settings-bold",
         ,
         ,
      })
@@ -45062,7 +45056,6 @@ do
     SettingsTab:CreateButton({
         Name = "Unload Stealth",
         Desc = "Closes the UI and removes all overlays.",
-        Icon = "solar:close-circle-bold",
         Color = Color3.fromHex("#ff4830"),
         Justify = "Left",
         IconAlign = "Left",
@@ -45076,7 +45069,6 @@ do
         Name = "Stealth | MM2",
         Content = ("Ready — %d weapons. Select → Spawn → equip."):format(#weaponList),
         Duration = 5,
-        Icon = "solar:shield-keyhole-bold",
     })
 end
 
@@ -45537,7 +45529,6 @@ do
     -- ---------- ESP Tab ----------
     local ESPTab = Window:CreateTab({ 
         Name = "ESP",
-        Icon = "solar:eye-bold",
         ,
         ,
      })
@@ -45585,7 +45576,6 @@ do
     -- ---------- AutoFarm Tab ----------
     local AutoFarmTab = Window:CreateTab({ 
         Name = "Farm",
-        Icon = "solar:money-bag-bold",
         ,
         ,
      })
@@ -45634,7 +45624,6 @@ do
     -- ---------- Character Tab ----------
     local CharacterTab = Window:CreateTab({ 
         Name = "Movement",
-        Icon = "solar:running-bold",
         ,
         ,
      })
@@ -45692,7 +45681,6 @@ do
     CharacterTab:CreateButton({
         Name = "Reset Character",
         Desc = "Force respawn.",
-        Icon = "solar:refresh-bold",
         Color = Color3.fromHex("#ff4830"),
         Justify = "Left",
         IconAlign = "Left",
@@ -45705,7 +45693,6 @@ do
     -- ---------- Teleport Tab ----------
     local TeleportTab = Window:CreateTab({ 
         Name = "Teleport",
-        Icon = "solar:map-point-bold",
         ,
         ,
      })
@@ -45739,7 +45726,6 @@ do
     TeleportTab:CreateButton({
         Name = "Teleport to Player",
         Desc = "Teleports you to the selected player.",
-        Icon = "solar:map-arrow-right-bold",
         Color = Color3.fromHex("#30FF6A"),
         Justify = "Left",
         IconAlign = "Left",
@@ -45761,7 +45747,6 @@ do
     TeleportTab:CreateButton({
         Name = "Teleport to Murderer",
         Desc = "Go to the current murderer (if any).",
-        Icon = "solar:knife-bold",
         Color = Color3.fromHex("#dc143c"),
         Justify = "Left",
         IconAlign = "Left",
@@ -45771,7 +45756,6 @@ do
     TeleportTab:CreateButton({
         Name = "Teleport to Sheriff",
         Desc = "Go to the current sheriff (if any).",
-        Icon = "solar:shield-bold",
         Color = Color3.fromHex("#4682b4"),
         Justify = "Left",
         IconAlign = "Left",
@@ -45786,7 +45770,6 @@ do
     -- ---------- Role Functions Tab ----------
     local RoleTab = Window:CreateTab({ 
         Name = "Role",
-        Icon = "solar:users-group-rounded-bold",
         ,
         ,
      })
@@ -45810,7 +45793,6 @@ do
     RoleTab:CreateButton({
         Name = "Kill All Players",
         Desc = "Teleport-and-touch every player (only works if you're the murderer).",
-        Icon = "solar:knife-bold",
         Color = Color3.fromHex("#dc143c"),
         Justify = "Left",
         IconAlign = "Left",
@@ -45820,14 +45802,12 @@ do
     RoleTab:CreateButton({
         Name = "Equip Knife",
         Desc = "Equip your knife from backpack.",
-        Icon = "solar:knife-bold",
         Callback = function() EquipKnife() end,
     })
 
     -- ---------- Utilities Tab ----------
     local UtilitiesTab = Window:CreateTab({ 
         Name = "Utilities",
-        Icon = "solar:settings-bold",
         ,
         ,
      })
@@ -45849,7 +45829,6 @@ do
     UtilitiesTab:CreateButton({
         Name = "Copy Discord Invite",
         Desc = "Copies the Stealth Discord link to your clipboard.",
-        Icon = "solar:chat-round-dots-bold",
         Color = Color3.fromHex("#5865F2"),
         Justify = "Left",
         IconAlign = "Left",
@@ -45859,7 +45838,6 @@ do
                 Name = "Stealth | MM2",
                 Content = "Discord invite copied!",
                 Duration = 3,
-                Icon = "solar:chat-round-dots-bold",
             })
         end,
     })
@@ -45869,7 +45847,6 @@ do
         Name = "Stealth | MM2",
         Content = "Extended features loaded: ESP, AutoFarm, Teleport, Role Functions, Utilities.",
         Duration = 5,
-        Icon = "solar:shield-keyhole-bold",
     })
 end
 

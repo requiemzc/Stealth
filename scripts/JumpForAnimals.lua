@@ -87,7 +87,6 @@ function Library:Notify(opts)
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3,
-        Icon = "solar:info-circle-bold",
     })
 end
 
@@ -119,7 +118,6 @@ if not Remotes then
         Name = "Stealth",
         Content = "Remotes folder not found. Join the game first.",
         Duration = 6,
-        Icon = "solar:danger-circle-bold",
     })
     return
 end
@@ -360,7 +358,6 @@ end
 local Window = Airflow:CreateWindow({
     Name = "Stealth",
     Folder = "Stealth",
-    Icon = "solar:shield-keyhole-bold-duotone",
     NewElements = true,
     HideSearchBar = false,
     OpenButton = {
@@ -400,7 +397,6 @@ end
 ------------------------------------------------------------
 local MainTab = Window:CreateTab({ 
     Name = "Dashboard",
-    Icon = "solar:widget-bold",
     ,
     ,
  })
@@ -408,28 +404,24 @@ local MainTab = Window:CreateTab({
 
 local TrainingTab = Window:CreateTab({ 
     Name = "Training",
-    Icon = "solar:dumbbell-bold",
     ,
     ,
  })
 
 local EggTab = Window:CreateTab({ 
     Name = "Eggs",
-    Icon = "solar:egg-bold",
     ,
     ,
  })
 
 local SellingTab = Window:CreateTab({ 
     Name = "Selling",
-    Icon = "solar:hand-money-bold",
     ,
     ,
  })
 
 local RewardsTab = Window:CreateTab({ 
     Name = "Rewards",
-    Icon = "solar:gift-bold",
     ,
     ,
  })
@@ -437,14 +429,12 @@ local RewardsTab = Window:CreateTab({
 
 local ShopsTab = Window:CreateTab({ 
     Name = "Shops",
-    Icon = "solar:cart-large-bold",
     ,
     ,
  })
 
 local UpgradesTab = Window:CreateTab({ 
     Name = "Upgrades",
-    Icon = "solar:graph-up-bold",
     ,
     ,
  })
@@ -452,7 +442,6 @@ local UpgradesTab = Window:CreateTab({
 
 local SettingsTab = Window:CreateTab({ 
     Name = "Config",
-    Icon = "solar:settings-bold",
     ,
     ,
  })
@@ -488,7 +477,6 @@ local function notify(title, description, kind)
         Name = title,
         Content = description or "",
         Duration = 5,
-        Icon = kind == "Error" and "solar:danger-circle-bold" or "solar:info-circle-bold",
     })
 end
 
