@@ -1,12 +1,12 @@
 -- [[ Stealth | Star RNG ]]
 --
 -- Original: Star RNG by @hidevin (ObsidianUltra / Linoria-based)
--- Converted to Rayfield for Stealth Hub.
+-- Converted to Library for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- Game: Star RNG
 ------------------------------------------------------------
--- 1. Identity elevation (Rayfield needs executor-level identity)
+-- 1. Identity elevation (Library needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -56,11 +56,11 @@ if not _taskPatched then
     end)
 end
 ------------------------------------------------------------
--- 2. Load Rayfield
+-- 2. Load Library
 ------------------------------------------------------------
-local Rayfield = getgenv().StealthRayfield or loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+local Library = getgenv().StealthObsidian or loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 end
-if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
+if not Library then warn("[Stealth] Failed to load Library UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
 -- 3. Services & state
@@ -225,9 +225,9 @@ local function FindTrashTool()
     return nil
 end
 ------------------------------------------------------------
--- 6. Create Rayfield window
+-- 6. Create Library window
 ------------------------------------------------------------
-local Window = Rayfield:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
+local Window = Library:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
     Topbar = {
         Height = 44,
         ButtonsType = "Mac"
@@ -236,139 +236,132 @@ local Window = Rayfield:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth
 ------------------------------------------------------------
 -- 7. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab("Dashboard")
-local FarmingTab = Window:CreateTab("Farming")
-local RollBuyTab = Window:CreateTab("Roll & Buy")
-local UpgradesTab = Window:CreateTab("Upgrades")
-local ShopsTab = Window:CreateTab("Shops")
-local SettingsTab = Window:CreateTab("Config")
+local MainTab = Window:AddTab({ Name = "Dashboard" })
+local FarmingTab = Window:AddTab({ Name = "Farming" })
+local RollBuyTab = Window:AddTab({ Name = "Roll & Buy" })
+local UpgradesTab = Window:AddTab({ Name = "Upgrades" })
+local ShopsTab = Window:AddTab({ Name = "Shops" })
+local SettingsTab = Window:AddTab({ Name = "Config" })
 ------------------------------------------------------------
 -- 8. Dashboard tab
 ------------------------------------------------------------
-MainTab:CreateLabel({ Text = "Game: " .. gameName})
-MainTab:CreateParagraph({ Title = "Hub: Stealth (Rayfield)", Content = " " })
-MainTab:CreateParagraph({ Title = "Press RightShift to toggle UI", Content = " " })
-local StatusLabel = MainTab:CreateParagraph({ Title = "Status: loading...", Content = " " })
-local AreaLabel = MainTab:CreateParagraph({ Title = "Plot: ...", Content = " " })
-local SessionLabel = MainTab:CreateParagraph({ Title = "Session: 0s", Content = " " })
-MainTab:CreateButton({
-    Name = "Teleport: Base",
+MainTab:AddLabel("Game: ")
+MainTab:AddLabel("Hub: Stealth (Library):  ", true)
+MainTab:AddLabel("Press RightShift to toggle UI:  ", true)
+local StatusLabel = MainTab:AddLabel("Status: loading...:  ", true)
+local AreaLabel = MainTab:AddLabel("Plot: ...:  ", true)
+local SessionLabel = MainTab:AddLabel("Session: 0s:  ", true)
+MainTab:AddButton({ Text = "Teleport: Base",
     Callback = function() FireRemote("TeleportToBase") end
 }))
-MainTab:CreateButton({
-    Name = "Teleport: Market",
+MainTab:AddButton({ Text = "Teleport: Market",
     Callback = function() FireRemote("TeleportToMarket") end
 }))
-local CashLabel = MainTab:CreateParagraph({ Title = "Cash: ...", Content = " " })
-local AltarLabel = MainTab:CreateParagraph({ Title = "Altars: ...", Content = " " })
-local PedestalLabel = MainTab:CreateParagraph({ Title = "Rolling stars: ...", Content = " " })
+local CashLabel = MainTab:AddLabel("Cash: ...:  ", true)
+local AltarLabel = MainTab:AddLabel("Altars: ...:  ", true)
+local PedestalLabel = MainTab:AddLabel("Rolling stars: ...:  ", true)
 ------------------------------------------------------------
 -- 9. Farming tab
 ------------------------------------------------------------
 Toggles.AutoPlace = false
-FarmingTab:CreateToggle({ Name = "Auto Place Best Stars", CurrentValue = false,
+FarmingTab:AddToggle("AutoPlaceBestStars", {  Text = "Auto Place Best Stars", Default = false,
     Callback = function(v) Toggles.AutoPlace = v end
-})
+ })
 Toggles.AutoUnlock = false
-FarmingTab:CreateToggle({ Name = "Auto Unlock Altars", CurrentValue = false,
+FarmingTab:AddToggle("AutoUnlockAltars", {  Text = "Auto Unlock Altars", Default = false,
     Callback = function(v) Toggles.AutoUnlock = v end
-})
+ })
 Toggles.AutoCollect = false
-FarmingTab:CreateToggle({ Name = "Auto Collect Income", CurrentValue = false,
+FarmingTab:AddToggle("AutoCollectIncome", {  Text = "Auto Collect Income", Default = false,
     Callback = function(v) Toggles.AutoCollect = v end
-})
+ })
 Toggles.AutoTrash = false
-FarmingTab:CreateToggle({ Name = "Auto Trash Stars", CurrentValue = false,
+FarmingTab:AddToggle("AutoTrashStars", {  Text = "Auto Trash Stars", Default = false,
     Callback = function(v) Toggles.AutoTrash = v end
-})
+ })
 OPTIONS = OPTIONS or {}
 Options.TrashRarities = {"Common"}
-FarmingTab:CreateDropdown({
-    Name = "Rarities To Trash",
+FarmingTab:AddDropdown("RaritiesToTrash", { 
+    Text = "Rarities To Trash",
     Options = RARITIES,
-    MultipleOptions = true,
-    SearchAfter = 6,
+    Multi = true,
     Callback = function(state) Options.TrashRarities = state end
-}))
+ }))
 ------------------------------------------------------------
 -- 10. Roll & Buy tab
 ------------------------------------------------------------
 Toggles.AutoRoll = false
-RollBuyTab:CreateToggle({ Name = "Auto Roll Stars", CurrentValue = false,
+RollBuyTab:AddToggle("AutoRollStars", {  Text = "Auto Roll Stars", Default = false,
     Callback = function(v) Toggles.AutoRoll = v end
-})
+ })
 Options.RollStopRarity = "Legendary"
-RollBuyTab:CreateDropdown({
-    Name = "Stop On Rarity",
+RollBuyTab:AddDropdown("StopOnRarity", { 
+    Text = "Stop On Rarity",
     Options = RARITIES,
     Callback = function(state) Options.RollStopRarity = state end
-}))
+ }))
 Toggles.RollStopEnabled = false
-RollBuyTab:CreateToggle({ Name = "Stop Rolling On Target+", CurrentValue = false,
+RollBuyTab:AddToggle("StopRollingOnTarget", {  Text = "Stop Rolling On Target+", Default = false,
     Callback = function(v) Toggles.RollStopEnabled = v end
-})
+ })
 Toggles.AutoBuyStars = false
-RollBuyTab:CreateToggle({ Name = "Auto Buy Stars", CurrentValue = false,
+RollBuyTab:AddToggle("AutoBuyStars", {  Text = "Auto Buy Stars", Default = false,
     Callback = function(v) Toggles.AutoBuyStars = v end
-})
+ })
 Options.BuyStarRarities = RARITIES
-RollBuyTab:CreateDropdown({
-    Name = "Rarities To Buy",
+RollBuyTab:AddDropdown("RaritiesToBuy", { 
+    Text = "Rarities To Buy",
     Options = RARITIES,
-    MultipleOptions = true,
-    SearchAfter = 6,
+    Multi = true,
     Callback = function(state) Options.BuyStarRarities = state end
-}))
+ }))
 ------------------------------------------------------------
 -- 11. Upgrades tab
 ------------------------------------------------------------
 Toggles.AutoLuck = false
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Star Luck", CurrentValue = false,
+UpgradesTab:AddToggle("AutoUpgradeStarLuck", {  Text = "Auto Upgrade Star Luck", Default = false,
     Callback = function(v) Toggles.AutoLuck = v end
-})
+ })
 Toggles.AutoPedestal = false
-UpgradesTab:CreateToggle({ Name = "Auto Add Pedestals", CurrentValue = false,
+UpgradesTab:AddToggle("AutoAddPedestals", {  Text = "Auto Add Pedestals", Default = false,
     Callback = function(v) Toggles.AutoPedestal = v end
-})
+ })
 ------------------------------------------------------------
 -- 12. Shops tab
 ------------------------------------------------------------
 Toggles.AutoMut = false
-ShopsTab:CreateToggle({ Name = "Auto Buy Mutation Items", CurrentValue = false,
+ShopsTab:AddToggle("AutoBuyMutationItems", {  Text = "Auto Buy Mutation Items", Default = false,
     Callback = function(v) Toggles.AutoMut = v end
-})
+ })
 Options.MutItems = MUTATION_IDS
-ShopsTab:CreateDropdown({
-    Name = "Mutation Items",
+ShopsTab:AddDropdown("MutationItems", { 
+    Text = "Mutation Items",
     Options = MUTATION_IDS,
-    MultipleOptions = true,
-    SearchAfter = 6,
+    Multi = true,
     Callback = function(state) Options.MutItems = state end
-}))
+ }))
 Toggles.AutoEgg = false
-ShopsTab:CreateToggle({ Name = "Auto Buy Pet Eggs", CurrentValue = false,
+ShopsTab:AddToggle("AutoBuyPetEggs", {  Text = "Auto Buy Pet Eggs", Default = false,
     Callback = function(v) Toggles.AutoEgg = v end
-})
+ })
 Options.EggItems = EGG_NAMES
-ShopsTab:CreateDropdown({
-    Name = "Pet Eggs",
+ShopsTab:AddDropdown("PetEggs", { 
+    Text = "Pet Eggs",
     Options = EGG_NAMES,
-    MultipleOptions = true,
-    SearchAfter = 6,
+    Multi = true,
     Callback = function(state) Options.EggItems = state end
-}))
+ }))
 Toggles.AutoGear = false
-ShopsTab:CreateToggle({ Name = "Auto Buy Gear", CurrentValue = false,
+ShopsTab:AddToggle("AutoBuyGear", {  Text = "Auto Buy Gear", Default = false,
     Callback = function(v) Toggles.AutoGear = v end
-})
+ })
 Options.GearItems = GEAR_IDS
-ShopsTab:CreateDropdown({
-    Name = "Gear",
+ShopsTab:AddDropdown("Gear", { 
+    Text = "Gear",
     Options = GEAR_IDS,
-    MultipleOptions = true,
-    SearchAfter = 6,
+    Multi = true,
     Callback = function(state) Options.GearItems = state end
-}))
+ }))
 Options.GearQty = "1"
 ShopsTab:CreateDropdown({
     Name = "Quantity",
@@ -379,11 +372,10 @@ ShopsTab:CreateDropdown({
 -- 13. Settings tab
 ------------------------------------------------------------
 Toggles.AntiAFK = true
-SettingsTab:CreateToggle({ Name = "Anti-AFK", CurrentValue = true,
+SettingsTab:AddToggle("AntiAFK", {  Text = "Anti-AFK", Default = true,
     Callback = function(v) Toggles.AntiAFK = v end
-})
-SettingsTab:CreateButton({
-    Name = "Unload Stealth",
+ })
+SettingsTab:AddButton({ Text = "Unload Stealth",
     Description = "Removes the menu and stops all automation",
     Callback = function()
         Unloaded = true
@@ -528,9 +520,9 @@ task.spawn(function()
         task.wait(1)
     end
 end)
-Rayfield:Notify({
+Library:Notify({
     Name = "Stealth",
     Content = gameName .. " loaded! Press RightShift",
     Duration = 4
 }))
-print("[Stealth] Loaded " .. gameName .. " via Rayfield")
+print("[Stealth] Loaded " .. gameName .. " via Library")

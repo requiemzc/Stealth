@@ -1,12 +1,12 @@
 -- [[ Stealth | Jump for Animals ]]
 --
 -- Original: Ouroboros Hub @hidevin (ObsidianUltra)
--- Converted to Rayfield for Stealth Hub.
+-- Converted to Library for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- Game: Jump for Animals
 ------------------------------------------------------------
--- 1. Identity elevation (Rayfield needs executor-level identity)
+-- 1. Identity elevation (Library needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -56,11 +56,11 @@ if not _taskPatched then
     end)
 end
 ------------------------------------------------------------
--- 2. Load Rayfield
+-- 2. Load Library
 ------------------------------------------------------------
-local Rayfield = getgenv().StealthRayfield or loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+local Library = getgenv().StealthObsidian or loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 end
-if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
+if not Library then warn("[Stealth] Failed to load Library UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
 -- 3. State tables (mirror ObsidianUltra Toggles/Options pattern)
@@ -74,7 +74,7 @@ local Library = {
     ShowCustomCursor = true
 })
 function Library:Notify(opts)
-    Rayfield:Notify({
+    Library:Notify({
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3
@@ -100,7 +100,7 @@ local LocalPlayer = Players.LocalPlayer
 local gameName = "Jump for Animals"
 local Remotes = ReplicatedStorage:WaitForChild("Remotes", 15)
 if not Remotes then
-    Rayfield:Notify({
+    Library:Notify({
         Name = "Stealth",
         Content = "Remotes folder not found. Join the game first.",
         Duration = 6
@@ -312,9 +312,9 @@ local function formatClock(seconds)
     return string.format("%02d:%02d:%02d", hours, minutes, secs)
 end
 ------------------------------------------------------------
--- 6. Create Rayfield window
+-- 6. Create Library window
 ------------------------------------------------------------
-local Window = Rayfield:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
+local Window = Library:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
     Topbar = {
         Height = 44,
         ButtonsType = "Mac"
@@ -333,14 +333,14 @@ end
 ------------------------------------------------------------
 -- 8. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab("Dashboard")
-local TrainingTab = Window:CreateTab("Training")
-local EggTab = Window:CreateTab("Eggs")
-local SellingTab = Window:CreateTab("Selling")
-local RewardsTab = Window:CreateTab("Rewards")
-local ShopsTab = Window:CreateTab("Shops")
-local UpgradesTab = Window:CreateTab("Upgrades")
-local SettingsTab = Window:CreateTab("Config")
+local MainTab = Window:AddTab({ Name = "Dashboard" })
+local TrainingTab = Window:AddTab({ Name = "Training" })
+local EggTab = Window:AddTab({ Name = "Eggs" })
+local SellingTab = Window:AddTab({ Name = "Selling" })
+local RewardsTab = Window:AddTab({ Name = "Rewards" })
+local ShopsTab = Window:AddTab({ Name = "Shops" })
+local UpgradesTab = Window:AddTab({ Name = "Upgrades" })
+local SettingsTab = Window:AddTab({ Name = "Config" })
 ------------------------------------------------------------
 -- 9. Build options data
 ------------------------------------------------------------
@@ -365,7 +365,7 @@ if #ZoneNames == 0 then
     ZoneNames = { "Meadow", "Coral Reef", "Winter", "Desert", "Crystal Mines", "Jungle", "Mystic Isles", "Prehistoric", "Celestial Heights", "Savannah" }
 end
 local function notify(title, description, kind)
-    Rayfield:Notify({
+    Library:Notify({
         Name = title,
         Content = description or "",
         Duration = 5
@@ -374,33 +374,33 @@ end
 ------------------------------------------------------------
 -- 10. Dashboard tab
 ------------------------------------------------------------
-local MainBox = MainTab:CreateLabel({ Text = "Game: " .. gameName})
-local StatusSession = MainTab:CreateParagraph({ Title = "Session: 00:00:00", Content = " " })
-local StatusCash = MainTab:CreateParagraph({ Title = "Cash: 0", Content = " " })
-local StatusLevel = MainTab:CreateParagraph({ Title = "Level: 0", Content = " " })
-local StatusEggs = MainTab:CreateParagraph({ Title = "Carried eggs: 0 | Placed: 0", Content = " " })
-local StatusSquat = MainTab:CreateParagraph({ Title = "Squatting: false", Content = " " })
+local MainBox = MainTab:AddLabel("Game: ")
+local StatusSession = MainTab:AddLabel("Session: 00:00:00:  ", true)
+local StatusCash = MainTab:AddLabel("Cash: 0:  ", true)
+local StatusLevel = MainTab:AddLabel("Level: 0:  ", true)
+local StatusEggs = MainTab:AddLabel("Carried eggs: 0 | Placed: 0:  ", true)
+local StatusSquat = MainTab:AddLabel("Squatting: false:  ", true)
 ------------------------------------------------------------
 -- 11. Training tab
 ------------------------------------------------------------
 local TrainingBox = TrainingTab:AddLeftGroupbox and TrainingTab:AddLeftGroupbox("Squats") or TrainingTab
--- Rayfield doesn't have AddLeftGroupbox; use the tab directly
+-- Library doesn't have AddLeftGroupbox; use the tab directly
 registerToggle("AutoTrain", false)
-TrainingTab:CreateToggle({ Name = "Auto Train Squats", CurrentValue = false,
+TrainingTab:AddToggle("AutoTrainSquats", {  Text = "Auto Train Squats", Default = false,
     Callback = function(state) Toggles.AutoTrain.Value = state end
-})
+ })
 registerToggle("AutoSquatBonus", false)
-TrainingTab:CreateToggle({ Name = "Auto Claim Squat Bonus", CurrentValue = false,
+TrainingTab:AddToggle("AutoClaimSquatBonus", {  Text = "Auto Claim Squat Bonus", Default = false,
     Callback = function(state) Toggles.AutoSquatBonus.Value = state end
-})
-TrainingTab:CreateParagraph({ Title = "Squatting is server controlled; training pauses while you carry an egg.", Content = " " })
+ })
+TrainingTab:AddLabel("Squatting is server controlled; training pauses while you carry an egg.:  ", true)
 ------------------------------------------------------------
 -- 12. Eggs tab
 ------------------------------------------------------------
 registerToggle("AutoSteal", false)
-EggTab:CreateToggle({ Name = "Auto Steal Eggs", CurrentValue = false,
+EggTab:AddToggle("AutoStealEggs", {  Text = "Auto Steal Eggs", Default = false,
     Callback = function(state) Toggles.AutoSteal.Value = state end
-})
+ })
 registerOption("StealMode", "Best Egg")
 EggTab:CreateDropdown({
     Name = "Target",
@@ -409,26 +409,24 @@ EggTab:CreateDropdown({
     Callback = function(state) Options.StealMode.Value = state end
 }))
 registerOption("StealZones", {})
-EggTab:CreateDropdown({
-    Name = "Zones",
+EggTab:AddDropdown("Zones", { 
+    Text = "Zones",
     Options = ZoneNames,
-    MultipleOptions = true,
-    SearchAfter = 6,
+    Multi = true,
     Description = "Only steal eggs from these zones",
     Callback = function(state) Options.StealZones.Value = state end
-}))
+ }))
 registerOption("StealRarities", {})
-EggTab:CreateDropdown({
-    Name = "Rarities",
+EggTab:AddDropdown("Rarities", { 
+    Text = "Rarities",
     Options = RarityNames,
-    MultipleOptions = true,
-    SearchAfter = 6,
+    Multi = true,
     Description = "Only steal eggs of these rarities",
     Callback = function(state) Options.StealRarities.Value = state end
-}))
+ }))
 registerOption("StealDelay", 5)
-local StealDelaySlider = EggTab:CreateSlider({
-    Name = "Train Between Steals",
+local StealDelaySlider = EggTab:AddSlider("TrainBetweenSteals", { 
+    Text = "Train Between Steals",
     Default = 5,
     Min = 0,
     Max = 60,
@@ -436,23 +434,23 @@ local StealDelaySlider = EggTab:CreateSlider({
     Suffix = "s",
     Description = "After each egg is placed, train squats for this long before stealing again",
     Callback = function(state) Options.StealDelay.Value = state end
-}))
+ }))
 registerToggle("AutoPlace", false)
-EggTab:CreateToggle({ Name = "Auto Place Stolen Eggs", CurrentValue = false,
+EggTab:AddToggle("AutoPlaceStolenEggs", {  Text = "Auto Place Stolen Eggs", Default = false,
     Callback = function(state) Toggles.AutoPlace.Value = state end
-})
+ })
 registerToggle("AutoHatch", false)
-EggTab:CreateToggle({ Name = "Auto Hatch Ready Eggs", CurrentValue = false,
+EggTab:AddToggle("AutoHatchReadyEggs", {  Text = "Auto Hatch Ready Eggs", Default = false,
     Callback = function(state) Toggles.AutoHatch.Value = state end
-})
-EggTab:CreateParagraph({ Title = "Carrying an egg disables jumping. Auto Place moves it to your plot so the loop continues.", Content = " " })
+ })
+EggTab:AddLabel("Carrying an egg disables jumping. Auto Place moves it to your plot so the loop continues.:  ", true)
 ------------------------------------------------------------
 -- 13. Selling tab
 ------------------------------------------------------------
 registerToggle("AutoSell", false)
-SellingTab:CreateToggle({ Name = "Auto Sell Junk Pets", CurrentValue = false,
+SellingTab:AddToggle("AutoSellJunkPets", {  Text = "Auto Sell Junk Pets", Default = false,
     Callback = function(state) Toggles.AutoSell.Value = state end
-})
+ })
 registerOption("SellMode", "Lowest CPS First")
 SellingTab:CreateDropdown({
     Name = "Mode",
@@ -461,43 +459,42 @@ SellingTab:CreateDropdown({
     Callback = function(state) Options.SellMode.Value = state end
 }))
 registerOption("AutoSellPet", AnimalNames[1] or "None")
-SellingTab:CreateDropdown({
-    Name = "Chosen Pet",
+SellingTab:AddDropdown("ChosenPet", { 
+    Text = "Chosen Pet",
     Options = AnimalNames,
     Default = AnimalNames[1] or "None",
-    SearchAfter = 6,
     Description = "Only used when Mode is Chosen Pet",
     Callback = function(state) Options.AutoSellPet.Value = state end
-}))
+ }))
 registerOption("SellMaxCps", "1000")
-SellingTab:CreateInput({
-    Name = "Max CPS To Sell",
+SellingTab:AddInput("MaxCPSToSell", { 
+    Text = "Max CPS To Sell",
     Default = "1000",
     Placeholder = "1000",
     Numeric = true,
     Description = "Lowest CPS First mode never sells pets above this value",
     Callback = function(state) Options.SellMaxCps.Value = state end
-}))
-SellingTab:CreateParagraph({ Title = "Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets.", Content = " " })
+ }))
+SellingTab:AddLabel("Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets.:  ", true)
 ------------------------------------------------------------
 -- 14. Rewards tab
 ------------------------------------------------------------
 registerToggle("AutoOffline", false)
-RewardsTab:CreateToggle({ Name = "Auto Claim Offline Cash", CurrentValue = false,
+RewardsTab:AddToggle("AutoClaimOfflineCash", {  Text = "Auto Claim Offline Cash", Default = false,
     Callback = function(state) Toggles.AutoOffline.Value = state end
-})
+ })
 registerToggle("AutoIndex", false)
-RewardsTab:CreateToggle({ Name = "Auto Claim Animal Index Rewards", CurrentValue = false,
+RewardsTab:AddToggle("AutoClaimAnimalIndexRewards", {  Text = "Auto Claim Animal Index Rewards", Default = false,
     Callback = function(state) Toggles.AutoIndex.Value = state end
-})
-RewardsTab:CreateParagraph({ Title = "Index rewards are claimed with a single claim-all request. Offline cash is claimed whenever a balance is waiting.", Content = " " })
+ })
+RewardsTab:AddLabel("Index rewards are claimed with a single claim-all request. Offline cash is claimed whenever a balance is waiting.:  ", true)
 ------------------------------------------------------------
 -- 15. Shops tab
 ------------------------------------------------------------
 registerToggle("AutoBuyCoils", false)
-ShopsTab:CreateToggle({ Name = "Auto Buy Coils", CurrentValue = false,
+ShopsTab:AddToggle("AutoBuyCoils", {  Text = "Auto Buy Coils", Default = false,
     Callback = function(state) Toggles.AutoBuyCoils.Value = state end
-})
+ })
 registerOption("BuyCoilList", {})
 ShopsTab:CreateDropdown({
     Name = "Coils",
@@ -507,13 +504,13 @@ ShopsTab:CreateDropdown({
     Callback = function(state) Options.BuyCoilList.Value = state end
 }))
 registerToggle("AutoEquipCoil", false)
-ShopsTab:CreateToggle({ Name = "Auto Equip Best Coil", CurrentValue = false,
+ShopsTab:AddToggle("AutoEquipBestCoil", {  Text = "Auto Equip Best Coil", Default = false,
     Callback = function(state) Toggles.AutoEquipCoil.Value = state end
-})
+ })
 registerToggle("AutoBuyTrails", false)
-ShopsTab:CreateToggle({ Name = "Auto Buy Trails", CurrentValue = false,
+ShopsTab:AddToggle("AutoBuyTrails", {  Text = "Auto Buy Trails", Default = false,
     Callback = function(state) Toggles.AutoBuyTrails.Value = state end
-})
+ })
 registerOption("BuyTrailList", {})
 ShopsTab:CreateDropdown({
     Name = "Trails",
@@ -523,20 +520,20 @@ ShopsTab:CreateDropdown({
     Callback = function(state) Options.BuyTrailList.Value = state end
 }))
 registerToggle("AutoEquipTrail", false)
-ShopsTab:CreateToggle({ Name = "Auto Equip Best Trail", CurrentValue = false,
+ShopsTab:AddToggle("AutoEquipBestTrail", {  Text = "Auto Equip Best Trail", Default = false,
     Callback = function(state) Toggles.AutoEquipTrail.Value = state end
-})
+ })
 ------------------------------------------------------------
 -- 16. Upgrades tab
 ------------------------------------------------------------
 registerToggle("AutoBarbell", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Barbell", CurrentValue = false,
+UpgradesTab:AddToggle("AutoUpgradeBarbell", {  Text = "Auto Upgrade Barbell", Default = false,
     Callback = function(state) Toggles.AutoBarbell.Value = state end
-})
+ })
 registerToggle("AutoAddMutation", false)
-UpgradesTab:CreateToggle({ Name = "Auto Add Pets To Mutation Machine", CurrentValue = false,
+UpgradesTab:AddToggle("AutoAddPetsToMutationMachine", {  Text = "Auto Add Pets To Mutation Machine", Default = false,
     Callback = function(state) Toggles.AutoAddMutation.Value = state end
-})
+ })
 registerOption("MutationMode", "Auto Select")
 UpgradesTab:CreateDropdown({
     Name = "Pet Choice",
@@ -545,30 +542,28 @@ UpgradesTab:CreateDropdown({
     Callback = function(state) Options.MutationMode.Value = state end
 }))
 registerOption("MutationAnimal", AnimalNames[1] or "None")
-UpgradesTab:CreateDropdown({
-    Name = "Chosen Animal",
+UpgradesTab:AddDropdown("ChosenAnimal", { 
+    Text = "Chosen Animal",
     Options = AnimalNames,
     Default = AnimalNames[1] or "None",
-    SearchAfter = 6,
     Callback = function(state) Options.MutationAnimal.Value = state end
-}))
+ }))
 registerToggle("AutoClaimMutation", false)
-UpgradesTab:CreateToggle({ Name = "Auto Claim Gold Mutation", CurrentValue = false,
+UpgradesTab:AddToggle("AutoClaimGoldMutation", {  Text = "Auto Claim Gold Mutation", Default = false,
     Callback = function(state) Toggles.AutoClaimMutation.Value = state end
-})
+ })
 registerToggle("AutoReturnMutation", false)
-UpgradesTab:CreateToggle({ Name = "Auto Return Mutation Pets", CurrentValue = false,
+UpgradesTab:AddToggle("AutoReturnMutationPets", {  Text = "Auto Return Mutation Pets", Default = false,
     Callback = function(state) Toggles.AutoReturnMutation.Value = state end
-})
+ })
 ------------------------------------------------------------
 -- 17. Settings tab
 ------------------------------------------------------------
 registerToggle("AntiAFK", true)
-SettingsTab:CreateToggle({ Name = "Anti-AFK", CurrentValue = true,
+SettingsTab:AddToggle("AntiAFK", {  Text = "Anti-AFK", Default = true,
     Callback = function(state) Toggles.AntiAFK.Value = state end
-})
-SettingsTab:CreateButton({
-    Name = "Unload Stealth",
+ })
+SettingsTab:AddButton({ Text = "Unload Stealth",
     Description = "Removes the menu and stops all automation",
     Callback = function()
         Library:Unload()
@@ -1179,4 +1174,4 @@ task.spawn(function()
     end
 end)
 notify("Stealth", "Loaded for " .. gameName .. ". RightShift toggles the menu.")
-print("[Stealth] Loaded " .. gameName .. " via Rayfield")
+print("[Stealth] Loaded " .. gameName .. " via Library")

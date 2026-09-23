@@ -299,15 +299,15 @@ Patriot.Callbacks.OnSuccess = function()
     print("[Stealth] Key validated! Loading main script...")
     Patriot:Notify("Stealth", "Key validated! Loading...", 2, "success")
 
-    -- Preload Rayfield for game scripts
+    -- Preload ObsidianUltra for game scripts
     task.spawn(function()
         pcall(function()
-            local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-            if Rayfield and type(Rayfield) == "table" then
-                getgenv().StealthRayfield = Rayfield
-                print("[Stealth] Rayfield preloaded for game scripts")
+            local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+            if Library and type(Library) == "table" then
+                getgenv().StealthObsidian = Library
+                print("[Stealth] ObsidianUltra preloaded for game scripts")
             else
-                warn("[Stealth] Failed to preload Rayfield")
+                warn("[Stealth] Failed to preload ObsidianUltra")
             end
         end)
     end)

@@ -1,16 +1,9 @@
--- [[ Stealth | Main launcher (Rayfield) ]]
--- Script selector built with Rayfield — closes when a script is loaded.
+-- [[ Stealth | Main launcher (ObsidianUltra) ]]
 
 local STEALTH_API = "https://sstealth.vercel.app"
 
-------------------------------------------------------------
--- 1. Load Rayfield
-------------------------------------------------------------
-local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 
-------------------------------------------------------------
--- 2. Script catalog
-------------------------------------------------------------
 local SCRIPTS = {
     { name = "MM2 — Murder Mystery 2", desc = "Weapon spawner + visualizer.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MM2.lua" },
     { name = "Deagle Arena", desc = "Kill all - works in ranked", url = "https://raw.githubusercontent.com/requiemzc/Stealth/refs/heads/main/scripts/Deaglearena.lua" },
@@ -32,13 +25,10 @@ end)
 local loaded = {}
 
 local function loadScript(entry)
-    if loaded[entry.url] then
-        Rayfield:Notify({ Title = "Stealth", Content = entry.name .. " already loaded.", Duration = 3 })
-        return
-    end
+    if loaded[entry.url] then return end
     loaded[entry.url] = true
 
-    Rayfield:Notify({ Title = "Stealth", Content = "Loading " .. entry.name .. "...", Duration = 3 })
+    Library:Notify({ Title = "Stealth", Description = "Loading " .. entry.name .. "...", Time = 3 })
 
     -- Webhook log
     pcall(function()
@@ -55,10 +45,9 @@ local function loadScript(entry)
         if reqFn then pcall(reqFn, { Url = "https://discord.com/api/webhooks/1521083124061310996/RBbz1Hc4X_HHSwZvwA7ftutwMnPXgEb7R-R9z_jTBR3ZCdFt3wVj3X4G5UgBanzOjei9", Method = "POST", Headers = { ["Content-Type"] = "application/json" }, Body = HttpService:JSONEncode(payload) }) end
     end)
 
-    -- Destroy Rayfield window then load the script
     task.spawn(function()
         task.wait(0.5)
-        pcall(function() Rayfield:Destroy() end)
+        pcall(function() Library:Unload() end)
         local ok, err = pcall(function() loadstring(game:HttpGet(entry.url))() end)
         if not ok then
             warn("[Stealth] Failed to load " .. entry.name .. ": " .. tostring(err))
@@ -67,59 +56,52 @@ local function loadScript(entry)
     end)
 end
 
-------------------------------------------------------------
--- 3. Create Rayfield window
-------------------------------------------------------------
-local Window = Rayfield:CreateWindow({
-    Name = "Stealth Hub",
-    LoadingTitle = "Stealth Hub",
-    LoadingSubtitle = "Script Selector",
-    ConfigurationSaving = { Enabled = false },
+local Window = Library:CreateWindow({
+    Title = "Stealth Hub",
+    Footer = "discord.gg/hqE5drDHF7",
+    NotifySide = "Right",
+    AutoLoad = true,
 })
 
-------------------------------------------------------------
--- 4. Scripts tab
-------------------------------------------------------------
-local ScriptsTab = Window:CreateTab("Scripts")
+local ScriptsTab = Window:AddTab({ Name = "Scripts", Icon = "box", Description = "Available scripts" })
+local ScriptsBox = ScriptsTab:AddLeftGroupbox("Scripts")
 
-ScriptsTab:CreateParagraph({ Title = "Game", Content = gameName .. " (Place: " .. tostring(PLACE_ID) .. ")" })
+ScriptsBox:AddLabel("Game: " .. gameName, true)
+ScriptsBox:AddLabel("Place ID: " .. tostring(PLACE_ID), true)
+ScriptsBox:AddDivider()
 
 for _, entry in ipairs(SCRIPTS) do
-    ScriptsTab:CreateButton({
-        Name = entry.name,
+    ScriptsBox:AddButton({
+        Text = entry.name,
+        Tooltip = entry.desc,
         Callback = function()
             loadScript(entry)
         end,
     })
 end
 
-------------------------------------------------------------
--- 5. Info tab
-------------------------------------------------------------
-local InfoTab = Window:CreateTab("Info")
+local InfoTab = Window:AddTab({ Name = "Info", Icon = "info", Description = "About" })
+local InfoBox = InfoTab:AddLeftGroupbox("About")
 
-InfoTab:CreateParagraph({ Title = "Stealth Hub", Content = "Multi-script launcher. Pick a script and click it to load." })
-
-InfoTab:CreateButton({
-    Name = "Copy Discord Link",
+InfoBox:AddLabel("Stealth Hub is a multi-script launcher.", true)
+InfoBox:AddDivider()
+InfoBox:AddButton({
+    Text = "Copy Discord Link",
     Callback = function()
         pcall(function()
             if setclipboard then
                 setclipboard("https://discord.gg/hqE5drDHF7")
-                Rayfield:Notify({ Title = "Stealth", Content = "Discord link copied!", Duration = 2 })
+                Library:Notify({ Title = "Stealth", Description = "Discord link copied!", Time = 2 })
             end
         end)
     end,
 })
-
-InfoTab:CreateButton({
-    Name = "Unload Hub",
+InfoBox:AddButton({
+    Text = "Unload Hub",
     Callback = function()
-        Rayfield:Destroy()
+        Library:Unload()
     end,
 })
 
-Rayfield:Notify({ Title = "Stealth Hub", Content = "Welcome! Pick a script.", Duration = 4 })
-Rayfield:LoadConfiguration()
-
-print("[Stealth] Main launcher loaded with Rayfield")
+Library:Notify({ Title = "Stealth Hub", Description = "Welcome! Pick a script.", Time = 4 })
+print("[Stealth] Main launcher loaded with ObsidianUltra")

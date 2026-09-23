@@ -1,12 +1,12 @@
 -- [[ Stealth | Chapter 1 (FARMHOUSE) ]]
 --
 -- Original: Ouroboros Hub @hidevin (ObsidianUltra)
--- Converted to Rayfield for Stealth Hub.
+-- Converted to Library for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- GameId 10756011174 | PlaceId 108628039999641
 ------------------------------------------------------------
--- 1. Identity elevation (Rayfield needs executor-level identity)
+-- 1. Identity elevation (Library needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -91,11 +91,11 @@ if not _taskPatched and hookfunction then
     end)
 end
 ------------------------------------------------------------
--- 2. Load Rayfield
+-- 2. Load Library
 ------------------------------------------------------------
-local Rayfield = getgenv().StealthRayfield or loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+local Library = getgenv().StealthObsidian or loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 end
-if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
+if not Library then warn("[Stealth] Failed to load Library UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
 -- 3. State tables (mirror ObsidianUltra Toggles/Options pattern
@@ -110,7 +110,7 @@ local Library = {
     ShowCustomCursor = true
 })
 function Library:Notify(opts)
-    Rayfield:Notify({
+    Library:Notify({
         Name = opts.Title or "Stealth",
         Content = opts.Description or "",
         Duration = opts.Time or 3
@@ -154,9 +154,9 @@ local BarnShop = Workspace:WaitForChild("BarnShop")
 local DroppedHayFolder = Workspace:FindFirstChild("DroppedHay")
 local GemsClientFolder = Workspace:FindFirstChild("GemsClient")
 ------------------------------------------------------------
--- 5. Create Rayfield window
+-- 5. Create Library window
 ------------------------------------------------------------
-local Window = Rayfield:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
+local Window = Library:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
     Topbar = {
         Height = 44,
         ButtonsType = "Mac"
@@ -175,14 +175,14 @@ end
 ------------------------------------------------------------
 -- 7. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab("Dashboard")
-local CollectingTab = Window:CreateTab("Collecting")
-local SellingTab = Window:CreateTab("Selling")
-local ToolsTab = Window:CreateTab("Tools")
-local NeedleTab = Window:CreateTab("Needle")
-local ShopTab = Window:CreateTab("Shop")
-local UpgradesTab = Window:CreateTab("Upgrades")
-local SettingsTab = Window:CreateTab("Config")
+local MainTab = Window:AddTab({ Name = "Dashboard" })
+local CollectingTab = Window:AddTab({ Name = "Collecting" })
+local SellingTab = Window:AddTab({ Name = "Selling" })
+local ToolsTab = Window:AddTab({ Name = "Tools" })
+local NeedleTab = Window:AddTab({ Name = "Needle" })
+local ShopTab = Window:AddTab({ Name = "Shop" })
+local UpgradesTab = Window:AddTab({ Name = "Upgrades" })
+local SettingsTab = Window:AddTab({ Name = "Config" })
 ------------------------------------------------------------
 -- 8. Helpers (from original script, unchanged)
 ------------------------------------------------------------
@@ -376,83 +376,82 @@ end
 ------------------------------------------------------------
 -- 9. MAIN TAB
 ------------------------------------------------------------
-MainTab:CreateSection("Dashboard")})
-MainTab:CreateSection("Game: ") .. gameName, TextTransparency = 0.35})
-MainTab:CreateSection("Hub: Stealth"), TextTransparency = 0.35})
-MainTab:CreateSection("Toggle UI: RightShift or floating button"), TextTransparency = 0.35})
-MainTab:CreateSection("Session")})
+MainTab:AddLeftGroupbox("Dashboard")})
+MainTab:AddLeftGroupbox("Game: ") .. gameName, TextTransparency = 0.35})
+MainTab:AddLeftGroupbox("Hub: Stealth"), TextTransparency = 0.35})
+MainTab:AddLeftGroupbox("Toggle UI: RightShift or floating button"), TextTransparency = 0.35})
+MainTab:AddLeftGroupbox("Session")})
 local sessionLabel
-MainTab:CreateSection("0s elapsed"), TextTransparency = 0.35})
+MainTab:AddLeftGroupbox("0s elapsed"), TextTransparency = 0.35})
 task.spawn(function()
     local s=0
     while true do
         task.wait(1)
         if Library.Unloaded then break end
         s+=1
-        -- Rayfield sections are static; we can't update text in place easily.
+        -- Library sections are static; we can't update text in place easily.
         -- Skip live session update (would need a label element with :SetText).
     end
 end)
-MainTab:CreateSection("Discord")})
-MainTab:CreateButton({
-    Name = "Copy Discord",
+MainTab:AddLeftGroupbox("Discord")})
+MainTab:AddButton({ Text = "Copy Discord",
     Desc = "discord.gg/hqE5drDHF7",
     Color = Color3.fromHex("#5865F2"),
     Justify = "Left",
     IconAlign = "Left",
     Callback = function()
         pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
-        Rayfield:Notify({
+        Library:Notify({
             Name = "Discord",
             Content = "Invite copied to clipboard!",
             Duration = 3
 }))
     end
 }))
-MainTab:CreateSection("Status")})
-MainTab:CreateSection("Farming & Inventory tabs hold all automation."), TextTransparency = 0.35})
-MainTab:CreateSection("Settings holds Config & Anti-AFK."), TextTransparency = 0.35})
+MainTab:AddLeftGroupbox("Status")})
+MainTab:AddLeftGroupbox("Farming & Inventory tabs hold all automation."), TextTransparency = 0.35})
+MainTab:AddLeftGroupbox("Settings holds Config & Anti-AFK."), TextTransparency = 0.35})
 ------------------------------------------------------------
 -- 10. COLLECTING TAB
 ------------------------------------------------------------
-CollectingTab:CreateSection("Resource Collecting")})
+CollectingTab:AddLeftGroupbox("Resource Collecting")})
 registerToggle("AutoPickHay", false)
-CollectingTab:CreateToggle({ Name = "Auto Pick Hay", Desc = "Pick hay from stack continuously",
-    CurrentValue = false,
+CollectingTab:AddToggle("AutoPickHay", {  Text = "Auto Pick Hay", Desc = "Pick hay from stack continuously",
+    Default = false,
     Callback = function(v) Toggles.AutoPickHay.Value = v end
-})
+ })
 registerToggle("AutoCollectDroppedHay", false)
-CollectingTab:CreateToggle({ Name = "Auto Collect Dropped Hay", CurrentValue = false,
+CollectingTab:AddToggle("AutoCollectDroppedHay", {  Text = "Auto Collect Dropped Hay", Default = false,
     Callback = function(v) Toggles.AutoCollectDroppedHay.Value = v end
-})
+ })
 registerToggle("AutoCollectGems", false)
-CollectingTab:CreateToggle({ Name = "Auto Collect Gems", CurrentValue = false,
+CollectingTab:AddToggle("AutoCollectGems", {  Text = "Auto Collect Gems", Default = false,
     Callback = function(v) Toggles.AutoCollectGems.Value = v end
-})
+ })
 registerToggle("AutoVacuumCollect", false)
-CollectingTab:CreateToggle({ Name = "Auto Vacuum Collect", Desc = "Uses Vacuum Start/Stop (requires Vacuum tool)",
-    CurrentValue = false,
+CollectingTab:AddToggle("AutoVacuumCollect", {  Text = "Auto Vacuum Collect", Desc = "Uses Vacuum Start/Stop (requires Vacuum tool)",
+    Default = false,
     Callback = function(v) Toggles.AutoVacuumCollect.Value = v end
-})
+ })
 registerOption("CollectInterval", 1)
-CollectingTab:CreateSlider({
-    Name = "Loop Interval",
+CollectingTab:AddSlider("LoopInterval", { 
+    Text = "Loop Interval",
     Value = 1,
     Min = 0.1,
     Max = 3,
     Rounding = 1,
     Suffix = "s",
     Callback = function(v) Options.CollectInterval.Value = v end
-}))
-CollectingTab:CreateSection("Vacuum needs VacuumOwned. Gems within 35 studs."), TextTransparency = 0.35})
+ }))
+CollectingTab:AddLeftGroupbox("Vacuum needs VacuumOwned. Gems within 35 studs."), TextTransparency = 0.35})
 ------------------------------------------------------------
 -- 11. SELLING TAB
 ------------------------------------------------------------
-SellingTab:CreateSection("Selling")})
+SellingTab:AddLeftGroupbox("Selling")})
 registerToggle("AutoSellHay", false)
-SellingTab:CreateToggle({ Name = "Auto Sell Hay", CurrentValue = false,
+SellingTab:AddToggle("AutoSellHay", {  Text = "Auto Sell Hay", Default = false,
     Callback = function(v) Toggles.AutoSellHay.Value = v end
-})
+ })
 registerOption("SellThreshold", 25)
 SellingTab:CreateSlider({
     Name = "Sell When Hay >=",
@@ -461,76 +460,76 @@ SellingTab:CreateSlider({
     Callback = function(v) Options.SellThreshold.Value = v end
 }))
 registerToggle("SellOnlyIfFull", false)
-SellingTab:CreateToggle({ Name = "Only Sell If Full", CurrentValue = false,
+SellingTab:AddToggle("OnlySellIfFull", {  Text = "Only Sell If Full", Default = false,
     Callback = function(v) Toggles.SellOnlyIfFull.Value = v end
-})
-SellingTab:CreateSection("Fires SellHay:FireServer() near cow."), TextTransparency = 0.35})
-SellingTab:CreateSection("VacuumLoad also counts as held."), TextTransparency = 0.35})
+ })
+SellingTab:AddLeftGroupbox("Fires SellHay:FireServer() near cow."), TextTransparency = 0.35})
+SellingTab:AddLeftGroupbox("VacuumLoad also counts as held."), TextTransparency = 0.35})
 ------------------------------------------------------------
 -- 12. TOOLS TAB
 ------------------------------------------------------------
-ToolsTab:CreateSection("Auto Tool Usage")})
+ToolsTab:AddLeftGroupbox("Auto Tool Usage")})
 registerToggle("AutoUseTNT", false)
-ToolsTab:CreateToggle({ Name = "Auto Use TNT", Desc = "Light & throw TNT on cooldown",
-    CurrentValue = false,
+ToolsTab:AddToggle("AutoUseTNT", {  Text = "Auto Use TNT", Desc = "Light & throw TNT on cooldown",
+    Default = false,
     Callback = function(v) Toggles.AutoUseTNT.Value = v end
-})
+ })
 registerToggle("AutoUsePitchfork", false)
-ToolsTab:CreateToggle({ Name = "Auto Use Pitchfork", CurrentValue = false,
+ToolsTab:AddToggle("AutoUsePitchfork", {  Text = "Auto Use Pitchfork", Default = false,
     Callback = function(v) Toggles.AutoUsePitchfork.Value = v end
-})
+ })
 registerToggle("AutoDeployDrone", false)
-ToolsTab:CreateToggle({ Name = "Auto Deploy Drone", CurrentValue = false,
+ToolsTab:AddToggle("AutoDeployDrone", {  Text = "Auto Deploy Drone", Default = false,
     Callback = function(v) Toggles.AutoDeployDrone.Value = v end
-})
+ })
 registerToggle("AutoVacuum", false)
-ToolsTab:CreateToggle({ Name = "Auto Vacuum (Loop)", CurrentValue = false,
+ToolsTab:AddToggle("AutoVacuumLoop", {  Text = "Auto Vacuum (Loop)", Default = false,
     Callback = function(v) Toggles.AutoVacuum.Value = v end
-})
+ })
 registerOption("ToolInterval", 1)
-ToolsTab:CreateSlider({
-    Name = "Tool Interval",
+ToolsTab:AddSlider("ToolInterval", { 
+    Text = "Tool Interval",
     Value = 1,
     Min = 0.2,
     Max = 5,
     Rounding = 1,
     Suffix = "s",
     Callback = function(v) Options.ToolInterval.Value = v end
-}))
-ToolsTab:CreateSection("Requirements"), TextTransparency = 0.5})
-ToolsTab:CreateSection("PitchforkOwned, TntOwned, DroneOwned, VacuumOwned required per tool."), TextTransparency = 0.35})
-ToolsTab:CreateSection("TNT cooldown & vacuum heat managed by server."), TextTransparency = 0.35})
+ }))
+ToolsTab:AddLeftGroupbox("Requirements"), TextTransparency = 0.5})
+ToolsTab:AddLeftGroupbox("PitchforkOwned, TntOwned, DroneOwned, VacuumOwned required per tool."), TextTransparency = 0.35})
+ToolsTab:AddLeftGroupbox("TNT cooldown & vacuum heat managed by server."), TextTransparency = 0.35})
 ------------------------------------------------------------
 -- 13. NEEDLE TAB
 ------------------------------------------------------------
-NeedleTab:CreateSection("Needle")})
+NeedleTab:AddLeftGroupbox("Needle")})
 registerToggle("AutoFindNeedle", false)
-NeedleTab:CreateToggle({ Name = "Auto Find Needle", Desc = "Continuously pick around pile center to reveal needle",
-    CurrentValue = false,
+NeedleTab:AddToggle("AutoFindNeedle", {  Text = "Auto Find Needle", Desc = "Continuously pick around pile center to reveal needle",
+    Default = false,
     Callback = function(v) Toggles.AutoFindNeedle.Value = v end
-})
+ })
 registerToggle("AutoHandInNeedle", false)
-NeedleTab:CreateToggle({ Name = "Auto Hand In Needle", Desc = "Fires NeedleHandIn when near NPC",
-    CurrentValue = false,
+NeedleTab:AddToggle("AutoHandInNeedle", {  Text = "Auto Hand In Needle", Desc = "Fires NeedleHandIn when near NPC",
+    Default = false,
     Callback = function(v) Toggles.AutoHandInNeedle.Value = v end
-})
+ })
 registerOption("NeedleInterval", 1)
-NeedleTab:CreateSlider({
-    Name = "Needle Interval",
+NeedleTab:AddSlider("NeedleInterval", { 
+    Text = "Needle Interval",
     Value = 1,
     Min = 0.2,
     Max = 3,
     Rounding = 1,
     Suffix = "s",
     Callback = function(v) Options.NeedleInterval.Value = v end
-}))
-NeedleTab:CreateSection("How Needle Works"), TextTransparency = 0.5})
-NeedleTab:CreateSection("Needle spawns under hay. Removing hay reveals it."), TextTransparency = 0.35})
-NeedleTab:CreateSection("Pile center from Config.PILE_CENTER used for automation."), TextTransparency = 0.35})
+ }))
+NeedleTab:AddLeftGroupbox("How Needle Works"), TextTransparency = 0.5})
+NeedleTab:AddLeftGroupbox("Needle spawns under hay. Removing hay reveals it."), TextTransparency = 0.35})
+NeedleTab:AddLeftGroupbox("Pile center from Config.PILE_CENTER used for automation."), TextTransparency = 0.35})
 ------------------------------------------------------------
 -- 14. SHOP TAB
 ------------------------------------------------------------
-ShopTab:CreateSection("Purchasing")})
+ShopTab:AddLeftGroupbox("Purchasing")})
 registerOption("BuyToolsList", {})
 ShopTab:CreateDropdown({
     Name = "Buy Tools Selection",
@@ -538,28 +537,27 @@ ShopTab:CreateDropdown({
     MultipleOptions = true,
     Default = {},
     Callback = function(v)
-        -- Rayfield returns a table for multi-select
+        -- Library returns a table for multi-select
         Options.BuyToolsList.Value = v or {}
     end
 }))
 registerToggle("AutoBuyTools", false)
-ShopTab:CreateToggle({ Name = "Auto Buy Selected Tools", CurrentValue = false,
+ShopTab:AddToggle("AutoBuySelectedTools", {  Text = "Auto Buy Selected Tools", Default = false,
     Callback = function(v) Toggles.AutoBuyTools.Value = v end
-})
+ })
 registerOption("BuyInterval", 1)
-ShopTab:CreateSlider({
-    Name = "Buy Interval",
+ShopTab:AddSlider("BuyInterval", { 
+    Text = "Buy Interval",
     Value = 1,
     Min = 0.5,
     Max = 5,
     Rounding = 1,
     Suffix = "s",
     Callback = function(v) Options.BuyInterval.Value = v end
-}))
-ShopTab:CreateSection("Ownership"), TextTransparency = 0.5})
-ShopTab:CreateSection("Attributes: PitchforkOwned, TntOwned, DroneOwned, VacuumOwned, InfiniteBagOwned"), TextTransparency = 0.35})
-ShopTab:CreateButton({
-    Name = "Check Ownership",
+ }))
+ShopTab:AddLeftGroupbox("Ownership"), TextTransparency = 0.5})
+ShopTab:AddLeftGroupbox("Attributes: PitchforkOwned, TntOwned, DroneOwned, VacuumOwned, InfiniteBagOwned"), TextTransparency = 0.35})
+ShopTab:AddButton({ Text = "Check Ownership",
     Color = Color3.fromHex("#30FF6A"),
     Justify = "Left",
     IconAlign = "Left",
@@ -574,82 +572,81 @@ ShopTab:CreateButton({
 ------------------------------------------------------------
 -- 15. UPGRADES TAB
 ------------------------------------------------------------
-UpgradesTab:CreateSection("Permanent (Gems)")})
+UpgradesTab:AddLeftGroupbox("Permanent (Gems)")})
 registerToggle("UpgBagSize", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Bag Size", Desc = "ExtraHoldAmount -> Gems 25,50,75,100,150,450",
-    CurrentValue = false,
+UpgradesTab:AddToggle("AutoUpgradeBagSize", {  Text = "Auto Upgrade Bag Size", Desc = "ExtraHoldAmount -> Gems 25,50,75,100,150,450",
+    Default = false,
     Callback = function(v) Toggles.UpgBagSize.Value = v end
-})
+ })
 registerToggle("UpgExtraTake", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Hand Grab Amount", CurrentValue = false,
+UpgradesTab:AddToggle("AutoUpgradeHandGrabAmount", {  Text = "Auto Upgrade Hand Grab Amount", Default = false,
     Callback = function(v) Toggles.UpgExtraTake.Value = v end
-})
+ })
 registerToggle("UpgGemValue", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Gem Value", CurrentValue = false,
+UpgradesTab:AddToggle("AutoUpgradeGemValue", {  Text = "Auto Upgrade Gem Value", Default = false,
     Callback = function(v) Toggles.UpgGemValue.Value = v end
-})
+ })
 registerToggle("UpgHayValue", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Hay Value", CurrentValue = false,
+UpgradesTab:AddToggle("AutoUpgradeHayValue", {  Text = "Auto Upgrade Hay Value", Default = false,
     Callback = function(v) Toggles.UpgHayValue.Value = v end
-})
+ })
 registerOption("PermInterval", 1)
-UpgradesTab:CreateSlider({
-    Name = "Permanent Loop",
+UpgradesTab:AddSlider("PermanentLoop", { 
+    Text = "Permanent Loop",
     Value = 1,
     Min = 0.5,
     Max = 5,
     Rounding = 1,
     Suffix = "s",
     Callback = function(v) Options.PermInterval.Value = v end
-}))
-UpgradesTab:CreateSection("Hand Upgrades (Cash)")})
+ }))
+UpgradesTab:AddLeftGroupbox("Hand Upgrades (Cash)")})
 registerToggle("UpgHandSpeed", false)
-UpgradesTab:CreateToggle({ Name = "Auto Hand Speed", Desc = "Speed track 0.55->0.3", CurrentValue = false, Callback = function(v) Toggles.UpgHandSpeed.Value = v end})
+UpgradesTab:AddToggle("AutoHandSpeed", {  Text = "Auto Hand Speed", Desc = "Speed track 0.55->0.3", Default = false, Callback = function(v) Toggles.UpgHandSpeed.Value = v end })
 registerToggle("UpgHandGrab", false)
-UpgradesTab:CreateToggle({ Name = "Auto Hand Grasp", CurrentValue = false, Callback = function(v) Toggles.UpgHandGrab.Value = v end})
+UpgradesTab:AddToggle("AutoHandGrasp", {  Text = "Auto Hand Grasp", Default = false, Callback = function(v) Toggles.UpgHandGrab.Value = v end })
 registerToggle("UpgHandHold", false)
-UpgradesTab:CreateToggle({ Name = "Auto Hand Hold", CurrentValue = false, Callback = function(v) Toggles.UpgHandHold.Value = v end})
-UpgradesTab:CreateSection("TNT Upgrades")})
+UpgradesTab:AddToggle("AutoHandHold", {  Text = "Auto Hand Hold", Default = false, Callback = function(v) Toggles.UpgHandHold.Value = v end })
+UpgradesTab:AddLeftGroupbox("TNT Upgrades")})
 registerToggle("UpgTntLuck", false)
-UpgradesTab:CreateToggle({ Name = "Auto TNT Lucky Blast", CurrentValue = false, Callback = function(v) Toggles.UpgTntLuck.Value = v end})
+UpgradesTab:AddToggle("AutoTNTLuckyBlast", {  Text = "Auto TNT Lucky Blast", Default = false, Callback = function(v) Toggles.UpgTntLuck.Value = v end })
 registerToggle("UpgTntCooldown", false)
-UpgradesTab:CreateToggle({ Name = "Auto TNT Cooldown", CurrentValue = false, Callback = function(v) Toggles.UpgTntCooldown.Value = v end})
+UpgradesTab:AddToggle("AutoTNTCooldown", {  Text = "Auto TNT Cooldown", Default = false, Callback = function(v) Toggles.UpgTntCooldown.Value = v end })
 registerToggle("UpgTntPower", false)
-UpgradesTab:CreateToggle({ Name = "Auto TNT Power", CurrentValue = false, Callback = function(v) Toggles.UpgTntPower.Value = v end})
-UpgradesTab:CreateSection("Pitchfork Upgrades")})
+UpgradesTab:AddToggle("AutoTNTPower", {  Text = "Auto TNT Power", Default = false, Callback = function(v) Toggles.UpgTntPower.Value = v end })
+UpgradesTab:AddLeftGroupbox("Pitchfork Upgrades")})
 registerToggle("UpgPitchCooldown", false)
-UpgradesTab:CreateToggle({ Name = "Auto Pitchfork Cooldown", CurrentValue = false, Callback = function(v) Toggles.UpgPitchCooldown.Value = v end})
+UpgradesTab:AddToggle("AutoPitchforkCooldown", {  Text = "Auto Pitchfork Cooldown", Default = false, Callback = function(v) Toggles.UpgPitchCooldown.Value = v end })
 registerToggle("UpgPitchHold", false)
-UpgradesTab:CreateToggle({ Name = "Auto Pitchfork Hold", CurrentValue = false, Callback = function(v) Toggles.UpgPitchHold.Value = v end})
+UpgradesTab:AddToggle("AutoPitchforkHold", {  Text = "Auto Pitchfork Hold", Default = false, Callback = function(v) Toggles.UpgPitchHold.Value = v end })
 registerToggle("UpgPitchSweep", false)
-UpgradesTab:CreateToggle({ Name = "Auto Pitchfork Sweep", CurrentValue = false, Callback = function(v) Toggles.UpgPitchSweep.Value = v end})
-UpgradesTab:CreateSection("Drone Upgrades")})
+UpgradesTab:AddToggle("AutoPitchforkSweep", {  Text = "Auto Pitchfork Sweep", Default = false, Callback = function(v) Toggles.UpgPitchSweep.Value = v end })
+UpgradesTab:AddLeftGroupbox("Drone Upgrades")})
 registerToggle("UpgDroneSpeed", false)
-UpgradesTab:CreateToggle({ Name = "Auto Drone Speed", CurrentValue = false, Callback = function(v) Toggles.UpgDroneSpeed.Value = v end})
+UpgradesTab:AddToggle("AutoDroneSpeed", {  Text = "Auto Drone Speed", Default = false, Callback = function(v) Toggles.UpgDroneSpeed.Value = v end })
 registerToggle("UpgDroneGrab", false)
-UpgradesTab:CreateToggle({ Name = "Auto Drone Grasp", CurrentValue = false, Callback = function(v) Toggles.UpgDroneGrab.Value = v end})
+UpgradesTab:AddToggle("AutoDroneGrasp", {  Text = "Auto Drone Grasp", Default = false, Callback = function(v) Toggles.UpgDroneGrab.Value = v end })
 registerToggle("UpgDroneCapacity", false)
-UpgradesTab:CreateToggle({ Name = "Auto Drone Capacity", CurrentValue = false, Callback = function(v) Toggles.UpgDroneCapacity.Value = v end})
-UpgradesTab:CreateSection("Vacuum Upgrades")})
+UpgradesTab:AddToggle("AutoDroneCapacity", {  Text = "Auto Drone Capacity", Default = false, Callback = function(v) Toggles.UpgDroneCapacity.Value = v end })
+UpgradesTab:AddLeftGroupbox("Vacuum Upgrades")})
 registerToggle("UpgVacPower", false)
-UpgradesTab:CreateToggle({ Name = "Auto Vacuum Power", CurrentValue = false, Callback = function(v) Toggles.UpgVacPower.Value = v end})
+UpgradesTab:AddToggle("AutoVacuumPower", {  Text = "Auto Vacuum Power", Default = false, Callback = function(v) Toggles.UpgVacPower.Value = v end })
 registerToggle("UpgVacCooling", false)
-UpgradesTab:CreateToggle({ Name = "Auto Vacuum Cooling", CurrentValue = false, Callback = function(v) Toggles.UpgVacCooling.Value = v end})
+UpgradesTab:AddToggle("AutoVacuumCooling", {  Text = "Auto Vacuum Cooling", Default = false, Callback = function(v) Toggles.UpgVacCooling.Value = v end })
 registerToggle("UpgVacRuntime", false)
-UpgradesTab:CreateToggle({ Name = "Auto Vacuum Runtime", CurrentValue = false, Callback = function(v) Toggles.UpgVacRuntime.Value = v end})
-UpgradesTab:CreateSection("Capacity")})
+UpgradesTab:AddToggle("AutoVacuumRuntime", {  Text = "Auto Vacuum Runtime", Default = false, Callback = function(v) Toggles.UpgVacRuntime.Value = v end })
+UpgradesTab:AddLeftGroupbox("Capacity")})
 registerToggle("UpgCapacity", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Carry Capacity", Desc = "25->250 cash upgrades",
-    CurrentValue = false,
+UpgradesTab:AddToggle("AutoUpgradeCarryCapacity", {  Text = "Auto Upgrade Carry Capacity", Desc = "25->250 cash upgrades",
+    Default = false,
     Callback = function(v) Toggles.UpgCapacity.Value = v end
-})
-UpgradesTab:CreateSection("Cash upgrades use BuyUpgrade with track names."), TextTransparency = 0.35})
+ })
+UpgradesTab:AddLeftGroupbox("Cash upgrades use BuyUpgrade with track names."), TextTransparency = 0.35})
 ------------------------------------------------------------
 -- 16. SETTINGS TAB
 ------------------------------------------------------------
-SettingsTab:CreateSection("Menu")})
-SettingsTab:CreateButton({
-    Name = "Unload Stealth",
+SettingsTab:AddLeftGroupbox("Menu")})
+SettingsTab:AddButton({ Text = "Unload Stealth",
     Desc = "Closes the UI and stops all automation.",
     Color = Color3.fromHex("#ff4830"),
     Justify = "Left",
@@ -658,12 +655,12 @@ SettingsTab:CreateButton({
         Library:Unload()
     end
 }))
-SettingsTab:CreateSection("System")})
+SettingsTab:AddLeftGroupbox("System")})
 registerToggle("AntiAFK", true)
-SettingsTab:CreateToggle({ Name = "Anti-AFK (jump every 5m)", Desc = "Enabled by default. Uses jump to keep alive.",
-    CurrentValue = true,
+SettingsTab:AddToggle("AntiAFKjumpevery5m", {  Text = "Anti-AFK (jump every 5m)", Desc = "Enabled by default. Uses jump to keep alive.",
+    Default = true,
     Callback = function(v) Toggles.AntiAFK.Value = v end
-})
+ })
 ------------------------------------------------------------
 -- 17. Automation Logic (unchanged from original)
 ------------------------------------------------------------
@@ -1021,4 +1018,4 @@ Library:Notify({
     Description = gameName .. " loaded. Farming=collect/sell/tools | Inventory=shop/upgrades",
     Time = 5
 }))
-print("[Stealth] Loaded "..gameName.." via Rayfield")
+print("[Stealth] Loaded "..gameName.." via Library")

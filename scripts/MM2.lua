@@ -44718,14 +44718,14 @@ local selectedKey = nil
 local selectedName = nil
 do
     ------------------------------------------------------------
-    -- Rayfield — Stealth | MM2 Weapon Spawner
+    -- Library — Stealth | MM2 Weapon Spawner
     ------------------------------------------------------------
-    -- Rayfield requires elevated thread identity to create Font objects and
-    -- access certain Instance APIs. Without this, Rayfield's Notify() and
+    -- Library requires elevated thread identity to create Font objects and
+    -- access certain Instance APIs. Without this, Library's Notify() and
     -- font loading crash with:
     --   "The current thread cannot access 'Instance' (lacking capability Plugin)"
     --
-    -- The problem: Rayfield calls task.spawn internally for notifications and
+    -- The problem: Library calls task.spawn internally for notifications and
     -- animations, and those new threads inherit the DEFAULT identity, not
     -- the elevated one.
     --
@@ -44827,12 +44827,12 @@ do
     -- If neither approach worked, _elevateIdentity() on the main thread is
     -- still in effect. Most modern executors propagate identity to child
     -- threads, so this is usually enough.
-    local Rayfield = getgenv().StealthRayfield or loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+    local Library = getgenv().StealthObsidian or loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 end
-if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
+if not Library then warn("[Stealth] Failed to load Library UI") return end
     -- Re-assert after loadstring (it may reset identity).
     _elevateIdentity()
-    local Window = Rayfield:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
+    local Window = Library:CreateWindow({ Name = "Stealth", LoadingTitle = "Stealth", LoadingSubtitle = "Loading...", ConfigurationSaving = { Enabled = false } }),
         Topbar = { Height = 44, ButtonsType = "Mac" }
 }))
     -- Build weapon lookup tables.
@@ -44857,39 +44857,38 @@ if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
     end
     table.sort(weaponNames, function(a, b) return a:lower() < b:lower() end)
     ------------------------------------------------------------ Tab: Spawner
-    local SpawnTab = Window:CreateTab("Weapons")
-    SpawnTab:CreateSection("Select weapon")})
+    local SpawnTab = Window:AddTab({ Name = "Weapons" })
+    SpawnTab:AddLeftGroupbox("Select weapon")})
     -- Status label (replaces the old statusLabel)
     -- We use a Paragraph that we can update via :Set()
     statusLabel = SpawnTab:Paragraph({
         Name = "Status",
         Content = "Select a weapon, then click Spawn."
 }))
-    -- Dropdown with all weapons (Rayfield has built-in search in dropdowns).
+    -- Dropdown with all weapons (Library has built-in search in dropdowns).
     -- Entries are SHORT (just the weapon name) to prevent horizontal overflow.
     local WeaponDropdown
-    WeaponDropdown = SpawnTab:CreateDropdown({
-        Name = "Weapon",
+    WeaponDropdown = SpawnTab:AddDropdown("Weapon", { 
+        Text = "Weapon",
         Desc = "Click and type to search.",
         Options = weaponNames,
         Value = nil,
-        MultipleOptions = false,
+        Multi = false,
         Callback = function(selected)
             local wv = weaponByKey[selected]
             if wv then
                 selectedKey = wv.key
-                selectedName = wv.name
+                selectedText = wv.name
                 if statusLabel then
                     statusLabel:Set({
-                        Name = "Selected",
+                        Text = "Selected",
                         Content = wv.name .. " (" .. wv.type .. " — " .. (wv.rarity or "?") .. ")"
-}))
+ }))
                 end
             end
         end
 }))
-    SpawnTab:CreateButton({
-        Name = "Spawn Weapon",
+    SpawnTab:AddButton({ Text = "Spawn Weapon",
         Desc = "Spawns the selected weapon into your inventory (client-side).",
         Color = Color3.fromHex("#30FF6A"),
         Justify = "Left",
@@ -44899,7 +44898,7 @@ if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
                 if statusLabel then
                     statusLabel:Set({ Title = "Warning", Content = "Select a weapon first."})
                 end
-                Rayfield:Notify({
+                Library:Notify({
                     Name = "Stealth",
                     Content = "Select a weapon first.",
                     Duration = 3
@@ -44914,7 +44913,7 @@ if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
                         Content = selectedName or selectedKey
 }))
                 end
-                Rayfield:Notify({
+                Library:Notify({
                     Name = "Stealth",
                     Content = "Spawned: " .. (selectedName or selectedKey),
                     Duration = 3
@@ -44923,22 +44922,22 @@ if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
         end
 }))
     ------------------------------------------------------------ Tab: Settings
-    local SettingsTab = Window:CreateTab("Config")
-    SettingsTab:CreateSection("Visualizer options")})
-    SettingsTab:CreateToggle({ Name = "Inject Particles", Desc = "ParticleEmitter / Fire / Smoke / Sparkles / Lights on spawned weapons.",
+    local SettingsTab = Window:AddTab({ Name = "Config" })
+    SettingsTab:AddLeftGroupbox("Visualizer options")})
+    SettingsTab:AddToggle("InjectParticles", {  Text = "Inject Particles", Desc = "ParticleEmitter / Fire / Smoke / Sparkles / Lights on spawned weapons.",
         Value = CONFIG.InjectParticles,
         Callback = function(v)
             CONFIG.InjectParticles = v
         end
-})
-    SettingsTab:CreateToggle({ Name = "Hide Original Weapon", Desc = "Hide your real held weapon so only the spawn shows.",
+ })
+    SettingsTab:AddToggle("HideOriginalWeapon", {  Text = "Hide Original Weapon", Desc = "Hide your real held weapon so only the spawn shows.",
         Value = CONFIG.HideOriginal,
         Callback = function(v)
             CONFIG.HideOriginal = v
         end
-})
-    SettingsTab:CreateSlider({
-        Name = "Poll Rate",
+ })
+    SettingsTab:AddSlider("PollRate", { 
+        Text = "Poll Rate",
         Desc = "How often to check for equip changes (seconds).",
         Min = 0.05,
         Max = 1.0,
@@ -44947,9 +44946,8 @@ if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
         Callback = function(v)
             CONFIG.PollRate = v
         end
-}))
-    SettingsTab:CreateButton({
-        Name = "Unload Stealth",
+ }))
+    SettingsTab:AddButton({ Text = "Unload Stealth",
         Desc = "Closes the UI and removes all overlays.",
         Color = Color3.fromHex("#ff4830"),
         Justify = "Left",
@@ -44959,7 +44957,7 @@ if not Rayfield then warn("[Stealth] Failed to load Rayfield UI") return end
             Window:Destroy()
         end
 }))
-    Rayfield:Notify({
+    Library:Notify({
         Name = "Stealth | MM2",
         Content = ("Ready — %d weapons. Select → Spawn → equip."):format(#weaponList),
         Duration = 5
@@ -44969,7 +44967,7 @@ end
 -- Stealth | MM2 — Extended Features (ESP, AutoFarm, Character, Teleport,
 --                                   Role Functions, Anti-AFK)
 -- =========================================================================
--- Adapted from BenjoHub (Rayfield) + MvS Hub GodMode + Zeion AimAssist.
+-- Adapted from BenjoHub (Library) + MvS Hub GodMode + Zeion AimAssist.
 -- Stripped: webhooks, Discord links to other communities, server lagger,
 -- trade scam (griefing), weapon dupe (bannable). Kept: legitimate QoL
 -- features.
@@ -45379,15 +45377,15 @@ do
     ------------------------------------------------------------
     -- Extended Tabs (added to the existing Window)
     ------------------------------------------------------------
-    -- NOTE: `Window` is the Rayfield window created earlier in this file.
+    -- NOTE: `Window` is the Library window created earlier in this file.
     -- We attach new sections/tabs to it.
     -- ---------- ESP Tab ----------
-    local ESPTab = Window:CreateTab("ESP")
-    ESPTab:CreateSection("Player ESP Settings")})
-    ESPTab:CreateToggle({ Name = "Enable ESP", Desc = "Highlight players through walls.",
+    local ESPTab = Window:AddTab({ Name = "ESP" })
+    ESPTab:AddLeftGroupbox("Player ESP Settings")})
+    ESPTab:AddToggle("EnableESP", {  Text = "Enable ESP", Desc = "Highlight players through walls.",
         Value = false,
         Callback = function(v) ESP.Enabled = v; RefreshESP() end
-})
+ })
     ESPTab:CreateDropdown({
         Name = "Filter ESP",
         Desc = "Choose which roles to highlight.",
@@ -45414,15 +45412,15 @@ do
         end
 }))
     -- ---------- AutoFarm Tab ----------
-    local AutoFarmTab = Window:CreateTab("Farm")
-    AutoFarmTab:CreateSection("Coin & Candy Collection")})
-    AutoFarmTab:CreateToggle({ Name = "Coin Autofarm", Desc = "Automatically collect coins in the map.",
+    local AutoFarmTab = Window:AddTab({ Name = "Farm" })
+    AutoFarmTab:AddLeftGroupbox("Coin & Candy Collection")})
+    AutoFarmTab:AddToggle("CoinAutofarm", {  Text = "Coin Autofarm", Desc = "Automatically collect coins in the map.",
         Value = false,
         Callback = function(v)
             AutoFarm.Coins = v
             if v then RunCoinFarm() end
         end
-})
+ })
     AutoFarmTab:CreateSlider({
         Name = "Autofarm Speed",
         Desc = "Seconds between collection cycles. Higher = safer (less likely to get kicked).",
@@ -45430,13 +45428,13 @@ do
         Value = { Min = 1, Max = 60, Value = 25 },
         Callback = function(value) AutoFarm.Speed = value end
 }))
-    AutoFarmTab:CreateToggle({ Name = "Auto Reset Character", Desc = "Reset your character every N seconds (useful for forcing new round spawns).",
+    AutoFarmTab:AddToggle("AutoResetCharacter", {  Text = "Auto Reset Character", Desc = "Reset your character every N seconds (useful for forcing new round spawns).",
         Value = false,
         Callback = function(v)
             AutoFarm.AutoReset = v
             if v then RunAutoReset() end
         end
-})
+ })
     AutoFarmTab:CreateSlider({
         Name = "Reset Delay (sec)",
         Desc = "Time between auto-resets.",
@@ -45445,8 +45443,8 @@ do
         Callback = function(value) AutoFarm.ResetDelay = value end
 }))
     -- ---------- Character Tab ----------
-    local CharacterTab = Window:CreateTab("Movement")
-    CharacterTab:CreateSection("Movement Settings")})
+    local CharacterTab = Window:AddTab({ Name = "Movement" })
+    CharacterTab:AddLeftGroupbox("Movement Settings")})
     CharacterTab:CreateSlider({
         Name = "Walk Speed",
         Desc = "Default: 16",
@@ -45454,10 +45452,10 @@ do
         Value = { Min = 16, Max = 200, Value = 16 },
         Callback = function(value) Character.WalkSpeed = value end
 }))
-    CharacterTab:CreateToggle({ Name = "Lock Walk Speed", Desc = "Re-apply walk speed if the game resets it.",
+    CharacterTab:AddToggle("LockWalkSpeed", {  Text = "Lock Walk Speed", Desc = "Re-apply walk speed if the game resets it.",
         Value = false,
         Callback = function(v) Character.LockWalkSpeed = v end
-})
+ })
     CharacterTab:CreateSlider({
         Name = "Jump Power",
         Desc = "Default: 50",
@@ -45465,20 +45463,19 @@ do
         Value = { Min = 50, Max = 500, Value = 50 },
         Callback = function(value) Character.JumpPower = value end
 }))
-    CharacterTab:CreateToggle({ Name = "Lock Jump Power", Desc = "Re-apply jump power if the game resets it.",
+    CharacterTab:AddToggle("LockJumpPower", {  Text = "Lock Jump Power", Desc = "Re-apply jump power if the game resets it.",
         Value = false,
         Callback = function(v) Character.LockJumpPower = v end
-})
-    CharacterTab:CreateToggle({ Name = "Noclip", Desc = "Walk through walls. Disable before round end to avoid suspicion.",
+ })
+    CharacterTab:AddToggle("Noclip", {  Text = "Noclip", Desc = "Walk through walls. Disable before round end to avoid suspicion.",
         Value = false,
         Callback = function(v) SetNoclip(v) end
-})
-    CharacterTab:CreateToggle({ Name = "Infinite Jump", Desc = "Jump in mid-air.",
+ })
+    CharacterTab:AddToggle("InfiniteJump", {  Text = "Infinite Jump", Desc = "Jump in mid-air.",
         Value = false,
         Callback = function(v) SetInfiniteJump(v) end
-})
-    CharacterTab:CreateButton({
-        Name = "Reset Character",
+ })
+    CharacterTab:AddButton({ Text = "Reset Character",
         Desc = "Force respawn.",
         Color = Color3.fromHex("#ff4830"),
         Justify = "Left",
@@ -45489,8 +45486,8 @@ do
         end
 }))
     -- ---------- Teleport Tab ----------
-    local TeleportTab = Window:CreateTab("Teleport")
-    TeleportTab:CreateSection("Player Teleportation")})
+    local TeleportTab = Window:AddTab({ Name = "Teleport" })
+    TeleportTab:AddLeftGroupbox("Player Teleportation")})
     local playerList = {}
     local playerDropdown
     local function refreshPlayerList()
@@ -45503,16 +45500,15 @@ do
         end
     end
     local selectedPlayerName = nil
-    playerDropdown = TeleportTab:CreateDropdown({
-        Name = "Select Player",
+    playerDropdown = TeleportTab:AddDropdown("SelectPlayer", { 
+        Text = "Select Player",
         Desc = "Choose a player to teleport to.",
         Options = playerList,
         Value = nil,
-        MultipleOptions = false,
-        Callback = function(selected) selectedPlayerName = selected end
-}))
-    TeleportTab:CreateButton({
-        Name = "Teleport to Player",
+        Multi = false,
+        Callback = function(selected) selectedPlayerText = selected end
+ }))
+    TeleportTab:AddButton({ Text = "Teleport to Player",
         Desc = "Teleports you to the selected player.",
         Color = Color3.fromHex("#30FF6A"),
         Justify = "Left",
@@ -45523,21 +45519,18 @@ do
             if target then TeleportToPlayer(target) end
         end
 }))
-    TeleportTab:CreateButton({
-        Name = "Refresh Player List",
+    TeleportTab:AddButton({ Text = "Refresh Player List",
         Callback = refreshPlayerList
 }))
-    TeleportTab:CreateSection("Role Teleportation")})
-    TeleportTab:CreateButton({
-        Name = "Teleport to Murderer",
+    TeleportTab:AddLeftGroupbox("Role Teleportation")})
+    TeleportTab:AddButton({ Text = "Teleport to Murderer",
         Desc = "Go to the current murderer (if any).",
         Color = Color3.fromHex("#dc143c"),
         Justify = "Left",
         IconAlign = "Left",
         Callback = function() TeleportToRole("Murderer") end
 }))
-    TeleportTab:CreateButton({
-        Name = "Teleport to Sheriff",
+    TeleportTab:AddButton({ Text = "Teleport to Sheriff",
         Desc = "Go to the current sheriff (if any).",
         Color = Color3.fromHex("#4682b4"),
         Justify = "Left",
@@ -45549,48 +45542,45 @@ do
     Players.PlayerRemoving:Connect(function() task.wait(0.5); refreshPlayerList() end)
     refreshPlayerList()
     -- ---------- Role Functions Tab ----------
-    local RoleTab = Window:CreateTab("Role")
-    RoleTab:CreateSection("Innocent")})
-    RoleTab:CreateToggle({ Name = "Auto Grab Gun", Desc = "When a gun is dropped, teleport to it automatically.",
+    local RoleTab = Window:AddTab({ Name = "Role" })
+    RoleTab:AddLeftGroupbox("Innocent")})
+    RoleTab:AddToggle("AutoGrabGun", {  Text = "Auto Grab Gun", Desc = "When a gun is dropped, teleport to it automatically.",
         Value = false,
         Callback = function(v)
             autoGunActive = v
             if v then AutoGrabGun() end
         end
-})
-    RoleTab:CreateSection("Murderer")})
-    RoleTab:CreateButton({
-        Name = "Kill All Players",
+ })
+    RoleTab:AddLeftGroupbox("Murderer")})
+    RoleTab:AddButton({ Text = "Kill All Players",
         Desc = "Teleport-and-touch every player (only works if you're the murderer).",
         Color = Color3.fromHex("#dc143c"),
         Justify = "Left",
         IconAlign = "Left",
         Callback = function() KillAllMurderer() end
 }))
-    RoleTab:CreateButton({
-        Name = "Equip Knife",
+    RoleTab:AddButton({ Text = "Equip Knife",
         Desc = "Equip your knife from backpack.",
         Callback = function() EquipKnife() end
 }))
     -- ---------- Utilities Tab ----------
-    local UtilitiesTab = Window:CreateTab("Utilities")
-    UtilitiesTab:CreateSection("Server Utilities")})
-    UtilitiesTab:CreateToggle({ Name = "Anti-AFK", Desc = "Prevents being kicked for inactivity.",
+    local UtilitiesTab = Window:AddTab({ Name = "Utilities" })
+    UtilitiesTab:AddLeftGroupbox("Server Utilities")})
+    UtilitiesTab:AddToggle("AntiAFK", {  Text = "Anti-AFK", Desc = "Prevents being kicked for inactivity.",
         Value = false,
         Callback = function(v)
             AntiAFK = v
             SetAntiAFK(v)
         end
-})
-    UtilitiesTab:CreateButton({
-        Name = "Copy Discord Invite",
+ })
+    UtilitiesTab:AddButton({ Text = "Copy Discord Invite",
         Desc = "Copies the Stealth Discord link to your clipboard.",
         Color = Color3.fromHex("#5865F2"),
         Justify = "Left",
         IconAlign = "Left",
         Callback = function()
             pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
-            Rayfield:Notify({
+            Library:Notify({
                 Name = "Stealth | MM2",
                 Content = "Discord invite copied!",
                 Duration = 3
@@ -45598,7 +45588,7 @@ do
         end
 }))
     -- ---------- Welcome notification ----------
-    Rayfield:Notify({
+    Library:Notify({
         Name = "Stealth | MM2",
         Content = "Extended features loaded: ESP, AutoFarm, Teleport, Role Functions, Utilities.",
         Duration = 5
