@@ -44827,7 +44827,12 @@ do
     -- If neither approach worked, _elevateIdentity() on the main thread is
     -- still in effect. Most modern executors propagate identity to child
     -- threads, so this is usually enough.
-    local Airflow = getgenv().StealthAirflow or loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
+    local Airflow = getgenv().StealthAirflow
+if not Airflow then
+    Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
+    if Airflow then getgenv().StealthAirflow = Airflow end
+end
+if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
     -- Re-assert after loadstring (it may reset identity).
     _elevateIdentity()
     local Window = Airflow:CreateWindow({

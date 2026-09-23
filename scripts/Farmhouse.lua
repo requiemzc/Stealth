@@ -93,7 +93,12 @@ end
 ------------------------------------------------------------
 -- 2. Load Airflow
 ------------------------------------------------------------
-local Airflow = getgenv().StealthAirflow or loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
+local Airflow = getgenv().StealthAirflow
+if not Airflow then
+    Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
+    if Airflow then getgenv().StealthAirflow = Airflow end
+end
+if not Airflow then warn("[Stealth] Failed to load Airflow UI") return end
 _elevateIdentity()
 ------------------------------------------------------------
 -- 3. State tables (mirror ObsidianUltra Toggles/Options pattern
