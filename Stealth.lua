@@ -293,11 +293,24 @@ Patriot.Theme = {
 }
 
 ------------------------------------------------------------
--- 14. On success — load Main.lua
+-- 14. On success — load Main.lua + preload Airflow for game scripts
 ------------------------------------------------------------
 Patriot.Callbacks.OnSuccess = function()
     print("[Stealth] Key validated! Loading main script...")
     Patriot:Notify("Stealth", "Key validated! Loading...", 2, "success")
+
+    -- Preload Airflow UI so game scripts can find it in getgenv
+    task.spawn(function()
+        pcall(function()
+            local Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/requiemzc/Stealth/main/Airflow.lua"))()
+            if Airflow and type(Airflow) == "table" then
+                getgenv().StealthAirflow = Airflow
+                print("[Stealth] Airflow UI preloaded for game scripts")
+            else
+                warn("[Stealth] Failed to preload Airflow UI")
+            end
+        end)
+    end)
 
     local ok, err = pcall(function()
         loadstring(game:HttpGet(MAIN_SCRIPT_URL))()
