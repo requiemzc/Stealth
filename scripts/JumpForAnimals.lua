@@ -1,12 +1,12 @@
 -- [[ Stealth | Jump for Animals ]]
 --
 -- Original: Ouroboros Hub @hidevin (ObsidianUltra)
--- Converted to WindUI for Stealth Hub.
+-- Converted to Airflow for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- Game: Jump for Animals
 ------------------------------------------------------------
--- 1. Identity elevation (WindUI needs executor-level identity)
+-- 1. Identity elevation (Airflow needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -56,38 +56,15 @@ if not _taskPatched then
     end)
 end
 ------------------------------------------------------------
--- 2. Load WindUI
+-- 2. Load Airflow
 ------------------------------------------------------------
-local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
-if not WindUI then warn("[Stealth] Failed to load WindUI UI") return end
+local Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/PookiePepelsss/Airflow-UI/refs/heads/main/Source.luau"))()
 _elevateIdentity()
 ------------------------------------------------------------
 -- 3. State tables (mirror ObsidianUltra Toggles/Options pattern)
 ------------------------------------------------------------
-local Toggles = {}
+Toggles = Airflow.Flags
 local Options = {}
-local WindUI = {
-    Toggles = Toggles,
-    Options = Options,
-    Unloaded = false,
-    ShowCustomCursor = true
-}
-function WindUI:Notify(opts)
-    WindUI:Notify({
-        Name = opts.Title or "Stealth",
-        Content = opts.Description or "",
-        Duration = opts.Time or 3
-    })
-end
-function Window:Destroy()
-    if self.Unloaded then return end
-    self.Unloaded = true
-    if self._onUnload then self._onUnload() end
-    pcall(function() self._window:Destroy() end)
-end
-function WindUI:OnUnload(fn)
-    self._onUnload = fn
-end
 ------------------------------------------------------------
 -- 4. Services & game refs
 ------------------------------------------------------------
@@ -99,11 +76,12 @@ local LocalPlayer = Players.LocalPlayer
 local gameName = "Jump for Animals"
 local Remotes = ReplicatedStorage:WaitForChild("Remotes", 15)
 if not Remotes then
-    WindUI:Notify({
-        Name = "Stealth",
+    Airflow:Notify({
+        Title = "Stealth",
         Content = "Remotes folder not found. Join the game first.",
-        Duration = 6
-    })
+        Duration = 6,
+    Type = "Success"
+})
     return
 end
 local function waitRemote(name, parent)
@@ -311,11 +289,16 @@ local function formatClock(seconds)
     return string.format("%02d:%02d:%02d", hours, minutes, secs)
 end
 ------------------------------------------------------------
--- 6. Create WindUI window
+-- 6. Create Airflow window
 ------------------------------------------------------------
-local Window = WindUI:CreateWindow({ Title = "Stealth", Folder = "Stealth", Icon = "solar:shield-keyhole-bold-duotone", OpenButton = { Title = "Open Stealth", Enabled = true }, Topbar = { Height = 44, ButtonsType = "Mac" } })
+local Window = Airflow:CreateWindow({
+    Name = "Stealth",
+    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "default" },
+    Icon = "solar:shield-keyhole-bold-duotone",
+    ToggleUIKeybind = "RightShift",
+})
 
-WindUI._window = Window
+Airflow._window = Window
 ------------------------------------------------------------
 -- 7. Helper to register toggle/slider/dropdown into Toggles/Options
 ------------------------------------------------------------
@@ -328,22 +311,14 @@ end
 ------------------------------------------------------------
 -- 8. Tabs
 ------------------------------------------------------------
-local _sec_MainTab = Window:Section({ Title = "Dashboard" })
-local MainTab = _sec_MainTab:Tab({ Title = "Dashboard", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_TrainingTab = Window:Section({ Title = "Training" })
-local TrainingTab = _sec_TrainingTab:Tab({ Title = "Training", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_EggTab = Window:Section({ Title = "Eggs" })
-local EggTab = _sec_EggTab:Tab({ Title = "Eggs", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_SellingTab = Window:Section({ Title = "Selling" })
-local SellingTab = _sec_SellingTab:Tab({ Title = "Selling", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_RewardsTab = Window:Section({ Title = "Rewards" })
-local RewardsTab = _sec_RewardsTab:Tab({ Title = "Rewards", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_ShopsTab = Window:Section({ Title = "Shops" })
-local ShopsTab = _sec_ShopsTab:Tab({ Title = "Shops", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_UpgradesTab = Window:Section({ Title = "Upgrades" })
-local UpgradesTab = _sec_UpgradesTab:Tab({ Title = "Upgrades", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_SettingsTab = Window:Section({ Title = "Config" })
-local SettingsTab = _sec_SettingsTab:Tab({ Title = "Config", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
+local MainTab = Window:CreateTab({ Name = "Dashboard", Icon = "solar:widget-bold" })
+local TrainingTab = Window:CreateTab({ Name = "Training", Icon = "solar:widget-bold" })
+local EggTab = Window:CreateTab({ Name = "Eggs", Icon = "solar:widget-bold" })
+local SellingTab = Window:CreateTab({ Name = "Selling", Icon = "solar:widget-bold" })
+local RewardsTab = Window:CreateTab({ Name = "Rewards", Icon = "solar:widget-bold" })
+local ShopsTab = Window:CreateTab({ Name = "Shops", Icon = "solar:widget-bold" })
+local UpgradesTab = Window:CreateTab({ Name = "Upgrades", Icon = "solar:widget-bold" })
+local SettingsTab = Window:CreateTab({ Name = "Config", Icon = "solar:widget-bold" })
 ------------------------------------------------------------
 -- 9. Build options data
 ------------------------------------------------------------
@@ -368,40 +343,41 @@ if #ZoneNames == 0 then
     ZoneNames = { "Meadow", "Coral Reef", "Winter", "Desert", "Crystal Mines", "Jungle", "Mystic Isles", "Prehistoric", "Celestial Heights", "Savannah" }
 end
 local function notify(title, description, kind)
-    WindUI:Notify({
-        Name = title,
+    Airflow:Notify({
+        Title = title,
         Content = description or "",
-        Duration = 5
-    })
+        Duration = 5,
+    Type = "Success"
+})
 end
 ------------------------------------------------------------
 -- 10. Dashboard tab
 ------------------------------------------------------------
-local MainBox = MainTab:Label({ Text = "Game: " })
-local StatusSession = MainTab:Label({ Text = "Session: 00:00:00:  ", DoesWrap = true })
-local StatusCash = MainTab:Label({ Text = "Cash: 0:  ", DoesWrap = true })
-local StatusLevel = MainTab:Label({ Text = "Level: 0:  ", DoesWrap = true })
-local StatusEggs = MainTab:Label({ Text = "Carried eggs: 0 | Placed: 0:  ", DoesWrap = true })
-local StatusSquat = MainTab:Label({ Text = "Squatting: false:  ", DoesWrap = true })
+local MainBox = MainTab:CreateLabel({ Text = "Game: " })
+local StatusSession = MainTab:CreateLabel({ Text = "Session: 00:00:00:  " })
+local StatusCash = MainTab:CreateLabel({ Text = "Cash: 0:  " })
+local StatusLevel = MainTab:CreateLabel({ Text = "Level: 0:  " })
+local StatusEggs = MainTab:CreateLabel({ Text = "Carried eggs: 0 | Placed: 0:  " })
+local StatusSquat = MainTab:CreateLabel({ Text = "Squatting: false:  " })
 ------------------------------------------------------------
 -- 11. Training tab
 ------------------------------------------------------------
-local TrainingBox = (TrainingTab.AddLeftGroupbox and TrainingTab:AddLeftGroupbox("Squats")) or TrainingTab
--- WindUI doesn't have AddLeftGroupbox; use the tab directly
+local TrainingBox = (TrainingTab.AddLeftGroupbox and TrainingTab:CreateSection("Squats")) or TrainingTab
+-- Airflow doesn't have AddLeftGroupbox; use the tab directly
 registerToggle("AutoTrain", false)
-TrainingTab:Toggle({ Title = "Auto Train Squats", Default = false,
+TrainingTab:CreateToggle({ Name = "Auto Train Squats", CurrentValue = false,
     Callback = function(state) Toggles.AutoTrain.Value = state end
  })
 registerToggle("AutoSquatBonus", false)
-TrainingTab:Toggle({ Title = "Auto Claim Squat Bonus", Default = false,
+TrainingTab:CreateToggle({ Name = "Auto Claim Squat Bonus", CurrentValue = false,
     Callback = function(state) Toggles.AutoSquatBonus.Value = state end
  })
-TrainingTab:Label({ Text = "Squatting is server controlled; training pauses while you carry an egg.:  ", DoesWrap = true })
+TrainingTab:CreateLabel({ Text = "Squatting is server controlled; training pauses while you carry an egg.:  " })
 ------------------------------------------------------------
 -- 12. Eggs tab
 ------------------------------------------------------------
 registerToggle("AutoSteal", false)
-EggTab:Toggle({ Title = "Auto Steal Eggs", Default = false,
+EggTab:CreateToggle({ Name = "Auto Steal Eggs", CurrentValue = false,
     Callback = function(state) Toggles.AutoSteal.Value = state end
  })
 registerOption("StealMode", "Best Egg")
@@ -413,49 +389,48 @@ EggTab:CreateDropdown({
 
 })
 registerOption("StealZones", {})
-EggTab:Dropdown({ 
-    Text = "Zones",
+EggTab:CreateDropdown({ 
+    Name = "Zones",
     Options = ZoneNames,
-    Multi = true,
+    MultipleOptions = true,
     Description = "Only steal eggs from these zones",
     Callback = function(state) Options.StealZones.Value = state end
 
 })
 registerOption("StealRarities", {})
-EggTab:Dropdown({ 
-    Text = "Rarities",
+EggTab:CreateDropdown({ 
+    Name = "Rarities",
     Options = RarityNames,
-    Multi = true,
+    MultipleOptions = true,
     Description = "Only steal eggs of these rarities",
     Callback = function(state) Options.StealRarities.Value = state end
 
 })
 registerOption("StealDelay", 5)
-local StealDelaySlider = EggTab:Slider({ 
-    Text = "Train Between Steals",
+local StealDelaySlider = EggTab:CreateSlider({ 
+    Name = "Train Between Steals",
     Default = 5,
-    Min = 0,
-    Max = 60,
     Rounding = 0,
     Suffix = "s",
     Description = "After each egg is placed, train squats for this long before stealing again",
-    Callback = function(state) Options.StealDelay.Value = state end
+    Range = { 0, 60 },
+    Callback = function(state) Options.StealDelay.CurrentValue = state end
 
 })
 registerToggle("AutoPlace", false)
-EggTab:Toggle({ Title = "Auto Place Stolen Eggs", Default = false,
+EggTab:CreateToggle({ Name = "Auto Place Stolen Eggs", CurrentValue = false,
     Callback = function(state) Toggles.AutoPlace.Value = state end
  })
 registerToggle("AutoHatch", false)
-EggTab:Toggle({ Title = "Auto Hatch Ready Eggs", Default = false,
+EggTab:CreateToggle({ Name = "Auto Hatch Ready Eggs", CurrentValue = false,
     Callback = function(state) Toggles.AutoHatch.Value = state end
  })
-EggTab:Label({ Text = "Carrying an egg disables jumping. Auto Place moves it to your plot so the loop continues.:  ", DoesWrap = true })
+EggTab:CreateLabel({ Text = "Carrying an egg disables jumping. Auto Place moves it to your plot so the loop continues.:  " })
 ------------------------------------------------------------
 -- 13. Selling tab
 ------------------------------------------------------------
 registerToggle("AutoSell", false)
-SellingTab:Toggle({ Title = "Auto Sell Junk Pets", Default = false,
+SellingTab:CreateToggle({ Name = "Auto Sell Junk Pets", CurrentValue = false,
     Callback = function(state) Toggles.AutoSell.Value = state end
  })
 registerOption("SellMode", "Lowest CPS First")
@@ -467,8 +442,8 @@ SellingTab:CreateDropdown({
 
 })
 registerOption("AutoSellPet", AnimalNames[1] or "None")
-SellingTab:Dropdown({ 
-    Text = "Chosen Pet",
+SellingTab:CreateDropdown({ 
+    Name = "Chosen Pet",
     Options = AnimalNames,
     Default = AnimalNames[1] or "None",
     Description = "Only used when Mode is Chosen Pet",
@@ -485,24 +460,24 @@ SellingTab:Input({
     Callback = function(state) Options.SellMaxCps.Value = state end
 
 })
-SellingTab:Label({ Text = "Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets.:  ", DoesWrap = true })
+SellingTab:CreateLabel({ Text = "Sell value scales with pet CPS. Raise Max CPS only when you really want to sell better pets.:  " })
 ------------------------------------------------------------
 -- 14. Rewards tab
 ------------------------------------------------------------
 registerToggle("AutoOffline", false)
-RewardsTab:Toggle({ Title = "Auto Claim Offline Cash", Default = false,
+RewardsTab:CreateToggle({ Name = "Auto Claim Offline Cash", CurrentValue = false,
     Callback = function(state) Toggles.AutoOffline.Value = state end
  })
 registerToggle("AutoIndex", false)
-RewardsTab:Toggle({ Title = "Auto Claim Animal Index Rewards", Default = false,
+RewardsTab:CreateToggle({ Name = "Auto Claim Animal Index Rewards", CurrentValue = false,
     Callback = function(state) Toggles.AutoIndex.Value = state end
  })
-RewardsTab:Label({ Text = "Index rewards are claimed with a single claim-all request. Offline cash is claimed whenever a balance is waiting.:  ", DoesWrap = true })
+RewardsTab:CreateLabel({ Text = "Index rewards are claimed with a single claim-all request. Offline cash is claimed whenever a balance is waiting.:  " })
 ------------------------------------------------------------
 -- 15. Shops tab
 ------------------------------------------------------------
 registerToggle("AutoBuyCoils", false)
-ShopsTab:Toggle({ Title = "Auto Buy Coils", Default = false,
+ShopsTab:CreateToggle({ Name = "Auto Buy Coils", CurrentValue = false,
     Callback = function(state) Toggles.AutoBuyCoils.Value = state end
  })
 registerOption("BuyCoilList", {})
@@ -515,11 +490,11 @@ ShopsTab:CreateDropdown({
 
 })
 registerToggle("AutoEquipCoil", false)
-ShopsTab:Toggle({ Title = "Auto Equip Best Coil", Default = false,
+ShopsTab:CreateToggle({ Name = "Auto Equip Best Coil", CurrentValue = false,
     Callback = function(state) Toggles.AutoEquipCoil.Value = state end
  })
 registerToggle("AutoBuyTrails", false)
-ShopsTab:Toggle({ Title = "Auto Buy Trails", Default = false,
+ShopsTab:CreateToggle({ Name = "Auto Buy Trails", CurrentValue = false,
     Callback = function(state) Toggles.AutoBuyTrails.Value = state end
  })
 registerOption("BuyTrailList", {})
@@ -532,18 +507,18 @@ ShopsTab:CreateDropdown({
 
 })
 registerToggle("AutoEquipTrail", false)
-ShopsTab:Toggle({ Title = "Auto Equip Best Trail", Default = false,
+ShopsTab:CreateToggle({ Name = "Auto Equip Best Trail", CurrentValue = false,
     Callback = function(state) Toggles.AutoEquipTrail.Value = state end
  })
 ------------------------------------------------------------
 -- 16. Upgrades tab
 ------------------------------------------------------------
 registerToggle("AutoBarbell", false)
-UpgradesTab:Toggle({ Title = "Auto Upgrade Barbell", Default = false,
+UpgradesTab:CreateToggle({ Name = "Auto Upgrade Barbell", CurrentValue = false,
     Callback = function(state) Toggles.AutoBarbell.Value = state end
  })
 registerToggle("AutoAddMutation", false)
-UpgradesTab:Toggle({ Title = "Auto Add Pets To Mutation Machine", Default = false,
+UpgradesTab:CreateToggle({ Name = "Auto Add Pets To Mutation Machine", CurrentValue = false,
     Callback = function(state) Toggles.AutoAddMutation.Value = state end
  })
 registerOption("MutationMode", "Auto Select")
@@ -555,29 +530,29 @@ UpgradesTab:CreateDropdown({
 
 })
 registerOption("MutationAnimal", AnimalNames[1] or "None")
-UpgradesTab:Dropdown({ 
-    Text = "Chosen Animal",
+UpgradesTab:CreateDropdown({ 
+    Name = "Chosen Animal",
     Options = AnimalNames,
     Default = AnimalNames[1] or "None",
     Callback = function(state) Options.MutationAnimal.Value = state end
 
 })
 registerToggle("AutoClaimMutation", false)
-UpgradesTab:Toggle({ Title = "Auto Claim Gold Mutation", Default = false,
+UpgradesTab:CreateToggle({ Name = "Auto Claim Gold Mutation", CurrentValue = false,
     Callback = function(state) Toggles.AutoClaimMutation.Value = state end
  })
 registerToggle("AutoReturnMutation", false)
-UpgradesTab:Toggle({ Title = "Auto Return Mutation Pets", Default = false,
+UpgradesTab:CreateToggle({ Name = "Auto Return Mutation Pets", CurrentValue = false,
     Callback = function(state) Toggles.AutoReturnMutation.Value = state end
  })
 ------------------------------------------------------------
 -- 17. Settings tab
 ------------------------------------------------------------
 registerToggle("AntiAFK", true)
-SettingsTab:Toggle({ Title = "Anti-AFK", Default = true,
+SettingsTab:CreateToggle({ Name = "Anti-AFK", CurrentValue = true,
     Callback = function(state) Toggles.AntiAFK.Value = state end
  })
-SettingsTab:Button({ Title = "Unload Stealth",
+SettingsTab:CreateButton({ Name = "Unload Stealth",
     Description = "Removes the menu and stops all automation",
     Callback = function()
         Window:Destroy()
@@ -1179,14 +1154,14 @@ end)
 task.spawn(function()
     while true do
         pcall(function()
-            StatusSession:SetText("Session: " .. formatClock(os.clock() - StartedAt))
-            StatusCash:SetText("Cash: " .. abbreviate(getCash()))
-            StatusLevel:SetText("Level: " .. tostring(getLevel()))
+            StatusSession:Set("Session: " .. formatClock(os.clock() - StartedAt))
+            StatusCash:Set("Cash: " .. abbreviate(getCash()))
+            StatusLevel:Set("Level: " .. tostring(getLevel()))
             StatusEggs:Set(string.format("Carried eggs: %d | Placed: %d", countEggTools(), countPlacedEggs()))
-            StatusSquat:SetText("Squatting: " .. tostring(LocalPlayer:GetAttribute("IsSquatting") == true))
+            StatusSquat:Set("Squatting: " .. tostring(LocalPlayer:GetAttribute("IsSquatting") == true))
         end)
         task.wait(1)
     end
 end)
 notify("Stealth", "Loaded for " .. gameName .. ". RightShift toggles the menu.")
-print("[Stealth] Loaded " .. gameName .. " via WindUI")
+print("[Stealth] Loaded " .. gameName .. " via Airflow")

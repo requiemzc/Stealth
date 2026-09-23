@@ -1,12 +1,12 @@
 -- [[ Stealth | Defeat Anime RNG ]]
 --
--- Original: CheixHub (WindUI UI) — based on Ouroboros Hub (ObsidianUltra)
--- Converted to WindUI for Stealth Hub.
+-- Original: CheixHub (Airflow UI) — based on Ouroboros Hub (ObsidianUltra)
+-- Converted to Airflow for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- Game: [UPD] Defeat Anime RNG
 ------------------------------------------------------------
--- 1. Identity elevation (WindUI needs executor-level identity)
+-- 1. Identity elevation (Airflow needs executor-level identity)
 ------------------------------------------------------------
 local function _elevateIdentity()
     pcall(function() if setthreadidentity then setthreadidentity(8) end end)
@@ -56,10 +56,9 @@ if not _taskPatched then
     end)
 end
 ------------------------------------------------------------
--- 2. Load WindUI
+-- 2. Load Airflow
 ------------------------------------------------------------
-local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
-if not WindUI then warn("[Stealth] Failed to load WindUI UI") return end
+local Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/PookiePepelsss/Airflow-UI/refs/heads/main/Source.luau"))()
 _elevateIdentity()
 ------------------------------------------------------------
 -- 3. Services & shared state
@@ -78,29 +77,26 @@ local Unloaded = false
 local Loops = {}
 local LiveLabels = {}
 ------------------------------------------------------------
--- 4. Create WindUI window
+-- 4. Create Airflow window
 ------------------------------------------------------------
-local Window = WindUI:CreateWindow({ Title = "Stealth", Folder = "Stealth", Icon = "solar:shield-keyhole-bold-duotone", OpenButton = { Title = "Open Stealth", Enabled = true }, Topbar = { Height = 44, ButtonsType = "Mac" } })
+local Window = Airflow:CreateWindow({
+    Name = "Stealth",
+    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "default" },
+    Icon = "solar:shield-keyhole-bold-duotone",
+    ToggleUIKeybind = "RightShift",
+})
 
 ------------------------------------------------------------
 -- 5. Tabs
 ------------------------------------------------------------
-local _sec_MainTab = Window:Section({ Title = "Dashboard" })
-local MainTab = _sec_MainTab:Tab({ Title = "Dashboard", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_FarmingTab = Window:Section({ Title = "Farming" })
-local FarmingTab = _sec_FarmingTab:Tab({ Title = "Farming", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_QuestsTab = Window:Section({ Title = "Quests" })
-local QuestsTab = _sec_QuestsTab:Tab({ Title = "Quests", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_InventoryTab = Window:Section({ Title = "Roll & Units" })
-local InventoryTab = _sec_InventoryTab:Tab({ Title = "Roll & Units", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_ShopTab = Window:Section({ Title = "Shop" })
-local ShopTab = _sec_ShopTab:Tab({ Title = "Shop", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_ZonesTab = Window:Section({ Title = "Zones" })
-local ZonesTab = _sec_ZonesTab:Tab({ Title = "Zones", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_RebirthTab = Window:Section({ Title = "Prestige" })
-local RebirthTab = _sec_RebirthTab:Tab({ Title = "Prestige", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-local _sec_SettingsTab = Window:Section({ Title = "Config" })
-local SettingsTab = _sec_SettingsTab:Tab({ Title = "Config", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
+local MainTab = Window:CreateTab({ Name = "Dashboard", Icon = "solar:widget-bold" })
+local FarmingTab = Window:CreateTab({ Name = "Farming", Icon = "solar:widget-bold" })
+local QuestsTab = Window:CreateTab({ Name = "Quests", Icon = "solar:widget-bold" })
+local InventoryTab = Window:CreateTab({ Name = "Roll & Units", Icon = "solar:widget-bold" })
+local ShopTab = Window:CreateTab({ Name = "Shop", Icon = "solar:widget-bold" })
+local ZonesTab = Window:CreateTab({ Name = "Zones", Icon = "solar:widget-bold" })
+local RebirthTab = Window:CreateTab({ Name = "Prestige", Icon = "solar:widget-bold" })
+local SettingsTab = Window:CreateTab({ Name = "Config", Icon = "solar:widget-bold" })
 ------------------------------------------------------------
 -- 6. Remotes / Databases / data lists
 ------------------------------------------------------------
@@ -172,14 +168,15 @@ local function startLoop(id, fn, interval)
 end
 local function stopLoop(id) if Loops[id] then Loops[id].Running = false end end
 local function notify(title, desc, time)
-    WindUI:Notify({
-        Name = title,
+    Airflow:Notify({
+        Title = title,
         Content = desc or "",
-        Duration = time or 3
-    })
+        Duration = time or 3,
+    Type = "Success"
+})
 end
 -- State table to mirror Toggles/Options for the automation logic
-local Toggles = {}
+Toggles = Airflow.Flags
 local Options = {}
 local function getToggle(flag)   return Toggles[flag] or false end
 local function getInput(flag)    return Options[flag] or "" end
@@ -370,7 +367,6 @@ local function doRollTick()
     if unitCount() >= unitCap() then
         notify("Auto Roll", "Inventory full (" .. unitCap() .. "), rolling paused", 4)
         stopLoop("AutoRoll")
-        Toggles.AutoRoll = false
         return
     end
     local bought, waiting, precious, total = collectWantedOnce()
@@ -407,7 +403,7 @@ local function setAntiAFK(enabled)
     if enabled then
         stopLoop("AntiAFKJump")
         task.spawn(function()
-            while Toggles.AntiAFK and not Unloaded do
+            while Toggles.AntiAFK and Toggles.AntiAFK.Value and not Unloaded do
                 if Unloaded then break end
                 pcall(function()
                     local ping = getRemote("AntiAfkActivityPingEvent")
@@ -419,7 +415,7 @@ local function setAntiAFK(enabled)
                     end
                 end)
                 for i = 1, 300 do
-                    if not Toggles.AntiAFK or Unloaded then break end
+                    if not Toggles.AntiAFK and Toggles.AntiAFK.Value or Unloaded then break end
                     task.wait(1)
                 end
             end
@@ -431,31 +427,31 @@ end
 ------------------------------------------------------------
 -- 9. Dashboard tab
 ------------------------------------------------------------
-MainTab:Label({ Text = "Game: " })
-MainTab:Label({ Text = "Hub: Stealth (WindUI):  ", DoesWrap = true })
-MainTab:Label({ Text = "Press RightShift to toggle UI:  ", DoesWrap = true })
-local SessionLabel = MainTab:Label({ Text = "Session: 00:00:  ", DoesWrap = true })
+MainTab:CreateLabel({ Text = "Game: " })
+MainTab:CreateLabel({ Text = "Hub: Stealth (Airflow):  " })
+MainTab:CreateLabel({ Text = "Press RightShift to toggle UI:  " })
+local SessionLabel = MainTab:CreateLabel({ Text = "Session: 00:00:  " })
 LiveLabels.Session = SessionLabel
 task.spawn(function()
     local s = 0
     while not Unloaded do
         task.wait(1); s += 1
-        pcall(function() SessionLabel:SetText(string.format("Session: %02d:%02d", math.floor(s / 60), s % 60)) end)
+        pcall(function() SessionLabel:Set(string.format("Session: %02d:%02d", math.floor(s / 60), s % 60)) end)
     end
 end)
-MainTab:Label({ Text = "--- Live Status ---:  ", DoesWrap = true })
-local cashLabel  = MainTab:Label({ Text = "Cash: ...:  ", DoesWrap = true })
-local lvlLabel   = MainTab:Label({ Text = "Level: ...:  ", DoesWrap = true })
-local unitLabel  = MainTab:Label({ Text = "Units: ...:  ", DoesWrap = true })
+MainTab:CreateLabel({ Text = "--- Live Status ---:  " })
+local cashLabel  = MainTab:CreateLabel({ Text = "Cash: ...:  " })
+local lvlLabel   = MainTab:CreateLabel({ Text = "Level: ...:  " })
+local unitLabel  = MainTab:CreateLabel({ Text = "Units: ...:  " })
 LiveLabels.Cash, LiveLabels.Level, LiveLabels.Units = cashLabel, lvlLabel, unitLabel
 task.spawn(function()
     while not Unloaded do
         task.wait(1)
         pcall(function()
-            cashLabel:SetText("Cash: " .. tostring(money()))
-            lvlLabel:SetText("Level: " .. tostring(LocalPlayer:GetAttribute("Level") or 0) ..
+            cashLabel:Set("Cash: " .. tostring(money()))
+            lvlLabel:Set("Level: " .. tostring(LocalPlayer:GetAttribute("Level") or 0) ..
                              " | Prestige: " .. tostring(LocalPlayer:GetAttribute("Prestige") or 0))
-            unitLabel:SetText("Units: " .. unitCount() .. "/" .. unitCap() ..
+            unitLabel:Set("Units: " .. unitCount() .. "/" .. unitCap() ..
                               " | Shards: " .. tostring(LocalPlayer:GetAttribute("TraitShardCount") or 0))
         end)
     end
@@ -463,10 +459,10 @@ end)
 ------------------------------------------------------------
 -- 10. Farming tab
 ------------------------------------------------------------
-Toggles.AutoCollectCash = false
-FarmingTab:Toggle({ Title = "Auto Collect Cash", Default = false,
+FarmingTab:CreateToggle({ Name = "Auto Collect Cash", CurrentValue = false,
+    Flag = "AutoCollectCash",
     Callback = function(v)
-        Toggles.AutoCollectCash = v
+        Toggles.AutoCollectCash.Value = v
         if v then
             startLoop("AutoCollectCash", function()
                 if Remotes.CollectCash then Remotes.CollectCash:FireServer() end
@@ -474,10 +470,10 @@ FarmingTab:Toggle({ Title = "Auto Collect Cash", Default = false,
         else stopLoop("AutoCollectCash") end
     end
  })
-Toggles.AutoFarmWaves = false
-FarmingTab:Toggle({ Title = "Auto Farm Waves", Default = false,
+FarmingTab:CreateToggle({ Name = "Auto Farm Waves", CurrentValue = false,
+    Flag = "AutoFarmWaves",
     Callback = function(v)
-        Toggles.AutoFarmWaves = v
+        Toggles.AutoFarmWaves.Value = v
         if v then
             startLoop("AutoFarmWaves", function()
                 if Remotes.PlayerAttack then Remotes.PlayerAttack:FireServer() end
@@ -486,7 +482,7 @@ FarmingTab:Toggle({ Title = "Auto Farm Waves", Default = false,
         else stopLoop("AutoFarmWaves") end
     end
  })
-FarmingTab:Button({ Title = "Collect Once",
+FarmingTab:CreateButton({ Name = "Collect Once",
     Description = "Fire CollectCash once",
     Callback = function()
         if Remotes.CollectCash then Remotes.CollectCash:FireServer() end
@@ -496,22 +492,21 @@ FarmingTab:Button({ Title = "Collect Once",
 
 -- Selling
 Options.SellRarities = RarityList
-FarmingTab:Dropdown({
-    Text = "Sell Rarities",
+FarmingTab:CreateDropdown({
+    Name = "Sell Rarities",
     Options = RarityList,
-    Multi = true,
+    MultipleOptions = true,
     Callback = function(state) Options.SellRarities = state end
 })
-
-Toggles.AutoSellUnits = false
-FarmingTab:Toggle({ Title = "Auto Sell Units", Default = false,
+FarmingTab:CreateToggle({ Name = "Auto Sell Units", CurrentValue = false,
+    Flag = "AutoSellUnits",
     Callback = function(v)
-        Toggles.AutoSellUnits = v
+        Toggles.AutoSellUnits.Value = v
         if v then startLoop("AutoSellUnits", function() sellSelected() end, 3)
         else stopLoop("AutoSellUnits") end
     end
  })
-FarmingTab:Button({ Title = "Sell Selected Once",
+FarmingTab:CreateButton({ Name = "Sell Selected Once",
     Callback = function() sellSelected() end
 
 ------------------------------------------------------------
@@ -519,17 +514,17 @@ FarmingTab:Button({ Title = "Sell Selected Once",
 ------------------------------------------------------------
 })
 Options.QuestTiers = QuestTierList
-QuestsTab:Dropdown({ 
-    Text = "Quest Tiers",
+QuestsTab:CreateDropdown({ 
+    Name = "Quest Tiers",
     Options = QuestTierList,
-    Multi = true,
+    MultipleOptions = true,
     Callback = function(state) Options.QuestTiers = state end
 
 })
-Toggles.AutoCompleteQuests = false
-QuestsTab:Toggle({ Title = "Auto Complete Quests", Default = false,
+QuestsTab:CreateToggle({ Name = "Auto Complete Quests", CurrentValue = false,
+    Flag = "AutoCompleteQuests",
     Callback = function(v)
-        Toggles.AutoCompleteQuests = v
+        Toggles.AutoCompleteQuests.Value = v
         if v then
             startLoop("AutoCompleteQuests", function()
                 if not Remotes.ClaimEventQuest then return end
@@ -545,17 +540,17 @@ QuestsTab:Toggle({ Title = "Auto Complete Quests", Default = false,
 
 })
 Options.ChallengeTiers = ChallengeTierList
-QuestsTab:Dropdown({ 
-    Text = "Challenge Tiers",
+QuestsTab:CreateDropdown({ 
+    Name = "Challenge Tiers",
     Options = ChallengeTierList,
-    Multi = true,
+    MultipleOptions = true,
     Callback = function(state) Options.ChallengeTiers = state end
 
 })
-Toggles.AutoCompleteChallenges = false
-QuestsTab:Toggle({ Title = "Auto Complete Challenges", Default = false,
+QuestsTab:CreateToggle({ Name = "Auto Complete Challenges", CurrentValue = false,
+    Flag = "AutoCompleteChallenges",
     Callback = function(v)
-        Toggles.AutoCompleteChallenges = v
+        Toggles.AutoCompleteChallenges.Value = v
         if v then
             startLoop("AutoCompleteChallenges", function()
                 if not Remotes.ChallengeStart then return end
@@ -573,10 +568,10 @@ QuestsTab:Toggle({ Title = "Auto Complete Challenges", Default = false,
         else stopLoop("AutoCompleteChallenges") end
     end
  })
-Toggles.AutoEnterInfiniteTower = false
-QuestsTab:Toggle({ Title = "Auto Enter Infinite Tower", Default = false,
+QuestsTab:CreateToggle({ Name = "Auto Enter Infinite Tower", CurrentValue = false,
+    Flag = "AutoEnterInfiniteTower",
     Callback = function(v)
-        Toggles.AutoEnterInfiniteTower = v
+        Toggles.AutoEnterInfiniteTower.Value = v
         if v then
             startLoop("AutoEnterInfiniteTower", function()
                 if Remotes.InfiniteTowerEnter then
@@ -586,10 +581,10 @@ QuestsTab:Toggle({ Title = "Auto Enter Infinite Tower", Default = false,
         else stopLoop("AutoEnterInfiniteTower") end
     end
  })
-Toggles.AutoClaimDailyRewards = false
-QuestsTab:Toggle({ Title = "Auto Claim Daily Rewards", Default = false,
+QuestsTab:CreateToggle({ Name = "Auto Claim Daily Rewards", CurrentValue = false,
+    Flag = "AutoClaimDailyRewards",
     Callback = function(v)
-        Toggles.AutoClaimDailyRewards = v
+        Toggles.AutoClaimDailyRewards.Value = v
         if v then
             startLoop("AutoClaimDailyRewards", function()
                 if Remotes.ClaimDaily and Remotes.GetDailyStatus then
@@ -601,10 +596,10 @@ QuestsTab:Toggle({ Title = "Auto Claim Daily Rewards", Default = false,
         else stopLoop("AutoClaimDailyRewards") end
     end
  })
-Toggles.AutoClaimGroupRewards = false
-QuestsTab:Toggle({ Title = "Auto Claim Group Rewards", Default = false,
+QuestsTab:CreateToggle({ Name = "Auto Claim Group Rewards", CurrentValue = false,
+    Flag = "AutoClaimGroupRewards",
     Callback = function(v)
-        Toggles.AutoClaimGroupRewards = v
+        Toggles.AutoClaimGroupRewards.Value = v
         if v then
             startLoop("AutoClaimGroupRewards", function()
                 if Remotes.ClaimGroup then pcall(function() Remotes.ClaimGroup:InvokeServer() end) end
@@ -612,7 +607,7 @@ QuestsTab:Toggle({ Title = "Auto Claim Group Rewards", Default = false,
         else stopLoop("AutoClaimGroupRewards") end
     end
  })
-QuestsTab:Button({ Title = "Claim Daily Now",
+QuestsTab:CreateButton({ Name = "Claim Daily Now",
     Callback = function()
         if Remotes.ClaimDaily and Remotes.GetDailyStatus then
             local ok, st = pcall(function() return Remotes.GetDailyStatus:InvokeServer() end)
@@ -623,7 +618,7 @@ QuestsTab:Button({ Title = "Claim Daily Now",
     end
 
 })
-QuestsTab:Button({ Title = "Claim Group Now",
+QuestsTab:CreateButton({ Name = "Claim Group Now",
     Callback = function()
         if Remotes.ClaimGroup then
             pcall(function() Remotes.ClaimGroup:InvokeServer() end)
@@ -635,10 +630,10 @@ QuestsTab:Button({ Title = "Claim Group Now",
 -- 12. Inventory tab (Roll & Units)
 ------------------------------------------------------------
 })
-Toggles.AutoRoll = false
-InventoryTab:Toggle({ Title = "Auto Roll (Station)", Default = false,
+InventoryTab:CreateToggle({ Name = "Auto Roll (Station)", CurrentValue = false,
+    Flag = "AutoRoll",
     Callback = function(v)
-        Toggles.AutoRoll = v
+        Toggles.AutoRoll.Value = v
         if v then
             local char = LocalPlayer.Character
             local hrp = char and char:FindFirstChild("HumanoidRootPart")
@@ -660,10 +655,10 @@ InventoryTab:Toggle({ Title = "Auto Roll (Station)", Default = false,
     end
  })
 Options.KeepRarities = RarityList
-InventoryTab:Dropdown({ 
-    Text = "Keep Rarities",
+InventoryTab:CreateDropdown({ 
+    Name = "Keep Rarities",
     Options = RarityList,
-    Multi = true,
+    MultipleOptions = true,
     Callback = function(state) Options.KeepRarities = state end
 
 })
@@ -675,8 +670,8 @@ InventoryTab:Input({
     Callback = function(state) Options.MaxBuyPrice = state end
 
 })
-InventoryTab:Label({ Text = "Wanted but short on cash waits. Mythic+ is never auto-destroyed.:  ", DoesWrap = true })
-InventoryTab:Button({ Title = "Roll Once",
+InventoryTab:CreateLabel({ Text = "Wanted but short on cash waits. Mythic+ is never auto-destroyed.:  " })
+InventoryTab:CreateButton({ Name = "Roll Once",
     Callback = function()
         local rb = getRollButton()
         local pp = rb and rb:FindFirstChild("ProximityPrompt")
@@ -689,7 +684,7 @@ InventoryTab:Button({ Title = "Roll Once",
     end
 
 })
-InventoryTab:Button({ Title = "Collect Wanted Once",
+InventoryTab:CreateButton({ Name = "Collect Wanted Once",
     Callback = function()
         local bought, waiting, precious, total = collectWantedOnce()
         if precious > 0 then notify("Collect", "Rare unit on stand: collect manually", 4)
@@ -699,7 +694,7 @@ InventoryTab:Button({ Title = "Collect Wanted Once",
     end
 
 })
-InventoryTab:Button({ Title = "Go To Station",
+InventoryTab:CreateButton({ Name = "Go To Station",
     Callback = function()
         local rb = getRollButton()
         local char = LocalPlayer.Character
@@ -709,10 +704,10 @@ InventoryTab:Button({ Title = "Go To Station",
 
 -- Unit Management
 })
-Toggles.AutoEquipBestUnits = false
-InventoryTab:Toggle({ Title = "Auto Equip Best Units", Default = false,
+InventoryTab:CreateToggle({ Name = "Auto Equip Best Units", CurrentValue = false,
+    Flag = "AutoEquipBestUnits",
     Callback = function(v)
-        Toggles.AutoEquipBestUnits = v
+        Toggles.AutoEquipBestUnits.Value = v
         if v then
             startLoop("AutoEquipBestUnits", function()
                 if Remotes.EquipBest then pcall(function() Remotes.EquipBest:InvokeServer() end) end
@@ -720,7 +715,7 @@ InventoryTab:Toggle({ Title = "Auto Equip Best Units", Default = false,
         else stopLoop("AutoEquipBestUnits") end
     end
  })
-InventoryTab:Button({ Title = "Pick Up Placed Units",
+InventoryTab:CreateButton({ Name = "Pick Up Placed Units",
     Callback = function()
         if Remotes.PickUpAll then
             local ok, res = pcall(function() return Remotes.PickUpAll:InvokeServer() end)
@@ -729,7 +724,7 @@ InventoryTab:Button({ Title = "Pick Up Placed Units",
     end
 
 })
-InventoryTab:Button({ Title = "Fuse Duplicates",
+InventoryTab:CreateButton({ Name = "Fuse Duplicates",
     Callback = function()
         if not Remotes.Fuse then return end
         local fused = 0
@@ -747,14 +742,14 @@ InventoryTab:Button({ Title = "Fuse Duplicates",
 
 })
 Options.EvolveTargets = EvolveList
-InventoryTab:Dropdown({ 
-    Text = "Evolve Targets",
+InventoryTab:CreateDropdown({ 
+    Name = "Evolve Targets",
     Options = EvolveList,
-    Multi = true,
+    MultipleOptions = true,
     Callback = function(state) Options.EvolveTargets = state end
 
 })
-InventoryTab:Button({ Title = "Start Evolve",
+InventoryTab:CreateButton({ Name = "Start Evolve",
     Callback = function()
         if not Remotes.Evolve then return end
         local sel = selectedSet("EvolveTargets")
@@ -771,7 +766,7 @@ InventoryTab:Button({ Title = "Start Evolve",
     end
 
 })
-InventoryTab:Button({ Title = "Claim Evolve",
+InventoryTab:CreateButton({ Name = "Claim Evolve",
     Callback = function()
         if Remotes.ClaimEvolve then
             local ok, res = pcall(function() return Remotes.ClaimEvolve:InvokeServer() end)
@@ -780,12 +775,12 @@ InventoryTab:Button({ Title = "Claim Evolve",
     end
 
 })
-InventoryTab:Label({ Text = "Fuse needs 2+ copies of one unit. Evolve needs copies plus materials.:  ", DoesWrap = true })
+InventoryTab:CreateLabel({ Text = "Fuse needs 2+ copies of one unit. Evolve needs copies plus materials.:  " })
 -- Stat Upgrades
-Toggles.AutoUpgradeAll = false
-InventoryTab:Toggle({ Title = "Auto Upgrade All Stats", Default = false,
+InventoryTab:CreateToggle({ Name = "Auto Upgrade All Stats", CurrentValue = false,
+    Flag = "AutoUpgradeAll",
     Callback = function(v)
-        Toggles.AutoUpgradeAll = v
+        Toggles.AutoUpgradeAll.Value = v
         if v then
             startLoop("AutoUpgradeAll", function()
                 if not (Remotes.Upgrade and UpgradeConfig) then return end
@@ -810,17 +805,17 @@ InventoryTab:Toggle({ Title = "Auto Upgrade All Stats", Default = false,
 -- 13. Shop tab (Weapons + Potions)
 ------------------------------------------------------------
 Options.BuyWeapons = WeaponList
-ShopTab:Dropdown({ 
-    Text = "Weapons to Buy",
+ShopTab:CreateDropdown({ 
+    Name = "Weapons to Buy",
     Options = WeaponList,
-    Multi = true,
+    MultipleOptions = true,
     Callback = function(state) Options.BuyWeapons = state end
 
 })
-Toggles.AutoBuyWeapons = false
-ShopTab:Toggle({ Title = "Auto Buy Weapons", Default = false,
+ShopTab:CreateToggle({ Name = "Auto Buy Weapons", CurrentValue = false,
+    Flag = "AutoBuyWeapons",
     Callback = function(v)
-        Toggles.AutoBuyWeapons = v
+        Toggles.AutoBuyWeapons.Value = v
         if v then
             startLoop("AutoBuyWeapons", function()
                 if not Remotes.BuyWeapon then return end
@@ -838,10 +833,10 @@ ShopTab:Toggle({ Title = "Auto Buy Weapons", Default = false,
         else stopLoop("AutoBuyWeapons") end
     end
  })
-Toggles.AutoEquipBestWeapon = false
-ShopTab:Toggle({ Title = "Auto Equip Best Weapon", Default = false,
+ShopTab:CreateToggle({ Name = "Auto Equip Best Weapon", CurrentValue = false,
+    Flag = "AutoEquipBestWeapon",
     Callback = function(v)
-        Toggles.AutoEquipBestWeapon = v
+        Toggles.AutoEquipBestWeapon.Value = v
         if v then
             startLoop("AutoEquipBestWeapon", function()
                 if not Remotes.EquipWeapon then return end
@@ -853,7 +848,7 @@ ShopTab:Toggle({ Title = "Auto Equip Best Weapon", Default = false,
         else stopLoop("AutoEquipBestWeapon") end
     end
  })
-ShopTab:Button({ Title = "Equip Best Now",
+ShopTab:CreateButton({ Name = "Equip Best Now",
     Callback = function()
         if not Remotes.EquipWeapon then return end
         for _, w in ipairs(WeaponBestFirst) do
@@ -865,17 +860,17 @@ ShopTab:Button({ Title = "Equip Best Now",
 
 })
 Options.PotionTypes = PotionList
-ShopTab:Dropdown({ 
-    Text = "Potions",
+ShopTab:CreateDropdown({ 
+    Name = "Potions",
     Options = PotionList,
-    Multi = true,
+    MultipleOptions = true,
     Callback = function(state) Options.PotionTypes = state end
 
 })
-Toggles.AutoUsePotions = false
-ShopTab:Toggle({ Title = "Auto Use Potions", Default = false,
+ShopTab:CreateToggle({ Name = "Auto Use Potions", CurrentValue = false,
+    Flag = "AutoUsePotions",
     Callback = function(v)
-        Toggles.AutoUsePotions = v
+        Toggles.AutoUsePotions.Value = v
         if v then
             startLoop("AutoUsePotions", function()
                 if not (Remotes.UsePotion and Remotes.GetItemInv) then return end
@@ -892,10 +887,10 @@ ShopTab:Toggle({ Title = "Auto Use Potions", Default = false,
         else stopLoop("AutoUsePotions") end
     end
  })
-Toggles.AutoUseOnPlaced = false
-ShopTab:Toggle({ Title = "Auto-Use Abilities on Placed Units", Default = false,
+ShopTab:CreateToggle({ Name = "Auto-Use Abilities on Placed Units", CurrentValue = false,
+    Flag = "AutoUseOnPlaced",
     Callback = function(v)
-        Toggles.AutoUseOnPlaced = v
+        Toggles.AutoUseOnPlaced.Value = v
         if v then
             startLoop("AutoUseOnPlaced", function()
                 if not Remotes.SetAutoUse then return end
@@ -913,7 +908,7 @@ ShopTab:Toggle({ Title = "Auto-Use Abilities on Placed Units", Default = false,
         end
     end
  })
-ShopTab:Button({ Title = "Use All Abilities",
+ShopTab:CreateButton({ Name = "Use All Abilities",
     Callback = function()
         if not Remotes.UseAbility then return end
         local n = 0
@@ -928,10 +923,10 @@ ShopTab:Button({ Title = "Use All Abilities",
 -- 14. Zones tab
 ------------------------------------------------------------
 })
-Toggles.AutoPurchaseZones = false
-ZonesTab:Toggle({ Title = "Auto Purchase Zones", Default = false,
+ZonesTab:CreateToggle({ Name = "Auto Purchase Zones", CurrentValue = false,
+    Flag = "AutoPurchaseZones",
     Callback = function(v)
-        Toggles.AutoPurchaseZones = v
+        Toggles.AutoPurchaseZones.Value = v
         if v then
             startLoop("AutoPurchaseZones", function()
                 if not Remotes.ZonePurchase then return end
@@ -943,7 +938,7 @@ ZonesTab:Toggle({ Title = "Auto Purchase Zones", Default = false,
         else stopLoop("AutoPurchaseZones") end
     end
  })
-local zoneLabel = ZonesTab:Label({ Text = "Next: ...:  ", DoesWrap = true })
+local zoneLabel = ZonesTab:CreateLabel({ Text = "Next: ...:  " })
 LiveLabels.NextZone = zoneLabel
 task.spawn(function()
     while not Unloaded do
@@ -951,22 +946,22 @@ task.spawn(function()
         pcall(function()
             local price, name = nextZonePrice()
             if price then
-                zoneLabel:SetText("Next: " .. tostring(name) .. " (" .. tostring(price) .. ", you: " .. tostring(money()) .. ")")
+                zoneLabel:Set("Next: " .. tostring(name) .. " (" .. tostring(price) .. ", you: " .. tostring(money()) .. ")")
             else
-                zoneLabel:SetText("Next: maxed or unknown")
+                zoneLabel:Set("Next: maxed or unknown")
             end
         end)
     end
 end)
 Options.TravelZones = { ZoneList[1] }
-ZonesTab:Dropdown({ 
-    Text = "Travel Destination",
+ZonesTab:CreateDropdown({ 
+    Name = "Travel Destination",
     Options = ZoneList,
-    Multi = false,
+    MultipleOptions = false,
     Callback = function(state) Options.TravelZones = state end
 
 })
-ZonesTab:Button({ Title = "Travel Now",
+ZonesTab:CreateButton({ Name = "Travel Now",
     Callback = function()
         if not Remotes.ZoneTravel then return end
         local v = Options.TravelZones
@@ -979,9 +974,9 @@ ZonesTab:Button({ Title = "Travel Now",
 -- 15. Rebirth tab
 ------------------------------------------------------------
 })
-local gateLabel = RebirthTab:Label({ Text = "...:  ", DoesWrap = true })
+local gateLabel = RebirthTab:CreateLabel({ Text = "...:  " })
 LiveLabels.PrestigeGate = gateLabel
-RebirthTab:Button({ Title = "Prestige Now",
+RebirthTab:CreateButton({ Name = "Prestige Now",
     Callback = function()
         local need = prestigeRequired()
         local lvl = LocalPlayer:GetAttribute("Level") or 0
@@ -993,10 +988,10 @@ RebirthTab:Button({ Title = "Prestige Now",
     end
 
 })
-Toggles.AutoPrestige = false
-RebirthTab:Toggle({ Title = "Auto Prestige", Default = false,
+RebirthTab:CreateToggle({ Name = "Auto Prestige", CurrentValue = false,
+    Flag = "AutoPrestige",
     Callback = function(v)
-        Toggles.AutoPrestige = v
+        Toggles.AutoPrestige.Value = v
         if v then
             startLoop("AutoPrestige", function()
                 local need = prestigeRequired()
@@ -1007,12 +1002,12 @@ RebirthTab:Toggle({ Title = "Auto Prestige", Default = false,
         else stopLoop("AutoPrestige") end
     end
  })
-RebirthTab:Label({ Text = "Prestige resets progress for permanent rewards. Formula: level 10 plus 5 per early prestige.:  ", DoesWrap = true })
+RebirthTab:CreateLabel({ Text = "Prestige resets progress for permanent rewards. Formula: level 10 plus 5 per early prestige.:  " })
 task.spawn(function()
     while not Unloaded do
         task.wait(1)
         pcall(function()
-            gateLabel:SetText("Need Lv " .. prestigeRequired() ..
+            gateLabel:Set("Need Lv " .. prestigeRequired() ..
                 " | You: Lv " .. tostring(LocalPlayer:GetAttribute("Level") or 0) ..
                 " P" .. tostring(LocalPlayer:GetAttribute("Prestige") or 0))
         end)
@@ -1021,15 +1016,15 @@ end)
 ------------------------------------------------------------
 -- 16. Settings tab
 ------------------------------------------------------------
-Toggles.AntiAFK = true
-SettingsTab:Toggle({ Title = "Anti-AFK", Default = true,
+SettingsTab:CreateToggle({ Name = "Anti-AFK", CurrentValue = true,
+    Flag = "AntiAFK",
     Callback = function(v)
-        Toggles.AntiAFK = v
+        Toggles.AntiAFK.Value = v
         setAntiAFK(v)
     end
  })
-SettingsTab:Label({ Text = "Menu Keybind: RightShift:  ", DoesWrap = true })
-SettingsTab:Button({ Title = "Unload Stealth",
+SettingsTab:CreateLabel({ Text = "Menu Keybind: RightShift:  " })
+SettingsTab:CreateButton({ Name = "Unload Stealth",
     Description = "Removes the menu and stops all automation",
     Callback = function()
         Unloaded = true
@@ -1041,10 +1036,10 @@ SettingsTab:Button({ Title = "Unload Stealth",
 })
 task.defer(function()
     task.wait(0.5)
-    if Toggles.AntiAFK then setAntiAFK(Toggles.AntiAFK) end
+    if Toggles.AntiAFK and Toggles.AntiAFK.Value then setAntiAFK(Toggles.AntiAFK and Toggles.AntiAFK.Value) end
 end)
 ------------------------------------------------------------
 -- 17. Final
 ------------------------------------------------------------
 notify("Stealth", gameName .. " loaded! Press RightShift", 4)
-print("[Stealth] Loaded " .. gameName .. " via WindUI")
+print("[Stealth] Loaded " .. gameName .. " via Airflow")

@@ -43916,14 +43916,14 @@ local selectedKey = nil
 local selectedName = nil
 do
     ------------------------------------------------------------
-    -- WindUI — Stealth | MM2 Weapon Spawner
+    -- Airflow — Stealth | MM2 Weapon Spawner
     ------------------------------------------------------------
-    -- WindUI requires elevated thread identity to create Font objects and
-    -- access certain Instance APIs. Without this, WindUI's Notify() and
+    -- Airflow requires elevated thread identity to create Font objects and
+    -- access certain Instance APIs. Without this, Airflow's Notify() and
     -- font loading crash with:
     --   "The current thread cannot access 'Instance' (lacking capability Plugin)"
     --
-    -- The problem: WindUI calls task.spawn internally for notifications and
+    -- The problem: Airflow calls task.spawn internally for notifications and
     -- animations, and those new threads inherit the DEFAULT identity, not
     -- the elevated one.
     --
@@ -44025,11 +44025,15 @@ do
     -- If neither approach worked, _elevateIdentity() on the main thread is
     -- still in effect. Most modern executors propagate identity to child
     -- threads, so this is usually enough.
-    local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
-    if not WindUI then warn("[Stealth] Failed to load WindUI UI") return end
-    -- Re-assert after loadstring (it may reset identity).
+    local Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/PookiePepelsss/Airflow-UI/refs/heads/main/Source.luau"))()
+        -- Re-assert after loadstring (it may reset identity).
     _elevateIdentity()
-    local Window = WindUI:CreateWindow({ Title = "Stealth", Folder = "Stealth", Icon = "solar:shield-keyhole-bold-duotone", OpenButton = { Title = "Open Stealth", Enabled = true }, Topbar = { Height = 44, ButtonsType = "Mac" } })
+    local Window = Airflow:CreateWindow({
+    Name = "Stealth",
+    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "default" },
+    Icon = "solar:shield-keyhole-bold-duotone",
+    ToggleUIKeybind = "RightShift",
+})
 
     -- Build weapon lookup tables.
     -- We keep the dropdown entries SHORT (just the weapon name) so they
@@ -44053,9 +44057,8 @@ do
     end
     table.sort(weaponNames, function(a, b) return a:lower() < b:lower() end)
     ------------------------------------------------------------ Tab: Spawner
-    local _sec_SpawnTab = Window:Section({ Title = "Weapons" })
-local SpawnTab = _sec_SpawnTab:Tab({ Title = "Weapons", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-    SpawnTab:AddLeftGroupbox("Select weapon")
+    local SpawnTab = Window:CreateTab({ Name = "Weapons", Icon = "solar:widget-bold" })
+    SpawnTab:CreateSection("Select weapon")
     -- Status label (replaces the old statusLabel)
     -- We use a Paragraph that we can update via :Set()
     statusLabel = SpawnTab:Paragraph({
@@ -44063,31 +44066,28 @@ local SpawnTab = _sec_SpawnTab:Tab({ Title = "Weapons", Icon = "solar:widget-bol
         Content = "Select a weapon, then click Spawn."
     })
 
-    -- Dropdown with all weapons (WindUI has built-in search in dropdowns).
+    -- Dropdown with all weapons (Airflow has built-in search in dropdowns).
     -- Entries are SHORT (just the weapon name) to prevent horizontal overflow.
     local WeaponDropdown
-    WeaponDropdown = SpawnTab:Dropdown({ 
-        Text = "Weapon",
+    WeaponDropdown = SpawnTab:CreateDropdown({ 
+        Name = "Weapon",
         Desc = "Click and type to search.",
         Options = weaponNames,
         Value = nil,
-        Multi = false,
+        MultipleOptions = false,
         Callback = function(selected)
             local wv = weaponByKey[selected]
             if wv then
                 selectedKey = wv.key
                 selectedText = wv.name
                 if statusLabel then
-                    statusLabel:SetText({
-                        Text = "Selected",
-                        Content = wv.name .. " (" .. wv.type .. " — " .. (wv.rarity or "?") .. ")"
-                    })
+                    statusLabel:Set(wv.name .. " (" .. wv.type .. " — " .. (wv.rarity or "?") .. ")")
                 end
             end
         end
     })
 
-    SpawnTab:Button({ Title = "Spawn Weapon",
+    SpawnTab:CreateButton({ Name = "Spawn Weapon",
         Desc = "Spawns the selected weapon into your inventory (client-side).",
         Color = Color3.fromHex("#30FF6A"),
         Justify = "Left",
@@ -44095,61 +44095,58 @@ local SpawnTab = _sec_SpawnTab:Tab({ Title = "Weapons", Icon = "solar:widget-bol
         Callback = function()
             if not selectedKey then
                 if statusLabel then
-                    statusLabel:SetText({ Title = "Warning", Content = "Select a weapon first."})
+                    statusLabel:Set("Select a weapon first.")
                 end
-                WindUI:Notify({
-                    Name = "Stealth",
+                Airflow:Notify({
+                    Title = "Stealth",
                     Content = "Select a weapon first.",
-                    Duration = 3
-                })
+                    Duration = 3,
+    Type = "Success"
+})
                 return
             end
             task.spawn(function()
                 spawnWeapon(selectedKey, 1)
                 if statusLabel then
-                    statusLabel:SetText({
-                        Name = "Spawned",
-                        Content = selectedName or selectedKey
-                    })
+                    statusLabel:Set(selectedName or selectedKey)
                 end
-                WindUI:Notify({
-                    Name = "Stealth",
+                Airflow:Notify({
+                    Title = "Stealth",
                     Content = "Spawned: " .. (selectedName or selectedKey),
-                    Duration = 3
-                })
+                    Duration = 3,
+    Type = "Success"
+})
             end)
         end
     })
 
     ------------------------------------------------------------ Tab: Settings
-    local _sec_SettingsTab = Window:Section({ Title = "Config" })
-local SettingsTab = _sec_SettingsTab:Tab({ Title = "Config", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-    SettingsTab:AddLeftGroupbox("Visualizer options")
-    SettingsTab:Toggle({ Title = "Inject Particles", Desc = "ParticleEmitter / Fire / Smoke / Sparkles / Lights on spawned weapons.",
+    local SettingsTab = Window:CreateTab({ Name = "Config", Icon = "solar:widget-bold" })
+    SettingsTab:CreateSection("Visualizer options")
+    SettingsTab:CreateToggle({ Name = "Inject Particles", Desc = "ParticleEmitter / Fire / Smoke / Sparkles / Lights on spawned weapons.",
         Value = CONFIG.InjectParticles,
         Callback = function(v)
             CONFIG.InjectParticles = v
         end
  })
-    SettingsTab:Toggle({ Title = "Hide Original Weapon", Desc = "Hide your real held weapon so only the spawn shows.",
+    SettingsTab:CreateToggle({ Name = "Hide Original Weapon", Desc = "Hide your real held weapon so only the spawn shows.",
         Value = CONFIG.HideOriginal,
         Callback = function(v)
             CONFIG.HideOriginal = v
         end
  })
-    SettingsTab:Slider({ 
-        Text = "Poll Rate",
+    SettingsTab:CreateSlider({ 
+        Name = "Poll Rate",
         Desc = "How often to check for equip changes (seconds).",
-        Min = 0.05,
-        Max = 1.0,
-        Increment = 0.05,
-        Value = CONFIG.PollRate,
+        Range = { 0.05, 1.0 },
+    Increment = 0.05,
+        CurrentValue = CONFIG.PollRate,
         Callback = function(v)
             CONFIG.PollRate = v
         end
     })
 
-    SettingsTab:Button({ Title = "Unload Stealth",
+    SettingsTab:CreateButton({ Name = "Unload Stealth",
         Desc = "Closes the UI and removes all overlays.",
         Color = Color3.fromHex("#ff4830"),
         Justify = "Left",
@@ -44160,17 +44157,18 @@ local SettingsTab = _sec_SettingsTab:Tab({ Title = "Config", Icon = "solar:widge
         end
     })
 
-    WindUI:Notify({
-        Name = "Stealth | MM2",
+    Airflow:Notify({
+        Title = "Stealth | MM2",
         Content = ("Ready — %d weapons. Select → Spawn → equip."):format(#weaponList),
-        Duration = 5
-    })
+        Duration = 5,
+    Type = "Success"
+})
 end
 -- =========================================================================
 -- Stealth | MM2 — Extended Features (ESP, AutoFarm, Character, Teleport,
 --                                   Role Functions, Anti-AFK)
 -- =========================================================================
--- Adapted from BenjoHub (WindUI) + MvS Hub GodMode + Zeion AimAssist.
+-- Adapted from BenjoHub (Airflow) + MvS Hub GodMode + Zeion AimAssist.
 -- Stripped: webhooks, Discord links to other communities, server lagger,
 -- trade scam (griefing), weapon dupe (bannable). Kept: legitimate QoL
 -- features.
@@ -44580,13 +44578,12 @@ do
     ------------------------------------------------------------
     -- Extended Tabs (added to the existing Window)
     ------------------------------------------------------------
-    -- NOTE: `Window` is the WindUI window created earlier in this file.
+    -- NOTE: `Window` is the Airflow window created earlier in this file.
     -- We attach new sections/tabs to it.
     -- ---------- ESP Tab ----------
-    local _sec_ESPTab = Window:Section({ Title = "ESP" })
-local ESPTab = _sec_ESPTab:Tab({ Title = "ESP", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-    ESPTab:AddLeftGroupbox("Player ESP Settings")
-    ESPTab:Toggle({ Title = "Enable ESP", Desc = "Highlight players through walls.",
+    local ESPTab = Window:CreateTab({ Name = "ESP", Icon = "solar:widget-bold" })
+    ESPTab:CreateSection("Player ESP Settings")
+    ESPTab:CreateToggle({ Name = "Enable ESP", Desc = "Highlight players through walls.",
         Value = false,
         Callback = function(v) ESP.Enabled = v; RefreshESP() end
  })
@@ -44618,10 +44615,9 @@ local ESPTab = _sec_ESPTab:Tab({ Title = "ESP", Icon = "solar:widget-bold", Icon
     })
 
     -- ---------- AutoFarm Tab ----------
-    local _sec_AutoFarmTab = Window:Section({ Title = "Farm" })
-local AutoFarmTab = _sec_AutoFarmTab:Tab({ Title = "Farm", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-    AutoFarmTab:AddLeftGroupbox("Coin & Candy Collection")
-    AutoFarmTab:Toggle({ Title = "Coin Autofarm", Desc = "Automatically collect coins in the map.",
+    local AutoFarmTab = Window:CreateTab({ Name = "Farm", Icon = "solar:widget-bold" })
+    AutoFarmTab:CreateSection("Coin & Candy Collection")
+    AutoFarmTab:CreateToggle({ Name = "Coin Autofarm", Desc = "Automatically collect coins in the map.",
         Value = false,
         Callback = function(v)
             AutoFarm.Coins = v
@@ -44636,7 +44632,7 @@ local AutoFarmTab = _sec_AutoFarmTab:Tab({ Title = "Farm", Icon = "solar:widget-
         Callback = function(value) AutoFarm.Speed = value end
     })
 
-    AutoFarmTab:Toggle({ Title = "Auto Reset Character", Desc = "Reset your character every N seconds (useful for forcing new round spawns).",
+    AutoFarmTab:CreateToggle({ Name = "Auto Reset Character", Desc = "Reset your character every N seconds (useful for forcing new round spawns).",
         Value = false,
         Callback = function(v)
             AutoFarm.AutoReset = v
@@ -44652,9 +44648,8 @@ local AutoFarmTab = _sec_AutoFarmTab:Tab({ Title = "Farm", Icon = "solar:widget-
     })
 
     -- ---------- Character Tab ----------
-    local _sec_CharacterTab = Window:Section({ Title = "Movement" })
-local CharacterTab = _sec_CharacterTab:Tab({ Title = "Movement", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-    CharacterTab:AddLeftGroupbox("Movement Settings")
+    local CharacterTab = Window:CreateTab({ Name = "Movement", Icon = "solar:widget-bold" })
+    CharacterTab:CreateSection("Movement Settings")
     CharacterTab:CreateSlider({
         Name = "Walk Speed",
         Desc = "Default: 16",
@@ -44663,7 +44658,7 @@ local CharacterTab = _sec_CharacterTab:Tab({ Title = "Movement", Icon = "solar:w
         Callback = function(value) Character.WalkSpeed = value end
     })
 
-    CharacterTab:Toggle({ Title = "Lock Walk Speed", Desc = "Re-apply walk speed if the game resets it.",
+    CharacterTab:CreateToggle({ Name = "Lock Walk Speed", Desc = "Re-apply walk speed if the game resets it.",
         Value = false,
         Callback = function(v) Character.LockWalkSpeed = v end
  })
@@ -44675,19 +44670,19 @@ local CharacterTab = _sec_CharacterTab:Tab({ Title = "Movement", Icon = "solar:w
         Callback = function(value) Character.JumpPower = value end
     })
 
-    CharacterTab:Toggle({ Title = "Lock Jump Power", Desc = "Re-apply jump power if the game resets it.",
+    CharacterTab:CreateToggle({ Name = "Lock Jump Power", Desc = "Re-apply jump power if the game resets it.",
         Value = false,
         Callback = function(v) Character.LockJumpPower = v end
  })
-    CharacterTab:Toggle({ Title = "Noclip", Desc = "Walk through walls. Disable before round end to avoid suspicion.",
+    CharacterTab:CreateToggle({ Name = "Noclip", Desc = "Walk through walls. Disable before round end to avoid suspicion.",
         Value = false,
         Callback = function(v) SetNoclip(v) end
  })
-    CharacterTab:Toggle({ Title = "Infinite Jump", Desc = "Jump in mid-air.",
+    CharacterTab:CreateToggle({ Name = "Infinite Jump", Desc = "Jump in mid-air.",
         Value = false,
         Callback = function(v) SetInfiniteJump(v) end
  })
-    CharacterTab:Button({ Title = "Reset Character",
+    CharacterTab:CreateButton({ Name = "Reset Character",
         Desc = "Force respawn.",
         Color = Color3.fromHex("#ff4830"),
         Justify = "Left",
@@ -44699,9 +44694,8 @@ local CharacterTab = _sec_CharacterTab:Tab({ Title = "Movement", Icon = "solar:w
     })
 
     -- ---------- Teleport Tab ----------
-    local _sec_TeleportTab = Window:Section({ Title = "Teleport" })
-local TeleportTab = _sec_TeleportTab:Tab({ Title = "Teleport", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-    TeleportTab:AddLeftGroupbox("Player Teleportation")
+    local TeleportTab = Window:CreateTab({ Name = "Teleport", Icon = "solar:widget-bold" })
+    TeleportTab:CreateSection("Player Teleportation")
     local playerList = {}
     local playerDropdown
     local function refreshPlayerList()
@@ -44714,16 +44708,16 @@ local TeleportTab = _sec_TeleportTab:Tab({ Title = "Teleport", Icon = "solar:wid
         end
     end
     local selectedPlayerName = nil
-    playerDropdown = TeleportTab:Dropdown({ 
-        Text = "Select Player",
+    playerDropdown = TeleportTab:CreateDropdown({ 
+        Name = "Select Player",
         Desc = "Choose a player to teleport to.",
         Options = playerList,
         Value = nil,
-        Multi = false,
+        MultipleOptions = false,
         Callback = function(selected) selectedPlayerText = selected end
     })
 
-    TeleportTab:Button({ Title = "Teleport to Player",
+    TeleportTab:CreateButton({ Name = "Teleport to Player",
         Desc = "Teleports you to the selected player.",
         Color = Color3.fromHex("#30FF6A"),
         Justify = "Left",
@@ -44735,12 +44729,12 @@ local TeleportTab = _sec_TeleportTab:Tab({ Title = "Teleport", Icon = "solar:wid
         end
     })
 
-    TeleportTab:Button({ Title = "Refresh Player List",
+    TeleportTab:CreateButton({ Name = "Refresh Player List",
         Callback = refreshPlayerList
     })
 
-    TeleportTab:AddLeftGroupbox("Role Teleportation")
-    TeleportTab:Button({ Title = "Teleport to Murderer",
+    TeleportTab:CreateSection("Role Teleportation")
+    TeleportTab:CreateButton({ Name = "Teleport to Murderer",
         Desc = "Go to the current murderer (if any).",
         Color = Color3.fromHex("#dc143c"),
         Justify = "Left",
@@ -44748,7 +44742,7 @@ local TeleportTab = _sec_TeleportTab:Tab({ Title = "Teleport", Icon = "solar:wid
         Callback = function() TeleportToRole("Murderer") end
     })
 
-    TeleportTab:Button({ Title = "Teleport to Sheriff",
+    TeleportTab:CreateButton({ Name = "Teleport to Sheriff",
         Desc = "Go to the current sheriff (if any).",
         Color = Color3.fromHex("#4682b4"),
         Justify = "Left",
@@ -44761,18 +44755,17 @@ local TeleportTab = _sec_TeleportTab:Tab({ Title = "Teleport", Icon = "solar:wid
     Players.PlayerRemoving:Connect(function() task.wait(0.5); refreshPlayerList() end)
     refreshPlayerList()
     -- ---------- Role Functions Tab ----------
-    local _sec_RoleTab = Window:Section({ Title = "Role" })
-local RoleTab = _sec_RoleTab:Tab({ Title = "Role", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-    RoleTab:AddLeftGroupbox("Innocent")
-    RoleTab:Toggle({ Title = "Auto Grab Gun", Desc = "When a gun is dropped, teleport to it automatically.",
+    local RoleTab = Window:CreateTab({ Name = "Role", Icon = "solar:widget-bold" })
+    RoleTab:CreateSection("Innocent")
+    RoleTab:CreateToggle({ Name = "Auto Grab Gun", Desc = "When a gun is dropped, teleport to it automatically.",
         Value = false,
         Callback = function(v)
             autoGunActive = v
             if v then AutoGrabGun() end
         end
  })
-    RoleTab:AddLeftGroupbox("Murderer")
-    RoleTab:Button({ Title = "Kill All Players",
+    RoleTab:CreateSection("Murderer")
+    RoleTab:CreateButton({ Name = "Kill All Players",
         Desc = "Teleport-and-touch every player (only works if you're the murderer).",
         Color = Color3.fromHex("#dc143c"),
         Justify = "Left",
@@ -44780,43 +44773,44 @@ local RoleTab = _sec_RoleTab:Tab({ Title = "Role", Icon = "solar:widget-bold", I
         Callback = function() KillAllMurderer() end
     })
 
-    RoleTab:Button({ Title = "Equip Knife",
+    RoleTab:CreateButton({ Name = "Equip Knife",
         Desc = "Equip your knife from backpack.",
         Callback = function() EquipKnife() end
     })
 
     -- ---------- Utilities Tab ----------
-    local _sec_UtilitiesTab = Window:Section({ Title = "Utilities" })
-local UtilitiesTab = _sec_UtilitiesTab:Tab({ Title = "Utilities", Icon = "solar:widget-bold", IconShape = "Square", Border = true })
-    UtilitiesTab:AddLeftGroupbox("Server Utilities")
-    UtilitiesTab:Toggle({ Title = "Anti-AFK", Desc = "Prevents being kicked for inactivity.",
+    local UtilitiesTab = Window:CreateTab({ Name = "Utilities", Icon = "solar:widget-bold" })
+    UtilitiesTab:CreateSection("Server Utilities")
+    UtilitiesTab:CreateToggle({ Name = "Anti-AFK", Desc = "Prevents being kicked for inactivity.",
         Value = false,
         Callback = function(v)
             AntiAFK = v
             SetAntiAFK(v)
         end
  })
-    UtilitiesTab:Button({ Title = "Copy Discord Invite",
+    UtilitiesTab:CreateButton({ Name = "Copy Discord Invite",
         Desc = "Copies the Stealth Discord link to your clipboard.",
         Color = Color3.fromHex("#5865F2"),
         Justify = "Left",
         IconAlign = "Left",
         Callback = function()
             pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
-            WindUI:Notify({
-                Name = "Stealth | MM2",
+            Airflow:Notify({
+                Title = "Stealth | MM2",
                 Content = "Discord invite copied!",
-                Duration = 3
-            })
+                Duration = 3,
+    Type = "Success"
+})
         end
     })
 
     -- ---------- Welcome notification ----------
-    WindUI:Notify({
-        Name = "Stealth | MM2",
+    Airflow:Notify({
+        Title = "Stealth | MM2",
         Content = "Extended features loaded: ESP, AutoFarm, Teleport, Role Functions, Utilities.",
-        Duration = 5
-    })
+        Duration = 5,
+    Type = "Success"
+})
 end
 function setStatus(t, color)
     if statusLabel then
