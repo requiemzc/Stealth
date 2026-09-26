@@ -6,6 +6,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naell
 
 local SCRIPTS = {
     { name = "MM2 — Murder Mystery 2", desc = "Weapon spawner + visualizer.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MM2.lua" },
+    { name = "Blox Fruits", desc = "Quantum Onyx wrapper with Airflow UI overlay.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/BloxFruits.lua" },
     { name = "Murderers VS Sheriffs Duels", desc = "Auto-kill all + auto-equip gun with prediction.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MVSDuel.lua" },
     { name = "Deagle Arena", desc = "Kill all - works in ranked", url = "https://raw.githubusercontent.com/requiemzc/Stealth/refs/heads/main/scripts/Deaglearena.lua" },
     { name = "Chapter 1 — Farmhouse", desc = "Auto farm hay, sell, collect gems.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/Farmhouse.lua" },
