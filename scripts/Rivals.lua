@@ -1,3 +1,8 @@
+-- [[ Stealth | Rivals ]]
+--
+-- Universal combat script for Rivals (Roblox FPS).
+-- Uses Linoria UI.
+-- Discord: discord.gg/hqE5drDHF7
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/refs/heads/main/Library.lua'))()
 local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/refs/heads/main/addons/SaveManager.lua'))()
 local ThemeManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/refs/heads/main/addons/ThemeManager.lua'))()
@@ -4718,7 +4723,7 @@ local SILENT = false
 local function initialize(Library)
     if not Library then return end
 
-    local Window = Library:CreateWindow("Stealth")
+    local Window = Library:CreateWindow("Stealth | Rivals")
 
     local CombatTab = Window:AddTab("Combat")
     local VisualsTab = Window:AddTab("Visuals")
