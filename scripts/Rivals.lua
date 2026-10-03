@@ -1,31 +1,173 @@
 -- [[ Stealth | Rivals ]]
 --
 -- Universal combat script for Rivals (Roblox FPS).
--- Uses Linoria UI.
+-- Uses Airflow UI.
 -- Discord: discord.gg/hqE5drDHF7
-local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/refs/heads/main/Library.lua'))()
-
--- Stealth fix: nil-safe option/toggle accessors + dummy element fallback
-local _DummyElement = { Value = nil, ValueRaw = nil }
-_DummyElement.__index = _DummyElement
-function _DummyElement:Set() end
-function _DummyElement:Get() return nil end
-function _DummyElement:OnChanged() end
-_DummyElement.__gc = nil
-
-local function _safe_opt_onchanged(opt, fn)
-    if opt and opt.OnChanged then opt:OnChanged(fn) end
-end
-local function _safe_toggle_onchanged(t, fn)
-    if t and t.OnChanged then t:OnChanged(fn) end
+-- =============================================================
+-- Airflow UI Compatibility Layer (replaces Linoria)
+-- =============================================================
+local Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/PookiePepelsss/Airflow-UI/refs/heads/main/Source.luau"))()
+if not Airflow then
+    warn("[Stealth | Rivals] Failed to load Airflow UI")
+    return
 end
 
--- NOTE: setmetatable for Options/Toggles is done later, after Linoria
--- has finished creating all UI elements (see "Stealth fix: nil-safe
--- fallback" section below).
-local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/refs/heads/main/addons/SaveManager.lua'))()
-local ThemeManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/refs/heads/main/addons/ThemeManager.lua'))()
+local Toggles = {}
+local Options = {}
+Airflow.Flags = Airflow.Flags or {}
 
+local Library = {}
+
+function Library:CreateWindow(title)
+    local win = Airflow:CreateWindow({
+        Name = title,
+        ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "rivals" },
+        Icon = "solar:shield-keyhole-bold-duotone",
+        ToggleUIKeybind = "RightShift",
+    })
+    local origAddTab = win.CreateTab or win.Tab
+    function win:AddTab(name, ...)
+        local tab = origAddTab(self, { Name = name, Desc = "" })
+        local wrapper = setmetatable({ _airflowTab = tab }, TabWrapper)
+        return wrapper
+    end
+    function win:Toggle() end
+    function win:Notify(title, desc, time)
+        Airflow:Notify({ Title = title or "", Content = desc or "", Duration = time or 5, Type = "Info" })
+    end
+    return win
+end
+
+local TabWrapper = {}
+TabWrapper.__index = TabWrapper
+
+function TabWrapper:CreateSection(name)
+    if self._airflowTab.CreateSection then
+        self._airflowTab:CreateSection(name)
+    end
+    return self
+end
+TabWrapper.AddLeftGroupbox = TabWrapper.CreateSection
+TabWrapper.AddRightGroupbox = TabWrapper.CreateSection
+
+function TabWrapper:AddToggle(flag, opts)
+    local el = self._airflowTab:CreateToggle({
+        Name = opts.Text or flag,
+        Desc = opts.Desc or "",
+        CurrentValue = opts.Default or false,
+        Flag = flag,
+        Callback = function() end,
+    })
+    Toggles[flag] = el
+    Airflow.Flags[flag] = el
+    return self
+end
+
+function TabWrapper:AddSlider(flag, opts)
+    local el = self._airflowTab:CreateSlider({
+        Name = opts.Text or flag,
+        Desc = opts.Desc or "",
+        Range = { opts.Min or 0, opts.Max or 100 },
+        Increment = opts.Increment or 1,
+        Suffix = opts.Suffix or "",
+        CurrentValue = opts.Default or opts.Min or 0,
+        Flag = flag,
+        Callback = function() end,
+    })
+    Options[flag] = el
+    Airflow.Flags[flag] = el
+    return self
+end
+
+function TabWrapper:AddDropdown(flag, opts)
+    local el = self._airflowTab:CreateDropdown({
+        Name = opts.Text or flag,
+        Desc = opts.Desc or "",
+        Options = opts.Values or {},
+        CurrentOption = opts.Default,
+        MultipleOptions = opts.Multi or false,
+        Flag = flag,
+        Callback = function() end,
+    })
+    Options[flag] = el
+    Airflow.Flags[flag] = el
+    return self
+end
+
+function TabWrapper:AddColorPicker(flag, opts)
+    local el = self._airflowTab:CreateColorPicker({
+        Name = opts.Text or flag,
+        Desc = opts.Desc or "",
+        Color = opts.Default or Color3.fromRGB(255, 255, 255),
+        Flag = flag,
+        Callback = function() end,
+    })
+    Options[flag] = el
+    Airflow.Flags[flag] = el
+    return self
+end
+
+function TabWrapper:AddInput(flag, opts)
+    local el = self._airflowTab:CreateInput({
+        Name = opts.Text or flag,
+        Desc = opts.Desc or "",
+        PlaceholderText = opts.Placeholder or "",
+        CurrentValue = opts.Default or "",
+        Flag = flag,
+        Callback = function() end,
+    })
+    Options[flag] = el
+    Airflow.Flags[flag] = el
+    return self
+end
+
+function TabWrapper:AddKeybind(flag, opts)
+    local el = self._airflowTab:CreateKeybind({
+        Name = opts.Text or flag,
+        Desc = opts.Desc or "",
+        CurrentKeybind = opts.Default or "",
+        Flag = flag,
+        Callback = function() end,
+    })
+    Options[flag] = el
+    Airflow.Flags[flag] = el
+    return self
+end
+
+function TabWrapper:AddButton(text, fn)
+    self._airflowTab:CreateButton({
+        Name = text,
+        Callback = fn or function() end,
+    })
+    return self
+end
+
+function TabWrapper:AddLabel(text)
+    self._airflowTab:CreateLabel({ Text = text or "" })
+    return self
+end
+
+function TabWrapper:AddDivider()
+    self._airflowTab:CreateDivider()
+    return self
+end
+
+-- SaveManager stub
+local SaveManager = {}
+SaveManager.__index = SaveManager
+function SaveManager:LoadAutoloadConfig() end
+function SaveManager:BuildConfigSequence(tab) return {} end
+function SaveManager:LoadConfig(name) end
+function SaveManager:SaveConfig(name) end
+function SaveManager:SetLibrary(lib) end
+
+-- ThemeManager stub
+local ThemeManager = {}
+ThemeManager.__index = ThemeManager
+function ThemeManager:ApplyToTab(tab) end
+function ThemeManager:ApplyToWindow(win) end
+function ThemeManager:BuildConfigGroupbox(tab) end
+function ThemeManager:SetLibrary(lib) end
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -1039,55 +1181,55 @@ local G = function(R)
                         end
                         o()
                         do
-                                _safe_toggle_onchanged(Toggles.esp_healthbar, function(V)
+                                Toggles.esp_healthbar:OnChanged(function(V)
                                         L[3][L[2]] = V
                                         o()
                                 end)
-                                _safe_toggle_onchanged(Toggles.esp_name, function(V)
+                                Toggles.esp_name:OnChanged(function(V)
                                         R = V
                                         o()
                                 end)
-                                _safe_toggle_onchanged(Toggles.esp_distance, function(V)
+                                Toggles.esp_distance:OnChanged(function(V)
                                         c = V
                                         o()
                                 end)
-                                _safe_toggle_onchanged(Toggles.esp_weapon, function(V)
+                                Toggles.esp_weapon:OnChanged(function(V)
                                         y = V
                                         o()
                                 end)
-                                _safe_toggle_onchanged(Toggles.esp_box, function(V)
+                                Toggles.esp_box:OnChanged(function(V)
                                         O = V
                                         o()
                                 end)
-                                _safe_toggle_onchanged(Toggles.esp_fill, function(V)
+                                Toggles.esp_fill:OnChanged(function(V)
                                         t = V
                                         o()
                                 end)
-                                _safe_toggle_onchanged(Toggles.esp_skeleton, function(V)
+                                Toggles.esp_skeleton:OnChanged(function(V)
                                         B = V
                                         o()
                                 end)
-                                _safe_toggle_onchanged(Toggles.esp_show_team, function(o)
+                                Toggles.esp_show_team:OnChanged(function(o)
                                         w = o
                                         J.events.esp_color_changed:Fire()
                                         J.events.esp_effects_changed:Fire()
                                 end)
-                                (Options.esp_bounds_width_scale and Options.esp_bounds_width_scale.OnChanged or function() end)(function(o)
+                                Options.esp_bounds_width_scale:OnChanged(function(o)
                                         u = o / 100
                                 end)
-                                (Options.esp_bounds_type and Options.esp_bounds_type.OnChanged or function() end)(function(o)
+                                Options.esp_bounds_type:OnChanged(function(o)
                                         S = o == "dynamic"
                                 end)
-                                (Options.esp_skeleton_thickness and Options.esp_skeleton_thickness.OnChanged or function() end)(function(o)
+                                Options.esp_skeleton_thickness:OnChanged(function(o)
                                         Q = o
                                 end)
-                                _safe_toggle_onchanged(Toggles.esp_skeleton_outline, function(o)
+                                Toggles.esp_skeleton_outline:OnChanged(function(o)
                                         f = o
                                 end)
-                                _safe_toggle_onchanged(Toggles.esp_healthbar_resize, function(o)
+                                Toggles.esp_healthbar_resize:OnChanged(function(o)
                                         z = o
                                 end)
-                                (Options.esp_healthbar_health_lerp and Options.esp_healthbar_health_lerp.OnChanged or function() end)(function(o)
+                                Options.esp_healthbar_health_lerp:OnChanged(function(o)
                                         j = o
                                 end)
                         end
@@ -4884,40 +5026,35 @@ local function initialize(Library)
 
     B({ [0] = State, [1] = Players })()
 
-    -- Stealth fix: nil-safe fallback for missing Options/Toggles
-    -- Run AFTER Linoria created all elements but BEFORE OnChanged wiring
-    setmetatable(Options, { __index = function(t, k) return _DummyElement end })
-    setmetatable(Toggles, { __index = function(t, k) return _DummyElement end })
-
-    local bloom_update = q({ [0] = BloomEffect, [1] = BloomDefaults })
+        local bloom_update = q({ [0] = BloomEffect, [1] = BloomDefaults })
     local cc_update = V({ [0] = ColorCorrectionEffect })
     local atmo_update = M({ [0] = AtmosphereEffect })
     local sun_update = S({ [0] = SunRaysEffect, [1] = SunRaysDefaults })
 
-    _safe_toggle_onchanged(Toggles.bloom_enabled, bloom_update)
-    (Options.bloom_intensity and Options.bloom_intensity.OnChanged or function() end)(bloom_update)
-    (Options.bloom_size and Options.bloom_size.OnChanged or function() end)(bloom_update)
-    (Options.bloom_threshold and Options.bloom_threshold.OnChanged or function() end)(bloom_update)
+    Toggles.bloom_enabled:OnChanged(bloom_update)
+    Options.bloom_intensity:OnChanged(bloom_update)
+    Options.bloom_size:OnChanged(bloom_update)
+    Options.bloom_threshold:OnChanged(bloom_update)
 
-    _safe_toggle_onchanged(Toggles.color_correction_enabled, cc_update)
-    (Options.color_correction_saturation and Options.color_correction_saturation.OnChanged or function() end)(cc_update)
-    (Options.color_correction_contrast and Options.color_correction_contrast.OnChanged or function() end)(cc_update)
-    (Options.color_correction_brightness and Options.color_correction_brightness.OnChanged or function() end)(cc_update)
-    (Options.color_correction_tint and Options.color_correction_tint.OnChanged or function() end)(cc_update)
+    Toggles.color_correction_enabled:OnChanged(cc_update)
+    Options.color_correction_saturation:OnChanged(cc_update)
+    Options.color_correction_contrast:OnChanged(cc_update)
+    Options.color_correction_brightness:OnChanged(cc_update)
+    Options.color_correction_tint:OnChanged(cc_update)
 
-    _safe_toggle_onchanged(Toggles.atmosphere_enabled, atmo_update)
-    (Options.atmosphere_decay and Options.atmosphere_decay.OnChanged or function() end)(atmo_update)
-    (Options.atmosphere_glare and Options.atmosphere_glare.OnChanged or function() end)(atmo_update)
-    (Options.atmosphere_haze and Options.atmosphere_haze.OnChanged or function() end)(atmo_update)
-    (Options.atmosphere_density and Options.atmosphere_density.OnChanged or function() end)(atmo_update)
-    (Options.atmosphere_offset and Options.atmosphere_offset.OnChanged or function() end)(atmo_update)
-    (Options.atmosphere_color and Options.atmosphere_color.OnChanged or function() end)(atmo_update)
+    Toggles.atmosphere_enabled:OnChanged(atmo_update)
+    Options.atmosphere_decay:OnChanged(atmo_update)
+    Options.atmosphere_glare:OnChanged(atmo_update)
+    Options.atmosphere_haze:OnChanged(atmo_update)
+    Options.atmosphere_density:OnChanged(atmo_update)
+    Options.atmosphere_offset:OnChanged(atmo_update)
+    Options.atmosphere_color:OnChanged(atmo_update)
 
-    _safe_toggle_onchanged(Toggles.sunrays_enabled, sun_update)
-    (Options.sunrays_spread and Options.sunrays_spread.OnChanged or function() end)(sun_update)
-    (Options.sunrays_intensity and Options.sunrays_intensity.OnChanged or function() end)(sun_update)
+    Toggles.sunrays_enabled:OnChanged(sun_update)
+    Options.sunrays_spread:OnChanged(sun_update)
+    Options.sunrays_intensity:OnChanged(sun_update)
 
-    (Options.lighting_technology and Options.lighting_technology.OnChanged or function() end)(function()
+    Options.lighting_technology:OnChanged(function()
         pcall(function()
             local tech = Options.lighting_technology.Value
             if tech == "ShadowMap" then
@@ -5089,24 +5226,24 @@ local function initialize(Library)
     aimbotCircle.Transparency = 1
     State.drawings.aimbot.circle = aimbotCircle
 
-    _safe_toggle_onchanged(Toggles.silent_visualize, function()
+    Toggles.silent_visualize:OnChanged(function()
         silentCircle.Visible = Toggles.silent_visualize.Value and Toggles.aimbot_toggle.Value
     end)
-    (Options.silent_radius and Options.silent_radius.OnChanged or function() end)(function()
+    Options.silent_radius:OnChanged(function()
         silentCircle.Radius = Options.silent_radius.Value
     end)
-    (Options.silent_fill_color1 and Options.silent_fill_color1.OnChanged or function() end)(function()
+    Options.silent_fill_color1:OnChanged(function()
         silentCircle.Color = Options.silent_fill_color1.Value
     end)
-    _safe_toggle_onchanged(Toggles.aimbot_fov_outline, function()
+    Toggles.aimbot_fov_outline:OnChanged(function()
         aimbotCircle.Visible = Toggles.aimbot_fov_outline.Value
     end)
-    (Options.aimbot_outline_color1 and Options.aimbot_outline_color1.OnChanged or function() end)(function()
+    Options.aimbot_outline_color1:OnChanged(function()
         aimbotCircle.Color = Options.aimbot_outline_color1.Value
     end)
-    (Options.aimbot_fov_rotation_speed and Options.aimbot_fov_rotation_speed.OnChanged or function() end)(function() end)
+    Options.aimbot_fov_rotation_speed:OnChanged(function() end)
 
-    _safe_toggle_onchanged(Toggles.aimbot_toggle, function()
+    Toggles.aimbot_toggle:OnChanged(function()
         if not Toggles.aimbot_toggle.Value then
             silentCircle.Visible = false
             State.manipulation.targetPosition = nil
@@ -5172,7 +5309,7 @@ local function initialize(Library)
     end)
 
     local triggerConn = nil
-    _safe_toggle_onchanged(Toggles.triggerbot_enabled, function()
+    Toggles.triggerbot_enabled:OnChanged(function()
         if triggerConn then triggerConn:Disconnect(); triggerConn = nil end
         if not Toggles.triggerbot_enabled.Value then return end
 
@@ -5202,7 +5339,7 @@ local function initialize(Library)
         end)
     end)
 
-    _safe_toggle_onchanged(Toggles.exploits_full_auto, function()
+    Toggles.exploits_full_auto:OnChanged(function()
         pcall(function()
             if not localFighter or not localFighter.EquippedItem then return end
             local weapon = localFighter.EquippedItem
@@ -5225,7 +5362,7 @@ local function initialize(Library)
         State.raycastParams.FilterDescendantsInstances = {char}
     end)
 
-    _safe_toggle_onchanged(Toggles.silent_manipulation, function()
+    Toggles.silent_manipulation:OnChanged(function()
         State.manipulation.active = Toggles.silent_manipulation.Value
     end)
 
