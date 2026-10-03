@@ -9,6 +9,13 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/addons/SaveManager.lua"))()
 local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/addons/ThemeManager.lua"))()
+
+-- Obsidian stores Toggles/Options as LOCAL tables inside the library.
+-- The script below expects them in getgenv(). We need to link them.
+-- Obsidian returns them on Library.Toggles and Library.Options.
+if not getgenv().Toggles then getgenv().Toggles = Library.Toggles or {} end
+if not getgenv().Options then getgenv().Options = Library.Options or {} end
+
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
