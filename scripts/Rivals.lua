@@ -16,42 +16,19 @@ local Toggles = {}
 local Options = {}
 Airflow.Flags = Airflow.Flags or {}
 
-local Library = {}
+-- =============================================================
+-- Linoria → Airflow compatibility wrapper
+-- =============================================================
 
-function Library:CreateWindow(title)
-    local win = Airflow:CreateWindow({
-        Name = title,
-        ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "rivals" },
-        Icon = "solar:shield-keyhole-bold-duotone",
-        ToggleUIKeybind = "RightShift",
-    })
-    local origAddTab = win.CreateTab or win.Tab
-    function win:AddTab(name, ...)
-        local tab = origAddTab(self, { Name = name, Desc = "" })
-        local wrapper = setmetatable({ _airflowTab = tab }, TabWrapper)
-        return wrapper
-    end
-    function win:Toggle() end
-    function win:Notify(title, desc, time)
-        Airflow:Notify({ Title = title or "", Content = desc or "", Duration = time or 5, Type = "Info" })
-    end
-    return win
-end
+-- A "Groupbox" in Linoria is a container inside a tab. In Airflow, the
+-- tab itself is the container, so we return a wrapper that delegates
+-- AddToggle/AddSlider/etc. to the tab but ALSO supports chained calls
+-- (Groupbox:AddToggle():AddColorPicker()).
+local GroupboxWrapper = {}
+GroupboxWrapper.__index = GroupboxWrapper
 
-local TabWrapper = {}
-TabWrapper.__index = TabWrapper
-
-function TabWrapper:CreateSection(name)
-    if self._airflowTab.CreateSection then
-        self._airflowTab:CreateSection(name)
-    end
-    return self
-end
-TabWrapper.AddLeftGroupbox = TabWrapper.CreateSection
-TabWrapper.AddRightGroupbox = TabWrapper.CreateSection
-
-function TabWrapper:AddToggle(flag, opts)
-    local el = self._airflowTab:CreateToggle({
+function GroupboxWrapper:AddToggle(flag, opts)
+    local el = self._tab:CreateToggle({
         Name = opts.Text or flag,
         Desc = opts.Desc or "",
         CurrentValue = opts.Default or false,
@@ -63,8 +40,8 @@ function TabWrapper:AddToggle(flag, opts)
     return self
 end
 
-function TabWrapper:AddSlider(flag, opts)
-    local el = self._airflowTab:CreateSlider({
+function GroupboxWrapper:AddSlider(flag, opts)
+    local el = self._tab:CreateSlider({
         Name = opts.Text or flag,
         Desc = opts.Desc or "",
         Range = { opts.Min or 0, opts.Max or 100 },
@@ -79,8 +56,8 @@ function TabWrapper:AddSlider(flag, opts)
     return self
 end
 
-function TabWrapper:AddDropdown(flag, opts)
-    local el = self._airflowTab:CreateDropdown({
+function GroupboxWrapper:AddDropdown(flag, opts)
+    local el = self._tab:CreateDropdown({
         Name = opts.Text or flag,
         Desc = opts.Desc or "",
         Options = opts.Values or {},
@@ -94,8 +71,8 @@ function TabWrapper:AddDropdown(flag, opts)
     return self
 end
 
-function TabWrapper:AddColorPicker(flag, opts)
-    local el = self._airflowTab:CreateColorPicker({
+function GroupboxWrapper:AddColorPicker(flag, opts)
+    local el = self._tab:CreateColorPicker({
         Name = opts.Text or flag,
         Desc = opts.Desc or "",
         Color = opts.Default or Color3.fromRGB(255, 255, 255),
@@ -107,8 +84,8 @@ function TabWrapper:AddColorPicker(flag, opts)
     return self
 end
 
-function TabWrapper:AddInput(flag, opts)
-    local el = self._airflowTab:CreateInput({
+function GroupboxWrapper:AddInput(flag, opts)
+    local el = self._tab:CreateInput({
         Name = opts.Text or flag,
         Desc = opts.Desc or "",
         PlaceholderText = opts.Placeholder or "",
@@ -121,8 +98,8 @@ function TabWrapper:AddInput(flag, opts)
     return self
 end
 
-function TabWrapper:AddKeybind(flag, opts)
-    local el = self._airflowTab:CreateKeybind({
+function GroupboxWrapper:AddKeybind(flag, opts)
+    local el = self._tab:CreateKeybind({
         Name = opts.Text or flag,
         Desc = opts.Desc or "",
         CurrentKeybind = opts.Default or "",
@@ -134,22 +111,62 @@ function TabWrapper:AddKeybind(flag, opts)
     return self
 end
 
-function TabWrapper:AddButton(text, fn)
-    self._airflowTab:CreateButton({
+function GroupboxWrapper:AddButton(text, fn)
+    self._tab:CreateButton({
         Name = text,
         Callback = fn or function() end,
     })
     return self
 end
 
-function TabWrapper:AddLabel(text)
-    self._airflowTab:CreateLabel({ Text = text or "" })
+function GroupboxWrapper:AddLabel(text)
+    self._tab:CreateLabel({ Text = text or "" })
     return self
 end
 
-function TabWrapper:AddDivider()
-    self._airflowTab:CreateDivider()
+function GroupboxWrapper:AddDivider()
+    self._tab:CreateDivider()
     return self
+end
+
+-- A "Tab" wrapper in Linoria has AddLeftGroupbox / AddRightGroupbox.
+-- In Airflow, the tab itself IS the groupbox container, so we return
+-- a GroupboxWrapper that points to the same tab.
+local TabWrapper = {}
+TabWrapper.__index = TabWrapper
+
+function TabWrapper:AddLeftGroupbox(name)
+    self._tab:CreateSection(name)
+    return setmetatable({ _tab = self._tab }, GroupboxWrapper)
+end
+TabWrapper.AddRightGroupbox = TabWrapper.AddLeftGroupbox
+
+function TabWrapper:CreateSection(name)
+    self._tab:CreateSection(name)
+    return setmetatable({ _tab = self._tab }, GroupboxWrapper)
+end
+
+-- Library wrapper
+local Library = {}
+
+function Library:CreateWindow(title)
+    local win = Airflow:CreateWindow({
+        Name = title,
+        ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "rivals" },
+        Icon = "solar:shield-keyhole-bold-duotone",
+        ToggleUIKeybind = "RightShift",
+    })
+    -- Override AddTab to return TabWrapper
+    local origCreateTab = win.CreateTab or win.Tab
+    function win:AddTab(name, ...)
+        local tab = origCreateTab(self, { Name = name, Desc = "" })
+        return setmetatable({ _tab = tab }, TabWrapper)
+    end
+    function win:Toggle() end
+    function win:Notify(title, desc, time)
+        Airflow:Notify({ Title = title or "", Content = desc or "", Duration = time or 5, Type = "Info" })
+    end
+    return win
 end
 
 -- SaveManager stub
