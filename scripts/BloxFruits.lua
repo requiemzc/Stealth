@@ -1,55 +1,3 @@
--- Stealth loading screen
-local _sl = Instance.new("ScreenGui")
-_sl.Name = "StealthLoading"
-_sl.ResetOnSpawn = false
-_sl.IgnoreGuiInset = true
-_sl.DisplayOrder = 9999
-local _sf = Instance.new("Frame")
-_sf.Size = UDim2.new(1, 0, 1, 0)
-_sf.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
-_sf.Parent = _sl
-local _st = Instance.new("TextLabel")
-_st.Text = "Stealth"
-_st.Font = Enum.Font.GothamBold
-_st.TextSize = 48
-_st.TextColor3 = Color3.fromRGB(255, 255, 255)
-_st.BackgroundTransparency = 1
-_st.Size = UDim2.new(1, 0, 0, 60)
-_st.Position = UDim2.new(0, 0, 0.35, 0)
-_st.Parent = _sf
-local _ss = Instance.new("TextLabel")
-_ss.Text = "Join Discord for dupe"
-_ss.Font = Enum.Font.Gotham
-_ss.TextSize = 18
-_ss.TextColor3 = Color3.fromRGB(120, 120, 140)
-_ss.BackgroundTransparency = 1
-_ss.Size = UDim2.new(1, 0, 0, 30)
-_ss.Position = UDim2.new(0, 0, 0.35, 60)
-_ss.Parent = _sf
-local _sd = Instance.new("TextLabel")
-_sd.Text = "discord.gg/hqE5drDHF7"
-_sd.Font = Enum.Font.GothamMedium
-_sd.TextSize = 16
-_sd.TextColor3 = Color3.fromRGB(88, 101, 242)
-_sd.BackgroundTransparency = 1
-_sd.Size = UDim2.new(1, 0, 0, 30)
-_sd.Position = UDim2.new(0, 0, 0.35, 95)
-_sd.Parent = _sf
-local _sl2 = Instance.new("TextLabel")
-_sl2.Text = "Loading..."
-_sl2.Font = Enum.Font.Gotham
-_sl2.TextSize = 14
-_sl2.TextColor3 = Color3.fromRGB(100, 100, 120)
-_sl2.BackgroundTransparency = 1
-_sl2.Size = UDim2.new(1, 0, 0, 20)
-_sl2.Position = UDim2.new(0, 0, 0.7, 0)
-_sl2.Parent = _sf
-pcall(function() _sl.Parent = game:GetService("CoreGui") end)
-if not _sl.Parent then
-    _sl.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
-end
-task.spawn(function() task.wait(3) _sl:Destroy() end)
-
 -- [[ Stealth | Blox Fruits ]]
 --
 -- Wrapper around Quantum Onyx (by flazhy) for Stealth Hub.
@@ -125,7 +73,7 @@ local Toggles = {}
 if Airflow then
     Toggles = Airflow.Flags
     Window = Airflow:CreateWindow({
-        Name = "Stealth",
+        Name = "Stealth | Blox Fruits",
         ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "bloxfruits" },
         Icon = "solar:shield-keyhole-bold-duotone",
         ToggleUIKeybind = "RightShift",
@@ -338,6 +286,9 @@ if Airflow then
         Type = "Success",
     })
 end
+
+print("[Stealth] Stealth wrapper loaded. Quantum Onyx script starting...")
+
 -- Launch Quantum Onyx in a separate task to avoid scope conflicts with our wrapper
 task.spawn(function()
     local qo_src = _readSelf()
@@ -6271,13 +6222,13 @@ Restock: %s
                 end
 
                 local v22 = lua4:CreateWindow({
-                        Title = "Stealth",
+                        Title = "Quantum Onyx",
                         Subtitle = "Blox Fruit",
                         Version = "v.Freemium",
                         Key = true,
                         Theme = "Purple",
                         Credits = {
-                                { Name = "Stealth", Role = "ServerOwner" },
+                                { Name = "Vin ", Role = "ServerOwner" },
                                 { Name = "Flazhy ", Role = "MainDeveloper" },
                                 { Name = "Kiel ", Role = "WebDesigner" },
                                 { Name = "CudalPH ", Role = "Tester" },
@@ -14467,8 +14418,10 @@ Restock: %s
                         if Moveset and Moveset >= 300 and Moveset2 and Moveset2 >= 300 and Moveset3 and Moveset3 >= 300 then
                                 tbl6:FireInvoke("MysteriousMan", "2")
                         elseif tbl6:FireInvoke("LegendarySwordDealer", "1") then
+                                print("Buy")
                                 tbl6:FireInvoke("LegendarySwordDealer", "2")
                         else
+                                print("Hop")
                                 joinAPI("legendarysword", 2)
                         end
                 end, flag2)

@@ -1224,7 +1224,7 @@ repeat
                     end
                 end)
                 gB = g8:CreateWindow({
-                    Title = "Stealth",
+                    Title = "Clicker Simulator",
                     SubTitle = "Stealth",
                     TabWidth = 160,
                     Size = UDim2.fromOffset(560, 420),

@@ -1,55 +1,3 @@
--- Stealth loading screen
-local _sl = Instance.new("ScreenGui")
-_sl.Name = "StealthLoading"
-_sl.ResetOnSpawn = false
-_sl.IgnoreGuiInset = true
-_sl.DisplayOrder = 9999
-local _sf = Instance.new("Frame")
-_sf.Size = UDim2.new(1, 0, 1, 0)
-_sf.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
-_sf.Parent = _sl
-local _st = Instance.new("TextLabel")
-_st.Text = "Stealth"
-_st.Font = Enum.Font.GothamBold
-_st.TextSize = 48
-_st.TextColor3 = Color3.fromRGB(255, 255, 255)
-_st.BackgroundTransparency = 1
-_st.Size = UDim2.new(1, 0, 0, 60)
-_st.Position = UDim2.new(0, 0, 0.35, 0)
-_st.Parent = _sf
-local _ss = Instance.new("TextLabel")
-_ss.Text = "Join Discord for dupe"
-_ss.Font = Enum.Font.Gotham
-_ss.TextSize = 18
-_ss.TextColor3 = Color3.fromRGB(120, 120, 140)
-_ss.BackgroundTransparency = 1
-_ss.Size = UDim2.new(1, 0, 0, 30)
-_ss.Position = UDim2.new(0, 0, 0.35, 60)
-_ss.Parent = _sf
-local _sd = Instance.new("TextLabel")
-_sd.Text = "discord.gg/hqE5drDHF7"
-_sd.Font = Enum.Font.GothamMedium
-_sd.TextSize = 16
-_sd.TextColor3 = Color3.fromRGB(88, 101, 242)
-_sd.BackgroundTransparency = 1
-_sd.Size = UDim2.new(1, 0, 0, 30)
-_sd.Position = UDim2.new(0, 0, 0.35, 95)
-_sd.Parent = _sf
-local _sl2 = Instance.new("TextLabel")
-_sl2.Text = "Loading..."
-_sl2.Font = Enum.Font.Gotham
-_sl2.TextSize = 14
-_sl2.TextColor3 = Color3.fromRGB(100, 100, 120)
-_sl2.BackgroundTransparency = 1
-_sl2.Size = UDim2.new(1, 0, 0, 20)
-_sl2.Position = UDim2.new(0, 0, 0.7, 0)
-_sl2.Parent = _sf
-pcall(function() _sl.Parent = game:GetService("CoreGui") end)
-if not _sl.Parent then
-    _sl.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
-end
-task.spawn(function() task.wait(3) _sl:Destroy() end)
-
 local fns = {}
 local bCU_31, bCU_32, TraitData, bCU_37, bCU_38, bCU_39, bCU_40, bCU_42, bCU_43, Window, Actions2, bCU_47, connection, bCU_50, bCU_52, bCU_53, bCU_54, bCU_56, bCU_57, Options, HttpService, Units, bCU_63, bCU_64, Lighting, bCU_67, bCU_69, bCU_70, bCU_72, bCU_73, bCU_74, bCU_75, bCU_77, bCU_78, bCU_79, Toggles, bCU_82, bCU_83, bCU_84, bCU_86, bCU_87, bCU_89, bCU_91, bCU_92, bCU_94, bCU_95, bCU_96, bCU_101, bCU_108, bCU_115
 fns.VirtualUser = nil
@@ -10290,7 +10238,7 @@ Options = aDV.Options
 Toggles = aDV.Toggles
 aDV.ShowToggleFrameInKeybinds = false
 Window = aDV:CreateWindow({
-    Title = "Stealth",
+    Title = "Stealth [Alpha]",
     Footer = { { Text = bCU_39, Copyable = true }, "|", aEL },
     Icon = 12645376577,
     NotifySide = "Right",
