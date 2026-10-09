@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local gL
 local gp
 local gs
@@ -23,7 +81,7 @@ local gk
 local screenGui3
 local gn
 local gJ
-local Fluent
+local Stealth
 local Upgrades
 local gS
 local gz
@@ -448,7 +506,7 @@ local function fn823()
     end
 end
 local function fn836()
-    Fluent.Notify(Fluent, { Title = "Untitled Melee RNG", Content = "Stealth loaded.", Duration = 6 })
+    Stealth.Notify(Stealth, { Title = "Untitled Melee RNG", Content = "Stealth loaded.", Duration = 6 })
 end
 local function worker2()
     while gY.Running do
@@ -499,7 +557,7 @@ local function fn970(db, dc)
     MouseButton1Click.Connect(MouseButton1Click, function()
         gr()
         pcall(function()
-            Fluent.Notify(Fluent, { Title = "Stealth", Content = "Discord copied to clipboard!", Duration = 4 })
+            Stealth.Notify(Stealth, { Title = "Stealth", Content = "Discord copied to clipboard!", Duration = 4 })
         end)
     end)
 end
@@ -512,7 +570,7 @@ go = nil
 gp = nil
 gr = nil
 gs = nil
-Fluent = nil
+Stealth = nil
 gv = nil
 Upgrades = nil
 gx = nil
@@ -573,7 +631,7 @@ if g_ then
         g0 = (g0 + 4) % 8
     until fn812((g0 * 3 + 4) % 8, 494033731)
 end
-g3, gS, gO, g8, gE, LocalPlayer, gA, gv, Fluent, g6, g5, gi, onAutoFarmBestUnlockedStage, gr, g_, g4 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
+g3, gS, gO, g8, gE, LocalPlayer, gA, gv, Stealth, g6, g5, gi, onAutoFarmBestUnlockedStage, gr, g_, g4 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 local g2 = 40
 repeat
     g0 = (g2 * 9 + 0) % 14 + 1
@@ -597,9 +655,9 @@ repeat
                         "gygyfiexoxxj"
                     }
                     if g9[(g2 * 64 + 43) % 13 + 1] < g9[(g2 * 64 + 43) % 13 + 1] then
-                        g8 = "https://discord.gg/ehKVq7pf7v"
+                        g8 = "https://discord.gg/hqE5drDHF7"
                     else
-                        gA = "https://discord.gg/ehKVq7pf7v"
+                        gA = "https://discord.gg/hqE5drDHF7"
                     end
                     g2 = (g2 + 67) % 112
                 else
@@ -946,17 +1004,17 @@ repeat
                 local hc_1 = (vector.create((g2 * 7 + 8) % 11 + 1, (g2 * 7 + 9) % 13 + 1, (g2 * 5 + 12) % 17 + 1))
                 if vector.dot(vector.cross(g9, ha), (vector.cross(hb, hc_1))) == vector.dot(g9, hb) * vector.dot(ha, hc_1) - vector.dot(g9, hc_1) * vector.dot(ha, hb) then
                     g_()
-                    Fluent = loadstring(game:HttpGet("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
+                    Stealth = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                 else
-                    Fluent()
-                    g_ = loadstring(game:HttpGet("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
+                    Stealth()
+                    g_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                 end
                 g2 = (g2 + 53) % 112
             else
                 if g2 * 25269017 + 9 + 1 >= g2 * 25269017 + 9 + 1 + 6 then
                     g3 = loadstring(game:HttpGet(loadstring))()
                 else
-                    g6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau"))()
+                    g6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.luau"))()
                 end
                 g2 = (g2 + 81) % 112
             end
@@ -979,7 +1037,7 @@ repeat
             if g9[(g2 * 73 + 57) % 13 + 1] < g9[(g2 * 73 + 57) % 13 + 1] then
                 gi = loadstring(game:HttpGet(game))()
             else
-                g5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau"))()
+                g5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau"))()
             end
             g2 = (g2 + 39) % 112
         end
@@ -992,7 +1050,7 @@ repeat
                 if math.abs((vector.angle(g9, ha, hb))) - math.abs((vector.angle(ha, g9, hb))) == 5 then
                     gv = gi:CreateWindow("Acrylic")
                 else
-                    gi = Fluent:CreateWindow({
+                    gi = Stealth:CreateWindow({
                         Title = "Untitled Melee RNG",
                         SubTitle = "Stealth",
                         TabWidth = 160,
@@ -1549,8 +1607,8 @@ repeat
                     hb("AutoBuySP", fn334, fn700, hj)
                     hb("Farm", fn92, worker, fn485)
                     task.spawn(worker2)
-                    g6.SetLibrary(g6, Fluent)
-                    g5.SetLibrary(g5, Fluent)
+                    g6.SetLibrary(g6, Stealth)
+                    g5.SetLibrary(g5, Stealth)
                     g6.IgnoreThemeSettings(g6)
                     g6.SetIgnoreIndexes(g6, {})
                     g5.SetFolder(g5, "Stealth")
@@ -1574,12 +1632,12 @@ repeat
                     g6("AutoUpgrades", fn92, "Farm", he)
                     task.spawn(worker)
                     screenGui2.SetLibrary(screenGui2, fn485)
-                    Fluent.SetLibrary(Fluent, task)
+                    Stealth.SetLibrary(Stealth, task)
                     screenGui2.IgnoreThemeSettings(screenGui2)
                     screenGui2.SetIgnoreIndexes(screenGui2, screenGui2)
-                    Fluent.SetFolder(Fluent, worker2)
+                    Stealth.SetFolder(Stealth, worker2)
                     screenGui2.SetFolder(screenGui2, task[nil])
-                    Fluent.BuildInterfaceSection(Fluent, fn334)
+                    Stealth.BuildInterfaceSection(Stealth, fn334)
                     screenGui2.BuildConfigSection(screenGui2, g1)
                     onAutoFarmBestUnlockedStage.SelectTab(onAutoFarmBestUnlockedStage, screenGui2)
                     screenGui2.LoadAutoloadConfig(screenGui2)

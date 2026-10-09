@@ -1314,7 +1314,7 @@ UserInputService = game:GetService("UserInputService")
 TeleportService = game:GetService("TeleportService")
 HttpService = game:GetService("HttpService")
 LocalPlayer = Players.LocalPlayer
-Ko_53 = "https://discord.gg/ehKVq7pf7v"
+Ko_53 = "https://discord.gg/hqE5drDHF7"
 x9 = "https://rocheats.com?ref=Stealth"
 x2 = 1
 xV = Color3.fromRGB(143, 165, 240)
@@ -1493,7 +1493,7 @@ function fns.Ko_99()
     task.wait(0.5)
 end
 fns.Ko_99()
-ym = loadstring(game:HttpGet("https://sirius.menu/gen2"))()
+ym = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 yd = false
 local Ko_67 = require(game.ReplicatedFirst.AllSideCode.UtilsSystem)
 ConfigInstance = require(game.ReplicatedFirst.AllSideCode.ToolBasic.ConfigInstance)

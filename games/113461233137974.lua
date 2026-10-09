@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local tn_8, tn_10, tn_11, tn_14, tn_20, tn_22, tn_25, tn_30, tn_33, tn_35, tn_37, tn_38, tn_39
 local WaterPipeUpgradeConfig
@@ -953,7 +1011,7 @@ m7, m4, HttpService, GuiService, CoreGui, mI, LocalPlayer, mt, mp, Packets, Plot
 local tn_26 = game:GetService("Players")
 local tn_15 = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
-if (false and not HttpService and (HttpService or WaterPipeUpgradeConfig) and (not PlotController and RunService and (false or HttpService)) or RunService and WaterPipeUpgradeConfig and (not PlotController or PlotController) and (PlotController or PlotController or "https://discord.gg/ehKVq7pf7v")) and (HttpService and not WaterPipeUpgradeConfig and (HttpService and not WaterPipeUpgradeConfig) and (PlotController and WaterPipeUpgradeConfig and (not PlotController or PlotController)) or (PlotController and not WaterPipeUpgradeConfig and (false and not HttpService) or (not RunService or false) and (PlotController and PlotController))) or not ((false and not HttpService and (HttpService or WaterPipeUpgradeConfig) and (not PlotController and RunService and (false or HttpService)) or RunService and WaterPipeUpgradeConfig and (not PlotController or PlotController) and (PlotController or PlotController or "https://discord.gg/ehKVq7pf7v")) and (HttpService and not WaterPipeUpgradeConfig and (HttpService and not WaterPipeUpgradeConfig) and (PlotController and WaterPipeUpgradeConfig and (not PlotController or PlotController)) or (PlotController and not WaterPipeUpgradeConfig and (false and not HttpService) or (not RunService or false) and (PlotController and PlotController)))) then
+if (false and not HttpService and (HttpService or WaterPipeUpgradeConfig) and (not PlotController and RunService and (false or HttpService)) or RunService and WaterPipeUpgradeConfig and (not PlotController or PlotController) and (PlotController or PlotController or "https://discord.gg/hqE5drDHF7")) and (HttpService and not WaterPipeUpgradeConfig and (HttpService and not WaterPipeUpgradeConfig) and (PlotController and WaterPipeUpgradeConfig and (not PlotController or PlotController)) or (PlotController and not WaterPipeUpgradeConfig and (false and not HttpService) or (not RunService or false) and (PlotController and PlotController))) or not ((false and not HttpService and (HttpService or WaterPipeUpgradeConfig) and (not PlotController and RunService and (false or HttpService)) or RunService and WaterPipeUpgradeConfig and (not PlotController or PlotController) and (PlotController or PlotController or "https://discord.gg/hqE5drDHF7")) and (HttpService and not WaterPipeUpgradeConfig and (HttpService and not WaterPipeUpgradeConfig) and (PlotController and WaterPipeUpgradeConfig and (not PlotController or PlotController)) or (PlotController and not WaterPipeUpgradeConfig and (false and not HttpService) or (not RunService or false) and (PlotController and PlotController)))) then
     m7 = game:GetService("UserInputService")
     m4 = game:GetService("VirtualUser")
 else
@@ -966,7 +1024,7 @@ CoreGui = game:GetService("CoreGui")
 mI = game:GetService("Workspace")
 LocalPlayer = tn_26.LocalPlayer
 local tn_31 = "Fill Water Tanks"
-mt = "https://discord.gg/ehKVq7pf7v"
+mt = "https://discord.gg/hqE5drDHF7"
 mp = "https://rscripts.net/@Stealth"
 local tn_40 = tn_15:WaitForChild("Modules")
 local tn_12 = tn_40:WaitForChild("Configs")
@@ -1042,8 +1100,8 @@ for k, v in tn_2.Nodes do
 end
 Library, SaveManager, Toggles, Options, l0, lV, lS, na, mR, my, mk = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 table.sort(mc, fn844)
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-tn_40 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+tn_40 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 SaveManager = nil
 Toggles = Library.Toggles
 Options = Library.Options

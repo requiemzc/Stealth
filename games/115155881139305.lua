@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local vy_4, vy_5, vy_11
 local vy_6_1, vy_6_2
 local nm
@@ -998,10 +1056,10 @@ repeat
             local oa_5 = { "cmup", "mvu", "zemi", "qcvtuhjpuejo", "fiorqif", "zshjpnskog", "jswpw", "vyhwfsofuf" }
             if oa_5[(vy_10 * 54 + 50) % 8 + 1] <= oa_5[(vy_10 * 54 + 50) % 8 + 1] then
                 n7 = "My Dealership"
-                ny = "https://discord.gg/ehKVq7pf7v"
+                ny = "https://discord.gg/hqE5drDHF7"
             else
                 ny = "My Dealership"
-                n7 = "https://discord.gg/ehKVq7pf7v"
+                n7 = "https://discord.gg/hqE5drDHF7"
             end
             vy_10 = (vy_10 + 59) % 168
         end
@@ -1160,9 +1218,9 @@ else
     until (vy_4 * 1 + 6) % 8 == 0
 end
 Library, Toggles, Options, mK, nn, ni, nB, ns, nm, m_, mE, nH, nq, m0, mT, mF, nD, nx, mY, mX, nI, nu, m6, nT, nz, nQ, nA, mJ, nC, np, mS, mL, m1, ng, mP, nM, m8, mD, nF, nS, ne, nf, m5, nW, nj, mH, nt, mN, nK, mO, nd, m2 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-od = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-oc = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+od = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+oc = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 nB = fn13

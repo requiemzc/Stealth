@@ -673,11 +673,11 @@ repeat
         elseif ha <= 3 then
             if bit32.bxor(bit32.lrotate(bit32.bxor(bit32.rrotate(bit32.bxor(bit32.lrotate(g4, 21), string.byte(tostring(g6))), 12), 1649588683), 2), 2303387437) == bit32.lrotate(bit32.rrotate(bit32.bxor(bit32.lrotate(g4, 21), string.byte(tostring(g6))), 12), 2) then
                 g8 = g6({
-                    "https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Fluent.luau"
+                    "https://github.com/ActualMasterOogway/Stealth-Renewed/releases/latest/download/Stealth.luau",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Stealth.luau"
                 })
             else
-                g6 = g8("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau")
+                g6 = g8("https://github.com/ActualMasterOogway/Stealth-Renewed/releases/latest/download/Stealth.luau")
             end
             g4 = (g4 + 55) % 64
         else
@@ -737,7 +737,7 @@ repeat
                 g7 = game:GetService("ReplicatedStorage")
                 VirtualUser = game:GetService("VirtualUser")
                 gI = f6.LocalPlayer
-                gE = "https://discord.gg/ehKVq7pf7v"
+                gE = "https://discord.gg/hqE5drDHF7"
             else
                 gE = game:GetService(game)
                 g9_1 = game:GetService("ReplicatedStorage")
@@ -795,7 +795,7 @@ repeat
     end
 until fn10((g4 * 47 + 40) % 64, 812862761)
 if not g8 then
-    warn("[Stealth] Failed to load Fluent-Renewed.")
+    warn("[Stealth] Failed to load Stealth-Renewed.")
     return
 end
 he, hd, ha, g5, g4, Directory, gj, Balancing, Stats, gY, gV, gS, gN, gH, Open, gx, gu, gq, gk, gf, f9, g0, hc = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
@@ -929,8 +929,8 @@ repeat
                 g6 = he(he)
             else
                 he = g6({
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.lua"
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.luau",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.lua"
                 })
             end
             hb_6 = (hb_6 + 63) % 88
@@ -940,11 +940,11 @@ repeat
             if hf_1 <= 7 then
                 if hb_6 * 40475623 + 5 + 6 <= hb_6 * 40475623 + 5 + 6 + 1 then
                     hd = g6({
-                        "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau",
-                        "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.lua"
+                        "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau",
+                        "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.lua"
                     })
                 else
-                    g6 = hd("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau")
+                    g6 = hd("https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau")
                 end
                 hb_6 = (hb_6 + 8) % 88
             else
@@ -1224,7 +1224,7 @@ repeat
                     end
                 end)
                 gB = g8:CreateWindow({
-                    Title = "Clicker Simulator",
+                    Title = "Stealth",
                     SubTitle = "Stealth",
                     TabWidth = 160,
                     Size = UDim2.fromOffset(560, 420),

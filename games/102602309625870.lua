@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local Dw_11, ConveyorGroup, Dw_19, Dw_31, Dw_34, Dw_43, Dw_47, Dw_54, Dw_57, Dw_62
 local so
@@ -1252,7 +1310,7 @@ Workspace = game:GetService("Workspace")
 CollectionService = game:GetService("CollectionService")
 sp = Dw_58.LocalPlayer
 local Dw_60 = "My Dancing Animals!"
-se = "https://discord.gg/ehKVq7pf7v"
+se = "https://discord.gg/hqE5drDHF7"
 r9 = "https://rscripts.net/@Stealth"
 local Dw_38 = require(Dw_8:WaitForChild("Knit"))
 local Dw_27 = require(Dw_8:WaitForChild("Data"):WaitForChild("Eggs"))
@@ -1505,10 +1563,10 @@ repeat
     local Ey = Dw_17
     Dw_19 = Dw_31[Ey % 12 + 1]
     if Dw_19:len() <= Dw_19:gsub("(.)", "%1%1", Ey % 3 % 2 + 1):len() then
-        rz = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+        rz = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
         pcall(fns.fn243)
-        Dw_8 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-        s_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+        Dw_8 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+        s_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
     else
         s_ = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
         Dw_8 = loadstring(game:HttpGet(s_ .. "Library.lua"))()

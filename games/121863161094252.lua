@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local tC_1, tC_2, tC_3, tC_4, tC_9, tC_11, tC_12, tC_13, onAutoGoNewZone, tC_22, tC_24, tC_28
 local tC_21_1
 local j4
@@ -1023,14 +1081,14 @@ repeat
                             }
                             kA = function(aQ, aR, aS)
                                 pcall(function()
-                                    Fluent_Notify(aQ, aR, aS)
+                                    Stealth_Notify(aQ, aR, aS)
                                 end)
                             end
                         else
                             lN = false
                             onAutoClaimQuests_Hourly_Daily = function(aQ, aR, aS)
                                 pcall(function()
-                                    Fluent_Notify(aQ, aR, aS)
+                                    Stealth_Notify(aQ, aR, aS)
                                 end)
                             end
                         end
@@ -1971,7 +2029,7 @@ repeat
                 end
                 tC_19 = k5.Idled
                 tC_19.Connect(tC_19, tC_28)
-                kV = loadstring(game:HttpGet("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
+                kV = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
             end
             lM = (lM + 132) % 136
         else
@@ -1979,7 +2037,7 @@ repeat
             tC_19 = (vector.create((lM * 7 + 5) % 11 + 1, (lM * 3 + 13) % 13 + 1, (lM * 8 + 1) % 17 + 1))
             tC_1 = (vector.create((lM * 4 + 7) % 5 + 1, (lM * 3 + 7) % 7 + 1, (lM * 4 + 5) % 9 + 1))
             if fn952(math.abs((vector.angle(tC_28, tC_19, tC_1))) - math.abs((vector.angle(tC_19, tC_28, tC_1))), 544454170) then
-                Fluent_Notify = fn399
+                Stealth_Notify = fn399
                 kG = kV:CreateWindow({
                     Title = "[🌲] Axe RNG",
                     SubTitle = "  By Stealth",
@@ -1991,7 +2049,7 @@ repeat
                     MinimizeKey = Enum.KeyCode.RightControl
                 })
             else
-                Fluent_Notify = fn399
+                Stealth_Notify = fn399
                 kV = kG:CreateWindow("Theme")
             end
             lM = (lM + 132) % 136
@@ -2015,10 +2073,10 @@ repeat
         else
             tC_28 = 1
             if lM * 85897411 + 5 + 6 >= lM * 85897411 + 5 + 6 + 5 then
-                lO = "https://discord.gg/f3dJhDgyTq"
+                lO = "https://discord.gg/hqE5drDHF7"
                 kw = fn900
             else
-                kw = "https://discord.gg/f3dJhDgyTq"
+                kw = "https://discord.gg/hqE5drDHF7"
                 lO = fn900
             end
             lM = (lM + 115) % 136
@@ -2699,24 +2757,24 @@ repeat
     elseif tC_11 <= 3 then
         if tC_19 * 80666449 + 7 + 6 <= tC_19 * 80666449 + 7 + 6 + 6 then
             onAutoGoNewZone = tC_28({
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.lua"
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.luau",
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.lua"
             })
         else
             tC_28 = onAutoGoNewZone({
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.lua"
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.luau",
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.lua"
             })
         end
         tC_19 = (tC_19 + 15) % 32
     else
         tC_11 = { "eda", "tccmfrnr", "nzm", "qzzsekmkb", "onfc", "pohsd", "dnpfewsak", "ggy", "uvoaurayh" }
         if tC_11[(tC_19 * 53 + 11) % 9 + 1] < tC_11[(tC_19 * 53 + 11) % 9 + 1] then
-            tC_28 = tC_1("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau")
+            tC_28 = tC_1("https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau")
         else
             tC_1 = tC_28({
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.lua"
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau",
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.lua"
             })
         end
         tC_19 = (tC_19 + 15) % 32

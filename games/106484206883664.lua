@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local aO8_82, aO8_83, aO8_84, aO8_86, aO8_87, aO8_88, aO8_89, aO8_90, aO8_91, aO8_92, aO8_93, Library, aO8_95, aO8_96, aO8_97, aO8_98, aO8_99, aO8_101, aO8_102, aO8_103, aO8_104, aO8_105, aO8_106, aO8_107, aO8_108, aO8_109, aO8_110, aO8_111, aO8_112, aO8_113, aO8_114, aO8_115, aO8_116, aO8_117, aO8_118, aO8_121, aO8_122, aO8_123, aO8_124, Parry, aO8_126, aO8_127, aO8_128, aO8_129, aO8_130, aO8_131, aO8_132, aO8_133, aO8_134
 fns.aO8_1 = nil
@@ -4543,7 +4601,7 @@ fns.aO8_33 = {
     GAME_NAME = "Dungeon Lootr",
     HIDDEN_NAME = "Stealth",
     LOGO_IMAGE = "rbxassetid://78539693571783",
-    DISCORD_INVITE = "https://discord.gg/ehKVq7pf7v",
+    DISCORD_INVITE = "https://discord.gg/hqE5drDHF7",
     RSCRIPTS_LINK = "https://rscripts.net/@Stealth",
     WEBSITE_LINK = "https://Stealth-hub-rbx.web.app/",
     LOADER_URL = "https://raw.githubusercontent.com/joustingmatch/Stealth/refs/heads/main/games/dungeonlootr.luau",
@@ -4606,7 +4664,7 @@ Attack = aO8_109:WaitForChild("Attack")
 Skill = aO8_109:WaitForChild("Skill")
 Parry = aO8_109:WaitForChild("Parry")
 pcall(fns.fn2738)
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 adX = function()
     local function ag9(W)
         local ag7 = not W or not W:IsA("ScreenGui")
@@ -4661,7 +4719,7 @@ pcall(function()
     end
 end)
 task.spawn(fns.worker)
-aO8_92 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+aO8_92 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 SaveManager = nil
 if getgenv then
     getgenv().__StealthDungeonLootrLib = Library

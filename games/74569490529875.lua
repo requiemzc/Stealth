@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local AT_7, AT_8, AT_10, AT_17, AT_19, AT_21, AT_24, AT_33, AT_34
 local rd
 local qj
@@ -812,10 +870,10 @@ repeat
             local BX = bit32.rrotate(bit32.bxor(bit32.lrotate(AT_31, 13), string.byte(tostring(q4))), 16)
             if bit32.bxor(bit32.bxor(bit32.bxor(bit32.bxor(bit32.band(BX, 3405450683), 379959010), (bit32.bxor(bit32.band(BX, 889516612), 168356682))), 379959010), 168356682) ~= BX then
                 qs = "Merge & Dig Simulator!"
-                qw = "https://discord.gg/ehKVq7pf7v"
+                qw = "https://discord.gg/hqE5drDHF7"
             else
                 qw = "Merge & Dig Simulator!"
-                qs = "https://discord.gg/ehKVq7pf7v"
+                qs = "https://discord.gg/hqE5drDHF7"
             end
             AT_31 = (AT_31 + 93) % 128
         else
@@ -1165,7 +1223,7 @@ qN = 0
 qI = nil
 qF = 0
 qA = false
-qv = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+qv = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 if getgenv then
     getgenv().__StealthMergeDigSimLib = qv
 end
@@ -1202,7 +1260,7 @@ qq = function()
 end
 qq()
 task.spawn(worker)
-ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 if (false or (rA or qC) or false and (qY or re)) and ((qY and rF or (false or rA)) and (qC or qY or (qY or qY))) or (rA and re or (qC or false) or (rF and qC or false)) and (re or false or rA and qY or (not rA or not rA) and (not rA and re)) or not ((false or (rA or qC) or false and (qY or re)) and ((qY and rF or (false or rA)) and (qC or qY or (qY or qY))) or (rA and re or (qC or false) or (rF and qC or false)) and (re or false or rA and qY or (not rA or not rA) and (not rA and re))) then
     SaveManager = nil
     Toggles = qv.Toggles

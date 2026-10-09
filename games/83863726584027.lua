@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local tF_3, tF_4, tF_6, tF_8, tF_10, tF_12, tF_15, tF_17, tF_22, tF_25
 local mB
@@ -961,10 +1019,10 @@ repeat
                 tF_8 = tF_25[uI % 8 + 1]
                 if tF_8:len() <= tF_8:gsub("(.)", "%1%1", uI % 3 % 2 + 1):len() then
                     tF_22 = "Pet Forest"
-                    mm = "https://discord.gg/ehKVq7pf7v"
+                    mm = "https://discord.gg/hqE5drDHF7"
                 else
                     mm = "Pet Forest"
-                    tF_22 = "https://discord.gg/ehKVq7pf7v"
+                    tF_22 = "https://discord.gg/hqE5drDHF7"
                 end
                 tF_19 = (tF_19 + 35) % 96
             else
@@ -1123,7 +1181,7 @@ end
 Library, SaveManager, Toggles, Options, my, ms, mq, mj, me, ma, l6, l0, mV, lV, lT, mD, l_, lR, lJ, mX, lF, mQ, mr, l1, lX, lG, mT, mG, mt, mf, mU, mu, ml, mc, lO, lH, mB, l4, lB, mi, lS, mP, mS, l2, mk, mz, lP, mh, mx = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 table.sort(tF_25)
 table.sort(tF_15)
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 local ThemeManager = nil
 SaveManager = nil
 Toggles = Library.Toggles

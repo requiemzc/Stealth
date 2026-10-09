@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local tb_4, tb_13, tb_18, tb_20, ThemeManager, tb_25, tb_27
 local Toggles
@@ -1027,11 +1085,11 @@ end
 mn, mj, RequestWin, TrailAction, AuraAction, lZ, ItemShopRequest, lQ, Request, lL, tb_4, Worlds, Items, Shoes, tb_18, TrailConfigurations, AuraConfigurations, Rebirth, mw, tb_25, Library, ThemeManager, SaveManager, Toggles, l4, mt, mo, mk, mh, me, ma, l5, l0, tb_20, lJ, l_, lM, lG, mT, lC, mD, mm, mf, lX = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 if ((tb_18 or not SaveManager) and (Shoes and not tb_18) or (tb_18 or not lQ or not Shoes and not Shoes)) and (lQ or not Shoes or (not tb_18 or SaveManager) or (SaveManager or not Shoes or not tb_18 and tb_18)) or not (((tb_18 or not SaveManager) and (Shoes and not tb_18) or (tb_18 or not lQ or not Shoes and not Shoes)) and (lQ or not Shoes or (not tb_18 or SaveManager) or (SaveManager or not Shoes or not tb_18 and tb_18))) then
     tb_13 = "+1 Kitten Keyboard Escape"
-    mn = "https://discord.gg/ehKVq7pf7v"
+    mn = "https://discord.gg/hqE5drDHF7"
     mj = "https://rscripts.net/@Stealth"
 else
     mj = "+1 Kitten Keyboard Escape"
-    tb_13 = "https://discord.gg/ehKVq7pf7v"
+    tb_13 = "https://discord.gg/hqE5drDHF7"
     mn = "https://rscripts.net/@Stealth"
 end
 local tb_23 = tb_15:WaitForChild("Events")
@@ -1066,9 +1124,9 @@ local tb_7 = tb_15:WaitForChild("Utility")
 local tb_17 = require(tb_7:WaitForChild("PlayerData"))
 Rebirth = require(tb_7:WaitForChild("Rebirth"))
 mw = tb_17.GetLocalPlayerReplicaWait()
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 pcall(fn398)
-ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 SaveManager = nil
 Toggles = Library.Toggles
 l4 = Library.Options

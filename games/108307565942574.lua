@@ -1212,10 +1212,10 @@ repeat
         lS = (vector.create((lM * 2 + 4) % 11 + 1, (lM * 6 + 9) % 13 + 1, (lM * 14 + 8) % 17 + 1))
         lT = (vector.create((lM * 4 + 8) % 11 + 1, (lM * 1 + 8) % 13 + 1, (lM * 5 + 16) % 17 + 1))
         if vector.dot(vector.cross(lQ_4, lR), (vector.cross(lS, lT))) == vector.dot(lQ_4, lS) * vector.dot(lR, lT) - vector.dot(lQ_4, lT) * vector.dot(lR, lS) then
-            lb = "https://discord.gg/ehKVq7pf7v"
+            lb = "https://discord.gg/hqE5drDHF7"
             k5 = "https://rocheats.com?ref=Stealth"
         else
-            k5 = "https://discord.gg/ehKVq7pf7v"
+            k5 = "https://discord.gg/hqE5drDHF7"
             lb = "https://rocheats.com?ref=Stealth"
         end
         lM = (lM + 5) % 24
@@ -1422,9 +1422,9 @@ local function lN_2()
     task.wait(0.5)
 end
 lN_2()
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 local ThemeManager = nil
-lT = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/SaveManager.lua"))()
+lT = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 Shared = require(lE.shared.Shared)
 Heroes = Shared.Heroes
 Upgrades = Shared.Upgrades

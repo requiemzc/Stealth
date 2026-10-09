@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local Bw_2, Bw_3, PlayerPlotGetter, BrainrotSlotObjectGetter, Bw_7, PowerLevelState, BrainrotsCarryState, PowerUpgradesConfig, ItemsState, Bw_13, BrainrotsConfig, Bw_17, Bw_32, Bw_35, Bw_41, Bw_44
 Bw_2 = nil
@@ -1038,13 +1096,13 @@ end
 q1, qV, qR, qN, qI, Enums, BrainrotsConfig, RebirthConfig, PlayerPlotGetter, ItemsConfig, PowerUpgradesConfig, SpeedUpgradesConfig, CarryUpgradesConfig, BalanceConfig, WallsState, BrainrotSlotObjectGetter, PlotTeleportHelpers, MoneyState, ItemsState, PowerLevelState, SpeedLevelState, RebirthState, CarryLevelState, BrainrotsCarryState, BrainrotsBackpackState, SlotIncomeState, ProgressionChecksState, BrainrotsState, PlayerBrainrotSlotsState, PlayerPlotIdxState, Bw_32, qr, ql, qe, p8, p3, r6, r1, rT, Library, ThemeManager, SaveManager, Toggles, Options, q_, qU, qP, qL, qF, qB, qy, qs, qn, qg, p9, p4, r7, r2, rU, rN, rJ, rG, rC = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 if (not Enums and Enums or (Bw_32 or ItemsConfig) or (not Enums and Bw_32 or Bw_32 and qL) or (not Enums and not Enums or (not ItemsConfig or Enums) or (qL and not Enums or (ItemsConfig or qL)))) and ((Bw_32 or false or (Enums or false)) and (qL and not ItemsConfig or ItemsConfig and Enums) or (Bw_32 or not Bw_32) and (not Bw_32 or not Enums) and (Bw_32 or not ItemsConfig or false)) and not ((not Enums and Enums or (Bw_32 or ItemsConfig) or (not Enums and Bw_32 or Bw_32 and qL) or (not Enums and not Enums or (not ItemsConfig or Enums) or (qL and not Enums or (ItemsConfig or qL)))) and ((Bw_32 or false or (Enums or false)) and (qL and not ItemsConfig or ItemsConfig and Enums) or (Bw_32 or not Bw_32) and (not Bw_32 or not Enums) and (Bw_32 or not ItemsConfig or false))) then
     qV = "Break Walls for Brainrots!"
-    qI = "https://discord.gg/ehKVq7pf7v"
+    qI = "https://discord.gg/hqE5drDHF7"
     Bw_50 = "https://rscripts.net/@Stealth"
     qR = "https://Stealth-hub-rbx.web.app/"
     q1 = require((nil).Charm)
 else
     q1 = "Break Walls for Brainrots!"
-    qV = "https://discord.gg/ehKVq7pf7v"
+    qV = "https://discord.gg/hqE5drDHF7"
     qR = "https://rscripts.net/@Stealth"
     qN = "https://Stealth-hub-rbx.web.app/"
     qI = require(Bw_50.Packages.Charm)
@@ -1087,9 +1145,9 @@ r1 = Bw_23.getRemoteEvent("reUpgradeCarry")
 rT = Bw_23.getRemoteEvent("rePlaceBrainrotAtSlot")
 local Bw_62 = Bw_23.getRemoteEvent("reProgressionCheckFailed")
 local Bw_53 = { "Power", "Speed", "Carry" }
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 pcall(fns.fn240)
-ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 SaveManager = nil
 Toggles = Library.Toggles
 Options = Library.Options

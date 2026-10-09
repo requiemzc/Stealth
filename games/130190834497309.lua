@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local uL_3, ThemeManager, uL_6, uL_7, uL_8, uL_19, uL_20, uL_23, uL_25, uL_26, uL_27, uL_30, uL_34, uL_35, uL_36, uL_39, uL_40
 local mW
@@ -955,12 +1013,12 @@ repeat
                     local vG = bit32.rrotate(bit32.bxor(bit32.lrotate(uL_18, 19), string.byte(tostring(uL_30))), 16)
                     if bit32.bxor(bit32.lrotate(bit32.bxor(vG, 1334957265), 24), 3511652820) == bit32.lrotate(vG, 24) then
                         uL_36 = "Melt The Ice"
-                        mX = "https://discord.gg/ehKVq7pf7v"
+                        mX = "https://discord.gg/hqE5drDHF7"
                         mT = "https://rscripts.net/@Stealth"
                         mN = require(uL_3:WaitForChild("Modules"):WaitForChild("Remotes"))
                     else
                         mX = "Melt The Ice"
-                        uL_3 = "https://discord.gg/ehKVq7pf7v"
+                        uL_3 = "https://discord.gg/hqE5drDHF7"
                         mN = "https://rscripts.net/@Stealth"
                         uL_36 = require(mT:WaitForChild("Modules"):WaitForChild("Remotes"))
                     end
@@ -1188,8 +1246,8 @@ if false or not ThemeManager and not ThemeManager or (ThemeManager or uL_27) and
     nA = uL_25
 end
 MountainMelt = mN.MountainMelt
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 SaveManager = nil
 Toggles = Library.Toggles
 Options = Library.Options

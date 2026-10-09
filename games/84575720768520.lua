@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local sv_7, sv_12
 local sv_5_1, sv_5_6
 local BiomeConfig
@@ -763,10 +821,10 @@ repeat
                 kc = (vector.create((sv_1 * 6 + 8) % 11 + 1, (sv_1 * 6 + 8) % 13 + 1, (sv_1 * 13 + 5) % 17 + 1))
                 if vector.dot(vector.cross(j9, ka), (vector.cross(kb, kc))) == vector.dot(j9, kb) * vector.dot(ka, kc) - vector.dot(j9, kc) * vector.dot(ka, kb) + 4 then
                     sv_5_1 = jW
-                    jX = "https://discord.gg/ehKVq7pf7v"
+                    jX = "https://discord.gg/hqE5drDHF7"
                 else
                     jX = sv_5_1.LocalPlayer
-                    jW = "https://discord.gg/ehKVq7pf7v"
+                    jW = "https://discord.gg/hqE5drDHF7"
                 end
                 sv_1 = (sv_1 + 20) % 104
             end
@@ -856,11 +914,11 @@ repeat
                     local kf_1 = (vector.create((sv_12 * 4 + 5) % 11 + 1, (sv_12 * 1 + 5) % 13 + 1, (sv_12 * 11 + 2) % 17 + 1))
                     kg = (vector.create((sv_12 * 7 + 7) % 11 + 1, (sv_12 * 6 + 4) % 13 + 1, (sv_12 * 14 + 1) % 17 + 1))
                     if vector.dot(vector.cross(kd, worker2), (vector.cross(kf_1, kg))) == vector.dot(kd, kf_1) * vector.dot(worker2, kg) - vector.dot(kd, kg) * vector.dot(worker2, kf_1) + 5 then
-                        sv_1 = loadstring(game:HttpGet(game))()
-                        kc = loadstring(game:HttpGet(game))()
+                        sv_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                        kc = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     else
-                        kc = loadstring(game:HttpGet(sv_1 .. "addons/ThemeManager.lua"))()
-                        kb = loadstring(game:HttpGet(sv_1 .. "addons/SaveManager.lua"))()
+                        kc = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                        kb = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     end
                     sv_12 = (sv_12 + 17) % 60
                 else
@@ -884,7 +942,7 @@ repeat
                         jn = s2:CreateWindow("ShowCustomCursor")
                     else
                         sv_5_6 = jn:CreateWindow({
-                            Title = "Lucky Block Rush",
+                            Title = "Stealth",
                             Footer = "Stealth",
                             Icon = 91400086538074,
                             NotifySide = "Right",
@@ -1538,9 +1596,9 @@ repeat
         end
     else
         if (sv_12 * 3 + 7) * 5 % 4 == ((sv_12 * 3 + 7) * 5 + 13) % 4 then
-            sv_1 = loadstring(game:HttpGet(jn .. "Library.lua"))()
+            sv_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
         else
-            jn = loadstring(game:HttpGet(sv_1 .. "Library.lua"))()
+            jn = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
         end
         sv_12 = (sv_12 + 32) % 60
     end

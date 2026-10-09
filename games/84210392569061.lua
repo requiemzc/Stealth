@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local Sp_13, Sp_14, Sp_15, Sp_16, Sp_17, Sp_18, Sp_19, Sp_20, Sp_22, Animal_Remove, Sp_25, Sp_26, Sp_28, Sp_29, Research_Sync, Sp_31, Sp_32, Sp_34, Sp_35, Sp_36, Sp_37, Sp_39, Sp_41, Animal_Clear, Sp_44, Sp_45, uid, Sp_48, Sp_50, Sp_54, Sp_57, Sp_60, Sp_63, Sp_64, Weapon_Sync, Sp_70, Sp_71, Sp_73, Sp_74, Sp_77, Sp_80, Sp_83, Sp_84
 fns.Sp_3 = nil
@@ -1041,12 +1099,12 @@ repeat
                     if vector.dot(vector.cross(Sp_15, Sp_83), (vector.cross(Sp_73, Sp_63))) == vector.dot(Sp_15, Sp_73) * vector.dot(Sp_83, Sp_63) - vector.dot(Sp_15, Sp_63) * vector.dot(Sp_83, Sp_73) then
                         AP.__Stealth_DefendYourAnimals = true
                         AK = "Defend Your Animals!"
-                        AE = "https://discord.gg/ehKVq7pf7v"
+                        AE = "https://discord.gg/hqE5drDHF7"
                         Ax = "https://rscripts.net/@Stealth"
                     else
                         Ax.__Stealth_DefendYourAnimals = true
                         AP = "Defend Your Animals!"
-                        AK = "https://discord.gg/ehKVq7pf7v"
+                        AK = "https://discord.gg/hqE5drDHF7"
                         AE = "https://rscripts.net/@Stealth"
                     end
                     Sp_61 = (Sp_61 + 169) % 184
@@ -1386,8 +1444,8 @@ for k, v in Sp_35 do
     A6[v.name] = v.id
 end
 Library, SaveManager, Toggles, Options, AS, AM, AI, AC, Window, Aq, z3, Sp_31, BC, Be = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-Sp_51 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+Sp_51 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 SaveManager = nil
 Toggles = Library.Toggles
 Options = Library.Options

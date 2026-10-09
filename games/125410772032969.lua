@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local jn
 local jv
 local jq
@@ -224,11 +282,11 @@ end
 jF, jx, jr, jl, jV_1 = nil, nil, nil, nil, nil
 if (not jr or false or false or jr and jx and (not jV_1 or jV_1)) and not (not jr or false or false or jr and jx and (not jV_1 or jV_1)) then
     jr = "Tap 4 Money"
-    jF = "https://discord.gg/ehKVq7pf7v"
+    jF = "https://discord.gg/hqE5drDHF7"
     jx = "https://rscripts.net/@Stealth"
 else
     jF = "Tap 4 Money"
-    jx = "https://discord.gg/ehKVq7pf7v"
+    jx = "https://discord.gg/hqE5drDHF7"
     jr = "https://rscripts.net/@Stealth"
 end
 if (jx and 22 and (jF and 22) or jV_1 and false and (jr or false) or (not jV_1 and false or false and jx or (jF and not jF or 22))) and not (jx and 22 and (jF and 22) or jV_1 and false and (jr or false) or (not jV_1 and false or false and jx or (jF and not jF or 22))) then
@@ -300,7 +358,7 @@ for k, v in i2 do
     jY[v] = true
 end
 Library, ThemeManager, SaveManager, Toggles, Options, jP, jK, jI, jB, js, jD, i5, ji, jz, jn, jb, jN, jq, je, jQ, jo, jO, jy, jh, jv, i_, jw, i1, i4, jE, ja = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 jz = function()
     local function kp(U)
         local kk = not U or not U:IsA("ScreenGui")
@@ -333,7 +391,7 @@ jz = function()
 end
 jz()
 task.spawn(worker)
-ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 SaveManager = nil
 Toggles = Library.Toggles
 Options = Library.Options

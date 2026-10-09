@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local SeasonpassMultiplier
 local gz
 local Position
@@ -905,7 +963,7 @@ repeat
                             textLabel.Parent = frame3
                             return textLabel
                         end
-                        iH = "https://discord.gg/f3dJhDgyTq"
+                        iH = "https://discord.gg/hqE5drDHF7"
                         iO_9("Made Stealth Marketplace && MM", 26, Enum.Font.GothamBold, 0, 1)
                         textButton = Instance.new("TextButton")
                         textButton.BackgroundTransparency = 1
@@ -1072,7 +1130,7 @@ repeat
                             textLabel.Parent = frame3
                             return textLabel
                         end
-                        iH = "https://discord.gg/f3dJhDgyTq"
+                        iH = "https://discord.gg/hqE5drDHF7"
                         iO_3("Made Stealth Marketplace && MM", 26, Enum.Font.GothamBold, 0, 1)
                         textButton = Instance.new("TextButton")
                         textButton.BackgroundTransparency = 1
@@ -1176,10 +1234,10 @@ repeat
         elseif gO <= 3 then
             if gL_2 * 87431455 + 7 + 7 >= gL_2 * 87431455 + 7 + 7 + 2 then
                 gj()
-                gI = loadstring(game:HttpGet("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
+                gI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
             else
                 gI()
-                gj = loadstring(game:HttpGet("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
+                gj = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
             end
             gL_2 = (gL_2 + 1) % 28
         else
@@ -1258,10 +1316,10 @@ repeat
         end
     else
         if (gL_2 * 2 + 8) * 16 % 3 == ((gL_2 * 2 + 8) * 16 + 6) % 3 then
-            gg = "https://discord.gg/f3dJhDgyTq"
+            gg = "https://discord.gg/hqE5drDHF7"
             gM = fn269
         else
-            gM = "https://discord.gg/f3dJhDgyTq"
+            gM = "https://discord.gg/hqE5drDHF7"
             gg = fn269
         end
         gL_2 = (gL_2 + 22) % 28

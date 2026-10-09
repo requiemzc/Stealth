@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local ME_27, ME_29, ME_30, ME_31, ME_32, ME_33, ME_35, ME_36, ME_38, ME_41, ME_47, ME_50, ME_54, ME_59, ME_62, ME_65, ME_67, ME_70, BuyFoodGroup, ME_73, ScriptsGroup, ME_76, ME_78, ME_82, ME_85, ME_88, ME_90
 fns.ME_1 = nil
@@ -1728,7 +1786,7 @@ CoreGui = game:GetService("CoreGui")
 Workspace = game:GetService("Workspace")
 x7 = ME_52.LocalPlayer
 local ME_55 = "Catch And Tame!"
-ME_29 = "https://discord.gg/ehKVq7pf7v"
+ME_29 = "https://discord.gg/hqE5drDHF7"
 if (fns.ME_19 and not yZ and (not yZ or yZ) and (not yZ or not fns.ME_19 or yZ and not fns.ME_19) or (not yZ and fns.ME_19 and (yZ and not yZ) or yZ and fns.ME_19 and (not fns.ME_19 or not yZ))) and not (fns.ME_19 and not yZ and (not yZ or yZ) and (not yZ or not fns.ME_19 or yZ and not fns.ME_19) or (not yZ and fns.ME_19 and (yZ and not yZ) or yZ and fns.ME_19 and (not fns.ME_19 or not yZ))) then
     xK = fns.ME_15:WaitForChild("Packages"):WaitForChild("knit")
     yZ = require(xK)
@@ -1743,7 +1801,7 @@ Mutations = require(yZ.Configs.Pets.Mutations)
 Food = require(yZ.Configs.Food)
 Settings = require(yZ.Configs.Pets.Settings)
 local ME_39 = fns.fn1316
-if (5 or (HttpService or HttpService) or false or (HttpService or HttpService or "https://discord.gg/ehKVq7pf7v" or (HttpService or ME_29) and false)) and ((not HttpService or 5 or (not HttpService or ME_29)) and (false or ME_39) and ((HttpService and false) and (false or not HttpService and false))) or not ((5 or (HttpService or HttpService) or false or (HttpService or HttpService or "https://discord.gg/ehKVq7pf7v" or (HttpService or ME_29) and false)) and ((not HttpService or 5 or (not HttpService or ME_29)) and (false or ME_39) and ((HttpService and false) and (false or not HttpService and false)))) then
+if (5 or (HttpService or HttpService) or false or (HttpService or HttpService or "https://discord.gg/hqE5drDHF7" or (HttpService or ME_29) and false)) and ((not HttpService or 5 or (not HttpService or ME_29)) and (false or ME_39) and ((HttpService and false) and (false or not HttpService and false))) or not ((5 or (HttpService or HttpService) or false or (HttpService or HttpService or "https://discord.gg/hqE5drDHF7" or (HttpService or ME_29) and false)) and ((not HttpService or 5 or (not HttpService or ME_29)) and (false or ME_39) and ((HttpService and false) and (false or not HttpService and false)))) then
     ME_67 = ME_39()
 else
     ME_67()

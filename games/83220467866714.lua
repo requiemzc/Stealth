@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local zW_18, zW_27, zW_41, zW_54, GameInfoGroup
 local pX
@@ -1372,13 +1430,13 @@ CollectionService = game:GetService("CollectionService")
 LocalPlayer = zW_34.LocalPlayer
 if (GameInfoGroup or zW_27) and (zW_18 or RideReadout) and (not GameInfoGroup or GameInfoGroup or not RideReadout and not GameInfoGroup) or not ((GameInfoGroup or zW_27) and (zW_18 or RideReadout) and (not GameInfoGroup or GameInfoGroup or not RideReadout and not GameInfoGroup)) then
     zW_41 = "Greedy Brainrots"
-    p2 = "https://discord.gg/ehKVq7pf7v"
+    p2 = "https://discord.gg/hqE5drDHF7"
     pY = "https://rscripts.net/@Stealth"
     pU = "LSZPqKSsD1x6QXea2H8JS17nXMLnmtew3w"
     pN = "bc1qwc9exvcn3ykjqnsa0t9gakuccr494ljjuuqj99"
 else
     p2 = "Greedy Brainrots"
-    pU = "https://discord.gg/ehKVq7pf7v"
+    pU = "https://discord.gg/hqE5drDHF7"
     pN = "https://rscripts.net/@Stealth"
     zW_41 = "LSZPqKSsD1x6QXea2H8JS17nXMLnmtew3w"
     pY = "bc1qwc9exvcn3ykjqnsa0t9gakuccr494ljjuuqj99"
@@ -1465,10 +1523,10 @@ for i, v in ipairs(Balancing.Trader.WeatherCards) do
     pI[zW_34] = i
 end
 pj, o9, Toggles, o1, qq, qR, qA, ql, p4, pJ, pf, qP, p9, p0, pE, pb, qH, qp, pO, pm, qM, p6, qv, qN, pR, pz, pe, qw, o2, p1, pK, pc, qh, pV, pG, qL, qj, pi, qQ, qs, py, qz, qe, pS, qF, pa, qT, pp, qC, pl, qu, po, o8, pQ, o4 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-pj = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+pj = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 if not pO and not pO and (not qM and not qM) or qM and not qM and (pO and not pO) or not (not pO and not pO and (not qM and not qM) or qM and not qM and (pO and not pO)) then
-    zW_54 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-    o9 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+    zW_54 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+    o9 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
     Toggles = pj.Toggles
     o1 = pj.Options
     qR = fns.fn557

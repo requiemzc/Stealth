@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local H9_2, H9_3, H9_26, H9_29, H9_34, H9_37, H9_47, H9_57, H9_60, H9_66
 H9_2 = nil
@@ -1984,11 +2042,11 @@ repeat
                 H9_12 = (H9_12 + 85) % 104
             else
                 if (Config and not uq and (Deposit or not uq) or (not uq or ug) and (not Deposit or uq)) and (ug and not uN or Config and not uq or (not uq and not uN or (not ug or ug))) and not ((Config and not uq and (Deposit or not uq) or (not uq or ug) and (not Deposit or uq)) and (ug and not uN or Config and not uq or (not uq and not uN or (not ug or ug)))) then
-                    ug = "https://discord.gg/ehKVq7pf7v"
+                    ug = "https://discord.gg/hqE5drDHF7"
                     up = "https://rscripts.net/@Stealth"
                     um = "https://Stealth-hub-rbx.web.app/"
                 else
-                    up = "https://discord.gg/ehKVq7pf7v"
+                    up = "https://discord.gg/hqE5drDHF7"
                     um = "https://rscripts.net/@Stealth"
                     ug = "https://Stealth-hub-rbx.web.app/"
                 end
@@ -2247,7 +2305,7 @@ H9_57 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
 if (ve and ve and (uA or not vI) and (uA or vI or not vI and ve) or (not H9_29 or not uA or (vI or not ve)) and ((not ve or not H9_29) and (not ve or vI))) and ((ve and uA or (H9_29 or not H9_29)) and (not ve and not vI and (not uA and ve)) or uA and not H9_29 and (uA or not ve) and (not H9_29 or not vI or (vI or not vI))) and not ((ve and ve and (uA or not vI) and (uA or vI or not vI and ve) or (not H9_29 or not uA or (vI or not ve)) and ((not ve or not H9_29) and (not ve or vI))) and ((ve and uA or (H9_29 or not H9_29)) and (not ve and not vI and (not uA and ve)) or uA and not H9_29 and (uA or not ve) and (not H9_29 or not vI or (vI or not vI)))) then
     H9_57 = loadstring(game:HttpGet(Library .. "Library.lua"))()
 else
-    Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 end
 uK = function()
     local function w2(bc)

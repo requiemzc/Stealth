@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local GameInfoGroup, Bq_15, Bq_24, Bq_37, Bq_57, Bq_70, Bq_79
 local qD
@@ -1243,17 +1301,17 @@ DataService = require(Bq_26:WaitForChild("Modules"):WaitForChild("DataService"))
 Item_Module = require(Bq_26:WaitForChild("Item_Module"))
 Mutations = require(Bq_26:WaitForChild("Modules"):WaitForChild("Mutations"))
 Client = require(Bq_26:WaitForChild("Blink"):WaitForChild("Blink"):WaitForChild("Client"))
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 pcall(fns.fn134)
 if setthreadidentity then
     setthreadidentity(8)
 end
 SaveManager, Toggles, Options, qR, qL, qE, qz, qv, qp, qj, sf, r8, rl = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-Bq_26 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+Bq_26 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 SaveManager = nil
 Toggles = Library.Toggles
 Options = Library.Options
-qR = "https://discord.gg/ehKVq7pf7v"
+qR = "https://discord.gg/hqE5drDHF7"
 qL = "https://rscripts.net/@Stealth"
 qE = "LSZPqKSsD1x6QXea2H8JS17nXMLnmtew3w"
 qz = "bc1qwc9exvcn3ykjqnsa0t9gakuccr494ljjuuqj99"
@@ -1663,7 +1721,7 @@ rX = function()
     end
 end
 Bq_37 = Library:CreateWindow({
-    Title = "[Beta]Stealth",
+    Title = "Stealth",
     Font = Enum.Font.BuilderSans,
     Footer = { { Text = qR, Copyable = true }, "|", Bq_43 },
     Icon = 78539693571783,

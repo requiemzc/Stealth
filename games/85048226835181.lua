@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local jQ
 local jW
 local i1
@@ -890,9 +948,9 @@ repeat
                     "sdly"
                 }
                 if kp[(ka * 16 + 39) % 12 + 1] < kp[(ka * 16 + 39) % 12 + 1] then
-                    jx = "https://discord.gg/f3dJhDgyTq"
+                    jx = "https://discord.gg/hqE5drDHF7"
                 else
-                    jU = "https://discord.gg/f3dJhDgyTq"
+                    jU = "https://discord.gg/hqE5drDHF7"
                 end
                 ka = (ka + 93) % 160
             end
@@ -960,7 +1018,7 @@ repeat
                     textButton.Size = UDim2.fromOffset(460, 24)
                     textButton.Font = Enum.Font.GothamSemibold
                     textButton.RichText = true
-                    textButton.Text = "<u>https://discord.gg/f3dJhDgyTq</u>  (click to copy)"
+                    textButton.Text = "<u>https://discord.gg/hqE5drDHF7</u>  (click to copy)"
                     textButton.TextSize = 16
                     textButton.TextColor3 = Color3.fromRGB(120, 160, 255)
                     textButton.LayoutOrder = 2
@@ -980,9 +1038,9 @@ repeat
                         if setclipboard then
                             setclipboard(jU)
                         end
-                        textButton.Text = "<u>https://discord.gg/f3dJhDgyTq</u>  (copied!)"
+                        textButton.Text = "<u>https://discord.gg/hqE5drDHF7</u>  (copied!)"
                         task.delay(1.5, function()
-                            textButton.Text = "<u>https://discord.gg/f3dJhDgyTq</u>  (click to copy)"
+                            textButton.Text = "<u>https://discord.gg/hqE5drDHF7</u>  (click to copy)"
                         end)
                     end
                     local Activated = textButton.Activated
@@ -1113,7 +1171,7 @@ repeat
                     textButton.Size = UDim2.fromOffset(460, 24)
                     textButton.Font = Enum.Font.GothamSemibold
                     textButton.RichText = true
-                    textButton.Text = "<u>https://discord.gg/f3dJhDgyTq</u>  (click to copy)"
+                    textButton.Text = "<u>https://discord.gg/hqE5drDHF7</u>  (click to copy)"
                     textButton.TextSize = 16
                     textButton.TextColor3 = Color3.fromRGB(120, 160, 255)
                     textButton.LayoutOrder = 2
@@ -1133,9 +1191,9 @@ repeat
                         if setclipboard then
                             setclipboard(jU)
                         end
-                        textButton.Text = "<u>https://discord.gg/f3dJhDgyTq</u>  (copied!)"
+                        textButton.Text = "<u>https://discord.gg/hqE5drDHF7</u>  (copied!)"
                         task.delay(1.5, function()
-                            textButton.Text = "<u>https://discord.gg/f3dJhDgyTq</u>  (click to copy)"
+                            textButton.Text = "<u>https://discord.gg/hqE5drDHF7</u>  (click to copy)"
                         end)
                     end
                     local Activated = textButton.Activated
@@ -1267,7 +1325,7 @@ repeat
                     textButton.Size = UDim2.fromOffset(460, 24)
                     textButton.Font = Enum.Font.GothamSemibold
                     textButton.RichText = true
-                    textButton.Text = "<u>https://discord.gg/f3dJhDgyTq</u>  (click to copy)"
+                    textButton.Text = "<u>https://discord.gg/hqE5drDHF7</u>  (click to copy)"
                     textButton.TextSize = 16
                     textButton.TextColor3 = Color3.fromRGB(120, 160, 255)
                     textButton.LayoutOrder = 2
@@ -1287,9 +1345,9 @@ repeat
                         if setclipboard then
                             setclipboard(jU)
                         end
-                        textButton.Text = "<u>https://discord.gg/f3dJhDgyTq</u>  (copied!)"
+                        textButton.Text = "<u>https://discord.gg/hqE5drDHF7</u>  (copied!)"
                         task.delay(1.5, function()
-                            textButton.Text = "<u>https://discord.gg/f3dJhDgyTq</u>  (click to copy)"
+                            textButton.Text = "<u>https://discord.gg/hqE5drDHF7</u>  (click to copy)"
                         end)
                     end
                     local Activated = textButton.Activated
@@ -1377,9 +1435,9 @@ repeat
             "ghtcairwhvkr"
         }
         if ko[(ka * 89 + 46) % 11 + 1] <= ko[(ka * 89 + 46) % 11 + 1] then
-            jY = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+            jY = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
         else
-            jA = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+            jA = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
         end
         ka = (ka + 93) % 160
     else
@@ -2749,7 +2807,7 @@ ka = function(ee, ef)
     textLabel.Parent = textButton
     local function n7_10()
         pcall(function()
-            setclipboard("https://discord.gg/NFGJaF2fDv")
+            setclipboard("https://discord.gg/hqE5drDHF7")
         end)
         if notify then
             notify("Stealth Discord copied to clipboard!")
@@ -2885,7 +2943,7 @@ repeat
                                 iF.Play(iF)
                             end)
                             pcall(function()
-                                setclipboard("https://discord.gg/NFGJaF2fDv")
+                                setclipboard("https://discord.gg/hqE5drDHF7")
                             end)
                             if notify then
                                 notify("Marketplace Discord copied to clipboard!")

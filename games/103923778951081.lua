@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local uQ_1, uQ_2, uQ_4, uQ_5, UserInputService, uQ_7, uQ_11, uQ_12, uQ_14, uQ_15, uQ_16, uQ_19, uQ_21, uQ_23, MinerDataChanged, uQ_26, uQ_27
 local n2
@@ -1091,13 +1149,13 @@ repeat
                 Workspace = game:GetService("Workspace")
                 ol = uQ_19.LocalPlayer
                 uQ_15 = "Build An Ore Farm"
-                ob = "https://discord.gg/ehKVq7pf7v"
+                ob = "https://discord.gg/hqE5drDHF7"
             else
                 uQ_19 = game:GetService("VirtualUser")
                 ow = game:GetService("Workspace")
                 ob = Workspace.LocalPlayer
                 ol = "Build An Ore Farm"
-                uQ_15 = "https://discord.gg/ehKVq7pf7v"
+                uQ_15 = "https://discord.gg/hqE5drDHF7"
             end
             uQ_9 = (uQ_9 + 123) % 160
         end
@@ -1136,9 +1194,9 @@ for i, v in ipairs(uQ_23.Tiers) do
     oo[v.Name] = i
 end
 Library, Toggles, Options, oh, nQ, nJ, nG, n9, n4, nN, nw, nk, m9, oa, nP, nr, nf, oi, nC, na, oj, oz, ot, oe, n0, nL, nu, oy, nS, nB, nn, nd, oB, op, nO, nq, ne, oE, n6, ng, n2, nD, oC, nX, oA, m4, nZ, og, ov, oc = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-uQ_7 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-uQ_27 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+uQ_7 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+uQ_27 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 Toggles = Library.Toggles
 Options = Library.Options
 nN = fn533

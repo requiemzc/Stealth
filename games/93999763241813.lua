@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local eT
 local eI
 local eL
@@ -262,14 +320,14 @@ repeat
                     local e6_1 = (vector.create((eX * 4 + 4) % 11 + 1, (eX * 8 + 4) % 13 + 1, (eX * 3 + 11) % 17 + 1))
                     local e7_1 = (vector.create((eX * 7 + 6) % 11 + 1, (eX * 6 + 7) % 13 + 1, (eX * 9 + 8) % 17 + 1))
                     if vector.dot(vector.cross(e5_1, e6_1), e7_1) == vector.dot(vector.cross(e6_1, e7_1), e5_1) then
-                        eQ = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-                        e3_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/ThemeManager.lua"))()
-                        e2_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/SaveManager.lua"))()
+                        eQ = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                        e3_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                        e2_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     else
                         e2_1 = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
-                        loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-                        eQ = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/ThemeManager.lua"))()
-                        e3_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/SaveManager.lua"))()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                        eQ = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                        e3_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     end
                     eX = (eX + 23) % 112
                 else
@@ -319,9 +377,9 @@ repeat
                 local e6_2 = (vector.create((eX * 7 + 8) % 11 + 1, (eX * 4 + 9) % 13 + 1, (eX * 6 + 17) % 17 + 1))
                 local e7_2 = (vector.create((eX * 1 + 1) % 5 + 1, (eX * 2 + 7) % 7 + 1, (eX * 5 + 4) % 9 + 1))
                 if math.abs((vector.angle(e5_3, e6_2, e7_2))) - math.abs((vector.angle(e6_2, e5_3, e7_2))) == 0 then
-                    eN = "https://discord.gg/ehKVq7pf7v"
+                    eN = "https://discord.gg/hqE5drDHF7"
                 else
-                    e2_1 = "https://discord.gg/ehKVq7pf7v"
+                    e2_1 = "https://discord.gg/hqE5drDHF7"
                 end
                 eX = (eX + 107) % 112
             end

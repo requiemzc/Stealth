@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local Workspace
 local dO
 local dR
@@ -429,11 +487,11 @@ repeat
             }
             if ei_2[(ea * 3 + 106) % 15 + 1] <= ei_2[(ea * 3 + 106) % 15 + 1] then
                 ed_1 = "Build a Base and Steal"
-                dU = "https://discord.gg/ehKVq7pf7v"
+                dU = "https://discord.gg/hqE5drDHF7"
                 eh_1 = fn135(eb_1:FindFirstChild("Rarities"))
                 ef_1 = fn135(eb_1:FindFirstChild("Mutations"))
             else
-                eb_1 = "https://discord.gg/ehKVq7pf7v"
+                eb_1 = "https://discord.gg/hqE5drDHF7"
                 ed_1 = fn135
                 dU = ed_1(ef_1:FindFirstChild("Rarities"))
                 eh_1 = ed_1(ef_1:FindFirstChild("Mutations"))
@@ -484,7 +542,7 @@ d2 = fn306
 dY = fn143
 local d9_3 = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
 if (d_ or not d_ or (not ei_3 or d_) or not ei_3 and ei_3 and (d_ and not Options)) and (not d_ or d_ or (Toggles or ei_3) or (not Toggles and not d_ or not Options and not ei_3)) and (d_ and not ei_3 or (not Toggles or not Toggles) or (Toggles or Toggles) and (not Options or d_) or Toggles and not ei_3 and (not d_ or Toggles) and (not Toggles or ei_3 or (not Options or not Toggles))) or not ((d_ or not d_ or (not ei_3 or d_) or not ei_3 and ei_3 and (d_ and not Options)) and (not d_ or d_ or (Toggles or ei_3) or (not Toggles and not d_ or not Options and not ei_3)) and (d_ and not ei_3 or (not Toggles or not Toggles) or (Toggles or Toggles) and (not Options or d_) or Toggles and not ei_3 and (not d_ or Toggles) and (not Toggles or ei_3 or (not Options or not Toggles)))) then
-    Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+    Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 else
     d9_3 = loadstring(game:HttpGet(Library .. "Library.lua"))()
 end

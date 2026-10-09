@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local gg
 local gj
 local fK
@@ -586,7 +644,7 @@ repeat
                 gt = game:GetService("UserInputService")
                 gu = game:GetService("RunService")
                 LocalPlayer = gl_1.LocalPlayer
-                f0 = "https://discord.gg/ehKVq7pf7v"
+                f0 = "https://discord.gg/hqE5drDHF7"
             else
                 gu = game:GetService(game)
                 f0 = game:GetService(game)
@@ -937,7 +995,7 @@ repeat
         if (gn * 2 + 5) * 7 % 3 == ((gn * 2 + 5) * 7 + 4) % 3 then
             go = loadstring(game:HttpGet(loadstring))()
         else
-            gs = loadstring(game:HttpGet("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
+            gs = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
         end
         gn = (gn + 23) % 56
     end
@@ -1260,9 +1318,9 @@ repeat
                 local Farm = gr.Farm
                 Farm.AddToggle(Farm, "AutoClaimIndex", gp_11)
                 gn = gq({
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.lua",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/addons/SaveManager.luau"
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.luau",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.lua",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/addons/SaveManager.luau"
                 })
             end
             gl_2 = (gl_2 + 17) % 24
@@ -1289,15 +1347,15 @@ repeat
         local gw_14 = (gv_13:rep(kK))
         if go >= gw_14:len() then
             gq = gm({
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.lua",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/addons/InterfaceManager.luau",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau"
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.lua",
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/addons/InterfaceManager.luau",
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau"
             })
         else
             gm = gq({
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.lua",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/addons/InterfaceManager.luau"
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau",
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.lua",
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/addons/InterfaceManager.luau"
             })
         end
         gl_2 = (gl_2 + 5) % 24

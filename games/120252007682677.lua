@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local Kw_2, Kw_4, Kw_12, Kw_14, Kw_16, Kw_18, Kw_23, Kw_24, Kw_26, Kw_27
 local xc
@@ -1739,11 +1797,11 @@ repeat
                 if bit32.bxor(bit32.bxor(bit32.bxor(bit32.bxor(bit32.band(L6, 1746636739), 2015497344), (bit32.bxor(bit32.band(L6, 2548330556), 3161824258))), 2015497344), 3161824258) == L6 then
                     x0 = "Surf And Rescue"
                     Kw_16 = "v0.4"
-                    xP = "https://discord.gg/synapsex"
+                    xP = "https://discord.gg/hqE5drDHF7"
                 else
                     xP = "Surf And Rescue"
                     x0 = "v0.4"
-                    Kw_16 = "https://discord.gg/synapsex"
+                    Kw_16 = "https://discord.gg/hqE5drDHF7"
                 end
                 Kw_12 = (Kw_12 + 28) % 120
             end
@@ -2720,9 +2778,9 @@ xy.SetAutoUpgradeTank = fns.fn321
 xy.SetAutoSell = fn1290
 xy.SetEsp = fns.fn204
 xy.Track(fns.fn340)
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 if (ys or Library) and (xn or not Kw_32) and (xn and not ys or not Kw_12 and Kw_12) or not ((ys or Library) and (xn or not Kw_32) and (xn and not ys or not Kw_12 and Kw_12)) then
-    xo = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+    xo = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
     SaveManager = nil
 else
     loadstring(game:HttpGet(SaveManager .. "addons/ThemeManager.lua"))()

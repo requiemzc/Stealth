@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local eX
 local eP
 local fa
@@ -635,9 +693,9 @@ repeat
                     local jM = fe
                     local fp_1 = fo_1[jM % 10 + 1]
                     if fp_1:len() >= fp_1:gsub("(.)", "%1%1", jM % 3 % 2 + 1):len() then
-                        fg_1 = "https://discord.gg/ehKVq7pf7v"
+                        fg_1 = "https://discord.gg/hqE5drDHF7"
                     else
-                        e8 = "https://discord.gg/ehKVq7pf7v"
+                        e8 = "https://discord.gg/hqE5drDHF7"
                     end
                     fe = (fe + 42) % 44
                 else
@@ -765,13 +823,13 @@ repeat
     else
         if (not fg_1 or not eQ or fh_1 and ff_1) and (fg_1 or not ff_1 or not eQ and result) and (result and fh_1 and (eQ or fb_1) and (fh_1 and ff_1 or fg_1 and not fh_1)) and (result and not ff_1 and (not fg_1 or not fh_1) and ((ff_1 or fg_1) and (fg_1 and not fb_1)) or (result and fg_1 or (not fb_1 or ff_1)) and ((fg_1 or not result) and (not fh_1 or fh_1))) and not ((not fg_1 or not eQ or fh_1 and ff_1) and (fg_1 or not ff_1 or not eQ and result) and (result and fh_1 and (eQ or fb_1) and (fh_1 and ff_1 or fg_1 and not fh_1)) and (result and not ff_1 and (not fg_1 or not fh_1) and ((ff_1 or fg_1) and (fg_1 and not fb_1)) or (result and fg_1 or (not fb_1 or ff_1)) and ((fg_1 or not result) and (not fh_1 or fh_1)))) then
             fl_1 = "https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
-            fm_1 = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/ThemeManager.lua"))()
-            fa = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/SaveManager.lua"))()
+            fm_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+            fa = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
         else
-            fa = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-            fm_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/ThemeManager.lua"))()
-            fl_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/SaveManager.lua"))()
+            fa = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+            fm_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+            fl_1 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
         end
         fe = (fe + 20) % 44
     end

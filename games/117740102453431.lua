@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local iz
 local iY
 local connection
@@ -290,7 +348,7 @@ getgenv().gethui = function()
     local jO_1 = Players.LocalPlayer or Players.PlayerAdded:Wait()
     return jO_1:WaitForChild("PlayerGui")
 end
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 local ThemeManager = nil
 SaveManager = nil
 Players2 = game:GetService("Players")
@@ -303,9 +361,9 @@ iO = game:GetService("ReplicatedStorage")
 LocalPlayer = Players2.LocalPlayer
 iE = "Merge a Squishy"
 if ((not Players2 or not Upgrade) and (Options and is) or not i2 and Remotes and (not Upgrade and not Upgrade) or ((Upgrade or Remotes) and (false and Remotes) or (Options or Players2) and (not Options or Options))) and ((Upgrade and false or (i2 or not Upgrade)) and (not i2 and not Options or (Upgrade or not Upgrade)) or is and not Upgrade and false and (Upgrade and Options or is and not Remotes)) and not (((not Players2 or not Upgrade) and (Options and is) or not i2 and Remotes and (not Upgrade and not Upgrade) or ((Upgrade or Remotes) and (false and Remotes) or (Options or Players2) and (not Options or Options))) and ((Upgrade and false or (i2 or not Upgrade)) and (not i2 and not Options or (Upgrade or not Upgrade)) or is and not Upgrade and false and (Upgrade and Options or is and not Remotes))) then
-    jj = "https://discord.gg/ehKVq7pf7v"
+    jj = "https://discord.gg/hqE5drDHF7"
 else
-    iA = "https://discord.gg/ehKVq7pf7v"
+    iA = "https://discord.gg/hqE5drDHF7"
 end
 iw = "https://rscripts.net/@Stealth"
 is = "https://Stealth-hub-rbx.web.app/"

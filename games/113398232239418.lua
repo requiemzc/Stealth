@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local x4_10, x4_11, x4_20, x4_26, x4_28, x4_29
 local x4_17_3, x4_17_4
 local pj
@@ -740,7 +798,7 @@ if setthreadidentity then
 end
 ou, om, oi, oe, ob, n6, pz, px, pt, x4_17_4, WaveAction, BuyHiveSlot, BuyBoardUpgrade, BuyStatUpgrade, RebirthEvent, DeleteBee, SwordShop, RollZoomEvent = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 ou = "Build a Bee Swarm"
-om = "https://discord.gg/ehKVq7pf7v"
+om = "https://discord.gg/hqE5drDHF7"
 oi = "https://rscripts.net/@Stealth"
 oe = "https://Stealth-hub-rbx.web.app/"
 ob = "#7fd47f"
@@ -869,13 +927,13 @@ end
 table.sort(pa, fn43)
 Library, x4_11, op, Toggles, Options = nil, nil, nil, nil, nil
 local x4_17_9 = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 if (Library and op or (not Toggles or not Library) or (op or op or (not Toggles or not Toggles)) or (Library and false or not Toggles and op) and (x4_17_9 or Library or Toggles and false)) and not (Library and op or (not Toggles or not Library) or (op or op or (not Toggles or not Toggles)) or (Library and false or not Toggles and op) and (x4_17_9 or Library or Toggles and false)) then
     pcall(fn858)
     x4_17_9 = loadstring(game:HttpGet(x4_11 .. "addons/ThemeManager.lua"))()
 else
     pcall(fn858)
-    x4_11 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+    x4_11 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 end
 op = loadstring(game:HttpGet(x4_17_9 .. "addons/SaveManager.lua"))()
 Toggles = Library.Toggles

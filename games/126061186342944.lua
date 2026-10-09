@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local E8_3, E8_7, E8_12, E8_16, E8_18, E8_20, E8_24, E8_29, E8_34, E8_40, E8_42
 local un
@@ -856,7 +914,7 @@ if setthreadidentity then
 end
 ti, tb, s2, sY, sT, sQ, sM, sI, uq, Random, RandomWeapon, AttackEvent, PurchaseDoor, GiveCoins, SetAutoSell, SetAutoSellWeapon, SetAutoSellDrops, GetAutoSell, GetAutoSellWeapon, GetAutoSellDrops, UpgradePet, UpgradeWeapon, UpgradePerks, GetData, EquipPet, EquipWeapon, UnequipPets, GetRaceData, SwitchRaceSlot, AutoRerollRace, UpgradeSkill, Perks, Races, Skills, E8_29, E8_16, Doors, Eggs, Weapons, CurrencyDrops, Drops, TeleportPoints, Pets, Weapons2, tl = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 ti = "Backrooms Simulator"
-tb = "https://discord.gg/ehKVq7pf7v"
+tb = "https://discord.gg/hqE5drDHF7"
 s2 = "https://rscripts.net/@Stealth"
 sY = "https://Stealth-hub-rbx.web.app/"
 sT = "#7fd47f"
@@ -1004,9 +1062,9 @@ repeat
     local GE = E8_40
     E8_12 = E8_24[GE % 12 + 1]
     if E8_12:len() <= E8_12:reverse():rep(GE % 3 + 2):len() then
-        sP = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-        sK = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-        uu = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+        sP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+        sK = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+        uu = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
     else
         sK = "https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/"
         loadstring(game:HttpGet(sK .. "Library.lua"))()

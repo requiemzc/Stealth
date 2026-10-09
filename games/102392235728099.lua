@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local sK
 local CoreGui
 local sN
@@ -766,7 +824,7 @@ local to = "StealthCatchDragons"
 local to_3
 sM = "Catch Dragons To Defend"
 local tq = "v0.4"
-sG = "https://discord.gg/synapsex"
+sG = "https://discord.gg/hqE5drDHF7"
 sD = "https://rscripts.net/@Stealth"
 sB = "https://Stealth-hub-rbx.web.app/"
 sx = { "Common", "Uncommon", "Rare", "Epic", "Legendary", "Mythic", "Secret", "Fabled" }
@@ -1566,12 +1624,12 @@ tc.SetKeepBest = fn260
 tc.GetStatus = fn573
 tc.GetCatchStatus = fn924
 tc.Track(fn1214)
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 if ((sF and not sL and (ti or ti) or (sU or not sU) and (not s8 or not sL)) and ((not Library or sU) and (sL or sF) and (not sL or sF or (not s8 or Library))) or (sF or not sF or not sL and sU) and (sF and not sL and (Library or Library)) and (s8 or not s8 or (s8 or not sF) or ti and sU and (sF and not ti))) and not ((sF and not sL and (ti or ti) or (sU or not sU) and (not s8 or not sL)) and ((not Library or sU) and (sL or sF) and (not sL or sF or (not s8 or Library))) or (sF or not sF or not sL and sU) and (sF and not sL and (Library or Library)) and (s8 or not s8 or (s8 or not sF) or ti and sU and (sF and not ti))) then
     loadstring(game:HttpGet(SaveManager .. "addons/ThemeManager.lua"))()
     sh = loadstring(game:HttpGet(SaveManager .. "addons/SaveManager.lua"))()
 else
-    sh = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
+    sh = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
     SaveManager = nil
 end
 Toggles, Options = Library.Toggles, Library.Options

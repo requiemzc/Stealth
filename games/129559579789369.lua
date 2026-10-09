@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local en
 local EquipBest
 local et
@@ -755,24 +813,24 @@ repeat
             elseif eY <= 7 then
                 if eY <= 6 then
                     if (eN or not eh or not eN and not ej) and ((not eN or not eN) and (not ej and eN)) and ((ej and eN or (eh or not eN)) and ((eS or not eN) and (eN and not eS))) or (eN or not eN) and (ej or not ej) and (not ej or not eN or (eh or eh)) and ((eh and eS or ej and not eN) and ((not eh or not eN) and (not ej and eh))) or not ((eN or not eh or not eN and not ej) and ((not eN or not eN) and (not ej and eN)) and ((ej and eN or (eh or not eN)) and ((eS or not eN) and (eN and not eS))) or (eN or not eN) and (ej or not ej) and (not ej or not eN or (eh or eh)) and ((eh and eS or ej and not eN) and ((not eh or not eN) and (not ej and eh)))) then
-                        ew = loadstring(game:HttpGet(eW .. "Library.lua"))()
+                        ew = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     else
-                        eW = loadstring(game:HttpGet(ew .. "Library.lua"))()
+                        eW = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     end
                     eS = (eS + 47) % 144
                 else
                     if (eS * 2 + 7) * 7 % 3 == ((eS * 2 + 7) * 7 + 3) % 3 then
-                        eU = loadstring(game:HttpGet(eW .. "addons/ThemeManager.lua"))()
+                        eU = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     else
-                        eW = loadstring(game:HttpGet(eU))()
+                        eW = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     end
                     eS = (eS + 119) % 144
                 end
             elseif eY <= 8 then
                 if bit32.bxor(bit32.lrotate(bit32.bxor(bit32.rrotate(bit32.bxor(bit32.lrotate(eS, 19), string.byte(tostring(eb))), 14), 2567990907), 28), 3113289447) ~= bit32.lrotate(bit32.rrotate(bit32.bxor(bit32.lrotate(eS, 19), string.byte(tostring(eb))), 14), 28) then
-                    eW = loadstring(game:HttpGet("addons/SaveManager.lua"))()
+                    eW = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                 else
-                    eR = loadstring(game:HttpGet(eW .. "addons/SaveManager.lua"))()
+                    eR = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                 end
                 eS = (eS + 47) % 144
             else
@@ -1044,8 +1102,8 @@ repeat
                 ew = eO:CreateWindow("Footer")
             else
                 eO = ew:CreateWindow({
-                    Title = "Roll to Defend",
-                    Footer = "Stealth - https://discord.gg/ehKVq7pf7v",
+                    Title = "Stealth",
+                    Footer = "Stealth - https://discord.gg/hqE5drDHF7",
                     Icon = 18657887261,
                     NotifySide = "Right",
                     Size = UDim2.fromOffset(920, 680)
@@ -1077,9 +1135,9 @@ repeat
             if eY <= 29 then
                 if eY <= 28 then
                     if bit32.bxor(bit32.bxor(bit32.bxor(bit32.bxor(bit32.band(bit32.rrotate(bit32.bxor(bit32.lrotate(eS, 2), string.byte(tostring(en))), 28), 1606927805), 1614310754), (bit32.bxor(bit32.band(bit32.rrotate(bit32.bxor(bit32.lrotate(eS, 2), string.byte(tostring(en))), 28), 2688039490), 3309113684))), 1614310754), 3309113684) == bit32.rrotate(bit32.bxor(bit32.lrotate(eS, 2), string.byte(tostring(en))), 28) then
-                        ei = "https://discord.gg/ehKVq7pf7v"
+                        ei = "https://discord.gg/hqE5drDHF7"
                     else
-                        eO = "https://discord.gg/ehKVq7pf7v"
+                        eO = "https://discord.gg/hqE5drDHF7"
                     end
                     eS = (eS + 11) % 144
                 else

@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local bCU_31, bCU_32, TraitData, bCU_37, bCU_38, bCU_39, bCU_40, bCU_42, bCU_43, Window, Actions2, bCU_47, connection, bCU_50, bCU_52, bCU_53, bCU_54, bCU_56, bCU_57, Options, HttpService, Units, bCU_63, bCU_64, Lighting, bCU_67, bCU_69, bCU_70, bCU_72, bCU_73, bCU_74, bCU_75, bCU_77, bCU_78, bCU_79, Toggles, bCU_82, bCU_83, bCU_84, bCU_86, bCU_87, bCU_89, bCU_91, bCU_92, bCU_94, bCU_95, bCU_96, bCU_101, bCU_108, bCU_115
 fns.VirtualUser = nil
@@ -3271,7 +3329,7 @@ aEB, bCU_39, aEk, aEb, fns.bCU_22, aD_ = nil, nil, nil, nil, nil, nil
 _G.gethui = aFD
 local aEL = "Anime Expeditions"
 aEB = "https://raw.githubusercontent.com/joustingmatch/Stealth/refs/heads/main/games/animeexpeditions.lua"
-bCU_39 = "https://discord.gg/ehKVq7pf7v"
+bCU_39 = "https://discord.gg/hqE5drDHF7"
 aEk = "https://rscripts.net/@Stealth"
 aEb = {
     Folder = "Stealth/AnimeExpeditions",
@@ -10156,7 +10214,7 @@ aEo = function()
         textLabel.Parent = frame
     end
     buu_2("OUROBOROS HUB", 13, Color3.fromRGB(96, 102, 112), 1)
-    buu_2("join discord https://discord.gg/f3dJhDgyTq", 26, Color3.fromRGB(126, 214, 160), 2)
+    buu_2("join discord https://discord.gg/hqE5drDHF7", 26, Color3.fromRGB(126, 214, 160), 2)
     buu_2("report bugs and give me feedback :P", 16, Color3.fromRGB(196, 199, 206), 3)
     aEw[4] = screenGui
 end
@@ -10231,9 +10289,9 @@ end
 bCU_101()
 bCU_92()
 fns.bCU_21.LoadWavePositions()
-aDV = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-bCU_108 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/ThemeManager.lua"))()
-bCU_101 = loadstring(game:HttpGet("https://raw.githubusercontent.com/joustingmatch/ObsidianUltra/main/addons/SaveManager.lua"))()
+aDV = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+bCU_108 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+bCU_101 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 Options = aDV.Options
 Toggles = aDV.Toggles
 aDV.ShowToggleFrameInKeybinds = false
@@ -13805,7 +13863,7 @@ repeat
                 local bBF_6 = bBD_8(nil, 14)
                 bBE(bBF_6, "Alpha / Beta", Enum.Font.GothamBold, 40, Color3.fromRGB(240, 241, 243))
                 local bBF_7 = bBD_8(nil, 40)
-                bBE(bBF_7, "Anime Expeditions  ·  https://discord.gg/ehKVq7pf7v", Enum.Font.Gotham, 14, bBt)
+                bBE(bBF_7, "Anime Expeditions  ·  https://discord.gg/hqE5drDHF7", Enum.Font.Gotham, 14, bBt)
                 for k, v in bBB_3 do
                     local bBB_4 = bBD_8(nil, 28)
                     local uIListLayout = Instance.new("UIListLayout")
@@ -14065,7 +14123,7 @@ repeat
                 local bBF_1 = bBD_4(nil, 14)
                 bBE(bBF_1, "Alpha / Beta", Enum.Font.GothamBold, 40, Color3.fromRGB(240, 241, 243))
                 local bBF_2 = bBD_4(nil, 40)
-                bBE(bBF_2, "Anime Expeditions  ·  https://discord.gg/ehKVq7pf7v", Enum.Font.Gotham, 14, bBt)
+                bBE(bBF_2, "Anime Expeditions  ·  https://discord.gg/hqE5drDHF7", Enum.Font.Gotham, 14, bBt)
                 for k, v in bBB_1 do
                     local bBB_2 = bBD_4(nil, 28)
                     local uIListLayout = Instance.new("UIListLayout")

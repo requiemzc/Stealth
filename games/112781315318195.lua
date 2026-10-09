@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local AutoPlaceBestFishGroup, ahH_3, ahH_6, ahH_14, AutoUpgradesGroup, ahH_19, ahH_22, ahH_26, ahH_29, ahH_33, AutoGemShopGroup, ahH_37, ahH_45, AutoBuyWeightsGroup, ahH_49, ahH_53, AutoSummonWeatherGroup, ahH_62, AutoRebirthGroup, ahH_66, ahH_77, ahH_82, ahH_86, ahH_90, ahH_92
 local Iv
@@ -3408,17 +3466,17 @@ repeat
             else
                 local alk = bit32.rrotate(bit32.bxor(bit32.lrotate(ahH_28, 25), string.byte(tostring(I_))), 14)
                 if bit32.bxor(bit32.bxor(bit32.bxor(bit32.bxor(bit32.band(alk, 2486884183), 2181337688), (bit32.bxor(bit32.band(alk, 1808083112), 2264259619))), 2181337688), 2264259619) == alk then
-                    Ja = loadstring(game:HttpGet(ahH_44 .. "Library.lua"))()
+                    Ja = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     pcall(fns.fn1680)
-                    ahH_66 = loadstring(game:HttpGet(ahH_44 .. "addons/ThemeManager.lua"))()
-                    ahH_53 = loadstring(game:HttpGet(ahH_44 .. "addons/SaveManager.lua"))()
+                    ahH_66 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                    ahH_53 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     Toggles = Ja.Toggles
                     I_ = Ja.Options
                 else
-                    ahH_44 = loadstring(game:HttpGet(Toggles .. "Library.lua"))()
+                    ahH_44 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     pcall(fns.fn1680)
-                    Ja = loadstring(game:HttpGet(Toggles .. "addons/ThemeManager.lua"))()
-                    I_ = loadstring(game:HttpGet(Toggles .. "addons/SaveManager.lua"))()
+                    Ja = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                    I_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
                     ahH_53 = ahH_44.Toggles
                     ahH_66 = ahH_44.Options
                 end
@@ -3426,9 +3484,9 @@ repeat
             end
         else
             if ahH_28 * 104152217 + 11 + 5 >= ahH_28 * 104152217 + 11 + 5 + 6 then
-                ahH_33 = "https://discord.gg/ehKVq7pf7v"
+                ahH_33 = "https://discord.gg/hqE5drDHF7"
             else
-                HY = "https://discord.gg/ehKVq7pf7v"
+                HY = "https://discord.gg/hqE5drDHF7"
             end
             ahH_28 = (ahH_28 + 69) % 208
         end
@@ -5264,7 +5322,7 @@ repeat
                 Title = "Stealth",
                 ShowCustomCursor = false,
                 Size = UDim2.fromOffset(900, 640),
-                Footer = Ja .. " | https://discord.gg/ehKVq7pf7v",
+                Footer = Ja .. " | https://discord.gg/hqE5drDHF7",
                 NotifySide = "Right",
                 Icon = 18657887261
             })

@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local fns = {}
 local akp_13, akp_15, Toggles, akp_18, Label3, akp_20, akp_22, akp_23, akp_24, WalkSpeed, akp_26, akp_28, akp_29, connection, akp_33, akp_35, akp_36, akp_38, akp_39, akp_41, akp_42, akp_43, akp_44, akp_47, akp_48, akp_50, akp_51, akp_52, Options, akp_55, akp_56, akp_57, akp_58, akp_60, Label, akp_63, akp_65, Workspace, akp_69, akp_75, akp_77
 fns.akp_2 = nil
@@ -1921,7 +1979,7 @@ if fns.akp_9 then
     return
 end
 Library, SaveManager, Options, Toggles, Lo, Ld, TweenService, RunService, VirtualUser, UserInputService, Workspace, LocalPlayer2, M_, akp_33, LU, LJ, Lz, Lg, Nw, Nm, Ni, akp_77, MO = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
-Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
 local ThemeManager = nil
 SaveManager = nil
 Options = Library.Options
@@ -1939,7 +1997,7 @@ else
     Lo = LocalPlayer2.LocalPlayer
 end
 local akp_73 = "Death Order: Simon Says"
-M_ = "https://discord.gg/ehKVq7pf7v"
+M_ = "https://discord.gg/hqE5drDHF7"
 if akp_77 and akp_77 and (not Library and akp_77) and (not akp_77 and akp_77 or not Library and akp_77) or (not akp_77 or not Library) and (not akp_77 and not akp_77) and (not Library and Library or not akp_77 and Library) or not (akp_77 and akp_77 and (not Library and akp_77) and (not akp_77 and akp_77 or not Library and akp_77) or (not akp_77 or not Library) and (not akp_77 and not akp_77) and (not Library and Library or not akp_77 and Library)) then
     akp_33 = "https://rscripts.net/@Stealth"
 else

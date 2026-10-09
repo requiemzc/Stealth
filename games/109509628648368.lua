@@ -1,3 +1,61 @@
+
+-- Stealth loading screen
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "StealthLoading"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.DisplayOrder = 9999
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(1, 0, 1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+Frame.Parent = ScreenGui
+local Title = Instance.new("TextLabel")
+Title.Text = "Stealth"
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 48
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.Position = UDim2.new(0, 0, 0.35, 0)
+Title.Parent = Frame
+local Subtitle = Instance.new("TextLabel")
+Subtitle.Text = "Join Discord for dupe"
+Subtitle.Font = Enum.Font.Gotham
+Subtitle.TextSize = 18
+Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
+Subtitle.BackgroundTransparency = 1
+Subtitle.Size = UDim2.new(1, 0, 0, 30)
+Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
+Subtitle.Parent = Frame
+local DiscordBtn = Instance.new("TextButton")
+DiscordBtn.Text = "discord.gg/hqE5drDHF7"
+DiscordBtn.Font = Enum.Font.GothamMedium
+DiscordBtn.TextSize = 16
+DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.BackgroundTransparency = 1
+DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
+DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
+DiscordBtn.Parent = Frame
+local Loading = Instance.new("TextLabel")
+Loading.Text = "Loading..."
+Loading.Font = Enum.Font.Gotham
+Loading.TextSize = 14
+Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
+Loading.BackgroundTransparency = 1
+Loading.Size = UDim2.new(1, 0, 0, 20)
+Loading.Position = UDim2.new(0, 0, 0.7, 0)
+Loading.Parent = Frame
+pcall(function()
+    ScreenGui.Parent = game:GetService("CoreGui")
+end)
+if not ScreenGui.Parent then
+    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+end
+task.spawn(function()
+    task.wait(3)
+    ScreenGui:Destroy()
+end)
+
 local screenGui2
 local iZ
 local jG
@@ -1166,7 +1224,7 @@ repeat
                     if j2 <= 1 then
                         if ((iP or not jZ) and (not jZ and jU) or (iP and jZ or not jP and iS)) and (iP and not jP and (jP or not jP) and (jZ and not jP or not jP and iS)) or not (((iP or not jZ) and (not jZ and jU) or (iP and jZ or not jP and iS)) and (iP and not jP and (jP or not jP) and (jZ and not jP or not jP and iS))) then
                             i0 = i3:CreateWindow({
-                                Title = "Merge Vs Mobs",
+                                Title = "Stealth",
                                 SubTitle = "Stealth",
                                 TabWidth = 160,
                                 Size = UDim2.fromOffset(560, 380),
@@ -1629,12 +1687,12 @@ repeat
                 jl = game:GetService(game)
                 jx = game:GetService("VirtualUser")
                 jO = "Workspace"
-                jp = "https://discord.gg/ehKVq7pf7v"
+                jp = "https://discord.gg/hqE5drDHF7"
             else
                 jx = game:GetService("VirtualUser")
                 Workspace = game:GetService("Workspace")
                 jp = jO.LocalPlayer
-                jl = "https://discord.gg/ehKVq7pf7v"
+                jl = "https://discord.gg/hqE5drDHF7"
             end
             jT = (jT + 18) % 232
         end
@@ -1962,11 +2020,11 @@ repeat
         end
     else
         if bit32.bxor(bit32.bxor(bit32.bxor(bit32.bxor(bit32.band(bit32.rrotate(bit32.bxor(bit32.lrotate(jT, 17), string.byte(tostring(jC))), 18), 3191876471), 1188972631), (bit32.bxor(bit32.band(bit32.rrotate(bit32.bxor(bit32.lrotate(jT, 17), string.byte(tostring(jC))), 18), 1103090824), 580944773))), 1188972631), 580944773) ~= bit32.rrotate(bit32.bxor(bit32.lrotate(jT, 17), string.byte(tostring(jC))), 18) then
-            jY = i3("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/src/main.luau")
+            jY = i3("https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/src/main.luau")
         else
             i3 = jY({
-                "https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/src/main.luau"
+                "https://github.com/ActualMasterOogway/Stealth-Renewed/releases/latest/download/Stealth.luau",
+                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/src/main.luau"
             })
         end
         jT = (jT + 105) % 232
@@ -2215,9 +2273,9 @@ repeat
                 jU = j_.Combat
                 jU.AddToggle(jU, "KillAura", jT_20)
                 jQ = jY({
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.lua",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/addons/SaveManager.luau"
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.luau",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.lua",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/addons/SaveManager.luau"
                 })
             else
                 task.spawn(worker6)
@@ -2279,9 +2337,9 @@ repeat
             jU = (vector.create((jO * 3 + 3) % 5 + 1, (jO * 5 + 7) % 7 + 1, (jO * 1 + 4) % 9 + 1))
             if vector.dot(vector.cross(jR, (vector.cross(jS, jT_24))), jU) == vector.dot(jS * vector.dot(jR, jT_24) - jT_24 * vector.dot(jR, jS), jU) then
                 jP = jY({
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.lua",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/addons/InterfaceManager.luau"
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.lua",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/addons/InterfaceManager.luau"
                 })
             else
                 jY = jP(jP)
