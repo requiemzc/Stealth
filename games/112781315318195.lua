@@ -1,60 +1,54 @@
-
 -- Stealth loading screen
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "StealthLoading"
-ScreenGui.ResetOnSpawn = false
-ScreenGui.IgnoreGuiInset = true
-ScreenGui.DisplayOrder = 9999
-local Frame = Instance.new("Frame")
-Frame.Size = UDim2.new(1, 0, 1, 0)
-Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
-Frame.Parent = ScreenGui
-local Title = Instance.new("TextLabel")
-Title.Text = "Stealth"
-Title.Font = Enum.Font.GothamBold
-Title.TextSize = 48
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1
-Title.Size = UDim2.new(1, 0, 0, 60)
-Title.Position = UDim2.new(0, 0, 0.35, 0)
-Title.Parent = Frame
-local Subtitle = Instance.new("TextLabel")
-Subtitle.Text = "Join Discord for dupe"
-Subtitle.Font = Enum.Font.Gotham
-Subtitle.TextSize = 18
-Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
-Subtitle.BackgroundTransparency = 1
-Subtitle.Size = UDim2.new(1, 0, 0, 30)
-Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
-Subtitle.Parent = Frame
-local DiscordBtn = Instance.new("TextButton")
-DiscordBtn.Text = "discord.gg/hqE5drDHF7"
-DiscordBtn.Font = Enum.Font.GothamMedium
-DiscordBtn.TextSize = 16
-DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
-DiscordBtn.BackgroundTransparency = 1
-DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
-DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
-DiscordBtn.Parent = Frame
-local Loading = Instance.new("TextLabel")
-Loading.Text = "Loading..."
-Loading.Font = Enum.Font.Gotham
-Loading.TextSize = 14
-Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
-Loading.BackgroundTransparency = 1
-Loading.Size = UDim2.new(1, 0, 0, 20)
-Loading.Position = UDim2.new(0, 0, 0.7, 0)
-Loading.Parent = Frame
-pcall(function()
-    ScreenGui.Parent = game:GetService("CoreGui")
-end)
-if not ScreenGui.Parent then
-    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+local _sl = Instance.new("ScreenGui")
+_sl.Name = "StealthLoading"
+_sl.ResetOnSpawn = false
+_sl.IgnoreGuiInset = true
+_sl.DisplayOrder = 9999
+local _sf = Instance.new("Frame")
+_sf.Size = UDim2.new(1, 0, 1, 0)
+_sf.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+_sf.Parent = _sl
+local _st = Instance.new("TextLabel")
+_st.Text = "Stealth"
+_st.Font = Enum.Font.GothamBold
+_st.TextSize = 48
+_st.TextColor3 = Color3.fromRGB(255, 255, 255)
+_st.BackgroundTransparency = 1
+_st.Size = UDim2.new(1, 0, 0, 60)
+_st.Position = UDim2.new(0, 0, 0.35, 0)
+_st.Parent = _sf
+local _ss = Instance.new("TextLabel")
+_ss.Text = "Join Discord for dupe"
+_ss.Font = Enum.Font.Gotham
+_ss.TextSize = 18
+_ss.TextColor3 = Color3.fromRGB(120, 120, 140)
+_ss.BackgroundTransparency = 1
+_ss.Size = UDim2.new(1, 0, 0, 30)
+_ss.Position = UDim2.new(0, 0, 0.35, 60)
+_ss.Parent = _sf
+local _sd = Instance.new("TextLabel")
+_sd.Text = "discord.gg/hqE5drDHF7"
+_sd.Font = Enum.Font.GothamMedium
+_sd.TextSize = 16
+_sd.TextColor3 = Color3.fromRGB(88, 101, 242)
+_sd.BackgroundTransparency = 1
+_sd.Size = UDim2.new(1, 0, 0, 30)
+_sd.Position = UDim2.new(0, 0, 0.35, 95)
+_sd.Parent = _sf
+local _sl2 = Instance.new("TextLabel")
+_sl2.Text = "Loading..."
+_sl2.Font = Enum.Font.Gotham
+_sl2.TextSize = 14
+_sl2.TextColor3 = Color3.fromRGB(100, 100, 120)
+_sl2.BackgroundTransparency = 1
+_sl2.Size = UDim2.new(1, 0, 0, 20)
+_sl2.Position = UDim2.new(0, 0, 0.7, 0)
+_sl2.Parent = _sf
+pcall(function() _sl.Parent = game:GetService("CoreGui") end)
+if not _sl.Parent then
+    _sl.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 end
-task.spawn(function()
-    task.wait(3)
-    ScreenGui:Destroy()
-end)
+task.spawn(function() task.wait(3) _sl:Destroy() end)
 
 local fns = {}
 local AutoPlaceBestFishGroup, ahH_3, ahH_6, ahH_14, AutoUpgradesGroup, ahH_19, ahH_22, ahH_26, ahH_29, ahH_33, AutoGemShopGroup, ahH_37, ahH_45, AutoBuyWeightsGroup, ahH_49, ahH_53, AutoSummonWeatherGroup, ahH_62, AutoRebirthGroup, ahH_66, ahH_77, ahH_82, ahH_86, ahH_90, ahH_92
@@ -1277,7 +1271,6 @@ function fns.fn1125()
     if connection then
         connection:Disconnect()
     end
-    print("Pull a Lucky Fish unloaded")
 end
 function fns.fn1127()
     local T0 = {}
@@ -3466,17 +3459,17 @@ repeat
             else
                 local alk = bit32.rrotate(bit32.bxor(bit32.lrotate(ahH_28, 25), string.byte(tostring(I_))), 14)
                 if bit32.bxor(bit32.bxor(bit32.bxor(bit32.bxor(bit32.band(alk, 2486884183), 2181337688), (bit32.bxor(bit32.band(alk, 1808083112), 2264259619))), 2181337688), 2264259619) == alk then
-                    Ja = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                    Ja = loadstring(game:HttpGet(ahH_44 .. "Library.lua"))()
                     pcall(fns.fn1680)
-                    ahH_66 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
-                    ahH_53 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                    ahH_66 = loadstring(game:HttpGet(ahH_44 .. "addons/ThemeManager.lua"))()
+                    ahH_53 = loadstring(game:HttpGet(ahH_44 .. "addons/SaveManager.lua"))()
                     Toggles = Ja.Toggles
                     I_ = Ja.Options
                 else
-                    ahH_44 = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                    ahH_44 = loadstring(game:HttpGet(Toggles .. "Library.lua"))()
                     pcall(fns.fn1680)
-                    Ja = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
-                    I_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                    Ja = loadstring(game:HttpGet(Toggles .. "addons/ThemeManager.lua"))()
+                    I_ = loadstring(game:HttpGet(Toggles .. "addons/SaveManager.lua"))()
                     ahH_53 = ahH_44.Toggles
                     ahH_66 = ahH_44.Options
                 end

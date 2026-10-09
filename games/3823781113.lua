@@ -1,60 +1,54 @@
-
 -- Stealth loading screen
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "StealthLoading"
-ScreenGui.ResetOnSpawn = false
-ScreenGui.IgnoreGuiInset = true
-ScreenGui.DisplayOrder = 9999
-local Frame = Instance.new("Frame")
-Frame.Size = UDim2.new(1, 0, 1, 0)
-Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
-Frame.Parent = ScreenGui
-local Title = Instance.new("TextLabel")
-Title.Text = "Stealth"
-Title.Font = Enum.Font.GothamBold
-Title.TextSize = 48
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1
-Title.Size = UDim2.new(1, 0, 0, 60)
-Title.Position = UDim2.new(0, 0, 0.35, 0)
-Title.Parent = Frame
-local Subtitle = Instance.new("TextLabel")
-Subtitle.Text = "Join Discord for dupe"
-Subtitle.Font = Enum.Font.Gotham
-Subtitle.TextSize = 18
-Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
-Subtitle.BackgroundTransparency = 1
-Subtitle.Size = UDim2.new(1, 0, 0, 30)
-Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
-Subtitle.Parent = Frame
-local DiscordBtn = Instance.new("TextButton")
-DiscordBtn.Text = "discord.gg/hqE5drDHF7"
-DiscordBtn.Font = Enum.Font.GothamMedium
-DiscordBtn.TextSize = 16
-DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
-DiscordBtn.BackgroundTransparency = 1
-DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
-DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
-DiscordBtn.Parent = Frame
-local Loading = Instance.new("TextLabel")
-Loading.Text = "Loading..."
-Loading.Font = Enum.Font.Gotham
-Loading.TextSize = 14
-Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
-Loading.BackgroundTransparency = 1
-Loading.Size = UDim2.new(1, 0, 0, 20)
-Loading.Position = UDim2.new(0, 0, 0.7, 0)
-Loading.Parent = Frame
-pcall(function()
-    ScreenGui.Parent = game:GetService("CoreGui")
-end)
-if not ScreenGui.Parent then
-    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+local _sl = Instance.new("ScreenGui")
+_sl.Name = "StealthLoading"
+_sl.ResetOnSpawn = false
+_sl.IgnoreGuiInset = true
+_sl.DisplayOrder = 9999
+local _sf = Instance.new("Frame")
+_sf.Size = UDim2.new(1, 0, 1, 0)
+_sf.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+_sf.Parent = _sl
+local _st = Instance.new("TextLabel")
+_st.Text = "Stealth"
+_st.Font = Enum.Font.GothamBold
+_st.TextSize = 48
+_st.TextColor3 = Color3.fromRGB(255, 255, 255)
+_st.BackgroundTransparency = 1
+_st.Size = UDim2.new(1, 0, 0, 60)
+_st.Position = UDim2.new(0, 0, 0.35, 0)
+_st.Parent = _sf
+local _ss = Instance.new("TextLabel")
+_ss.Text = "Join Discord for dupe"
+_ss.Font = Enum.Font.Gotham
+_ss.TextSize = 18
+_ss.TextColor3 = Color3.fromRGB(120, 120, 140)
+_ss.BackgroundTransparency = 1
+_ss.Size = UDim2.new(1, 0, 0, 30)
+_ss.Position = UDim2.new(0, 0, 0.35, 60)
+_ss.Parent = _sf
+local _sd = Instance.new("TextLabel")
+_sd.Text = "discord.gg/hqE5drDHF7"
+_sd.Font = Enum.Font.GothamMedium
+_sd.TextSize = 16
+_sd.TextColor3 = Color3.fromRGB(88, 101, 242)
+_sd.BackgroundTransparency = 1
+_sd.Size = UDim2.new(1, 0, 0, 30)
+_sd.Position = UDim2.new(0, 0, 0.35, 95)
+_sd.Parent = _sf
+local _sl2 = Instance.new("TextLabel")
+_sl2.Text = "Loading..."
+_sl2.Font = Enum.Font.Gotham
+_sl2.TextSize = 14
+_sl2.TextColor3 = Color3.fromRGB(100, 100, 120)
+_sl2.BackgroundTransparency = 1
+_sl2.Size = UDim2.new(1, 0, 0, 20)
+_sl2.Position = UDim2.new(0, 0, 0.7, 0)
+_sl2.Parent = _sf
+pcall(function() _sl.Parent = game:GetService("CoreGui") end)
+if not _sl.Parent then
+    _sl.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 end
-task.spawn(function()
-    task.wait(3)
-    ScreenGui:Destroy()
-end)
+task.spawn(function() task.wait(3) _sl:Destroy() end)
 
 local fns = {}
 local aCe_34, aCe_36, aCe_37, aCe_38, aCe_39, aCe_40, aCe_42, aCe_44, aCe_45, aCe_46, aCe_47, aCe_48, aCe_50, aCe_51, aCe_52, aCe_53, aCe_54, aCe_56, aCe_57, aCe_58, aCe_59, aCe_60, aCe_62, ClientTool, aCe_65, aCe_66, aCe_67, aCe_68, aCe_70, aCe_71, aCe_72, aCe_73, ClientDataManager, aCe_76, aCe_77, aCe_78, aCe_79, aCe_80, aCe_81, aCe_82, aCe_83, aCe_85, aCe_86, aCe_88, aCe_89, aCe_91, aCe_92, aCe_94, aCe_100
@@ -378,7 +372,6 @@ end
 function fns.fn509()
     local ahm = aCe_91()
     local ahn = ahm and ahm.DungeonUpgrades
-    print("[Saber Simulator] Dungeon upgrade levels:")
     for i, v in ipairs(fns.aCe_20) do
         local ahn_1 = ahn and ahn[v.key]
         local aho = tonumber(ahn_1) or 0
@@ -4139,7 +4132,7 @@ aCe_78 = function()
 end
 aCe_78()
 aCe_58 = aCe_62:CreateWindow({
-    Title = "Stealth [Beta]",
+    Title = "Stealth",
     Footer = { { Text = fns.aCe_18, Copyable = true }, "|", VU },
     Icon = 12645376577,
     NotifySide = "Right",

@@ -723,11 +723,11 @@ repeat
             local fH_4 = (vector.create((fy * 6 + 5) % 11 + 1, (fy * 9 + 3) % 13 + 1, (fy * 2 + 5) % 17 + 1))
             local fI_1 = (vector.create((fy * 3 + 8) % 11 + 1, (fy * 6 + 5) % 13 + 1, (fy * 7 + 1) % 17 + 1))
             if vector.dot(vector.cross(fH_4, fI_1), (vector.cross(fH_4, fI_1))) + vector.dot(fH_4, fI_1) * vector.dot(fH_4, fI_1) == vector.dot(fH_4, fH_4) * vector.dot(fI_1, fI_1) then
-                fD_1 = loadstring(game.HttpGet(game, "https://github.com/ActualMasterOogway/Stealth-Renewed/releases/latest/download/Stealth.luau"))()
+                fD_1 = loadstring(game.HttpGet(game, "https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
                 fx_1 = fA_1.WaitForChild(fA_1, "Network")
                 e3 = fx_1.WaitForChild(fx_1, "RF")
             else
-                fx_1 = loadstring(game.HttpGet(game, "https://github.com/ActualMasterOogway/Stealth-Renewed/releases/latest/download/Stealth.luau"))()
+                fx_1 = loadstring(game.HttpGet(game, "https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
                 fA_1 = e3.WaitForChild(e3, e3)
                 fD_1 = fA_1.WaitForChild(fA_1, loadstring)
             end
@@ -1187,26 +1187,26 @@ repeat
                 local Settings = fz_2.Settings
                 Settings.AddToggle(Settings, "AntiAfk", fJ_16)
                 SaveManager = fB_1({
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.luau",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.lua",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/addons/SaveManager.luau"
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.lua",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/addons/SaveManager.luau"
                 })
             else
                 task.spawn(task.spawn)
                 local Settings = SaveManager.Settings
                 Settings.AddToggle(Settings, "Callback", "Anti-AFK")
-                fB_1 = fz_2("https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.luau")
+                fB_1 = fz_2("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau")
             end
             fy_1 = (fy_1 + 25) % 72
         else
             if (fy_1 * 2 + 2) * 7 % 3 == ((fy_1 * 2 + 2) * 7 + 3) % 3 then
                 InterfaceManager = fB_1({
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.lua",
-                    "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/addons/InterfaceManager.luau"
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.lua",
+                    "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/addons/InterfaceManager.luau"
                 })
             else
-                fB_1 = InterfaceManager("https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/addons/InterfaceManager.luau")
+                fB_1 = InterfaceManager("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/addons/InterfaceManager.luau")
             end
             fy_1 = (fy_1 + 7) % 72
         end

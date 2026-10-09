@@ -1422,9 +1422,9 @@ local function lN_2()
     task.wait(0.5)
 end
 lN_2()
-Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+Library = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 local ThemeManager = nil
-lT = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+lT = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/Obsidian/main/addons/SaveManager.lua"))()
 Shared = require(lE.shared.Shared)
 Heroes = Shared.Heroes
 Upgrades = Shared.Upgrades

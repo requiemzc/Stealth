@@ -1,60 +1,54 @@
-
 -- Stealth loading screen
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "StealthLoading"
-ScreenGui.ResetOnSpawn = false
-ScreenGui.IgnoreGuiInset = true
-ScreenGui.DisplayOrder = 9999
-local Frame = Instance.new("Frame")
-Frame.Size = UDim2.new(1, 0, 1, 0)
-Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
-Frame.Parent = ScreenGui
-local Title = Instance.new("TextLabel")
-Title.Text = "Stealth"
-Title.Font = Enum.Font.GothamBold
-Title.TextSize = 48
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1
-Title.Size = UDim2.new(1, 0, 0, 60)
-Title.Position = UDim2.new(0, 0, 0.35, 0)
-Title.Parent = Frame
-local Subtitle = Instance.new("TextLabel")
-Subtitle.Text = "Join Discord for dupe"
-Subtitle.Font = Enum.Font.Gotham
-Subtitle.TextSize = 18
-Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
-Subtitle.BackgroundTransparency = 1
-Subtitle.Size = UDim2.new(1, 0, 0, 30)
-Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
-Subtitle.Parent = Frame
-local DiscordBtn = Instance.new("TextButton")
-DiscordBtn.Text = "discord.gg/hqE5drDHF7"
-DiscordBtn.Font = Enum.Font.GothamMedium
-DiscordBtn.TextSize = 16
-DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
-DiscordBtn.BackgroundTransparency = 1
-DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
-DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
-DiscordBtn.Parent = Frame
-local Loading = Instance.new("TextLabel")
-Loading.Text = "Loading..."
-Loading.Font = Enum.Font.Gotham
-Loading.TextSize = 14
-Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
-Loading.BackgroundTransparency = 1
-Loading.Size = UDim2.new(1, 0, 0, 20)
-Loading.Position = UDim2.new(0, 0, 0.7, 0)
-Loading.Parent = Frame
-pcall(function()
-    ScreenGui.Parent = game:GetService("CoreGui")
-end)
-if not ScreenGui.Parent then
-    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+local _sl = Instance.new("ScreenGui")
+_sl.Name = "StealthLoading"
+_sl.ResetOnSpawn = false
+_sl.IgnoreGuiInset = true
+_sl.DisplayOrder = 9999
+local _sf = Instance.new("Frame")
+_sf.Size = UDim2.new(1, 0, 1, 0)
+_sf.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+_sf.Parent = _sl
+local _st = Instance.new("TextLabel")
+_st.Text = "Stealth"
+_st.Font = Enum.Font.GothamBold
+_st.TextSize = 48
+_st.TextColor3 = Color3.fromRGB(255, 255, 255)
+_st.BackgroundTransparency = 1
+_st.Size = UDim2.new(1, 0, 0, 60)
+_st.Position = UDim2.new(0, 0, 0.35, 0)
+_st.Parent = _sf
+local _ss = Instance.new("TextLabel")
+_ss.Text = "Join Discord for dupe"
+_ss.Font = Enum.Font.Gotham
+_ss.TextSize = 18
+_ss.TextColor3 = Color3.fromRGB(120, 120, 140)
+_ss.BackgroundTransparency = 1
+_ss.Size = UDim2.new(1, 0, 0, 30)
+_ss.Position = UDim2.new(0, 0, 0.35, 60)
+_ss.Parent = _sf
+local _sd = Instance.new("TextLabel")
+_sd.Text = "discord.gg/hqE5drDHF7"
+_sd.Font = Enum.Font.GothamMedium
+_sd.TextSize = 16
+_sd.TextColor3 = Color3.fromRGB(88, 101, 242)
+_sd.BackgroundTransparency = 1
+_sd.Size = UDim2.new(1, 0, 0, 30)
+_sd.Position = UDim2.new(0, 0, 0.35, 95)
+_sd.Parent = _sf
+local _sl2 = Instance.new("TextLabel")
+_sl2.Text = "Loading..."
+_sl2.Font = Enum.Font.Gotham
+_sl2.TextSize = 14
+_sl2.TextColor3 = Color3.fromRGB(100, 100, 120)
+_sl2.BackgroundTransparency = 1
+_sl2.Size = UDim2.new(1, 0, 0, 20)
+_sl2.Position = UDim2.new(0, 0, 0.7, 0)
+_sl2.Parent = _sf
+pcall(function() _sl.Parent = game:GetService("CoreGui") end)
+if not _sl.Parent then
+    _sl.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 end
-task.spawn(function()
-    task.wait(3)
-    ScreenGui:Destroy()
-end)
+task.spawn(function() task.wait(3) _sl:Destroy() end)
 
 local tC_1, tC_2, tC_3, tC_4, tC_9, tC_11, tC_12, tC_13, onAutoGoNewZone, tC_22, tC_24, tC_28
 local tC_21_1
@@ -1081,14 +1075,14 @@ repeat
                             }
                             kA = function(aQ, aR, aS)
                                 pcall(function()
-                                    Stealth_Notify(aQ, aR, aS)
+                                    Fluent_Notify(aQ, aR, aS)
                                 end)
                             end
                         else
                             lN = false
                             onAutoClaimQuests_Hourly_Daily = function(aQ, aR, aS)
                                 pcall(function()
-                                    Stealth_Notify(aQ, aR, aS)
+                                    Fluent_Notify(aQ, aR, aS)
                                 end)
                             end
                         end
@@ -2029,7 +2023,7 @@ repeat
                 end
                 tC_19 = k5.Idled
                 tC_19.Connect(tC_19, tC_28)
-                kV = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                kV = loadstring(game:HttpGet("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
             end
             lM = (lM + 132) % 136
         else
@@ -2037,9 +2031,9 @@ repeat
             tC_19 = (vector.create((lM * 7 + 5) % 11 + 1, (lM * 3 + 13) % 13 + 1, (lM * 8 + 1) % 17 + 1))
             tC_1 = (vector.create((lM * 4 + 7) % 5 + 1, (lM * 3 + 7) % 7 + 1, (lM * 4 + 5) % 9 + 1))
             if fn952(math.abs((vector.angle(tC_28, tC_19, tC_1))) - math.abs((vector.angle(tC_19, tC_28, tC_1))), 544454170) then
-                Stealth_Notify = fn399
+                Fluent_Notify = fn399
                 kG = kV:CreateWindow({
-                    Title = "[🌲] Axe RNG",
+                    Title = "Stealth",
                     SubTitle = "  By Stealth",
                     TabWidth = 150,
                     Size = UDim2.fromOffset(580, 420),
@@ -2049,8 +2043,8 @@ repeat
                     MinimizeKey = Enum.KeyCode.RightControl
                 })
             else
-                Stealth_Notify = fn399
-                kV = kG:CreateWindow("Theme")
+                Fluent_Notify = fn399
+                kV = kG:CreateWindow("Stealth")
             end
             lM = (lM + 132) % 136
         end
@@ -2757,24 +2751,24 @@ repeat
     elseif tC_11 <= 3 then
         if tC_19 * 80666449 + 7 + 6 <= tC_19 * 80666449 + 7 + 6 + 6 then
             onAutoGoNewZone = tC_28({
-                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.luau",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.lua"
+                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau",
+                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.lua"
             })
         else
             tC_28 = onAutoGoNewZone({
-                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.luau",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.lua"
+                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau",
+                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.lua"
             })
         end
         tC_19 = (tC_19 + 15) % 32
     else
         tC_11 = { "eda", "tccmfrnr", "nzm", "qzzsekmkb", "onfc", "pohsd", "dnpfewsak", "ggy", "uvoaurayh" }
         if tC_11[(tC_19 * 53 + 11) % 9 + 1] < tC_11[(tC_19 * 53 + 11) % 9 + 1] then
-            tC_28 = tC_1("https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau")
+            tC_28 = tC_1("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau")
         else
             tC_1 = tC_28({
-                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau",
-                "https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.lua"
+                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau",
+                "https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.lua"
             })
         end
         tC_19 = (tC_19 + 15) % 32

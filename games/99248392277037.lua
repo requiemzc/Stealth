@@ -1,60 +1,54 @@
-
 -- Stealth loading screen
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Name = "StealthLoading"
-ScreenGui.ResetOnSpawn = false
-ScreenGui.IgnoreGuiInset = true
-ScreenGui.DisplayOrder = 9999
-local Frame = Instance.new("Frame")
-Frame.Size = UDim2.new(1, 0, 1, 0)
-Frame.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
-Frame.Parent = ScreenGui
-local Title = Instance.new("TextLabel")
-Title.Text = "Stealth"
-Title.Font = Enum.Font.GothamBold
-Title.TextSize = 48
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1
-Title.Size = UDim2.new(1, 0, 0, 60)
-Title.Position = UDim2.new(0, 0, 0.35, 0)
-Title.Parent = Frame
-local Subtitle = Instance.new("TextLabel")
-Subtitle.Text = "Join Discord for dupe"
-Subtitle.Font = Enum.Font.Gotham
-Subtitle.TextSize = 18
-Subtitle.TextColor3 = Color3.fromRGB(120, 120, 140)
-Subtitle.BackgroundTransparency = 1
-Subtitle.Size = UDim2.new(1, 0, 0, 30)
-Subtitle.Position = UDim2.new(0, 0, 0.35, 60)
-Subtitle.Parent = Frame
-local DiscordBtn = Instance.new("TextButton")
-DiscordBtn.Text = "discord.gg/hqE5drDHF7"
-DiscordBtn.Font = Enum.Font.GothamMedium
-DiscordBtn.TextSize = 16
-DiscordBtn.TextColor3 = Color3.fromRGB(88, 101, 242)
-DiscordBtn.BackgroundTransparency = 1
-DiscordBtn.Size = UDim2.new(1, 0, 0, 30)
-DiscordBtn.Position = UDim2.new(0, 0, 0.35, 95)
-DiscordBtn.Parent = Frame
-local Loading = Instance.new("TextLabel")
-Loading.Text = "Loading..."
-Loading.Font = Enum.Font.Gotham
-Loading.TextSize = 14
-Loading.TextColor3 = Color3.fromRGB(100, 100, 120)
-Loading.BackgroundTransparency = 1
-Loading.Size = UDim2.new(1, 0, 0, 20)
-Loading.Position = UDim2.new(0, 0, 0.7, 0)
-Loading.Parent = Frame
-pcall(function()
-    ScreenGui.Parent = game:GetService("CoreGui")
-end)
-if not ScreenGui.Parent then
-    ScreenGui.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+local _sl = Instance.new("ScreenGui")
+_sl.Name = "StealthLoading"
+_sl.ResetOnSpawn = false
+_sl.IgnoreGuiInset = true
+_sl.DisplayOrder = 9999
+local _sf = Instance.new("Frame")
+_sf.Size = UDim2.new(1, 0, 1, 0)
+_sf.BackgroundColor3 = Color3.fromRGB(10, 10, 15)
+_sf.Parent = _sl
+local _st = Instance.new("TextLabel")
+_st.Text = "Stealth"
+_st.Font = Enum.Font.GothamBold
+_st.TextSize = 48
+_st.TextColor3 = Color3.fromRGB(255, 255, 255)
+_st.BackgroundTransparency = 1
+_st.Size = UDim2.new(1, 0, 0, 60)
+_st.Position = UDim2.new(0, 0, 0.35, 0)
+_st.Parent = _sf
+local _ss = Instance.new("TextLabel")
+_ss.Text = "Join Discord for dupe"
+_ss.Font = Enum.Font.Gotham
+_ss.TextSize = 18
+_ss.TextColor3 = Color3.fromRGB(120, 120, 140)
+_ss.BackgroundTransparency = 1
+_ss.Size = UDim2.new(1, 0, 0, 30)
+_ss.Position = UDim2.new(0, 0, 0.35, 60)
+_ss.Parent = _sf
+local _sd = Instance.new("TextLabel")
+_sd.Text = "discord.gg/hqE5drDHF7"
+_sd.Font = Enum.Font.GothamMedium
+_sd.TextSize = 16
+_sd.TextColor3 = Color3.fromRGB(88, 101, 242)
+_sd.BackgroundTransparency = 1
+_sd.Size = UDim2.new(1, 0, 0, 30)
+_sd.Position = UDim2.new(0, 0, 0.35, 95)
+_sd.Parent = _sf
+local _sl2 = Instance.new("TextLabel")
+_sl2.Text = "Loading..."
+_sl2.Font = Enum.Font.Gotham
+_sl2.TextSize = 14
+_sl2.TextColor3 = Color3.fromRGB(100, 100, 120)
+_sl2.BackgroundTransparency = 1
+_sl2.Size = UDim2.new(1, 0, 0, 20)
+_sl2.Position = UDim2.new(0, 0, 0.7, 0)
+_sl2.Parent = _sf
+pcall(function() _sl.Parent = game:GetService("CoreGui") end)
+if not _sl.Parent then
+    _sl.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 end
-task.spawn(function()
-    task.wait(3)
-    ScreenGui:Destroy()
-end)
+task.spawn(function() task.wait(3) _sl:Destroy() end)
 
 local gL
 local gp
@@ -81,7 +75,7 @@ local gk
 local screenGui3
 local gn
 local gJ
-local Stealth
+local Fluent
 local Upgrades
 local gS
 local gz
@@ -506,7 +500,7 @@ local function fn823()
     end
 end
 local function fn836()
-    Stealth.Notify(Stealth, { Title = "Untitled Melee RNG", Content = "Stealth loaded.", Duration = 6 })
+    Fluent.Notify(Fluent, { Title = "Untitled Melee RNG", Content = "Stealth loaded.", Duration = 6 })
 end
 local function worker2()
     while gY.Running do
@@ -557,7 +551,7 @@ local function fn970(db, dc)
     MouseButton1Click.Connect(MouseButton1Click, function()
         gr()
         pcall(function()
-            Stealth.Notify(Stealth, { Title = "Stealth", Content = "Discord copied to clipboard!", Duration = 4 })
+            Fluent.Notify(Fluent, { Title = "Stealth", Content = "Discord copied to clipboard!", Duration = 4 })
         end)
     end)
 end
@@ -570,7 +564,7 @@ go = nil
 gp = nil
 gr = nil
 gs = nil
-Stealth = nil
+Fluent = nil
 gv = nil
 Upgrades = nil
 gx = nil
@@ -631,7 +625,7 @@ if g_ then
         g0 = (g0 + 4) % 8
     until fn812((g0 * 3 + 4) % 8, 494033731)
 end
-g3, gS, gO, g8, gE, LocalPlayer, gA, gv, Stealth, g6, g5, gi, onAutoFarmBestUnlockedStage, gr, g_, g4 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
+g3, gS, gO, g8, gE, LocalPlayer, gA, gv, Fluent, g6, g5, gi, onAutoFarmBestUnlockedStage, gr, g_, g4 = nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
 local g2 = 40
 repeat
     g0 = (g2 * 9 + 0) % 14 + 1
@@ -1004,17 +998,17 @@ repeat
                 local hc_1 = (vector.create((g2 * 7 + 8) % 11 + 1, (g2 * 7 + 9) % 13 + 1, (g2 * 5 + 12) % 17 + 1))
                 if vector.dot(vector.cross(g9, ha), (vector.cross(hb, hc_1))) == vector.dot(g9, hb) * vector.dot(ha, hc_1) - vector.dot(g9, hc_1) * vector.dot(ha, hb) then
                     g_()
-                    Stealth = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                    Fluent = loadstring(game:HttpGet("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
                 else
-                    Stealth()
-                    g_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+                    Fluent()
+                    g_ = loadstring(game:HttpGet("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
                 end
                 g2 = (g2 + 53) % 112
             else
                 if g2 * 25269017 + 9 + 1 >= g2 * 25269017 + 9 + 1 + 6 then
                     g3 = loadstring(game:HttpGet(loadstring))()
                 else
-                    g6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/SaveManager.luau"))()
+                    g6 = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau"))()
                 end
                 g2 = (g2 + 81) % 112
             end
@@ -1037,7 +1031,7 @@ repeat
             if g9[(g2 * 73 + 57) % 13 + 1] < g9[(g2 * 73 + 57) % 13 + 1] then
                 gi = loadstring(game:HttpGet(game))()
             else
-                g5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Stealth-Renewed/master/Addons/InterfaceManager.luau"))()
+                g5 = loadstring(game:HttpGet("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau"))()
             end
             g2 = (g2 + 39) % 112
         end
@@ -1048,10 +1042,10 @@ repeat
                 ha = (vector.create((g2 * 7 + 3) % 11 + 1, (g2 * 3 + 1) % 13 + 1, (g2 * 2 + 10) % 17 + 1))
                 hb = (vector.create((g2 * 2 + 2) % 5 + 1, (g2 * 3 + 2) % 7 + 1, (g2 * 4 + 5) % 9 + 1))
                 if math.abs((vector.angle(g9, ha, hb))) - math.abs((vector.angle(ha, g9, hb))) == 5 then
-                    gv = gi:CreateWindow("Acrylic")
+                    gv = gi:CreateWindow("Stealth")
                 else
-                    gi = Stealth:CreateWindow({
-                        Title = "Untitled Melee RNG",
+                    gi = Fluent:CreateWindow({
+                        Title = "Stealth",
                         SubTitle = "Stealth",
                         TabWidth = 160,
                         Size = UDim2.fromOffset(600, 460),
@@ -1607,8 +1601,8 @@ repeat
                     hb("AutoBuySP", fn334, fn700, hj)
                     hb("Farm", fn92, worker, fn485)
                     task.spawn(worker2)
-                    g6.SetLibrary(g6, Stealth)
-                    g5.SetLibrary(g5, Stealth)
+                    g6.SetLibrary(g6, Fluent)
+                    g5.SetLibrary(g5, Fluent)
                     g6.IgnoreThemeSettings(g6)
                     g6.SetIgnoreIndexes(g6, {})
                     g5.SetFolder(g5, "Stealth")
@@ -1632,12 +1626,12 @@ repeat
                     g6("AutoUpgrades", fn92, "Farm", he)
                     task.spawn(worker)
                     screenGui2.SetLibrary(screenGui2, fn485)
-                    Stealth.SetLibrary(Stealth, task)
+                    Fluent.SetLibrary(Fluent, task)
                     screenGui2.IgnoreThemeSettings(screenGui2)
                     screenGui2.SetIgnoreIndexes(screenGui2, screenGui2)
-                    Stealth.SetFolder(Stealth, worker2)
+                    Fluent.SetFolder(Fluent, worker2)
                     screenGui2.SetFolder(screenGui2, task[nil])
-                    Stealth.BuildInterfaceSection(Stealth, fn334)
+                    Fluent.BuildInterfaceSection(Fluent, fn334)
                     screenGui2.BuildConfigSection(screenGui2, g1)
                     onAutoFarmBestUnlockedStage.SelectTab(onAutoFarmBestUnlockedStage, screenGui2)
                     screenGui2.LoadAutoloadConfig(screenGui2)
