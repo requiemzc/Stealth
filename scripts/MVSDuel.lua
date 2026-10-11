@@ -1,7 +1,7 @@
 -- [[ Stealth | Murderers VS Sheriffs DUELS ]]
 --
 -- Original: Auto-shoot script by luhscripter (Rayfield UI)
--- Converted to Airflow UI for Stealth Hub.
+-- Converted to Library UI for Stealth Hub.
 -- Discord: discord.gg/hqE5drDHF7
 --
 -- Game: https://www.roblox.com/games/12355337193
@@ -228,7 +228,7 @@ local function refreshESP()
                 local hl = espHighlights[player]
                 if not hl or not hl.Parent then
                     hl = Instance.new("Highlight")
-                    hl.Name = "StealthESP"
+                    hl.Name = "Stealth"
                     hl.Adornee = player.Character
                     hl.FillTransparency = 0.55
                     hl.OutlineTransparency = 0
@@ -447,14 +447,228 @@ function SELF.destroy()
 end
 
 ------------------------------------------------------------
--- Load Airflow UI
+-- Load Library UI
 ------------------------------------------------------------
-local Airflow = loadstring(game:HttpGet("https://raw.githubusercontent.com/PookiePepelsss/Airflow-UI/refs/heads/main/Source.luau"))()
-if not Airflow then
-    warn("[Stealth] Failed to load Airflow UI for MVSDuel")
+
+-- =============================================================
+-- Obsidian UI Wrapper (provides Library-compatible API)
+-- =============================================================
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/Library.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/addons/SaveManager.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/Naellx/ObsidianUltra/main/addons/ThemeManager.lua"))()
+
+-- Library uses Library.Flags and Library.Windows
+Library.Flags = Library.Flags or {}
+Library.Windows = Library.Windows or {}
+
+-- Wrap CreateWindow to return a window with Library-style methods
+local _origCreateWindow = Library.CreateWindow
+Library.CreateWindow = function(self, opts)
+    -- Library passes {Name=..., Icon=..., ToggleUIKeybind=...}
+    -- Obsidian passes {Title=..., Footer=...}
+    local winOpts = {}
+    if type(opts) == "string" then
+        winOpts.Title = opts
+    elseif type(opts) == "table" then
+        winOpts.Title = opts.Name or opts.Title or "Stealth"
+        if opts.Footer then winOpts.Footer = opts.Footer end
+        if opts.Icon then winOpts.Icon = opts.Icon end
+    end
+    local win = _origCreateWindow(self, winOpts)
+    
+    -- Wrap AddTab → returns tab with CreateSection/CreateToggle etc.
+    local _origAddTab = win.AddTab or win.Tab
+    function win:AddTab(name, ...)
+        local tab
+        if type(name) == "table" then
+            tab = _origAddTab(self, name)
+        else
+            tab = _origAddTab(self, { Name = name })
+        end
+        return _wrapTab(tab)
+    end
+    function win:CreateTab(opts)
+        if type(opts) == "string" then
+            return self:AddTab(opts)
+        end
+        return self:AddTab(opts.Name or "Tab")
+    end
+    function win:Notify(opts)
+        Library:Notify({ Title = opts.Title or opts.Name or "", Description = opts.Content or opts.Description or "", Time = opts.Duration or 5 })
+    end
+    function win:Destroy()
+        if win.Unload then win:Unload() end
+    end
+    function win:Toggle() end
+    return win
+end
+
+function _wrapTab(tab)
+    local wrapper = {}
+    wrapper._tab = tab
+    
+    function wrapper:CreateSection(name)
+        return tab:AddLeftGroupbox(name)
+    end
+    wrapper.AddLeftGroupbox = wrapper.CreateSection
+    wrapper.AddRightGroupbox = function(self, name) return tab:AddRightGroupbox(name) end
+    
+    function wrapper:CreateToggle(opts)
+        local el = tab:AddLeftGroupbox(opts.Name or ""):AddToggle(opts.Flag or "", {
+            Text = opts.Name or opts.Text or "",
+            Default = opts.CurrentValue or false,
+        })
+        if opts.Callback then
+            el:OnChanged(function() opts.Callback(el.Value) end)
+        end
+        return el
+    end
+    function wrapper:AddToggle(flag, opts)
+        local el = tab:AddLeftGroupbox(opts.Text or ""):AddToggle(flag, {
+            Text = opts.Text or "",
+            Default = opts.Default or false,
+        })
+        return el
+    end
+    
+    function wrapper:CreateSlider(opts)
+        local el = tab:AddLeftGroupbox(opts.Name or ""):AddSlider(opts.Flag or "", {
+            Text = opts.Name or "",
+            Min = (opts.Range and opts.Range[1]) or 0,
+            Max = (opts.Range and opts.Range[2]) or 100,
+            Default = opts.CurrentValue or 0,
+            Suffix = opts.Suffix or "",
+        })
+        if opts.Callback then
+            el:OnChanged(function() opts.Callback(el.Value) end)
+        end
+        return el
+    end
+    function wrapper:AddSlider(flag, opts)
+        local el = tab:AddLeftGroupbox(opts.Text or ""):AddSlider(flag, {
+            Text = opts.Text or "",
+            Min = opts.Min or 0,
+            Max = opts.Max or 100,
+            Default = opts.Default or 0,
+            Suffix = opts.Suffix or "",
+        })
+        return el
+    end
+    
+    function wrapper:CreateDropdown(opts)
+        local el = tab:AddLeftGroupbox(opts.Name or ""):AddDropdown(opts.Flag or "", {
+            Text = opts.Name or "",
+            Values = opts.Options or {},
+            Default = opts.CurrentOption or (opts.Options and opts.Options[1]) or nil,
+        })
+        if opts.Callback then
+            el:OnChanged(function() opts.Callback(el.Value) end)
+        end
+        return el
+    end
+    function wrapper:AddDropdown(flag, opts)
+        local el = tab:AddLeftGroupbox(opts.Text or ""):AddDropdown(flag, {
+            Text = opts.Text or "",
+            Values = opts.Values or {},
+            Default = opts.Default,
+        })
+        return el
+    end
+    
+    function wrapper:CreateColorPicker(opts)
+        local el = tab:AddLeftGroupbox(opts.Name or ""):AddColorPicker(opts.Flag or "", {
+            Text = opts.Name or "",
+            Default = opts.Color or opts.Default or Color3.fromRGB(255,255,255),
+        })
+        return el
+    end
+    function wrapper:AddColorPicker(flag, opts)
+        local el = tab:AddLeftGroupbox(opts.Text or ""):AddColorPicker(flag, {
+            Text = opts.Text or "",
+            Default = opts.Default or Color3.fromRGB(255,255,255),
+        })
+        return el
+    end
+    
+    function wrapper:CreateInput(opts)
+        local el = tab:AddLeftGroupbox(opts.Name or ""):AddInput(opts.Flag or "", {
+            Text = opts.Name or "",
+            Default = opts.CurrentValue or opts.Default or "",
+            Placeholder = opts.PlaceholderText or "",
+        })
+        return el
+    end
+    function wrapper:AddInput(flag, opts)
+        local el = tab:AddLeftGroupbox(opts.Text or ""):AddInput(flag, {
+            Text = opts.Text or "",
+            Default = opts.Default or "",
+            Placeholder = opts.Placeholder or "",
+        })
+        return el
+    end
+    
+    function wrapper:CreateKeybind(opts)
+        local el = tab:AddLeftGroupbox(opts.Name or ""):AddKeyPicker(opts.Flag or "", {
+            Text = opts.Name or "",
+            Default = opts.CurrentKeybind or "MB2",
+            Mode = opts.Mode or "Hold",
+        })
+        return el
+    end
+    function wrapper:AddKeybind(flag, opts)
+        local el = tab:AddLeftGroupbox(opts.Text or ""):AddKeyPicker(flag, {
+            Text = opts.Text or "",
+            Default = opts.Default or "MB2",
+        })
+        return el
+    end
+    
+    function wrapper:CreateButton(opts)
+        tab:AddLeftGroupbox(opts.Name or ""):AddButton({
+            Text = opts.Name or "",
+            Func = opts.Callback or function() end,
+        })
+        return wrapper
+    end
+    function wrapper:AddButton(text, fn)
+        tab:AddLeftGroupbox(""):AddButton({ Text = text, Func = fn or function() end })
+        return wrapper
+    end
+    
+    function wrapper:CreateLabel(opts)
+        tab:AddLeftGroupbox(""):AddLabel(opts.Text or "")
+        return wrapper
+    end
+    function wrapper:AddLabel(text)
+        tab:AddLeftGroupbox(""):AddLabel(text)
+        return wrapper
+    end
+    
+    function wrapper:CreateParagraph(opts)
+        tab:AddLeftGroupbox(opts.Title or ""):AddLabel(opts.Content or "")
+        return wrapper
+    end
+    
+    function wrapper:CreateDivider()
+        return wrapper
+    end
+    
+    return wrapper
+end
+
+-- Provide Toggles and Options tables (Linoria/Obsidian style)
+Toggles = Library.Toggles or {}
+Options = Library.Options or {}
+
+-- Stub SaveManager/ThemeManager if they were niled
+if not SaveManager then SaveManager = { LoadAutoloadConfig = function() end, SetLibrary = function() end, BuildConfigSequence = function() end } end
+if not ThemeManager then ThemeManager = { ApplyToTab = function() end, SetLibrary = function() end, SetFolder = function() end, LoadDefault = function() end } end
+
+if not Library then
+    warn("[Stealth] Failed to load Library UI for MVSDuel")
     return
 end
-local Toggles = Airflow.Flags
+local Toggles = Library.Flags
 
 local gameName = "Murderers VS Sheriffs DUELS"
 pcall(function()
@@ -462,7 +676,7 @@ pcall(function()
     if info and info.Name then gameName = info.Name end
 end)
 
-local Window = Airflow:CreateWindow({
+local Window = Library:CreateWindow({
     Name = "Stealth | MVSD",
     ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "mvsduel" },
     Icon = "solar:shield-keyhole-bold-duotone",
@@ -664,8 +878,8 @@ UtilitiesTab:CreateButton({
     Desc = "Copies the Stealth Discord link to your clipboard.",
     Callback = function()
         pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
-        Airflow:Notify({
-            Title = "Stealth | MVSD",
+        Library:Notify({
+            Title = "Stealth",
             Content = "Discord invite copied!",
             Duration = 3,
             Type = "Success",
@@ -693,11 +907,11 @@ end
 ------------------------------------------------------------
 -- Welcome
 ------------------------------------------------------------
-Airflow:Notify({
+Library:Notify({
     Title = "Stealth | MVSD",
     Content = gameName .. " loaded! Press RightShift to toggle the UI.",
     Duration = 5,
     Type = "Success",
 })
 
-print("[Stealth] Loaded " .. gameName .. " via Airflow")
+print("[Stealth] Loaded " .. gameName .. " via Library")
