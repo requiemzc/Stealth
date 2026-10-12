@@ -73,7 +73,7 @@ local Toggles = {}
 if Airflow then
     Toggles = Airflow.Flags
     Window = Airflow:CreateWindow({
-        Name = "Catmio Reborn",
+        Name = "Stealth | Blox Fruits",
         ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "bloxfruits" },
         Icon = "solar:shield-keyhole-bold-duotone",
         ToggleUIKeybind = "RightShift",

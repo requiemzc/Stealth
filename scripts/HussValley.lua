@@ -2977,7 +2977,7 @@ local function ensurePart(store, key, size, color, transparency)
         return part
     end
     part = Instance.new("Part")
-    part.Name = "Catmio Reborn"
+    part.Name = "CoH_Utility"
     part.Shape = Enum.PartType.Ball
     part.Size = Vector3.new(size, size, size)
     part.Anchored = true
@@ -3277,7 +3277,7 @@ local function getDebugGui()
     end
 
     local gui = Instance.new("ScreenGui")
-    gui.Name = "Catmio Reborn"
+    gui.Name = "CoH_FullDebug"
     gui.ResetOnSpawn = false
     gui.IgnoreGuiInset = true
     gui.DisplayOrder = 9999
@@ -3285,7 +3285,7 @@ local function getDebugGui()
     gui.Parent = playerGui
 
     local frame = Instance.new("Frame")
-    frame.Name = "Catmio Reborn"
+    frame.Name = "Panel"
     frame.Size = UDim2.fromOffset(470, 360)
     frame.Position = UDim2.fromOffset(10, 70)
     frame.BackgroundTransparency = 0.12
@@ -3298,7 +3298,7 @@ local function getDebugGui()
     corner.Parent = frame
 
     local label = Instance.new("TextLabel")
-    label.Name = "Catmio Reborn"
+    label.Name = "Status"
     label.Size = UDim2.new(1, -20, 1, -20)
     label.Position = UDim2.fromOffset(10, 10)
     label.BackgroundTransparency = 1
@@ -3479,7 +3479,7 @@ local function mapVoteOnce(manual)
     if SETTINGS.mapVoteAnnounce then
         pcall(function()
             WindUI:Notify({
-                Title = "Catmio Reborn",
+                Title = "Map Vote",
                 Content = selected .. " selected.",
                 Duration = 2.5,
                 Icon = "map",
@@ -3683,7 +3683,7 @@ local function utilityStep(now)
         local part = visuals.goal
         if not part or not part.Parent then
             part = Instance.new("Part")
-            part.Name = "Catmio Reborn"
+            part.Name = "CoH_Goal"
             part.Shape = Enum.PartType.Ball
             part.Size = Vector3.new(2.5, 2.5, 2.5)
             part.Anchored = true
@@ -3718,7 +3718,7 @@ local function utilityStep(now)
                     local part = visuals.hitboxes[player]
                     if not part or not part.Parent then
                         part = Instance.new("Part")
-                        part.Name = "Catmio Reborn"
+                        part.Name = "CoH_Hitbox"
                         part.Shape = Enum.PartType.Ball
                         part.Anchored = true
                         part.CanCollide = false
@@ -3987,7 +3987,7 @@ local windowWidth = math.max(280, math.min(520, viewport.X - 24))
 local windowHeight = math.max(360, math.min(860, viewport.Y - 48))
 
 local Window = WindUI:CreateWindow({
-    Title = "Catmio Reborn",
+    Title = "Oziohub",
     Icon = "bird",
     Author = "Oziohub",
     Folder = "HussValley",
@@ -3997,7 +3997,7 @@ local Window = WindUI:CreateWindow({
     ToggleKey = Enum.KeyCode.RightShift,
 })
 
-Window:Tag({Title = "Catmio Reborn", Color = Color3.fromRGB(70, 205, 180)})
+Window:Tag({Title = "Oziohub", Color = Color3.fromRGB(70, 205, 180)})
 
 -- Notification gate (controlled from Settings tab)
 SETTINGS.notifications = true
@@ -4054,17 +4054,17 @@ Window.Tab = function(self, cfg)
     return Hub.trackTab(tab, type(cfg) == "table" and cfg.Title or "Tab")
 end
 
-local RunnerTab = Window:Tab({Title = "Catmio Reborn", Icon = "footprints"})
+local RunnerTab = Window:Tab({Title = "Runner", Icon = "footprints"})
 
 local RunnerStatusParagraph = RunnerTab:Paragraph({
-    Title = "Catmio Reborn",
+    Title = "Runner Status",
     Desc = "Role: Lobby\nState: Idle\nGoal: None",
 })
 
-RunnerTab:Section({Title = "Catmio Reborn"})
+RunnerTab:Section({Title = "Movement"})
 
 RunnerTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Auto Run",
     Desc = "Automatically travel between Safe Zones with threat and edge checks.",
     Icon = "play",
     Type = "Checkbox",
@@ -4084,7 +4084,7 @@ RunnerTab:Toggle({
 })
 
 RunnerTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Auto Revive Players",
     Desc = "Move to a downed Runner and complete the real revive hold before continuing.",
     Icon = "heart-pulse",
     Type = "Checkbox",
@@ -4098,7 +4098,7 @@ RunnerTab:Toggle({
 })
 
 RunnerTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Runner Speed Override",
     Desc = "Multiply the game's current Runner movement speed without replacing its acceleration or dash system.",
     Icon = "gauge",
     Type = "Checkbox",
@@ -4112,7 +4112,7 @@ RunnerTab:Toggle({
 })
 
 RunnerTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Runner Speed Multiplier",
     Desc = "1.0x keeps the native speed; maximum is 2.0x.",
     Step = 0.05,
     Value = {Min = 1.0, Max = 2.0, Default = 1.0},
@@ -4121,10 +4121,10 @@ RunnerTab:Slider({
     end,
 })
 
-RunnerTab:Section({Title = "Catmio Reborn"})
+RunnerTab:Section({Title = "Collection and Safety"})
 
 RunnerTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Revive Before Gems",
     Desc = "Prioritize downed players before collecting Gems.",
     Icon = "list-checks",
     Type = "Checkbox",
@@ -4135,7 +4135,7 @@ RunnerTab:Toggle({
 })
 
 RunnerTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Auto Collect Gems",
     Desc = "Collect visible Runner Gems, then return to the Safe Zone route when none remain.",
     Icon = "gem",
     Type = "Checkbox",
@@ -4149,7 +4149,7 @@ RunnerTab:Toggle({
 })
 
 RunnerTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Avoid Catchers",
     Desc = "Predict nearby Catchers and bend the route away from their projected path.",
     Icon = "shield",
     Type = "Checkbox",
@@ -4160,7 +4160,7 @@ RunnerTab:Toggle({
 })
 
 RunnerTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Auto Dash",
     Desc = "Use the equipped Runner ability before a Catcher reaches the predicted collision area.",
     Icon = "zap",
     Type = "Checkbox",
@@ -4171,7 +4171,7 @@ RunnerTab:Toggle({
 })
 
 RunnerTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Runner Threat Prediction",
     Desc = "How far ahead Catcher movement is predicted for Runner avoidance.",
     Step = 0.05,
     Value = {Min = 0.25, Max = 1.1, Default = 0.65},
@@ -4181,7 +4181,7 @@ RunnerTab:Slider({
 })
 
 RunnerTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Emergency Threat Distance",
     Desc = "Distance at which emergency avoidance becomes more aggressive.",
     Step = 1,
     Value = {Min = 8, Max = 25, Default = 15},
@@ -4190,10 +4190,10 @@ RunnerTab:Slider({
     end,
 })
 
-RunnerTab:Section({Title = "Catmio Reborn"})
+RunnerTab:Section({Title = "Movement"})
 
 RunnerTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Smooth Direction Changes",
     Desc = "Blend turns to reduce sudden movement changes.",
     Icon = "rotate-cw",
     Type = "Checkbox",
@@ -4204,7 +4204,7 @@ RunnerTab:Toggle({
 })
 
 RunnerTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Emergency Safe Zone",
     Desc = "When movement stalls under heavy pressure, temporarily favor the nearest Safe Zone.",
     Icon = "life-buoy",
     Type = "Checkbox",
@@ -4215,7 +4215,7 @@ RunnerTab:Toggle({
 })
 
 RunnerTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Avoidance Strength",
     Desc = "How strongly the route moves away from projected Catcher paths.",
     Step = 0.1,
     Value = {Min = 0.5, Max = 2.5, Default = 1.8},
@@ -4224,17 +4224,17 @@ RunnerTab:Slider({
     end,
 })
 
-local CatcherTab = Window:Tab({Title = "Catmio Reborn", Icon = "crosshair"})
+local CatcherTab = Window:Tab({Title = "Catcher", Icon = "crosshair"})
 
 local CatcherStatusParagraph = CatcherTab:Paragraph({
-    Title = "Catmio Reborn",
+    Title = "Catcher Status",
     Desc = "Role: Lobby\nState: Idle\nTarget: None",
 })
 
-CatcherTab:Section({Title = "Catmio Reborn"})
+CatcherTab:Section({Title = "Targeting and Combat"})
 
 CatcherTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Auto Chase",
     Desc = "Automatically move toward the best active Runner.",
     Icon = "move",
     Type = "Checkbox",
@@ -4249,7 +4249,7 @@ CatcherTab:Toggle({
 })
 
 CatcherTab:Dropdown({
-    Title = "Catmio Reborn",
+    Title = "Attack Priority",
     Desc = "Choose whether Smart, Tackle, or Melee is preferred when attacking.",
     Values = {"Smart", "Tackle First", "Melee First"},
     Value = "Smart",
@@ -4265,7 +4265,7 @@ CatcherTab:Dropdown({
 })
 
 CatcherTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Smart Targeting",
     Desc = "Prefer active targets that can be intercepted instead of simply choosing the nearest Runner.",
     Icon = "brain",
     Type = "Checkbox",
@@ -4276,7 +4276,7 @@ CatcherTab:Toggle({
 })
 
 CatcherTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Auto Tackle",
     Desc = "Automatically tackle a Runner when the predicted position enters tackle range.",
     Icon = "zap",
     Type = "Checkbox",
@@ -4290,7 +4290,7 @@ CatcherTab:Toggle({
 })
 
 CatcherTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Tackle Range",
     Desc = "Distance used before an automatic tackle is attempted.",
     Step = 0.5,
     Value = {Min = 5, Max = 25, Default = 12},
@@ -4300,7 +4300,7 @@ CatcherTab:Slider({
 })
 
 CatcherTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Auto Melee",
     Desc = "Automatically melee a Runner when the predicted position enters melee range.",
     Icon = "sword",
     Type = "Checkbox",
@@ -4314,7 +4314,7 @@ CatcherTab:Toggle({
 })
 
 CatcherTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Melee Range",
     Desc = "Distance used before an automatic melee attack is attempted.",
     Step = 0.5,
     Value = {Min = 3, Max = 15, Default = 9},
@@ -4324,7 +4324,7 @@ CatcherTab:Slider({
 })
 
 CatcherTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Target Prediction",
     Desc = "How far ahead the Catcher predicts the selected Runner.",
     Step = 0.05,
     Value = {Min = 0.1, Max = 1.0, Default = 0.45},
@@ -4333,10 +4333,10 @@ CatcherTab:Slider({
     end,
 })
 
-CatcherTab:Section({Title = "Catmio Reborn"})
+CatcherTab:Section({Title = "Movement"})
 
 CatcherTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Catcher Speed Override",
     Desc = "Multiply the game's current Catcher movement speed without replacing its acceleration or dash system.",
     Icon = "gauge",
     Type = "Checkbox",
@@ -4350,7 +4350,7 @@ CatcherTab:Toggle({
 })
 
 CatcherTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Catcher Speed Multiplier",
     Desc = "1.0x keeps the native speed; maximum is 2.0x.",
     Step = 0.05,
     Value = {Min = 1.0, Max = 2.0, Default = 1.0},
@@ -4360,7 +4360,7 @@ CatcherTab:Slider({
 })
 
 CatcherTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Smooth Turning",
     Desc = "Rotate toward the predicted Runner position without snapping.",
     Icon = "rotate-cw",
     Type = "Checkbox",
@@ -4371,7 +4371,7 @@ CatcherTab:Toggle({
 })
 
 CatcherTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Turn Response",
     Desc = "How quickly the Catcher turns toward the predicted target.",
     Step = 1,
     Value = {Min = 5, Max = 30, Default = 14},
@@ -4380,12 +4380,12 @@ CatcherTab:Slider({
     end,
 })
 
-local WheelTab = Window:Tab({Title = "Catmio Reborn", Icon = "rotate-cw"})
+local WheelTab = Window:Tab({Title = "Wheel", Icon = "rotate-cw"})
 
-WheelTab:Section({Title = "Catmio Reborn"})
+WheelTab:Section({Title = "Status"})
 
 local WheelStatusParagraph = WheelTab:Paragraph({
-    Title = "Catmio Reborn",
+    Title = "Wheel Ready",
     Desc = "Credits: 0 | Spins: 0\nFree spin: Ready | Match: No | Spinning: No",
 })
 
@@ -4411,10 +4411,10 @@ local function updateWheelStatusUI()
     end)
 end
 
-WheelTab:Section({Title = "Catmio Reborn"})
+WheelTab:Section({Title = "Automatic Spin"})
 
 WheelTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Enable Auto Spin",
     Desc = "Automatically spin when you have enough credits and are in the lobby.",
     Icon = "play",
     Type = "Checkbox",
@@ -4428,12 +4428,12 @@ WheelTab:Toggle({
             runtime.wheelStatus = "refreshing state"
             wheelRequestState(os.clock(), true)
             pcall(function()
-                WindUI:Notify({Title = "Catmio Reborn", Content = "Started.", Duration = 2, Icon = "check"})
+                WindUI:Notify({Title = "Auto Spin", Content = "Started.", Duration = 2, Icon = "check"})
             end)
         else
             runtime.wheelStatus = "disabled"
             pcall(function()
-                WindUI:Notify({Title = "Catmio Reborn", Content = "Stopped.", Duration = 2, Icon = "pause"})
+                WindUI:Notify({Title = "Auto Spin", Content = "Stopped.", Duration = 2, Icon = "pause"})
             end)
         end
         updateWheelStatusUI()
@@ -4441,7 +4441,7 @@ WheelTab:Toggle({
 })
 
 WheelTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Delay Between Spins",
     Desc = "Seconds to wait between automatic spin requests.",
     Step = 0.5,
     Value = {Min = 5.5, Max = 30, Default = 6},
@@ -4452,7 +4452,7 @@ WheelTab:Slider({
 })
 
 WheelTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Minimum Credits",
     Desc = "Do not spin unless the wheel has at least this many credits.",
     Step = 1,
     Value = {Min = 1, Max = 50, Default = 1},
@@ -4464,7 +4464,7 @@ WheelTab:Slider({
 })
 
 WheelTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Spin Notifications",
     Desc = "Show a notification when an automatic spin is sent.",
     Icon = "bell",
     Type = "Checkbox",
@@ -4475,10 +4475,10 @@ WheelTab:Toggle({
 })
 
 WheelTab:Divider()
-WheelTab:Section({Title = "Catmio Reborn"})
+WheelTab:Section({Title = "Manual Controls"})
 
 WheelTab:Button({
-    Title = "Catmio Reborn",
+    Title = "Spin Once Now",
     Desc = "Send one normal Spin request when the wheel is available.",
     Icon = "zap",
     Callback = function()
@@ -4492,7 +4492,7 @@ WheelTab:Button({
 })
 
 WheelTab:Button({
-    Title = "Catmio Reborn",
+    Title = "Refresh Wheel State",
     Desc = "Request the latest credits and free-spin timer from the game.",
     Icon = "refresh-cw",
     Callback = function()
@@ -4518,16 +4518,16 @@ task.spawn(function()
     end
 end)
 
-local JourneyTab = Window:Tab({Title = "Catmio Reborn", Icon = "gift"})
-JourneyTab:Section({Title = "Catmio Reborn"})
+local JourneyTab = Window:Tab({Title = "Journey", Icon = "gift"})
+JourneyTab:Section({Title = "Rewards"})
 
 local JourneyStatusParagraph = JourneyTab:Paragraph({
-    Title = "Catmio Reborn",
+    Title = "Journey Status",
     Desc = "State: Loading\nAvailable rewards: 0",
 })
 
 JourneyTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Auto Claim Rewards",
     Desc = "Automatically claim all unlocked Journey rewards while you are in the lobby.",
     Icon = "gift",
     Type = "Checkbox",
@@ -4547,7 +4547,7 @@ JourneyTab:Toggle({
 })
 
 JourneyTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Announce Claims",
     Desc = "Show a notification after Journey rewards are claimed.",
     Icon = "bell",
     Type = "Checkbox",
@@ -4558,7 +4558,7 @@ JourneyTab:Toggle({
 })
 
 JourneyTab:Button({
-    Title = "Catmio Reborn",
+    Title = "Claim Rewards Now",
     Desc = "Claim all currently unlocked rewards once for the current season.",
     Icon = "gift",
     Callback = function()
@@ -4645,17 +4645,17 @@ task.spawn(function()
     end
 end)
 
-local MapVoteTab = Window:Tab({Title = "Catmio Reborn", Icon = "map"})
+local MapVoteTab = Window:Tab({Title = "Map Vote", Icon = "map"})
 
-MapVoteTab:Section({Title = "Catmio Reborn"})
+MapVoteTab:Section({Title = "Voting"})
 
 local MapVoteStatusParagraph = MapVoteTab:Paragraph({
-    Title = "Catmio Reborn",
+    Title = "Map Vote",
     Desc = "Phase: Waiting\nSelection: Map 1\nStatus: Ready",
 })
 
 MapVoteDropdown = MapVoteTab:Dropdown({
-    Title = "Catmio Reborn",
+    Title = "Preferred Map",
     Desc = "Choose Map 1, Map 2, or Map 3.",
     Values = MAP_VOTE_SLOT_IDS,
     Value = MAP_VOTE_SLOT_IDS[1],
@@ -4693,7 +4693,7 @@ local function updateMapVoteStatusUI()
 end
 
 MapVoteTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Auto Vote",
     Desc = "Automatically send the selected Map 1, Map 2, or Map 3 vote when voting begins.",
     Icon = "check",
     Type = "Checkbox",
@@ -4715,7 +4715,7 @@ MapVoteTab:Toggle({
 })
 
 MapVoteTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Vote Notifications",
     Desc = "Show a notification after a vote is sent.",
     Icon = "bell",
     Type = "Checkbox",
@@ -4726,7 +4726,7 @@ MapVoteTab:Toggle({
 })
 
 MapVoteTab:Button({
-    Title = "Catmio Reborn",
+    Title = "Vote Selected Map",
     Desc = "Send one vote immediately using the game's normal MapVoteEvent.",
     Icon = "check-check",
     Callback = function()
@@ -4761,12 +4761,12 @@ task.spawn(function()
     end
 end)
 
-local UtilitiesTab = Window:Tab({Title = "Catmio Reborn", Icon = "wrench"})
+local UtilitiesTab = Window:Tab({Title = "Utilities", Icon = "wrench"})
 
-UtilitiesTab:Section({Title = "Catmio Reborn"})
+UtilitiesTab:Section({Title = "Camera"})
 
 UtilitiesTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Follow Target",
     Desc = "Smoothly point the camera toward the active Catcher target.",
     Icon = "camera",
     Type = "Checkbox",
@@ -4778,7 +4778,7 @@ UtilitiesTab:Toggle({
 })
 
 UtilitiesTab:Slider({
-    Title = "Catmio Reborn",
+    Title = "Camera Follow Speed",
     Desc = "How quickly the camera follows the target.",
     Step = 0.05,
     Value = {Min = 0.05, Max = 1.0, Default = 0.25},
@@ -4787,15 +4787,15 @@ UtilitiesTab:Slider({
     end,
 })
 
-UtilitiesTab:Section({Title = "Catmio Reborn"})
+UtilitiesTab:Section({Title = "Lobby"})
 
 local AFKStatusParagraph = UtilitiesTab:Paragraph({
-    Title = "Catmio Reborn",
+    Title = "Built-in AFK Status",
     Desc = "Game AFK: OFF\nLobby: No\nRemote Requests: 0",
 })
 
 UtilitiesTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Disable Anti AFK Flag",
     Desc = "Turns off the game's built-in AFK state while you are in the lobby and reapplies it if the game turns AFK back on.",
     Icon = "user-round-x",
     Type = "Checkbox",
@@ -4837,10 +4837,10 @@ task.spawn(function()
     end
 end)
 
-UtilitiesTab:Section({Title = "Catmio Reborn"})
+UtilitiesTab:Section({Title = "Debug"})
 
 UtilitiesTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Full Debug Panel",
     Desc = "Show the detailed Runner, Catcher, Wheel, Journey, Map Vote, movement, and error panel.",
     Icon = "bug",
     Type = "Checkbox",
@@ -4856,10 +4856,10 @@ UtilitiesTab:Toggle({
     end,
 })
 
-UtilitiesTab:Section({Title = "Catmio Reborn"})
+UtilitiesTab:Section({Title = "Visual Helpers"})
 
 UtilitiesTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Show Goal",
     Desc = "Show the current Gem, revive target, or Safe Zone destination.",
     Icon = "target",
     Type = "Checkbox",
@@ -4875,7 +4875,7 @@ UtilitiesTab:Toggle({
 })
 
 UtilitiesTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Show Threats",
     Desc = "Show the danger areas used by Runner prediction and avoidance.",
     Icon = "circle-alert",
     Type = "Checkbox",
@@ -4893,7 +4893,7 @@ UtilitiesTab:Toggle({
 })
 
 UtilitiesTab:Toggle({
-    Title = "Catmio Reborn",
+    Title = "Show Hitboxes",
     Desc = "Show simple visual spheres around players relevant to your current role.",
     Icon = "box",
     Type = "Checkbox",
@@ -4913,7 +4913,7 @@ UtilitiesTab:Toggle({
 -- Settings tab (always the last tab)
 -- =====================================================================
 do
-    local SettingsTab = Hub.rawTab(Window, {Title = "Catmio Reborn", Icon = "settings"})
+    local SettingsTab = Hub.rawTab(Window, {Title = "Settings", Icon = "settings"})
     Hub.SettingsTab = SettingsTab
 
     local function toast(title, content, icon)
@@ -4927,7 +4927,7 @@ do
     -- ---------------------------------------------------------------
     -- Interface
     -- ---------------------------------------------------------------
-    SettingsTab:Section({Title = "Catmio Reborn"})
+    SettingsTab:Section({Title = "Interface"})
 
     local themeNames = {}
     pcall(function()
@@ -4941,7 +4941,7 @@ do
     end
 
     local ThemeDropdown = SettingsTab:Dropdown({
-        Title = "Catmio Reborn",
+        Title = "Theme",
         Desc = "Change the window colors.",
         Values = themeNames,
         Value = "Dark",
@@ -4952,7 +4952,7 @@ do
     Hub.register("Settings_Theme", ThemeDropdown, "Dark")
 
     local TransparencyToggle = SettingsTab:Toggle({
-        Title = "Catmio Reborn",
+        Title = "Window Transparency",
         Desc = "Make the window background translucent.",
         Icon = "layers",
         Type = "Checkbox",
@@ -4964,7 +4964,7 @@ do
     Hub.register("Settings_Transparency", TransparencyToggle, true)
 
     local ScaleSlider = SettingsTab:Slider({
-        Title = "Catmio Reborn",
+        Title = "UI Scale",
         Desc = "Resize the whole window (needs a WindUI version that supports scaling).",
         Step = 0.05,
         Value = {Min = 0.7, Max = 1.3, Default = 1.0},
@@ -4976,7 +4976,7 @@ do
 
     local toggleKeys = {"RightShift", "LeftAlt", "RightAlt", "RightControl", "Insert", "Home", "End", "Delete", "K", "F6", "F7", "F8"}
     local KeyDropdown = SettingsTab:Dropdown({
-        Title = "Catmio Reborn",
+        Title = "Toggle UI Key",
         Desc = "Key used to show or hide this window.",
         Values = toggleKeys,
         Value = "RightShift",
@@ -4990,7 +4990,7 @@ do
     Hub.register("Settings_ToggleKey", KeyDropdown, "RightShift")
 
     local NotifyToggle = SettingsTab:Toggle({
-        Title = "Catmio Reborn",
+        Title = "Notifications",
         Desc = "Show pop-up notifications (Auto Spin, Wheel, loaded message...).",
         Icon = "bell",
         Type = "Checkbox",
@@ -5004,7 +5004,7 @@ do
     -- ---------------------------------------------------------------
     -- Utility
     -- ---------------------------------------------------------------
-    SettingsTab:Section({Title = "Catmio Reborn"})
+    SettingsTab:Section({Title = "Utility"})
 
     local function setAntiIdle(on)
         if Hub.idleConn then
@@ -5023,7 +5023,7 @@ do
     end
 
     local AntiIdleToggle = SettingsTab:Toggle({
-        Title = "Catmio Reborn",
+        Title = "Anti Idle Kick",
         Desc = "Prevent Roblox from kicking you after 20 minutes of inactivity.",
         Icon = "timer",
         Type = "Checkbox",
@@ -5036,7 +5036,7 @@ do
     setAntiIdle(true)
 
     SettingsTab:Button({
-        Title = "Catmio Reborn",
+        Title = "Rejoin Server",
         Desc = "Teleport back into this same place.",
         Icon = "refresh-cw",
         Callback = function()
@@ -5054,11 +5054,11 @@ do
     -- ---------------------------------------------------------------
     -- Configuration
     -- ---------------------------------------------------------------
-    SettingsTab:Section({Title = "Catmio Reborn"})
+    SettingsTab:Section({Title = "Configuration"})
 
     local AUTOLOAD_FILE = "HussValley_autoload.txt"
     local selectedConfig = "default"
-    local newConfigName = "Catmio Reborn"
+    local newConfigName = ""
 
     local function cleanName(name)
         name = tostring(name or ""):gsub("[^%w%-_ ]", "")
@@ -5120,7 +5120,7 @@ do
     end
 
     ConfigDropdown = SettingsTab:Dropdown({
-        Title = "Catmio Reborn",
+        Title = "Config",
         Desc = "Pick a saved config.",
         Values = initialConfigs,
         Value = initialConfigs[1],
@@ -5131,7 +5131,7 @@ do
     selectedConfig = initialConfigs[1]
 
     SettingsTab:Input({
-        Title = "Catmio Reborn",
+        Title = "New Config Name",
         Desc = "Type a name, then press Create & Save.",
         Placeholder = "my-config",
         Value = "",
@@ -5141,7 +5141,7 @@ do
     })
 
     SettingsTab:Button({
-        Title = "Catmio Reborn",
+        Title = "Create & Save",
         Desc = "Save all current settings under the new name.",
         Icon = "file-plus",
         Callback = function()
@@ -5158,7 +5158,7 @@ do
     })
 
     SettingsTab:Button({
-        Title = "Catmio Reborn",
+        Title = "Save Config",
         Desc = "Overwrite the selected config with the current settings.",
         Icon = "save",
         Callback = function()
@@ -5175,7 +5175,7 @@ do
     })
 
     SettingsTab:Button({
-        Title = "Catmio Reborn",
+        Title = "Load Config",
         Desc = "Apply the selected config to every setting.",
         Icon = "folder-open",
         Callback = function()
@@ -5195,7 +5195,7 @@ do
     })
 
     SettingsTab:Button({
-        Title = "Catmio Reborn",
+        Title = "Delete Config",
         Desc = "Permanently delete the selected config.",
         Icon = "trash-2",
         Callback = function()
@@ -5212,7 +5212,7 @@ do
     })
 
     SettingsTab:Toggle({
-        Title = "Catmio Reborn",
+        Title = "Auto Load Selected Config",
         Desc = "Load the selected config automatically every time the script is executed.",
         Icon = "rotate-ccw",
         Type = "Checkbox",
@@ -5233,7 +5233,7 @@ do
     })
 
     SettingsTab:Button({
-        Title = "Catmio Reborn",
+        Title = "Reset All Settings",
         Desc = "Restore every Runner, Catcher, Wheel, Journey, Map Vote and Utilities option to its default.",
         Icon = "rotate-ccw",
         Callback = function()
@@ -5252,15 +5252,15 @@ do
     -- ---------------------------------------------------------------
     -- About
     -- ---------------------------------------------------------------
-    SettingsTab:Section({Title = "Catmio Reborn"})
+    SettingsTab:Section({Title = "About"})
 
     SettingsTab:Paragraph({
-        Title = "Catmio Reborn",
+        Title = "Oziohub",
         Desc = "Chicken or Hero helper.\nToggle the window with the key selected above (default: RightShift).",
     })
 
     SettingsTab:Button({
-        Title = "Catmio Reborn",
+        Title = "Copy Follow Link",
         Icon = "link",
         Callback = function()
             if type(setclipboard) == "function" then
@@ -5273,7 +5273,7 @@ do
     })
 
     SettingsTab:Button({
-        Title = "Catmio Reborn",
+        Title = "Unload Script",
         Desc = "Stop everything, remove visuals and close the window.",
         Icon = "power",
         Callback = function()
@@ -5307,7 +5307,7 @@ do
 end
 
 WindUI:Notify({
-    Title = "Catmio Reborn",
+    Title = "Oziohub",
     Content = "Loaded. Auto Run is enabled by default.",
     Duration = 4,
     Icon = "wind",

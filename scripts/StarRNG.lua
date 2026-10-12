@@ -77,9 +77,9 @@ Library.CreateWindow = function(self, opts)
     -- Obsidian passes {Title=..., Footer=...}
     local winOpts = {}
     if type(opts) == "string" then
-        winOpts.Title = "Catmio Reborn"
+        winOpts.Title = opts
     elseif type(opts) == "table" then
-        winOpts.Title = "Catmio Reborn"
+        winOpts.Title = opts.Name or opts.Title or "Stealth"
         if opts.Footer then winOpts.Footer = opts.Footer end
         if opts.Icon then winOpts.Icon = opts.Icon end
     end

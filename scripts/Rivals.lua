@@ -4732,7 +4732,7 @@ local SILENT = false
 local function initialize(Library)
     if not Library then return end
 
-    local Window = Library:CreateWindow({ Title = "Catmio Reborn", Footer = "discord.gg/hqE5drDHF7" })
+    local Window = Library:CreateWindow({ Title = "Stealth | Rivals", Footer = "discord.gg/hqE5drDHF7" })
 
     local CombatTab = Window:AddTab("Combat")
     local VisualsTab = Window:AddTab("Visuals")

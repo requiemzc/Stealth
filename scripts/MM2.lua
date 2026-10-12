@@ -45,7 +45,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "Catmio Reborn",
+    Name = "Stealth",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -44046,9 +44046,9 @@ Library.CreateWindow = function(self, opts)
     -- Obsidian passes {Title=..., Footer=...}
     local winOpts = {}
     if type(opts) == "string" then
-        winOpts.Title = "Catmio Reborn"
+        winOpts.Title = opts
     elseif type(opts) == "table" then
-        winOpts.Title = "Catmio Reborn"
+        winOpts.Title = opts.Name or opts.Title or "Stealth"
         if opts.Footer then winOpts.Footer = opts.Footer end
         if opts.Icon then winOpts.Icon = opts.Icon end
     end
@@ -44248,8 +44248,8 @@ if not ThemeManager then ThemeManager = { ApplyToTab = function() end, SetLibrar
         -- Re-assert after loadstring (it may reset identity).
     _elevateIdentity()
     local Window = Library:CreateWindow({
-    Name = "Catmio Reborn",
-    ConfigurationSaving = { Enabled = true, FolderName = "Catmio Reborn", FileName = "default" },
+    Name = "Stealth",
+    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "default" },
     Icon = "solar:shield-keyhole-bold-duotone",
     ToggleUIKeybind = "RightShift",
 })

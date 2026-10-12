@@ -228,7 +228,7 @@ local function refreshESP()
                 local hl = espHighlights[player]
                 if not hl or not hl.Parent then
                     hl = Instance.new("Highlight")
-                    hl.Name = "Catmio Reborn"
+                    hl.Name = "Stealth"
                     hl.Adornee = player.Character
                     hl.FillTransparency = 0.55
                     hl.OutlineTransparency = 0
@@ -468,9 +468,9 @@ Library.CreateWindow = function(self, opts)
     -- Obsidian passes {Title=..., Footer=...}
     local winOpts = {}
     if type(opts) == "string" then
-        winOpts.Title = "Catmio Reborn"
+        winOpts.Title = opts
     elseif type(opts) == "table" then
-        winOpts.Title = "Catmio Reborn"
+        winOpts.Title = opts.Name or opts.Title or "Stealth"
         if opts.Footer then winOpts.Footer = opts.Footer end
         if opts.Icon then winOpts.Icon = opts.Icon end
     end
@@ -678,7 +678,7 @@ end)
 
 local Window = Library:CreateWindow({
     Name = "Stealth | MVSD",
-    ConfigurationSaving = { Enabled = true, FolderName = "Catmio Reborn", FileName = "mvsduel" },
+    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "mvsduel" },
     Icon = "solar:shield-keyhole-bold-duotone",
     ToggleUIKeybind = "RightShift",
 })
