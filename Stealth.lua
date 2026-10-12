@@ -10,7 +10,6 @@ local SCRIPTS = {
     { name = "Murderers VS Sheriffs Duels", desc = "Auto-kill + auto-equip gun.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/MVSDuel.lua" },
     { name = "Deagle Arena", desc = "Kill all - works in ranked.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/Deaglearena.lua" },
     { name = "Chapter 1 — Farmhouse", desc = "Auto farm hay, sell, collect gems.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/Farmhouse.lua" },
-    { name = "Jump for Animals", desc = "Auto train squats, steal/hatch eggs.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/JumpForAnimals.lua" },
     { name = "Defeat Anime RNG", desc = "Auto roll, farm waves, buy weapons.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/DefeatAnimeRNG.lua" },
     { name = "Huss Valley", desc = "Auto farm, auto quest, auto buy.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/HussValley.lua" },
     { name = "catmio — Remote Spy", desc = "Universal remote spy.", url = "https://raw.githubusercontent.com/requiemzc/Stealth/main/scripts/CatmioRemoteSpy.lua" },

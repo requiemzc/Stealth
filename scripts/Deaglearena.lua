@@ -23,7 +23,7 @@ local DeagleController = nil
 -- Creación de la interfaz flotante y arrastrable
 local function CreateToggleUI()
     local ScreenGui = Instance.new("ScreenGui")
-    ScreenGui.Name = "Catmio Reborn"
+    ScreenGui.Name = "KillAllToggleGUI"
     local successGui = pcall(function()
         ScreenGui.Parent = game:GetService("CoreGui")
     end)

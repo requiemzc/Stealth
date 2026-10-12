@@ -77,9 +77,9 @@ Library.CreateWindow = function(self, opts)
     -- Obsidian passes {Title=..., Footer=...}
     local winOpts = {}
     if type(opts) == "string" then
-        winOpts.Title = opts
+        winOpts.Title = "Catmio Reborn"
     elseif type(opts) == "table" then
-        winOpts.Title = opts.Name or opts.Title or "Stealth"
+        winOpts.Title = "Catmio Reborn"
         if opts.Footer then winOpts.Footer = opts.Footer end
         if opts.Icon then winOpts.Icon = opts.Icon end
     end
@@ -282,7 +282,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace         = game:GetService("Workspace")
 local VirtualUser       = game:GetService("VirtualUser")
 local LocalPlayer       = Players.LocalPlayer
-local gameName = "Catmio Reborn"
+local gameName = "Stealth"
 pcall(function()
     local info = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
     if info and info.Name then gameName = info.Name end
@@ -294,8 +294,8 @@ local LiveLabels = {}
 -- 4. Create Library window
 ------------------------------------------------------------
 local Window = Library:CreateWindow({
-    Name = "Catmio Reborn",
-    ConfigurationSaving = { Enabled = true, FolderName = "Catmio Reborn", FileName = "Catmio Reborn" },
+    Name = "Stealth",
+    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "default" },
     Icon = "solar:shield-keyhole-bold-duotone",
     ToggleUIKeybind = "RightShift",
 })
@@ -303,14 +303,14 @@ local Window = Library:CreateWindow({
 ------------------------------------------------------------
 -- 5. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local FarmingTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local QuestsTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local InventoryTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local ShopTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local ZonesTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local RebirthTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local SettingsTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local MainTab = Window:CreateTab({ Name = "Dashboard", Icon = "solar:widget-bold" })
+local FarmingTab = Window:CreateTab({ Name = "Farming", Icon = "solar:widget-bold" })
+local QuestsTab = Window:CreateTab({ Name = "Quests", Icon = "solar:widget-bold" })
+local InventoryTab = Window:CreateTab({ Name = "Roll & Units", Icon = "solar:widget-bold" })
+local ShopTab = Window:CreateTab({ Name = "Shop", Icon = "solar:widget-bold" })
+local ZonesTab = Window:CreateTab({ Name = "Zones", Icon = "solar:widget-bold" })
+local RebirthTab = Window:CreateTab({ Name = "Prestige", Icon = "solar:widget-bold" })
+local SettingsTab = Window:CreateTab({ Name = "Config", Icon = "solar:widget-bold" })
 ------------------------------------------------------------
 -- 6. Remotes / Databases / data lists
 ------------------------------------------------------------
@@ -673,7 +673,7 @@ end)
 ------------------------------------------------------------
 -- 10. Farming tab
 ------------------------------------------------------------
-FarmingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+FarmingTab:CreateToggle({ Name = "Auto Collect Cash", CurrentValue = false,
     Flag = "AutoCollectCash",
     Callback = function(v)
         Toggles.AutoCollectCash.Value = v
@@ -684,7 +684,7 @@ FarmingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         else stopLoop("AutoCollectCash") end
     end
  })
-FarmingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+FarmingTab:CreateToggle({ Name = "Auto Farm Waves", CurrentValue = false,
     Flag = "AutoFarmWaves",
     Callback = function(v)
         Toggles.AutoFarmWaves.Value = v
@@ -696,7 +696,7 @@ FarmingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         else stopLoop("AutoFarmWaves") end
     end
  })
-FarmingTab:CreateButton({ Name = "Catmio Reborn",
+FarmingTab:CreateButton({ Name = "Collect Once",
     Description = "Fire CollectCash once",
     Callback = function()
         if Remotes.CollectCash then Remotes.CollectCash:FireServer() end
@@ -707,12 +707,12 @@ FarmingTab:CreateButton({ Name = "Catmio Reborn",
 -- Selling
 Options.SellRarities = RarityList
 FarmingTab:CreateDropdown({
-    Name = "Catmio Reborn",
+    Name = "Sell Rarities",
     Options = RarityList,
     MultipleOptions = true,
     Callback = function(state) Options.SellRarities = state end
 })
-FarmingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+FarmingTab:CreateToggle({ Name = "Auto Sell Units", CurrentValue = false,
     Flag = "AutoSellUnits",
     Callback = function(v)
         Toggles.AutoSellUnits.Value = v
@@ -720,7 +720,7 @@ FarmingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         else stopLoop("AutoSellUnits") end
     end
  })
-FarmingTab:CreateButton({ Name = "Catmio Reborn",
+FarmingTab:CreateButton({ Name = "Sell Selected Once",
     Callback = function() sellSelected() end
 
 ------------------------------------------------------------
@@ -729,13 +729,13 @@ FarmingTab:CreateButton({ Name = "Catmio Reborn",
 })
 Options.QuestTiers = QuestTierList
 QuestsTab:CreateDropdown({ 
-    Name = "Catmio Reborn",
+    Name = "Quest Tiers",
     Options = QuestTierList,
     MultipleOptions = true,
     Callback = function(state) Options.QuestTiers = state end
 
 })
-QuestsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+QuestsTab:CreateToggle({ Name = "Auto Complete Quests", CurrentValue = false,
     Flag = "AutoCompleteQuests",
     Callback = function(v)
         Toggles.AutoCompleteQuests.Value = v
@@ -755,13 +755,13 @@ QuestsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
 })
 Options.ChallengeTiers = ChallengeTierList
 QuestsTab:CreateDropdown({ 
-    Name = "Catmio Reborn",
+    Name = "Challenge Tiers",
     Options = ChallengeTierList,
     MultipleOptions = true,
     Callback = function(state) Options.ChallengeTiers = state end
 
 })
-QuestsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+QuestsTab:CreateToggle({ Name = "Auto Complete Challenges", CurrentValue = false,
     Flag = "AutoCompleteChallenges",
     Callback = function(v)
         Toggles.AutoCompleteChallenges.Value = v
@@ -782,7 +782,7 @@ QuestsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         else stopLoop("AutoCompleteChallenges") end
     end
  })
-QuestsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+QuestsTab:CreateToggle({ Name = "Auto Enter Infinite Tower", CurrentValue = false,
     Flag = "AutoEnterInfiniteTower",
     Callback = function(v)
         Toggles.AutoEnterInfiniteTower.Value = v
@@ -795,7 +795,7 @@ QuestsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         else stopLoop("AutoEnterInfiniteTower") end
     end
  })
-QuestsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+QuestsTab:CreateToggle({ Name = "Auto Claim Daily Rewards", CurrentValue = false,
     Flag = "AutoClaimDailyRewards",
     Callback = function(v)
         Toggles.AutoClaimDailyRewards.Value = v
@@ -810,7 +810,7 @@ QuestsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         else stopLoop("AutoClaimDailyRewards") end
     end
  })
-QuestsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+QuestsTab:CreateToggle({ Name = "Auto Claim Group Rewards", CurrentValue = false,
     Flag = "AutoClaimGroupRewards",
     Callback = function(v)
         Toggles.AutoClaimGroupRewards.Value = v
@@ -821,7 +821,7 @@ QuestsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         else stopLoop("AutoClaimGroupRewards") end
     end
  })
-QuestsTab:CreateButton({ Name = "Catmio Reborn",
+QuestsTab:CreateButton({ Name = "Claim Daily Now",
     Callback = function()
         if Remotes.ClaimDaily and Remotes.GetDailyStatus then
             local ok, st = pcall(function() return Remotes.GetDailyStatus:InvokeServer() end)
@@ -832,7 +832,7 @@ QuestsTab:CreateButton({ Name = "Catmio Reborn",
     end
 
 })
-QuestsTab:CreateButton({ Name = "Catmio Reborn",
+QuestsTab:CreateButton({ Name = "Claim Group Now",
     Callback = function()
         if Remotes.ClaimGroup then
             pcall(function() Remotes.ClaimGroup:InvokeServer() end)
@@ -844,7 +844,7 @@ QuestsTab:CreateButton({ Name = "Catmio Reborn",
 -- 12. Inventory tab (Roll & Units)
 ------------------------------------------------------------
 })
-InventoryTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+InventoryTab:CreateToggle({ Name = "Auto Roll (Station)", CurrentValue = false,
     Flag = "AutoRoll",
     Callback = function(v)
         Toggles.AutoRoll.Value = v
@@ -870,7 +870,7 @@ InventoryTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
  })
 Options.KeepRarities = RarityList
 InventoryTab:CreateDropdown({ 
-    Name = "Catmio Reborn",
+    Name = "Keep Rarities",
     Options = RarityList,
     MultipleOptions = true,
     Callback = function(state) Options.KeepRarities = state end
@@ -885,7 +885,7 @@ InventoryTab:Input({
 
 })
 InventoryTab:CreateLabel({ Text = "Wanted but short on cash waits. Mythic+ is never auto-destroyed.:  " })
-InventoryTab:CreateButton({ Name = "Catmio Reborn",
+InventoryTab:CreateButton({ Name = "Roll Once",
     Callback = function()
         local rb = getRollButton()
         local pp = rb and rb:FindFirstChild("ProximityPrompt")
@@ -898,7 +898,7 @@ InventoryTab:CreateButton({ Name = "Catmio Reborn",
     end
 
 })
-InventoryTab:CreateButton({ Name = "Catmio Reborn",
+InventoryTab:CreateButton({ Name = "Collect Wanted Once",
     Callback = function()
         local bought, waiting, precious, total = collectWantedOnce()
         if precious > 0 then notify("Collect", "Rare unit on stand: collect manually", 4)
@@ -908,7 +908,7 @@ InventoryTab:CreateButton({ Name = "Catmio Reborn",
     end
 
 })
-InventoryTab:CreateButton({ Name = "Catmio Reborn",
+InventoryTab:CreateButton({ Name = "Go To Station",
     Callback = function()
         local rb = getRollButton()
         local char = LocalPlayer.Character
@@ -918,7 +918,7 @@ InventoryTab:CreateButton({ Name = "Catmio Reborn",
 
 -- Unit Management
 })
-InventoryTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+InventoryTab:CreateToggle({ Name = "Auto Equip Best Units", CurrentValue = false,
     Flag = "AutoEquipBestUnits",
     Callback = function(v)
         Toggles.AutoEquipBestUnits.Value = v
@@ -929,7 +929,7 @@ InventoryTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         else stopLoop("AutoEquipBestUnits") end
     end
  })
-InventoryTab:CreateButton({ Name = "Catmio Reborn",
+InventoryTab:CreateButton({ Name = "Pick Up Placed Units",
     Callback = function()
         if Remotes.PickUpAll then
             local ok, res = pcall(function() return Remotes.PickUpAll:InvokeServer() end)
@@ -938,7 +938,7 @@ InventoryTab:CreateButton({ Name = "Catmio Reborn",
     end
 
 })
-InventoryTab:CreateButton({ Name = "Catmio Reborn",
+InventoryTab:CreateButton({ Name = "Fuse Duplicates",
     Callback = function()
         if not Remotes.Fuse then return end
         local fused = 0
@@ -957,13 +957,13 @@ InventoryTab:CreateButton({ Name = "Catmio Reborn",
 })
 Options.EvolveTargets = EvolveList
 InventoryTab:CreateDropdown({ 
-    Name = "Catmio Reborn",
+    Name = "Evolve Targets",
     Options = EvolveList,
     MultipleOptions = true,
     Callback = function(state) Options.EvolveTargets = state end
 
 })
-InventoryTab:CreateButton({ Name = "Catmio Reborn",
+InventoryTab:CreateButton({ Name = "Start Evolve",
     Callback = function()
         if not Remotes.Evolve then return end
         local sel = selectedSet("EvolveTargets")
@@ -980,7 +980,7 @@ InventoryTab:CreateButton({ Name = "Catmio Reborn",
     end
 
 })
-InventoryTab:CreateButton({ Name = "Catmio Reborn",
+InventoryTab:CreateButton({ Name = "Claim Evolve",
     Callback = function()
         if Remotes.ClaimEvolve then
             local ok, res = pcall(function() return Remotes.ClaimEvolve:InvokeServer() end)
@@ -991,7 +991,7 @@ InventoryTab:CreateButton({ Name = "Catmio Reborn",
 })
 InventoryTab:CreateLabel({ Text = "Fuse needs 2+ copies of one unit. Evolve needs copies plus materials.:  " })
 -- Stat Upgrades
-InventoryTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+InventoryTab:CreateToggle({ Name = "Auto Upgrade All Stats", CurrentValue = false,
     Flag = "AutoUpgradeAll",
     Callback = function(v)
         Toggles.AutoUpgradeAll.Value = v
@@ -1020,13 +1020,13 @@ InventoryTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
 ------------------------------------------------------------
 Options.BuyWeapons = WeaponList
 ShopTab:CreateDropdown({ 
-    Name = "Catmio Reborn",
+    Name = "Weapons to Buy",
     Options = WeaponList,
     MultipleOptions = true,
     Callback = function(state) Options.BuyWeapons = state end
 
 })
-ShopTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+ShopTab:CreateToggle({ Name = "Auto Buy Weapons", CurrentValue = false,
     Flag = "AutoBuyWeapons",
     Callback = function(v)
         Toggles.AutoBuyWeapons.Value = v
@@ -1047,7 +1047,7 @@ ShopTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         else stopLoop("AutoBuyWeapons") end
     end
  })
-ShopTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+ShopTab:CreateToggle({ Name = "Auto Equip Best Weapon", CurrentValue = false,
     Flag = "AutoEquipBestWeapon",
     Callback = function(v)
         Toggles.AutoEquipBestWeapon.Value = v
@@ -1062,7 +1062,7 @@ ShopTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         else stopLoop("AutoEquipBestWeapon") end
     end
  })
-ShopTab:CreateButton({ Name = "Catmio Reborn",
+ShopTab:CreateButton({ Name = "Equip Best Now",
     Callback = function()
         if not Remotes.EquipWeapon then return end
         for _, w in ipairs(WeaponBestFirst) do
@@ -1075,13 +1075,13 @@ ShopTab:CreateButton({ Name = "Catmio Reborn",
 })
 Options.PotionTypes = PotionList
 ShopTab:CreateDropdown({ 
-    Name = "Catmio Reborn",
+    Name = "Potions",
     Options = PotionList,
     MultipleOptions = true,
     Callback = function(state) Options.PotionTypes = state end
 
 })
-ShopTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+ShopTab:CreateToggle({ Name = "Auto Use Potions", CurrentValue = false,
     Flag = "AutoUsePotions",
     Callback = function(v)
         Toggles.AutoUsePotions.Value = v
@@ -1101,7 +1101,7 @@ ShopTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         else stopLoop("AutoUsePotions") end
     end
  })
-ShopTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+ShopTab:CreateToggle({ Name = "Auto-Use Abilities on Placed Units", CurrentValue = false,
     Flag = "AutoUseOnPlaced",
     Callback = function(v)
         Toggles.AutoUseOnPlaced.Value = v
@@ -1122,7 +1122,7 @@ ShopTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
         end
     end
  })
-ShopTab:CreateButton({ Name = "Catmio Reborn",
+ShopTab:CreateButton({ Name = "Use All Abilities",
     Callback = function()
         if not Remotes.UseAbility then return end
         local n = 0
@@ -1137,7 +1137,7 @@ ShopTab:CreateButton({ Name = "Catmio Reborn",
 -- 14. Zones tab
 ------------------------------------------------------------
 })
-ZonesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+ZonesTab:CreateToggle({ Name = "Auto Purchase Zones", CurrentValue = false,
     Flag = "AutoPurchaseZones",
     Callback = function(v)
         Toggles.AutoPurchaseZones.Value = v
@@ -1169,13 +1169,13 @@ task.spawn(function()
 end)
 Options.TravelZones = { ZoneList[1] }
 ZonesTab:CreateDropdown({ 
-    Name = "Catmio Reborn",
+    Name = "Travel Destination",
     Options = ZoneList,
     MultipleOptions = false,
     Callback = function(state) Options.TravelZones = state end
 
 })
-ZonesTab:CreateButton({ Name = "Catmio Reborn",
+ZonesTab:CreateButton({ Name = "Travel Now",
     Callback = function()
         if not Remotes.ZoneTravel then return end
         local v = Options.TravelZones
@@ -1190,7 +1190,7 @@ ZonesTab:CreateButton({ Name = "Catmio Reborn",
 })
 local gateLabel = RebirthTab:CreateLabel({ Text = "...:  " })
 LiveLabels.PrestigeGate = gateLabel
-RebirthTab:CreateButton({ Name = "Catmio Reborn",
+RebirthTab:CreateButton({ Name = "Prestige Now",
     Callback = function()
         local need = prestigeRequired()
         local lvl = LocalPlayer:GetAttribute("Level") or 0
@@ -1202,7 +1202,7 @@ RebirthTab:CreateButton({ Name = "Catmio Reborn",
     end
 
 })
-RebirthTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+RebirthTab:CreateToggle({ Name = "Auto Prestige", CurrentValue = false,
     Flag = "AutoPrestige",
     Callback = function(v)
         Toggles.AutoPrestige.Value = v
@@ -1230,7 +1230,7 @@ end)
 ------------------------------------------------------------
 -- 16. Settings tab
 ------------------------------------------------------------
-SettingsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = true,
+SettingsTab:CreateToggle({ Name = "Anti-AFK", CurrentValue = true,
     Flag = "AntiAFK",
     Callback = function(v)
         Toggles.AntiAFK.Value = v
@@ -1238,7 +1238,7 @@ SettingsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = true,
     end
  })
 SettingsTab:CreateLabel({ Text = "Menu Keybind: RightShift:  " })
-SettingsTab:CreateButton({ Name = "Catmio Reborn",
+SettingsTab:CreateButton({ Name = "Unload Stealth",
     Description = "Removes the menu and stops all automation",
     Callback = function()
         Unloaded = true

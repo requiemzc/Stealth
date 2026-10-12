@@ -252,13 +252,13 @@ local function refreshESP()
                 if myRoot and hrp then
                     if not beam or not beam.Parent then
                         local a0 = Instance.new("Attachment")
-                        a0.Name = "Catmio Reborn"
+                        a0.Name = "StealthTracerA0"
                         a0.Parent = myRoot
                         local a1 = Instance.new("Attachment")
-                        a1.Name = "Catmio Reborn"
+                        a1.Name = "StealthTracerA1"
                         a1.Parent = hrp
                         beam = Instance.new("Beam")
-                        beam.Name = "Catmio Reborn"
+                        beam.Name = "StealthTracer"
                         beam.Attachment0 = a0
                         beam.Attachment1 = a1
                         beam.Width0 = 0.15
@@ -468,9 +468,9 @@ Library.CreateWindow = function(self, opts)
     -- Obsidian passes {Title=..., Footer=...}
     local winOpts = {}
     if type(opts) == "string" then
-        winOpts.Title = opts
+        winOpts.Title = "Catmio Reborn"
     elseif type(opts) == "table" then
-        winOpts.Title = opts.Name or opts.Title or "Stealth"
+        winOpts.Title = "Catmio Reborn"
         if opts.Footer then winOpts.Footer = opts.Footer end
         if opts.Icon then winOpts.Icon = opts.Icon end
     end
@@ -670,15 +670,15 @@ if not Library then
 end
 local Toggles = Library.Flags
 
-local gameName = "Catmio Reborn"
+local gameName = "Murderers VS Sheriffs DUELS"
 pcall(function()
     local info = MarketplaceService:GetProductInfo(12355337193)
     if info and info.Name then gameName = info.Name end
 end)
 
 local Window = Library:CreateWindow({
-    Name = "Catmio Reborn",
-    ConfigurationSaving = { Enabled = true, FolderName = "Catmio Reborn", FileName = "Catmio Reborn" },
+    Name = "Stealth | MVSD",
+    ConfigurationSaving = { Enabled = true, FolderName = "Catmio Reborn", FileName = "mvsduel" },
     Icon = "solar:shield-keyhole-bold-duotone",
     ToggleUIKeybind = "RightShift",
 })
@@ -686,11 +686,11 @@ local Window = Library:CreateWindow({
 ------------------------------------------------------------
 -- Main tab
 ------------------------------------------------------------
-local MainTab = Window:CreateTab({ Name = "Catmio Reborn", Desc = "Core combat features", Icon = "zap" })
+local MainTab = Window:CreateTab({ Name = "Main", Desc = "Core combat features", Icon = "zap" })
 
 MainTab:CreateSection("Auto Combat")
 MainTab:CreateToggle({
-    Name = "Catmio Reborn",
+    Name = "Auto Kill All (Gun)",
     Desc = "Auto-fires ShootGun remote at the nearest enemy's predicted position.",
     CurrentValue = false,
     Flag = "AutoShoot",
@@ -705,7 +705,7 @@ MainTab:CreateToggle({
     end,
 })
 MainTab:CreateToggle({
-    Name = "Catmio Reborn",
+    Name = "Auto Equip Gun",
     Desc = "Auto-presses the '2' key to equip your gun when not holding a tool.",
     CurrentValue = false,
     Flag = "AutoEquip",
@@ -722,7 +722,7 @@ MainTab:CreateToggle({
 
 MainTab:CreateSection("Aim Tuning")
 MainTab:CreateSlider({
-    Name = "Catmio Reborn",
+    Name = "Max Target Distance",
     Desc = "How far away an enemy can be before we ignore them.",
     Range = { 50, 2000 },
     Increment = 25,
@@ -732,7 +732,7 @@ MainTab:CreateSlider({
     Callback = function(v) Config.aimMaxDistance = v end,
 })
 MainTab:CreateSlider({
-    Name = "Catmio Reborn",
+    Name = "Prediction Rate",
     Desc = "How much we lead the target by their velocity. Higher = more lead.",
     Range = { 0.0, 0.5 },
     Increment = 0.005,
@@ -741,7 +741,7 @@ MainTab:CreateSlider({
     Callback = function(v) Config.aimPredRate = v end,
 })
 MainTab:CreateSlider({
-    Name = "Catmio Reborn",
+    Name = "Fire Rate Cooldown",
     Desc = "Minimum seconds between shots. Lower = faster firing (may get kicked).",
     Range = { 0.05, 0.5 },
     Increment = 0.01,
@@ -751,7 +751,7 @@ MainTab:CreateSlider({
     Callback = function(v) Config.fireRateCooldown = v end,
 })
 MainTab:CreateSlider({
-    Name = "Catmio Reborn",
+    Name = "Equip Cooldown",
     Desc = "How often to retry pressing '2' if not holding a tool.",
     Range = { 0.1, 2.0 },
     Increment = 0.1,
@@ -761,7 +761,7 @@ MainTab:CreateSlider({
     Callback = function(v) Config.equipCooldown = v end,
 })
 MainTab:CreateToggle({
-    Name = "Catmio Reborn",
+    Name = "Show Aim Target",
     Desc = "Draw a red box around the current auto-shoot target.",
     CurrentValue = false,
     Flag = "ShowAimTarget",
@@ -774,10 +774,10 @@ MainTab:CreateToggle({
 ------------------------------------------------------------
 -- ESP tab
 ------------------------------------------------------------
-local ESPTab = Window:CreateTab({ Name = "Catmio Reborn", Desc = "Visual highlights", Icon = "eye" })
+local ESPTab = Window:CreateTab({ Name = "ESP", Desc = "Visual highlights", Icon = "eye" })
 ESPTab:CreateSection("Player ESP")
 ESPTab:CreateToggle({
-    Name = "Catmio Reborn",
+    Name = "Player ESP (Highlights)",
     Desc = "Highlight every player through walls. Red = Murderer, Blue = Sheriff, Gray = Innocent.",
     CurrentValue = false,
     Flag = "PlayerESP",
@@ -787,7 +787,7 @@ ESPTab:CreateToggle({
     end,
 })
 ESPTab:CreateToggle({
-    Name = "Catmio Reborn",
+    Name = "Tracers (Beams)",
     Desc = "Draw a colored beam from you to each player.",
     CurrentValue = false,
     Flag = "TracerESP",
@@ -809,17 +809,17 @@ end)
 ------------------------------------------------------------
 -- Movement tab
 ------------------------------------------------------------
-local MovementTab = Window:CreateTab({ Name = "Catmio Reborn", Desc = "Character modifiers", Icon = "wind" })
+local MovementTab = Window:CreateTab({ Name = "Movement", Desc = "Character modifiers", Icon = "wind" })
 MovementTab:CreateSection("Movement")
 MovementTab:CreateToggle({
-    Name = "Catmio Reborn",
+    Name = "Noclip",
     Desc = "Walk through walls. Disable before round end to avoid suspicion.",
     CurrentValue = false,
     Flag = "Noclip",
     Callback = function(v) setNoclip(v) end,
 })
 MovementTab:CreateToggle({
-    Name = "Catmio Reborn",
+    Name = "Infinite Jump",
     Desc = "Jump again in mid-air.",
     CurrentValue = false,
     Flag = "InfiniteJump",
@@ -828,14 +828,14 @@ MovementTab:CreateToggle({
 
 MovementTab:CreateSection("Walk Speed")
 MovementTab:CreateToggle({
-    Name = "Catmio Reborn",
+    Name = "Lock Walk Speed",
     Desc = "Re-apply walk speed if the game resets it.",
     CurrentValue = false,
     Flag = "LockWalkSpeed",
     Callback = function(v) setWalkSpeedLock(v) end,
 })
 MovementTab:CreateSlider({
-    Name = "Catmio Reborn",
+    Name = "Walk Speed Value",
     Range = { 16, 200 },
     Increment = 1,
     Suffix = " sps",
@@ -846,14 +846,14 @@ MovementTab:CreateSlider({
 
 MovementTab:CreateSection("Jump Power")
 MovementTab:CreateToggle({
-    Name = "Catmio Reborn",
+    Name = "Lock Jump Power",
     Desc = "Re-apply jump power if the game resets it.",
     CurrentValue = false,
     Flag = "LockJumpPower",
     Callback = function(v) setJumpPowerLock(v) end,
 })
 MovementTab:CreateSlider({
-    Name = "Catmio Reborn",
+    Name = "Jump Power Value",
     Range = { 50, 500 },
     Increment = 1,
     CurrentValue = 50,
@@ -864,22 +864,22 @@ MovementTab:CreateSlider({
 ------------------------------------------------------------
 -- Utilities tab
 ------------------------------------------------------------
-local UtilitiesTab = Window:CreateTab({ Name = "Catmio Reborn", Desc = "Misc features", Icon = "wrench" })
+local UtilitiesTab = Window:CreateTab({ Name = "Utilities", Desc = "Misc features", Icon = "wrench" })
 UtilitiesTab:CreateSection("Server Utilities")
 UtilitiesTab:CreateToggle({
-    Name = "Catmio Reborn",
+    Name = "Anti-AFK",
     Desc = "Prevents being kicked for inactivity.",
     CurrentValue = false,
     Flag = "AntiAFK",
     Callback = function(v) setAntiAFK(v) end,
 })
 UtilitiesTab:CreateButton({
-    Name = "Catmio Reborn",
+    Name = "Copy Discord Invite",
     Desc = "Copies the Stealth Discord link to your clipboard.",
     Callback = function()
         pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
         Library:Notify({
-            Title = "Catmio Reborn",
+            Title = "Stealth",
             Content = "Discord invite copied!",
             Duration = 3,
             Type = "Success",
@@ -887,7 +887,7 @@ UtilitiesTab:CreateButton({
     end,
 })
 UtilitiesTab:CreateButton({
-    Name = "Catmio Reborn",
+    Name = "Unload Stealth",
     Desc = "Closes the UI and removes all overlays.",
     Callback = function()
         if SELF.destroy then SELF.destroy() end
@@ -908,7 +908,7 @@ end
 -- Welcome
 ------------------------------------------------------------
 Library:Notify({
-    Title = "Catmio Reborn",
+    Title = "Stealth | MVSD",
     Content = gameName .. " loaded! Press RightShift to toggle the UI.",
     Duration = 5,
     Type = "Success",

@@ -61,7 +61,7 @@ if not AirflowOK or not Airflow then
     Airflow = nil
 end
 
-local gameName = "Catmio Reborn"
+local gameName = "Blox Fruits"
 pcall(function()
     local info = MarketplaceService:GetProductInfo(2753915549)
     if info and info.Name then gameName = info.Name end
@@ -74,12 +74,12 @@ if Airflow then
     Toggles = Airflow.Flags
     Window = Airflow:CreateWindow({
         Name = "Catmio Reborn",
-        ConfigurationSaving = { Enabled = true, FolderName = "Catmio Reborn", FileName = "Catmio Reborn" },
+        ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "bloxfruits" },
         Icon = "solar:shield-keyhole-bold-duotone",
         ToggleUIKeybind = "RightShift",
     })
 
-    local StatusTab = Window:CreateTab({ Name = "Catmio Reborn", Desc = "Quick info", Icon = "info" })
+    local StatusTab = Window:CreateTab({ Name = "Status", Desc = "Quick info", Icon = "info" })
     StatusTab:CreateLabel({ Text = "Hub: Stealth (Airflow)" })
     StatusTab:CreateLabel({ Text = "Game: " .. gameName })
     StatusTab:CreateLabel({ Text = "Place ID: 2753915549" })
@@ -87,7 +87,7 @@ if Airflow then
     StatusTab:CreateLabel({ Text = "The Quantum Onyx UI loads separately in the background." })
     StatusTab:CreateDivider()
     StatusTab:CreateButton({
-        Name = "Catmio Reborn",
+        Name = "Reload Quantum Onyx",
         Desc = "Re-runs the Quantum Onyx script (in case it failed to load).",
         Callback = function()
             task.spawn(function()
@@ -100,10 +100,10 @@ if Airflow then
         end,
     })
 
-    local QuickTab = Window:CreateTab({ Name = "Catmio Reborn", Desc = "Wraps common Quantum Onyx settings", Icon = "zap" })
+    local QuickTab = Window:CreateTab({ Name = "Quick Toggles", Desc = "Wraps common Quantum Onyx settings", Icon = "zap" })
     QuickTab:CreateSection("Combat")
     QuickTab:CreateToggle({
-        Name = "Catmio Reborn",
+        Name = "Auto Attack",
         Desc = "Sets tbl.AutoAttack. Quantum Onyx must be running.",
         CurrentValue = true,
         Flag = "QuickAutoAttack",
@@ -114,7 +114,7 @@ if Airflow then
         end,
     })
     QuickTab:CreateToggle({
-        Name = "Catmio Reborn",
+        Name = "Attack Mobs",
         Desc = "Sets tbl.attackmobs.",
         CurrentValue = true,
         Flag = "QuickAttackMobs",
@@ -125,7 +125,7 @@ if Airflow then
         end,
     })
     QuickTab:CreateToggle({
-        Name = "Catmio Reborn",
+        Name = "Bring Monster",
         Desc = "Sets tbl.BringMonster. Teleports mobs to you for faster farming.",
         CurrentValue = true,
         Flag = "QuickBringMonster",
@@ -136,7 +136,7 @@ if Airflow then
         end,
     })
     QuickTab:CreateSlider({
-        Name = "Catmio Reborn",
+        Name = "Bring Monster Radius",
         Range = { 50, 1000 },
         Increment = 25,
         Suffix = " studs",
@@ -151,7 +151,7 @@ if Airflow then
 
     QuickTab:CreateSection("Speed")
     QuickTab:CreateDropdown({
-        Name = "Catmio Reborn",
+        Name = "Fast Settings Mode",
         Options = { "Fast Attack", "Safe Mode", "Quantum Attack" },
         CurrentOption = "Fast Attack",
         Flag = "QuickFastSettings",
@@ -162,7 +162,7 @@ if Airflow then
         end,
     })
     QuickTab:CreateSlider({
-        Name = "Catmio Reborn",
+        Name = "Fast Attack Delay",
         Range = { 0, 1 },
         Increment = 0.01,
         Suffix = " s",
@@ -177,7 +177,7 @@ if Airflow then
 
     QuickTab:CreateSection("Team")
     QuickTab:CreateDropdown({
-        Name = "Catmio Reborn",
+        Name = "Team",
         Options = { "Pirates", "Marines" },
         CurrentOption = "Pirates",
         Flag = "QuickTeam",
@@ -188,7 +188,7 @@ if Airflow then
 
     QuickTab:CreateSection("Mastery")
     QuickTab:CreateToggle({
-        Name = "Catmio Reborn",
+        Name = "Mastery Farm",
         Desc = "Sets tbl.MasteryFarm.",
         CurrentValue = false,
         Flag = "QuickMasteryFarm",
@@ -199,7 +199,7 @@ if Airflow then
         end,
     })
     QuickTab:CreateSlider({
-        Name = "Catmio Reborn",
+        Name = "Mob Health Threshold",
         Range = { 1, 500 },
         Increment = 5,
         CurrentValue = 50,
@@ -211,9 +211,9 @@ if Airflow then
         end,
     })
 
-    local ServerTab = Window:CreateTab({ Name = "Catmio Reborn", Desc = "Server travel", Icon = "server" })
+    local ServerTab = Window:CreateTab({ Name = "Server", Desc = "Server travel", Icon = "server" })
     ServerTab:CreateButton({
-        Name = "Catmio Reborn",
+        Name = "Rejoin current server",
         Callback = function()
             task.spawn(function()
                 pcall(function()
@@ -223,7 +223,7 @@ if Airflow then
         end,
     })
     ServerTab:CreateButton({
-        Name = "Catmio Reborn",
+        Name = "Hop to a different server",
         Callback = function()
             task.spawn(function()
                 pcall(function()
@@ -239,34 +239,34 @@ if Airflow then
                         end
                     end
                     if Airflow then
-                        Airflow:Notify({ Title = "Catmio Reborn", Content = "No other servers found.", Duration = 3, Type = "Warning" })
+                        Airflow:Notify({ Title = "Stealth", Content = "No other servers found.", Duration = 3, Type = "Warning" })
                     end
                 end)
             end)
         end,
     })
     ServerTab:CreateButton({
-        Name = "Catmio Reborn",
+        Name = "Copy Job ID",
         Callback = function()
             pcall(function()
                 setclipboard(game.JobId)
                 if Airflow then
-                    Airflow:Notify({ Title = "Catmio Reborn", Content = "Job ID copied: " .. game.JobId, Duration = 3, Type = "Success" })
+                    Airflow:Notify({ Title = "Stealth", Content = "Job ID copied: " .. game.JobId, Duration = 3, Type = "Success" })
                 end
             end)
         end,
     })
 
-    local UtilTab = Window:CreateTab({ Name = "Catmio Reborn", Desc = "Misc", Icon = "wrench" })
+    local UtilTab = Window:CreateTab({ Name = "Utilities", Desc = "Misc", Icon = "wrench" })
     UtilTab:CreateButton({
-        Name = "Catmio Reborn",
+        Name = "Copy Discord Invite",
         Callback = function()
             pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
-            Airflow:Notify({ Title = "Catmio Reborn", Content = "Discord invite copied!", Duration = 3, Type = "Success" })
+            Airflow:Notify({ Title = "Stealth | Blox Fruits", Content = "Discord invite copied!", Duration = 3, Type = "Success" })
         end,
     })
     UtilTab:CreateButton({
-        Name = "Catmio Reborn",
+        Name = "Unload Stealth",
         Callback = function()
             if SELF.destroy then SELF.destroy() end
             if Window then Window:Destroy() end
@@ -280,7 +280,7 @@ if Airflow then
     end
 
     Airflow:Notify({
-        Title = "Catmio Reborn",
+        Title = "Stealth | Blox Fruits",
         Content = gameName .. " wrapper loaded. Quantum Onyx script loading in background... Press RightShift to toggle Stealth UI.",
         Duration = 6,
         Type = "Success",
@@ -1304,7 +1304,7 @@ if not RunService then
                                 end
 
                                 bodyVelocity = Instance.new("BodyVelocity", humanoidRootPart)
-                                bodyVelocity.Name = "Catmio Reborn"
+                                bodyVelocity.Name = "PartVelocuty"
                                 bodyVelocity.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
                                 bodyVelocity.Velocity = Vector3.zero
                                 bodyVelocity.P = 1000
@@ -1339,7 +1339,7 @@ if not RunService then
                                 end
                         end
 
-                        return { Name = "Catmio Reborn" }
+                        return { Name = "" }
                 end
 
                 local function fn13(arg)
@@ -2980,7 +2980,7 @@ Restock: %s
 
                                 if not bringBodyPos then
                                         bringBodyPos = Instance.new("BodyPosition")
-                                        bringBodyPos.Name = "Catmio Reborn"
+                                        bringBodyPos.Name = "BringBodyPos"
                                         bringBodyPos.MaxForce = Vector3.new(1000000, 1000000, 1000000)
                                         bringBodyPos.P = 8000
                                         bringBodyPos.D = 600
@@ -4523,7 +4523,7 @@ Restock: %s
                         return
                 end
                 local folder = Instance.new("Folder", adornee)
-                folder.Name = "Catmio Reborn"
+                folder.Name = "ESPquantumONYX"
                 tbl6._ActiveESPs[adornee] = { Folder = folder, Category = arg4 or "General" }
                 local n2 = math.clamp(adornee.Size.Y / 2 + 2.2, 2.6, 40)
 
@@ -4532,7 +4532,7 @@ Restock: %s
                 end
 
                 local billboardGui = Instance.new("BillboardGui", folder)
-                billboardGui.Name = "Catmio Reborn"
+                billboardGui.Name = "ESP_Billboard"
                 billboardGui.Adornee = adornee
                 billboardGui.Size = UDim2.new(0, 260, 0, arg3 and 42 or 26)
                 billboardGui.StudsOffset = Vector3.new(0, n2, 0)
@@ -4541,7 +4541,7 @@ Restock: %s
                 billboardGui.MaxDistance = 100000
                 billboardGui.ClipsDescendants = false
                 local frame = Instance.new("Frame", billboardGui)
-                frame.Name = "Catmio Reborn"
+                frame.Name = "IconContainer"
                 frame.Size = UDim2.new(0, 28, 0, 28)
                 frame.Position = UDim2.new(0, 0, 0.5, -14)
                 frame.BackgroundTransparency = 0.25
@@ -4556,13 +4556,13 @@ Restock: %s
                 imageLabel.Image = "rbxassetid://0"
                 Instance.new("UICorner", imageLabel).CornerRadius = UDim.new(1, 0)
                 local frame2 = Instance.new("Frame", billboardGui)
-                frame2.Name = "Catmio Reborn"
+                frame2.Name = "InfoContainer"
                 frame2.BackgroundTransparency = 1
                 frame2.Position = UDim2.new(0, 0, 0, 0)
                 frame2.Size = UDim2.new(1, 0, 1, 0)
                 frame2.ClipsDescendants = false
                 local textLabel = Instance.new("TextLabel", frame2)
-                textLabel.Name = "Catmio Reborn"
+                textLabel.Name = "NameLabel"
                 textLabel.BackgroundTransparency = 1
                 textLabel.TextSize = 12
                 textLabel.Font = Enum.Font.GothamBold
@@ -4585,13 +4585,13 @@ Restock: %s
                         textLabel.TextYAlignment = Enum.TextYAlignment.Center
                         textLabel.TextXAlignment = Enum.TextXAlignment.Left
                         local frame7 = Instance.new("Frame", frame2)
-                        frame7.Name = "Catmio Reborn"
+                        frame7.Name = "BarsContainer"
                         frame7.BackgroundTransparency = 1
                         frame7.Size = UDim2.new(0, 160, 0, 13)
                         frame7.Position = UDim2.new(0, 0, 0, 19)
                         frame7.ClipsDescendants = false
                         frame3 = Instance.new("Frame", frame7)
-                        frame3.Name = "Catmio Reborn"
+                        frame3.Name = "HealthBar"
                         frame3.Size = UDim2.new(0, 76, 0, 13)
                         frame3.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
                         frame3.BackgroundTransparency = 0.3
@@ -4603,14 +4603,14 @@ Restock: %s
                         uiStroke2.Thickness = 0.8
                         uiStroke2.Transparency = 0.4
                         frame4 = Instance.new("Frame", frame3)
-                        frame4.Name = "Catmio Reborn"
+                        frame4.Name = "Fill"
                         frame4.Size = UDim2.new(1, 0, 1, 0)
                         frame4.BackgroundColor3 = Color3.fromRGB(50, 255, 100)
                         frame4.BackgroundTransparency = 0.35
                         frame4.BorderSizePixel = 0
                         Instance.new("UICorner", frame4).CornerRadius = UDim.new(0, 3)
                         textLabel2 = Instance.new("TextLabel", frame3)
-                        textLabel2.Name = "Catmio Reborn"
+                        textLabel2.Name = "HealthText"
                         textLabel2.BackgroundTransparency = 1
                         textLabel2.Size = UDim2.new(1, 0, 1, 0)
                         textLabel2.TextSize = 9
@@ -4619,7 +4619,7 @@ Restock: %s
                         textLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
                         textLabel2.RichText = true
                         frame5 = Instance.new("Frame", frame7)
-                        frame5.Name = "Catmio Reborn"
+                        frame5.Name = "EnergyBar"
                         frame5.Size = UDim2.new(0, 76, 0, 13)
                         frame5.Position = UDim2.new(0, 80, 0, 0)
                         frame5.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
@@ -4632,14 +4632,14 @@ Restock: %s
                         uiStroke3.Thickness = 0.8
                         uiStroke3.Transparency = 0.4
                         frame6 = Instance.new("Frame", frame5)
-                        frame6.Name = "Catmio Reborn"
+                        frame6.Name = "Fill"
                         frame6.Size = UDim2.new(1, 0, 1, 0)
                         frame6.BackgroundColor3 = Color3.fromRGB(70, 180, 255)
                         frame6.BackgroundTransparency = 0.35
                         frame6.BorderSizePixel = 0
                         Instance.new("UICorner", frame6).CornerRadius = UDim.new(0, 3)
                         textLabel3 = Instance.new("TextLabel", frame5)
-                        textLabel3.Name = "Catmio Reborn"
+                        textLabel3.Name = "EnergyText"
                         textLabel3.BackgroundTransparency = 1
                         textLabel3.Size = UDim2.new(1, 0, 1, 0)
                         textLabel3.TextSize = 9
@@ -4941,7 +4941,7 @@ Restock: %s
 
         if not quantumBerryAnchors then
                 quantumBerryAnchors = Instance.new("Folder")
-                quantumBerryAnchors.Name = "Catmio Reborn"
+                quantumBerryAnchors.Name = "Quantum_Berry_Anchors"
                 quantumBerryAnchors.Parent = v2
         end
 
@@ -5040,7 +5040,7 @@ Restock: %s
 
                                                                 if not part or not part.Parent then
                                                                         part = Instance.new("Part")
-                                                                        part.Name = "Catmio Reborn" .. v24
+                                                                        part.Name = "BerryAnchor_" .. v24
                                                                         part.Size = Vector3.new(1.2, 1.2, 1.2)
                                                                         part.Transparency = 1
                                                                         part.CanCollide = false
@@ -5215,7 +5215,7 @@ Restock: %s
 
                         if not boatProtectBP then
                                 local bodyPosition = Instance.new("BodyPosition")
-                                bodyPosition.Name = "Catmio Reborn"
+                                bodyPosition.Name = "BoatProtectBP"
                                 bodyPosition.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
                                 bodyPosition.P = 100000
                                 bodyPosition.D = 1000
@@ -5229,7 +5229,7 @@ Restock: %s
 
                         if not boatProtectBV then
                                 local bodyVelocity = Instance.new("BodyVelocity")
-                                bodyVelocity.Name = "Catmio Reborn"
+                                bodyVelocity.Name = "BoatProtectBV"
                                 bodyVelocity.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
                                 bodyVelocity.Velocity = Vector3.zero
                                 bodyVelocity.P = 100000
@@ -6222,17 +6222,17 @@ Restock: %s
                 end
 
                 local v22 = lua4:CreateWindow({
-                        Title = "Catmio Reborn",
+                        Title = "Quantum Onyx",
                         Subtitle = "Blox Fruit",
                         Version = "v.Freemium",
                         Key = true,
                         Theme = "Purple",
                         Credits = {
-                                { Name = "Catmio Reborn", Role = "ServerOwner" },
-                                { Name = "Catmio Reborn", Role = "MainDeveloper" },
-                                { Name = "Catmio Reborn", Role = "WebDesigner" },
-                                { Name = "Catmio Reborn", Role = "Tester" },
-                                { Name = "Catmio Reborn", Role = "Support" },
+                                { Name = "Vin ", Role = "ServerOwner" },
+                                { Name = "Flazhy ", Role = "MainDeveloper" },
+                                { Name = "Kiel ", Role = "WebDesigner" },
+                                { Name = "CudalPH ", Role = "Tester" },
+                                { Name = "Pierce ", Role = "Support" },
                         },
                         SaveFile = "BloxFruits",
                 })
@@ -6634,7 +6634,7 @@ Restock: %s
                                         local tool = Instance.new("Tool")
                                         tool.RequiresHandle = false
                                         tool.CanBeDropped = false
-                                        tool.Name = "Catmio Reborn"
+                                        tool.Name = "Teleport Tool"
                                         tool:SetAttribute("ItemId", 1173)
                                         tool.ToolTip = "Tool"
 

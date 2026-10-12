@@ -77,9 +77,9 @@ Library.CreateWindow = function(self, opts)
     -- Obsidian passes {Title=..., Footer=...}
     local winOpts = {}
     if type(opts) == "string" then
-        winOpts.Title = opts
+        winOpts.Title = "Catmio Reborn"
     elseif type(opts) == "table" then
-        winOpts.Title = opts.Name or opts.Title or "Stealth"
+        winOpts.Title = "Catmio Reborn"
         if opts.Footer then winOpts.Footer = opts.Footer end
         if opts.Icon then winOpts.Icon = opts.Icon end
     end
@@ -282,7 +282,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
 local VirtualUser = game:GetService("VirtualUser")
 local LocalPlayer = Players.LocalPlayer
-local gameName = "Catmio Reborn"
+local gameName = "Stealth"
 pcall(function()
     local info = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
     if info and info.Name then gameName = info.Name end
@@ -440,8 +440,8 @@ end
 -- 6. Create Library window
 ------------------------------------------------------------
 local Window = Library:CreateWindow({
-    Name = "Catmio Reborn",
-    ConfigurationSaving = { Enabled = true, FolderName = "Catmio Reborn", FileName = "Catmio Reborn" },
+    Name = "Stealth",
+    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "default" },
     Icon = "solar:shield-keyhole-bold-duotone",
     ToggleUIKeybind = "RightShift",
 })
@@ -449,12 +449,12 @@ local Window = Library:CreateWindow({
 ------------------------------------------------------------
 -- 7. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local FarmingTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local RollBuyTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local UpgradesTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local ShopsTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
-local SettingsTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local MainTab = Window:CreateTab({ Name = "Dashboard", Icon = "solar:widget-bold" })
+local FarmingTab = Window:CreateTab({ Name = "Farming", Icon = "solar:widget-bold" })
+local RollBuyTab = Window:CreateTab({ Name = "Roll & Buy", Icon = "solar:widget-bold" })
+local UpgradesTab = Window:CreateTab({ Name = "Upgrades", Icon = "solar:widget-bold" })
+local ShopsTab = Window:CreateTab({ Name = "Shops", Icon = "solar:widget-bold" })
+local SettingsTab = Window:CreateTab({ Name = "Config", Icon = "solar:widget-bold" })
 ------------------------------------------------------------
 -- 8. Dashboard tab
 ------------------------------------------------------------
@@ -464,11 +464,11 @@ MainTab:CreateLabel({ Text = "Press RightShift to toggle UI:  " })
 local StatusLabel = MainTab:CreateLabel({ Text = "Status: loading...:  " })
 local AreaLabel = MainTab:CreateLabel({ Text = "Plot: ...:  " })
 local SessionLabel = MainTab:CreateLabel({ Text = "Session: 0s:  " })
-MainTab:CreateButton({ Name = "Catmio Reborn",
+MainTab:CreateButton({ Name = "Teleport: Base",
     Callback = function() FireRemote("TeleportToBase") end
 })
 
-MainTab:CreateButton({ Name = "Catmio Reborn",
+MainTab:CreateButton({ Name = "Teleport: Market",
     Callback = function() FireRemote("TeleportToMarket") end
 })
 
@@ -478,26 +478,26 @@ local PedestalLabel = MainTab:CreateLabel({ Text = "Rolling stars: ...:  " })
 ------------------------------------------------------------
 -- 9. Farming tab
 ------------------------------------------------------------
-FarmingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+FarmingTab:CreateToggle({ Name = "Auto Place Best Stars", CurrentValue = false,
     Flag = "AutoPlace",
     Callback = function(v) Toggles.AutoPlace.Value = v end
  })
-FarmingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+FarmingTab:CreateToggle({ Name = "Auto Unlock Altars", CurrentValue = false,
     Flag = "AutoUnlock",
     Callback = function(v) Toggles.AutoUnlock.Value = v end
  })
-FarmingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+FarmingTab:CreateToggle({ Name = "Auto Collect Income", CurrentValue = false,
     Flag = "AutoCollect",
     Callback = function(v) Toggles.AutoCollect.Value = v end
  })
-FarmingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+FarmingTab:CreateToggle({ Name = "Auto Trash Stars", CurrentValue = false,
     Flag = "AutoTrash",
     Callback = function(v) Toggles.AutoTrash.Value = v end
  })
 OPTIONS = OPTIONS or {}
 Options.TrashRarities = {"Common"}
 FarmingTab:CreateDropdown({
-    Name = "Catmio Reborn",
+    Name = "Rarities To Trash",
     Options = RARITIES,
     MultipleOptions = true,
     Callback = function(state) Options.TrashRarities = state end
@@ -506,27 +506,27 @@ FarmingTab:CreateDropdown({
 ------------------------------------------------------------
 -- 10. Roll & Buy tab
 ------------------------------------------------------------
-RollBuyTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+RollBuyTab:CreateToggle({ Name = "Auto Roll Stars", CurrentValue = false,
     Flag = "AutoRoll",
     Callback = function(v) Toggles.AutoRoll.Value = v end
  })
 Options.RollStopRarity = "Legendary"
 RollBuyTab:CreateDropdown({
-    Name = "Catmio Reborn",
+    Name = "Stop On Rarity",
     Options = RARITIES,
     Callback = function(state) Options.RollStopRarity = state end
 })
-RollBuyTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+RollBuyTab:CreateToggle({ Name = "Stop Rolling On Target+", CurrentValue = false,
     Flag = "RollStopEnabled",
     Callback = function(v) Toggles.RollStopEnabled.Value = v end
  })
-RollBuyTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+RollBuyTab:CreateToggle({ Name = "Auto Buy Stars", CurrentValue = false,
     Flag = "AutoBuyStars",
     Callback = function(v) Toggles.AutoBuyStars.Value = v end
  })
 Options.BuyStarRarities = RARITIES
 RollBuyTab:CreateDropdown({
-    Name = "Catmio Reborn",
+    Name = "Rarities To Buy",
     Options = RARITIES,
     MultipleOptions = true,
     Callback = function(state) Options.BuyStarRarities = state end
@@ -535,46 +535,46 @@ RollBuyTab:CreateDropdown({
 ------------------------------------------------------------
 -- 11. Upgrades tab
 ------------------------------------------------------------
-UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+UpgradesTab:CreateToggle({ Name = "Auto Upgrade Star Luck", CurrentValue = false,
     Flag = "AutoLuck",
     Callback = function(v) Toggles.AutoLuck.Value = v end
  })
-UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+UpgradesTab:CreateToggle({ Name = "Auto Add Pedestals", CurrentValue = false,
     Flag = "AutoPedestal",
     Callback = function(v) Toggles.AutoPedestal.Value = v end
  })
 ------------------------------------------------------------
 -- 12. Shops tab
 ------------------------------------------------------------
-ShopsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+ShopsTab:CreateToggle({ Name = "Auto Buy Mutation Items", CurrentValue = false,
     Flag = "AutoMut",
     Callback = function(v) Toggles.AutoMut.Value = v end
  })
 Options.MutItems = MUTATION_IDS
 ShopsTab:CreateDropdown({
-    Name = "Catmio Reborn",
+    Name = "Mutation Items",
     Options = MUTATION_IDS,
     MultipleOptions = true,
     Callback = function(state) Options.MutItems = state end
 })
-ShopsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+ShopsTab:CreateToggle({ Name = "Auto Buy Pet Eggs", CurrentValue = false,
     Flag = "AutoEgg",
     Callback = function(v) Toggles.AutoEgg.Value = v end
  })
 Options.EggItems = EGG_NAMES
 ShopsTab:CreateDropdown({
-    Name = "Catmio Reborn",
+    Name = "Pet Eggs",
     Options = EGG_NAMES,
     MultipleOptions = true,
     Callback = function(state) Options.EggItems = state end
 })
-ShopsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
+ShopsTab:CreateToggle({ Name = "Auto Buy Gear", CurrentValue = false,
     Flag = "AutoGear",
     Callback = function(v) Toggles.AutoGear.Value = v end
  })
 Options.GearItems = GEAR_IDS
 ShopsTab:CreateDropdown({
-    Name = "Catmio Reborn",
+    Name = "Gear",
     Options = GEAR_IDS,
     MultipleOptions = true,
     Callback = function(state) Options.GearItems = state end
@@ -582,7 +582,7 @@ ShopsTab:CreateDropdown({
 
 Options.GearQty = "1"
 ShopsTab:CreateDropdown({
-    Name = "Catmio Reborn",
+    Name = "Quantity",
     Options = {"1", "10"},
     Callback = function(state) Options.GearQty = state end
 })
@@ -590,11 +590,11 @@ ShopsTab:CreateDropdown({
 ------------------------------------------------------------
 -- 13. Settings tab
 ------------------------------------------------------------
-SettingsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = true,
+SettingsTab:CreateToggle({ Name = "Anti-AFK", CurrentValue = true,
     Flag = "AntiAFK",
     Callback = function(v) Toggles.AntiAFK.Value = v end
  })
-SettingsTab:CreateButton({ Name = "Catmio Reborn",
+SettingsTab:CreateButton({ Name = "Unload Stealth",
     Description = "Removes the menu and stops all automation",
     Callback = function()
         Unloaded = true
@@ -741,7 +741,7 @@ task.spawn(function()
     end
 end)
 Library:Notify({
-    Title = "Catmio Reborn",
+    Title = "Stealth",
     Content = gameName .. " loaded! Press RightShift",
     Duration = 4,
     Type = "Success"
