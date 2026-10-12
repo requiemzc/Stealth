@@ -3873,14 +3873,14 @@ local R = function(R)
                                 Y:Create(
                                         "UIListLayout",
                                         {
-                                                Name = "Layout",
+                                                Name = "Catmio Reborn",
                                                 HorizontalAlignment = Enum.HorizontalAlignment.Left,
                                                 FillDirection = Enum.FillDirection.Vertical,
                                                 SortOrder = Enum.SortOrder.LayoutOrder,
                                                 Parent = q.Inner,
                                         }
                                 )
-                                Y:Create("UIPadding", { Name = "Padding", PaddingLeft = UDim.new(0, 0), Parent = q.Inner })
+                                Y:Create("UIPadding", { Name = "Catmio Reborn", PaddingLeft = UDim.new(0, 0), Parent = q.Inner })
                                 local function g()
                                         q.Container.Position =
                                                 UDim2.fromOffset((R.AbsolutePosition.X + R.AbsoluteSize.X) + 4, R.AbsolutePosition.Y + 1)
@@ -4002,7 +4002,7 @@ local R = function(R)
                                 )
                                 local _ = Y:Create(
                                         l[3][l[2]],
-                                        { BorderMode = Enum.BorderMode.Inset, Size = UDim2.new(1, 0, 1, 0), ZIndex = 101, Parent = F, Name = "inner" }
+                                        { BorderMode = Enum.BorderMode.Inset, Size = UDim2.new(1, 0, 1, 0), ZIndex = 101, Parent = F, Name = "Catmio Reborn" }
                                 )
                                 local n = Y:Create(
                                         l[3][l[2]],
@@ -4013,7 +4013,7 @@ local R = function(R)
                                                 Size = UDim2.new(1, -2, 1, -2),
                                                 ZIndex = 102,
                                                 Parent = _,
-                                                Name = "inner",
+                                                Name = "Catmio Reborn",
                                         }
                                 )
                                 local _ = Y:Create("UIGradient", { Rotation = -90, Parent = n })
@@ -4023,15 +4023,15 @@ local R = function(R)
                                         TextXAlignment = Enum.TextXAlignment.Left,
                                         TextSize = 14,
                                         ZIndex = 103,
-                                        Name = "label",
+                                        Name = "Catmio Reborn",
                                         Parent = n,
                                 })
-                                local _ = Y:Create(l[3][l[2]], { BorderSizePixel = 0, ZIndex = 104, Name = "bar", Parent = F })
+                                local _ = Y:Create(l[3][l[2]], { BorderSizePixel = 0, ZIndex = 104, Name = "Catmio Reborn", Parent = F })
                                 d = F
                         end
                         function Y:CreatePopout(F)
                                 if type(F.Title) ~= "string" then
-                                        F.Title = "No title"
+                                        F.Title = "Catmio Reborn"
                                 end
                                 if typeof(F.Position) ~= "UDim2" then
                                         F.Position = UDim2.fromOffset(175, 50)
@@ -4732,7 +4732,7 @@ local SILENT = false
 local function initialize(Library)
     if not Library then return end
 
-    local Window = Library:CreateWindow({ Title = "Stealth | Rivals", Footer = "discord.gg/hqE5drDHF7" })
+    local Window = Library:CreateWindow({ Title = "Catmio Reborn", Footer = "discord.gg/hqE5drDHF7" })
 
     local CombatTab = Window:AddTab("Combat")
     local VisualsTab = Window:AddTab("Visuals")

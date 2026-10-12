@@ -45,7 +45,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "Stealth",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -60,7 +60,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "Scope",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(129, 181, 204),
@@ -74,7 +74,7 @@ local MESHES_OLD =
 },
     {
     Class = "Beam",
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     LightEmission = 1,
     Texture = "rbxassetid://15374653796",
@@ -91,7 +91,7 @@ local MESHES_OLD =
     FX = true,
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15666596216",
     ItemID = 15666469505,
-    ItemName = "Gingerscope",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2023"
@@ -102,7 +102,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -117,7 +117,7 @@ local MESHES_OLD =
 },
     {
     Class = "Beam",
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     LightEmission = 0.5,
     Texture = "",
@@ -138,7 +138,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800847534",
     ItemID = 7800847534,
-    ItemName = "Harvester",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2021"
@@ -149,7 +149,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -168,7 +168,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11874071041",
     ItemID = 11874071041,
-    ItemName = "Icepiercer",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2022"
@@ -179,7 +179,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -193,7 +193,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=116657254",
     MeshType = Enum.MeshType.FileMesh,
@@ -212,7 +212,7 @@ local MESHES_OLD =
 },
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=446050753",
     ItemID = 446050753,
-    ItemName = "Amerilaser",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 }
@@ -222,7 +222,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -236,7 +236,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://107813118898769",
     MeshType = Enum.MeshType.FileMesh,
@@ -247,7 +247,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 11, 0),
     Face = Enum.NormalId.Left,
@@ -262,7 +262,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=137938731902685",
     ItemID = 84481559639371,
-    ItemName = "Bauble",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -273,7 +273,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -287,7 +287,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://107813118898769",
     MeshType = Enum.MeshType.FileMesh,
@@ -302,7 +302,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=84481559639371",
     ItemID = 84481559639371,
-    ItemName = "Bauble",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -313,7 +313,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -327,7 +327,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=92656610",
     MeshType = Enum.MeshType.FileMesh,
@@ -346,7 +346,7 @@ local MESHES_OLD =
 },
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=386277381",
     ItemID = 386277381,
-    ItemName = "Blaster",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 }
@@ -356,7 +356,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -370,7 +370,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 17, 0),
     Face = Enum.NormalId.Left,
@@ -380,7 +380,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://77235373292363",
     MeshType = Enum.MeshType.FileMesh,
@@ -396,7 +396,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxassetid://97865938907417",
     ItemID = 88928894807422,
-    ItemName = "Blizzard",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -407,7 +407,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -421,7 +421,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://12322809632",
     MeshType = Enum.MeshType.FileMesh,
@@ -435,7 +435,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339377105",
     ItemID = 12339377105,
-    ItemName = "Blossom",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -446,7 +446,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -465,7 +465,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=108635848059846",
     ItemID = 108635848059846,
-    ItemName = "Borealis",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -476,7 +476,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -495,7 +495,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=114197436469014",
     ItemID = 114197436469014,
-    ItemName = "Constellation",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -506,7 +506,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -520,7 +520,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://124598402927958",
     MeshType = Enum.MeshType.FileMesh,
@@ -531,7 +531,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 21, 0),
     Face = Enum.NormalId.Left,
@@ -546,7 +546,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=98517109155878",
     ItemID = 114197436469014,
-    ItemName = "Constellation",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -557,7 +557,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -571,7 +571,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
@@ -590,7 +590,7 @@ local MESHES_OLD =
 },
     Image = "http://www.roblox.com/asset/?id=4751387674",
     ItemID = 4749071819,
-    ItemName = "Darkbringer",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -601,7 +601,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -615,7 +615,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
@@ -626,7 +626,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Back,
@@ -645,7 +645,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "http://www.roblox.com/asset/?id=4751507011",
     ItemID = 4751501078,
-    ItemName = "Darkbringer",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -656,7 +656,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -674,7 +674,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15080280688",
     ItemID = 15080280688,
-    ItemName = "Darkshot",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
@@ -685,7 +685,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -709,7 +709,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4468571736",
     ItemID = 4211142894,
-    ItemName = "Elderwood Revolver",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
@@ -720,7 +720,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -734,7 +734,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15408863676",
     MeshType = Enum.MeshType.FileMesh,
@@ -745,7 +745,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Decal",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 255, 255),
     Face = Enum.NormalId.Front,
@@ -755,7 +755,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Decal",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 255, 255),
     Face = Enum.NormalId.Front,
@@ -765,7 +765,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(255, 255, 255),
@@ -779,7 +779,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(255, 255, 255),
@@ -793,7 +793,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(255, 255, 255),
@@ -807,7 +807,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(255, 255, 255),
@@ -821,7 +821,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(255, 255, 255),
@@ -841,7 +841,7 @@ local MESHES_OLD =
     FX = true,
     Image = "rbxassetid://15694208971",
     ItemID = 15682703596,
-    ItemName = "Evergun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
@@ -852,7 +852,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -867,7 +867,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "Lights",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(248, 217, 109),
@@ -881,7 +881,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "Lights",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(248, 217, 109),
@@ -895,7 +895,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "Lights",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(248, 217, 109),
@@ -909,7 +909,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "Lights",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(248, 217, 109),
@@ -923,7 +923,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "Lights",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(248, 217, 109),
@@ -942,7 +942,7 @@ local MESHES_OLD =
     FX = true,
     Image = "rbxassetid://15694357721",
     ItemID = 15682703596,
-    ItemName = "Evergun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
@@ -953,7 +953,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -971,7 +971,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://139276091458016",
     ItemID = 138204709945147,
-    ItemName = "Flora",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -982,7 +982,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1000,7 +1000,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16963894455",
     ItemID = 16963894455,
-    ItemName = "Flowerwood Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -1011,7 +1011,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1025,7 +1025,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -1045,7 +1045,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2674983099",
     ItemID = 2674983099,
-    ItemName = "Ginger Luger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2018"
@@ -1056,7 +1056,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1070,7 +1070,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://11866444071",
     MeshType = Enum.MeshType.FileMesh,
@@ -1085,7 +1085,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11872179646",
     ItemID = 11872179646,
-    ItemName = "Gingermint",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
@@ -1096,7 +1096,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1110,7 +1110,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -1130,7 +1130,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332044679",
     ItemID = 332044679,
-    ItemName = "Green Luger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
@@ -1141,7 +1141,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1165,7 +1165,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5877089721",
     ItemID = 5878721461,
-    ItemName = "Hallowgun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
@@ -1176,7 +1176,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1195,7 +1195,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8305000161",
     ItemID = 8311005531,
-    ItemName = "Icebeam",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
@@ -1206,7 +1206,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1225,7 +1225,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121579464",
     ItemID = 6125814417,
-    ItemName = "Iceblaster",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
@@ -1236,7 +1236,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1250,7 +1250,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6125843704",
     MeshType = Enum.MeshType.FileMesh,
@@ -1265,7 +1265,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121678262",
     ItemID = 6125742758,
-    ItemName = "Jinglegun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
@@ -1276,7 +1276,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1290,7 +1290,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://130099641",
     MeshType = Enum.MeshType.FileMesh,
@@ -1301,7 +1301,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 18, 0),
     Face = Enum.NormalId.Left,
@@ -1315,7 +1315,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://3187422628",
     ItemID = 3187395952,
-    ItemName = "Laser",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 }
@@ -1325,7 +1325,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1339,7 +1339,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=130099641",
     MeshType = Enum.MeshType.FileMesh,
@@ -1353,7 +1353,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3187422496",
     ItemID = 238546983,
-    ItemName = "Laser",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 }
@@ -1363,7 +1363,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1377,7 +1377,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
@@ -1388,7 +1388,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Back,
@@ -1407,7 +1407,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "http://www.roblox.com/asset/?id=4751507078",
     ItemID = 4751500761,
-    ItemName = "Lightbringer",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -1418,7 +1418,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1432,7 +1432,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
@@ -1451,7 +1451,7 @@ local MESHES_OLD =
 },
     Image = "http://www.roblox.com/asset/?id=4751387063",
     ItemID = 4749070432,
-    ItemName = "Lightbringer",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -1462,7 +1462,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1476,7 +1476,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -1487,7 +1487,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Back,
@@ -1506,7 +1506,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://3187399258",
     ItemID = 3187395551,
-    ItemName = "Luger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 }
@@ -1516,7 +1516,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1530,7 +1530,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -1549,7 +1549,7 @@ local MESHES_OLD =
 },
     Image = "rbxassetid://3187399148",
     ItemID = 198042673,
-    ItemName = "Luger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 }
@@ -1559,7 +1559,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1573,7 +1573,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -1593,7 +1593,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4535482609",
     ItemID = 4535482609,
-    ItemName = "Lugercane",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
@@ -1604,7 +1604,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1623,7 +1623,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11229837140",
     ItemID = 11229837140,
-    ItemName = "Makeshift",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
@@ -1634,7 +1634,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1658,7 +1658,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4528291487",
     ItemID = 4535408229,
-    ItemName = "Minty",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
@@ -1669,7 +1669,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1683,7 +1683,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://13928587755",
     MeshType = Enum.MeshType.FileMesh,
@@ -1697,7 +1697,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://13933165014",
     ItemID = 13945898892,
-    ItemName = "Ocean",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -1708,7 +1708,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1726,7 +1726,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322646152",
     ItemID = 18322646152,
-    ItemName = "Pearlshine",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -1737,7 +1737,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1751,7 +1751,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://9702755186",
     MeshType = Enum.MeshType.FileMesh,
@@ -1765,7 +1765,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=10014717343",
     ItemID = 10014717343,
-    ItemName = "Plasmabeam",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -1776,7 +1776,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1794,7 +1794,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12966354606",
     ItemID = 12966354606,
-    ItemName = "Rainbow Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -1805,7 +1805,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1820,7 +1820,7 @@ local MESHES_OLD =
 },
     {
     Class = "Beam",
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     LightEmission = 0.5,
     Texture = "",
@@ -1836,7 +1836,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=139431943195380",
     ItemID = 139431943195380,
-    ItemName = "Raygun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -1847,7 +1847,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1861,7 +1861,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://115447220952926",
     MeshType = Enum.MeshType.FileMesh,
@@ -1872,7 +1872,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -1882,7 +1882,7 @@ local MESHES_OLD =
 },
     {
     Class = "Beam",
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     LightEmission = 0.5,
     Texture = "",
@@ -1899,7 +1899,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=83259634072260",
     ItemID = 139431943195380,
-    ItemName = "Raygun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -1910,7 +1910,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1924,7 +1924,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -1944,7 +1944,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332044583",
     ItemID = 332044583,
-    ItemName = "Red Luger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
@@ -1955,7 +1955,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -1969,7 +1969,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=118269783",
     MeshType = Enum.MeshType.FileMesh,
@@ -1988,7 +1988,7 @@ local MESHES_OLD =
 },
     Image = "rbxassetid://3187421705",
     ItemID = 203858533,
-    ItemName = "Shark",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 }
@@ -1998,7 +1998,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2012,7 +2012,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://118269783",
     MeshType = Enum.MeshType.FileMesh,
@@ -2023,7 +2023,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Back,
@@ -2042,7 +2042,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://3187421856",
     ItemID = 3187395738,
-    ItemName = "Shark",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 }
@@ -2052,7 +2052,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2066,7 +2066,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Left,
@@ -2076,7 +2076,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://99836890880541",
     MeshType = Enum.MeshType.FileMesh,
@@ -2087,7 +2087,7 @@ local MESHES_OLD =
 },
     {
     Class = "Beam",
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     LightEmission = 0.5,
     Texture = "",
@@ -2104,7 +2104,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxassetid://93075282395578",
     ItemID = 129186939023729,
-    ItemName = "Snowcannon",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -2115,7 +2115,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2130,7 +2130,7 @@ local MESHES_OLD =
 },
     {
     Class = "Beam",
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     LightEmission = 0.5,
     Texture = "",
@@ -2142,7 +2142,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "Glass",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(248, 248, 248),
@@ -2160,7 +2160,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=129186939023729",
     ItemID = 129186939023729,
-    ItemName = "Snowcannon",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -2171,7 +2171,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2190,7 +2190,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=75233248021696",
     ItemID = 75233248021696,
-    ItemName = "Soul",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -2201,7 +2201,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2215,7 +2215,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://11165536294",
     MeshType = Enum.MeshType.FileMesh,
@@ -2230,7 +2230,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11229779932",
     ItemID = 11229779932,
-    ItemName = "Spectre",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
@@ -2241,7 +2241,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2255,7 +2255,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=101086719",
     MeshType = Enum.MeshType.FileMesh,
@@ -2275,7 +2275,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxassetid://3215356000",
     ItemID = 332848695,
-    ItemName = "Sugar",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
@@ -2286,7 +2286,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2300,7 +2300,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://109742397574153",
     MeshType = Enum.MeshType.FileMesh,
@@ -2311,7 +2311,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -2321,7 +2321,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Glow",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(2555, 2322, 200),
     Face = Enum.NormalId.Left,
@@ -2337,7 +2337,7 @@ local MESHES_OLD =
     FX = true,
     Image = "rbxthumb://type=Asset&w=150&h=150&id=124766755976937",
     ItemID = 129480661108374,
-    ItemName = "Sunrise",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -2348,7 +2348,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2362,7 +2362,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://109742397574153",
     MeshType = Enum.MeshType.FileMesh,
@@ -2373,7 +2373,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(2555, 2322, 200),
     Face = Enum.NormalId.Left,
@@ -2388,7 +2388,7 @@ local MESHES_OLD =
     FX = true,
     Image = "rbxthumb://type=Asset&w=150&h=150&id=129480661108374",
     ItemID = 129480661108374,
-    ItemName = "Sunrise",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -2399,7 +2399,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2418,7 +2418,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8305002569",
     ItemID = 8305264097,
-    ItemName = "Swirly Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
@@ -2429,7 +2429,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2443,7 +2443,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://8310911339",
     MeshType = Enum.MeshType.FileMesh,
@@ -2454,7 +2454,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Front,
@@ -2469,7 +2469,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/asset/?id=8311453396",
     ItemID = 8311393414,
-    ItemName = "Swirly Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
@@ -2480,7 +2480,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2494,7 +2494,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15090814396",
     MeshType = Enum.MeshType.FileMesh,
@@ -2505,7 +2505,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 18, 0),
     Face = Enum.NormalId.Top,
@@ -2520,7 +2520,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxassetid://15097920149",
     ItemID = 15097897227,
-    ItemName = "Traveler's Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
@@ -2531,7 +2531,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2550,7 +2550,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091442039",
     ItemID = 15091442039,
-    ItemName = "Traveler's Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
@@ -2561,7 +2561,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2575,7 +2575,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 17, 0),
     Face = Enum.NormalId.Left,
@@ -2585,7 +2585,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://135790480817772",
     MeshType = Enum.MeshType.FileMesh,
@@ -2601,7 +2601,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxassetid://121364530728626",
     ItemID = 131626924640663,
-    ItemName = "Treat",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1,
@@ -2613,7 +2613,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2627,7 +2627,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://126591885289479",
     MeshType = Enum.MeshType.FileMesh,
@@ -2638,7 +2638,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 18, 0),
     Face = Enum.NormalId.Left,
@@ -2653,7 +2653,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=85107391551890",
     ItemID = 90274872705656,
-    ItemName = "Vampire's Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -2664,7 +2664,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2683,7 +2683,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=90274872705656",
     ItemID = 90274872705656,
-    ItemName = "Vampire's Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -2694,7 +2694,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2708,7 +2708,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://18280999342",
     MeshType = Enum.MeshType.FileMesh,
@@ -2722,7 +2722,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18351388416",
     ItemID = 18351388416,
-    ItemName = "Watergun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -2733,7 +2733,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2747,7 +2747,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://18280999342",
     MeshType = Enum.MeshType.FileMesh,
@@ -2758,7 +2758,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Left,
@@ -2772,7 +2772,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://18351465514",
     ItemID = 18351401528,
-    ItemName = "Watergun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -2783,7 +2783,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2802,7 +2802,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=96859273002742",
     ItemID = 79722325448464,
-    ItemName = "Xenoshot",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -2813,7 +2813,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2832,7 +2832,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=129460052425837",
     ItemID = 129460052425837,
-    ItemName = "Aquarium",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2025"
@@ -2843,7 +2843,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2857,7 +2857,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -2872,7 +2872,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834443783",
     ItemID = 11834443783,
-    ItemName = "Arctic",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2022"
@@ -2883,7 +2883,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2897,7 +2897,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -2912,7 +2912,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304766165",
     ItemID = 8304766165,
-    ItemName = "Aurora",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2021"
@@ -2923,7 +2923,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2937,7 +2937,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -2952,7 +2952,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534875511",
     ItemID = 4534875511,
-    ItemName = "Cavern",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2019"
@@ -2963,7 +2963,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -2977,7 +2977,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -2991,7 +2991,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965339774",
     ItemID = 12965339774,
-    ItemName = "Chromatic",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Season = 1
@@ -3002,7 +3002,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3016,7 +3016,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -3031,7 +3031,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=122855768693454",
     ItemID = 122855768693454,
-    ItemName = "Cursed",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2024"
@@ -3042,7 +3042,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3061,7 +3061,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=114403390530326",
     ItemID = 114403390530326,
-    ItemName = "Energized",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2025"
@@ -3072,7 +3072,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3086,7 +3086,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3101,7 +3101,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635577623",
     ItemID = 15635577623,
-    ItemName = "Frostfade",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2023"
@@ -3112,7 +3112,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3131,7 +3131,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=90622014285727",
     ItemID = 90622014285727,
-    ItemName = "Frozen",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2025"
@@ -3142,7 +3142,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3156,7 +3156,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3171,7 +3171,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513741407",
     ItemID = 2513741407,
-    ItemName = "Ghost",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2018"
@@ -3182,7 +3182,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3196,7 +3196,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3211,7 +3211,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669785821",
     ItemID = 2669785821,
-    ItemName = "Ginger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2018"
@@ -3222,7 +3222,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3236,7 +3236,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3251,7 +3251,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121866490",
     ItemID = 6121866490,
-    ItemName = "Icedriller",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2020"
@@ -3262,7 +3262,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3276,7 +3276,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3290,7 +3290,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15413116029",
     ItemID = 15413116029,
-    ItemName = "Latte",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Season = 1
@@ -3301,7 +3301,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3315,7 +3315,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3330,7 +3330,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=94311965719769",
     ItemID = 94311965719769,
-    ItemName = "Nightsky",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2024"
@@ -3341,7 +3341,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3355,7 +3355,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3369,7 +3369,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=175668680",
     ItemID = 197830043,
-    ItemName = "Overseer",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary"
 }
@@ -3379,7 +3379,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3393,7 +3393,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3407,7 +3407,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322192817",
     ItemID = 18322192817,
-    ItemName = "Palms",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Season = 1
@@ -3418,7 +3418,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3432,7 +3432,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3446,7 +3446,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203810176",
     ItemID = 203810176,
-    ItemName = "Predator",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary"
 }
@@ -3456,7 +3456,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3470,7 +3470,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3485,7 +3485,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866460591",
     ItemID = 5866460591,
-    ItemName = "Ripper",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2020"
@@ -3496,7 +3496,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3510,7 +3510,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3525,7 +3525,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315100702",
     ItemID = 315100702,
-    ItemName = "Rupture",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2015"
@@ -3536,7 +3536,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3550,7 +3550,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3564,7 +3564,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203869110",
     ItemID = 203869110,
-    ItemName = "Sparkle",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary"
 }
@@ -3574,7 +3574,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3588,7 +3588,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3603,7 +3603,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800255531",
     ItemID = 7800255531,
-    ItemName = "Spectral",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2021"
@@ -3614,7 +3614,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3628,7 +3628,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3642,7 +3642,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659626370",
     ItemID = 4659626370,
-    ItemName = "Splash",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Season = 1
@@ -3653,7 +3653,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3667,7 +3667,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3682,7 +3682,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091344462",
     ItemID = 15091344462,
-    ItemName = "Traveler",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2023"
@@ -3693,7 +3693,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3707,7 +3707,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3722,7 +3722,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332497688",
     ItemID = 332497688,
-    ItemName = "Tree",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2015"
@@ -3733,7 +3733,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3747,7 +3747,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3761,7 +3761,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546660",
     ItemID = 238546660,
-    ItemName = "Universe",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary"
 }
@@ -3771,7 +3771,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3785,7 +3785,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3800,7 +3800,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11255503583",
     ItemID = 11255503583,
-    ItemName = "Vampire",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary",
     Year = "2022"
@@ -3811,7 +3811,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3825,7 +3825,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3839,7 +3839,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=160299600",
     ItemID = 196752926,
-    ItemName = "Viper",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Legendary"
 }
@@ -3849,7 +3849,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3863,7 +3863,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -3877,7 +3877,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546577",
     ItemID = 238546577,
-    ItemName = "Ace",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare"
 }
@@ -3887,7 +3887,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3901,7 +3901,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3916,7 +3916,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534875165",
     ItemID = 4534875165,
-    ItemName = "Aurora",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2019"
@@ -3927,7 +3927,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3941,7 +3941,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -3955,7 +3955,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546467",
     ItemID = 238546467,
-    ItemName = "Bacon",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare"
 }
@@ -3965,7 +3965,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -3983,7 +3983,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=135662872427976",
     ItemID = 135662872427976,
-    ItemName = "Butterflies",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
@@ -3994,7 +3994,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4008,7 +4008,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -4023,7 +4023,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=90595111293037",
     ItemID = 90595111293037,
-    ItemName = "Candleflame",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2024"
@@ -4034,7 +4034,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4048,7 +4048,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -4063,7 +4063,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534874602",
     ItemID = 4534874602,
-    ItemName = "Candy Swirl",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2019"
@@ -4074,7 +4074,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4088,7 +4088,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4103,7 +4103,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669785546",
     ItemID = 2669785546,
-    ItemName = "Cane",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2018"
@@ -4114,7 +4114,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4128,7 +4128,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4143,7 +4143,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332497187",
     ItemID = 332497187,
-    ItemName = "Cane",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2015"
@@ -4154,7 +4154,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4168,7 +4168,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4183,7 +4183,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091406343",
     ItemID = 15091406343,
-    ItemName = "Darkgun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2023"
@@ -4194,7 +4194,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4208,7 +4208,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -4222,7 +4222,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18323751219",
     ItemID = 18323751219,
-    ItemName = "Floral",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
@@ -4233,7 +4233,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4247,7 +4247,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4262,7 +4262,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=114781759936576",
     ItemID = 114781759936576,
-    ItemName = "Frostflame",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2024"
@@ -4273,7 +4273,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4287,7 +4287,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4301,7 +4301,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=173913533",
     ItemID = 196752683,
-    ItemName = "Galactic",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare"
 }
@@ -4311,7 +4311,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4325,7 +4325,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4340,7 +4340,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091342564",
     ItemID = 15091342564,
-    ItemName = "Ghastly",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2023"
@@ -4351,7 +4351,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4365,7 +4365,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4380,7 +4380,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11284140034",
     ItemID = 11284140034,
-    ItemName = "Ghostfire",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2022"
@@ -4391,7 +4391,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4405,7 +4405,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4420,7 +4420,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866465099",
     ItemID = 5866465099,
-    ItemName = "Ghosts",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2020"
@@ -4431,7 +4431,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4445,7 +4445,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4460,7 +4460,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332497038",
     ItemID = 332497038,
-    ItemName = "Ginger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2015"
@@ -4471,7 +4471,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4485,7 +4485,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4500,7 +4500,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834442414",
     ItemID = 11834442414,
-    ItemName = "Gingerbread",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2022"
@@ -4511,7 +4511,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4530,7 +4530,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=99160839686845",
     ItemID = 99160839686845,
-    ItemName = "Gingercookie",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
@@ -4541,7 +4541,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4555,7 +4555,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4569,7 +4569,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203819271",
     ItemID = 203819271,
-    ItemName = "Hacker",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare"
 }
@@ -4579,7 +4579,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4598,7 +4598,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=79235438948261",
     ItemID = 79235438948261,
-    ItemName = "Heartbreak",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2026"
@@ -4609,7 +4609,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4628,7 +4628,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=108751717527377",
     ItemID = 108751717527377,
-    ItemName = "Hologram",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
@@ -4639,7 +4639,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4653,7 +4653,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4668,7 +4668,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304767724",
     ItemID = 8304767724,
-    ItemName = "Ice Camo",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2021"
@@ -4679,7 +4679,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4693,7 +4693,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4708,7 +4708,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669786044",
     ItemID = 2669786044,
-    ItemName = "Icicles",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2018"
@@ -4719,7 +4719,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4733,7 +4733,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4747,7 +4747,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=162668312",
     ItemID = 196752718,
-    ItemName = "Imbued",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare"
 }
@@ -4757,7 +4757,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4771,7 +4771,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4786,7 +4786,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800252572",
     ItemID = 7800252572,
-    ItemName = "Magma",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2021"
@@ -4797,7 +4797,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4811,7 +4811,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4825,7 +4825,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203869308",
     ItemID = 203869308,
-    ItemName = "Molten",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare"
 }
@@ -4835,7 +4835,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4849,7 +4849,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4864,7 +4864,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210941474",
     ItemID = 4210941474,
-    ItemName = "Monster",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2019"
@@ -4875,7 +4875,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4889,7 +4889,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4904,7 +4904,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315155591",
     ItemID = 315155591,
-    ItemName = "Mummy",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2015"
@@ -4915,7 +4915,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4934,7 +4934,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=134429631587448",
     ItemID = 134429631587448,
-    ItemName = "Neon",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
@@ -4945,7 +4945,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4959,7 +4959,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -4974,7 +4974,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635560825",
     ItemID = 15635560825,
-    ItemName = "Neon",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2023"
@@ -4985,7 +4985,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -4999,7 +4999,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5013,7 +5013,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659626966",
     ItemID = 4659626966,
-    ItemName = "Nightfire",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
@@ -5024,7 +5024,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5038,7 +5038,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -5052,7 +5052,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965335931",
     ItemID = 12965335931,
-    ItemName = "Nuke",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
@@ -5063,7 +5063,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5082,7 +5082,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=90526048501163",
     ItemID = 90526048501163,
-    ItemName = "Pop Art",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
@@ -5093,7 +5093,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5107,7 +5107,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5121,7 +5121,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183640145",
     ItemID = 3183640145,
-    ItemName = "Rainbow",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
@@ -5132,7 +5132,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5146,7 +5146,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -5161,7 +5161,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=122021199074749",
     ItemID = 122021199074749,
-    ItemName = "Ritual",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2024"
@@ -5172,7 +5172,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5186,7 +5186,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5201,7 +5201,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121862034",
     ItemID = 6121862034,
-    ItemName = "Silent Night",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2020"
@@ -5212,7 +5212,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5226,7 +5226,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5241,7 +5241,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210925026",
     ItemID = 4210925026,
-    ItemName = "Snakebite",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2019"
@@ -5252,7 +5252,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5266,7 +5266,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5281,7 +5281,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635575718",
     ItemID = 15635575718,
-    ItemName = "Snowflake",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2023"
@@ -5292,7 +5292,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5311,7 +5311,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=81352860339620",
     ItemID = 81352860339620,
-    ItemName = "Spearmint",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
@@ -5322,7 +5322,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5336,7 +5336,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5350,7 +5350,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=159971321",
     ItemID = 197829561,
-    ItemName = "Spitfire",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare"
 }
@@ -5360,7 +5360,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5374,7 +5374,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5389,7 +5389,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304772774",
     ItemID = 8304772774,
-    ItemName = "Starry",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2021"
@@ -5400,7 +5400,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5414,7 +5414,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -5425,7 +5425,7 @@ local MESHES_OLD =
 },
     {
     Class = "Vector3Value",
-    Name = "OriginalPosition",
+    Name = "Catmio Reborn",
     Props = {
     Value = Vector3.new(0, 0, 0)
 }
@@ -5435,7 +5435,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://13944156090",
     ItemID = 13944155639,
-    ItemName = "Sun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
@@ -5446,7 +5446,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5464,7 +5464,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=93906279038399",
     ItemID = 93906279038399,
-    ItemName = "Sunny",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Season = 1
@@ -5475,7 +5475,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5489,7 +5489,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5504,7 +5504,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513742519",
     ItemID = 2513742519,
-    ItemName = "Toxic",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2018"
@@ -5515,7 +5515,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5529,7 +5529,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5544,7 +5544,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834441321",
     ItemID = 11834441321,
-    ItemName = "Tree",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2022"
@@ -5555,7 +5555,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5569,7 +5569,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -5584,7 +5584,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513742751",
     ItemID = 2513742751,
-    ItemName = "Vampire",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2018"
@@ -5595,7 +5595,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5609,7 +5609,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5624,7 +5624,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800256309",
     ItemID = 7800256309,
-    ItemName = "Watcher",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2021"
@@ -5635,7 +5635,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5649,7 +5649,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5664,7 +5664,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11255504462",
     ItemID = 11255504462,
-    ItemName = "Wraith",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2022"
@@ -5675,7 +5675,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5694,7 +5694,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=139755862211442",
     ItemID = 139755862211442,
-    ItemName = "Xeno",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare",
     Year = "2025"
@@ -5705,7 +5705,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5719,7 +5719,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5733,7 +5733,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203809168",
     ItemID = 203809168,
-    ItemName = "iRevolver",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Rare"
 }
@@ -5743,7 +5743,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5757,7 +5757,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -5771,7 +5771,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=175668921",
     ItemID = 196752289,
-    ItemName = "Adurite",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon"
 }
@@ -5781,7 +5781,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5795,7 +5795,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5809,7 +5809,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659627458",
     ItemID = 4659627458,
-    ItemName = "Biogun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
@@ -5820,7 +5820,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5834,7 +5834,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5848,7 +5848,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=162668203",
     ItemID = 196752379,
-    ItemName = "Bluesteel",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon"
 }
@@ -5858,7 +5858,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5872,7 +5872,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5887,7 +5887,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210926347",
     ItemID = 4210926347,
-    ItemName = "Bones",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2019"
@@ -5898,7 +5898,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5912,7 +5912,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5927,7 +5927,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11284145298",
     ItemID = 11284145298,
-    ItemName = "Brains",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
@@ -5938,7 +5938,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5952,7 +5952,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -5966,7 +5966,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=160024789",
     ItemID = 196752456,
-    ItemName = "Camo",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon"
 }
@@ -5976,7 +5976,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -5990,7 +5990,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6005,7 +6005,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635558982",
     ItemID = 15635558982,
-    ItemName = "Canes",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2023"
@@ -6016,7 +6016,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6030,7 +6030,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6044,7 +6044,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16960082652",
     ItemID = 16960082652,
-    ItemName = "Carrot",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
@@ -6055,7 +6055,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6069,7 +6069,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6083,7 +6083,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546422",
     ItemID = 238546422,
-    ItemName = "Caution",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon"
 }
@@ -6093,7 +6093,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6107,7 +6107,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6121,7 +6121,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203808317",
     ItemID = 203808317,
-    ItemName = "Cheddar",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon"
 }
@@ -6131,7 +6131,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6145,7 +6145,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -6160,7 +6160,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=71982363966070",
     ItemID = 71982363966070,
-    ItemName = "Clown",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2024"
@@ -6171,7 +6171,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6185,7 +6185,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6200,7 +6200,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304771148",
     ItemID = 8304771148,
-    ItemName = "Cookie",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
@@ -6211,7 +6211,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6230,7 +6230,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=90751163516480",
     ItemID = 90751163516480,
-    ItemName = "Eyes",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
@@ -6241,7 +6241,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6255,7 +6255,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6270,7 +6270,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800257544",
     ItemID = 7800257544,
-    ItemName = "Fall Camo",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
@@ -6281,7 +6281,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6295,7 +6295,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6309,7 +6309,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322194067",
     ItemID = 18322194067,
-    ItemName = "Floatie",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
@@ -6320,7 +6320,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6334,7 +6334,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6349,7 +6349,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=78199422065424",
     ItemID = 78199422065424,
-    ItemName = "Forest",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2024"
@@ -6360,7 +6360,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6374,7 +6374,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6389,7 +6389,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534873956",
     ItemID = 4534873956,
-    ItemName = "Frozen",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2019"
@@ -6400,7 +6400,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6419,7 +6419,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=74908113882525",
     ItemID = 74908113882525,
-    ItemName = "Gingerbread",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
@@ -6430,7 +6430,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6444,7 +6444,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6459,7 +6459,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304772140",
     ItemID = 8304772140,
-    ItemName = "Gingerbread",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
@@ -6470,7 +6470,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6484,7 +6484,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6499,7 +6499,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534872116",
     ItemID = 4534872116,
-    ItemName = "Gingerbread",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2019"
@@ -6510,7 +6510,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6524,7 +6524,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6539,7 +6539,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121860619",
     ItemID = 6121860619,
-    ItemName = "Gingerbread",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2020"
@@ -6550,7 +6550,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6564,7 +6564,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6579,7 +6579,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800253970",
     ItemID = 7800253970,
-    ItemName = "Gothic",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
@@ -6590,7 +6590,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6604,7 +6604,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6619,7 +6619,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11255505449",
     ItemID = 11255505449,
-    ItemName = "Hazard",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
@@ -6630,7 +6630,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6644,7 +6644,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6659,7 +6659,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669786261",
     ItemID = 2669786261,
-    ItemName = "Holly",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
@@ -6670,7 +6670,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6689,7 +6689,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=90170220549489",
     ItemID = 90170220549489,
-    ItemName = "Lava",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
@@ -6700,7 +6700,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6714,7 +6714,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6729,7 +6729,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=129970927613267",
     ItemID = 129970927613267,
-    ItemName = "Leaves",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2024"
@@ -6740,7 +6740,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6754,7 +6754,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6769,7 +6769,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534872673",
     ItemID = 4534872673,
-    ItemName = "Lights",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2019"
@@ -6780,7 +6780,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6794,7 +6794,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6808,7 +6808,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203867650",
     ItemID = 203867650,
-    ItemName = "Love",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon"
 }
@@ -6818,7 +6818,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6832,7 +6832,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6846,7 +6846,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203808190",
     ItemID = 203808190,
-    ItemName = "Marina",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon"
 }
@@ -6856,7 +6856,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6874,7 +6874,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=107321881182350",
     ItemID = 107321881182350,
-    ItemName = "Meadow",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
@@ -6885,7 +6885,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6899,7 +6899,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -6910,7 +6910,7 @@ local MESHES_OLD =
 },
     {
     Class = "Vector3Value",
-    Name = "OriginalPosition",
+    Name = "Catmio Reborn",
     Props = {
     Value = Vector3.new(0, 0, 0)
 }
@@ -6920,7 +6920,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://13944154336",
     ItemID = 13944153861,
-    ItemName = "Melon",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
@@ -6931,7 +6931,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6945,7 +6945,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -6960,7 +6960,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834438982",
     ItemID = 11834438982,
-    ItemName = "Mistletoe",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
@@ -6971,7 +6971,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -6985,7 +6985,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7000,7 +7000,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11284143055",
     ItemID = 11284143055,
-    ItemName = "Moonlight",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
@@ -7011,7 +7011,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7025,7 +7025,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7040,7 +7040,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866463755",
     ItemID = 5866463755,
-    ItemName = "Mummy",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2020"
@@ -7051,7 +7051,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7065,7 +7065,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -7080,7 +7080,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513741663",
     ItemID = 2513741663,
-    ItemName = "Mummy",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
@@ -7091,7 +7091,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7105,7 +7105,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7119,7 +7119,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=159971385",
     ItemID = 197829003,
-    ItemName = "Night",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon"
 }
@@ -7129,7 +7129,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7143,7 +7143,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7158,7 +7158,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332497657",
     ItemID = 332497657,
-    ItemName = "Nutcracker",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2015"
@@ -7169,7 +7169,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7183,7 +7183,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -7197,7 +7197,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965344675",
     ItemID = 12965344675,
-    ItemName = "Painted",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
@@ -7208,7 +7208,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7227,7 +7227,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=120089556380493",
     ItemID = 120089556380493,
-    ItemName = "Paws",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2026"
@@ -7238,7 +7238,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7252,7 +7252,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7267,7 +7267,7 @@ local MESHES_OLD =
     ChinaItemID = 6683072559,
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183639867",
     ItemID = 3183639867,
-    ItemName = "Pirate",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
@@ -7278,7 +7278,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7292,7 +7292,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7306,7 +7306,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322191060",
     ItemID = 18322191060,
-    ItemName = "Popsicle",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Season = 1
@@ -7317,7 +7317,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7331,7 +7331,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7346,7 +7346,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866461926",
     ItemID = 5866461926,
-    ItemName = "Portal",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2020"
@@ -7357,7 +7357,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7371,7 +7371,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -7386,7 +7386,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513742133",
     ItemID = 2513742133,
-    ItemName = "Potion",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
@@ -7397,7 +7397,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7416,7 +7416,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=117088166092009",
     ItemID = 117088166092009,
-    ItemName = "Pumpkin Patch",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
@@ -7427,7 +7427,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7441,7 +7441,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7455,7 +7455,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203808108",
     ItemID = 203808108,
-    ItemName = "Sketch",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon"
 }
@@ -7465,7 +7465,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7479,7 +7479,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7494,7 +7494,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669786515",
     ItemID = 2669786515,
-    ItemName = "Snowflake",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
@@ -7505,7 +7505,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7519,7 +7519,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7534,7 +7534,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834437796",
     ItemID = 11834437796,
-    ItemName = "Snowflake",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
@@ -7545,7 +7545,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7559,7 +7559,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7574,7 +7574,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332497603",
     ItemID = 332497603,
-    ItemName = "Snowman",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2015"
@@ -7585,7 +7585,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7599,7 +7599,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7614,7 +7614,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304766932",
     ItemID = 8304766932,
-    ItemName = "Snowman",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
@@ -7625,7 +7625,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7639,7 +7639,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7654,7 +7654,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635572427",
     ItemID = 15635572427,
-    ItemName = "Snowman",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2023"
@@ -7665,7 +7665,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7679,7 +7679,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7693,7 +7693,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546400",
     ItemID = 238546400,
-    ItemName = "Soda",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon"
 }
@@ -7703,7 +7703,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7722,7 +7722,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=132525981806780",
     ItemID = 132525981806780,
-    ItemName = "Soda",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
@@ -7733,7 +7733,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7747,7 +7747,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7762,7 +7762,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635574031",
     ItemID = 15635574031,
-    ItemName = "Stars",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2023"
@@ -7773,7 +7773,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7787,7 +7787,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7802,7 +7802,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091341552",
     ItemID = 15091341552,
-    ItemName = "Steel",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2023"
@@ -7813,7 +7813,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7827,7 +7827,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7842,7 +7842,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834440319",
     ItemID = 11834440319,
-    ItemName = "Stockings",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2022"
@@ -7853,7 +7853,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7867,7 +7867,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7882,7 +7882,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669787088",
     ItemID = 2669787088,
-    ItemName = "Sweater",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
@@ -7893,7 +7893,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7912,7 +7912,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=118557229750245",
     ItemID = 118557229750245,
-    ItemName = "Sweater",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
@@ -7923,7 +7923,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7942,7 +7942,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=76537883908961",
     ItemID = 76537883908961,
-    ItemName = "Treats",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2025"
@@ -7953,7 +7953,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -7967,7 +7967,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -7981,7 +7981,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546356",
     ItemID = 238546356,
-    ItemName = "Wooden",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon"
 }
@@ -7991,7 +7991,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8005,7 +8005,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8020,7 +8020,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800251557",
     ItemID = 7800251557,
-    ItemName = "Wraiths",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2021"
@@ -8031,7 +8031,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8045,7 +8045,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8060,7 +8060,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121867603",
     ItemID = 6121867603,
-    ItemName = "Wrap",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2020"
@@ -8071,7 +8071,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8085,7 +8085,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8100,7 +8100,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332497103",
     ItemID = 332497103,
-    ItemName = "Wrapped",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2015"
@@ -8111,7 +8111,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8125,7 +8125,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8140,7 +8140,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=109929760056853",
     ItemID = 109929760056853,
-    ItemName = "Wrapped",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2024"
@@ -8151,7 +8151,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8165,7 +8165,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -8180,7 +8180,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513743298",
     ItemID = 2513743298,
-    ItemName = "Zombie",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2018"
@@ -8191,7 +8191,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8205,7 +8205,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8220,7 +8220,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210944924",
     ItemID = 4210944924,
-    ItemName = "Zombified",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Uncommon",
     Year = "2019"
@@ -8231,7 +8231,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8245,7 +8245,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8260,7 +8260,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800250906",
     ItemID = 7800250906,
-    ItemName = "Aliens",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
@@ -8271,7 +8271,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8285,7 +8285,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -8300,7 +8300,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11255501940",
     ItemID = 11255501940,
-    ItemName = "Apocalypse",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
@@ -8311,7 +8311,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8325,7 +8325,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8339,7 +8339,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=476599365",
     ItemID = 476599365,
-    ItemName = "Asteroid",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -8349,7 +8349,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8363,7 +8363,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -8377,7 +8377,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18323751962",
     ItemID = 18323751962,
-    ItemName = "Balloons",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
@@ -8388,7 +8388,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8402,7 +8402,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8417,7 +8417,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=71258273720666",
     ItemID = 71258273720666,
-    ItemName = "Bats",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
@@ -8428,7 +8428,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8442,7 +8442,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8457,7 +8457,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513741174",
     ItemID = 2513741174,
-    ItemName = "Bats",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
@@ -8468,7 +8468,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8482,7 +8482,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8496,7 +8496,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=162669041",
     ItemID = 196752330,
-    ItemName = "Big Kill",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -8506,7 +8506,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8520,7 +8520,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8534,7 +8534,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238549030",
     ItemID = 238549030,
-    ItemName = "Bit",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -8544,7 +8544,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8558,7 +8558,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8573,7 +8573,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834435627",
     ItemID = 11834435627,
-    ItemName = "Candied",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
@@ -8584,7 +8584,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8598,7 +8598,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8613,7 +8613,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11255558166",
     ItemID = 11255558166,
-    ItemName = "Candy Corn",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
@@ -8624,7 +8624,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8638,7 +8638,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8653,7 +8653,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=117473869340749",
     ItemID = 117473869340749,
-    ItemName = "Candy Corn",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
@@ -8664,7 +8664,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8678,7 +8678,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8693,7 +8693,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866454590",
     ItemID = 5866454590,
-    ItemName = "Candy Corn",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
@@ -8704,7 +8704,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8723,7 +8723,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=129781304866793",
     ItemID = 129781304866793,
-    ItemName = "CandyCorn",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
@@ -8734,7 +8734,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8748,7 +8748,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8763,7 +8763,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304768700",
     ItemID = 8304768700,
-    ItemName = "Cane",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
@@ -8774,7 +8774,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8788,7 +8788,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8803,7 +8803,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866457985",
     ItemID = 5866457985,
-    ItemName = "Carved",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
@@ -8814,7 +8814,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8828,7 +8828,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8843,7 +8843,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800253444",
     ItemID = 7800253444,
-    ItemName = "Cat",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
@@ -8854,7 +8854,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8868,7 +8868,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8882,7 +8882,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659627976",
     ItemID = 4659627976,
-    ItemName = "Clown",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
@@ -8893,7 +8893,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8907,7 +8907,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -8921,7 +8921,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322197952",
     ItemID = 18322197952,
-    ItemName = "Clownfish",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
@@ -8932,7 +8932,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8946,7 +8946,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -8961,7 +8961,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304769409",
     ItemID = 8304769409,
-    ItemName = "Coal",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
@@ -8972,7 +8972,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -8986,7 +8986,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9001,7 +9001,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834434264",
     ItemID = 11834434264,
-    ItemName = "Coal",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
@@ -9012,7 +9012,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9026,7 +9026,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9041,7 +9041,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669784920",
     ItemID = 2669784920,
-    ItemName = "Coal",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
@@ -9052,7 +9052,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9066,7 +9066,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9080,7 +9080,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=161309889",
     ItemID = 196752499,
-    ItemName = "Cold",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -9090,7 +9090,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9104,7 +9104,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9119,7 +9119,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800254737",
     ItemID = 7800254737,
-    ItemName = "Cracks",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
@@ -9130,7 +9130,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9144,7 +9144,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9159,7 +9159,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11255507374",
     ItemID = 11255507374,
-    ItemName = "Darkness",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
@@ -9170,7 +9170,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9184,7 +9184,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9198,7 +9198,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=197518111",
     ItemID = 196751820,
-    ItemName = "Default Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
@@ -9209,7 +9209,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9223,7 +9223,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9238,7 +9238,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635569893",
     ItemID = 15635569893,
-    ItemName = "Elf",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2023"
@@ -9249,7 +9249,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9263,7 +9263,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9278,7 +9278,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669785184",
     ItemID = 2669785184,
-    ItemName = "Elf",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
@@ -9289,7 +9289,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9303,7 +9303,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9318,7 +9318,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332767999",
     ItemID = 332767999,
-    ItemName = "Elf",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2015"
@@ -9329,7 +9329,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9343,7 +9343,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9357,7 +9357,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203807690",
     ItemID = 203807690,
-    ItemName = "Engraved",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -9367,7 +9367,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9386,7 +9386,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=78153346812503",
     ItemID = 78153346812503,
-    ItemName = "Fall",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
@@ -9397,7 +9397,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9411,7 +9411,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9425,7 +9425,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=175668592",
     ItemID = 196752601,
-    ItemName = "Fallout",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -9435,7 +9435,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9449,7 +9449,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -9463,7 +9463,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965349193",
     ItemID = 12965349193,
-    ItemName = "Fragile",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
@@ -9474,7 +9474,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9488,7 +9488,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9503,7 +9503,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534866678",
     ItemID = 4534866678,
-    ItemName = "Frosted",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
@@ -9514,7 +9514,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9528,7 +9528,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9543,7 +9543,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635571468",
     ItemID = 15635571468,
-    ItemName = "Frozen",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2023"
@@ -9554,7 +9554,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9568,7 +9568,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9583,7 +9583,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121864813",
     ItemID = 6121864813,
-    ItemName = "Gift Bag",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
@@ -9594,7 +9594,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9608,7 +9608,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9623,7 +9623,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534867381",
     ItemID = 4534867381,
-    ItemName = "Gifts",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
@@ -9634,7 +9634,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9648,7 +9648,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://2514719081",
     MeshType = Enum.MeshType.FileMesh,
@@ -9663,7 +9663,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513731746",
     ItemID = 2513731746,
-    ItemName = "Grave",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
@@ -9674,7 +9674,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9688,7 +9688,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9702,7 +9702,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546100",
     ItemID = 238546100,
-    ItemName = "HL2",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -9712,7 +9712,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9726,7 +9726,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9741,7 +9741,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513741901",
     ItemID = 2513741901,
-    ItemName = "Haunted",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
@@ -9752,7 +9752,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9766,7 +9766,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9781,7 +9781,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=95517099886712",
     ItemID = 95517099886712,
-    ItemName = "Igloo",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
@@ -9792,7 +9792,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9806,7 +9806,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9821,7 +9821,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11255502768",
     ItemID = 11255502768,
-    ItemName = "Infected",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
@@ -9832,7 +9832,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9846,7 +9846,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9860,7 +9860,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203806022",
     ItemID = 203806022,
-    ItemName = "Infiltrator",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -9870,7 +9870,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9884,7 +9884,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9898,7 +9898,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=160201541",
     ItemID = 196752812,
-    ItemName = "Iron",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -9908,7 +9908,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9922,7 +9922,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -9936,7 +9936,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203807397",
     ItemID = 203807397,
-    ItemName = "Juice",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -9946,7 +9946,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9965,7 +9965,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=104258636970738",
     ItemID = 104258636970738,
-    ItemName = "Lights",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
@@ -9976,7 +9976,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -9990,7 +9990,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10004,7 +10004,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238546032",
     ItemID = 238546032,
-    ItemName = "News",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -10014,7 +10014,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10028,7 +10028,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10043,7 +10043,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332497144",
     ItemID = 332497144,
-    ItemName = "Ornament1",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2015"
@@ -10054,7 +10054,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10068,7 +10068,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10083,7 +10083,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332497550",
     ItemID = 332497550,
-    ItemName = "Ornament2",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2015"
@@ -10094,7 +10094,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10108,7 +10108,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10123,7 +10123,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121863515",
     ItemID = 6121863515,
-    ItemName = "Ornaments",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
@@ -10134,7 +10134,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10148,7 +10148,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10162,7 +10162,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=238545971",
     ItemID = 238545971,
-    ItemName = "Pea",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -10172,7 +10172,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10186,7 +10186,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10201,7 +10201,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=73148873488539",
     ItemID = 73148873488539,
-    ItemName = "Peppermint",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
@@ -10212,7 +10212,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10226,7 +10226,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10241,7 +10241,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534871260",
     ItemID = 4534871260,
-    ItemName = "Pine",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
@@ -10252,7 +10252,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10271,7 +10271,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=121681210724670",
     ItemID = 121681210724670,
-    ItemName = "Plaid",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2026"
@@ -10282,7 +10282,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10296,7 +10296,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10311,7 +10311,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091327743",
     ItemID = 15091327743,
-    ItemName = "Pumpkin",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2023"
@@ -10322,7 +10322,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10336,7 +10336,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10351,7 +10351,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210947993",
     ItemID = 4210947993,
-    ItemName = "RIP",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
@@ -10362,7 +10362,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10376,7 +10376,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10390,7 +10390,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18323752709",
     ItemID = 18323752709,
-    ItemName = "Sandy",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
@@ -10401,7 +10401,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10415,7 +10415,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10430,7 +10430,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332496861",
     ItemID = 332496861,
-    ItemName = "Santa",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2015"
@@ -10441,7 +10441,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10455,7 +10455,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10470,7 +10470,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635550625",
     ItemID = 15635550625,
-    ItemName = "Santa",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2023"
@@ -10481,7 +10481,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10495,7 +10495,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10510,7 +10510,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513742319",
     ItemID = 2513742319,
-    ItemName = "Slime",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
@@ -10521,7 +10521,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10540,7 +10540,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=104416405402940",
     ItemID = 104416405402940,
-    ItemName = "Snowball",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
@@ -10551,7 +10551,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10565,7 +10565,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -10580,7 +10580,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534866065",
     ItemID = 4534866065,
-    ItemName = "Snowflakes",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
@@ -10591,7 +10591,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10605,7 +10605,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10620,7 +10620,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834436620",
     ItemID = 11834436620,
-    ItemName = "Snowman",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
@@ -10631,7 +10631,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10645,7 +10645,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10660,7 +10660,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669786846",
     ItemID = 2669786846,
-    ItemName = "Snowman",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
@@ -10671,7 +10671,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10685,7 +10685,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10699,7 +10699,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183639522",
     ItemID = 3183639522,
-    ItemName = "Splat",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
@@ -10710,7 +10710,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10724,7 +10724,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10738,7 +10738,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=203807904",
     ItemID = 203807904,
-    ItemName = "Star",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common"
 }
@@ -10748,7 +10748,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10762,7 +10762,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10776,7 +10776,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322189584",
     ItemID = 18322189584,
-    ItemName = "Starfish",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
@@ -10787,7 +10787,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10801,7 +10801,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10816,7 +10816,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5930731295",
     ItemID = 5930731295,
-    ItemName = "Starry",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
@@ -10827,7 +10827,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10841,7 +10841,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10856,7 +10856,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=108122054293502",
     ItemID = 108122054293502,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
@@ -10867,7 +10867,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10886,7 +10886,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=75123474631661",
     ItemID = 75123474631661,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
@@ -10897,7 +10897,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10911,7 +10911,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -10925,7 +10925,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://13944151909",
     ItemID = 13944151514,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
@@ -10936,7 +10936,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10950,7 +10950,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -10965,7 +10965,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800257010",
     ItemID = 7800257010,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
@@ -10976,7 +10976,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -10990,7 +10990,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11005,7 +11005,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=91224254479440",
     ItemID = 91224254479440,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
@@ -11016,7 +11016,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11035,7 +11035,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=127489830827583",
     ItemID = 127489830827583,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
@@ -11046,7 +11046,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11060,7 +11060,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11075,7 +11075,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834432971",
     ItemID = 11834432971,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
@@ -11086,7 +11086,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11100,7 +11100,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11115,7 +11115,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304770115",
     ItemID = 8304770115,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2021"
@@ -11126,7 +11126,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11140,7 +11140,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11155,7 +11155,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=76288270695961",
     ItemID = 76288270695961,
-    ItemName = "Stockings",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2024"
@@ -11166,7 +11166,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11185,7 +11185,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=128646835922561",
     ItemID = 128646835922561,
-    ItemName = "Strawberries",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2026"
@@ -11196,7 +11196,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11215,7 +11215,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=118530164125152",
     ItemID = 118530164125152,
-    ItemName = "Striped",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
@@ -11226,7 +11226,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11240,7 +11240,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392",
     MeshType = Enum.MeshType.FileMesh,
@@ -11251,7 +11251,7 @@ local MESHES_OLD =
 },
     {
     Class = "Vector3Value",
-    Name = "OriginalPosition",
+    Name = "Catmio Reborn",
     Props = {
     Value = Vector3.new(0, 0, 0)
 }
@@ -11261,7 +11261,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://13944153112",
     ItemID = 13944152795,
-    ItemName = "Toy",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
@@ -11272,7 +11272,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11291,7 +11291,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=84030107970606",
     ItemID = 84030107970606,
-    ItemName = "UFOs",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2025"
@@ -11302,7 +11302,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11316,7 +11316,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11331,7 +11331,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091402817",
     ItemID = 15091402817,
-    ItemName = "Vines",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2023"
@@ -11342,7 +11342,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11356,7 +11356,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11371,7 +11371,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866459380",
     ItemID = 5866459380,
-    ItemName = "Watcher",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2020"
@@ -11382,7 +11382,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11396,7 +11396,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11410,7 +11410,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16960077712",
     ItemID = 16960077712,
-    ItemName = "Wavy",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Season = 1
@@ -11421,7 +11421,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11435,7 +11435,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11450,7 +11450,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210936652",
     ItemID = 4210936652,
-    ItemName = "Webbed",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2019"
@@ -11461,7 +11461,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11475,7 +11475,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11490,7 +11490,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11284147880",
     ItemID = 11284147880,
-    ItemName = "Webs",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2022"
@@ -11501,7 +11501,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11515,7 +11515,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11530,7 +11530,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669787533",
     ItemID = 2669787533,
-    ItemName = "Wrapped",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Common",
     Year = "2018"
@@ -11541,7 +11541,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11555,7 +11555,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=25298496",
     MeshType = Enum.MeshType.FileMesh,
@@ -11569,7 +11569,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=164676043",
     ItemID = 196751752,
-    ItemName = "America",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Classic"
 }
@@ -11579,7 +11579,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11593,7 +11593,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=79401392 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11607,7 +11607,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=144290769",
     ItemID = 196752052,
-    ItemName = "Cowboy",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Classic"
 }
@@ -11617,7 +11617,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11631,7 +11631,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=25298496",
     MeshType = Enum.MeshType.FileMesh,
@@ -11645,7 +11645,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=147835357",
     ItemID = 196751989,
-    ItemName = "Golden",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Classic"
 }
@@ -11655,7 +11655,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11669,7 +11669,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=18265627",
     MeshType = Enum.MeshType.FileMesh,
@@ -11683,7 +11683,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=54798135",
     ItemID = 196751943,
-    ItemName = "Laser",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Classic"
 }
@@ -11693,7 +11693,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11707,7 +11707,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=69486593",
     MeshType = Enum.MeshType.FileMesh,
@@ -11721,7 +11721,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=144325423",
     ItemID = 196752144,
-    ItemName = "Phaser",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Classic"
 }
@@ -11731,7 +11731,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11745,7 +11745,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -11759,7 +11759,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=197879343",
     ItemID = 197879343,
-    ItemName = "Corrupt",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Unique"
 }
@@ -11769,7 +11769,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11783,7 +11783,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=305826272",
     MeshType = Enum.MeshType.FileMesh,
@@ -11798,7 +11798,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=375690925",
     ItemID = 2511791893,
-    ItemName = "Batwing",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioOffset = {
     X = -1.1,
@@ -11814,7 +11814,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11833,7 +11833,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=136673966529736",
     ItemID = 136673966529736,
-    ItemName = "Celestial",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2024"
@@ -11844,7 +11844,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11863,7 +11863,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4468593654",
     ItemID = 4211148191,
-    ItemName = "Elderwood Scythe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2019"
@@ -11874,7 +11874,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11893,7 +11893,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5877016863",
     ItemID = 5877016863,
-    ItemName = "Hallowscythe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2020"
@@ -11904,7 +11904,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11923,7 +11923,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121572723",
     ItemID = 6125729383,
-    ItemName = "Icebreaker",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2020"
@@ -11934,7 +11934,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11948,7 +11948,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://3183449780",
     MeshType = Enum.MeshType.FileMesh,
@@ -11964,7 +11964,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669997196",
     ItemID = 3183085102,
-    ItemName = "Icewing",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     ThrowingHandle = 3183093706,
@@ -11976,7 +11976,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -11990,7 +11990,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=4535643726",
     MeshType = Enum.MeshType.FileMesh,
@@ -12005,7 +12005,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4528268775",
     ItemID = 4535644282,
-    ItemName = "Logchopper",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2019"
@@ -12016,7 +12016,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12030,7 +12030,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=305826272",
     MeshType = Enum.MeshType.FileMesh,
@@ -12044,7 +12044,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2533350813",
     ItemID = 2533351841,
-    ItemName = "Nik's Scythe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioOffset = {
     X = -1.1,
@@ -12059,7 +12059,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12078,7 +12078,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304801000",
     ItemID = 8304801000,
-    ItemName = "Swirly Axe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2021"
@@ -12089,7 +12089,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12108,7 +12108,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15070870271",
     ItemID = 15070870271,
-    ItemName = "Traveler's Axe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2023"
@@ -12119,7 +12119,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12138,7 +12138,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=130837676383567",
     ItemID = 130837676383567,
-    ItemName = "Vampire's Axe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2024"
@@ -12149,7 +12149,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12168,7 +12168,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=77607127867154",
     ItemID = 77607127867154,
-    ItemName = "Alienbeam",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -12179,7 +12179,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12193,7 +12193,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://86649405964534",
     MeshType = Enum.MeshType.FileMesh,
@@ -12204,7 +12204,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 20, 0),
     Face = Enum.NormalId.Left,
@@ -12219,7 +12219,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=104256106059730",
     ItemID = 77607127867154,
-    ItemName = "Alienbeam",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -12230,7 +12230,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12249,7 +12249,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=101343256002049",
     ItemID = 101343256002049,
-    ItemName = "Australis",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2024"
@@ -12260,7 +12260,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12279,7 +12279,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11229814357",
     ItemID = 11229814357,
-    ItemName = "Bat",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -12290,7 +12290,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12304,7 +12304,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1084767698",
     MeshType = Enum.MeshType.FileMesh,
@@ -12319,7 +12319,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133237368",
     ItemID = 1133237368,
-    ItemName = "BattleAxe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 2.0944,
@@ -12340,7 +12340,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12359,7 +12359,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513535503",
     ItemID = 2513535503,
-    ItemName = "BattleAxe II",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
@@ -12370,7 +12370,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12388,7 +12388,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=4751540097",
     ItemID = 4751539262,
-    ItemName = "Bioblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Offset = {
     X = -0.1,
@@ -12404,7 +12404,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12422,7 +12422,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://132419834610569",
     ItemID = 128553215441980,
-    ItemName = "Bloom",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -12433,7 +12433,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12447,7 +12447,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -12461,7 +12461,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3184139996",
     ItemID = 3184125087,
-    ItemName = "Blue Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -12471,7 +12471,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12485,7 +12485,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Front,
@@ -12495,7 +12495,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1857106669",
     MeshType = Enum.MeshType.FileMesh,
@@ -12511,7 +12511,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513597845",
     ItemID = 2513598419,
-    ItemName = "Boneblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
@@ -12522,7 +12522,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12536,7 +12536,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1857106669",
     MeshType = Enum.MeshType.FileMesh,
@@ -12551,7 +12551,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513505477",
     ItemID = 2513505477,
-    ItemName = "Boneblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
@@ -12562,7 +12562,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12581,7 +12581,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7805833970",
     ItemID = 7805833970,
-    ItemName = "Candleflame",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
@@ -12592,7 +12592,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12606,7 +12606,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://7791364860",
     MeshType = Enum.MeshType.FileMesh,
@@ -12617,7 +12617,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Front,
@@ -12632,7 +12632,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/asset/?id=7806149582",
     ItemID = 7806121918,
-    ItemName = "Candleflame",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
@@ -12643,7 +12643,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12657,7 +12657,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=19040337",
     MeshType = Enum.MeshType.FileMesh,
@@ -12672,7 +12672,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332021011",
     ItemID = 332021011,
-    ItemName = "Candy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2015"
@@ -12683,7 +12683,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12697,7 +12697,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=105329941",
     MeshType = Enum.MeshType.FileMesh,
@@ -12712,7 +12712,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332022166",
     ItemID = 332022166,
-    ItemName = "Chill",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2015"
@@ -12723,7 +12723,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12737,7 +12737,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=352571495",
     MeshType = Enum.MeshType.FileMesh,
@@ -12751,7 +12751,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=360609441",
     ItemID = 473570519,
-    ItemName = "Clockwork",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.6652,
@@ -12771,7 +12771,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12790,7 +12790,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121574620",
     ItemID = 6125733703,
-    ItemName = "Cookieblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
@@ -12801,7 +12801,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12819,7 +12819,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11855306927",
     ItemID = 11855306927,
-    ItemName = "Cookiecane",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -12830,7 +12830,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12844,7 +12844,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(125, 255, 0),
     Face = Enum.NormalId.Back,
@@ -12859,7 +12859,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxassetid://11979596437",
     ItemID = 11873640255,
-    ItemName = "Cookiecane",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -12870,7 +12870,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12884,7 +12884,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15020899066",
     MeshType = Enum.MeshType.FileMesh,
@@ -12899,7 +12899,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15080267070",
     ItemID = 15080267070,
-    ItemName = "Darksword",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
@@ -12910,7 +12910,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12924,7 +12924,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://62275962",
     MeshType = Enum.MeshType.FileMesh,
@@ -12935,7 +12935,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 18, 0),
     Face = Enum.NormalId.Front,
@@ -12954,7 +12954,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://3187397317",
     ItemID = 3187390667,
-    ItemName = "Deathshard",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = -1.0472,
@@ -12974,7 +12974,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -12988,7 +12988,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=62275962 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -13007,7 +13007,7 @@ local MESHES_OLD =
 },
     Image = "rbxassetid://3175017717",
     ItemID = 196750305,
-    ItemName = "Deathshard",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = -1.0472,
@@ -13027,7 +13027,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13045,7 +13045,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=6607512359",
     ItemID = 6607277825,
-    ItemName = "Eggblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -13056,7 +13056,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13070,7 +13070,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://11238166013",
     MeshType = Enum.MeshType.FileMesh,
@@ -13081,7 +13081,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 20, 0),
     Face = Enum.NormalId.Right,
@@ -13096,7 +13096,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/asset/?id=11255021976",
     ItemID = 11254975176,
-    ItemName = "Elderwood Blade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -13107,7 +13107,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13121,7 +13121,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://11238166013",
     MeshType = Enum.MeshType.FileMesh,
@@ -13136,7 +13136,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254879631",
     ItemID = 11262771067,
-    ItemName = "Elderwood Blade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -13147,7 +13147,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13161,7 +13161,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
@@ -13175,7 +13175,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=538706317",
     ItemID = 619605312,
-    ItemName = "Eternal",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -13185,7 +13185,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13199,7 +13199,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
@@ -13213,7 +13213,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2545253030",
     ItemID = 2545253030,
-    ItemName = "Eternal II",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -13223,7 +13223,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13237,7 +13237,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
@@ -13251,7 +13251,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3281170430",
     ItemID = 3279011390,
-    ItemName = "Eternal III",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -13262,7 +13262,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13276,7 +13276,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
@@ -13290,7 +13290,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4999958740",
     ItemID = 4999958740,
-    ItemName = "Eternal IV",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -13301,7 +13301,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13315,7 +13315,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://3132923779",
     MeshType = Enum.MeshType.FileMesh,
@@ -13330,7 +13330,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4488391411",
     ItemID = 4488391411,
-    ItemName = "Eternalcane",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
@@ -13341,7 +13341,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13355,7 +13355,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15408280573",
     MeshType = Enum.MeshType.FileMesh,
@@ -13366,7 +13366,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(248, 217, 109),
@@ -13380,7 +13380,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(248, 217, 109),
@@ -13394,7 +13394,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(248, 217, 109),
@@ -13408,7 +13408,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(248, 217, 109),
@@ -13422,7 +13422,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(248, 217, 109),
@@ -13441,7 +13441,7 @@ local MESHES_OLD =
     FX = true,
     Image = "rbxassetid://15694357137",
     ItemID = 15667157715,
-    ItemName = "Evergreen",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
@@ -13452,7 +13452,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13466,7 +13466,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15408280573",
     MeshType = Enum.MeshType.FileMesh,
@@ -13477,7 +13477,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Decal",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 255, 255),
     Face = Enum.NormalId.Front,
@@ -13487,7 +13487,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Decal",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 255, 255),
     Face = Enum.NormalId.Front,
@@ -13497,7 +13497,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(255, 255, 255),
@@ -13511,7 +13511,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(255, 255, 255),
@@ -13525,7 +13525,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(255, 255, 255),
@@ -13539,7 +13539,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(255, 255, 255),
@@ -13553,7 +13553,7 @@ local MESHES_OLD =
 },
     {
     Class = "MeshPart",
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(255, 255, 255),
@@ -13573,7 +13573,7 @@ local MESHES_OLD =
     FX = true,
     Image = "rbxassetid://15694192241",
     ItemID = 15694110573,
-    ItemName = "Evergreen",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
@@ -13584,7 +13584,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13598,7 +13598,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 20, 0),
     Face = Enum.NormalId.Front,
@@ -13608,7 +13608,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://117500241",
     MeshType = Enum.MeshType.FileMesh,
@@ -13628,7 +13628,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://3187397850",
     ItemID = 3187392501,
-    ItemName = "Fang",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = -1.0472,
@@ -13648,7 +13648,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13662,7 +13662,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=117500241",
     MeshType = Enum.MeshType.FileMesh,
@@ -13681,7 +13681,7 @@ local MESHES_OLD =
 },
     Image = "rbxassetid://3187397768",
     ItemID = 198442811,
-    ItemName = "Fang",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = -1.0472,
@@ -13701,7 +13701,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13715,7 +13715,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=238314098",
     MeshType = Enum.MeshType.FileMesh,
@@ -13726,7 +13726,7 @@ local MESHES_OLD =
 },
     {
     Class = "Part",
-    Name = "EffectCenter",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(163, 162, 165),
@@ -13742,7 +13742,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=585873746",
     ItemID = 585873746,
-    ItemName = "Flames",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.6652,
@@ -13762,7 +13762,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13780,7 +13780,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16963860501",
     ItemID = 16963860501,
-    ItemName = "Flowerwood",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -13791,7 +13791,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13805,7 +13805,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=4528435571",
     MeshType = Enum.MeshType.FileMesh,
@@ -13820,7 +13820,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/asset/?id=4528373246",
     ItemID = 4528484880,
-    ItemName = "Frostbite",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
@@ -13831,7 +13831,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13845,7 +13845,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1192795322",
     MeshType = Enum.MeshType.FileMesh,
@@ -13860,7 +13860,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268934541",
     ItemID = 1269580035,
-    ItemName = "Frostsaber",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.4907,
@@ -13881,7 +13881,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13895,7 +13895,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1626714161",
     MeshType = Enum.MeshType.FileMesh,
@@ -13906,7 +13906,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -13920,7 +13920,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://3183657875",
     ItemID = 3183597816,
-    ItemName = "Gemstone",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -13931,7 +13931,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13945,7 +13945,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1626714161",
     MeshType = Enum.MeshType.FileMesh,
@@ -13959,7 +13959,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3183657748",
     ItemID = 3183598040,
-    ItemName = "Gemstone",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -13970,7 +13970,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -13984,7 +13984,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://4217554208",
     MeshType = Enum.MeshType.FileMesh,
@@ -13999,7 +13999,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4217586790",
     ItemID = 4221789003,
-    ItemName = "Ghostblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
@@ -14010,7 +14010,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14024,7 +14024,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://2682453204",
     MeshType = Enum.MeshType.FileMesh,
@@ -14039,7 +14039,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669336659",
     ItemID = 2669336659,
-    ItemName = "Gingerblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
@@ -14050,7 +14050,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14064,7 +14064,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://2682453204",
     MeshType = Enum.MeshType.FileMesh,
@@ -14075,7 +14075,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 18, 0),
     Face = Enum.NormalId.Front,
@@ -14085,7 +14085,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 18, 0),
     Face = Enum.NormalId.Front,
@@ -14100,7 +14100,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2672351679",
     ItemID = 2672349340,
-    ItemName = "Gingerblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
@@ -14111,7 +14111,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14125,7 +14125,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=179155055",
     MeshType = Enum.MeshType.FileMesh,
@@ -14140,7 +14140,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1132775323",
     ItemID = 1132775323,
-    ItemName = "Hallow's Blade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2017"
@@ -14151,7 +14151,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14165,7 +14165,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=179155055",
     MeshType = Enum.MeshType.FileMesh,
@@ -14180,7 +14180,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531878205",
     ItemID = 531878205,
-    ItemName = "Hallow's Edge",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2016"
@@ -14191,7 +14191,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14209,7 +14209,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332042435",
     ItemID = 473572138,
-    ItemName = "Handsaw",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 0.3491,
@@ -14230,7 +14230,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14249,7 +14249,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=118334707962654",
     ItemID = 118334707962654,
-    ItemName = "Heart Wand",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1,
@@ -14261,7 +14261,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14275,7 +14275,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://77738838473091",
     MeshType = Enum.MeshType.FileMesh,
@@ -14286,7 +14286,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Left,
@@ -14301,7 +14301,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxassetid://83357695007777",
     ItemID = 78479059410850,
-    ItemName = "Heart Wand",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1,
@@ -14313,7 +14313,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14331,7 +14331,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=6413214382",
     ItemID = 6413145922,
-    ItemName = "Heartblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -14342,7 +14342,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14356,7 +14356,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=105333894",
     MeshType = Enum.MeshType.FileMesh,
@@ -14367,7 +14367,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 18, 0),
     Face = Enum.NormalId.Left,
@@ -14381,7 +14381,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://3187444849",
     ItemID = 3187395238,
-    ItemName = "Heat",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -14391,7 +14391,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14405,7 +14405,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=105333894",
     MeshType = Enum.MeshType.FileMesh,
@@ -14419,7 +14419,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3187444758",
     ItemID = 201238541,
-    ItemName = "Heat",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -14429,7 +14429,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14443,7 +14443,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=165708869 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -14458,7 +14458,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=585846454",
     ItemID = 585872642,
-    ItemName = "Ice Dragon",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Offset = {
     X = 0,
@@ -14484,7 +14484,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14498,7 +14498,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=188539751",
     MeshType = Enum.MeshType.FileMesh,
@@ -14513,7 +14513,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268710824",
     ItemID = 1268710824,
-    ItemName = "Ice Shard",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.6652,
@@ -14534,7 +14534,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14553,7 +14553,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304818186",
     ItemID = 8304818186,
-    ItemName = "Iceflake",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
@@ -14564,7 +14564,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14582,7 +14582,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6598123521",
     ItemID = 6598123521,
-    ItemName = "Nebula",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -14593,7 +14593,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14607,7 +14607,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=103838505",
     MeshType = Enum.MeshType.FileMesh,
@@ -14621,7 +14621,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=475478854",
     ItemID = 475478854,
-    ItemName = "Nightblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 2.0944,
@@ -14641,7 +14641,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14655,7 +14655,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=262027449",
     MeshType = Enum.MeshType.FileMesh,
@@ -14666,7 +14666,7 @@ local MESHES_OLD =
 },
     {
     Class = "Part",
-    Name = "EffectFull",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(163, 162, 165),
@@ -14679,7 +14679,7 @@ local MESHES_OLD =
 },
     {
     Class = "Part",
-    Name = "EffectHalf",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(163, 162, 165),
@@ -14692,7 +14692,7 @@ local MESHES_OLD =
 },
     {
     Class = "Part",
-    Name = "EffectCenter",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(163, 162, 165),
@@ -14713,7 +14713,7 @@ local MESHES_OLD =
 },
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=446047742",
     ItemID = 473570051,
-    ItemName = "Old Glory",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Offset = {
     X = -0.1,
@@ -14738,7 +14738,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14752,7 +14752,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -14766,7 +14766,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3184139504",
     ItemID = 3184124504,
-    ItemName = "Orange Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -14776,7 +14776,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14795,7 +14795,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=111092946728824",
     ItemID = 111092946728824,
-    ItemName = "Ornament",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -14806,7 +14806,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14820,7 +14820,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 20, 0),
     Face = Enum.NormalId.Left,
@@ -14830,7 +14830,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://116508096109443",
     MeshType = Enum.MeshType.FileMesh,
@@ -14846,7 +14846,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxassetid://74528014775455",
     ItemID = 111092946728824,
-    ItemName = "Ornament",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -14857,7 +14857,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14875,7 +14875,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322621319",
     ItemID = 18322621319,
-    ItemName = "Pearl",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -14886,7 +14886,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14900,7 +14900,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6085025295",
     MeshType = Enum.MeshType.FileMesh,
@@ -14915,7 +14915,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6076067750",
     ItemID = 6085035357,
-    ItemName = "Peppermint",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
@@ -14926,7 +14926,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14944,7 +14944,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11229732037",
     ItemID = 11229732037,
-    ItemName = "Phantom",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -14955,7 +14955,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -14969,7 +14969,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=361629844",
     MeshType = Enum.MeshType.FileMesh,
@@ -14983,7 +14983,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365347166",
     ItemID = 473573054,
-    ItemName = "Pixel",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Offset = {
     X = 0,
@@ -15003,7 +15003,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15021,7 +15021,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=10014680882",
     ItemID = 10014680882,
-    ItemName = "Plasmablade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -15032,7 +15032,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15046,7 +15046,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://5355753728",
     MeshType = Enum.MeshType.FileMesh,
@@ -15060,7 +15060,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5360359935",
     ItemID = 5360359935,
-    ItemName = "Prismatic",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -15071,7 +15071,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15085,7 +15085,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=94840342",
     MeshType = Enum.MeshType.FileMesh,
@@ -15100,7 +15100,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133082421",
     ItemID = 1138143590,
-    ItemName = "Pumpking",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 2.0944,
@@ -15121,7 +15121,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15135,7 +15135,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -15149,7 +15149,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3184140119",
     ItemID = 3184125244,
-    ItemName = "Purple Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -15159,7 +15159,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15177,7 +15177,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12966184630",
     ItemID = 12966184630,
-    ItemName = "Rainbow",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -15188,7 +15188,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15202,7 +15202,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -15216,7 +15216,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3184139367",
     ItemID = 3184122829,
-    ItemName = "Red Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -15226,7 +15226,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15244,7 +15244,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339366064",
     ItemID = 12339366064,
-    ItemName = "Sakura",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -15255,7 +15255,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15269,7 +15269,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=168119698",
     MeshType = Enum.MeshType.FileMesh,
@@ -15283,7 +15283,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3187397991",
     ItemID = 235381341,
-    ItemName = "Saw",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -15293,7 +15293,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15307,7 +15307,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://168119698",
     MeshType = Enum.MeshType.FileMesh,
@@ -15318,7 +15318,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Left,
@@ -15332,7 +15332,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://3187398132",
     ItemID = 3187392992,
-    ItemName = "Saw",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -15342,7 +15342,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15356,7 +15356,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -15370,7 +15370,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3184139765",
     ItemID = 198441783,
-    ItemName = "Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -15380,7 +15380,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15394,7 +15394,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -15405,7 +15405,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Front,
@@ -15419,7 +15419,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://3184140321",
     ItemID = 3184125538,
-    ItemName = "Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -15429,7 +15429,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15443,7 +15443,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://283709822",
     MeshType = Enum.MeshType.FileMesh,
@@ -15454,7 +15454,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Back,
@@ -15468,7 +15468,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://3187398385",
     ItemID = 3187393285,
-    ItemName = "Slasher",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -15478,7 +15478,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15492,7 +15492,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=283709822",
     MeshType = Enum.MeshType.FileMesh,
@@ -15506,7 +15506,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3187398274",
     ItemID = 315506122,
-    ItemName = "Slasher",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -15516,7 +15516,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15535,7 +15535,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=95328449981238",
     ItemID = 95328449981238,
-    ItemName = "Snow Dagger",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -15546,7 +15546,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15560,7 +15560,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Left,
@@ -15570,7 +15570,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://140633396635861",
     MeshType = Enum.MeshType.FileMesh,
@@ -15586,7 +15586,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxassetid://102260232089801",
     ItemID = 95328449981238,
-    ItemName = "Snow Dagger",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -15597,7 +15597,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15611,7 +15611,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://582120569",
     MeshType = Enum.MeshType.FileMesh,
@@ -15626,7 +15626,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268932977",
     ItemID = 1268932977,
-    ItemName = "Snowflake",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = -4.3633,
@@ -15647,7 +15647,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15661,7 +15661,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://86944837615327",
     MeshType = Enum.MeshType.FileMesh,
@@ -15672,7 +15672,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Left,
@@ -15687,7 +15687,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxassetid://74943438536351",
     ItemID = 70973050894155,
-    ItemName = "Snowstorm",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -15698,7 +15698,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15712,7 +15712,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=302165984",
     MeshType = Enum.MeshType.FileMesh,
@@ -15727,7 +15727,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315120760",
     ItemID = 473571549,
-    ItemName = "Spider",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Offset = {
     X = 0,
@@ -15753,7 +15753,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15772,7 +15772,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=107190526940939",
     ItemID = 107190526940939,
-    ItemName = "Spirit",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2024"
@@ -15783,7 +15783,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15797,7 +15797,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(2555, 2322, 200),
     Face = Enum.NormalId.Left,
@@ -15807,7 +15807,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://137082284051764",
     MeshType = Enum.MeshType.FileMesh,
@@ -15823,7 +15823,7 @@ local MESHES_OLD =
     FX = true,
     Image = "rbxthumb://type=Asset&w=150&h=150&id=103526268515240",
     ItemID = 103526268515240,
-    ItemName = "Sunset",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -15834,7 +15834,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15848,7 +15848,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://137082284051764",
     MeshType = Enum.MeshType.FileMesh,
@@ -15859,7 +15859,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Right,
@@ -15869,7 +15869,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Glow",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(2555, 2322, 200),
     Face = Enum.NormalId.Left,
@@ -15885,7 +15885,7 @@ local MESHES_OLD =
     FX = true,
     Image = "rbxassetid://118232478609755",
     ItemID = 103526268515240,
-    ItemName = "Sunset",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -15896,7 +15896,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15910,7 +15910,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 20, 0),
     Face = Enum.NormalId.Left,
@@ -15920,7 +15920,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://88250692342609",
     MeshType = Enum.MeshType.FileMesh,
@@ -15936,7 +15936,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxassetid://107087165596219",
     ItemID = 126937716954396,
-    ItemName = "Sweet",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1,
@@ -15948,7 +15948,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15967,7 +15967,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304805693",
     ItemID = 8304805693,
-    ItemName = "Swirly Blade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
@@ -15978,7 +15978,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -15992,7 +15992,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=238314382",
     MeshType = Enum.MeshType.FileMesh,
@@ -16006,7 +16006,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3187398809",
     ItemID = 473569625,
-    ItemName = "Tides",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.6652,
@@ -16026,7 +16026,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16040,7 +16040,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://238314382",
     MeshType = Enum.MeshType.FileMesh,
@@ -16051,7 +16051,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Back,
@@ -16065,7 +16065,7 @@ local MESHES_OLD =
     Chroma = true,
     Image = "rbxassetid://3187398906",
     ItemID = 3187394934,
-    ItemName = "Tides",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.6652,
@@ -16085,7 +16085,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16099,7 +16099,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15320557481",
     MeshType = Enum.MeshType.FileMesh,
@@ -16110,7 +16110,7 @@ local MESHES_OLD =
 },
     {
     Class = "Part",
-    Name = "BiteLoad",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(163, 162, 165),
@@ -16123,7 +16123,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15414904040",
     MeshType = Enum.MeshType.FileMesh,
@@ -16137,7 +16137,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://15413162319",
     ItemID = 15413149176,
-    ItemName = "Turkey",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -16148,7 +16148,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16167,7 +16167,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5873256998",
     ItemID = 5873256998,
-    ItemName = "Vampire's Edge",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
@@ -16178,7 +16178,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16192,7 +16192,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=130101214",
     MeshType = Enum.MeshType.FileMesh,
@@ -16206,7 +16206,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=386276987",
     ItemID = 386276987,
-    ItemName = "Virtual",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioOffset = {
     X = -1.05,
@@ -16221,7 +16221,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16239,7 +16239,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://13933066522",
     ItemID = 13945892398,
-    ItemName = "Waves",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -16250,7 +16250,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16264,7 +16264,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=93108071",
     MeshType = Enum.MeshType.FileMesh,
@@ -16284,7 +16284,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268708987",
     ItemID = 1268708987,
-    ItemName = "Winter's Edge",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 2.1817,
@@ -16305,7 +16305,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "MeshPart",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16324,7 +16324,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=115021756767182",
     ItemID = 100576599313371,
-    ItemName = "Xenoknife",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -16335,7 +16335,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16349,7 +16349,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://187852667",
     MeshType = Enum.MeshType.FileMesh,
@@ -16365,7 +16365,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332077449",
     ItemID = 473572568,
-    ItemName = "Xmas",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.6652,
@@ -16386,7 +16386,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16400,7 +16400,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -16414,7 +16414,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://3184139648",
     ItemID = 3184124768,
-    ItemName = "Yellow Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 }
@@ -16424,7 +16424,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16438,7 +16438,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -16453,7 +16453,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=80900354672590",
     ItemID = 80900354672590,
-    ItemName = "Aquarium",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2025"
@@ -16464,7 +16464,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16482,7 +16482,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834401547",
     ItemID = 11834401547,
-    ItemName = "Arctic",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2022"
@@ -16493,7 +16493,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16507,7 +16507,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -16522,7 +16522,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304750877",
     ItemID = 8304750877,
-    ItemName = "Aurora",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2021"
@@ -16533,7 +16533,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16547,7 +16547,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -16558,7 +16558,7 @@ local MESHES_OLD =
 },
     {
     Class = "Vector3Value",
-    Name = "OriginalPosition",
+    Name = "Catmio Reborn",
     Props = {
     Value = Vector3.new(0, 0, 0)
 }
@@ -16568,7 +16568,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://13944136198",
     ItemID = 13944135892,
-    ItemName = "Beach",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
@@ -16579,7 +16579,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16593,7 +16593,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -16608,7 +16608,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1269374321",
     ItemID = 1269374321,
-    ItemName = "Blue Elite",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2017"
@@ -16619,7 +16619,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16633,7 +16633,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://10855586895",
     MeshType = Enum.MeshType.FileMesh,
@@ -16647,7 +16647,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339323856",
     ItemID = 12339323856,
-    ItemName = "Broken",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
@@ -16658,7 +16658,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16672,7 +16672,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -16686,7 +16686,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=90549252812333",
     ItemID = 90549252812333,
-    ItemName = "Bunnies",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
@@ -16697,7 +16697,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16711,7 +16711,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -16726,7 +16726,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534861110",
     ItemID = 4534861110,
-    ItemName = "Cavern",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2019"
@@ -16737,7 +16737,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16751,7 +16751,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -16765,7 +16765,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965304445",
     ItemID = 12965304445,
-    ItemName = "Chromatic",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
@@ -16776,7 +16776,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16790,7 +16790,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -16804,7 +16804,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=435933179",
     ItemID = 435933179,
-    ItemName = "Cotton Candy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -16814,7 +16814,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16828,7 +16828,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -16843,7 +16843,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=123955324398353",
     ItemID = 123955324398353,
-    ItemName = "Cupid",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2026"
@@ -16854,7 +16854,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16868,7 +16868,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -16883,7 +16883,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=132565936309463",
     ItemID = 132565936309463,
-    ItemName = "Cursed",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2024"
@@ -16894,7 +16894,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16908,7 +16908,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -16922,7 +16922,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=241095344",
     ItemID = 241095344,
-    ItemName = "Elite",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -16932,7 +16932,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16946,7 +16946,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -16960,7 +16960,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198461276",
     ItemID = 198444909,
-    ItemName = "Emerald",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -16970,7 +16970,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -16984,7 +16984,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -16999,7 +16999,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=86258299490709",
     ItemID = 86258299490709,
-    ItemName = "Energized",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2025"
@@ -17010,7 +17010,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17024,7 +17024,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17038,7 +17038,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501640",
     ItemID = 315501640,
-    ItemName = "Fade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -17048,7 +17048,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17062,7 +17062,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -17077,7 +17077,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635565488",
     ItemID = 15635565488,
-    ItemName = "Frostfade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2023"
@@ -17088,7 +17088,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17102,7 +17102,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -17117,7 +17117,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=108996627787763",
     ItemID = 108996627787763,
-    ItemName = "Frozen",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2025"
@@ -17128,7 +17128,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17142,7 +17142,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17156,7 +17156,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365569686",
     ItemID = 365569686,
-    ItemName = "Fusion",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -17166,7 +17166,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17184,7 +17184,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513732969",
     ItemID = 2513732969,
-    ItemName = "Ghost",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2018"
@@ -17195,7 +17195,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17209,7 +17209,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17224,7 +17224,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669638742",
     ItemID = 2669638742,
-    ItemName = "Ginger",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2018"
@@ -17235,7 +17235,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17249,7 +17249,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17264,7 +17264,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332754554",
     ItemID = 332731156,
-    ItemName = "Green Elite",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2015"
@@ -17275,7 +17275,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17289,7 +17289,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17304,7 +17304,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268706374",
     ItemID = 1268706374,
-    ItemName = "Green Fire",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2017"
@@ -17315,7 +17315,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17329,7 +17329,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -17344,7 +17344,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121848805",
     ItemID = 6121848805,
-    ItemName = "Icecracker",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2020"
@@ -17355,7 +17355,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17369,7 +17369,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17383,7 +17383,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=566867312",
     ItemID = 566867312,
-    ItemName = "JD",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -17393,7 +17393,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17407,7 +17407,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17421,7 +17421,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15413114703",
     ItemID = 15413114703,
-    ItemName = "Latte",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
@@ -17432,7 +17432,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17446,7 +17446,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17460,7 +17460,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=197664126",
     ItemID = 197663897,
-    ItemName = "Midnight",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -17470,7 +17470,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17484,7 +17484,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17499,7 +17499,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=113979322866878",
     ItemID = 113979322866878,
-    ItemName = "Nightstar",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2024"
@@ -17510,7 +17510,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17524,7 +17524,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17538,7 +17538,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198458910",
     ItemID = 198441413,
-    ItemName = "Overseer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -17548,7 +17548,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17562,7 +17562,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -17576,7 +17576,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322137551",
     ItemID = 18322137551,
-    ItemName = "Palms",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
@@ -17587,7 +17587,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17601,7 +17601,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17615,7 +17615,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=161369368",
     ItemID = 196750899,
-    ItemName = "Plasmite",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -17625,7 +17625,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17639,7 +17639,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17653,7 +17653,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235372015",
     ItemID = 235372015,
-    ItemName = "Predator",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -17663,7 +17663,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17677,7 +17677,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17692,7 +17692,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1269256860",
     ItemID = 1269256860,
-    ItemName = "Red Fire",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2017"
@@ -17703,7 +17703,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17721,7 +17721,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866441301",
     ItemID = 5866441301,
-    ItemName = "Ripper",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2020"
@@ -17732,7 +17732,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17746,7 +17746,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17760,7 +17760,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183607894",
     ItemID = 3183607894,
-    ItemName = "Rune",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Season = 1
@@ -17771,7 +17771,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17785,7 +17785,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -17800,7 +17800,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4535483042",
     ItemID = 4535483042,
-    ItemName = "Santa's Magic",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2019"
@@ -17811,7 +17811,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17825,7 +17825,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -17840,7 +17840,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6123357775",
     ItemID = 6123357775,
-    ItemName = "Santa's Spirit",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2020"
@@ -17851,7 +17851,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17865,7 +17865,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17880,7 +17880,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133316381",
     ItemID = 1133316381,
-    ItemName = "Scratch",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2017"
@@ -17891,7 +17891,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17909,7 +17909,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531873371",
     ItemID = 531873371,
-    ItemName = "Scratch",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2016"
@@ -17920,7 +17920,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17934,7 +17934,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -17948,7 +17948,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626979",
     ItemID = 473626979,
-    ItemName = "Shiny",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -17958,7 +17958,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -17972,7 +17972,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -17987,7 +17987,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210915060",
     ItemID = 4210915060,
-    ItemName = "Skulls",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2019"
@@ -17998,7 +17998,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18012,7 +18012,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18027,7 +18027,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800226793",
     ItemID = 7800226793,
-    ItemName = "Spectral",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2021"
@@ -18038,7 +18038,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18052,7 +18052,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18067,7 +18067,7 @@ local MESHES_OLD =
     ChinaItemID = 6711939181,
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235371439",
     ItemID = 235371439,
-    ItemName = "Splash",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary"
 }
@@ -18077,7 +18077,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18095,7 +18095,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091407901",
     ItemID = 15091407901,
-    ItemName = "Traveler",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2023"
@@ -18106,7 +18106,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18120,7 +18120,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18135,7 +18135,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=331745577",
     ItemID = 331745577,
-    ItemName = "Tree",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2015"
@@ -18146,7 +18146,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18160,7 +18160,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18175,7 +18175,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254125546",
     ItemID = 11254125546,
-    ItemName = "Vampire",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2022"
@@ -18186,7 +18186,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18204,7 +18204,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315104004",
     ItemID = 315104004,
-    ItemName = "Web",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2015"
@@ -18215,7 +18215,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18229,7 +18229,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -18244,7 +18244,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210938270",
     ItemID = 4210938270,
-    ItemName = "Witched",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Legendary",
     Year = "2019"
@@ -18255,7 +18255,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18269,7 +18269,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18283,7 +18283,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365569428",
     ItemID = 365569428,
-    ItemName = "Abstract",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -18293,7 +18293,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18307,7 +18307,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -18322,7 +18322,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534860689",
     ItemID = 4534860689,
-    ItemName = "Aurora",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2019"
@@ -18333,7 +18333,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18347,7 +18347,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18362,7 +18362,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531873625",
     ItemID = 531873625,
-    ItemName = "Bats",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2016"
@@ -18373,7 +18373,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18387,7 +18387,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -18401,7 +18401,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965298174",
     ItemID = 12965298174,
-    ItemName = "Bio",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
@@ -18412,7 +18412,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18426,7 +18426,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18440,7 +18440,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626646",
     ItemID = 473626646,
-    ItemName = "Black",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -18450,7 +18450,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18464,7 +18464,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -18479,7 +18479,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5872492951",
     ItemID = 5872492951,
-    ItemName = "Bones",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2020"
@@ -18490,7 +18490,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18504,7 +18504,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -18519,7 +18519,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534860226",
     ItemID = 4534860226,
-    ItemName = "Candy Swirl",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2019"
@@ -18530,7 +18530,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18544,7 +18544,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18559,7 +18559,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669638508",
     ItemID = 2669638508,
-    ItemName = "Cane",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2018"
@@ -18570,7 +18570,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18584,7 +18584,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18599,7 +18599,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=331140746",
     ItemID = 331140746,
-    ItemName = "Cane",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2015"
@@ -18610,7 +18610,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18624,7 +18624,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18639,7 +18639,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254123390",
     ItemID = 11254123390,
-    ItemName = "Curse",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
@@ -18650,7 +18650,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18664,7 +18664,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -18678,7 +18678,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198461253",
     ItemID = 198443956,
-    ItemName = "Damp",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -18688,7 +18688,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18706,7 +18706,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091343579",
     ItemID = 15091343579,
-    ItemName = "Darkknife",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2023"
@@ -18717,7 +18717,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18731,7 +18731,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -18745,7 +18745,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659634072",
     ItemID = 4659634072,
-    ItemName = "Deep Sea",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
@@ -18756,7 +18756,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18770,7 +18770,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -18785,7 +18785,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210920512",
     ItemID = 4210920512,
-    ItemName = "Dungeon",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2019"
@@ -18796,7 +18796,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18810,7 +18810,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -18821,7 +18821,7 @@ local MESHES_OLD =
 },
     {
     Class = "Vector3Value",
-    Name = "OriginalPosition",
+    Name = "Catmio Reborn",
     Props = {
     Value = Vector3.new(0, 0, 0)
 }
@@ -18831,7 +18831,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://13944135218",
     ItemID = 13944134705,
-    ItemName = "Floral",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
@@ -18842,7 +18842,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18856,7 +18856,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -18871,7 +18871,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=104988218477551",
     ItemID = 104988218477551,
-    ItemName = "Frostflame",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2024"
@@ -18882,7 +18882,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18896,7 +18896,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18910,7 +18910,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=192480941",
     ItemID = 196750422,
-    ItemName = "Galaxy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -18920,7 +18920,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18938,7 +18938,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091407068",
     ItemID = 15091407068,
-    ItemName = "Ghastly",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2023"
@@ -18949,7 +18949,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -18963,7 +18963,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -18978,7 +18978,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=331744703",
     ItemID = 331744703,
-    ItemName = "Ginger",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2015"
@@ -18989,7 +18989,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19007,7 +19007,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834399071",
     ItemID = 11834399071,
-    ItemName = "Gingerbread",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
@@ -19018,7 +19018,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19032,7 +19032,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19047,7 +19047,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268705527",
     ItemID = 1268705527,
-    ItemName = "Gingerbread",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2017"
@@ -19058,7 +19058,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19072,7 +19072,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -19087,7 +19087,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=111408683823094",
     ItemID = 111408683823094,
-    ItemName = "Gingercookie",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
@@ -19098,7 +19098,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19112,7 +19112,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19127,7 +19127,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133366830",
     ItemID = 1133366830,
-    ItemName = "Green Marble",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2017"
@@ -19138,7 +19138,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19152,7 +19152,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://10855586895",
     MeshType = Enum.MeshType.FileMesh,
@@ -19166,7 +19166,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339327069",
     ItemID = 12339327069,
-    ItemName = "Heart",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
@@ -19177,7 +19177,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19191,7 +19191,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -19206,7 +19206,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=77773918675860",
     ItemID = 77773918675860,
-    ItemName = "Hologram",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
@@ -19217,7 +19217,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19231,7 +19231,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19246,7 +19246,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669639638",
     ItemID = 2669639638,
-    ItemName = "Icicles",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2018"
@@ -19257,7 +19257,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19271,7 +19271,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19286,7 +19286,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315099010",
     ItemID = 315099010,
-    ItemName = "Jack",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2015"
@@ -19297,7 +19297,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19311,7 +19311,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19325,7 +19325,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501501",
     ItemID = 315501501,
-    ItemName = "Korblox",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -19335,7 +19335,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19349,7 +19349,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19364,7 +19364,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=116059045830205",
     ItemID = 116059045830205,
-    ItemName = "Kraken",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2024"
@@ -19375,7 +19375,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19389,7 +19389,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19403,7 +19403,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198458841",
     ItemID = 198440414,
-    ItemName = "Krypto",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -19413,7 +19413,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19427,7 +19427,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19442,7 +19442,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800225996",
     ItemID = 7800225996,
-    ItemName = "Magma",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2021"
@@ -19453,7 +19453,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19467,7 +19467,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19482,7 +19482,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133317890",
     ItemID = 1133317890,
-    ItemName = "Magma",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2017"
@@ -19493,7 +19493,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19507,7 +19507,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19522,7 +19522,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254180750",
     ItemID = 11254180750,
-    ItemName = "Makeshift",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
@@ -19533,7 +19533,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19547,7 +19547,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19561,7 +19561,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235371809",
     ItemID = 235371809,
-    ItemName = "Molten",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -19571,7 +19571,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19585,7 +19585,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19599,7 +19599,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365569566",
     ItemID = 365569566,
-    ItemName = "Musical",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -19609,7 +19609,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19623,7 +19623,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19638,7 +19638,7 @@ local MESHES_OLD =
     ChinaItemID = 6711924013,
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235371686",
     ItemID = 235371686,
-    ItemName = "Nova",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -19648,7 +19648,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19666,7 +19666,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531873011",
     ItemID = 531873011,
-    ItemName = "Orange Marble",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2016"
@@ -19677,7 +19677,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19691,7 +19691,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -19705,7 +19705,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965311567",
     ItemID = 12965311567,
-    ItemName = "Painted",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
@@ -19716,7 +19716,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19730,7 +19730,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -19745,7 +19745,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=123269723073737",
     ItemID = 123269723073737,
-    ItemName = "Pop Art",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
@@ -19756,7 +19756,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19770,7 +19770,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -19785,7 +19785,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866444722",
     ItemID = 5866444722,
-    ItemName = "Portal",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2020"
@@ -19796,7 +19796,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19810,7 +19810,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19824,7 +19824,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626740",
     ItemID = 473626740,
-    ItemName = "Purple",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -19834,7 +19834,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19848,7 +19848,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -19862,7 +19862,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=159747377",
     ItemID = 196750963,
-    ItemName = "Rainbow",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -19872,7 +19872,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19886,7 +19886,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -19900,7 +19900,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16959778188",
     ItemID = 16959778188,
-    ItemName = "Robot",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
@@ -19911,7 +19911,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19925,7 +19925,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -19939,7 +19939,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322179563",
     ItemID = 18322179563,
-    ItemName = "Sharky",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
@@ -19950,7 +19950,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -19964,7 +19964,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -19979,7 +19979,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121851313",
     ItemID = 6121851313,
-    ItemName = "Silent Night",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2020"
@@ -19990,7 +19990,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20004,7 +20004,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20019,7 +20019,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=74917318027165",
     ItemID = 74917318027165,
-    ItemName = "Sleigh",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2024"
@@ -20030,7 +20030,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20044,7 +20044,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -20059,7 +20059,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210939388",
     ItemID = 4210939388,
-    ItemName = "Snakebite",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2019"
@@ -20070,7 +20070,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20084,7 +20084,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20099,7 +20099,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6123338102",
     ItemID = 6123338102,
-    ItemName = "Snowflakes",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2020"
@@ -20110,7 +20110,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20128,7 +20128,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635576863",
     ItemID = 15635576863,
-    ItemName = "Snowglobe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2023"
@@ -20139,7 +20139,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20153,7 +20153,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20168,7 +20168,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268705947",
     ItemID = 1268705947,
-    ItemName = "Snowy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2017"
@@ -20179,7 +20179,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20193,7 +20193,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -20207,7 +20207,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183607442",
     ItemID = 3183607442,
-    ItemName = "Space",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
@@ -20218,7 +20218,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20232,7 +20232,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -20247,7 +20247,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=98506456649552",
     ItemID = 98506456649552,
-    ItemName = "Spearmint",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
@@ -20258,7 +20258,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20272,7 +20272,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20286,7 +20286,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198458862",
     ItemID = 198441038,
-    ItemName = "Spectrum",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -20296,7 +20296,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20313,7 +20313,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16959775902",
     ItemID = 16959775902,
-    ItemName = "Spring",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
@@ -20324,7 +20324,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20338,7 +20338,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20352,7 +20352,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501560",
     ItemID = 315501560,
-    ItemName = "Squire",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -20362,7 +20362,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20376,7 +20376,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20391,7 +20391,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304757707",
     ItemID = 8304757707,
-    ItemName = "Starry",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2021"
@@ -20402,7 +20402,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20416,7 +20416,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -20431,7 +20431,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=97369825731567",
     ItemID = 97369825731567,
-    ItemName = "Storm",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2024"
@@ -20442,7 +20442,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20456,7 +20456,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20471,7 +20471,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304757110",
     ItemID = 8304757110,
-    ItemName = "Swirl",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2021"
@@ -20482,7 +20482,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20500,7 +20500,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513734535",
     ItemID = 2513734535,
-    ItemName = "Toxic",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2018"
@@ -20511,7 +20511,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20529,7 +20529,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834400185",
     ItemID = 11834400185,
-    ItemName = "Tree",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
@@ -20540,7 +20540,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20558,7 +20558,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635563249",
     ItemID = 15635563249,
-    ItemName = "Tree",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2023"
@@ -20569,7 +20569,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20583,7 +20583,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -20598,7 +20598,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=111291962899457",
     ItemID = 111291962899457,
-    ItemName = "Tropical",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
@@ -20609,7 +20609,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20623,7 +20623,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20638,7 +20638,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513734708",
     ItemID = 2513734708,
-    ItemName = "Vampire",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2018"
@@ -20649,7 +20649,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20663,7 +20663,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20677,7 +20677,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235371508",
     ItemID = 235371508,
-    ItemName = "Vortex",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare"
 }
@@ -20687,7 +20687,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20701,7 +20701,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20716,7 +20716,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800227475",
     ItemID = 7800227475,
-    ItemName = "Watcher",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2021"
@@ -20727,7 +20727,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20741,7 +20741,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -20755,7 +20755,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322178053",
     ItemID = 18322178053,
-    ItemName = "Waves",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Season = 1
@@ -20766,7 +20766,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20780,7 +20780,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20795,7 +20795,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254118399",
     ItemID = 11254118399,
-    ItemName = "Wraith",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
@@ -20806,7 +20806,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20820,7 +20820,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -20835,7 +20835,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=80492487454400",
     ItemID = 80492487454400,
-    ItemName = "Xeno",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2025"
@@ -20846,7 +20846,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20860,7 +20860,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -20875,7 +20875,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=113677688954146",
     ItemID = 113677688954146,
-    ItemName = "Yummy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2026"
@@ -20886,7 +20886,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20900,7 +20900,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20915,7 +20915,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254182560",
     ItemID = 11254182560,
-    ItemName = "Zombified",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Rare",
     Year = "2022"
@@ -20926,7 +20926,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20940,7 +20940,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -20955,7 +20955,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=107510647616718",
     ItemID = 107510647616718,
-    ItemName = "Abduction",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
@@ -20966,7 +20966,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -20980,7 +20980,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -20994,7 +20994,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=192492943",
     ItemID = 196749885,
-    ItemName = "Adurite",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -21004,7 +21004,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21018,7 +21018,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -21033,7 +21033,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=110160120309916",
     ItemID = 110160120309916,
-    ItemName = "Blossom",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2026"
@@ -21044,7 +21044,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21058,7 +21058,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21072,7 +21072,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626317",
     ItemID = 473626317,
-    ItemName = "Blue",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -21082,7 +21082,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21096,7 +21096,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21110,7 +21110,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=159947939",
     ItemID = 196750197,
-    ItemName = "Bluesteel",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -21120,7 +21120,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21134,7 +21134,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21149,7 +21149,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=76461209737867",
     ItemID = 76461209737867,
-    ItemName = "Bones",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
@@ -21160,7 +21160,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21174,7 +21174,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -21189,7 +21189,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210929184",
     ItemID = 4210929184,
-    ItemName = "Brains",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
@@ -21200,7 +21200,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21214,7 +21214,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -21229,7 +21229,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210943691",
     ItemID = 4210943691,
-    ItemName = "Branches",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
@@ -21240,7 +21240,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21254,7 +21254,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21268,7 +21268,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365568602",
     ItemID = 365568602,
-    ItemName = "Brush",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -21278,7 +21278,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21292,7 +21292,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21306,7 +21306,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183606225",
     ItemID = 3183606225,
-    ItemName = "Camo",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -21317,7 +21317,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21335,7 +21335,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635574962",
     ItemID = 15635574962,
-    ItemName = "Canes",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
@@ -21346,7 +21346,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21360,7 +21360,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -21374,7 +21374,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16959771850",
     ItemID = 16959771850,
-    ItemName = "Carrot",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -21385,7 +21385,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21399,7 +21399,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -21413,7 +21413,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965307410",
     ItemID = 12965307410,
-    ItemName = "Carrot",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -21424,7 +21424,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21441,7 +21441,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198461230",
     ItemID = 198443382,
-    ItemName = "Checker",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -21451,7 +21451,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21465,7 +21465,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21479,7 +21479,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198455898",
     ItemID = 198440101,
-    ItemName = "Cheesy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -21489,7 +21489,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21503,7 +21503,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21517,7 +21517,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366945",
     ItemID = 235366945,
-    ItemName = "Circuit",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -21527,7 +21527,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21541,7 +21541,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21556,7 +21556,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304752586",
     ItemID = 8304752586,
-    ItemName = "Cookie",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
@@ -21567,7 +21567,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21581,7 +21581,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -21595,7 +21595,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=124860763249593",
     ItemID = 124860763249593,
-    ItemName = "Decorated",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -21606,7 +21606,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21620,7 +21620,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21634,7 +21634,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235371276",
     ItemID = 235371276,
-    ItemName = "Doge",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -21644,7 +21644,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21658,7 +21658,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21672,7 +21672,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366815",
     ItemID = 235366815,
-    ItemName = "Donut",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -21682,7 +21682,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21700,7 +21700,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091404278",
     ItemID = 15091404278,
-    ItemName = "Eclipse",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
@@ -21711,7 +21711,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21725,7 +21725,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21740,7 +21740,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635558021",
     ItemID = 15635558021,
-    ItemName = "Fireplace",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
@@ -21751,7 +21751,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21765,7 +21765,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21780,7 +21780,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268704507",
     ItemID = 1268704507,
-    ItemName = "Frosty",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
@@ -21791,7 +21791,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21805,7 +21805,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -21820,7 +21820,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534857523",
     ItemID = 4534857523,
-    ItemName = "Frozen",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
@@ -21831,7 +21831,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21845,7 +21845,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21859,7 +21859,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=197639041",
     ItemID = 197638833,
-    ItemName = "Future",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -21869,7 +21869,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21883,7 +21883,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21898,7 +21898,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11117375743",
     ItemID = 11117375743,
-    ItemName = "Ghostly",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
@@ -21909,7 +21909,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21923,7 +21923,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -21938,7 +21938,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866442790",
     ItemID = 5866442790,
-    ItemName = "Ghosts",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2020"
@@ -21949,7 +21949,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -21963,7 +21963,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -21977,7 +21977,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=197627734",
     ItemID = 197626358,
-    ItemName = "Gifted",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -21987,7 +21987,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22001,7 +22001,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -22016,7 +22016,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534856940",
     ItemID = 4534856940,
-    ItemName = "Gingerbread",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
@@ -22027,7 +22027,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22041,7 +22041,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -22056,7 +22056,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=134478959354477",
     ItemID = 134478959354477,
-    ItemName = "Gingerbread",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
@@ -22067,7 +22067,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22081,7 +22081,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -22096,7 +22096,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121850031",
     ItemID = 6121850031,
-    ItemName = "Gingerbread",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2020"
@@ -22107,7 +22107,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22121,7 +22121,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -22136,7 +22136,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=115273559455814",
     ItemID = 115273559455814,
-    ItemName = "Gingerheart",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
@@ -22147,7 +22147,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22165,7 +22165,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091403551",
     ItemID = 15091403551,
-    ItemName = "Glowy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
@@ -22176,7 +22176,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22190,7 +22190,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -22205,7 +22205,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800221141",
     ItemID = 7800221141,
-    ItemName = "Gothic",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
@@ -22216,7 +22216,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22233,7 +22233,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659634630",
     ItemID = 4659634630,
-    ItemName = "Graffiti",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -22244,7 +22244,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22258,7 +22258,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -22273,7 +22273,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254083234",
     ItemID = 11254083234,
-    ItemName = "Hazard",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
@@ -22284,7 +22284,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22298,7 +22298,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -22312,7 +22312,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501297",
     ItemID = 315501297,
-    ItemName = "Hazmat",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -22322,7 +22322,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22339,7 +22339,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659635055",
     ItemID = 4659635055,
-    ItemName = "High Tech",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -22350,7 +22350,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22364,7 +22364,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -22378,7 +22378,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501434",
     ItemID = 315501434,
-    ItemName = "Hive",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -22388,7 +22388,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22402,7 +22402,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -22417,7 +22417,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669638990",
     ItemID = 2669638990,
-    ItemName = "Holly",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
@@ -22428,7 +22428,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22442,7 +22442,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -22456,7 +22456,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322181701",
     ItemID = 18322181701,
-    ItemName = "Jellyfish",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -22467,7 +22467,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22481,7 +22481,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -22495,7 +22495,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365569126",
     ItemID = 365569126,
-    ItemName = "Jigsaw",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -22505,7 +22505,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22519,7 +22519,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -22534,7 +22534,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254093910",
     ItemID = 11254093910,
-    ItemName = "Lantern",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
@@ -22545,7 +22545,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22559,7 +22559,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -22574,7 +22574,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=131417913843701",
     ItemID = 131417913843701,
-    ItemName = "Lava",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
@@ -22585,7 +22585,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22599,7 +22599,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -22614,7 +22614,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534858185",
     ItemID = 4534858185,
-    ItemName = "Lights",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
@@ -22625,7 +22625,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22639,7 +22639,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -22653,7 +22653,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365569265",
     ItemID = 365569265,
-    ItemName = "Lucky",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -22663,7 +22663,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22677,7 +22677,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -22691,7 +22691,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965302237",
     ItemID = 12965302237,
-    ItemName = "Marble",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -22702,7 +22702,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22716,7 +22716,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -22730,7 +22730,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501369",
     ItemID = 315501369,
-    ItemName = "Melon",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -22740,7 +22740,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22758,7 +22758,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091340751",
     ItemID = 15091340751,
-    ItemName = "Meltdown",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
@@ -22769,7 +22769,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22783,7 +22783,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -22797,7 +22797,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198455936",
     ItemID = 198439692,
-    ItemName = "Missing",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -22807,7 +22807,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22825,7 +22825,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834394793",
     ItemID = 11834394793,
-    ItemName = "Mistletoe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
@@ -22836,7 +22836,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22850,7 +22850,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -22865,7 +22865,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=109292073070223",
     ItemID = 109292073070223,
-    ItemName = "Monster",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
@@ -22876,7 +22876,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22894,7 +22894,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531873154",
     ItemID = 531873154,
-    ItemName = "Moons",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2016"
@@ -22905,7 +22905,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22919,7 +22919,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -22934,7 +22934,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=91446990047399",
     ItemID = 91446990047399,
-    ItemName = "Moons",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
@@ -22945,7 +22945,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22959,7 +22959,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -22974,7 +22974,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513733542",
     ItemID = 2513733542,
-    ItemName = "Mummy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
@@ -22985,7 +22985,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -22999,7 +22999,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23014,7 +23014,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866447521",
     ItemID = 5866447521,
-    ItemName = "Mummy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2020"
@@ -23025,7 +23025,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23039,7 +23039,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23054,7 +23054,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133352032",
     ItemID = 1133352032,
-    ItemName = "Mummy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
@@ -23065,7 +23065,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23079,7 +23079,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -23094,7 +23094,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=132504094164819",
     ItemID = 132504094164819,
-    ItemName = "Ornaments",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
@@ -23105,7 +23105,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23119,7 +23119,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23133,7 +23133,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366870",
     ItemID = 235366870,
-    ItemName = "Paper",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -23143,7 +23143,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23157,7 +23157,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23171,7 +23171,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626473",
     ItemID = 473626473,
-    ItemName = "Pink",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -23181,7 +23181,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23195,7 +23195,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -23210,7 +23210,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=120422092957504",
     ItemID = 120422092957504,
-    ItemName = "Polar Bear",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
@@ -23221,7 +23221,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23235,7 +23235,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -23250,7 +23250,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=112511843095202",
     ItemID = 112511843095202,
-    ItemName = "Pool",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
@@ -23261,7 +23261,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23275,7 +23275,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -23286,7 +23286,7 @@ local MESHES_OLD =
 },
     {
     Class = "Vector3Value",
-    Name = "OriginalPosition",
+    Name = "Catmio Reborn",
     Props = {
     Value = Vector3.new(0, 0, 0)
 }
@@ -23296,7 +23296,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://13944131578",
     ItemID = 13944131195,
-    ItemName = "Popsicle",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -23307,7 +23307,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23325,7 +23325,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513733987",
     ItemID = 2513733987,
-    ItemName = "Potion",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
@@ -23336,7 +23336,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23350,7 +23350,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -23365,7 +23365,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133366632",
     ItemID = 1133366632,
-    ItemName = "Potion",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
@@ -23376,7 +23376,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23390,7 +23390,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -23405,7 +23405,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5872490600",
     ItemID = 5872490600,
-    ItemName = "Pumpkin",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2020"
@@ -23416,7 +23416,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23430,7 +23430,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -23445,7 +23445,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=119626042140839",
     ItemID = 119626042140839,
-    ItemName = "Pumpkin",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
@@ -23456,7 +23456,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23470,7 +23470,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23484,7 +23484,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15413117611",
     ItemID = 15413117611,
-    ItemName = "Pumpkin Pie",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -23495,7 +23495,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23509,7 +23509,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23523,7 +23523,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626150",
     ItemID = 473626150,
-    ItemName = "Red",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -23533,7 +23533,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23547,7 +23547,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -23562,7 +23562,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=85299848190695",
     ItemID = 85299848190695,
-    ItemName = "Retro",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
@@ -23573,7 +23573,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23587,7 +23587,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://10855586895",
     MeshType = Enum.MeshType.FileMesh,
@@ -23601,7 +23601,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339325736",
     ItemID = 12339325736,
-    ItemName = "Rose",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -23612,7 +23612,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23626,7 +23626,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23641,7 +23641,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800220325",
     ItemID = 7800220325,
-    ItemName = "Skulls",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
@@ -23652,7 +23652,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23666,7 +23666,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23681,7 +23681,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669639913",
     ItemID = 2669639913,
-    ItemName = "Snowflake",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
@@ -23692,7 +23692,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23710,7 +23710,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834397133",
     ItemID = 11834397133,
-    ItemName = "Snowflake",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
@@ -23721,7 +23721,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23735,7 +23735,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23750,7 +23750,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=85751270338066",
     ItemID = 85751270338066,
-    ItemName = "Snowman",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
@@ -23761,7 +23761,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23775,7 +23775,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23790,7 +23790,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=331745799",
     ItemID = 331745799,
-    ItemName = "Snowman",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2015"
@@ -23801,7 +23801,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23815,7 +23815,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23830,7 +23830,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304753468",
     ItemID = 8304753468,
-    ItemName = "Snowman",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
@@ -23841,7 +23841,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23855,7 +23855,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -23870,7 +23870,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332011125",
     ItemID = 332011125,
-    ItemName = "Snowy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2015"
@@ -23881,7 +23881,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23895,7 +23895,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -23910,7 +23910,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=89899263078420",
     ItemID = 89899263078420,
-    ItemName = "Soda",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
@@ -23921,7 +23921,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23938,7 +23938,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198455980",
     ItemID = 198439107,
-    ItemName = "Stalker",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -23948,7 +23948,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -23962,7 +23962,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -23977,7 +23977,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=130537925107449",
     ItemID = 130537925107449,
-    ItemName = "Starry",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2026"
@@ -23988,7 +23988,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24006,7 +24006,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635559978",
     ItemID = 15635559978,
-    ItemName = "Stars",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
@@ -24017,7 +24017,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24035,7 +24035,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091405483",
     ItemID = 15091405483,
-    ItemName = "Steel",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
@@ -24046,7 +24046,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24064,7 +24064,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834392930",
     ItemID = 11834392930,
-    ItemName = "Stockings",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
@@ -24075,7 +24075,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24089,7 +24089,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -24104,7 +24104,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=102130993592804",
     ItemID = 102130993592804,
-    ItemName = "Sweater",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
@@ -24115,7 +24115,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24129,7 +24129,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24144,7 +24144,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669640567",
     ItemID = 2669640567,
-    ItemName = "Sweater",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
@@ -24155,7 +24155,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24169,7 +24169,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24184,7 +24184,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268704902",
     ItemID = 1268704902,
-    ItemName = "Sweater",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
@@ -24195,7 +24195,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24209,7 +24209,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -24223,7 +24223,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183606579",
     ItemID = 3183606579,
-    ItemName = "Tiger",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -24234,7 +24234,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24248,7 +24248,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -24263,7 +24263,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=115298865715727",
     ItemID = 115298865715727,
-    ItemName = "Treats",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2025"
@@ -24274,7 +24274,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24288,7 +24288,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24303,7 +24303,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268704124",
     ItemID = 1268704124,
-    ItemName = "Tree",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
@@ -24314,7 +24314,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24328,7 +24328,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24343,7 +24343,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304756423",
     ItemID = 8304756423,
-    ItemName = "Tree",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
@@ -24354,7 +24354,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24368,7 +24368,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -24382,7 +24382,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322166908",
     ItemID = 18322166908,
-    ItemName = "Turtle",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -24393,7 +24393,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24411,7 +24411,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531873248",
     ItemID = 531873248,
-    ItemName = "Vampire",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2016"
@@ -24422,7 +24422,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24436,7 +24436,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24450,7 +24450,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11548082732",
     ItemID = 11548082732,
-    ItemName = "Void",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Season = 1
@@ -24461,7 +24461,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24475,7 +24475,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24489,7 +24489,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=192132094",
     ItemID = 196751441,
-    ItemName = "Wanwood",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon"
 }
@@ -24499,7 +24499,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24513,7 +24513,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24528,7 +24528,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133325465",
     ItemID = 1133325465,
-    ItemName = "Webs",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2017"
@@ -24539,7 +24539,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24553,7 +24553,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -24568,7 +24568,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=108331177567412",
     ItemID = 108331177567412,
-    ItemName = "Witch's Brew",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
@@ -24579,7 +24579,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24593,7 +24593,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -24608,7 +24608,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254115609",
     ItemID = 11254115609,
-    ItemName = "Witchbrew",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2022"
@@ -24619,7 +24619,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24637,7 +24637,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531873487",
     ItemID = 531873487,
-    ItemName = "Wolf",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2016"
@@ -24648,7 +24648,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24662,7 +24662,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24677,7 +24677,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7808362279",
     ItemID = 7808362279,
-    ItemName = "Wraiths",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
@@ -24688,7 +24688,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24702,7 +24702,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24717,7 +24717,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121854816",
     ItemID = 6121854816,
-    ItemName = "Wrap",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2020"
@@ -24728,7 +24728,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24742,7 +24742,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24757,7 +24757,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=72638846676083",
     ItemID = 72638846676083,
-    ItemName = "Wrapped",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
@@ -24768,7 +24768,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24782,7 +24782,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24797,7 +24797,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=331745500",
     ItemID = 331745500,
-    ItemName = "Wrapped",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2015"
@@ -24808,7 +24808,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24822,7 +24822,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24837,7 +24837,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=78432760615312",
     ItemID = 78432760615312,
-    ItemName = "Wreaths",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2024"
@@ -24848,7 +24848,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24866,7 +24866,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091339932",
     ItemID = 15091339932,
-    ItemName = "Zombie",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2023"
@@ -24877,7 +24877,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24891,7 +24891,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24906,7 +24906,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513734908",
     ItemID = 2513734908,
-    ItemName = "Zombie",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2018"
@@ -24917,7 +24917,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24931,7 +24931,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -24946,7 +24946,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800222975",
     ItemID = 7800222975,
-    ItemName = "Zombie",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2021"
@@ -24957,7 +24957,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -24971,7 +24971,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -24986,7 +24986,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210928053",
     ItemID = 4210928053,
-    ItemName = "Zombified",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Uncommon",
     Year = "2019"
@@ -24997,7 +24997,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25014,7 +25014,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=199026945",
     ItemID = 199026945,
-    ItemName = "2015",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -25024,7 +25024,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25038,7 +25038,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -25053,7 +25053,7 @@ local MESHES_OLD =
     ChinaItemID = 6711880940,
     Image = "http://www.roblox.com/asset/?id=198453482",
     ItemID = 198438554,
-    ItemName = "8bit",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -25063,7 +25063,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25077,7 +25077,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -25091,7 +25091,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=546159020",
     ItemID = 546159020,
-    ItemName = "Alex",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -25101,7 +25101,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25115,7 +25115,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -25130,7 +25130,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254172968",
     ItemID = 11254172968,
-    ItemName = "Apocalypse",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
@@ -25141,7 +25141,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25155,7 +25155,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -25169,7 +25169,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501208",
     ItemID = 315501208,
-    ItemName = "Aqua",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -25179,7 +25179,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25193,7 +25193,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -25208,7 +25208,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=140366567839959",
     ItemID = 140366567839959,
-    ItemName = "Bats",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -25219,7 +25219,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25233,7 +25233,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -25248,7 +25248,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=104747488009018",
     ItemID = 104747488009018,
-    ItemName = "Bats",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
@@ -25259,7 +25259,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25277,7 +25277,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513732731",
     ItemID = 2513732731,
-    ItemName = "Bats",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
@@ -25288,7 +25288,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25302,7 +25302,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -25317,7 +25317,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5930729222",
     ItemID = 5930729222,
-    ItemName = "Bats",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
@@ -25328,7 +25328,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25346,7 +25346,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635570486",
     ItemID = 15635570486,
-    ItemName = "Bells",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -25357,7 +25357,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25371,7 +25371,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -25385,7 +25385,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315500879",
     ItemID = 315500879,
-    ItemName = "Bleached",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -25395,7 +25395,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25412,7 +25412,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=363150561",
     ItemID = 363150561,
-    ItemName = "Blossom",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -25422,7 +25422,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25440,7 +25440,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531873816",
     ItemID = 531873816,
-    ItemName = "Bones",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
@@ -25451,7 +25451,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25465,7 +25465,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -25479,7 +25479,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198453499",
     ItemID = 198434881,
-    ItemName = "Borders",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -25489,7 +25489,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25507,7 +25507,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531873956",
     ItemID = 531873956,
-    ItemName = "Brains",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
@@ -25518,7 +25518,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25532,7 +25532,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -25546,7 +25546,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473625645",
     ItemID = 473625645,
-    ItemName = "Brown",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -25556,7 +25556,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25574,7 +25574,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=387874365",
     ItemID = 387874365,
-    ItemName = "Bunny",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
@@ -25585,7 +25585,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25603,7 +25603,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834384755",
     ItemID = 11834384755,
-    ItemName = "Candied",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
@@ -25614,7 +25614,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25628,7 +25628,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -25643,7 +25643,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5872491708",
     ItemID = 5872491708,
-    ItemName = "Candle",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
@@ -25654,7 +25654,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25668,7 +25668,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -25683,7 +25683,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=133654810681274",
     ItemID = 133654810681274,
-    ItemName = "Candles",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
@@ -25694,7 +25694,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25708,7 +25708,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -25723,7 +25723,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254057417",
     ItemID = 11254057417,
-    ItemName = "Candy Corn",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
@@ -25734,7 +25734,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25752,7 +25752,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866435364",
     ItemID = 5866435364,
-    ItemName = "Candy Corn",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
@@ -25763,7 +25763,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25777,7 +25777,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -25792,7 +25792,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=115093067149752",
     ItemID = 115093067149752,
-    ItemName = "Candy Corn",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
@@ -25803,7 +25803,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25821,7 +25821,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210934082",
     ItemID = 4210934082,
-    ItemName = "Candy Corn",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
@@ -25832,7 +25832,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25846,7 +25846,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -25861,7 +25861,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133337797",
     ItemID = 1133337797,
-    ItemName = "CandyCorn",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
@@ -25872,7 +25872,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25886,7 +25886,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -25901,7 +25901,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=86405207895194",
     ItemID = 86405207895194,
-    ItemName = "CandyCorn",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -25912,7 +25912,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25926,7 +25926,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -25941,7 +25941,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304750295",
     ItemID = 8304750295,
-    ItemName = "Cane",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
@@ -25952,7 +25952,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -25966,7 +25966,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -25980,7 +25980,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366729",
     ItemID = 235366729,
-    ItemName = "Cardboard",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -25990,7 +25990,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26008,7 +26008,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=387874071",
     ItemID = 387874071,
-    ItemName = "Carrot",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
@@ -26019,7 +26019,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26033,7 +26033,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -26047,7 +26047,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=76914260444878",
     ItemID = 76914260444878,
-    ItemName = "Carrots",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -26058,7 +26058,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26072,7 +26072,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -26087,7 +26087,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866436906",
     ItemID = 5866436906,
-    ItemName = "Carved",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
@@ -26098,7 +26098,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26112,7 +26112,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26126,7 +26126,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6711852603",
     ItemID = 6711852603,
-    ItemName = "Cherry",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -26136,7 +26136,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26150,7 +26150,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -26164,7 +26164,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=116361515042274",
     ItemID = 116361515042274,
-    ItemName = "Chick",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -26175,7 +26175,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26189,7 +26189,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26204,7 +26204,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=387874991",
     ItemID = 387874991,
-    ItemName = "Choco",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
@@ -26215,7 +26215,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26229,7 +26229,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26243,7 +26243,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366460",
     ItemID = 235366460,
-    ItemName = "Clan",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -26253,7 +26253,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26267,7 +26267,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26281,7 +26281,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501118",
     ItemID = 315501118,
-    ItemName = "Clown",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -26291,7 +26291,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26305,7 +26305,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -26319,7 +26319,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322183619",
     ItemID = 18322183619,
-    ItemName = "Clownfish",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -26330,7 +26330,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26344,7 +26344,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26359,7 +26359,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669638285",
     ItemID = 2669638285,
-    ItemName = "Coal",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
@@ -26370,7 +26370,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26388,7 +26388,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834390120",
     ItemID = 11834390120,
-    ItemName = "Coal",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
@@ -26399,7 +26399,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26413,7 +26413,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26428,7 +26428,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304751659",
     ItemID = 8304751659,
-    ItemName = "Coal",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
@@ -26439,7 +26439,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26453,7 +26453,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26468,7 +26468,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268699677",
     ItemID = 1268699677,
-    ItemName = "Coal",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
@@ -26479,7 +26479,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26493,7 +26493,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -26508,7 +26508,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=75237025203058",
     ItemID = 75237025203058,
-    ItemName = "Coconut",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -26519,7 +26519,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26533,7 +26533,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26547,7 +26547,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183604570",
     ItemID = 3183604570,
-    ItemName = "Combat",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -26558,7 +26558,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26572,7 +26572,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26586,7 +26586,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4972196241",
     ItemID = 4972196241,
-    ItemName = "Combat II",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -26597,7 +26597,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26611,7 +26611,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -26625,7 +26625,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183605392",
     ItemID = 3183605392,
-    ItemName = "Copper",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -26636,7 +26636,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26650,7 +26650,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26664,7 +26664,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=546161858",
     ItemID = 546161858,
-    ItemName = "Corl",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -26674,7 +26674,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26688,7 +26688,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26703,7 +26703,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800224981",
     ItemID = 7800224981,
-    ItemName = "Cracks",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
@@ -26714,7 +26714,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26728,7 +26728,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26743,7 +26743,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254081561",
     ItemID = 11254081561,
-    ItemName = "Darkness",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
@@ -26754,7 +26754,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26768,7 +26768,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -26782,7 +26782,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://584555920",
     ItemID = 196750384,
-    ItemName = "Default Knife",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -26793,7 +26793,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26807,7 +26807,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26818,7 +26818,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Decal",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 255, 255),
     Face = Enum.NormalId.Right,
@@ -26831,7 +26831,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=546161062",
     ItemID = 546161062,
-    ItemName = "Denis",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -26841,7 +26841,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26855,7 +26855,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -26870,7 +26870,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=133219566412887",
     ItemID = 133219566412887,
-    ItemName = "Dolphins",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -26881,7 +26881,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26895,7 +26895,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26909,7 +26909,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365567889",
     ItemID = 365567889,
-    ItemName = "Eco",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -26919,7 +26919,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26933,7 +26933,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -26948,7 +26948,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133331679",
     ItemID = 1133331679,
-    ItemName = "Ecto",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
@@ -26959,7 +26959,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -26977,7 +26977,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=387875405",
     ItemID = 387875405,
-    ItemName = "Egg",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
@@ -26988,7 +26988,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27002,7 +27002,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -27017,7 +27017,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268703023",
     ItemID = 1268703023,
-    ItemName = "Elf",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
@@ -27028,7 +27028,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27042,7 +27042,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -27057,7 +27057,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=331746317",
     ItemID = 331746317,
-    ItemName = "Elf",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2015"
@@ -27068,7 +27068,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27086,7 +27086,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091321393",
     ItemID = 15091321393,
-    ItemName = "Etched",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -27097,7 +27097,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27111,7 +27111,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -27125,7 +27125,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305504173",
     ItemID = 305504173,
-    ItemName = "Euro",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -27135,7 +27135,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27149,7 +27149,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -27164,7 +27164,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254065007",
     ItemID = 11254065007,
-    ItemName = "Eyeball",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
@@ -27175,7 +27175,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27189,7 +27189,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -27203,7 +27203,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12965294432",
     ItemID = 12965294432,
-    ItemName = "Fragile",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -27214,7 +27214,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27228,7 +27228,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -27243,7 +27243,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534853444",
     ItemID = 4534853444,
-    ItemName = "Frosted",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
@@ -27254,7 +27254,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27272,7 +27272,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635556891",
     ItemID = 15635556891,
-    ItemName = "Frozen",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -27283,7 +27283,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27301,7 +27301,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091326116",
     ItemID = 15091326116,
-    ItemName = "Ghosts",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -27312,7 +27312,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27326,7 +27326,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -27341,7 +27341,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=134681523511387",
     ItemID = 134681523511387,
-    ItemName = "Ghosts",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
@@ -27352,7 +27352,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27370,7 +27370,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531873080",
     ItemID = 531873080,
-    ItemName = "Ghosty",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
@@ -27381,7 +27381,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27395,7 +27395,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -27410,7 +27410,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=14967668214",
     ItemID = 14967668214,
-    ItemName = "Ghoulish",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -27421,7 +27421,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27435,7 +27435,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -27450,7 +27450,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121847170",
     ItemID = 6121847170,
-    ItemName = "Gift Bag",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
@@ -27461,7 +27461,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27475,7 +27475,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -27490,7 +27490,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=129290011017110",
     ItemID = 129290011017110,
-    ItemName = "Gifts",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
@@ -27501,7 +27501,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27515,7 +27515,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -27530,7 +27530,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534856285",
     ItemID = 4534856285,
-    ItemName = "Gifts",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
@@ -27541,7 +27541,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27555,7 +27555,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -27570,7 +27570,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304754179",
     ItemID = 8304754179,
-    ItemName = "Giftwrap",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
@@ -27581,7 +27581,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27595,7 +27595,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -27609,7 +27609,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=237336076",
     ItemID = 237336076,
-    ItemName = "Goo",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -27619,7 +27619,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27633,7 +27633,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://2514683594",
     MeshType = Enum.MeshType.FileMesh,
@@ -27648,7 +27648,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513728474",
     ItemID = 2513728474,
-    ItemName = "Grave",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
@@ -27659,7 +27659,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27673,7 +27673,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -27687,7 +27687,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473625785",
     ItemID = 473625785,
-    ItemName = "Green",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -27697,7 +27697,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27711,7 +27711,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -27725,7 +27725,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305503942",
     ItemID = 305503942,
-    ItemName = "Grind",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -27735,7 +27735,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27752,7 +27752,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=3183605810",
     ItemID = 3183605810,
-    ItemName = "Hardened",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -27763,7 +27763,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27781,7 +27781,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513733741",
     ItemID = 2513733741,
-    ItemName = "Haunted",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
@@ -27792,7 +27792,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27806,7 +27806,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -27821,7 +27821,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=90194465176219",
     ItemID = 90194465176219,
-    ItemName = "Haunted",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -27832,7 +27832,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27846,7 +27846,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -27861,7 +27861,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800222135",
     ItemID = 7800222135,
-    ItemName = "Haunted",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
@@ -27872,7 +27872,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27886,7 +27886,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -27900,7 +27900,7 @@ local MESHES_OLD =
         Meta = {
     Image = "https://www.roblox.com/asset/?id=363362737",
     ItemID = 363352211,
-    ItemName = "Hearts",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -27910,7 +27910,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27924,7 +27924,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -27939,7 +27939,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=99939659856909",
     ItemID = 99939659856909,
-    ItemName = "Hearts",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2026"
@@ -27950,7 +27950,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -27964,7 +27964,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -27979,7 +27979,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=133307062463653",
     ItemID = 133307062463653,
-    ItemName = "Hot Chocolate",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
@@ -27990,7 +27990,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28004,7 +28004,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28019,7 +28019,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254154978",
     ItemID = 11254154978,
-    ItemName = "Hunter",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
@@ -28030,7 +28030,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28044,7 +28044,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28058,7 +28058,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=191976710",
     ItemID = 196750668,
-    ItemName = "Ice",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28068,7 +28068,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28082,7 +28082,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28097,7 +28097,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=73203940450745",
     ItemID = 73203940450745,
-    ItemName = "Igloo",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
@@ -28108,7 +28108,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28122,7 +28122,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28136,7 +28136,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305506951",
     ItemID = 305506951,
-    ItemName = "Indy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28146,7 +28146,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28160,7 +28160,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28175,7 +28175,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254175272",
     ItemID = 11254175272,
-    ItemName = "Infected",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
@@ -28186,7 +28186,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28200,7 +28200,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28214,7 +28214,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=200953094",
     ItemID = 200953094,
-    ItemName = "Infected",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28224,7 +28224,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28238,7 +28238,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -28252,7 +28252,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659636452",
     ItemID = 4659636452,
-    ItemName = "Leaf",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -28263,7 +28263,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28277,7 +28277,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -28292,7 +28292,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091400883",
     ItemID = 15091400883,
-    ItemName = "Leaves",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -28303,7 +28303,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28317,7 +28317,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -28332,7 +28332,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=73486056426142",
     ItemID = 73486056426142,
-    ItemName = "Leaves",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -28343,7 +28343,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28357,7 +28357,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -28372,7 +28372,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=71228862432065",
     ItemID = 71228862432065,
-    ItemName = "Lights",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -28383,7 +28383,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28397,7 +28397,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28411,7 +28411,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198453528",
     ItemID = 198433893,
-    ItemName = "Linked",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28421,7 +28421,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28435,7 +28435,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28449,7 +28449,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365567962",
     ItemID = 365567962,
-    ItemName = "Log",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28459,7 +28459,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28473,7 +28473,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28487,7 +28487,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=196750845",
     ItemID = 196750845,
-    ItemName = "Love",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28497,7 +28497,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28511,7 +28511,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://10855586895",
     MeshType = Enum.MeshType.FileMesh,
@@ -28525,7 +28525,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339328595",
     ItemID = 12339328595,
-    ItemName = "Love",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -28536,7 +28536,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28550,7 +28550,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -28564,7 +28564,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659635584",
     ItemID = 4659635584,
-    ItemName = "Lovely",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -28575,7 +28575,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28589,7 +28589,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28604,7 +28604,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800224197",
     ItemID = 7800224197,
-    ItemName = "Moon",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
@@ -28615,7 +28615,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28629,7 +28629,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -28644,7 +28644,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210946577",
     ItemID = 4210946577,
-    ItemName = "Mummified",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
@@ -28655,7 +28655,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28669,7 +28669,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28683,7 +28683,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=159746637",
     ItemID = 198566885,
-    ItemName = "Neon",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28693,7 +28693,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28707,7 +28707,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28721,7 +28721,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315501170",
     ItemID = 315501170,
-    ItemName = "Oily",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28731,7 +28731,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28745,7 +28745,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28759,7 +28759,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305504399",
     ItemID = 305504399,
-    ItemName = "Ollie",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28769,7 +28769,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28783,7 +28783,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28797,7 +28797,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473626025",
     ItemID = 473626025,
-    ItemName = "Orange",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28807,7 +28807,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28821,7 +28821,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28836,7 +28836,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=331745428",
     ItemID = 331745428,
-    ItemName = "Ornament",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2015"
@@ -28847,7 +28847,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28861,7 +28861,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28876,7 +28876,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=331745341",
     ItemID = 331745341,
-    ItemName = "Ornament2",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2015"
@@ -28887,7 +28887,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28901,7 +28901,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -28916,7 +28916,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121853160",
     ItemID = 6121853160,
-    ItemName = "Ornaments",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
@@ -28927,7 +28927,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28941,7 +28941,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -28955,7 +28955,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=363150334",
     ItemID = 363150334,
-    ItemName = "Passion",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28965,7 +28965,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -28982,7 +28982,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=383476085",
     ItemID = 383476085,
-    ItemName = "Patrick",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -28992,7 +28992,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29006,7 +29006,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -29021,7 +29021,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=84605926178412",
     ItemID = 84605926178412,
-    ItemName = "Peppermint",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -29032,7 +29032,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29046,7 +29046,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29061,7 +29061,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133332075",
     ItemID = 1133332075,
-    ItemName = "Phantom",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
@@ -29072,7 +29072,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29086,7 +29086,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -29101,7 +29101,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534855710",
     ItemID = 4534855710,
-    ItemName = "Pine",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
@@ -29112,7 +29112,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29126,7 +29126,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29141,7 +29141,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635553149",
     ItemID = 15635553149,
-    ItemName = "Present",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -29152,7 +29152,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29166,7 +29166,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29181,7 +29181,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268699212",
     ItemID = 1268699212,
-    ItemName = "Present",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
@@ -29192,7 +29192,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29206,7 +29206,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29220,7 +29220,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=306046703",
     ItemID = 306046703,
-    ItemName = "Prism",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -29230,7 +29230,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29244,7 +29244,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -29259,7 +29259,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210931354",
     ItemID = 4210931354,
-    ItemName = "Pumpkin Patch",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
@@ -29270,7 +29270,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29287,7 +29287,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5984754897",
     ItemID = 5984754897,
-    ItemName = "RB Knife",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -29298,7 +29298,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29312,7 +29312,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -29327,7 +29327,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=122078592955794",
     ItemID = 122078592955794,
-    ItemName = "Reindeer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -29338,7 +29338,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29352,7 +29352,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -29367,7 +29367,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=109101361674956",
     ItemID = 109101361674956,
-    ItemName = "Reindeer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
@@ -29378,7 +29378,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29392,7 +29392,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29406,7 +29406,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=162672131",
     ItemID = 197499641,
-    ItemName = "Reptile",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -29416,7 +29416,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29434,7 +29434,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635552019",
     ItemID = 15635552019,
-    ItemName = "Ribbon",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -29445,7 +29445,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29459,7 +29459,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29474,7 +29474,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304754882",
     ItemID = 8304754882,
-    ItemName = "Ribbons",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
@@ -29485,7 +29485,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29499,7 +29499,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -29513,7 +29513,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=363352002",
     ItemID = 363352002,
-    ItemName = "Roses",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -29523,7 +29523,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29537,7 +29537,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29551,7 +29551,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365568056",
     ItemID = 365568056,
-    ItemName = "Sandy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -29561,7 +29561,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29575,7 +29575,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29590,7 +29590,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268703618",
     ItemID = 1268703618,
-    ItemName = "Santa",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
@@ -29601,7 +29601,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29615,7 +29615,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29630,7 +29630,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=331746096",
     ItemID = 331746096,
-    ItemName = "Santa",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2015"
@@ -29641,7 +29641,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29655,7 +29655,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29670,7 +29670,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669637780",
     ItemID = 2669637780,
-    ItemName = "Santa",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
@@ -29681,7 +29681,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29695,7 +29695,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29709,7 +29709,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15415482999",
     ItemID = 15415482999,
-    ItemName = "Scarf",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -29720,7 +29720,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29734,7 +29734,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -29748,7 +29748,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4659636085",
     ItemID = 4659636085,
-    ItemName = "Shaded",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -29759,7 +29759,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29773,7 +29773,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29787,7 +29787,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305503783",
     ItemID = 305503783,
-    ItemName = "Sidewinder",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -29797,7 +29797,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29811,7 +29811,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29825,7 +29825,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=546161470",
     ItemID = 546161470,
-    ItemName = "Sketchy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -29835,7 +29835,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29849,7 +29849,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29863,7 +29863,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=295269977",
     ItemID = 295269977,
-    ItemName = "Skool",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -29873,7 +29873,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29887,7 +29887,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -29902,7 +29902,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=75608370390005",
     ItemID = 75608370390005,
-    ItemName = "Skyline",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -29913,7 +29913,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29927,7 +29927,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -29942,7 +29942,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5929317433",
     ItemID = 5929317433,
-    ItemName = "Slashed",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
@@ -29953,7 +29953,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -29967,7 +29967,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -29981,7 +29981,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=198453556",
     ItemID = 198434520,
-    ItemName = "Slate",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -29991,7 +29991,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30005,7 +30005,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -30020,7 +30020,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513734227",
     ItemID = 2513734227,
-    ItemName = "Slime",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
@@ -30031,7 +30031,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30045,7 +30045,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -30060,7 +30060,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210932676",
     ItemID = 4210932676,
-    ItemName = "Slimy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
@@ -30071,7 +30071,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30085,7 +30085,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -30100,7 +30100,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=119914093248842",
     ItemID = 119914093248842,
-    ItemName = "Snowball",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -30111,7 +30111,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30129,7 +30129,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15635568751",
     ItemID = 15635568751,
-    ItemName = "Snowfall",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -30140,7 +30140,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30154,7 +30154,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30169,7 +30169,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4534855045",
     ItemID = 4534855045,
-    ItemName = "Snowflakes",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
@@ -30180,7 +30180,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30194,7 +30194,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30209,7 +30209,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669640152",
     ItemID = 2669640152,
-    ItemName = "Snowman",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
@@ -30220,7 +30220,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30238,7 +30238,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834391469",
     ItemID = 11834391469,
-    ItemName = "Snowman",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
@@ -30249,7 +30249,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30263,7 +30263,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30277,7 +30277,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310709709",
     ItemID = 310709709,
-    ItemName = "Sparkle1",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30287,7 +30287,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30301,7 +30301,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30315,7 +30315,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310715768",
     ItemID = 310715768,
-    ItemName = "Sparkle10",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30325,7 +30325,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30339,7 +30339,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30353,7 +30353,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310710191",
     ItemID = 310710191,
-    ItemName = "Sparkle2",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30363,7 +30363,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30377,7 +30377,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30391,7 +30391,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310710694",
     ItemID = 310710694,
-    ItemName = "Sparkle3",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30401,7 +30401,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30415,7 +30415,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30429,7 +30429,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310712788",
     ItemID = 310712788,
-    ItemName = "Sparkle4",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30439,7 +30439,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30453,7 +30453,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30467,7 +30467,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310713235",
     ItemID = 310713235,
-    ItemName = "Sparkle5",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30477,7 +30477,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30491,7 +30491,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30505,7 +30505,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310713648",
     ItemID = 310713648,
-    ItemName = "Sparkle6",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30515,7 +30515,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30529,7 +30529,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30543,7 +30543,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310714089",
     ItemID = 310714089,
-    ItemName = "Sparkle7",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30553,7 +30553,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30567,7 +30567,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30581,7 +30581,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310714407",
     ItemID = 310714407,
-    ItemName = "Sparkle8",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30591,7 +30591,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30605,7 +30605,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30619,7 +30619,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=310715104",
     ItemID = 310715104,
-    ItemName = "Sparkle9",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30629,7 +30629,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30647,7 +30647,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091399982",
     ItemID = 15091399982,
-    ItemName = "Spider",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -30658,7 +30658,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30672,7 +30672,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30687,7 +30687,7 @@ local MESHES_OLD =
     ChinaItemID = 473626150,
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16964346058",
     ItemID = 16964346058,
-    ItemName = "Splatter",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30697,7 +30697,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30711,7 +30711,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30725,7 +30725,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=235366771",
     ItemID = 235366771,
-    ItemName = "Stainless",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30735,7 +30735,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30749,7 +30749,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -30763,7 +30763,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322176343",
     ItemID = 18322176343,
-    ItemName = "Starfish",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -30774,7 +30774,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30788,7 +30788,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30802,7 +30802,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365568163",
     ItemID = 365568163,
-    ItemName = "Static",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -30812,7 +30812,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30826,7 +30826,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30841,7 +30841,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800229084",
     ItemID = 7800229084,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
@@ -30852,7 +30852,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30866,7 +30866,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -30881,7 +30881,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=120248733900674",
     ItemID = 120248733900674,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
@@ -30892,7 +30892,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30906,7 +30906,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -30920,7 +30920,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxthumb://type=Asset&w=150&h=150&id=115280072896190",
     ItemID = 115280072896190,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1,
@@ -30932,7 +30932,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30946,7 +30946,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -30961,7 +30961,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=83843575465564",
     ItemID = 83843575465564,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2024"
@@ -30972,7 +30972,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -30986,7 +30986,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -31001,7 +31001,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=98868784444742",
     ItemID = 98868784444742,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -31012,7 +31012,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31026,7 +31026,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -31041,7 +31041,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=102283625659356",
     ItemID = 102283625659356,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -31052,7 +31052,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31066,7 +31066,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -31081,7 +31081,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304755417",
     ItemID = 8304755417,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2021"
@@ -31092,7 +31092,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31106,7 +31106,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -31121,7 +31121,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=100461386281007",
     ItemID = 100461386281007,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -31132,7 +31132,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31146,7 +31146,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -31161,7 +31161,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254067158",
     ItemID = 11254067158,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
@@ -31172,7 +31172,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31190,7 +31190,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11834387858",
     ItemID = 11834387858,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2022"
@@ -31201,7 +31201,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31215,7 +31215,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -31229,7 +31229,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://13944129977",
     ItemID = 13944129596,
-    ItemName = "Stickers",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -31240,7 +31240,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31254,7 +31254,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -31269,7 +31269,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6123335682",
     ItemID = 6123335682,
-    ItemName = "Stockings",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
@@ -31280,7 +31280,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31294,7 +31294,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -31309,7 +31309,7 @@ local MESHES_OLD =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=73897192147749",
     ItemID = 73897192147749,
-    ItemName = "Strawberries",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2026"
@@ -31320,7 +31320,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31334,7 +31334,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -31349,7 +31349,7 @@ local MESHES_OLD =
     Event = "Summer",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=136747578920542",
     ItemID = 136747578920542,
-    ItemName = "Striped",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -31360,7 +31360,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31374,7 +31374,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -31385,7 +31385,7 @@ local MESHES_OLD =
 },
     {
     Class = "Decal",
-    Name = "Decal",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 255, 255),
     Face = Enum.NormalId.Right,
@@ -31398,7 +31398,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=546159250",
     ItemID = 546159250,
-    ItemName = "Sub",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -31408,7 +31408,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31422,7 +31422,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -31436,7 +31436,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=363150761",
     ItemID = 363150761,
-    ItemName = "Sweetheart",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -31446,7 +31446,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31460,7 +31460,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -31474,7 +31474,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=201542790",
     ItemID = 201542790,
-    ItemName = "TNL",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -31484,7 +31484,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31498,7 +31498,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -31512,7 +31512,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=305506822",
     ItemID = 305506822,
-    ItemName = "Tailslide",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -31522,7 +31522,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31536,7 +31536,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -31547,7 +31547,7 @@ local MESHES_OLD =
 },
     {
     Class = "Vector3Value",
-    Name = "OriginalPosition",
+    Name = "Catmio Reborn",
     Props = {
     Value = Vector3.new(0, 0, 0)
 }
@@ -31557,7 +31557,7 @@ local MESHES_OLD =
         Meta = {
     Image = "rbxassetid://13944128440",
     ItemID = 13944127959,
-    ItemName = "Toy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -31568,7 +31568,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31582,7 +31582,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -31597,7 +31597,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6123336879",
     ItemID = 6123336879,
-    ItemName = "Trees",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
@@ -31608,7 +31608,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31626,7 +31626,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=387874661",
     ItemID = 387874661,
-    ItemName = "Tulip",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
@@ -31637,7 +31637,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31651,7 +31651,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6600901997",
     MeshType = Enum.MeshType.FileMesh,
@@ -31666,7 +31666,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=97641024072972",
     ItemID = 97641024072972,
-    ItemName = "UFOs",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2025"
@@ -31677,7 +31677,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31691,7 +31691,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -31705,7 +31705,7 @@ local MESHES_OLD =
         Meta = {
     Image = "https://www.roblox.com/asset/?id=363362726",
     ItemID = 363150149,
-    ItemName = "Valentine",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -31715,7 +31715,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31733,7 +31733,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091325210",
     ItemID = 15091325210,
-    ItemName = "Vines",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -31744,7 +31744,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31758,7 +31758,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -31773,7 +31773,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5866438542",
     ItemID = 5866438542,
-    ItemName = "Watcher",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2020"
@@ -31784,7 +31784,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31801,7 +31801,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16959755393",
     ItemID = 16959755393,
-    ItemName = "Wavy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Season = 1
@@ -31812,7 +31812,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31826,7 +31826,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://957726558",
     MeshType = Enum.MeshType.FileMesh,
@@ -31841,7 +31841,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4210949599",
     ItemID = 4210949599,
-    ItemName = "Webbed",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2019"
@@ -31852,7 +31852,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31866,7 +31866,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -31880,7 +31880,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=191788694",
     ItemID = 196751515,
-    ItemName = "Whiteout",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -31890,7 +31890,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31904,7 +31904,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -31919,7 +31919,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531873553",
     ItemID = 531873553,
-    ItemName = "Witch",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2016"
@@ -31930,7 +31930,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31948,7 +31948,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091401811",
     ItemID = 15091401811,
-    ItemName = "Wood",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2023"
@@ -31959,7 +31959,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -31973,7 +31973,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://121944778",
     MeshType = Enum.MeshType.FileMesh,
@@ -31988,7 +31988,7 @@ local MESHES_OLD =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669640357",
     ItemID = 2669640357,
-    ItemName = "Wrapped",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2018"
@@ -31999,7 +31999,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -32013,7 +32013,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -32027,7 +32027,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=439325100",
     ItemID = 439325100,
-    ItemName = "Xbox",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -32037,7 +32037,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -32051,7 +32051,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -32065,7 +32065,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=473625906",
     ItemID = 473625906,
-    ItemName = "Yellow",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common"
 }
@@ -32075,7 +32075,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -32089,7 +32089,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=121944778  ",
     MeshType = Enum.MeshType.FileMesh,
@@ -32104,7 +32104,7 @@ local MESHES_OLD =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133331875",
     ItemID = 1133331885,
-    ItemName = "Zombie",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Common",
     Year = "2017"
@@ -32115,7 +32115,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -32129,7 +32129,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=51682254 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -32143,7 +32143,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=144307188",
     ItemID = 473573464,
-    ItemName = "Blood",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 0.3491,
@@ -32163,7 +32163,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -32177,7 +32177,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=64131019 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -32188,7 +32188,7 @@ local MESHES_OLD =
 },
     {
     Class = "Part",
-    Name = "EffectCenter",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(17, 17, 17),
@@ -32201,7 +32201,7 @@ local MESHES_OLD =
 },
     {
     Class = "Part",
-    Name = "EffectHalf",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(17, 17, 17),
@@ -32214,7 +32214,7 @@ local MESHES_OLD =
 },
     {
     Class = "Part",
-    Name = "EffectFull",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     Color = Color3.fromRGB(17, 17, 17),
@@ -32230,7 +32230,7 @@ local MESHES_OLD =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=144268841",
     ItemID = 473574401,
-    ItemName = "Ghost",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 0.3491,
@@ -32250,7 +32250,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -32264,7 +32264,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=70990583",
     MeshType = Enum.MeshType.FileMesh,
@@ -32283,7 +32283,7 @@ local MESHES_OLD =
 },
     Image = "http://www.roblox.com/asset/?id=143917700",
     ItemID = 473575049,
-    ItemName = "Prince",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 0.3491,
@@ -32303,7 +32303,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -32317,7 +32317,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=86297695",
     MeshType = Enum.MeshType.FileMesh,
@@ -32336,7 +32336,7 @@ local MESHES_OLD =
 },
     Image = "http://www.roblox.com/asset/?id=144070096",
     ItemID = 474030882,
-    ItemName = "Shadow",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 0.3491,
@@ -32356,7 +32356,7 @@ local MESHES_OLD =
         Display = {
     {
     Class = "Part",
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Path = "(root)",
     Props = {
     CanCollide = false,
@@ -32370,7 +32370,7 @@ local MESHES_OLD =
 },
     {
     Class = "SpecialMesh",
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=22771612",
     MeshType = Enum.MeshType.FileMesh,
@@ -32389,7 +32389,7 @@ local MESHES_OLD =
 },
     Image = "http://www.roblox.com/asset/?id=143820641",
     ItemID = 473574001,
-    ItemName = "Splitter",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 0.3491,
@@ -32414,7 +32414,7 @@ local MESHES_FULL =
     FX = true,
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15666596216",
     ItemID = 15666469505,
-    ItemName = "Gingerscope",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2023"
@@ -32426,13 +32426,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 3,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 2,
-    Name = "Scope",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -32450,7 +32450,7 @@ local MESHES_FULL =
     {
     Class = "Beam",
     Id = 4,
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     CurveSize0 = 0,
     CurveSize1 = 0,
@@ -32471,7 +32471,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 5,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.12991, -0.00003, 0.075, 1, 0, 0, 0, 0.70713, 0.70708, -0, -0.70708, 0.70713)
 }
@@ -32479,19 +32479,19 @@ local MESHES_FULL =
     {
     Class = "Sound",
     Id = 6,
-    Name = "AltSound",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "RigidConstraint",
     Id = 7,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -32518,7 +32518,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7800847534",
     ItemID = 7800847534,
-    ItemName = "Harvester",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2021"
@@ -32528,13 +32528,13 @@ local MESHES_FULL =
     {
     Class = "Sound",
     Id = 2,
-    Name = "AltSound",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Beam",
     Id = 3,
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     CurveSize0 = 0,
     CurveSize1 = 0,
@@ -32555,7 +32555,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 4,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.12991, 0, 0.07501, 0.00002, -0.5, -0.86603, 1, -0.00004, 0.00005, -0.00006, -0.86603, 0.5)
 }
@@ -32563,13 +32563,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -32591,7 +32591,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11874071041",
     ItemID = 11874071041,
-    ItemName = "Icepiercer",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Ancient",
     Year = "2022"
@@ -32601,7 +32601,7 @@ local MESHES_FULL =
     {
     Class = "Beam",
     Id = 2,
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     CurveSize0 = 0,
     CurveSize1 = 0,
@@ -32622,13 +32622,13 @@ local MESHES_FULL =
     {
     Class = "Sound",
     Id = 3,
-    Name = "AltSound",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.12988, 0, 0.07498, 0.00002, -0.5, -0.86603, 1, -0.00004, 0.00005, -0.00006, -0.86603, 0.5)
 }
@@ -32636,13 +32636,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -32668,7 +32668,7 @@ local MESHES_FULL =
 },
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=446050753",
     ItemID = 446050753,
-    ItemName = "Amerilaser",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 },
@@ -32677,7 +32677,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=116657254",
     MeshType = Enum.MeshType.FileMesh,
@@ -32689,13 +32689,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
 }
@@ -32703,7 +32703,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -32724,7 +32724,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=137938731902685",
     ItemID = 84481559639371,
-    ItemName = "Bauble",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -32734,7 +32734,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://107813118898769",
     MeshType = Enum.MeshType.FileMesh,
@@ -32746,7 +32746,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 0, 0),
     Face = Enum.NormalId.Left,
@@ -32758,7 +32758,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 4,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.23862, 0.10727, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -32766,13 +32766,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -32792,7 +32792,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=84481559639371",
     ItemID = 84481559639371,
-    ItemName = "Bauble",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -32802,7 +32802,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://107813118898769",
     MeshType = Enum.MeshType.FileMesh,
@@ -32814,7 +32814,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.23862, 0.10727, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -32822,13 +32822,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -32852,7 +32852,7 @@ local MESHES_FULL =
 },
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=386277381",
     ItemID = 386277381,
-    ItemName = "Blaster",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 },
@@ -32861,7 +32861,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.15, 0.05489, 0.2049, 1, -0, -0, -0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
 }
@@ -32869,7 +32869,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 3,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=92656610",
     MeshType = Enum.MeshType.FileMesh,
@@ -32881,13 +32881,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -32908,7 +32908,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxassetid://97865938907417",
     ItemID = 88928894807422,
-    ItemName = "Blizzard",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -32918,7 +32918,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 2,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 19, 0),
     Face = Enum.NormalId.Left,
@@ -32930,7 +32930,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 3,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://77235373292363",
     MeshType = Enum.MeshType.FileMesh,
@@ -32942,7 +32942,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 4,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.19272, 0.08664, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -32950,13 +32950,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -32975,7 +32975,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339377105",
     ItemID = 12339377105,
-    ItemName = "Blossom",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -32985,7 +32985,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://12322809632",
     MeshType = Enum.MeshType.FileMesh,
@@ -32997,7 +32997,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.20001, 0.0899, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -33005,13 +33005,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33031,7 +33031,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=108635848059846",
     ItemID = 108635848059846,
-    ItemName = "Borealis",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -33041,13 +33041,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
 }
@@ -33055,7 +33055,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33078,7 +33078,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=98517109155878",
     ItemID = 114197436469014,
-    ItemName = "Constellation",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -33088,7 +33088,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://124598402927958",
     MeshType = Enum.MeshType.FileMesh,
@@ -33100,7 +33100,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Left,
@@ -33112,7 +33112,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 4,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.51294, 0.23058, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -33120,13 +33120,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33146,7 +33146,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=114197436469014",
     ItemID = 114197436469014,
-    ItemName = "Constellation",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -33156,13 +33156,13 @@ local MESHES_FULL =
     {
     Class = "SurfaceAppearance",
     Id = 2,
-    Name = "SurfaceAppearance",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0, -0.20001, 0.08991, 1, 0, 0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -33170,13 +33170,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33202,7 +33202,7 @@ local MESHES_FULL =
 },
     Image = "http://www.roblox.com/asset/?id=4751387674",
     ItemID = 4749071819,
-    ItemName = "Darkbringer",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -33212,7 +33212,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
@@ -33224,7 +33224,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.18661, 0.12323, 1, -0, 0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
 }
@@ -33232,13 +33232,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33263,7 +33263,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "http://www.roblox.com/asset/?id=4751507011",
     ItemID = 4751501078,
-    ItemName = "Darkbringer",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -33273,7 +33273,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
@@ -33287,13 +33287,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Back,
@@ -33305,7 +33305,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 5,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0, -0.18665, 0.12321, 1, 0, 0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
 }
@@ -33313,13 +33313,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 6,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33339,7 +33339,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15080280688",
     ItemID = 15080280688,
-    ItemName = "Darkshot",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
@@ -33349,13 +33349,13 @@ local MESHES_FULL =
     {
     Class = "FileMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.20001, 0.08994, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -33363,13 +33363,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33394,7 +33394,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4468571736",
     ItemID = 4211142894,
-    ItemName = "Elderwood Revolver",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
@@ -33404,7 +33404,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.22989, 0.09821, 0.1, 0.00001, 0.98481, -0.17362, -0.00001, 0.17362, 0.98481, 1, -0.00001, 0.00001)
 }
@@ -33412,13 +33412,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33442,7 +33442,7 @@ local MESHES_FULL =
     FX = true,
     Image = "rbxassetid://15694208971",
     ItemID = 15682703596,
-    ItemName = "Evergun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
@@ -33452,7 +33452,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15408863676",
     MeshType = Enum.MeshType.FileMesh,
@@ -33464,7 +33464,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0, -0.19998, 0.08992, 1, 0, -0, -0, 0.64276, 0.76607, -0, -0.76607, 0.64276)
 }
@@ -33472,7 +33472,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 4,
-    Name = "Decal",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 255, 255),
     Face = Enum.NormalId.Front,
@@ -33484,7 +33484,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 5,
-    Name = "Decal",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 255, 255),
     Face = Enum.NormalId.Front,
@@ -33500,13 +33500,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 8,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 7,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33526,13 +33526,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 10,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 9,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33552,13 +33552,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 12,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 11,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33578,13 +33578,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 14,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 13,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33604,13 +33604,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 16,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 15,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33628,25 +33628,25 @@ local MESHES_FULL =
 },
     Class = "Model",
     Id = 6,
-    Name = "LightParts",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Script",
     Id = 17,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "RigidConstraint",
     Id = 18,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33667,7 +33667,7 @@ local MESHES_FULL =
     FX = true,
     Image = "rbxassetid://15694357721",
     ItemID = 15682703596,
-    ItemName = "Evergun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
@@ -33679,13 +33679,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 3,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 2,
-    Name = "Lights",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33705,13 +33705,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 5,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 4,
-    Name = "Lights",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33731,13 +33731,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 7,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 6,
-    Name = "Lights",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33757,13 +33757,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 9,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 8,
-    Name = "Lights",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33783,13 +33783,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 11,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 10,
-    Name = "Lights",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33807,7 +33807,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 12,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.00001, -0.20001, 0.0899, 1, 0, 0, 0, 0.64276, 0.76607, -0, -0.76607, 0.64276)
 }
@@ -33815,13 +33815,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 13,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33842,7 +33842,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://139276091458016",
     ItemID = 138204709945147,
-    ItemName = "Flora",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -33852,7 +33852,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0, -0.20001, 0.08992, 1, -0, -0, -0, 0.64276, 0.76607, 0, -0.76606, 0.64276)
 }
@@ -33860,13 +33860,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33887,7 +33887,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16963894455",
     ItemID = 16963894455,
-    ItemName = "Flowerwood Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -33897,7 +33897,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.18661, 0.12323, 1, 0, 0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
 }
@@ -33905,13 +33905,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33938,7 +33938,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2674983099",
     ItemID = 2674983099,
-    ItemName = "Ginger Luger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2018"
@@ -33948,7 +33948,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -33960,7 +33960,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.14999, 0.03833, 0.33319, 1, -0, 0, 0, 0, 1, 0, -1, -0)
 }
@@ -33968,13 +33968,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -33994,7 +33994,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11872179646",
     ItemID = 11872179646,
-    ItemName = "Gingermint",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
@@ -34004,7 +34004,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://11866444071",
     MeshType = Enum.MeshType.FileMesh,
@@ -34016,7 +34016,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.09469, -0.09924, 0.23668, 0.99179, 0.11365, 0.05858, -0.11578, 0.60394, 0.78857, 0.05425, -0.78888, 0.61214)
 }
@@ -34024,13 +34024,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34055,7 +34055,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332044679",
     ItemID = 332044679,
-    ItemName = "Green Luger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
@@ -34065,7 +34065,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -34077,7 +34077,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.14999, 0.03836, 0.33319, 1, 0, 0, 0, -0, 1, 0, -1, 0)
 }
@@ -34085,13 +34085,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34116,7 +34116,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5877089721",
     ItemID = 5878721461,
-    ItemName = "Hallowgun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
@@ -34126,7 +34126,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.22485, 0.04465, -0, 0, 0.99619, -0.08719, -0, 0.08719, 0.99619, 1, -0, 0)
 }
@@ -34134,13 +34134,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34162,7 +34162,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8305000161",
     ItemID = 8311005531,
-    ItemName = "Icebeam",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
@@ -34172,13 +34172,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
 }
@@ -34186,7 +34186,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34208,7 +34208,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121579464",
     ItemID = 6125814417,
-    ItemName = "Iceblaster",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
@@ -34218,7 +34218,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "Forward",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 1, 0.00003, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -34226,7 +34226,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Up",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.00002, 0, 1.00003, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -34234,13 +34234,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 5,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -34248,7 +34248,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34270,7 +34270,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121678262",
     ItemID = 6125742758,
-    ItemName = "Jinglegun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2020"
@@ -34280,7 +34280,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6125843704",
     MeshType = Enum.MeshType.FileMesh,
@@ -34292,13 +34292,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -34306,7 +34306,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34326,7 +34326,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://3187422628",
     ItemID = 3187395952,
-    ItemName = "Laser",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 },
@@ -34335,7 +34335,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://130099641",
     MeshType = Enum.MeshType.FileMesh,
@@ -34349,13 +34349,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -34367,13 +34367,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -34381,7 +34381,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34400,7 +34400,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3187422496",
     ItemID = 238546983,
-    ItemName = "Laser",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 },
@@ -34409,7 +34409,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=130099641",
     MeshType = Enum.MeshType.FileMesh,
@@ -34421,13 +34421,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -34435,7 +34435,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34459,7 +34459,7 @@ local MESHES_FULL =
 },
     Image = "http://www.roblox.com/asset/?id=4751387063",
     ItemID = 4749070432,
-    ItemName = "Lightbringer",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -34469,7 +34469,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
@@ -34481,7 +34481,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.1866, 0.12323, 1, -0, -0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
 }
@@ -34489,13 +34489,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34520,7 +34520,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "http://www.roblox.com/asset/?id=4751507078",
     ItemID = 4751500761,
-    ItemName = "Lightbringer",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -34530,7 +34530,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://4730813852",
     MeshType = Enum.MeshType.FileMesh,
@@ -34544,13 +34544,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Back,
@@ -34562,7 +34562,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 5,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.18661, 0.12323, 1, 0, 0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
 }
@@ -34570,13 +34570,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 6,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34600,7 +34600,7 @@ local MESHES_FULL =
 },
     Image = "rbxassetid://3187399148",
     ItemID = 198042673,
-    ItemName = "Luger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 },
@@ -34609,7 +34609,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -34621,7 +34621,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.15, 0.03836, 0.33322, 1, 0, 0, 0, 0, 1, 0, -1, -0)
 }
@@ -34629,13 +34629,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34660,7 +34660,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://3187399258",
     ItemID = 3187395551,
-    ItemName = "Luger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 },
@@ -34669,7 +34669,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -34683,13 +34683,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Back,
@@ -34701,7 +34701,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 5,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.15, 0.03835, 0.33322, 1, 0, 0, 0, 0, 1, -0, -1, -0)
 }
@@ -34709,13 +34709,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 6,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34740,7 +34740,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4535482609",
     ItemID = 4535482609,
-    ItemName = "Lugercane",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
@@ -34750,7 +34750,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -34762,7 +34762,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0, -0.18655, 0.12321, 1, 0, 0, 0, 0.17362, 0.98481, 0, -0.98481, 0.17362)
 }
@@ -34770,13 +34770,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34796,7 +34796,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11229837140",
     ItemID = 11229837140,
-    ItemName = "Makeshift",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
@@ -34806,7 +34806,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.08992, 1, -0, 0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -34814,13 +34814,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34847,7 +34847,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4528291487",
     ItemID = 4535408229,
-    ItemName = "Minty",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2019"
@@ -34857,7 +34857,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.05, -0.07257, 0.23923, -1, 0, 0, 0, -0, -1, 0, -1, -0)
 }
@@ -34865,13 +34865,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34892,7 +34892,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://13933165014",
     ItemID = 13945898892,
-    ItemName = "Ocean",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -34902,7 +34902,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://13928587755",
     MeshType = Enum.MeshType.FileMesh,
@@ -34914,7 +34914,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.19999, 0.08994, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -34922,13 +34922,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34947,7 +34947,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322646152",
     ItemID = 18322646152,
-    ItemName = "Pearlshine",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -34957,7 +34957,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.20001, 0.08991, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -34965,13 +34965,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -34992,7 +34992,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=10014717343",
     ItemID = 10014717343,
-    ItemName = "Plasmabeam",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -35002,7 +35002,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://9702755186",
     MeshType = Enum.MeshType.FileMesh,
@@ -35014,7 +35014,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.06429, 0.05646, 0.19186, 1, -0, 0, -0, 0.29232, 0.95632, 0, -0.95632, 0.29232)
 }
@@ -35022,13 +35022,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35047,7 +35047,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12966354606",
     ItemID = 12966354606,
-    ItemName = "Rainbow Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -35057,7 +35057,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.08991, 1, -0, 0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -35065,13 +35065,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35094,7 +35094,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=83259634072260",
     ItemID = 139431943195380,
-    ItemName = "Raygun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -35106,19 +35106,19 @@ local MESHES_FULL =
     {
     Class = "EqualizerSoundEffect",
     Id = 3,
-    Name = "EqualizerSoundEffect",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Sound",
     Id = 2,
-    Name = "AltSound",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "SpecialMesh",
     Id = 4,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://115447220952926",
     MeshType = Enum.MeshType.FileMesh,
@@ -35130,7 +35130,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 5,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -35142,7 +35142,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 6,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.20004, 0.08991, 1, 0, -0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -35150,7 +35150,7 @@ local MESHES_FULL =
     {
     Class = "Beam",
     Id = 7,
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     CurveSize0 = 0,
     CurveSize1 = 0,
@@ -35171,13 +35171,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 8,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35197,7 +35197,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=139431943195380",
     ItemID = 139431943195380,
-    ItemName = "Raygun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -35209,19 +35209,19 @@ local MESHES_FULL =
     {
     Class = "EqualizerSoundEffect",
     Id = 3,
-    Name = "EqualizerSoundEffect",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Sound",
     Id = 2,
-    Name = "AltSound",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0, -0.20001, 0.08994, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -35229,7 +35229,7 @@ local MESHES_FULL =
     {
     Class = "Beam",
     Id = 5,
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     CurveSize0 = 0,
     CurveSize1 = 0,
@@ -35250,13 +35250,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 6,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35283,7 +35283,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332044583",
     ItemID = 332044583,
-    ItemName = "Red Luger",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
@@ -35293,7 +35293,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=95356090",
     MeshType = Enum.MeshType.FileMesh,
@@ -35305,7 +35305,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.15, 0.03833, 0.33322, 1, 0, 0, 0, 0, 1, 0, -1, 0)
 }
@@ -35313,13 +35313,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35344,7 +35344,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://3187421856",
     ItemID = 3187395738,
-    ItemName = "Shark",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 },
@@ -35353,7 +35353,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://118269783",
     MeshType = Enum.MeshType.FileMesh,
@@ -35367,13 +35367,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 18, 0),
     Face = Enum.NormalId.Back,
@@ -35385,7 +35385,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 5,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.15, -0.24356, 0.23059, 1, 0, 0, 0, 0, 1, 0, -1, -0)
 }
@@ -35393,13 +35393,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 6,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35423,7 +35423,7 @@ local MESHES_FULL =
 },
     Image = "rbxassetid://3187421705",
     ItemID = 203858533,
-    ItemName = "Shark",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly"
 },
@@ -35432,7 +35432,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=118269783",
     MeshType = Enum.MeshType.FileMesh,
@@ -35444,7 +35444,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.00634, 0.03519, -0.22076, 0.99817, -0.06049, -0.00075, 0.00608, 0.08798, 0.9961, -0.06019, -0.99428, 0.08818)
 }
@@ -35452,13 +35452,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35478,7 +35478,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=129186939023729",
     ItemID = 129186939023729,
-    ItemName = "Snowcannon",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -35488,19 +35488,19 @@ local MESHES_FULL =
     {
     Class = "Sound",
     Id = 2,
-    Name = "AltSound",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "WeldConstraint",
     Id = 3,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0.00003, 0.0899, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -35508,7 +35508,7 @@ local MESHES_FULL =
     {
     Class = "Beam",
     Id = 5,
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     CurveSize0 = 0,
     CurveSize1 = 0,
@@ -35529,7 +35529,7 @@ local MESHES_FULL =
     {
     Class = "MeshPart",
     Id = 6,
-    Name = "Glass",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35547,13 +35547,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 7,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35576,7 +35576,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxassetid://93075282395578",
     ItemID = 129186939023729,
-    ItemName = "Snowcannon",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -35586,13 +35586,13 @@ local MESHES_FULL =
     {
     Class = "Sound",
     Id = 2,
-    Name = "AltSound",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 0, 0),
     Face = Enum.NormalId.Left,
@@ -35604,7 +35604,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 4,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0, -0.25153, 0.11305, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -35612,7 +35612,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 5,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://99836890880541",
     MeshType = Enum.MeshType.FileMesh,
@@ -35624,7 +35624,7 @@ local MESHES_FULL =
     {
     Class = "Beam",
     Id = 6,
-    Name = "CustomBeam",
+    Name = "Catmio Reborn",
     Props = {
     CurveSize0 = 0,
     CurveSize1 = 0,
@@ -35645,13 +35645,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 7,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35671,7 +35671,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=75233248021696",
     ItemID = 75233248021696,
-    ItemName = "Soul",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -35681,7 +35681,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.0899, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -35689,13 +35689,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35717,7 +35717,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11229779932",
     ItemID = 11229779932,
-    ItemName = "Spectre",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2022"
@@ -35727,7 +35727,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://11165536294",
     MeshType = Enum.MeshType.FileMesh,
@@ -35739,13 +35739,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -35753,7 +35753,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35778,7 +35778,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxassetid://3215356000",
     ItemID = 332848695,
-    ItemName = "Sugar",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2015"
@@ -35788,7 +35788,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=101086719",
     MeshType = Enum.MeshType.FileMesh,
@@ -35800,7 +35800,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.1, 0.28233, 0.30722, -1, 0, 0, 0, -0.08713, -0.9962, 0, -0.9962, 0.08713)
 }
@@ -35808,13 +35808,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35835,7 +35835,7 @@ local MESHES_FULL =
     FX = true,
     Image = "rbxthumb://type=Asset&w=150&h=150&id=129480661108374",
     ItemID = 129480661108374,
-    ItemName = "Sunrise",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -35845,7 +35845,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://109742397574153",
     MeshType = Enum.MeshType.FileMesh,
@@ -35857,7 +35857,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(2555, 2322, 200),
     Face = Enum.NormalId.Left,
@@ -35869,7 +35869,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 4,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.0899, 1, -0, -0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -35877,13 +35877,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35905,7 +35905,7 @@ local MESHES_FULL =
     FX = true,
     Image = "rbxthumb://type=Asset&w=150&h=150&id=124766755976937",
     ItemID = 129480661108374,
-    ItemName = "Sunrise",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -35915,7 +35915,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://109742397574153",
     MeshType = Enum.MeshType.FileMesh,
@@ -35927,7 +35927,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.08992, 1, 0, -0, -0, 0.64276, 0.76607, -0, -0.76607, 0.64276)
 }
@@ -35935,7 +35935,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 4,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -35947,7 +35947,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 5,
-    Name = "Glow",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(2555, 2322, 200),
     Face = Enum.NormalId.Left,
@@ -35959,13 +35959,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 6,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -35986,7 +35986,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/asset/?id=8311453396",
     ItemID = 8311393414,
-    ItemName = "Swirly Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
@@ -35996,7 +35996,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://8310911339",
     MeshType = Enum.MeshType.FileMesh,
@@ -36010,13 +36010,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Front,
@@ -36028,13 +36028,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
 }
@@ -36042,7 +36042,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36062,7 +36062,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8305002569",
     ItemID = 8305264097,
-    ItemName = "Swirly Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2021"
@@ -36072,13 +36072,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -36086,7 +36086,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36108,7 +36108,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15091442039",
     ItemID = 15091442039,
-    ItemName = "Traveler's Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
@@ -36118,13 +36118,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -36132,7 +36132,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36155,7 +36155,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "rbxassetid://15097920149",
     ItemID = 15097897227,
-    ItemName = "Traveler's Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2023"
@@ -36165,7 +36165,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15090814396",
     MeshType = Enum.MeshType.FileMesh,
@@ -36177,7 +36177,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Top,
@@ -36189,13 +36189,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 5,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
 }
@@ -36203,7 +36203,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36224,7 +36224,7 @@ local MESHES_FULL =
     Event = "Valentines",
     Image = "rbxassetid://121364530728626",
     ItemID = 131626924640663,
-    ItemName = "Treat",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1,
@@ -36235,7 +36235,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 2,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -36247,7 +36247,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.20004, 0.08987, 1, 0, -0, 0, 0.64276, 0.76607, -0, -0.76607, 0.64276)
 }
@@ -36255,7 +36255,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 4,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://135790480817772",
     MeshType = Enum.MeshType.FileMesh,
@@ -36267,13 +36267,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36293,7 +36293,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=90274872705656",
     ItemID = 90274872705656,
-    ItemName = "Vampire's Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -36303,7 +36303,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0, -0.20001, 0.08992, 1, -0, 0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -36311,13 +36311,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36340,7 +36340,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=85107391551890",
     ItemID = 90274872705656,
-    ItemName = "Vampire's Gun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2024"
@@ -36350,7 +36350,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://126591885289479",
     MeshType = Enum.MeshType.FileMesh,
@@ -36362,7 +36362,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Left,
@@ -36374,7 +36374,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 4,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.20001, 0.08989, 1, -0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -36382,13 +36382,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36408,7 +36408,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://18351465514",
     ItemID = 18351401528,
-    ItemName = "Watergun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -36418,7 +36418,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://18280999342",
     MeshType = Enum.MeshType.FileMesh,
@@ -36430,7 +36430,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -36442,7 +36442,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 4,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.20004, 0.0899, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -36450,13 +36450,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36475,7 +36475,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18351388416",
     ItemID = 18351388416,
-    ItemName = "Watergun",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Season = 1
@@ -36485,7 +36485,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://18280999342",
     MeshType = Enum.MeshType.FileMesh,
@@ -36497,7 +36497,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0, -0.20001, 0.08992, 1, -0, 0, -0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -36505,13 +36505,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36531,7 +36531,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=96859273002742",
     ItemID = 79722325448464,
-    ItemName = "Xenoshot",
+    ItemName = "Catmio Reborn",
     ItemType = "Gun",
     Rarity = "Godly",
     Year = "2025"
@@ -36541,7 +36541,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, -0.19998, 0.0899, 1, 0, 0, 0, 0.64276, 0.76607, 0, -0.76607, 0.64276)
 }
@@ -36549,13 +36549,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "GunDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36577,7 +36577,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=375690925",
     ItemID = 2511791893,
-    ItemName = "Batwing",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioOffset = {
     X = -1.1,
@@ -36592,7 +36592,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=305826272",
     MeshType = Enum.MeshType.FileMesh,
@@ -36604,13 +36604,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
 }
@@ -36618,7 +36618,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36638,7 +36638,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=136673966529736",
     ItemID = 136673966529736,
-    ItemName = "Celestial",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2024"
@@ -36648,19 +36648,19 @@ local MESHES_FULL =
     {
     Class = "SurfaceAppearance",
     Id = 2,
-    Name = "SurfaceAppearance",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -36668,7 +36668,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36690,7 +36690,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4468593654",
     ItemID = 4211148191,
-    ItemName = "Elderwood Scythe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2019"
@@ -36700,7 +36700,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.10158, 0.15964, 0.15613, 0.999, -0.02982, -0.03345, 0.04003, 0.92926, 0.36726, 0.02013, -0.36823, 0.92952)
 }
@@ -36708,13 +36708,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36736,7 +36736,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5877016863",
     ItemID = 5877016863,
-    ItemName = "Hallowscythe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2020"
@@ -36746,7 +36746,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 2,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.00824, 0.0546, 0.62405, -0.99868, 0.04691, 0.02085, 0.04573, 0.99751, -0.05374, -0.02332, -0.05271, -0.99834)
 }
@@ -36754,13 +36754,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36782,7 +36782,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121572723",
     ItemID = 6125729383,
-    ItemName = "Icebreaker",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2020"
@@ -36792,13 +36792,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -36806,7 +36806,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36829,7 +36829,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669997196",
     ItemID = 3183085102,
-    ItemName = "Icewing",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     ThrowingHandle = 3183093706,
@@ -36840,7 +36840,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://3183449780",
     MeshType = Enum.MeshType.FileMesh,
@@ -36852,7 +36852,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.0031, -0.00953, 0.2059, -0.99976, 0.01674, 0.01386, 0.02037, 0.9442, 0.32875, -0.00759, 0.32896, -0.94431)
 }
@@ -36860,13 +36860,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36886,7 +36886,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4528268775",
     ItemID = 4535644282,
-    ItemName = "Logchopper",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2019"
@@ -36896,7 +36896,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=4535643726",
     MeshType = Enum.MeshType.FileMesh,
@@ -36908,13 +36908,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -36922,7 +36922,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -36941,7 +36941,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2533350813",
     ItemID = 2533351841,
-    ItemName = "Nik's Scythe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioOffset = {
     X = -1.1,
@@ -36955,7 +36955,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=305826272",
     MeshType = Enum.MeshType.FileMesh,
@@ -36967,13 +36967,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -36981,7 +36981,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37001,7 +37001,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304801000",
     ItemID = 8304801000,
-    ItemName = "Swirly Axe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2021"
@@ -37011,13 +37011,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -37025,7 +37025,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37047,7 +37047,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15070870271",
     ItemID = 15070870271,
-    ItemName = "Traveler's Axe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2023"
@@ -37057,13 +37057,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -37071,7 +37071,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37093,7 +37093,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=130837676383567",
     ItemID = 130837676383567,
-    ItemName = "Vampire's Axe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Ancient",
     Year = "2024"
@@ -37103,13 +37103,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
 }
@@ -37117,7 +37117,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37139,7 +37139,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=77607127867154",
     ItemID = 77607127867154,
-    ItemName = "Alienbeam",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -37149,13 +37149,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
 }
@@ -37163,7 +37163,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37186,7 +37186,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=104256106059730",
     ItemID = 77607127867154,
-    ItemName = "Alienbeam",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -37196,7 +37196,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://86649405964534",
     MeshType = Enum.MeshType.FileMesh,
@@ -37208,7 +37208,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 0, 0),
     Face = Enum.NormalId.Left,
@@ -37220,13 +37220,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 5,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -37234,7 +37234,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37254,7 +37254,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=101343256002049",
     ItemID = 101343256002049,
-    ItemName = "Australis",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2024"
@@ -37264,13 +37264,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -37278,7 +37278,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37300,7 +37300,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11229814357",
     ItemID = 11229814357,
-    ItemName = "Bat",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -37310,13 +37310,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -37324,7 +37324,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37346,7 +37346,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133237368",
     ItemID = 1133237368,
-    ItemName = "BattleAxe",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 2.0944,
@@ -37366,7 +37366,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1084767698",
     MeshType = Enum.MeshType.FileMesh,
@@ -37378,7 +37378,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -37386,13 +37386,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37412,7 +37412,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513535503",
     ItemID = 2513535503,
-    ItemName = "BattleAxe II",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
@@ -37422,13 +37422,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -37436,7 +37436,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37457,7 +37457,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=4751540097",
     ItemID = 4751539262,
-    ItemName = "Bioblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Offset = {
     X = -0.1,
@@ -37472,13 +37472,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -37486,7 +37486,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37507,7 +37507,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://132419834610569",
     ItemID = 128553215441980,
-    ItemName = "Bloom",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -37517,13 +37517,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -37531,7 +37531,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37552,7 +37552,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3184139996",
     ItemID = 3184125087,
-    ItemName = "Blue Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -37561,7 +37561,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -37573,13 +37573,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -37587,7 +37587,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37607,7 +37607,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513505477",
     ItemID = 2513505477,
-    ItemName = "Boneblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
@@ -37617,7 +37617,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1857106669",
     MeshType = Enum.MeshType.FileMesh,
@@ -37629,13 +37629,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
 }
@@ -37643,7 +37643,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37664,7 +37664,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2513597845",
     ItemID = 2513598419,
-    ItemName = "Boneblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
@@ -37676,13 +37676,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 3,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 2,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Front,
@@ -37694,7 +37694,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 4,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1857106669",
     MeshType = Enum.MeshType.FileMesh,
@@ -37706,13 +37706,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -37720,7 +37720,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37740,7 +37740,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=7805833970",
     ItemID = 7805833970,
-    ItemName = "Candleflame",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
@@ -37750,13 +37750,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
 }
@@ -37764,7 +37764,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37787,7 +37787,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/asset/?id=7806149582",
     ItemID = 7806121918,
-    ItemName = "Candleflame",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
@@ -37797,7 +37797,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://7791364860",
     MeshType = Enum.MeshType.FileMesh,
@@ -37811,13 +37811,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Front,
@@ -37829,13 +37829,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
 }
@@ -37843,7 +37843,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37863,7 +37863,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332021011",
     ItemID = 332021011,
-    ItemName = "Candy",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2015"
@@ -37873,7 +37873,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=19040337",
     MeshType = Enum.MeshType.FileMesh,
@@ -37885,13 +37885,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -37899,7 +37899,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37919,7 +37919,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332022166",
     ItemID = 332022166,
-    ItemName = "Chill",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2015"
@@ -37929,7 +37929,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=105329941",
     MeshType = Enum.MeshType.FileMesh,
@@ -37941,13 +37941,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -37955,7 +37955,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -37974,7 +37974,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=360609441",
     ItemID = 473570519,
-    ItemName = "Clockwork",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.66519,
@@ -37993,7 +37993,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=352571495",
     MeshType = Enum.MeshType.FileMesh,
@@ -38005,7 +38005,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.00151, -0.12701, -0.15448, -0.99867, 0.03727, 0.03568, -0.04098, -0.15276, -0.98741, -0.03135, -0.98756, 0.15409)
 }
@@ -38013,13 +38013,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38039,7 +38039,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6121574620",
     ItemID = 6125733703,
-    ItemName = "Cookieblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
@@ -38049,13 +38049,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -38063,7 +38063,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38085,7 +38085,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11855306927",
     ItemID = 11855306927,
-    ItemName = "Cookiecane",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -38095,19 +38095,19 @@ local MESHES_FULL =
     {
     Class = "FileMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -38115,7 +38115,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38136,7 +38136,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxassetid://11979596437",
     ItemID = 11873640255,
-    ItemName = "Cookiecane",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -38146,7 +38146,7 @@ local MESHES_FULL =
     {
     Class = "FileMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
@@ -38154,13 +38154,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(0, 255, 247),
     Face = Enum.NormalId.Back,
@@ -38172,13 +38172,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
 }
@@ -38186,7 +38186,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38206,7 +38206,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=15080267070",
     ItemID = 15080267070,
-    ItemName = "Darksword",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
@@ -38216,7 +38216,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15020899066",
     MeshType = Enum.MeshType.FileMesh,
@@ -38228,13 +38228,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -38242,7 +38242,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38266,7 +38266,7 @@ local MESHES_FULL =
 },
     Image = "rbxassetid://3175017717",
     ItemID = 196750305,
-    ItemName = "Deathshard",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = -1.0472,
@@ -38285,7 +38285,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=62275962 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -38297,7 +38297,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, -0.0446, -0.00031, -0.99901, 0.03549, 0.99937, -0.00189, 0.99837, -0.03553, -0.04456)
 }
@@ -38305,13 +38305,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38336,7 +38336,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://3187397317",
     ItemID = 3187390667,
-    ItemName = "Deathshard",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = -1.0472,
@@ -38355,7 +38355,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://62275962",
     MeshType = Enum.MeshType.FileMesh,
@@ -38369,13 +38369,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 18, 0),
     Face = Enum.NormalId.Front,
@@ -38387,7 +38387,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 5,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0.00003, 0, -0.0446, -0.00031, -0.999, 0.03549, 0.99937, -0.00189, 0.99837, -0.03553, -0.04456)
 }
@@ -38395,13 +38395,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 6,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38420,7 +38420,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=6607512359",
     ItemID = 6607277825,
-    ItemName = "Eggblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -38430,13 +38430,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -38444,7 +38444,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38466,7 +38466,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11254879631",
     ItemID = 11262771067,
-    ItemName = "Elderwood Blade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -38476,7 +38476,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://11238166013",
     MeshType = Enum.MeshType.FileMesh,
@@ -38488,13 +38488,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -38502,7 +38502,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38523,7 +38523,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/asset/?id=11255021976",
     ItemID = 11254975176,
-    ItemName = "Elderwood Blade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -38533,7 +38533,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://11238166013",
     MeshType = Enum.MeshType.FileMesh,
@@ -38547,13 +38547,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Right,
@@ -38565,13 +38565,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
 }
@@ -38579,7 +38579,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38598,7 +38598,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=538706317",
     ItemID = 619605312,
-    ItemName = "Eternal",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -38607,7 +38607,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
@@ -38619,13 +38619,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
 }
@@ -38633,7 +38633,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38652,7 +38652,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2545253030",
     ItemID = 2545253030,
-    ItemName = "Eternal II",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -38661,7 +38661,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
@@ -38673,13 +38673,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
 }
@@ -38687,7 +38687,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38706,7 +38706,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3281170430",
     ItemID = 3279011390,
-    ItemName = "Eternal III",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -38716,7 +38716,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
@@ -38728,13 +38728,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
 }
@@ -38742,7 +38742,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38761,7 +38761,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4999958740",
     ItemID = 4999958740,
-    ItemName = "Eternal IV",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -38771,7 +38771,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://532155954",
     MeshType = Enum.MeshType.FileMesh,
@@ -38783,13 +38783,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -38797,7 +38797,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38817,7 +38817,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4488391411",
     ItemID = 4488391411,
-    ItemName = "Eternalcane",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
@@ -38827,7 +38827,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://3132923779",
     MeshType = Enum.MeshType.FileMesh,
@@ -38839,13 +38839,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -38853,7 +38853,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38874,7 +38874,7 @@ local MESHES_FULL =
     FX = true,
     Image = "rbxassetid://15694357137",
     ItemID = 15667157715,
-    ItemName = "Evergreen",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
@@ -38884,7 +38884,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15408280573",
     MeshType = Enum.MeshType.FileMesh,
@@ -38900,13 +38900,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 5,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 4,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38926,13 +38926,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 7,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 6,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38952,13 +38952,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 9,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 8,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -38978,13 +38978,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 11,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 10,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39004,13 +39004,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 13,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 12,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39028,19 +39028,19 @@ local MESHES_FULL =
 },
     Class = "Model",
     Id = 3,
-    Name = "LightParts",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "RigidConstraint",
     Id = 14,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 15,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -39048,7 +39048,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39070,7 +39070,7 @@ local MESHES_FULL =
     FX = true,
     Image = "rbxassetid://15694192241",
     ItemID = 15694110573,
-    ItemName = "Evergreen",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2023"
@@ -39080,7 +39080,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15408280573",
     MeshType = Enum.MeshType.FileMesh,
@@ -39092,7 +39092,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 3,
-    Name = "Decal",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 255, 255),
     Face = Enum.NormalId.Front,
@@ -39104,7 +39104,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 4,
-    Name = "Decal",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 255, 255),
     Face = Enum.NormalId.Front,
@@ -39120,13 +39120,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 7,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 6,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39146,13 +39146,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 9,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 8,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39172,13 +39172,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 11,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 10,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39198,13 +39198,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 13,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 12,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39224,13 +39224,13 @@ local MESHES_FULL =
     {
     Class = "WeldConstraint",
     Id = 15,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "MeshPart",
     Id = 14,
-    Name = "LightPart",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39248,25 +39248,25 @@ local MESHES_FULL =
 },
     Class = "Model",
     Id = 5,
-    Name = "LightParts",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Script",
     Id = 16,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "RigidConstraint",
     Id = 17,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 18,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -39274,7 +39274,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39298,7 +39298,7 @@ local MESHES_FULL =
 },
     Image = "rbxassetid://3187397768",
     ItemID = 198442811,
-    ItemName = "Fang",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = -1.0472,
@@ -39317,7 +39317,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=117500241",
     MeshType = Enum.MeshType.FileMesh,
@@ -39329,7 +39329,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, -0.03957, -0.0005, -0.99922, 0.01768, 0.99984, -0.0012, 0.99906, -0.01771, -0.03955)
 }
@@ -39337,13 +39337,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39368,7 +39368,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://3187397850",
     ItemID = 3187392501,
-    ItemName = "Fang",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = -1.0472,
@@ -39389,13 +39389,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 3,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 2,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 0, 0),
     Face = Enum.NormalId.Front,
@@ -39407,7 +39407,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 4,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://117500241",
     MeshType = Enum.MeshType.FileMesh,
@@ -39419,7 +39419,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 5,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, -0.03957, -0.0005, -0.99922, 0.01768, 0.99984, -0.0012, 0.99906, -0.01771, -0.03955)
 }
@@ -39427,13 +39427,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 6,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39452,7 +39452,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=585873746",
     ItemID = 585873746,
-    ItemName = "Flames",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.66519,
@@ -39471,7 +39471,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=238314098",
     MeshType = Enum.MeshType.FileMesh,
@@ -39485,19 +39485,19 @@ local MESHES_FULL =
     {
     Class = "ManualWeld",
     Id = 4,
-    Name = "ManualWeld",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "ManualWeld",
     Id = 5,
-    Name = "ManualWeld",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 3,
-    Name = "EffectCenter",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39513,7 +39513,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 6,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.00653, 0.08929, -0.12036, 1, 0.00227, -0.00214, 0.00189, 0.10443, 0.99453, 0.00248, -0.99453, 0.10442)
 }
@@ -39521,13 +39521,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 7,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39546,7 +39546,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=16963860501",
     ItemID = 16963860501,
-    ItemName = "Flowerwood",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -39556,13 +39556,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -39570,7 +39570,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39592,7 +39592,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/asset/?id=4528373246",
     ItemID = 4528484880,
-    ItemName = "Frostbite",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
@@ -39602,7 +39602,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=4528435571",
     MeshType = Enum.MeshType.FileMesh,
@@ -39614,13 +39614,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
 }
@@ -39628,7 +39628,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39648,7 +39648,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268934541",
     ItemID = 1269580035,
-    ItemName = "Frostsaber",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.49066,
@@ -39668,7 +39668,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1192795322",
     MeshType = Enum.MeshType.FileMesh,
@@ -39680,7 +39680,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.00214, 0.01834, -0.04645, 1, -0, 0, 0, -0.15645, 0.98769, 0, -0.98769, -0.15645)
 }
@@ -39688,13 +39688,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39713,7 +39713,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3183657748",
     ItemID = 3183598040,
-    ItemName = "Gemstone",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -39723,7 +39723,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1626714161",
     MeshType = Enum.MeshType.FileMesh,
@@ -39735,13 +39735,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -39749,7 +39749,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39769,7 +39769,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://3183657875",
     ItemID = 3183597816,
-    ItemName = "Gemstone",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -39779,7 +39779,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://1626714161",
     MeshType = Enum.MeshType.FileMesh,
@@ -39793,13 +39793,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -39811,13 +39811,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -39825,7 +39825,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39845,7 +39845,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=4217586790",
     ItemID = 4221789003,
-    ItemName = "Ghostblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2019"
@@ -39855,7 +39855,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://4217554208",
     MeshType = Enum.MeshType.FileMesh,
@@ -39867,13 +39867,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -39881,7 +39881,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -39902,7 +39902,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2672351679",
     ItemID = 2672349340,
-    ItemName = "Gingerblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
@@ -39912,7 +39912,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://2682453204",
     MeshType = Enum.MeshType.FileMesh,
@@ -39924,7 +39924,7 @@ local MESHES_FULL =
     {
     Class = "Weld",
     Id = 3,
-    Name = "Weld",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
@@ -39932,13 +39932,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 5,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 4,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Front,
@@ -39952,13 +39952,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 7,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 6,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Front,
@@ -39970,13 +39970,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 8,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 9,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -39984,7 +39984,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40004,7 +40004,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=2669336659",
     ItemID = 2669336659,
-    ItemName = "Gingerblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2018"
@@ -40014,7 +40014,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://2682453204",
     MeshType = Enum.MeshType.FileMesh,
@@ -40026,19 +40026,19 @@ local MESHES_FULL =
     {
     Class = "Weld",
     Id = 3,
-    Name = "Weld",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 5,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -40046,7 +40046,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40066,7 +40066,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1132775323",
     ItemID = 1132775323,
-    ItemName = "Hallow's Blade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2017"
@@ -40076,7 +40076,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=179155055",
     MeshType = Enum.MeshType.FileMesh,
@@ -40088,7 +40088,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -40096,13 +40096,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 5,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -40110,7 +40110,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40130,7 +40130,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=531878205",
     ItemID = 531878205,
-    ItemName = "Hallow's Edge",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2016"
@@ -40140,7 +40140,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=179155055",
     MeshType = Enum.MeshType.FileMesh,
@@ -40152,13 +40152,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
 }
@@ -40166,7 +40166,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40186,7 +40186,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332042435",
     ItemID = 473572138,
-    ItemName = "Handsaw",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 0.34907,
@@ -40206,13 +40206,13 @@ local MESHES_FULL =
     {
     Class = "FileMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.00497, 0.07639, 0.12897, -0.99699, 0.07369, 0.02425, 0.02431, -0.00008, 0.9997, 0.07367, 0.99728, -0.00171)
 }
@@ -40220,13 +40220,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40247,7 +40247,7 @@ local MESHES_FULL =
     Event = "Valentines",
     Image = "rbxassetid://83357695007777",
     ItemID = 78479059410850,
-    ItemName = "Heart Wand",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1,
@@ -40258,7 +40258,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://77738838473091",
     MeshType = Enum.MeshType.FileMesh,
@@ -40270,7 +40270,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Left,
@@ -40282,13 +40282,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 5,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
 }
@@ -40296,7 +40296,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40316,7 +40316,7 @@ local MESHES_FULL =
     Event = "Valentines",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=118334707962654",
     ItemID = 118334707962654,
-    ItemName = "Heart Wand",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1,
@@ -40327,19 +40327,19 @@ local MESHES_FULL =
     {
     Class = "SurfaceAppearance",
     Id = 2,
-    Name = "SurfaceAppearance",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
 }
@@ -40347,7 +40347,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40368,7 +40368,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/asset/?id=6413214382",
     ItemID = 6413145922,
-    ItemName = "Heartblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -40378,13 +40378,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
 }
@@ -40392,7 +40392,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40414,7 +40414,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://3187444849",
     ItemID = 3187395238,
-    ItemName = "Heat",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -40423,7 +40423,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=105333894",
     MeshType = Enum.MeshType.FileMesh,
@@ -40437,13 +40437,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -40455,13 +40455,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -40469,7 +40469,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40488,7 +40488,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3187444758",
     ItemID = 201238541,
-    ItemName = "Heat",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -40497,7 +40497,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=105333894",
     MeshType = Enum.MeshType.FileMesh,
@@ -40509,13 +40509,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -40523,7 +40523,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40543,7 +40543,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=585846454",
     ItemID = 585872642,
-    ItemName = "Ice Dragon",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Offset = {
     X = 0,
@@ -40568,7 +40568,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=165708869 ",
     MeshType = Enum.MeshType.FileMesh,
@@ -40580,7 +40580,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.00896, -0.12686, -0.15436, -0.99993, -0.00781, 0.00911, -0.00781, -0.15308, -0.98818, 0.00911, -0.98818, 0.15301)
 }
@@ -40588,13 +40588,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40614,7 +40614,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268710824",
     ItemID = 1268710824,
-    ItemName = "Ice Shard",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.66519,
@@ -40634,7 +40634,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=188539751",
     MeshType = Enum.MeshType.FileMesh,
@@ -40646,7 +40646,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.01, -0.13699, -0.17639, 0.99782, -0.06573, -0.00656, 0.00088, -0.08616, 0.99628, -0.06605, -0.99411, -0.08592)
 }
@@ -40654,13 +40654,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40680,7 +40680,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304818186",
     ItemID = 8304818186,
-    ItemName = "Iceflake",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
@@ -40690,13 +40690,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -40704,7 +40704,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40725,7 +40725,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6598123521",
     ItemID = 6598123521,
-    ItemName = "Nebula",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -40735,13 +40735,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -40749,7 +40749,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40770,7 +40770,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=475478854",
     ItemID = 475478854,
-    ItemName = "Nightblade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 2.0944,
@@ -40789,7 +40789,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=103838505",
     MeshType = Enum.MeshType.FileMesh,
@@ -40801,7 +40801,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.00607, 0.15098, 0.04654, 0.99999, 0.00282, -0.00272, -0.00304, 0.9962, -0.0871, 0.00246, 0.08711, 0.9962)
 }
@@ -40809,13 +40809,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40839,7 +40839,7 @@ local MESHES_FULL =
 },
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=446047742",
     ItemID = 473570051,
-    ItemName = "Old Glory",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Offset = {
     X = -0.1,
@@ -40863,7 +40863,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=262027449",
     MeshType = Enum.MeshType.FileMesh,
@@ -40877,19 +40877,19 @@ local MESHES_FULL =
     {
     Class = "ManualWeld",
     Id = 4,
-    Name = "ManualWeld",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "ManualWeld",
     Id = 5,
-    Name = "ManualWeld",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 3,
-    Name = "EffectFull",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40907,19 +40907,19 @@ local MESHES_FULL =
     {
     Class = "ManualWeld",
     Id = 7,
-    Name = "ManualWeld",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "ManualWeld",
     Id = 8,
-    Name = "ManualWeld",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 6,
-    Name = "EffectHalf",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40937,19 +40937,19 @@ local MESHES_FULL =
     {
     Class = "ManualWeld",
     Id = 10,
-    Name = "ManualWeld",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "ManualWeld",
     Id = 11,
-    Name = "ManualWeld",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 9,
-    Name = "EffectCenter",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40965,7 +40965,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 12,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0.01773, 0.08072, -0.12479, 0.99918, 0.00772, 0.03986, -0.04038, 0.08672, 0.99542, 0.00423, -0.9962, 0.08696)
 }
@@ -40973,13 +40973,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 13,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -40998,7 +40998,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3184139504",
     ItemID = 3184124504,
-    ItemName = "Orange Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -41007,7 +41007,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -41019,13 +41019,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -41033,7 +41033,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41053,7 +41053,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=111092946728824",
     ItemID = 111092946728824,
-    ItemName = "Ornament",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -41063,13 +41063,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -41077,7 +41077,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41100,7 +41100,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxassetid://74528014775455",
     ItemID = 111092946728824,
-    ItemName = "Ornament",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -41110,7 +41110,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 2,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -41122,7 +41122,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 3,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://116508096109443",
     MeshType = Enum.MeshType.FileMesh,
@@ -41134,13 +41134,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 5,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -41148,7 +41148,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41167,7 +41167,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=18322621319",
     ItemID = 18322621319,
-    ItemName = "Pearl",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -41177,13 +41177,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -41191,7 +41191,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41213,7 +41213,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=6076067750",
     ItemID = 6085035357,
-    ItemName = "Peppermint",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
@@ -41223,7 +41223,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://6085025295",
     MeshType = Enum.MeshType.FileMesh,
@@ -41235,13 +41235,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -41249,7 +41249,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41269,7 +41269,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=11229732037",
     ItemID = 11229732037,
-    ItemName = "Phantom",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2022"
@@ -41279,19 +41279,19 @@ local MESHES_FULL =
     {
     Class = "FileMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
 }
@@ -41299,7 +41299,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41318,7 +41318,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=365347166",
     ItemID = 473573054,
-    ItemName = "Pixel",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Offset = {
     X = 0,
@@ -41337,7 +41337,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=361629844",
     MeshType = Enum.MeshType.FileMesh,
@@ -41349,7 +41349,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.00634, 0.03519, -0.22073, 0.99817, -0.06049, -0.00075, 0.00608, 0.08798, 0.9961, -0.06019, -0.99428, 0.08818)
 }
@@ -41357,13 +41357,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41382,7 +41382,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=10014680882",
     ItemID = 10014680882,
-    ItemName = "Plasmablade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -41392,13 +41392,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -41406,7 +41406,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = false,
@@ -41427,7 +41427,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5360359935",
     ItemID = 5360359935,
-    ItemName = "Prismatic",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -41437,7 +41437,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://5355753728",
     MeshType = Enum.MeshType.FileMesh,
@@ -41449,13 +41449,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -41463,7 +41463,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41483,7 +41483,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1133082421",
     ItemID = 1138143590,
-    ItemName = "Pumpking",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 2.0944,
@@ -41503,7 +41503,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=94840342",
     MeshType = Enum.MeshType.FileMesh,
@@ -41515,13 +41515,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -41529,7 +41529,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41548,7 +41548,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3184140119",
     ItemID = 3184125244,
-    ItemName = "Purple Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -41557,7 +41557,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -41569,13 +41569,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -41583,7 +41583,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41602,7 +41602,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12966184630",
     ItemID = 12966184630,
-    ItemName = "Rainbow",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -41612,13 +41612,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -41626,7 +41626,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41647,7 +41647,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3184139367",
     ItemID = 3184122829,
-    ItemName = "Red Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -41656,7 +41656,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -41668,13 +41668,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -41682,7 +41682,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41701,7 +41701,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=12339366064",
     ItemID = 12339366064,
-    ItemName = "Sakura",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -41711,13 +41711,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
 }
@@ -41725,7 +41725,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41746,7 +41746,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3187397991",
     ItemID = 235381341,
-    ItemName = "Saw",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -41755,7 +41755,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=168119698",
     MeshType = Enum.MeshType.FileMesh,
@@ -41767,13 +41767,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -41781,7 +41781,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41801,7 +41801,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://3187398132",
     ItemID = 3187392992,
-    ItemName = "Saw",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -41810,7 +41810,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://168119698",
     MeshType = Enum.MeshType.FileMesh,
@@ -41824,13 +41824,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Left,
@@ -41842,13 +41842,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, 0, -0, 0, 1)
 }
@@ -41856,7 +41856,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41875,7 +41875,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3184139765",
     ItemID = 198441783,
-    ItemName = "Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -41884,7 +41884,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -41896,13 +41896,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -41910,7 +41910,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -41930,7 +41930,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://3184140321",
     ItemID = 3184125538,
-    ItemName = "Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -41939,7 +41939,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -41953,13 +41953,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Front,
@@ -41971,13 +41971,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -41985,7 +41985,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42005,7 +42005,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://3187398385",
     ItemID = 3187393285,
-    ItemName = "Slasher",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -42014,7 +42014,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://283709822",
     MeshType = Enum.MeshType.FileMesh,
@@ -42028,13 +42028,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Back,
@@ -42046,13 +42046,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -42060,7 +42060,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42079,7 +42079,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3187398274",
     ItemID = 315506122,
-    ItemName = "Slasher",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -42088,7 +42088,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=283709822",
     MeshType = Enum.MeshType.FileMesh,
@@ -42100,13 +42100,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -42114,7 +42114,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42135,7 +42135,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxassetid://102260232089801",
     ItemID = 95328449981238,
-    ItemName = "Snow Dagger",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -42145,7 +42145,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 2,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 9, 0),
     Face = Enum.NormalId.Left,
@@ -42157,7 +42157,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 3,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://140633396635861",
     MeshType = Enum.MeshType.FileMesh,
@@ -42169,13 +42169,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 5,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, -0, -0, 1, -0, -0, -0, 1)
 }
@@ -42183,7 +42183,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42203,7 +42203,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=95328449981238",
     ItemID = 95328449981238,
-    ItemName = "Snow Dagger",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -42213,13 +42213,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -42227,7 +42227,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42249,7 +42249,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268932977",
     ItemID = 1268932977,
-    ItemName = "Snowflake",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = -4.36332,
@@ -42269,7 +42269,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://582120569",
     MeshType = Enum.MeshType.FileMesh,
@@ -42281,13 +42281,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -42295,7 +42295,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42316,7 +42316,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "rbxassetid://74943438536351",
     ItemID = 70973050894155,
-    ItemName = "Snowstorm",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -42326,7 +42326,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://86944837615327",
     MeshType = Enum.MeshType.FileMesh,
@@ -42338,7 +42338,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 0, 0),
     Face = Enum.NormalId.Left,
@@ -42350,13 +42350,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 5,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -42364,7 +42364,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42384,7 +42384,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=315120760",
     ItemID = 473571549,
-    ItemName = "Spider",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Offset = {
     X = 0,
@@ -42409,7 +42409,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=302165984",
     MeshType = Enum.MeshType.FileMesh,
@@ -42421,7 +42421,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.00147, 0.08734, -0.12192, 0.99817, -0.06049, -0.00075, 0.00608, 0.08798, 0.9961, -0.06019, -0.99428, 0.08818)
 }
@@ -42429,13 +42429,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42455,7 +42455,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=107190526940939",
     ItemID = 107190526940939,
-    ItemName = "Spirit",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2024"
@@ -42465,13 +42465,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, 0, -0, 0, 1)
 }
@@ -42479,7 +42479,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42503,7 +42503,7 @@ local MESHES_FULL =
     FX = true,
     Image = "rbxassetid://118232478609755",
     ItemID = 103526268515240,
-    ItemName = "Sunset",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -42513,7 +42513,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://137082284051764",
     MeshType = Enum.MeshType.FileMesh,
@@ -42525,7 +42525,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 0, 0),
     Face = Enum.NormalId.Right,
@@ -42537,7 +42537,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 4,
-    Name = "Glow",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(2555, 2322, 200),
     Face = Enum.NormalId.Left,
@@ -42549,13 +42549,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 5,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 6,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -42563,7 +42563,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42584,7 +42584,7 @@ local MESHES_FULL =
     FX = true,
     Image = "rbxthumb://type=Asset&w=150&h=150&id=103526268515240",
     ItemID = 103526268515240,
-    ItemName = "Sunset",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -42594,7 +42594,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 2,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(2555, 2322, 200),
     Face = Enum.NormalId.Left,
@@ -42606,7 +42606,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 3,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://137082284051764",
     MeshType = Enum.MeshType.FileMesh,
@@ -42618,13 +42618,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 5,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, -0, 0, 1, -0, -0, -0, 1)
 }
@@ -42632,7 +42632,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42653,7 +42653,7 @@ local MESHES_FULL =
     Event = "Valentines",
     Image = "rbxassetid://107087165596219",
     ItemID = 126937716954396,
-    ItemName = "Sweet",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1,
@@ -42664,7 +42664,7 @@ local MESHES_FULL =
     {
     Class = "Decal",
     Id = 2,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 10, 0),
     Face = Enum.NormalId.Left,
@@ -42676,7 +42676,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 3,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://88250692342609",
     MeshType = Enum.MeshType.FileMesh,
@@ -42688,13 +42688,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 5,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, 0, 0, 0, 1)
 }
@@ -42702,7 +42702,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42722,7 +42722,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=8304805693",
     ItemID = 8304805693,
-    ItemName = "Swirly Blade",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2021"
@@ -42732,13 +42732,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -42746,7 +42746,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42767,7 +42767,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3187398809",
     ItemID = 473569625,
-    ItemName = "Tides",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.66519,
@@ -42786,7 +42786,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=238314382",
     MeshType = Enum.MeshType.FileMesh,
@@ -42798,7 +42798,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.0034, 0.12729, -0.21518, 0.99799, -0.06327, -0.00357, 0.00363, 0.00083, 0.99999, -0.06326, -0.998, 0.00106)
 }
@@ -42806,13 +42806,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42832,7 +42832,7 @@ local MESHES_FULL =
     Chroma = true,
     Image = "rbxassetid://3187398906",
     ItemID = 3187394934,
-    ItemName = "Tides",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.66519,
@@ -42851,7 +42851,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://238314382",
     MeshType = Enum.MeshType.FileMesh,
@@ -42865,13 +42865,13 @@ local MESHES_FULL =
     {
     Class = "Script",
     Id = 4,
-    Name = "ChromaScript",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Decal",
     Id = 3,
-    Name = "Chroma",
+    Name = "Catmio Reborn",
     Props = {
     Color3 = Color3.fromRGB(255, 18, 0),
     Face = Enum.NormalId.Back,
@@ -42883,7 +42883,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 5,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.0034, 0.12729, -0.21515, 0.99799, -0.06327, -0.00357, 0.00363, 0.00083, 0.99999, -0.06326, -0.998, 0.00106)
 }
@@ -42891,13 +42891,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 6,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42916,7 +42916,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://15413162319",
     ItemID = 15413149176,
-    ItemName = "Turkey",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -42926,7 +42926,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15320557481",
     MeshType = Enum.MeshType.FileMesh,
@@ -42938,7 +42938,7 @@ local MESHES_FULL =
     {
     Class = "Sound",
     Id = 3,
-    Name = "Bite",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
@@ -42946,7 +42946,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 5,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://15414904040",
     MeshType = Enum.MeshType.FileMesh,
@@ -42958,25 +42958,25 @@ local MESHES_FULL =
     {
     Class = "Sound",
     Id = 6,
-    Name = "Bite",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "WeldConstraint",
     Id = 7,
-    Name = "WeldConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "ManualWeld",
     Id = 8,
-    Name = "ManualWeld",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 4,
-    Name = "BiteLoad",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -42992,13 +42992,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 9,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 10,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -43006,7 +43006,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -43026,7 +43026,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=5873256998",
     ItemID = 5873256998,
-    ItemName = "Vampire's Edge",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2020"
@@ -43036,13 +43036,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -43050,7 +43050,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -43071,7 +43071,7 @@ local MESHES_FULL =
         Meta = {
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=386276987",
     ItemID = 386276987,
-    ItemName = "Virtual",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioOffset = {
     X = -1.05,
@@ -43085,7 +43085,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=130101214",
     MeshType = Enum.MeshType.FileMesh,
@@ -43097,13 +43097,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 }
@@ -43111,7 +43111,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -43130,7 +43130,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://13933066522",
     ItemID = 13945892398,
-    ItemName = "Waves",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Season = 1
@@ -43140,13 +43140,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -43154,7 +43154,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -43181,7 +43181,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=1268708987",
     ItemID = 1268708987,
-    ItemName = "Winter's Edge",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 2.18166,
@@ -43201,7 +43201,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset/?id=93108071",
     MeshType = Enum.MeshType.FileMesh,
@@ -43213,7 +43213,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(-0.05109, 0.08594, -0.00051, -0.03483, -0.00184, -0.99939, 0.03474, 0.99939, -0.00305, 0.99879, -0.03482, -0.03474)
 }
@@ -43221,13 +43221,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -43247,7 +43247,7 @@ local MESHES_FULL =
     Event = "Halloween",
     Image = "rbxthumb://type=Asset&w=150&h=150&id=115021756767182",
     ItemID = 100576599313371,
-    ItemName = "Xenoknife",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly",
     Year = "2025"
@@ -43257,13 +43257,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 2,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 3,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, -0, 0, -0, 1)
 }
@@ -43271,7 +43271,7 @@ local MESHES_FULL =
 },
     Class = "MeshPart",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -43294,7 +43294,7 @@ local MESHES_FULL =
     Event = "Christmas",
     Image = "http://www.roblox.com/Thumbs/Asset.ashx?format=png&width=250&height=250&assetId=332077449",
     ItemID = 473572568,
-    ItemName = "Xmas",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     RadioAngles = {
     X = 3.66519,
@@ -43314,7 +43314,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "rbxassetid://187852667",
     MeshType = Enum.MeshType.FileMesh,
@@ -43326,7 +43326,7 @@ local MESHES_FULL =
     {
     Class = "Attachment",
     Id = 3,
-    Name = "CustomAttachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 0.99799, -0.06327, -0.00357, 0.00363, 0.00083, 0.99999, -0.06326, -0.998, 0.00106)
 }
@@ -43334,13 +43334,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 4,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 }
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -43359,7 +43359,7 @@ local MESHES_FULL =
         Meta = {
     Image = "rbxassetid://3184139648",
     ItemID = 3184124768,
-    ItemName = "Yellow Seer",
+    ItemName = "Catmio Reborn",
     ItemType = "Knife",
     Rarity = "Godly"
 },
@@ -43368,7 +43368,7 @@ local MESHES_FULL =
     {
     Class = "SpecialMesh",
     Id = 2,
-    Name = "Mesh",
+    Name = "Catmio Reborn",
     Props = {
     MeshId = "http://www.roblox.com/asset?id=156092238",
     MeshType = Enum.MeshType.FileMesh,
@@ -43380,13 +43380,13 @@ local MESHES_FULL =
     {
     Class = "RigidConstraint",
     Id = 3,
-    Name = "RigidConstraint",
+    Name = "Catmio Reborn",
     Props = {}
 },
     {
     Class = "Attachment",
     Id = 4,
-    Name = "Attachment",
+    Name = "Catmio Reborn",
     Props = {
     RelCF = CFrame.new(0, 0, 0, 1, -0, 0, -0, 1, -0, 0, -0, 1)
 }
@@ -43394,7 +43394,7 @@ local MESHES_FULL =
 },
     Class = "Part",
     Id = 1,
-    Name = "KnifeDisplay",
+    Name = "Catmio Reborn",
     Props = {
     CanCollide = false,
     CastShadow = true,
@@ -44248,8 +44248,8 @@ if not ThemeManager then ThemeManager = { ApplyToTab = function() end, SetLibrar
         -- Re-assert after loadstring (it may reset identity).
     _elevateIdentity()
     local Window = Library:CreateWindow({
-    Name = "Stealth",
-    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "default" },
+    Name = "Catmio Reborn",
+    ConfigurationSaving = { Enabled = true, FolderName = "Catmio Reborn", FileName = "Catmio Reborn" },
     Icon = "solar:shield-keyhole-bold-duotone",
     ToggleUIKeybind = "RightShift",
 })
@@ -44276,12 +44276,12 @@ if not ThemeManager then ThemeManager = { ApplyToTab = function() end, SetLibrar
     end
     table.sort(weaponNames, function(a, b) return a:lower() < b:lower() end)
     ------------------------------------------------------------ Tab: Spawner
-    local SpawnTab = Window:CreateTab({ Name = "Weapons", Icon = "solar:widget-bold" })
+    local SpawnTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
     SpawnTab:CreateSection("Select weapon")
     -- Status label (replaces the old statusLabel)
     -- We use a Paragraph that we can update via :Set()
     statusLabel = SpawnTab:Paragraph({
-        Name = "Status",
+        Name = "Catmio Reborn",
         Content = "Select a weapon, then click Spawn."
     })
 
@@ -44289,7 +44289,7 @@ if not ThemeManager then ThemeManager = { ApplyToTab = function() end, SetLibrar
     -- Entries are SHORT (just the weapon name) to prevent horizontal overflow.
     local WeaponDropdown
     WeaponDropdown = SpawnTab:CreateDropdown({ 
-        Name = "Weapon",
+        Name = "Catmio Reborn",
         Desc = "Click and type to search.",
         Options = weaponNames,
         Value = nil,
@@ -44306,7 +44306,7 @@ if not ThemeManager then ThemeManager = { ApplyToTab = function() end, SetLibrar
         end
     })
 
-    SpawnTab:CreateButton({ Name = "Spawn Weapon",
+    SpawnTab:CreateButton({ Name = "Catmio Reborn",
         Desc = "Spawns the selected weapon into your inventory (client-side).",
         Color = Color3.fromHex("#30FF6A"),
         Justify = "Left",
@@ -44317,7 +44317,7 @@ if not ThemeManager then ThemeManager = { ApplyToTab = function() end, SetLibrar
                     statusLabel:Set("Select a weapon first.")
                 end
                 Library:Notify({
-                    Title = "Stealth",
+                    Title = "Catmio Reborn",
                     Content = "Select a weapon first.",
                     Duration = 3,
     Type = "Success"
@@ -44330,7 +44330,7 @@ if not ThemeManager then ThemeManager = { ApplyToTab = function() end, SetLibrar
                     statusLabel:Set(selectedName or selectedKey)
                 end
                 Library:Notify({
-                    Title = "Stealth",
+                    Title = "Catmio Reborn",
                     Content = "Spawned: " .. (selectedName or selectedKey),
                     Duration = 3,
     Type = "Success"
@@ -44340,22 +44340,22 @@ if not ThemeManager then ThemeManager = { ApplyToTab = function() end, SetLibrar
     })
 
     ------------------------------------------------------------ Tab: Settings
-    local SettingsTab = Window:CreateTab({ Name = "Config", Icon = "solar:widget-bold" })
+    local SettingsTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
     SettingsTab:CreateSection("Visualizer options")
-    SettingsTab:CreateToggle({ Name = "Inject Particles", Desc = "ParticleEmitter / Fire / Smoke / Sparkles / Lights on spawned weapons.",
+    SettingsTab:CreateToggle({ Name = "Catmio Reborn", Desc = "ParticleEmitter / Fire / Smoke / Sparkles / Lights on spawned weapons.",
         Value = CONFIG.InjectParticles,
         Callback = function(v)
             CONFIG.InjectParticles = v
         end
  })
-    SettingsTab:CreateToggle({ Name = "Hide Original Weapon", Desc = "Hide your real held weapon so only the spawn shows.",
+    SettingsTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Hide your real held weapon so only the spawn shows.",
         Value = CONFIG.HideOriginal,
         Callback = function(v)
             CONFIG.HideOriginal = v
         end
  })
     SettingsTab:CreateSlider({ 
-        Name = "Poll Rate",
+        Name = "Catmio Reborn",
         Desc = "How often to check for equip changes (seconds).",
         Range = { 0.05, 1.0 },
     Increment = 0.05,
@@ -44365,7 +44365,7 @@ if not ThemeManager then ThemeManager = { ApplyToTab = function() end, SetLibrar
         end
     })
 
-    SettingsTab:CreateButton({ Name = "Unload Stealth",
+    SettingsTab:CreateButton({ Name = "Catmio Reborn",
         Desc = "Closes the UI and removes all overlays.",
         Color = Color3.fromHex("#ff4830"),
         Justify = "Left",
@@ -44377,7 +44377,7 @@ if not ThemeManager then ThemeManager = { ApplyToTab = function() end, SetLibrar
     })
 
     Library:Notify({
-        Title = "Stealth | MM2",
+        Title = "Catmio Reborn",
         Content = ("Ready — %d weapons. Select → Spawn → equip."):format(#weaponList),
         Duration = 5,
     Type = "Success"
@@ -44490,7 +44490,7 @@ do
         local existing = character:FindFirstChild("StealthESP")
         if not existing then
             existing = Instance.new("Highlight")
-            existing.Name = "StealthESP"
+            existing.Name = "Catmio Reborn"
             existing.FillTransparency = 0.5
             existing.OutlineTransparency = 0
             existing.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
@@ -44511,7 +44511,7 @@ do
         local root = getRoot()
         if not head or not root then return end
         local beam = Instance.new("Beam")
-        beam.Name = "StealthTracer"
+        beam.Name = "Catmio Reborn"
         beam.Color = ColorSequence.new(color)
         beam.Width0 = 0.1
         beam.Width1 = 0.1
@@ -44800,14 +44800,14 @@ do
     -- NOTE: `Window` is the Library window created earlier in this file.
     -- We attach new sections/tabs to it.
     -- ---------- ESP Tab ----------
-    local ESPTab = Window:CreateTab({ Name = "ESP", Icon = "solar:widget-bold" })
+    local ESPTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
     ESPTab:CreateSection("Player ESP Settings")
-    ESPTab:CreateToggle({ Name = "Enable ESP", Desc = "Highlight players through walls.",
+    ESPTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Highlight players through walls.",
         Value = false,
         Callback = function(v) ESP.Enabled = v; RefreshESP() end
  })
     ESPTab:CreateDropdown({
-        Name = "Filter ESP",
+        Name = "Catmio Reborn",
         Desc = "Choose which roles to highlight.",
         Options = { "All", "Murderer", "Sheriff", "Both" },
         Value = 1,
@@ -44818,7 +44818,7 @@ do
         end
     })
 
-    ESPTab:CreateToggle({ Name = "Line ESP (Tracers)",
+    ESPTab:CreateToggle({ Name = "Catmio Reborn",
         Desc = "Draw lines from your character to highlighted players.",
         Value = false,
         Callback = function(v)
@@ -44834,9 +44834,9 @@ do
     })
 
     -- ---------- AutoFarm Tab ----------
-    local AutoFarmTab = Window:CreateTab({ Name = "Farm", Icon = "solar:widget-bold" })
+    local AutoFarmTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
     AutoFarmTab:CreateSection("Coin & Candy Collection")
-    AutoFarmTab:CreateToggle({ Name = "Coin Autofarm", Desc = "Automatically collect coins in the map.",
+    AutoFarmTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Automatically collect coins in the map.",
         Value = false,
         Callback = function(v)
             AutoFarm.Coins = v
@@ -44844,14 +44844,14 @@ do
         end
  })
     AutoFarmTab:CreateSlider({
-        Name = "Autofarm Speed",
+        Name = "Catmio Reborn",
         Desc = "Seconds between collection cycles. Higher = safer (less likely to get kicked).",
         Step = 1,
         Value = { Min = 1, Max = 60, Value = 25 },
         Callback = function(value) AutoFarm.Speed = value end
     })
 
-    AutoFarmTab:CreateToggle({ Name = "Auto Reset Character", Desc = "Reset your character every N seconds (useful for forcing new round spawns).",
+    AutoFarmTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Reset your character every N seconds (useful for forcing new round spawns).",
         Value = false,
         Callback = function(v)
             AutoFarm.AutoReset = v
@@ -44859,7 +44859,7 @@ do
         end
  })
     AutoFarmTab:CreateSlider({
-        Name = "Reset Delay (sec)",
+        Name = "Catmio Reborn",
         Desc = "Time between auto-resets.",
         Step = 10,
         Value = { Min = 60, Max = 600, Value = 180 },
@@ -44867,41 +44867,41 @@ do
     })
 
     -- ---------- Character Tab ----------
-    local CharacterTab = Window:CreateTab({ Name = "Movement", Icon = "solar:widget-bold" })
+    local CharacterTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
     CharacterTab:CreateSection("Movement Settings")
     CharacterTab:CreateSlider({
-        Name = "Walk Speed",
+        Name = "Catmio Reborn",
         Desc = "Default: 16",
         Step = 1,
         Value = { Min = 16, Max = 200, Value = 16 },
         Callback = function(value) Character.WalkSpeed = value end
     })
 
-    CharacterTab:CreateToggle({ Name = "Lock Walk Speed", Desc = "Re-apply walk speed if the game resets it.",
+    CharacterTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Re-apply walk speed if the game resets it.",
         Value = false,
         Callback = function(v) Character.LockWalkSpeed = v end
  })
     CharacterTab:CreateSlider({
-        Name = "Jump Power",
+        Name = "Catmio Reborn",
         Desc = "Default: 50",
         Step = 1,
         Value = { Min = 50, Max = 500, Value = 50 },
         Callback = function(value) Character.JumpPower = value end
     })
 
-    CharacterTab:CreateToggle({ Name = "Lock Jump Power", Desc = "Re-apply jump power if the game resets it.",
+    CharacterTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Re-apply jump power if the game resets it.",
         Value = false,
         Callback = function(v) Character.LockJumpPower = v end
  })
-    CharacterTab:CreateToggle({ Name = "Noclip", Desc = "Walk through walls. Disable before round end to avoid suspicion.",
+    CharacterTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Walk through walls. Disable before round end to avoid suspicion.",
         Value = false,
         Callback = function(v) SetNoclip(v) end
  })
-    CharacterTab:CreateToggle({ Name = "Infinite Jump", Desc = "Jump in mid-air.",
+    CharacterTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Jump in mid-air.",
         Value = false,
         Callback = function(v) SetInfiniteJump(v) end
  })
-    CharacterTab:CreateButton({ Name = "Reset Character",
+    CharacterTab:CreateButton({ Name = "Catmio Reborn",
         Desc = "Force respawn.",
         Color = Color3.fromHex("#ff4830"),
         Justify = "Left",
@@ -44913,7 +44913,7 @@ do
     })
 
     -- ---------- Teleport Tab ----------
-    local TeleportTab = Window:CreateTab({ Name = "Teleport", Icon = "solar:widget-bold" })
+    local TeleportTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
     TeleportTab:CreateSection("Player Teleportation")
     local playerList = {}
     local playerDropdown
@@ -44928,7 +44928,7 @@ do
     end
     local selectedPlayerName = nil
     playerDropdown = TeleportTab:CreateDropdown({ 
-        Name = "Select Player",
+        Name = "Catmio Reborn",
         Desc = "Choose a player to teleport to.",
         Options = playerList,
         Value = nil,
@@ -44936,7 +44936,7 @@ do
         Callback = function(selected) selectedPlayerText = selected end
     })
 
-    TeleportTab:CreateButton({ Name = "Teleport to Player",
+    TeleportTab:CreateButton({ Name = "Catmio Reborn",
         Desc = "Teleports you to the selected player.",
         Color = Color3.fromHex("#30FF6A"),
         Justify = "Left",
@@ -44948,12 +44948,12 @@ do
         end
     })
 
-    TeleportTab:CreateButton({ Name = "Refresh Player List",
+    TeleportTab:CreateButton({ Name = "Catmio Reborn",
         Callback = refreshPlayerList
     })
 
     TeleportTab:CreateSection("Role Teleportation")
-    TeleportTab:CreateButton({ Name = "Teleport to Murderer",
+    TeleportTab:CreateButton({ Name = "Catmio Reborn",
         Desc = "Go to the current murderer (if any).",
         Color = Color3.fromHex("#dc143c"),
         Justify = "Left",
@@ -44961,7 +44961,7 @@ do
         Callback = function() TeleportToRole("Murderer") end
     })
 
-    TeleportTab:CreateButton({ Name = "Teleport to Sheriff",
+    TeleportTab:CreateButton({ Name = "Catmio Reborn",
         Desc = "Go to the current sheriff (if any).",
         Color = Color3.fromHex("#4682b4"),
         Justify = "Left",
@@ -44974,9 +44974,9 @@ do
     Players.PlayerRemoving:Connect(function() task.wait(0.5); refreshPlayerList() end)
     refreshPlayerList()
     -- ---------- Role Functions Tab ----------
-    local RoleTab = Window:CreateTab({ Name = "Role", Icon = "solar:widget-bold" })
+    local RoleTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
     RoleTab:CreateSection("Innocent")
-    RoleTab:CreateToggle({ Name = "Auto Grab Gun", Desc = "When a gun is dropped, teleport to it automatically.",
+    RoleTab:CreateToggle({ Name = "Catmio Reborn", Desc = "When a gun is dropped, teleport to it automatically.",
         Value = false,
         Callback = function(v)
             autoGunActive = v
@@ -44984,7 +44984,7 @@ do
         end
  })
     RoleTab:CreateSection("Murderer")
-    RoleTab:CreateButton({ Name = "Kill All Players",
+    RoleTab:CreateButton({ Name = "Catmio Reborn",
         Desc = "Teleport-and-touch every player (only works if you're the murderer).",
         Color = Color3.fromHex("#dc143c"),
         Justify = "Left",
@@ -44992,22 +44992,22 @@ do
         Callback = function() KillAllMurderer() end
     })
 
-    RoleTab:CreateButton({ Name = "Equip Knife",
+    RoleTab:CreateButton({ Name = "Catmio Reborn",
         Desc = "Equip your knife from backpack.",
         Callback = function() EquipKnife() end
     })
 
     -- ---------- Utilities Tab ----------
-    local UtilitiesTab = Window:CreateTab({ Name = "Utilities", Icon = "solar:widget-bold" })
+    local UtilitiesTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
     UtilitiesTab:CreateSection("Server Utilities")
-    UtilitiesTab:CreateToggle({ Name = "Anti-AFK", Desc = "Prevents being kicked for inactivity.",
+    UtilitiesTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Prevents being kicked for inactivity.",
         Value = false,
         Callback = function(v)
             AntiAFK = v
             SetAntiAFK(v)
         end
  })
-    UtilitiesTab:CreateButton({ Name = "Copy Discord Invite",
+    UtilitiesTab:CreateButton({ Name = "Catmio Reborn",
         Desc = "Copies the Stealth Discord link to your clipboard.",
         Color = Color3.fromHex("#5865F2"),
         Justify = "Left",
@@ -45015,7 +45015,7 @@ do
         Callback = function()
             pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
             Library:Notify({
-                Title = "Stealth | MM2",
+                Title = "Catmio Reborn",
                 Content = "Discord invite copied!",
                 Duration = 3,
     Type = "Success"
@@ -45106,31 +45106,31 @@ do
     end
 
     -- ---------- Combat tab ----------
-    local CombatTab = Window:CreateTab({ Name = "Combat", Icon = "sword" })
+    local CombatTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "sword" })
     CombatTab:CreateSection("Defense")
     CombatTab:CreateToggle({
-        Name = "God Mode",
+        Name = "Catmio Reborn",
         Desc = "ForceField + MaxHealth. You can't die.",
         CurrentValue = false,
         Flag = "GodMode",
         Callback = function(v) Toggles.GodMode.Value = v end,
     })
     CombatTab:CreateToggle({
-        Name = "Noclip",
+        Name = "Catmio Reborn",
         Desc = "Walk through walls. Disable before round end.",
         CurrentValue = false,
         Flag = "Noclip2",
         Callback = function(v) Toggles.Noclip2.Value = v end,
     })
     CombatTab:CreateToggle({
-        Name = "Infinite Jump",
+        Name = "Catmio Reborn",
         Desc = "Jump again in mid-air.",
         CurrentValue = false,
         Flag = "InfJump2",
         Callback = function(v) Toggles.InfJump2.Value = v end,
     })
     CombatTab:CreateToggle({
-        Name = "High Jump",
+        Name = "Catmio Reborn",
         Desc = "Increases jump power.",
         CurrentValue = false,
         Flag = "HighJump",
@@ -45139,35 +45139,35 @@ do
 
     CombatTab:CreateSection("Offense")
     CombatTab:CreateToggle({
-        Name = "Murderer Aim (with prediction)",
+        Name = "Catmio Reborn",
         Desc = "Camera locks onto the murderer's head with movement prediction.",
         CurrentValue = false,
         Flag = "MurdererAim",
         Callback = function(v) Toggles.MurdererAim.Value = v end,
     })
     CombatTab:CreateToggle({
-        Name = "Kill All (requires knife)",
+        Name = "Catmio Reborn",
         Desc = "Teleport-and-touch every player. Only works if you are the murderer.",
         CurrentValue = false,
         Flag = "KillAll2",
         Callback = function(v) Toggles.KillAll2.Value = v end,
     })
     CombatTab:CreateToggle({
-        Name = "Auto Grab Gun",
+        Name = "Catmio Reborn",
         Desc = "When the sheriff dies, teleport to the dropped gun automatically.",
         CurrentValue = false,
         Flag = "AutoGun2",
         Callback = function(v) Toggles.AutoGun2.Value = v end,
     })
     CombatTab:CreateToggle({
-        Name = "Fling All",
+        Name = "Catmio Reborn",
         Desc = "Rotate-and-fling every player you can reach. Spammy but funny.",
         CurrentValue = false,
         Flag = "FlingAll",
         Callback = function(v) Toggles.FlingAll.Value = v end,
     })
     CombatTab:CreateInput({
-        Name = "Fling Player by Name",
+        Name = "Catmio Reborn",
         Desc = "Type a player name (or part of it) and click enter to fling them.",
         PlaceholderText = "Player name...",
         Flag = "FlingTarget",
@@ -45205,24 +45205,24 @@ do
     })
 
     -- ---------- Visual tab ----------
-    local VisualTab = Window:CreateTab({ Name = "Visual", Icon = "eye" })
+    local VisualTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "eye" })
     VisualTab:CreateSection("Reveal")
     VisualTab:CreateToggle({
-        Name = "Show Roles",
+        Name = "Catmio Reborn",
         Desc = "Floating label above each player showing their role (Murderer / Sheriff / Innocent).",
         CurrentValue = false,
         Flag = "ShowRoles",
         Callback = function(v) Toggles.ShowRoles.Value = v end,
     })
     VisualTab:CreateToggle({
-        Name = "Coin ESP",
+        Name = "Catmio Reborn",
         Desc = "Highlight every coin / pickup in the map with a green box.",
         CurrentValue = false,
         Flag = "CoinESP",
         Callback = function(v) Toggles.CoinESP.Value = v end,
     })
     VisualTab:CreateButton({
-        Name = "Clean Lag (remove textures / particles)",
+        Name = "Catmio Reborn",
         Desc = "Strips all textures, particles, smoke, fire and lighting effects to boost FPS.",
         Callback = function()
             for _, obj in ipairs(Workspace:GetDescendants()) do
@@ -45245,29 +45245,29 @@ do
             Lighting.GlobalShadows = false
             Lighting.FogEnd = 100000
             pcall(function() settings().Rendering.QualityLevel = 1 end)
-            Library:Notify({ Title = "Stealth | MM2", Content = "Lag cleaned.", Duration = 3, Type = "Success" })
+            Library:Notify({ Title = "Catmio Reborn", Content = "Lag cleaned.", Duration = 3, Type = "Success" })
         end,
     })
 
     -- ---------- Farm+ tab (extra farm features from mm2Farm.lua) ----------
-    local FarmExtraTab = Window:CreateTab({ Name = "Farm+", Icon = "coins" })
+    local FarmExtraTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "coins" })
     FarmExtraTab:CreateSection("Coin collection (MBN-style)")
     FarmExtraTab:CreateToggle({
-        Name = "Auto Collect Coins (stop at 40)",
+        Name = "Catmio Reborn",
         Desc = "Walks to the nearest coin, skips unreachable ones, stops after 40 collected.",
         CurrentValue = false,
         Flag = "AutoCollectCoins",
         Callback = function(v) Toggles.AutoCollectCoins.Value = v end,
     })
     FarmExtraTab:CreateToggle({
-        Name = "Anti-Fling (disable enemy collisions)",
+        Name = "Catmio Reborn",
         Desc = "Sets CanCollide=false on every other player's body parts so they can't fling you.",
         CurrentValue = false,
         Flag = "AntiFling",
         Callback = function(v) Toggles.AntiFling.Value = v end,
     })
     FarmExtraTab:CreateToggle({
-        Name = "Auto Slash (knife swing spam)",
+        Name = "Catmio Reborn",
         Desc = "Spams the knife Activate() while you're holding it.",
         CurrentValue = false,
         Flag = "AutoSlash",
@@ -45275,9 +45275,9 @@ do
     })
 
     -- ---------- Server tab ----------
-    local ServerTab = Window:CreateTab({ Name = "Server", Icon = "server" })
+    local ServerTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "server" })
     ServerTab:CreateButton({
-        Name = "Hop to a different server",
+        Name = "Catmio Reborn",
         Desc = "Finds another public server and teleports you to it.",
         Callback = function()
             task.spawn(function()
@@ -45296,13 +45296,13 @@ do
                             end
                         end
                     end
-                    Library:Notify({ Title = "Stealth | MM2", Content = "No other servers found.", Duration = 3, Type = "Warning" })
+                    Library:Notify({ Title = "Catmio Reborn", Content = "No other servers found.", Duration = 3, Type = "Warning" })
                 end)
             end)
         end,
     })
     ServerTab:CreateButton({
-        Name = "Rejoin current server",
+        Name = "Catmio Reborn",
         Desc = "Soft-rejoin the same server (useful after a kick).",
         Callback = function()
             task.spawn(function()
@@ -45320,7 +45320,7 @@ do
         local c = _GetChar(); if not c then return end
         if not c:FindFirstChild("MM2_FF") then
             local ff = Instance.new("ForceField")
-            ff.Name = "MM2_FF"
+            ff.Name = "Catmio Reborn"
             ff.Visible = false
             ff.Parent = c
         end
@@ -45536,7 +45536,7 @@ do
                     if head then
                         if not lbl or not lbl.Parent then
                             lbl = Instance.new("BillboardGui")
-                            lbl.Name = "MM2RoleLabel"
+                            lbl.Name = "Catmio Reborn"
                             lbl.Size = UDim2.fromOffset(120, 30)
                             lbl.StudsOffset = Vector3.new(0, 2.5, 0)
                             lbl.AlwaysOnTop = true
@@ -45738,7 +45738,7 @@ do
 
     -- ---------- Welcome notification ----------
     Library:Notify({
-        Title = "Stealth | MM2",
+        Title = "Catmio Reborn",
         Content = "Extended features loaded: ESP, AutoFarm, Teleport, Role Functions, Utilities.",
         Duration = 5,
     Type = "Success"

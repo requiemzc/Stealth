@@ -287,11 +287,11 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
 local VirtualUser = game:GetService("VirtualUser")
 local LocalPlayer = Players.LocalPlayer
-local gameName = "Stealth"
+local gameName = "Catmio Reborn"
 local Remotes = ReplicatedStorage:WaitForChild("Remotes", 15)
 if not Remotes then
     Library:Notify({
-        Title = "Stealth",
+        Title = "Catmio Reborn",
         Content = "Remotes folder not found. Join the game first.",
         Duration = 6,
     Type = "Success"
@@ -506,8 +506,8 @@ end
 -- 6. Create Library window
 ------------------------------------------------------------
 local Window = Library:CreateWindow({
-    Name = "Stealth",
-    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "default" },
+    Name = "Catmio Reborn",
+    ConfigurationSaving = { Enabled = true, FolderName = "Catmio Reborn", FileName = "Catmio Reborn" },
     Icon = "solar:shield-keyhole-bold-duotone",
     ToggleUIKeybind = "RightShift",
 })
@@ -525,14 +525,14 @@ end
 ------------------------------------------------------------
 -- 8. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab({ Name = "Dashboard", Icon = "solar:widget-bold" })
-local TrainingTab = Window:CreateTab({ Name = "Training", Icon = "solar:widget-bold" })
-local EggTab = Window:CreateTab({ Name = "Eggs", Icon = "solar:widget-bold" })
-local SellingTab = Window:CreateTab({ Name = "Selling", Icon = "solar:widget-bold" })
-local RewardsTab = Window:CreateTab({ Name = "Rewards", Icon = "solar:widget-bold" })
-local ShopsTab = Window:CreateTab({ Name = "Shops", Icon = "solar:widget-bold" })
-local UpgradesTab = Window:CreateTab({ Name = "Upgrades", Icon = "solar:widget-bold" })
-local SettingsTab = Window:CreateTab({ Name = "Config", Icon = "solar:widget-bold" })
+local MainTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local TrainingTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local EggTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local SellingTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local RewardsTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local ShopsTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local UpgradesTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local SettingsTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
 ------------------------------------------------------------
 -- 9. Build options data
 ------------------------------------------------------------
@@ -579,11 +579,11 @@ local StatusSquat = MainTab:CreateLabel({ Text = "Squatting: false:  " })
 local TrainingBox = (TrainingTab.AddLeftGroupbox and TrainingTab:CreateSection("Squats")) or TrainingTab
 -- Library doesn't have AddLeftGroupbox; use the tab directly
 registerToggle("AutoTrain", false)
-TrainingTab:CreateToggle({ Name = "Auto Train Squats", CurrentValue = false,
+TrainingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoTrain.Value = state end
  })
 registerToggle("AutoSquatBonus", false)
-TrainingTab:CreateToggle({ Name = "Auto Claim Squat Bonus", CurrentValue = false,
+TrainingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoSquatBonus.Value = state end
  })
 TrainingTab:CreateLabel({ Text = "Squatting is server controlled; training pauses while you carry an egg.:  " })
@@ -591,12 +591,12 @@ TrainingTab:CreateLabel({ Text = "Squatting is server controlled; training pause
 -- 12. Eggs tab
 ------------------------------------------------------------
 registerToggle("AutoSteal", false)
-EggTab:CreateToggle({ Name = "Auto Steal Eggs", CurrentValue = false,
+EggTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoSteal.Value = state end
  })
 registerOption("StealMode", "Best Egg")
 EggTab:CreateDropdown({
-    Name = "Target",
+    Name = "Catmio Reborn",
     Options = { "Best Egg", "Nearest Egg", "Highest Rarity" },
     Default = "Best Egg",
     Callback = function(state) Options.StealMode.Value = state end
@@ -604,7 +604,7 @@ EggTab:CreateDropdown({
 })
 registerOption("StealZones", {})
 EggTab:CreateDropdown({ 
-    Name = "Zones",
+    Name = "Catmio Reborn",
     Options = ZoneNames,
     MultipleOptions = true,
     Description = "Only steal eggs from these zones",
@@ -613,7 +613,7 @@ EggTab:CreateDropdown({
 })
 registerOption("StealRarities", {})
 EggTab:CreateDropdown({ 
-    Name = "Rarities",
+    Name = "Catmio Reborn",
     Options = RarityNames,
     MultipleOptions = true,
     Description = "Only steal eggs of these rarities",
@@ -622,7 +622,7 @@ EggTab:CreateDropdown({
 })
 registerOption("StealDelay", 5)
 local StealDelaySlider = EggTab:CreateSlider({ 
-    Name = "Train Between Steals",
+    Name = "Catmio Reborn",
     Default = 5,
     Rounding = 0,
     Suffix = "s",
@@ -632,11 +632,11 @@ local StealDelaySlider = EggTab:CreateSlider({
 
 })
 registerToggle("AutoPlace", false)
-EggTab:CreateToggle({ Name = "Auto Place Stolen Eggs", CurrentValue = false,
+EggTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoPlace.Value = state end
  })
 registerToggle("AutoHatch", false)
-EggTab:CreateToggle({ Name = "Auto Hatch Ready Eggs", CurrentValue = false,
+EggTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoHatch.Value = state end
  })
 EggTab:CreateLabel({ Text = "Carrying an egg disables jumping. Auto Place moves it to your plot so the loop continues.:  " })
@@ -644,12 +644,12 @@ EggTab:CreateLabel({ Text = "Carrying an egg disables jumping. Auto Place moves 
 -- 13. Selling tab
 ------------------------------------------------------------
 registerToggle("AutoSell", false)
-SellingTab:CreateToggle({ Name = "Auto Sell Junk Pets", CurrentValue = false,
+SellingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoSell.Value = state end
  })
 registerOption("SellMode", "Lowest CPS First")
 SellingTab:CreateDropdown({
-    Name = "Mode",
+    Name = "Catmio Reborn",
     Options = { "Lowest CPS First", "Chosen Pet" },
     Default = "Lowest CPS First",
     Callback = function(state) Options.SellMode.Value = state end
@@ -657,7 +657,7 @@ SellingTab:CreateDropdown({
 })
 registerOption("AutoSellPet", AnimalNames[1] or "None")
 SellingTab:CreateDropdown({ 
-    Name = "Chosen Pet",
+    Name = "Catmio Reborn",
     Options = AnimalNames,
     Default = AnimalNames[1] or "None",
     Description = "Only used when Mode is Chosen Pet",
@@ -679,11 +679,11 @@ SellingTab:CreateLabel({ Text = "Sell value scales with pet CPS. Raise Max CPS o
 -- 14. Rewards tab
 ------------------------------------------------------------
 registerToggle("AutoOffline", false)
-RewardsTab:CreateToggle({ Name = "Auto Claim Offline Cash", CurrentValue = false,
+RewardsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoOffline.Value = state end
  })
 registerToggle("AutoIndex", false)
-RewardsTab:CreateToggle({ Name = "Auto Claim Animal Index Rewards", CurrentValue = false,
+RewardsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoIndex.Value = state end
  })
 RewardsTab:CreateLabel({ Text = "Index rewards are claimed with a single claim-all request. Offline cash is claimed whenever a balance is waiting.:  " })
@@ -691,12 +691,12 @@ RewardsTab:CreateLabel({ Text = "Index rewards are claimed with a single claim-a
 -- 15. Shops tab
 ------------------------------------------------------------
 registerToggle("AutoBuyCoils", false)
-ShopsTab:CreateToggle({ Name = "Auto Buy Coils", CurrentValue = false,
+ShopsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoBuyCoils.Value = state end
  })
 registerOption("BuyCoilList", {})
 ShopsTab:CreateDropdown({
-    Name = "Coils",
+    Name = "Catmio Reborn",
     Options = { "Red Coil", "Candy Coil", "Yellow Coil", "Chocolate Coil" },
     MultipleOptions = true,
     SearchAfter = 6,
@@ -704,16 +704,16 @@ ShopsTab:CreateDropdown({
 
 })
 registerToggle("AutoEquipCoil", false)
-ShopsTab:CreateToggle({ Name = "Auto Equip Best Coil", CurrentValue = false,
+ShopsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoEquipCoil.Value = state end
  })
 registerToggle("AutoBuyTrails", false)
-ShopsTab:CreateToggle({ Name = "Auto Buy Trails", CurrentValue = false,
+ShopsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoBuyTrails.Value = state end
  })
 registerOption("BuyTrailList", {})
 ShopsTab:CreateDropdown({
-    Name = "Trails",
+    Name = "Catmio Reborn",
     Options = { "Blue Trail", "Red Trail", "Green Trail", "Yellow Trail", "Purple Trail", "White Trail", "Black Trail", "Galaxy Trail", "Crimson Star Trail", "Rainbow Trail" },
     MultipleOptions = true,
     SearchAfter = 6,
@@ -721,23 +721,23 @@ ShopsTab:CreateDropdown({
 
 })
 registerToggle("AutoEquipTrail", false)
-ShopsTab:CreateToggle({ Name = "Auto Equip Best Trail", CurrentValue = false,
+ShopsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoEquipTrail.Value = state end
  })
 ------------------------------------------------------------
 -- 16. Upgrades tab
 ------------------------------------------------------------
 registerToggle("AutoBarbell", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Barbell", CurrentValue = false,
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoBarbell.Value = state end
  })
 registerToggle("AutoAddMutation", false)
-UpgradesTab:CreateToggle({ Name = "Auto Add Pets To Mutation Machine", CurrentValue = false,
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoAddMutation.Value = state end
  })
 registerOption("MutationMode", "Auto Select")
 UpgradesTab:CreateDropdown({
-    Name = "Pet Choice",
+    Name = "Catmio Reborn",
     Options = { "Auto Select", "Chosen Animal" },
     Default = "Auto Select",
     Callback = function(state) Options.MutationMode.Value = state end
@@ -745,28 +745,28 @@ UpgradesTab:CreateDropdown({
 })
 registerOption("MutationAnimal", AnimalNames[1] or "None")
 UpgradesTab:CreateDropdown({ 
-    Name = "Chosen Animal",
+    Name = "Catmio Reborn",
     Options = AnimalNames,
     Default = AnimalNames[1] or "None",
     Callback = function(state) Options.MutationAnimal.Value = state end
 
 })
 registerToggle("AutoClaimMutation", false)
-UpgradesTab:CreateToggle({ Name = "Auto Claim Gold Mutation", CurrentValue = false,
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoClaimMutation.Value = state end
  })
 registerToggle("AutoReturnMutation", false)
-UpgradesTab:CreateToggle({ Name = "Auto Return Mutation Pets", CurrentValue = false,
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(state) Toggles.AutoReturnMutation.Value = state end
  })
 ------------------------------------------------------------
 -- 17. Settings tab
 ------------------------------------------------------------
 registerToggle("AntiAFK", true)
-SettingsTab:CreateToggle({ Name = "Anti-AFK", CurrentValue = true,
+SettingsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = true,
     Callback = function(state) Toggles.AntiAFK.Value = state end
  })
-SettingsTab:CreateButton({ Name = "Unload Stealth",
+SettingsTab:CreateButton({ Name = "Catmio Reborn",
     Description = "Removes the menu and stops all automation",
     Callback = function()
         Window:Destroy()

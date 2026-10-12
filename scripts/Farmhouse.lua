@@ -324,7 +324,7 @@ local Workspace = game:GetService("Workspace")
 local RunService = game:GetService("RunService")
 local VirtualUser = game:GetService("VirtualUser")
 local LocalPlayer = Players.LocalPlayer
-local gameName = "Stealth"
+local gameName = "Catmio Reborn"
 -- Replicated refs
 local NeedleHaystack = ReplicatedStorage:WaitForChild("NeedleHaystack")
 local Config = require(NeedleHaystack:WaitForChild("Config"))
@@ -347,8 +347,8 @@ local GemsClientFolder = Workspace:FindFirstChild("GemsClient")
 -- 5. Create Library window
 ------------------------------------------------------------
 local Window = Library:CreateWindow({
-    Name = "Stealth",
-    ConfigurationSaving = { Enabled = true, FolderName = "Stealth", FileName = "default" },
+    Name = "Catmio Reborn",
+    ConfigurationSaving = { Enabled = true, FolderName = "Catmio Reborn", FileName = "Catmio Reborn" },
     Icon = "solar:shield-keyhole-bold-duotone",
     ToggleUIKeybind = "RightShift",
 })
@@ -366,14 +366,14 @@ end
 ------------------------------------------------------------
 -- 7. Tabs
 ------------------------------------------------------------
-local MainTab = Window:CreateTab({ Name = "Dashboard", Icon = "solar:widget-bold" })
-local CollectingTab = Window:CreateTab({ Name = "Collecting", Icon = "solar:widget-bold" })
-local SellingTab = Window:CreateTab({ Name = "Selling", Icon = "solar:widget-bold" })
-local ToolsTab = Window:CreateTab({ Name = "Tools", Icon = "solar:widget-bold" })
-local NeedleTab = Window:CreateTab({ Name = "Needle", Icon = "solar:widget-bold" })
-local ShopTab = Window:CreateTab({ Name = "Shop", Icon = "solar:widget-bold" })
-local UpgradesTab = Window:CreateTab({ Name = "Upgrades", Icon = "solar:widget-bold" })
-local SettingsTab = Window:CreateTab({ Name = "Config", Icon = "solar:widget-bold" })
+local MainTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local CollectingTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local SellingTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local ToolsTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local NeedleTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local ShopTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local UpgradesTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
+local SettingsTab = Window:CreateTab({ Name = "Catmio Reborn", Icon = "solar:widget-bold" })
 ------------------------------------------------------------
 -- 8. Helpers (from original script, unchanged)
 ------------------------------------------------------------
@@ -587,7 +587,7 @@ task.spawn(function()
     end
 end)
 MainTab:CreateSection("Discord")
-MainTab:CreateButton({ Name = "Copy Discord",
+MainTab:CreateButton({ Name = "Catmio Reborn",
     Desc = "discord.gg/hqE5drDHF7",
     Color = Color3.fromHex("#5865F2"),
     Justify = "Left",
@@ -595,7 +595,7 @@ MainTab:CreateButton({ Name = "Copy Discord",
     Callback = function()
         pcall(function() setclipboard("https://discord.gg/hqE5drDHF7") end)
         Library:Notify({
-            Title = "Discord",
+            Title = "Catmio Reborn",
             Content = "Invite copied to clipboard!",
             Duration = 3,
     Type = "Success"
@@ -611,26 +611,26 @@ MainTab:CreateSection("Settings holds Config & Anti-AFK.")
 ------------------------------------------------------------
 CollectingTab:CreateSection("Resource Collecting")
 registerToggle("AutoPickHay", false)
-CollectingTab:CreateToggle({ Name = "Auto Pick Hay", Desc = "Pick hay from stack continuously",
+CollectingTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Pick hay from stack continuously",
     CurrentValue = false,
     Callback = function(v) Toggles.AutoPickHay.Value = v end
  })
 registerToggle("AutoCollectDroppedHay", false)
-CollectingTab:CreateToggle({ Name = "Auto Collect Dropped Hay", CurrentValue = false,
+CollectingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(v) Toggles.AutoCollectDroppedHay.Value = v end
  })
 registerToggle("AutoCollectGems", false)
-CollectingTab:CreateToggle({ Name = "Auto Collect Gems", CurrentValue = false,
+CollectingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(v) Toggles.AutoCollectGems.Value = v end
  })
 registerToggle("AutoVacuumCollect", false)
-CollectingTab:CreateToggle({ Name = "Auto Vacuum Collect", Desc = "Uses Vacuum Start/Stop (requires Vacuum tool)",
+CollectingTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Uses Vacuum Start/Stop (requires Vacuum tool)",
     CurrentValue = false,
     Callback = function(v) Toggles.AutoVacuumCollect.Value = v end
  })
 registerOption("CollectInterval", 1)
 CollectingTab:CreateSlider({ 
-    Name = "Loop Interval",
+    Name = "Catmio Reborn",
     Range = { 0.1, 3 },
     CurrentValue = 1,
     Rounding = 1,
@@ -644,19 +644,19 @@ CollectingTab:CreateSection("Vacuum needs VacuumOwned. Gems within 35 studs.")
 ------------------------------------------------------------
 SellingTab:CreateSection("Selling")
 registerToggle("AutoSellHay", false)
-SellingTab:CreateToggle({ Name = "Auto Sell Hay", CurrentValue = false,
+SellingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(v) Toggles.AutoSellHay.Value = v end
  })
 registerOption("SellThreshold", 25)
 SellingTab:CreateSlider({
-    Name = "Sell When Hay >=",
+    Name = "Catmio Reborn",
     Range = { 1, 250 }, CurrentValue = 25,
     Rounding = 0,
     Callback = function(v) Options.SellThreshold.Value = v end
 
 })
 registerToggle("SellOnlyIfFull", false)
-SellingTab:CreateToggle({ Name = "Only Sell If Full", CurrentValue = false,
+SellingTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(v) Toggles.SellOnlyIfFull.Value = v end
  })
 SellingTab:CreateSection("Fires SellHay:FireServer() near cow.")
@@ -666,25 +666,25 @@ SellingTab:CreateSection("VacuumLoad also counts as held.")
 ------------------------------------------------------------
 ToolsTab:CreateSection("Auto Tool Usage")
 registerToggle("AutoUseTNT", false)
-ToolsTab:CreateToggle({ Name = "Auto Use TNT", Desc = "Light & throw TNT on cooldown",
+ToolsTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Light & throw TNT on cooldown",
     CurrentValue = false,
     Callback = function(v) Toggles.AutoUseTNT.Value = v end
  })
 registerToggle("AutoUsePitchfork", false)
-ToolsTab:CreateToggle({ Name = "Auto Use Pitchfork", CurrentValue = false,
+ToolsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(v) Toggles.AutoUsePitchfork.Value = v end
  })
 registerToggle("AutoDeployDrone", false)
-ToolsTab:CreateToggle({ Name = "Auto Deploy Drone", CurrentValue = false,
+ToolsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(v) Toggles.AutoDeployDrone.Value = v end
  })
 registerToggle("AutoVacuum", false)
-ToolsTab:CreateToggle({ Name = "Auto Vacuum (Loop)", CurrentValue = false,
+ToolsTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(v) Toggles.AutoVacuum.Value = v end
  })
 registerOption("ToolInterval", 1)
 ToolsTab:CreateSlider({ 
-    Name = "Tool Interval",
+    Name = "Catmio Reborn",
     Range = { 0.2, 5 },
     CurrentValue = 1,
     Rounding = 1,
@@ -700,18 +700,18 @@ ToolsTab:CreateSection("TNT cooldown & vacuum heat managed by server.")
 ------------------------------------------------------------
 NeedleTab:CreateSection("Needle")
 registerToggle("AutoFindNeedle", false)
-NeedleTab:CreateToggle({ Name = "Auto Find Needle", Desc = "Continuously pick around pile center to reveal needle",
+NeedleTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Continuously pick around pile center to reveal needle",
     CurrentValue = false,
     Callback = function(v) Toggles.AutoFindNeedle.Value = v end
  })
 registerToggle("AutoHandInNeedle", false)
-NeedleTab:CreateToggle({ Name = "Auto Hand In Needle", Desc = "Fires NeedleHandIn when near NPC",
+NeedleTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Fires NeedleHandIn when near NPC",
     CurrentValue = false,
     Callback = function(v) Toggles.AutoHandInNeedle.Value = v end
  })
 registerOption("NeedleInterval", 1)
 NeedleTab:CreateSlider({ 
-    Name = "Needle Interval",
+    Name = "Catmio Reborn",
     Range = { 0.2, 3 },
     CurrentValue = 1,
     Rounding = 1,
@@ -728,7 +728,7 @@ NeedleTab:CreateSection("Pile center from Config.PILE_CENTER used for automation
 ShopTab:CreateSection("Purchasing")
 registerOption("BuyToolsList", {})
 ShopTab:CreateDropdown({
-    Name = "Buy Tools Selection",
+    Name = "Catmio Reborn",
     Options = { "Pitchfork", "TNT", "Drone", "Vacuum", "Infinite Bag", "Capacity Bag" },
     MultipleOptions = true,
     Default = {},
@@ -739,12 +739,12 @@ ShopTab:CreateDropdown({
 
 })
 registerToggle("AutoBuyTools", false)
-ShopTab:CreateToggle({ Name = "Auto Buy Selected Tools", CurrentValue = false,
+ShopTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(v) Toggles.AutoBuyTools.Value = v end
  })
 registerOption("BuyInterval", 1)
 ShopTab:CreateSlider({ 
-    Name = "Buy Interval",
+    Name = "Catmio Reborn",
     Range = { 0.5, 5 },
     CurrentValue = 1,
     Rounding = 1,
@@ -754,7 +754,7 @@ ShopTab:CreateSlider({
 })
 ShopTab:CreateSection("Ownership")
 ShopTab:CreateSection("Attributes: PitchforkOwned, TntOwned, DroneOwned, VacuumOwned, InfiniteBagOwned")
-ShopTab:CreateButton({ Name = "Check Ownership",
+ShopTab:CreateButton({ Name = "Catmio Reborn",
     Color = Color3.fromHex("#30FF6A"),
     Justify = "Left",
     IconAlign = "Left",
@@ -774,25 +774,25 @@ ShopTab:CreateButton({ Name = "Check Ownership",
 })
 UpgradesTab:CreateSection("Permanent (Gems)")
 registerToggle("UpgBagSize", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Bag Size", Desc = "ExtraHoldAmount -> Gems 25,50,75,100,150,450",
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", Desc = "ExtraHoldAmount -> Gems 25,50,75,100,150,450",
     CurrentValue = false,
     Callback = function(v) Toggles.UpgBagSize.Value = v end
  })
 registerToggle("UpgExtraTake", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Hand Grab Amount", CurrentValue = false,
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(v) Toggles.UpgExtraTake.Value = v end
  })
 registerToggle("UpgGemValue", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Gem Value", CurrentValue = false,
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(v) Toggles.UpgGemValue.Value = v end
  })
 registerToggle("UpgHayValue", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Hay Value", CurrentValue = false,
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false,
     Callback = function(v) Toggles.UpgHayValue.Value = v end
  })
 registerOption("PermInterval", 1)
 UpgradesTab:CreateSlider({ 
-    Name = "Permanent Loop",
+    Name = "Catmio Reborn",
     Range = { 0.5, 5 },
     CurrentValue = 1,
     Rounding = 1,
@@ -802,42 +802,42 @@ UpgradesTab:CreateSlider({
 })
 UpgradesTab:CreateSection("Hand Upgrades (Cash)")
 registerToggle("UpgHandSpeed", false)
-UpgradesTab:CreateToggle({ Name = "Auto Hand Speed", Desc = "Speed track 0.55->0.3", CurrentValue = false, Callback = function(v) Toggles.UpgHandSpeed.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Speed track 0.55->0.3", CurrentValue = false, Callback = function(v) Toggles.UpgHandSpeed.Value = v end })
 registerToggle("UpgHandGrab", false)
-UpgradesTab:CreateToggle({ Name = "Auto Hand Grasp", CurrentValue = false, Callback = function(v) Toggles.UpgHandGrab.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgHandGrab.Value = v end })
 registerToggle("UpgHandHold", false)
-UpgradesTab:CreateToggle({ Name = "Auto Hand Hold", CurrentValue = false, Callback = function(v) Toggles.UpgHandHold.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgHandHold.Value = v end })
 UpgradesTab:CreateSection("TNT Upgrades")
 registerToggle("UpgTntLuck", false)
-UpgradesTab:CreateToggle({ Name = "Auto TNT Lucky Blast", CurrentValue = false, Callback = function(v) Toggles.UpgTntLuck.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgTntLuck.Value = v end })
 registerToggle("UpgTntCooldown", false)
-UpgradesTab:CreateToggle({ Name = "Auto TNT Cooldown", CurrentValue = false, Callback = function(v) Toggles.UpgTntCooldown.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgTntCooldown.Value = v end })
 registerToggle("UpgTntPower", false)
-UpgradesTab:CreateToggle({ Name = "Auto TNT Power", CurrentValue = false, Callback = function(v) Toggles.UpgTntPower.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgTntPower.Value = v end })
 UpgradesTab:CreateSection("Pitchfork Upgrades")
 registerToggle("UpgPitchCooldown", false)
-UpgradesTab:CreateToggle({ Name = "Auto Pitchfork Cooldown", CurrentValue = false, Callback = function(v) Toggles.UpgPitchCooldown.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgPitchCooldown.Value = v end })
 registerToggle("UpgPitchHold", false)
-UpgradesTab:CreateToggle({ Name = "Auto Pitchfork Hold", CurrentValue = false, Callback = function(v) Toggles.UpgPitchHold.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgPitchHold.Value = v end })
 registerToggle("UpgPitchSweep", false)
-UpgradesTab:CreateToggle({ Name = "Auto Pitchfork Sweep", CurrentValue = false, Callback = function(v) Toggles.UpgPitchSweep.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgPitchSweep.Value = v end })
 UpgradesTab:CreateSection("Drone Upgrades")
 registerToggle("UpgDroneSpeed", false)
-UpgradesTab:CreateToggle({ Name = "Auto Drone Speed", CurrentValue = false, Callback = function(v) Toggles.UpgDroneSpeed.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgDroneSpeed.Value = v end })
 registerToggle("UpgDroneGrab", false)
-UpgradesTab:CreateToggle({ Name = "Auto Drone Grasp", CurrentValue = false, Callback = function(v) Toggles.UpgDroneGrab.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgDroneGrab.Value = v end })
 registerToggle("UpgDroneCapacity", false)
-UpgradesTab:CreateToggle({ Name = "Auto Drone Capacity", CurrentValue = false, Callback = function(v) Toggles.UpgDroneCapacity.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgDroneCapacity.Value = v end })
 UpgradesTab:CreateSection("Vacuum Upgrades")
 registerToggle("UpgVacPower", false)
-UpgradesTab:CreateToggle({ Name = "Auto Vacuum Power", CurrentValue = false, Callback = function(v) Toggles.UpgVacPower.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgVacPower.Value = v end })
 registerToggle("UpgVacCooling", false)
-UpgradesTab:CreateToggle({ Name = "Auto Vacuum Cooling", CurrentValue = false, Callback = function(v) Toggles.UpgVacCooling.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgVacCooling.Value = v end })
 registerToggle("UpgVacRuntime", false)
-UpgradesTab:CreateToggle({ Name = "Auto Vacuum Runtime", CurrentValue = false, Callback = function(v) Toggles.UpgVacRuntime.Value = v end })
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", CurrentValue = false, Callback = function(v) Toggles.UpgVacRuntime.Value = v end })
 UpgradesTab:CreateSection("Capacity")
 registerToggle("UpgCapacity", false)
-UpgradesTab:CreateToggle({ Name = "Auto Upgrade Carry Capacity", Desc = "25->250 cash upgrades",
+UpgradesTab:CreateToggle({ Name = "Catmio Reborn", Desc = "25->250 cash upgrades",
     CurrentValue = false,
     Callback = function(v) Toggles.UpgCapacity.Value = v end
  })
@@ -846,7 +846,7 @@ UpgradesTab:CreateSection("Cash upgrades use BuyUpgrade with track names.")
 -- 16. SETTINGS TAB
 ------------------------------------------------------------
 SettingsTab:CreateSection("Menu")
-SettingsTab:CreateButton({ Name = "Unload Stealth",
+SettingsTab:CreateButton({ Name = "Catmio Reborn",
     Desc = "Closes the UI and stops all automation.",
     Color = Color3.fromHex("#ff4830"),
     Justify = "Left",
@@ -858,7 +858,7 @@ SettingsTab:CreateButton({ Name = "Unload Stealth",
 })
 SettingsTab:CreateSection("System")
 registerToggle("AntiAFK", true)
-SettingsTab:CreateToggle({ Name = "Anti-AFK (jump every 5m)", Desc = "Enabled by default. Uses jump to keep alive.",
+SettingsTab:CreateToggle({ Name = "Catmio Reborn", Desc = "Enabled by default. Uses jump to keep alive.",
     CurrentValue = true,
     Callback = function(v) Toggles.AntiAFK.Value = v end
  })
@@ -1215,7 +1215,7 @@ Library:OnUnload(function()
     print("[Stealth] Unloaded - "..gameName)
 end)
 Library:Notify({
-    Title = "Stealth",
+    Title = "Catmio Reborn",
     Description = gameName .. " loaded. Farming=collect/sell/tools | Inventory=shop/upgrades",
     Time = 5,
     Type = "Success"
