@@ -3308,7 +3308,7 @@ local function getDebugGui()
     label.Font = Enum.Font.Code
     label.TextSize = 12
     label.TextWrapped = false
-    label.Text = "Oziohub | FULL DEBUG"
+    label.Text = "Catmio Reborn | DEBUG"
     label.Parent = frame
 
     runtime.debugGui = gui
@@ -3350,7 +3350,7 @@ local function updateDebugPanel(now)
     local path = runtime.path or Vector3.zero
 
     label.Text = table.concat({
-        "Oziohub | FULL DEBUG",
+        "Catmio Reborn | DEBUG",
         string.format("Role=%s | RunState=%s | InMatch=%s | ClientReady=%s", tostring(getRole()), tostring(getRunState()), tostring(LocalPlayer:GetAttribute("InMatch")), tostring(LocalPlayer:GetAttribute("ClientReady"))),
         string.format("MovementLocked=%s | Ragdolled=%s | GearMotion=%s | HP=%.1f | WalkSpeed=%.1f", tostring(character and character:GetAttribute("MovementLocked")), tostring(character and character:GetAttribute("Ragdolled")), tostring(character and character:GetAttribute("GearMotion")), health, speed),
         string.format("Position=%.1f, %.1f, %.1f | GoalMode=%s | GoalDistance=%.1f", position.X, position.Y, position.Z, tostring(runtime.goalMode), goalDistance),
@@ -3987,9 +3987,9 @@ local windowWidth = math.max(280, math.min(520, viewport.X - 24))
 local windowHeight = math.max(360, math.min(860, viewport.Y - 48))
 
 local Window = WindUI:CreateWindow({
-    Title = "Oziohub",
+    Title = "Catmio Reborn",
     Icon = "bird",
-    Author = "Oziohub",
+    Author = "Catmio Reborn",
     Folder = "HussValley",
     Size = UDim2.fromOffset(windowWidth, windowHeight),
     Transparent = true,
@@ -3997,7 +3997,7 @@ local Window = WindUI:CreateWindow({
     ToggleKey = Enum.KeyCode.RightShift,
 })
 
-Window:Tag({Title = "Oziohub", Color = Color3.fromRGB(70, 205, 180)})
+Window:Tag({Title = "Catmio Reborn", Color = Color3.fromRGB(70, 205, 180)})
 
 -- Notification gate (controlled from Settings tab)
 SETTINGS.notifications = true
@@ -5255,7 +5255,7 @@ do
     SettingsTab:Section({Title = "About"})
 
     SettingsTab:Paragraph({
-        Title = "Oziohub",
+        Title = "Catmio Reborn",
         Desc = "Chicken or Hero helper.\nToggle the window with the key selected above (default: RightShift).",
     })
 
@@ -5264,10 +5264,10 @@ do
         Icon = "link",
         Callback = function()
             if type(setclipboard) == "function" then
-                pcall(setclipboard, "https://rscripts.net/@_LSS")
+                pcall(setclipboard, "https://rscripts.net/@francy")
                 toast("Rscripts", "Link copied to clipboard.", "check")
             else
-                toast("Rscripts", "https://rscripts.net/@_LSS", "link")
+                toast("Rscripts", "https://rscripts.net/@francy", "link")
             end
         end,
     })
@@ -5307,7 +5307,7 @@ do
 end
 
 WindUI:Notify({
-    Title = "Oziohub",
+    Title = "Catmio Reborn",
     Content = "Loaded. Auto Run is enabled by default.",
     Duration = 4,
     Icon = "wind",
@@ -5470,4 +5470,4 @@ function Hub.selectRunnerTab()
 end
 Hub.selectRunnerTab()
 task.delay(0.5, Hub.selectRunnerTab)
-task.delay(1.5, Hub.selectRunnerTab)
+task.delay(1.5, Hub.selectRunnerTab) 
